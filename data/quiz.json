@@ -14,7 +14,8 @@
     "melenchon": "Retour progressif de la retraite à 60 ans avec 40 annuités",
     "glucksmann": "Abroger la réforme des retraites de 2023",
     "philippe": "Retraite à 65 ans avec 45 ans de cotisation"
-   }
+   },
+   "id": "q1"
   },
   {
    "theme": "Économie",
@@ -28,7 +29,8 @@
     "arthaud": "SMIC à 2 200 € et indexation des salaires et pensions sur les prix",
     "glucksmann": "SMIC à 1 600 € net en deux ans",
     "tondelier": "SMIC à 2 000 € brut dès 2027"
-   }
+   },
+   "id": "q2"
   },
   {
    "theme": "Économie",
@@ -44,7 +46,8 @@
     "retailleau": "Plus de cotisations sociales au-delà de 1 623 heures travaillées par an",
     "riner": "Permettre de travailler plus sans remettre en cause les 35 heures",
     "melenchon": "Retour aux 35 heures, 32 heures pour les métiers pénibles"
-   }
+   },
+   "id": "q3"
   },
   {
    "theme": "Économie",
@@ -62,7 +65,8 @@
     "retailleau": "Plan de 197 Md€ d'économies d'ici 2032",
     "philippe": "250 000 postes de fonctionnaires en moins sur le quinquennat",
     "villepin": "Ramener le déficit public à 3 % du PIB"
-   }
+   },
+   "id": "q4"
   },
   {
    "theme": "Économie",
@@ -74,7 +78,8 @@
    "src": {
     "philippe": "50 Md€ d'impôts de production en moins, financés par la baisse des aides aux entreprises",
     "lisnard": "Supprimer la C3S et la CVAE (11,5 Md€ d'impôts de production en moins)"
-   }
+   },
+   "id": "q5"
   },
   {
    "theme": "Économie",
@@ -86,7 +91,8 @@
    "src": {
     "tondelier": "Rétablir l'impôt sur la grande fortune",
     "villepin": "Impôt sur le patrimoine des 1 % les plus aisés"
-   }
+   },
+   "id": "q6"
   },
   {
    "theme": "Économie",
@@ -100,7 +106,8 @@
     "lepen": "Renationaliser les autoroutes pour baisser les péages de 15 %",
     "polony": "Renationaliser EDF et défendre le nucléaire",
     "arthaud": "Exproprier sans indemnité les actionnaires, à commencer par pétrole et armement"
-   }
+   },
+   "id": "q7"
   },
   {
    "theme": "Économie",
@@ -114,7 +121,8 @@
     "lepen": "TVA à 5,5 % sur carburants, gaz et électricité",
     "dupont-aignan": "Baisser de 40 centimes le prix des carburants",
     "polony": "Taxe flottante sur les carburants"
-   }
+   },
+   "id": "q8"
   },
   {
    "theme": "Institutions",
@@ -126,7 +134,8 @@
    "src": {
     "philippe": "250 000 postes de fonctionnaires en moins sur le quinquennat",
     "attal": "100 000 postes publics en moins, sans licenciement"
-   }
+   },
+   "id": "q9"
   },
   {
    "theme": "Institutions",
@@ -138,7 +147,8 @@
    "src": {
     "attal": "350 députés et 200 sénateurs",
     "dupont-aignan": "Passer de 577 à 500 députés"
-   }
+   },
+   "id": "q10"
   },
   {
    "theme": "Institutions",
@@ -154,7 +164,8 @@
     "melenchon": "Proportionnelle à l'Assemblée",
     "tondelier": "Proportionnelle intégrale aux législatives",
     "lepen": "Référendum d'initiative citoyenne et proportionnelle"
-   }
+   },
+   "id": "q11"
   },
   {
    "theme": "Institutions",
@@ -170,7 +181,8 @@
     "lepen": "Référendum d'initiative citoyenne et proportionnelle",
     "dupont-aignan": "Référendum d'initiative citoyenne",
     "villepin": "Référendum d'initiative citoyenne préparé par une convention permanente"
-   }
+   },
+   "id": "q12"
   },
   {
    "theme": "Immigration",
@@ -200,7 +212,8 @@
     "arthaud": "Régulariser les sans-papiers, liberté de circulation",
     "tondelier": "Respect du droit d'asile, fin des refoulements illégaux",
     "glucksmann": "Abroger la loi immigration de 2024"
-   }
+   },
+   "id": "q13"
   },
   {
    "theme": "Immigration",
@@ -216,7 +229,8 @@
     "tondelier": "Droit du sol sans condition",
     "lepen": "Supprimer le droit du sol",
     "lisnard": "Fin de l'automaticité du droit du sol"
-   }
+   },
+   "id": "q14"
   },
   {
    "theme": "Immigration",
@@ -228,7 +242,8 @@
    "src": {
     "lepen": "Aides sociales réservées aux Français, 5 ans de travail exigés pour certaines",
     "retailleau": "Aides familiales réservées aux étrangers présents depuis 5 ans et en activité"
-   }
+   },
+   "id": "q15"
   },
   {
    "theme": "Social et santé",
@@ -240,7 +255,8 @@
    "src": {
     "lisnard": "Remplacer l'AME par une aide d'urgence",
     "zemmour": "AME limitée à l'aide médicale d'urgence"
-   }
+   },
+   "id": "q16"
   },
   {
    "theme": "Social et santé",
@@ -254,7 +270,8 @@
     "arthaud": "Dépénaliser le cannabis",
     "melenchon": "Cannabis légalisé sous monopole d'État",
     "tondelier": "Légaliser et encadrer le cannabis"
-   }
+   },
+   "id": "q17"
   },
   {
    "theme": "Sécurité et justice",
@@ -268,7 +285,8 @@
     "lepen": "Rétablir les peines planchers",
     "lisnard": "Peines planchers pour les récidivistes",
     "philippe": "Peines planchers pour les violences contre policiers et professeurs"
-   }
+   },
+   "id": "q18"
   },
   {
    "theme": "Écologie et énergie",
@@ -294,7 +312,8 @@
     "dupont-aignan": "Au moins 70 % de nucléaire",
     "zemmour": "Plan européen de 500 Md€ pour le nucléaire",
     "melenchon": "Fermeture progressive du nucléaire, arrêt de l'EPR2"
-   }
+   },
+   "id": "q19"
   },
   {
    "theme": "Écologie et énergie",
@@ -310,7 +329,8 @@
     "dupont-aignan": "Fin des aides à l'éolien et au solaire",
     "zemmour": "Supprimer tout financement de l'éolien",
     "villepin": "6 EPR2 et éolien en mer"
-   }
+   },
+   "id": "q20"
   },
   {
    "theme": "Écologie et énergie",
@@ -322,7 +342,8 @@
    "src": {
     "melenchon": "Interdire glyphosate et néonicotinoïdes",
     "villepin": "Moitié moins de pesticides d'ici 2030"
-   }
+   },
+   "id": "q21"
   },
   {
    "theme": "Europe et international",
@@ -346,7 +367,8 @@
     "zemmour": "Remplacer la Commission par un secrétariat du Conseil",
     "dupont-aignan": "Sortie de l'Union européenne",
     "lepen": "Baisser la contribution française à l'UE"
-   }
+   },
+   "id": "q22"
   },
   {
    "theme": "Europe et international",
@@ -360,7 +382,1030 @@
     "glucksmann": "Aide militaire renforcée à l'Ukraine",
     "tondelier": "Soutien politique et militaire à l'Ukraine",
     "dupont-aignan": "Paix en Ukraine et partenariat avec la Russie"
-   }
+   },
+   "id": "q23"
+  },
+  {
+   "theme": "Économie",
+   "q": "Il faut interdire les licenciements.",
+   "pos": {
+    "arthaud": 1
+   },
+   "src": {
+    "arthaud": "Interdire les licenciements et les suppressions d'emplois"
+   },
+   "id": "q24"
+  },
+  {
+   "theme": "Économie",
+   "q": "Il faut encadrer les loyers partout en France.",
+   "pos": {
+    "tondelier": 1
+   },
+   "src": {
+    "tondelier": "Encadrement des loyers généralisé"
+   },
+   "id": "q25"
+  },
+  {
+   "theme": "Économie",
+   "q": "L'État doit construire massivement des logements, au moins 200 000 par an.",
+   "pos": {
+    "melenchon": 1,
+    "villepin": 1
+   },
+   "src": {
+    "melenchon": "200 000 logements publics par an",
+    "villepin": "500 000 logements par an et garantie locative universelle"
+   },
+   "id": "q26"
+  },
+  {
+   "theme": "Économie",
+   "q": "Il faut ajouter une part de retraite par capitalisation.",
+   "pos": {
+    "attal": 1
+   },
+   "src": {
+    "attal": "Un pilier de capitalisation pour les retraites"
+   },
+   "id": "q27"
+  },
+  {
+   "theme": "Économie",
+   "q": "Il faut remplacer le CDI et le CDD par un contrat de travail unique.",
+   "pos": {
+    "lisnard": 1
+   },
+   "src": {
+    "lisnard": "Contrat de travail unique fusionnant CDI et CDD"
+   },
+   "id": "q28"
+  },
+  {
+   "theme": "Économie",
+   "q": "Il faut supprimer les niches fiscales.",
+   "pos": {
+    "villepin": 1
+   },
+   "src": {
+    "villepin": "Supprimer toutes les niches fiscales et sociales"
+   },
+   "id": "q29"
+  },
+  {
+   "theme": "Économie",
+   "q": "Il faut taxer plus fortement les produits importés de Chine.",
+   "pos": {
+    "attal": 1,
+    "zemmour": 1,
+    "philippe": 1
+   },
+   "src": {
+    "attal": "Taxer les produits chinois vendus à perte",
+    "zemmour": "Droits de douane de 50 % sur les voitures électriques chinoises",
+    "philippe": "Protéger le marché face à la concurrence chinoise"
+   },
+   "id": "q30"
+  },
+  {
+   "theme": "Économie",
+   "q": "Les marchés publics doivent privilégier les produits français.",
+   "pos": {
+    "dupont-aignan": 1,
+    "polony": 1
+   },
+   "src": {
+    "dupont-aignan": "75 % de la commande publique en produits français",
+    "polony": "Priorité française dans la commande publique"
+   },
+   "id": "q31"
+  },
+  {
+   "theme": "Économie",
+   "q": "Il faut garantir des prix minimum aux agriculteurs.",
+   "pos": {
+    "glucksmann": 1
+   },
+   "src": {
+    "glucksmann": "Prix planchers pour les agriculteurs"
+   },
+   "id": "q32"
+  },
+  {
+   "theme": "Économie",
+   "q": "Chaque personne devrait avoir un revenu au moins égal au seuil de pauvreté.",
+   "pos": {
+    "melenchon": 1
+   },
+   "src": {
+    "melenchon": "Revenu de chaque personne porté au seuil de pauvreté (1 337 €)"
+   },
+   "id": "q33"
+  },
+  {
+   "theme": "Économie",
+   "q": "Le minimum vieillesse doit passer à 1 000 € par mois.",
+   "pos": {
+    "lepen": 1,
+    "lisnard": 1
+   },
+   "src": {
+    "lepen": "Minimum vieillesse à 1 000 € par mois",
+    "lisnard": "Pension minimale dès 65 ans et minimum vieillesse à 1 000 €"
+   },
+   "id": "q34"
+  },
+  {
+   "theme": "Économie",
+   "q": "Les actifs de moins de 30 ans devraient être exonérés d'impôt sur le revenu.",
+   "pos": {
+    "lepen": 1
+   },
+   "src": {
+    "lepen": "Exonérer d'impôt sur le revenu les actifs de moins de 30 ans"
+   },
+   "id": "q35"
+  },
+  {
+   "theme": "Économie",
+   "q": "Les allocations familiales doivent être versées dès le premier enfant.",
+   "pos": {
+    "philippe": 1
+   },
+   "src": {
+    "philippe": "Allocation familiale de 350 € dès le premier enfant, dégressive"
+   },
+   "id": "q36"
+  },
+  {
+   "theme": "Économie",
+   "q": "Il ne faut augmenter aucun impôt pendant le prochain quinquennat.",
+   "pos": {
+    "attal": 1
+   },
+   "src": {
+    "attal": "Aucune hausse d'impôt sur le quinquennat, 150 Md€ d'économies"
+   },
+   "id": "q37"
+  },
+  {
+   "theme": "Économie",
+   "q": "Il faut réduire fortement le nombre de normes et de règles administratives.",
+   "pos": {
+    "dupont-aignan": 1,
+    "zemmour": 1
+   },
+   "src": {
+    "dupont-aignan": "Diviser les normes par deux",
+    "zemmour": "Une norme créée, deux supprimées"
+   },
+   "id": "q38"
+  },
+  {
+   "theme": "Social et santé",
+   "q": "Les soins prescrits doivent être remboursés à 100 %.",
+   "pos": {
+    "melenchon": 1
+   },
+   "src": {
+    "melenchon": "Remboursement à 100 % des soins prescrits"
+   },
+   "id": "q39"
+  },
+  {
+   "theme": "Social et santé",
+   "q": "Il faut supprimer les Agences régionales de santé (ARS).",
+   "pos": {
+    "lepen": 1,
+    "lisnard": 1
+   },
+   "src": {
+    "lepen": "Supprimer les ARS",
+    "lisnard": "Supprimer les ARS"
+   },
+   "id": "q40"
+  },
+  {
+   "theme": "Social et santé",
+   "q": "L'État doit ouvrir des centres ou maisons de santé là où il manque des médecins.",
+   "pos": {
+    "zemmour": 1,
+    "tondelier": 1,
+    "lisnard": 1
+   },
+   "src": {
+    "zemmour": "1 000 médecins salariés par l'État pour les déserts médicaux",
+    "tondelier": "2 000 centres de santé d'ici 2030",
+    "lisnard": "Une maison de santé par canton"
+   },
+   "id": "q41"
+  },
+  {
+   "theme": "Social et santé",
+   "q": "Il faut arrêter de fermer des maternités et des lits d'hôpital.",
+   "pos": {
+    "arthaud": 1,
+    "lepen": 1,
+    "dupont-aignan": 1
+   },
+   "src": {
+    "arthaud": "Rouvrir maternités, cliniques et centres de santé fermés",
+    "lepen": "Arrêter les fermetures de lits et de maternités",
+    "dupont-aignan": "Arrêt des fermetures de maternités"
+   },
+   "id": "q42"
+  },
+  {
+   "theme": "Social et santé",
+   "q": "Il faut autoriser une aide à mourir encadrée.",
+   "pos": {
+    "arthaud": 1
+   },
+   "src": {
+    "arthaud": "Aide à mourir encadrée"
+   },
+   "id": "q43"
+  },
+  {
+   "theme": "Social et santé",
+   "q": "L'hôpital doit sortir du financement à l'activité (tarification à l'acte).",
+   "pos": {
+    "melenchon": 1,
+    "glucksmann": 1
+   },
+   "src": {
+    "melenchon": "Sortie de la tarification à l'activité à l'hôpital",
+    "glucksmann": "Fin de la tarification à l'acte à l'hôpital"
+   },
+   "id": "q44"
+  },
+  {
+   "theme": "Social et santé",
+   "q": "Il faut interdire les PFAS et les perturbateurs endocriniens.",
+   "pos": {
+    "tondelier": 1
+   },
+   "src": {
+    "tondelier": "Interdire PFAS et perturbateurs endocriniens"
+   },
+   "id": "q45"
+  },
+  {
+   "theme": "Social et santé",
+   "q": "L'allocation adulte handicapé (AAH) doit être augmentée ou mieux calculée.",
+   "pos": {
+    "lepen": 1,
+    "tondelier": 1
+   },
+   "src": {
+    "lepen": "AAH revalorisée et calculée sans les revenus du conjoint",
+    "tondelier": "AAH augmentée de 250 €"
+   },
+   "id": "q46"
+  },
+  {
+   "theme": "Social et santé",
+   "q": "L'intelligence artificielle doit être utilisée davantage dans la santé.",
+   "pos": {
+    "attal": 1,
+    "retailleau": 1
+   },
+   "src": {
+    "attal": "Un assistant médical IA pour chaque Français",
+    "retailleau": "IA médicales françaises entraînées sur les données de santé nationales"
+   },
+   "id": "q47"
+  },
+  {
+   "theme": "Éducation",
+   "q": "Il faut nettement réduire le nombre d'élèves par classe.",
+   "pos": {
+    "attal": 1,
+    "melenchon": 1,
+    "tondelier": 1,
+    "glucksmann": 1,
+    "philippe": 1
+   },
+   "src": {
+    "attal": "Moins de 20 élèves par classe",
+    "melenchon": "Moins de 19 élèves par classe en moyenne",
+    "tondelier": "19 élèves par classe en 2032, 12 en éducation prioritaire",
+    "glucksmann": "Moins d'élèves par enseignant en primaire",
+    "philippe": "Moins d'élèves par classe en maternelle et primaire"
+   },
+   "id": "q48"
+  },
+  {
+   "theme": "Éducation",
+   "q": "L'uniforme doit être obligatoire à l'école.",
+   "pos": {
+    "dupont-aignan": 1,
+    "lepen": 1
+   },
+   "src": {
+    "dupont-aignan": "Uniforme obligatoire",
+    "lepen": "Uniforme au primaire et au collège"
+   },
+   "id": "q49"
+  },
+  {
+   "theme": "Éducation",
+   "q": "Il faut supprimer ou refondre Parcoursup.",
+   "pos": {
+    "melenchon": 1,
+    "tondelier": 1,
+    "glucksmann": 1
+   },
+   "src": {
+    "melenchon": "Fin de Parcoursup",
+    "tondelier": "Remplacer Parcoursup et MonMaster",
+    "glucksmann": "Refonte de Parcoursup"
+   },
+   "id": "q50"
+  },
+  {
+   "theme": "Éducation",
+   "q": "Il faut un examen en fin de primaire pour passer au collège.",
+   "pos": {
+    "attal": 1,
+    "lisnard": 1
+   },
+   "src": {
+    "attal": "Certificat d'études en fin de CM2",
+    "lisnard": "Certificat de fin de primaire pour entrer au collège"
+   },
+   "id": "q51"
+  },
+  {
+   "theme": "Éducation",
+   "q": "Les familles doivent pouvoir choisir librement l'école de leur enfant, avec un chèque éducation.",
+   "pos": {
+    "lisnard": 1
+   },
+   "src": {
+    "lisnard": "Libre choix de l'école avec chèque éducation"
+   },
+   "id": "q52"
+  },
+  {
+   "theme": "Éducation",
+   "q": "Les chefs d'établissement doivent avoir plus de pouvoir.",
+   "pos": {
+    "philippe": 1,
+    "lisnard": 1
+   },
+   "src": {
+    "philippe": "Larges pouvoirs aux chefs d'établissement",
+    "lisnard": "Autonomie des chefs d'établissement"
+   },
+   "id": "q53"
+  },
+  {
+   "theme": "Éducation",
+   "q": "Il faut des groupes de niveau en maths et en français.",
+   "pos": {
+    "attal": 1
+   },
+   "src": {
+    "attal": "Groupes de niveau en maths et français"
+   },
+   "id": "q54"
+  },
+  {
+   "theme": "Éducation",
+   "q": "L'école doit être obligatoire jusqu'à 18 ans.",
+   "pos": {
+    "melenchon": 1
+   },
+   "src": {
+    "melenchon": "Scolarité obligatoire jusqu'à 18 ans"
+   },
+   "id": "q55"
+  },
+  {
+   "theme": "Éducation",
+   "q": "L'école publique doit être entièrement gratuite (cantine, transport, fournitures).",
+   "pos": {
+    "melenchon": 1
+   },
+   "src": {
+    "melenchon": "Gratuité réelle de l'école publique (cantine, transport, fournitures)"
+   },
+   "id": "q56"
+  },
+  {
+   "theme": "Éducation",
+   "q": "Il faut plus d'heures de français et de maths.",
+   "pos": {
+    "dupont-aignan": 1
+   },
+   "src": {
+    "dupont-aignan": "+30 % d'heures de français et de maths"
+   },
+   "id": "q57"
+  },
+  {
+   "theme": "Sécurité et justice",
+   "q": "La majorité pénale doit être abaissée à 16 ans.",
+   "pos": {
+    "lisnard": 1
+   },
+   "src": {
+    "lisnard": "Majorité pénale à 16 ans"
+   },
+   "id": "q58"
+  },
+  {
+   "theme": "Sécurité et justice",
+   "q": "Les policiers doivent bénéficier d'une présomption de légitime défense.",
+   "pos": {
+    "lepen": 1,
+    "dupont-aignan": 1
+   },
+   "src": {
+    "lepen": "Présomption de légitime défense pour les forces de l'ordre",
+    "dupont-aignan": "Présomption de légitime défense pour les policiers"
+   },
+   "id": "q59"
+  },
+  {
+   "theme": "Sécurité et justice",
+   "q": "Il faut interdire les LBD et les grenades lors des manifestations.",
+   "pos": {
+    "melenchon": 1
+   },
+   "src": {
+    "melenchon": "Interdire LBD, tasers et grenades de désencerclement en maintien de l'ordre"
+   },
+   "id": "q60"
+  },
+  {
+   "theme": "Sécurité et justice",
+   "q": "Il faut recruter beaucoup plus de policiers et de gendarmes.",
+   "pos": {
+    "dupont-aignan": 1
+   },
+   "src": {
+    "dupont-aignan": "10 000 policiers et gendarmes de plus en 5 ans"
+   },
+   "id": "q61"
+  },
+  {
+   "theme": "Sécurité et justice",
+   "q": "Il faut construire beaucoup plus de places de prison.",
+   "pos": {
+    "lepen": 1
+   },
+   "src": {
+    "lepen": "85 000 places de prison"
+   },
+   "id": "q62"
+  },
+  {
+   "theme": "Sécurité et justice",
+   "q": "La reconnaissance faciale ou la vidéo intelligente doivent être autorisées pour la sécurité.",
+   "pos": {
+    "philippe": 1,
+    "retailleau": 1
+   },
+   "src": {
+    "philippe": "« État d'urgence narco » ciblé avec reconnaissance faciale",
+    "retailleau": "Vidéo intelligente autorisée dans un cadre strict"
+   },
+   "id": "q63"
+  },
+  {
+   "theme": "Sécurité et justice",
+   "q": "Il faut rétablir une police de proximité.",
+   "pos": {
+    "melenchon": 1,
+    "glucksmann": 1,
+    "tondelier": 1
+   },
+   "src": {
+    "melenchon": "Rétablir la police de proximité, dissoudre BAC et BRAV-M",
+    "glucksmann": "Police de proximité",
+    "tondelier": "Police nationale de proximité"
+   },
+   "id": "q64"
+  },
+  {
+   "theme": "Sécurité et justice",
+   "q": "Il faut mettre fin aux contrôles d'identité au hasard.",
+   "pos": {
+    "tondelier": 1
+   },
+   "src": {
+    "tondelier": "Fin des contrôles d'identité aléatoires"
+   },
+   "id": "q65"
+  },
+  {
+   "theme": "Sécurité et justice",
+   "q": "Les polices municipales doivent pouvoir être armées.",
+   "pos": {
+    "lisnard": 1
+   },
+   "src": {
+    "lisnard": "Armer les polices municipales volontaires"
+   },
+   "id": "q66"
+  },
+  {
+   "theme": "Sécurité et justice",
+   "q": "Il faut recruter des milliers de magistrats en plus.",
+   "pos": {
+    "tondelier": 1
+   },
+   "src": {
+    "tondelier": "9 000 magistrats de plus en dix ans"
+   },
+   "id": "q67"
+  },
+  {
+   "theme": "Sécurité et justice",
+   "q": "Il faut instaurer la perpétuité réelle.",
+   "pos": {
+    "dupont-aignan": 1
+   },
+   "src": {
+    "dupont-aignan": "Perpétuité réelle"
+   },
+   "id": "q68"
+  },
+  {
+   "theme": "Sécurité et justice",
+   "q": "Il faut supprimer les réductions de peine pour les violences.",
+   "pos": {
+    "lepen": 1
+   },
+   "src": {
+    "lepen": "Supprimer réductions et aménagements de peine pour les violences"
+   },
+   "id": "q69"
+  },
+  {
+   "theme": "Immigration",
+   "q": "La France doit quitter la Cour européenne des droits de l'homme.",
+   "pos": {
+    "zemmour": 1
+   },
+   "src": {
+    "zemmour": "Quitter la CEDH"
+   },
+   "id": "q70"
+  },
+  {
+   "theme": "Immigration",
+   "q": "Il faut régulariser les sans‑papiers qui travaillent.",
+   "pos": {
+    "melenchon": 1,
+    "arthaud": 1
+   },
+   "src": {
+    "melenchon": "Régularisation des travailleurs, étudiants et parents d'élèves sans papiers",
+    "arthaud": "Régulariser les sans-papiers, liberté de circulation"
+   },
+   "id": "q71"
+  },
+  {
+   "theme": "Immigration",
+   "q": "La France doit sortir de l'espace Schengen.",
+   "pos": {
+    "dupont-aignan": 1
+   },
+   "src": {
+    "dupont-aignan": "Sortir de Schengen"
+   },
+   "id": "q72"
+  },
+  {
+   "theme": "Immigration",
+   "q": "Les demandes d'asile ne doivent plus être déposées sur le territoire français.",
+   "pos": {
+    "lepen": 1,
+    "dupont-aignan": 1
+   },
+   "src": {
+    "lepen": "Demandes d'asile traitées uniquement depuis l'étranger",
+    "dupont-aignan": "Asile demandé uniquement aux frontières"
+   },
+   "id": "q73"
+  },
+  {
+   "theme": "Immigration",
+   "q": "Il faut revoir ou dénoncer l'accord de 1968 avec l'Algérie.",
+   "pos": {
+    "lisnard": 1,
+    "philippe": 1
+   },
+   "src": {
+    "lisnard": "Réviser l'accord de 1968 avec l'Algérie",
+    "philippe": "Dénoncer l'accord de 1968 avec l'Algérie"
+   },
+   "id": "q74"
+  },
+  {
+   "theme": "Immigration",
+   "q": "Le Parlement doit voter des quotas d'immigration.",
+   "pos": {
+    "attal": 1
+   },
+   "src": {
+    "attal": "Quotas votés par le Parlement tous les deux ans"
+   },
+   "id": "q75"
+  },
+  {
+   "theme": "Immigration",
+   "q": "Il faut une force européenne de sauvetage des migrants en mer.",
+   "pos": {
+    "glucksmann": 1
+   },
+   "src": {
+    "glucksmann": "Force européenne de sauvetage en mer"
+   },
+   "id": "q76"
+  },
+  {
+   "theme": "Immigration",
+   "q": "Les travailleurs immigrés doivent pouvoir voter.",
+   "pos": {
+    "arthaud": 1
+   },
+   "src": {
+    "arthaud": "Droit de vote des travailleurs immigrés"
+   },
+   "id": "q77"
+  },
+  {
+   "theme": "Écologie et énergie",
+   "q": "La vitesse sur autoroute doit passer à 110 km/h.",
+   "pos": {
+    "tondelier": 1
+   },
+   "src": {
+    "tondelier": "110 km/h sur autoroute"
+   },
+   "id": "q78"
+  },
+  {
+   "theme": "Écologie et énergie",
+   "q": "Les voitures thermiques doivent rester autorisées après 2035.",
+   "pos": {
+    "zemmour": 1
+   },
+   "src": {
+    "zemmour": "Maintenir les voitures thermiques après 2035"
+   },
+   "id": "q79"
+  },
+  {
+   "theme": "Écologie et énergie",
+   "q": "La France doit sortir du marché européen de l'électricité.",
+   "pos": {
+    "lepen": 1,
+    "dupont-aignan": 1
+   },
+   "src": {
+    "lepen": "Sortir du marché européen de l'électricité",
+    "dupont-aignan": "Sortie du marché européen de l'électricité"
+   },
+   "id": "q80"
+  },
+  {
+   "theme": "Écologie et énergie",
+   "q": "Les transports en commun doivent être gratuits.",
+   "pos": {
+    "arthaud": 1
+   },
+   "src": {
+    "arthaud": "Gratuité des transports en commun"
+   },
+   "id": "q81"
+  },
+  {
+   "theme": "Écologie et énergie",
+   "q": "Il faut un moratoire sur les mégabassines.",
+   "pos": {
+    "tondelier": 1
+   },
+   "src": {
+    "tondelier": "Moratoire sur les mégabassines"
+   },
+   "id": "q82"
+  },
+  {
+   "theme": "Écologie et énergie",
+   "q": "Il faut taxer le kérosène des avions.",
+   "pos": {
+    "glucksmann": 1
+   },
+   "src": {
+    "glucksmann": "Taxer le kérosène"
+   },
+   "id": "q83"
+  },
+  {
+   "theme": "Écologie et énergie",
+   "q": "Il faut autoriser les nouvelles techniques génomiques (OGM nouvelle génération).",
+   "pos": {
+    "lisnard": 1
+   },
+   "src": {
+    "lisnard": "Autoriser les nouvelles techniques génomiques"
+   },
+   "id": "q84"
+  },
+  {
+   "theme": "Écologie et énergie",
+   "q": "L'état d'urgence écologique doit entrer dans la Constitution.",
+   "pos": {
+    "glucksmann": 1
+   },
+   "src": {
+    "glucksmann": "État d'urgence écologique dans la Constitution"
+   },
+   "id": "q85"
+  },
+  {
+   "theme": "Écologie et énergie",
+   "q": "Il faut taxer le carbone des produits importés aux frontières de l'Europe.",
+   "pos": {
+    "philippe": 1,
+    "retailleau": 1
+   },
+   "src": {
+    "philippe": "Prix du carbone aux frontières européennes",
+    "retailleau": "Taxe carbone aux frontières élargie"
+   },
+   "id": "q86"
+  },
+  {
+   "theme": "Écologie et énergie",
+   "q": "Il faut renoncer au futur marché carbone européen sur le chauffage et les carburants.",
+   "pos": {
+    "lepen": 1
+   },
+   "src": {
+    "lepen": "Abandonner le marché carbone ETS2"
+   },
+   "id": "q87"
+  },
+  {
+   "theme": "Écologie et énergie",
+   "q": "Il faut investir massivement d'argent public dans l'écologie et le climat.",
+   "pos": {
+    "tondelier": 1,
+    "glucksmann": 1
+   },
+   "src": {
+    "tondelier": "7 Md€ par an pour l'adaptation au changement climatique",
+    "glucksmann": "200 Md€ d'investissement public pour l'écologie sur le quinquennat"
+   },
+   "id": "q88"
+  },
+  {
+   "theme": "Institutions",
+   "q": "Il faut passer à une 6e République avec une Assemblée constituante.",
+   "pos": {
+    "melenchon": 1
+   },
+   "src": {
+    "melenchon": "Constituante pour une 6e République"
+   },
+   "id": "q89"
+  },
+  {
+   "theme": "Institutions",
+   "q": "Il faut supprimer l'article 49.3 de la Constitution.",
+   "pos": {
+    "melenchon": 1
+   },
+   "src": {
+    "melenchon": "Supprimer le 49.3"
+   },
+   "id": "q90"
+  },
+  {
+   "theme": "Institutions",
+   "q": "Le gouvernement doit compter beaucoup moins de ministres.",
+   "pos": {
+    "lisnard": 1
+   },
+   "src": {
+    "lisnard": "Gouvernement de douze ministres"
+   },
+   "id": "q91"
+  },
+  {
+   "theme": "Institutions",
+   "q": "Il faut supprimer un échelon de collectivités locales.",
+   "pos": {
+    "attal": 1
+   },
+   "src": {
+    "attal": "Supprimer un échelon de collectivité"
+   },
+   "id": "q92"
+  },
+  {
+   "theme": "Institutions",
+   "q": "Les réseaux sociaux doivent être interdits aux moins de 15 ans.",
+   "pos": {
+    "glucksmann": 1
+   },
+   "src": {
+    "glucksmann": "Interdire les réseaux sociaux aux moins de 15 ans"
+   },
+   "id": "q93"
+  },
+  {
+   "theme": "Institutions",
+   "q": "Il faut supprimer une grande partie des agences de l'État.",
+   "pos": {
+    "lisnard": 1
+   },
+   "src": {
+    "lisnard": "Supprimer la moitié des agences de l'État"
+   },
+   "id": "q94"
+  },
+  {
+   "theme": "Institutions",
+   "q": "Le mandat présidentiel doit revenir à sept ans.",
+   "pos": {
+    "dupont-aignan": 1
+   },
+   "src": {
+    "dupont-aignan": "Retour au septennat avec référendum révocatoire"
+   },
+   "id": "q95"
+  },
+  {
+   "theme": "Institutions",
+   "q": "Il faut garantir le paiement en espèces et par chèque.",
+   "pos": {
+    "zemmour": 1
+   },
+   "src": {
+    "zemmour": "Garder espèces et chèques"
+   },
+   "id": "q96"
+  },
+  {
+   "theme": "Institutions",
+   "q": "Le ministre de la Justice doit pouvoir donner des instructions aux procureurs.",
+   "pos": {
+    "philippe": 1
+   },
+   "src": {
+    "philippe": "Le garde des Sceaux peut donner des instructions aux procureurs"
+   },
+   "id": "q97"
+  },
+  {
+   "theme": "Institutions",
+   "q": "Il faut un plan contre la corruption et les conflits d'intérêts.",
+   "pos": {
+    "polony": 1
+   },
+   "src": {
+    "polony": "Plan contre la corruption et les conflits d'intérêts"
+   },
+   "id": "q98"
+  },
+  {
+   "theme": "Europe et international",
+   "q": "La France doit quitter l'OTAN.",
+   "pos": {
+    "melenchon": 1
+   },
+   "src": {
+    "melenchon": "Sortie du commandement intégré de l'OTAN puis de l'organisation"
+   },
+   "id": "q99"
+  },
+  {
+   "theme": "Europe et international",
+   "q": "La France doit sortir de l'Union européenne.",
+   "pos": {
+    "dupont-aignan": 1,
+    "attal": -1,
+    "glucksmann": -1,
+    "tondelier": -1
+   },
+   "src": {
+    "dupont-aignan": "Sortie de l'Union européenne",
+    "attal": "Référendum européen pour des « États-Unis d'Europe »",
+    "glucksmann": "Vote à la majorité qualifiée au Conseil européen",
+    "tondelier": "Budget européen porté à 2 % du PIB en 2035"
+   },
+   "id": "q100"
+  },
+  {
+   "theme": "Europe et international",
+   "q": "La dissuasion nucléaire française doit protéger aussi nos partenaires européens.",
+   "pos": {
+    "glucksmann": 1
+   },
+   "src": {
+    "glucksmann": "Étendre la dissuasion nucléaire aux partenaires européens"
+   },
+   "id": "q101"
+  },
+  {
+   "theme": "Europe et international",
+   "q": "Il faut augmenter fortement le budget de la défense.",
+   "pos": {
+    "lisnard": 1,
+    "lepen": 1
+   },
+   "src": {
+    "lisnard": "Défense à 3,5 % du PIB",
+    "lepen": "Budget de la défense à 55 Md€"
+   },
+   "id": "q102"
+  },
+  {
+   "theme": "Europe et international",
+   "q": "L'Europe doit emprunter en commun pour financer sa défense.",
+   "pos": {
+    "glucksmann": 1
+   },
+   "src": {
+    "glucksmann": "Fonds européen de défense de 500 Md€ par emprunt commun"
+   },
+   "id": "q103"
+  },
+  {
+   "theme": "Europe et international",
+   "q": "Il faut suspendre l'accord d'association entre l'Union européenne et Israël.",
+   "pos": {
+    "melenchon": 1
+   },
+   "src": {
+    "melenchon": "Suspendre l'accord d'association UE-Israël"
+   },
+   "id": "q104"
+  },
+  {
+   "theme": "Europe et international",
+   "q": "La France doit retirer ses troupes d'Afrique.",
+   "pos": {
+    "arthaud": 1
+   },
+   "src": {
+    "arthaud": "Retirer les troupes françaises d'Afrique"
+   },
+   "id": "q105"
+  },
+  {
+   "theme": "Europe et international",
+   "q": "Il faut refuser tout nouvel élargissement de l'Union européenne.",
+   "pos": {
+    "zemmour": 1
+   },
+   "src": {
+    "zemmour": "Refuser tout nouvel élargissement"
+   },
+   "id": "q106"
+  },
+  {
+   "theme": "Europe et international",
+   "q": "Les accords commerciaux doivent imposer nos normes aux produits importés.",
+   "pos": {
+    "lisnard": 1,
+    "retailleau": 1
+   },
+   "src": {
+    "lisnard": "Clauses miroirs sur les produits importés",
+    "retailleau": "Clauses de réciprocité dans tous les accords commerciaux"
+   },
+   "id": "q107"
+  },
+  {
+   "theme": "Europe et international",
+   "q": "Il faut arrêter d'importer du gaz, de l'uranium et des engrais russes.",
+   "pos": {
+    "tondelier": 1
+   },
+   "src": {
+    "tondelier": "Arrêt des importations de gaz, uranium et engrais russes"
+   },
+   "id": "q108"
+  },
+  {
+   "theme": "Europe et international",
+   "q": "Il faut harmoniser l'impôt sur les sociétés avec l'Allemagne.",
+   "pos": {
+    "villepin": 1
+   },
+   "src": {
+    "villepin": "Impôt sur les sociétés harmonisé avec l'Allemagne"
+   },
+   "id": "q109"
   }
  ]
 }

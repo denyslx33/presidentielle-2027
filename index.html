@@ -426,7 +426,8 @@ const avatar = (c) => {
   return a;
 };
 let TP = null, GUIDE_FROM = 'accueil';
-let THEME = null, AGENDA = null, AGF = '', RAW = null, EXTRA = [], DUELS = null, QUIZ = null, PMODE = 'theme', CMPA = null, CMPB = null, QI = 0, QANS = null;
+let THEME = null, AGENDA = null, AGF = '', RAW = null, EXTRA = [], DUELS = null, QUIZ = null, PMODE = 'theme', CMPA = null, CMPB = null, QI = 0, QANS = null, RUNQ = null;
+const QN = 20;
 let PERIOD = 0, POLLS = null, CAND = null, ACTU = null, FILTRE = '';
 
 function parseCSV(text) {
@@ -653,16 +654,38 @@ function renderCmp() {
   }
   $('cmp-out').replaceChildren(...out);
 }
-function loadAns() { try { const a = JSON.parse(localStorage.getItem('quizAns') || 'null'); if (Array.isArray(a) && QUIZ && a.length === QUIZ.questions.length) return a; } catch (e) {} return null; }
-function saveAns() { try { localStorage.setItem('quizAns', JSON.stringify(QANS)); } catch (e) {} }
+function lsGet(k) { try { return JSON.parse(localStorage.getItem(k) || 'null'); } catch (e) { return null; } }
+function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+function saveAns() { lsSet('quizRun', { ids: RUNQ.map((q) => q.id), ans: QANS }); }
+function drawRun() {
+  const all = QUIZ.questions; const seen = new Set(lsGet('quizSeen') || []);
+  let fresh = all.filter((q) => !seen.has(q.id));
+  if (fresh.length < QN) { seen.clear(); fresh = all.slice(); }
+  const themes = [...new Set(all.map((q) => q.theme))];
+  const pickW = (arr) => { let t = arr.reduce((a, q) => a + 1 + Object.keys(q.pos).length, 0), r = Math.random() * t; for (const q of arr) { r -= 1 + Object.keys(q.pos).length; if (r <= 0) return q; } return arr[arr.length - 1]; };
+  const out = []; const pool = new Map(themes.map((t) => [t, fresh.filter((q) => q.theme === t)]));
+  let ti = Math.floor(Math.random() * themes.length);
+  while (out.length < QN) {
+    const t = themes[ti % themes.length]; ti++;
+    const arr = pool.get(t); if (!arr.length) { if ([...pool.values()].every((a) => !a.length)) break; continue; }
+    const q = pickW(arr); arr.splice(arr.indexOf(q), 1); out.push(q);
+  }
+  for (let i = out.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [out[i], out[j]] = [out[j], out[i]]; }
+  out.forEach((q) => seen.add(q.id)); lsSet('quizSeen', [...seen]);
+  RUNQ = out; QANS = Array(out.length).fill(null); QI = 0; saveAns();
+}
 function renderQuiz() {
   const box = $('quiz'); if (!QUIZ || !CAND) { box.textContent = 'Chargement…'; return; }
-  const Q = QUIZ.questions;
-  if (!QANS) { QANS = loadAns(); if (QANS && QANS.every((a) => a !== undefined && a !== null)) QI = Q.length; }
-  if (!QANS) QANS = Array(Q.length).fill(null);
+  if (!RUNQ) {
+    const r = lsGet('quizRun'); const byId = new Map(QUIZ.questions.map((q) => [q.id, q]));
+    if (r && Array.isArray(r.ids) && r.ids.every((i) => byId.has(i)) && Array.isArray(r.ans) && r.ans.length === r.ids.length) {
+      RUNQ = r.ids.map((i) => byId.get(i)); QANS = r.ans; QI = QANS.every((a) => a !== null && a !== undefined) ? RUNQ.length : Math.max(0, QANS.findIndex((a) => a === null));
+    } else drawRun();
+  }
+  const Q = RUNQ;
   if (QI === 0 && QANS.every((a) => a === null)) {
     const d = el('div', 'qz');
-    d.append(el('div', 'qq', 'Qui pense comme moi ?'), el('p', null, `${Q.length} affirmations tirées des programmes. Pour chacune, dites si vous êtes d'accord. À la fin, les candidats sont classés selon le nombre de réponses communes.`), el('p', 'muted', "Ce n'est pas une consigne de vote. Chaque position de candidat vient d'une mesure de son programme ou de ses déclarations publiques, et à la fin vous verrez, question par question, la mesure et le lien vers sa source. Beaucoup de candidats n'ont pas encore de programme complet. Vos réponses restent sur votre téléphone."));
+    d.append(el('div', 'qq', 'Qui pense comme moi ?'), el('p', null, `${Q.length} affirmations tirées au hasard parmi ${QUIZ.questions.length}, tous thèmes confondus. Pour chacune, dites si vous êtes d'accord. À la fin, les candidats sont classés selon le nombre de réponses communes. Refaites le test : vous aurez d'autres questions.`), el('p', 'muted', "Ce n'est pas une consigne de vote. Chaque position de candidat vient d'une mesure de son programme ou de ses déclarations publiques, et à la fin vous verrez, question par question, la mesure et le lien vers sa source. Beaucoup de candidats n'ont pas encore de programme complet. Vos réponses restent sur votre téléphone."));
     const b = el('button', 'qbtn', 'Commencer'); b.style.cssText = 'width:100%;background:var(--accent);color:#fff;border-color:var(--accent)'; b.onclick = () => { QI = 0; renderQuizQ(); }; d.append(b);
     box.replaceChildren(d); return;
   }
@@ -670,7 +693,7 @@ function renderQuiz() {
   renderQuizQ();
 }
 function renderQuizQ() {
-  const Q = QUIZ.questions, q = Q[QI], box = $('quiz');
+  const Q = RUNQ, q = Q[QI], box = $('quiz');
   const d = el('div', 'qz');
   d.append(el('div', 'qt', `Question ${QI + 1} sur ${Q.length} · ${q.theme}`), el('div', 'qq', q.q));
   const ans = el('div', 'ans');
@@ -682,12 +705,12 @@ function renderQuizQ() {
   d.append(ans);
   const pr = el('div', 'prog'); const pi = el('i'); pi.style.width = (QI / Q.length * 100) + '%'; pr.append(pi); d.append(pr);
   const nav = el('div', 'qnav'); const bk = el('button', null, '‹ Précédente'); bk.disabled = QI === 0; bk.style.visibility = QI ? 'visible' : 'hidden'; bk.onclick = () => { QI--; renderQuizQ(); };
-  const rs = el('button', null, 'Recommencer'); rs.onclick = resetQuiz; nav.append(bk, rs); d.append(nav);
+  const rs = el('button', null, 'Nouveau test'); rs.onclick = resetQuiz; nav.append(bk, rs); d.append(nav);
   box.replaceChildren(d);
 }
-function resetQuiz() { QANS = Array(QUIZ.questions.length).fill(null); QI = 0; saveAns(); renderQuiz(); }
+function resetQuiz() { drawRun(); renderQuiz(); }
 function renderQuizRes() {
-  const Q = QUIZ.questions, box = $('quiz');
+  const Q = RUNQ, box = $('quiz');
   const rows = CAND.principaux.map((c) => {
     let n = 0, ok = 0;
     Q.forEach((q, i) => { const a = QANS[i], p = q.pos[c.id]; if (a && p) { n++; if (a === p) ok++; } });
@@ -737,7 +760,7 @@ function renderQuizRes() {
   ]) { const o = el('div', 'other'); o.append(link(nom, url), el('div', 'muted', txt)); ot.append(o); }
   ot.append(el('p', 'muted', "Ces sites ne sont pas liés à cette appli. Aucun test ne remplace la lecture des programmes."));
   d.insertBefore(ot, det);
-  const nav = el('div', 'qnav'); const mod = el('button', null, '‹ Modifier mes réponses'); mod.onclick = () => { QI = 0; renderQuizQ(); }; const rs = el('button', null, 'Recommencer'); rs.onclick = resetQuiz; nav.append(mod, rs); d.append(nav);
+  const nav = el('div', 'qnav'); const mod = el('button', null, '‹ Modifier mes réponses'); mod.onclick = () => { QI = 0; renderQuizQ(); }; const rs = el('button', null, 'Nouveau test'); rs.onclick = resetQuiz; nav.append(mod, rs); d.append(nav);
   box.replaceChildren(d);
 }
 
