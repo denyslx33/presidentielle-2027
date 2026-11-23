@@ -131,6 +131,7 @@ details { margin-top:16px; } summary { cursor:pointer; }
       <h3>Retraits</h3>
       <div id="retraits" class="muted"></div>
       <p class="muted" id="cand-maj" style="margin-top:12px"></p>
+      <details class="muted"><summary>Crédits photos</summary><div id="credits"></div></details>
     </div>
   </section>
 
@@ -364,6 +365,14 @@ function renderCandidats() {
   $('fin-list').replaceChildren(...sig.map((c) => { const r = el('div', 'row'); const rr = el('div', 'r'); if (c.finances) { rr.append(c.finances.texte + ' '); rr.append(link('source', c.finances.url)); } else rr.append('Pas d’information publique fiable'); r.append(el('div', 'l', c.nom), rr); return r; }));
 }
 
+async function renderCredits() {
+  try {
+    const r = await fetch('data/portraits/credits.json', { cache: 'no-store' }); if (!r.ok) return; const cr = await r.json();
+    const list = (CAND ? CAND.principaux : []).slice().sort((a, b) => nomFamille(a.nom).localeCompare(nomFamille(b.nom), 'fr'));
+    $('credits').replaceChildren(...list.filter((c) => cr[c.id]).map((c) => { const p = el('p'); p.append(c.nom + ' : '); if (cr[c.id].url) p.append(link(cr[c.id].texte, cr[c.id].url)); else p.append(cr[c.id].texte); return p; }));
+  } catch (e) {}
+}
+
 function renderProgrammes() {
   if (!CAND) return;
   const themes = CAND.themes || [];
@@ -406,7 +415,7 @@ async function load() {
   const st = $('status');
   if (!POLLS) { st.textContent = 'Impossible de charger les sondages. Vérifiez la connexion.'; st.className = 'muted err'; }
   else st.textContent = (mv.live ? 'Mis à jour à ' + new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }) : 'Hors ligne : derniers chiffres enregistrés') + ' · premier tour le 18 avril 2027';
-  renderSondages(); renderCandidats(); renderProgrammes(); renderActu();
+  renderSondages(); renderCandidats(); renderProgrammes(); renderActu(); renderCredits();
 }
 
 function showView(v) {
