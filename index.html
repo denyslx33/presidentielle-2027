@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Présidentielle 2027</title>
+<meta name="theme-color" content="#1f2a44">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Présidentielle 2027">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-192.png">
+<link rel="manifest" href="manifest.json">
+<style>
+:root { --bg:#f6f5f2; --panel:#fff; --fg:#1b1b1f; --muted:#6b6b73; --line:#e4e2dc; --up:#1f8a4c; --down:#c2412d; --accent:#3b6fe0; --warn-bg:#fff6e0; --warn-fg:#7a5a00; }
+@media (prefers-color-scheme: dark) { :root { --bg:#141518; --panel:#1d1f24; --fg:#ececef; --muted:#9a9aa3; --line:#2d3037; --up:#4cc27f; --down:#ef7a63; --accent:#7da2ff; --warn-bg:#2d2615; --warn-fg:#e8c873; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; -webkit-text-size-adjust:100%; }
+main { max-width:760px; margin:0 auto; padding: calc(env(safe-area-inset-top) + 16px) 16px calc(env(safe-area-inset-bottom) + 84px); }
+h1 { font: 600 24px/1.2 Georgia, "Times New Roman", serif; margin:0 0 6px; }
+h2 { font-size:17px; margin:0 0 4px; }
+h3 { font-size:15px; margin:14px 0 4px; }
+p { margin: 0 0 8px; }
+a { color: var(--accent); }
+.muted { color:var(--muted); font-size:13px; }
+section.view { display:none; } section.view.on { display:block; }
+.block { margin-top:20px; }
+.cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:8px; margin-top:10px; }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:10px 12px; }
+.name { font-size:13px; font-weight:600; display:flex; align-items:center; gap:6px; }
+.dot { width:10px; height:10px; border-radius:50%; flex:none; display:inline-block; }
+.party { font-size:12px; color:var(--muted); }
+.val { font: 400 28px/1.2 Georgia, serif; font-variant-numeric:tabular-nums; }
+.evo { font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums; }
+.up { color:var(--up); } .down { color:var(--down); }
+.panel { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px; }
+.bar { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px; margin-bottom:8px; }
+.seg { display:inline-flex; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+.seg button { font:inherit; font-size:13px; background:transparent; color:var(--muted); border:0; padding:5px 11px; }
+.seg button.on { background:var(--bg); color:var(--fg); font-weight:600; }
+#chart { position:relative; min-height:300px; touch-action:pan-y; }
+#chart svg text { fill:var(--muted); font-size:11px; }
+.legend { display:flex; flex-wrap:wrap; gap:4px 14px; margin-top:8px; font-size:12px; }
+.legend span { display:inline-flex; align-items:center; gap:5px; }
+.tip { position:absolute; pointer-events:none; background:var(--panel); border:1px solid var(--line); box-shadow:0 4px 18px rgba(0,0,0,.15); border-radius:10px; padding:8px 10px; font-size:12px; min-width:170px; }
+.tip .h { color:var(--muted); margin-bottom:4px; }
+.tip .r { display:flex; justify-content:space-between; gap:12px; font-variant-numeric:tabular-nums; }
+.wrap { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; font-size:13px; font-variant-numeric:tabular-nums; }
+th, td { padding:6px 8px; border-bottom:1px solid var(--line); text-align:right; white-space:nowrap; }
+th:nth-child(-n+2), td:nth-child(-n+2) { text-align:left; }
+th { color:var(--muted); font-weight:600; }
+details { margin-top:16px; } summary { cursor:pointer; }
+.err { color:var(--down); }
+.tabs { position:fixed; left:0; right:0; bottom:0; display:flex; background:var(--panel); border-top:1px solid var(--line); padding-bottom: env(safe-area-inset-bottom); z-index:10; }
+.tabs button { flex:1; font:inherit; font-size:11px; background:none; border:0; color:var(--muted); padding:8px 2px 9px; display:flex; flex-direction:column; align-items:center; gap:2px; }
+.tabs button.on { color:var(--accent); font-weight:600; }
+.tabs svg { width:22px; height:22px; stroke:currentColor; fill:none; stroke-width:1.8; }
+.cand { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin-top:10px; }
+.cand summary { list-style:none; display:flex; justify-content:space-between; align-items:center; gap:10px; }
+.cand summary::-webkit-details-marker { display:none; }
+.cand .who { font-weight:600; }
+.cand .pct { font: 400 20px Georgia, serif; font-variant-numeric:tabular-nums; }
+.cand ul { margin:4px 0 8px; padding-left:18px; }
+.cand li { margin-bottom:3px; }
+.tag { display:inline-block; font-size:11px; padding:2px 7px; border-radius:20px; background:var(--warn-bg); color:var(--warn-fg); margin-left:4px; }
+.note { background:var(--warn-bg); color:var(--warn-fg); border-radius:10px; padding:10px 12px; font-size:13px; margin:10px 0; }
+.news { border-bottom:1px solid var(--line); padding:10px 0; }
+.news .d { font-size:12px; color:var(--muted); }
+.chips { display:flex; flex-wrap:wrap; gap:6px; margin:10px 0; }
+.chips button { font:inherit; font-size:12px; border:1px solid var(--line); background:var(--panel); color:var(--fg); border-radius:20px; padding:4px 10px; }
+.chips button.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+.row { display:flex; justify-content:space-between; gap:10px; padding:8px 0; border-bottom:1px solid var(--line); }
+.row .l { font-weight:600; }
+.row .r { text-align:right; font-size:13px; color:var(--muted); max-width:60%; }
+.timeline { padding-left:14px; border-left:2px solid var(--line); margin:8px 0 0 4px; }
+.timeline div { margin:0 0 10px; position:relative; }
+.timeline div::before { content:""; position:absolute; left:-20px; top:5px; width:10px; height:10px; border-radius:50%; background:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Présidentielle 2027</h1>
+  <p class="muted" id="status">Chargement…</p>
+
+  <!-- SONDAGES -->
+  <section class="view on" id="v-sondages">
+    <p id="lede"></p>
+    <div class="block">
+      <h2>Dernier sondage</h2>
+      <p class="muted" id="source"></p>
+      <div class="cards" id="cards"></div>
+    </div>
+    <div class="block panel">
+      <div class="bar">
+        <h2>Sondage par sondage</h2>
+        <div class="seg" id="seg"><button data-p="3">3 mois</button><button data-p="6">6 mois</button><button data-p="0" class="on">Tout</button></div>
+      </div>
+      <div id="chart"></div>
+      <div class="legend" id="legend"></div>
+      <p class="muted" style="margin-top:8px">Chaque point est un sondage. Touchez la courbe pour voir l'institut et les scores. Les instituts n'ont pas tous la même méthode : une partie des zigzags vient de là.</p>
+    </div>
+    <div class="block">
+      <h2>Derniers sondages</h2>
+      <div class="wrap"><table>
+        <thead><tr><th>Fin d'enquête</th><th>Institut</th><th>Le Pen</th><th>Mélenchon</th><th>Lisnard</th><th>Glucksmann</th><th>Philippe</th><th>Retailleau</th><th>Attal</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table></div>
+    </div>
+    <details class="muted">
+      <summary>Méthode</summary>
+      <p>Tous les sondages déposés à la Commission des sondages, via la compilation ouverte Mieux Voter, rechargée à chaque ouverture, complétée par les sondages publiés mais pas encore compilés (chiffres relevés dans le rapport officiel de l'institut, marqués « ajout manuel »). Premier tour uniquement, depuis janvier 2026. Les enquêtes commandées par un parti ou un candidat sont exclues. Quand un institut teste plusieurs listes de candidats, le score affiché est la moyenne des listes où la personne figure. L'évolution compare au précédent sondage du même institut. Un sondage n'est pas une prévision : marge d'erreur d'environ 2 à 3 points.</p>
+    </details>
+  </section>
+
+  <!-- CANDIDATS -->
+  <section class="view" id="v-candidats">
+    <p>Les candidats testés dans les sondages, par ordre alphabétique. Touchez un nom pour voir sa fiche.</p>
+    <div id="candlist"></div>
+    <div class="block">
+      <h3>Autres candidatures déclarées</h3>
+      <p class="muted" id="autres"></p>
+      <h3>Retraits</h3>
+      <div id="retraits" class="muted"></div>
+      <p class="muted" id="cand-maj" style="margin-top:12px"></p>
+    </div>
+  </section>
+
+  <!-- ACTU -->
+  <section class="view" id="v-actu">
+    <div class="chips" id="chips"></div>
+    <div id="newslist"></div>
+    <p class="muted" id="actu-maj" style="margin-top:12px"></p>
+  </section>
+
+  <!-- SIGNATURES & ARGENT -->
+  <section class="view" id="v-signatures">
+    <h2>Les 500 signatures</h2>
+    <p>Pour être candidat, il faut 500 parrainages d'élus venant d'au moins 30 départements. Le Conseil constitutionnel les publie au fur et à mesure, au moins deux fois par semaine, pendant la collecte.</p>
+    <div class="note">La collecte officielle n'a pas encore commencé. Les chiffres ci-dessous sont des <b>promesses revendiquées</b> par les candidats ou leur entourage, rapportées par la presse. Ils seront remplacés par les chiffres officiels dès leur publication.</div>
+    <div id="sig-list"></div>
+    <h3>Calendrier</h3>
+    <div class="timeline">
+      <div><b>Au plus tard le 7 février 2027</b><br><span class="muted">Décret de convocation : début officiel de la collecte</span></div>
+      <div><b>12 mars 2027</b><br><span class="muted">Fin de la collecte des parrainages</span></div>
+      <div><b>26 mars 2027 au plus tard</b><br><span class="muted">Liste officielle des candidats</span></div>
+      <div><b>18 avril 2027</b><br><span class="muted">Premier tour</span></div>
+      <div><b>2 mai 2027</b><br><span class="muted">Second tour</span></div>
+    </div>
+
+    <h2 style="margin-top:26px">Budgets et financement</h2>
+    <p>Chaque candidat peut dépenser au maximum <b>16,851 M€</b> au premier tour, et <b>22,509 M€</b> s'il est au second. Les dépenses comptent depuis le 1er avril 2026. L'argent vient surtout de prêts bancaires, des partis et des dons de particuliers (4 600 € maximum par personne). L'État rembourse une partie des dépenses aux candidats qui dépassent 5 % des voix.</p>
+    <div class="note">Les comptes de campagne officiels ne sont publiés qu'après l'élection. Avant, on ne connaît que ce que les candidats et leurs partis annoncent.</div>
+    <div id="fin-list"></div>
+    <p class="muted" style="margin-top:10px">Sources des règles : <a href="https://www.info.gouv.fr/actualite/presidentielle-2027-date-a-retenir-et-informations-cles" target="_blank" rel="noopener">info.gouv.fr</a>, <a href="https://www.amf.asso.fr/documents-parrainage-candidats-election-presidentielle-amf-demande-anonymat/43305" target="_blank" rel="noopener">AMF</a>, <a href="https://www.publicsenat.fr/actualites/politique/ouverture-des-comptes-de-campagne-au-1er-avril-ce-que-ca-change-pour-les-candidats-potentiels" target="_blank" rel="noopener">Public Sénat</a>.</p>
+  </section>
+</main>
+
+<nav class="tabs" id="tabs">
+  <button data-v="sondages" class="on"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Sondages</button>
+  <button data-v="candidats"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5M16 4.8a3.5 3.5 0 010 6.4M18 14.7c2 .7 3.2 2.5 3.6 5.3"/></svg>Candidats</button>
+  <button data-v="actu"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h10M7 17h6"/></svg>Actu</button>
+  <button data-v="signatures"><svg viewBox="0 0 24 24"><path d="M4 17c3-1 4-6 6-6s1 5 3 5 2-3 4-3 2 2 3 2M4 21h16"/></svg>Signatures</button>
+</nav>
+
+<script>
+const URL_MV = 'https://raw.githubusercontent.com/MieuxVoter/presidentielle2027/refs/heads/main/presidentielle2027.csv';
+const EXCLUS = new Set(['Parti du vote blanc', 'Sébastien Bonnal']);
+const COLORS = ['#3b6fe0','#d64a3f','#e8a23a','#2f9e8f','#8a5cd1','#d0629b','#5b8c2a','#7a7f89'];
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+const link = (txt, url) => { const a = el('a', null, txt); if (/^https?:\/\//.test(url)) { a.href = url; a.target = '_blank'; a.rel = 'noopener'; } return a; };
+const fmt = (v) => v == null ? '–' : v.toFixed(1).replace('.', ',');
+const fdate = (s) => { const [y, m, d] = s.split('-'); return d + '/' + m + '/' + y; };
+const MOIS = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
+const fdateLong = (s) => { const [y, m, d] = s.split('-'); return +d + ' ' + MOIS[+m - 1] + ' ' + y; };
+const nomFamille = (n) => n.split(' ').slice(1).join(' ').replace(/^de /, '');
+let PERIOD = 0, POLLS = null, CAND = null, ACTU = null, FILTRE = '';
+
+function parseCSV(text) {
+  const rows = []; let row = [], f = '', q = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (q) { if (c === '"') { if (text[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += c; }
+    else if (c === '"') q = true;
+    else if (c === ',') { row.push(f); f = ''; }
+    else if (c === '\n') { row.push(f); rows.push(row); row = []; f = ''; }
+    else if (c !== '\r') f += c;
+  }
+  if (f || row.length) { row.push(f); rows.push(row); }
+  const h = rows.shift();
+  return rows.filter((r) => r.length === h.length).map((r) => Object.fromEntries(h.map((k, i) => [k, r[i]])));
+}
+
+function build(raw, extra) {
+  const have = new Set(raw.filter((r) => r.tour === '1er Tour').map((r) => r.fin_enquete + '|' + r.nom_institut));
+  const ext = extra.filter((r) => !have.has(r.fin_enquete + '|' + r.nom_institut)).map((r) => ({ ...r, manuel: true }));
+  const agg = new Map();
+  for (const r of raw.concat(ext)) {
+    if (r.tour !== '1er Tour' || r.fin_enquete < '2026-01-01' || EXCLUS.has(r.commanditaire)) continue;
+    const v = parseFloat(r.intentions); if (isNaN(v)) continue;
+    const k = r.fin_enquete + '|' + r.nom_institut + '|' + r.commanditaire;
+    if (!agg.has(k)) agg.set(k, { date: r.fin_enquete, institut: r.nom_institut, commanditaire: r.commanditaire, manuel: !!r.manuel, src: r.source || '', c: new Map() });
+    const p = agg.get(k);
+    if (!p.c.has(r.complete_name)) p.c.set(r.complete_name, { parti: r.parti, v: [] });
+    p.c.get(r.complete_name).v.push(v);
+  }
+  const polls = [...agg.values()].map((p) => ({ ...p, key: p.date + '|' + p.institut,
+    scores: [...p.c].map(([nom, o]) => ({ nom, parti: o.parti, v: o.v.reduce((a, b) => a + b, 0) / o.v.length })) }));
+  polls.sort((a, b) => a.key < b.key ? 1 : -1);
+  return polls;
+}
+
+function latestScore(nom) {
+  if (!POLLS) return null;
+  for (const p of POLLS) { const s = p.scores.find((x) => x.nom === nom); if (s) return { v: s.v, p }; }
+  return null;
+}
+
+function renderSondages() {
+  const polls = POLLS; if (!polls || !polls.length) return;
+  const last = polls[0];
+  const prev = polls.slice(1).find((p) => p.institut === last.institut);
+  const prevMap = new Map(prev ? prev.scores.map((s) => [s.nom, s.v]) : []);
+  const cur = last.scores.slice().sort((a, b) => b.v - a.v);
+  const names = cur.slice(0, 8).map((s) => s.nom);
+  const col = new Map(names.map((n, i) => [n, COLORS[i]]));
+  if (col.has('Marine Le Pen')) col.set('Jordan Bardella', col.get('Marine Le Pen'));
+  const [a, b, c] = cur;
+  $('lede').textContent = `${a.nom} est en tête avec ${fmt(a.v)} %, devant ${b.nom} (${fmt(b.v)} %) et ${c.nom} (${fmt(c.v)} %).`;
+  const src = $('source'); src.replaceChildren(`${last.institut} pour ${last.commanditaire}, enquête terminée le ${fdate(last.date)}.` + (prev ? ` Évolution par rapport à son sondage du ${fdate(prev.date)}.` : ''));
+  if (last.manuel) { src.append(' '); src.append(el('span', 'tag', 'ajout manuel')); if (last.src) { src.append(' '); src.append(link('rapport', last.src)); } }
+  $('cards').replaceChildren(...cur.map((s) => {
+    const card = el('div', 'card');
+    const n = el('div', 'name'); const d = el('span', 'dot'); d.style.background = col.get(s.nom) || '#9a9aa3'; n.append(d, el('span', null, s.nom));
+    const e = el('div', 'evo');
+    if (prevMap.has(s.nom)) { const dv = Math.round((s.v - prevMap.get(s.nom)) * 10) / 10; e.append(el('span', dv > 0 ? 'up' : dv < 0 ? 'down' : '', (dv > 0 ? '+' : '') + fmt(dv) + ' pt')); }
+    else e.textContent = 'non testé la fois précédente';
+    card.append(n, el('div', 'party', s.parti || 'Sans étiquette'), el('div', 'val', fmt(s.v) + ' %'), e);
+    return card;
+  }));
+  $('legend').replaceChildren(...names.map((nm) => { const s = el('span'); const d = el('i', 'dot'); d.style.background = col.get(nm); s.append(d, nm); return s; }));
+  const order = ['Marine Le Pen','Jean-Luc Mélenchon','David Lisnard','Raphaël Glucksmann','Édouard Philippe','Bruno Retailleau','Gabriel Attal'];
+  $('tbody').replaceChildren(...polls.slice(0, 12).map((p) => {
+    const m = new Map(p.scores.map((s) => [s.nom, s.v]));
+    const tr = el('tr');
+    [fdate(p.date), p.institut + (p.manuel ? ' *' : ''), ...order.map((o) => fmt(m.has(o) ? m.get(o) : null))].forEach((c) => tr.append(el('td', null, c)));
+    return tr;
+  }));
+  drawChart(polls, names, col);
+}
+
+function drawChart(polls, names, col) {
+  const box = $('chart'); const NS = 'http://www.w3.org/2000/svg';
+  if (!box.offsetParent) return;
+  const keep = new Set([...names, 'Jordan Bardella']);
+  const asc = polls.slice().reverse(); const t = (s) => Date.parse(s);
+  const tmax = t(asc[asc.length - 1].date);
+  const tmin = PERIOD ? tmax - PERIOD * 30.5 * 864e5 : t(asc[0].date);
+  const vis = asc.filter((p) => t(p.date) >= tmin);
+  const W = box.clientWidth || 340, H = W < 500 ? 290 : 350, m = { t: 10, r: 36, b: 24, l: 34 };
+  let ymax = 0; for (const p of vis) for (const s of p.scores) if (keep.has(s.nom)) ymax = Math.max(ymax, s.v);
+  ymax = Math.ceil(Math.max(40, ymax + 2) / 10) * 10;
+  const x = (d) => m.l + (t(d) - tmin) / Math.max(1, tmax - tmin) * (W - m.l - m.r);
+  const y = (v) => H - m.b - v / ymax * (H - m.t - m.b);
+  const mk = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.append(e); return e; };
+  const svg = mk('svg', { width: '100%', height: H, viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Intentions de vote sondage par sondage' });
+  for (let v = 0; v <= ymax; v += 10) { mk('line', { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v), stroke: 'var(--line)' }, svg); mk('text', { x: m.l - 6, y: y(v) + 4, 'text-anchor': 'end' }, svg).textContent = v + ' %'; }
+  const d0 = new Date(tmin), months = [];
+  for (let dt = new Date(Date.UTC(d0.getUTCFullYear(), d0.getUTCMonth() + 1, 1)); dt.getTime() <= tmax; dt = new Date(Date.UTC(dt.getUTCFullYear(), dt.getUTCMonth() + 1, 1))) months.push(dt);
+  const step = Math.ceil(months.length / (W < 500 ? 4 : 8));
+  months.forEach((dt, i) => { if (i % step) return; mk('text', { x: x(dt.toISOString().slice(0, 10)), y: H - 6, 'text-anchor': 'middle' }, svg).textContent = MOIS[dt.getUTCMonth()]; });
+  const series = new Map();
+  for (const p of vis) for (const s of p.scores) if (keep.has(s.nom)) { if (!series.has(s.nom)) series.set(s.nom, []); series.get(s.nom).push([x(p.date), y(s.v), s.v]); }
+  const ends = [];
+  for (const [nom, pts] of series) {
+    mk('path', { d: 'M' + pts.map((q) => q[0].toFixed(1) + ',' + q[1].toFixed(1)).join('L'), fill: 'none', stroke: col.get(nom), 'stroke-width': 1.6, 'stroke-dasharray': nom === 'Jordan Bardella' ? '4 3' : '' }, svg);
+    for (const q of pts) mk('circle', { cx: q[0], cy: q[1], r: 2.3, fill: col.get(nom) }, svg);
+    const lq = pts[pts.length - 1]; if (lq[0] > W - m.r - 30) ends.push({ nom, yy: lq[1], v: lq[2] });
+  }
+  ends.sort((a, b) => a.yy - b.yy); let ly = -1e9;
+  for (const e of ends) { e.yy = Math.max(e.yy, ly + 12); ly = e.yy; const tx = mk('text', { x: W - m.r + 4, y: e.yy + 4, 'font-weight': 700 }, svg); tx.style.fill = col.get(e.nom); tx.textContent = fmt(e.v); }
+  const guide = mk('line', { y1: m.t, y2: H - m.b, stroke: 'var(--muted)', opacity: 0 }, svg);
+  const hit = mk('rect', { x: m.l, y: m.t, width: W - m.l - m.r, height: H - m.t - m.b, fill: 'transparent' }, svg);
+  const tip = el('div', 'tip'); tip.hidden = true;
+  const show = (ev) => {
+    const r = svg.getBoundingClientRect(); const mx = (ev.clientX - r.left) * W / r.width;
+    let best = null, bd = 1e9; for (const p of vis) { const dd = Math.abs(x(p.date) - mx); if (dd < bd) { bd = dd; best = p; } }
+    if (!best) return; const xx = x(best.date);
+    guide.setAttribute('x1', xx); guide.setAttribute('x2', xx); guide.setAttribute('opacity', 1);
+    tip.replaceChildren(el('div', 'h', best.institut + ', ' + fdate(best.date)), ...best.scores.filter((s) => keep.has(s.nom)).sort((a, b) => b.v - a.v).map((s) => { const row = el('div', 'r'); const a = el('span', null, s.nom); a.style.color = col.get(s.nom); row.append(a, el('span', null, fmt(s.v) + ' %')); return row; }));
+    tip.hidden = false; const tw = tip.offsetWidth; const px = xx * r.width / W; let left = px + 12; if (left + tw > r.width) left = px - tw - 12;
+    tip.style.left = Math.max(0, left) + 'px'; tip.style.top = '8px';
+  };
+  hit.addEventListener('pointermove', show); hit.addEventListener('pointerdown', show);
+  hit.addEventListener('pointerleave', () => { tip.hidden = true; guide.setAttribute('opacity', 0); });
+  box.replaceChildren(svg, tip);
+}
+
+function renderCandidats() {
+  if (!CAND) return;
+  const list = CAND.principaux.slice().sort((a, b) => nomFamille(a.nom).localeCompare(nomFamille(b.nom), 'fr'));
+  $('candlist').replaceChildren(...list.map((c) => {
+    const d = el('details', 'cand'); d.id = 'c-' + c.id;
+    const s = el('summary'); const left = el('div'); left.append(el('div', 'who', c.nom), el('div', 'party', c.parti));
+    const ls = latestScore(c.nom); const right = el('div', 'pct', ls ? fmt(ls.v) + ' %' : '');
+    s.append(left, right); d.append(s);
+    d.append(el('p', null, c.role), el('p', 'muted', c.annonce));
+    if (ls) d.append(el('p', 'muted', `Score dans son dernier sondage : ${fmt(ls.v)} % (${ls.p.institut}, ${fdate(ls.p.date)}).`));
+    d.append(el('h3', null, 'Quelques propositions'));
+    if (c.mesures.length) { const ul = el('ul'); c.mesures.forEach((m) => ul.append(el('li', null, m))); d.append(ul); const p = el('p', 'muted'); p.append('Source : ', link(c.source_mesures.nom, c.source_mesures.url)); d.append(p); }
+    else d.append(el('p', 'muted', 'Programme 2027 pas encore publié ou pas encore relevé.'));
+    d.append(el('h3', null, 'Signatures'));
+    const sp = el('p'); sp.append(c.parrainages.texte); const t1 = el('span', 'tag', 'non officiel'); sp.append(' ', t1); d.append(sp);
+    if (c.parrainages.url) { const p = el('p', 'muted'); p.append('Source : ', link(c.parrainages.source || 'voir', c.parrainages.url)); d.append(p); }
+    d.append(el('h3', null, 'Financement'));
+    if (c.finances) { d.append(el('p', null, c.finances.texte)); const p = el('p', 'muted'); p.append('Source : ', link(c.finances.source, c.finances.url)); d.append(p); }
+    else d.append(el('p', 'muted', "Pas d'information publique fiable à ce jour."));
+    const news = (ACTU ? ACTU.items : []).filter((n) => n.qui.includes(c.id)).slice(0, 3);
+    if (news.length) { d.append(el('h3', null, 'Actu')); news.forEach((n) => { const p = el('p'); p.append(el('span', 'muted', fdateLong(n.date) + ' · '), n.texte, ' '); p.append(link(n.source, n.url)); d.append(p); }); }
+    return d;
+  }));
+  $('autres').textContent = CAND.autres.join(', ') + '.';
+  $('retraits').replaceChildren(...CAND.retraits.map((r) => { const p = el('p'); p.append(el('b', null, r.nom), ' : ', r.texte, ' '); p.append(link('source', r.url)); return p; }));
+  const m = $('cand-maj'); m.replaceChildren('Fiches mises à jour le ' + fdateLong(CAND.maj) + '. Liste : '); m.append(link(CAND.source_liste.nom, CAND.source_liste.url));
+
+  const sig = list;
+  $('sig-list').replaceChildren(...sig.map((c) => { const r = el('div', 'row'); const rr = el('div', 'r'); rr.append(c.parrainages.texte + ' '); if (c.parrainages.url) rr.append(link('source', c.parrainages.url)); r.append(el('div', 'l', c.nom), rr); return r; }));
+  $('fin-list').replaceChildren(...sig.map((c) => { const r = el('div', 'row'); const rr = el('div', 'r'); if (c.finances) { rr.append(c.finances.texte + ' '); rr.append(link('source', c.finances.url)); } else rr.append('Pas d’information publique fiable'); r.append(el('div', 'l', c.nom), rr); return r; }));
+}
+
+function renderActu() {
+  if (!ACTU || !CAND) return;
+  const names = new Map(CAND.principaux.map((c) => [c.id, nomFamille(c.nom)]));
+  const ids = [...new Set(ACTU.items.flatMap((n) => n.qui))].sort((a, b) => (names.get(a) || a).localeCompare(names.get(b) || b, 'fr'));
+  const chips = [['', 'Tout'], ...ids.map((i) => [i, names.get(i) || i])];
+  $('chips').replaceChildren(...chips.map(([id, label]) => { const b = el('button', FILTRE === id ? 'on' : '', label); b.onclick = () => { FILTRE = id; renderActu(); }; return b; }));
+  const items = ACTU.items.filter((n) => !FILTRE || n.qui.includes(FILTRE));
+  $('newslist').replaceChildren(...items.map((n) => { const d = el('div', 'news'); d.append(el('div', 'd', fdateLong(n.date) + ' · ' + n.source)); const p = el('div'); p.append(n.texte, ' '); p.append(link('Lire', n.url)); d.append(p); return d; }));
+  $('actu-maj').textContent = 'Actu mise à jour le ' + fdateLong(ACTU.maj) + '. Résumés rédigés à partir des articles cités.';
+}
+
+async function getText(url, key) {
+  try {
+    const r = await fetch(url + (url.includes('?') ? '&' : '?') + 't=' + Date.now(), { cache: 'no-store' });
+    if (!r.ok) throw new Error(r.status);
+    const t = await r.text(); try { localStorage.setItem(key, t); } catch (e) {} return { t, live: true };
+  } catch (e) { let t = null; try { t = localStorage.getItem(key); } catch (er) {} return { t, live: false }; }
+}
+
+async function load() {
+  const [mv, aj, ca, ac] = await Promise.all([getText(URL_MV, 'mv'), getText('data/ajouts.csv', 'aj'), getText('data/candidats.json', 'ca'), getText('data/actu.json', 'ac')]);
+  if (mv.t) POLLS = build(parseCSV(mv.t), aj.t ? parseCSV(aj.t) : []);
+  if (ca.t) CAND = JSON.parse(ca.t);
+  if (ac.t) ACTU = JSON.parse(ac.t);
+  const st = $('status');
+  if (!POLLS) { st.textContent = 'Impossible de charger les sondages. Vérifiez la connexion.'; st.className = 'muted err'; }
+  else st.textContent = (mv.live ? 'Mis à jour à ' + new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }) : 'Hors ligne : derniers chiffres enregistrés') + ' · premier tour le 18 avril 2027';
+  renderSondages(); renderCandidats(); renderActu();
+}
+
+function showView(v) {
+  for (const b of document.querySelectorAll('#tabs button')) b.classList.toggle('on', b.dataset.v === v);
+  for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-' + v);
+  if (v === 'sondages') renderSondages();
+  scrollTo(0, 0);
+  try { history.replaceState(null, '', '#' + v); } catch (e) {}
+}
+for (const b of document.querySelectorAll('#tabs button')) b.addEventListener('click', () => showView(b.dataset.v));
+for (const b of document.querySelectorAll('#seg button')) b.addEventListener('click', () => { PERIOD = +b.dataset.p; for (const o of document.querySelectorAll('#seg button')) o.classList.toggle('on', o === b); renderSondages(); });
+let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(renderSondages, 150); });
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') load(); });
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+const start = (location.hash || '').slice(1); if (['candidats', 'actu', 'signatures'].includes(start)) showView(start);
+load();
+</script>
+</body>
+</html>
