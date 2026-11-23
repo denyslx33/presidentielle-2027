@@ -1,52 +1,366 @@
 {
-  "maj": "2026-11-23",
-  "note": "Positions déduites uniquement des mesures publiées résumées dans l'appli (voir chaque fiche). Quand un candidat ne s'est pas clairement prononcé, sa position est inconnue et la question ne compte pas pour lui. 1 = d'accord, -1 = pas d'accord.",
-  "questions": [
-    { "theme": "Économie", "q": "Il faut revenir sur le recul de l'âge de départ à la retraite décidé en 2023.",
-      "pos": { "melenchon": 1, "glucksmann": 1, "philippe": -1 } },
-    { "theme": "Économie", "q": "Le SMIC doit être fortement augmenté.",
-      "pos": { "arthaud": 1, "glucksmann": 1, "tondelier": 1 } },
-    { "theme": "Économie", "q": "Il faut inciter à travailler plus, au-delà des 35 heures.",
-      "pos": { "philippe": 1, "retailleau": 1, "riner": 1, "melenchon": -1 } },
-    { "theme": "Économie", "q": "Il faut réduire fortement la dépense publique.",
-      "pos": { "attal": 1, "lepen": 1, "retailleau": 1, "philippe": 1, "villepin": 1 } },
-    { "theme": "Économie", "q": "Il faut baisser les impôts de production des entreprises.",
-      "pos": { "philippe": 1, "lisnard": 1 } },
-    { "theme": "Économie", "q": "Il faut rétablir un impôt sur la fortune.",
-      "pos": { "tondelier": 1, "villepin": 1 } },
-    { "theme": "Économie", "q": "L'État doit reprendre le contrôle de grandes entreprises (énergie, autoroutes…).",
-      "pos": { "lepen": 1, "polony": 1, "arthaud": 1 } },
-    { "theme": "Économie", "q": "Il faut baisser les taxes sur l'énergie et les carburants.",
-      "pos": { "lepen": 1, "dupont-aignan": 1, "polony": 1 } },
-    { "theme": "Institutions", "q": "Il faut supprimer des postes de fonctionnaires.",
-      "pos": { "philippe": 1, "attal": 1 } },
-    { "theme": "Institutions", "q": "Il faut réduire le nombre de parlementaires.",
-      "pos": { "attal": 1, "dupont-aignan": 1 } },
-    { "theme": "Institutions", "q": "Il faut élire les députés à la proportionnelle.",
-      "pos": { "glucksmann": 1, "melenchon": 1, "tondelier": 1, "lepen": 1 } },
-    { "theme": "Institutions", "q": "Il faut créer un référendum d'initiative citoyenne (RIC).",
-      "pos": { "melenchon": 1, "lepen": 1, "dupont-aignan": 1, "villepin": 1 } },
-    { "theme": "Immigration", "q": "Il faut durcir les règles de l'immigration (titres de séjour, regroupement familial).",
-      "pos": { "attal": 1, "philippe": 1, "lisnard": 1, "lepen": 1, "zemmour": 1, "dupont-aignan": 1, "retailleau": 1, "melenchon": -1, "arthaud": -1, "tondelier": -1, "glucksmann": -1 } },
-    { "theme": "Immigration", "q": "Le droit du sol doit être maintenu.",
-      "pos": { "melenchon": 1, "tondelier": 1, "lepen": -1, "lisnard": -1 } },
-    { "theme": "Immigration", "q": "Certaines aides sociales doivent être réservées aux Français ou aux étrangers installés et en activité depuis plusieurs années.",
-      "pos": { "lepen": 1, "retailleau": 1 } },
-    { "theme": "Social et santé", "q": "L'aide médicale d'État pour les sans-papiers doit être limitée aux urgences.",
-      "pos": { "lisnard": 1, "zemmour": 1 } },
-    { "theme": "Social et santé", "q": "Il faut légaliser ou dépénaliser le cannabis.",
-      "pos": { "arthaud": 1, "melenchon": 1, "tondelier": 1 } },
-    { "theme": "Sécurité et justice", "q": "Il faut rétablir des peines planchers.",
-      "pos": { "lepen": 1, "lisnard": 1, "philippe": 1 } },
-    { "theme": "Écologie et énergie", "q": "Il faut construire de nouveaux réacteurs nucléaires.",
-      "pos": { "glucksmann": 1, "lisnard": 1, "philippe": 1, "retailleau": 1, "villepin": 1, "lepen": 1, "dupont-aignan": 1, "zemmour": 1, "melenchon": -1 } },
-    { "theme": "Écologie et énergie", "q": "Il faut arrêter de soutenir les éoliennes.",
-      "pos": { "lepen": 1, "dupont-aignan": 1, "zemmour": 1, "villepin": -1 } },
-    { "theme": "Écologie et énergie", "q": "Il faut réduire fortement ou interdire les pesticides comme le glyphosate.",
-      "pos": { "melenchon": 1, "villepin": 1 } },
-    { "theme": "Europe et international", "q": "Il faut aller plus loin dans l'intégration européenne (budget, défense, décisions en commun).",
-      "pos": { "attal": 1, "glucksmann": 1, "tondelier": 1, "philippe": 1, "villepin": -1, "zemmour": -1, "dupont-aignan": -1, "lepen": -1 } },
-    { "theme": "Europe et international", "q": "Il faut renforcer l'aide militaire à l'Ukraine.",
-      "pos": { "glucksmann": 1, "tondelier": 1, "dupont-aignan": -1 } }
-  ]
+ "maj": "2026-11-23",
+ "note": "Chaque position vient d'une mesure publiée, affichée sous la question avec un lien vers le programme du candidat. Quand un candidat ne s'est pas clairement prononcé, sa position est inconnue et la question ne compte pas pour lui.",
+ "questions": [
+  {
+   "theme": "Économie",
+   "q": "Il faut revenir sur le recul de l'âge de départ à la retraite décidé en 2023.",
+   "pos": {
+    "melenchon": 1,
+    "glucksmann": 1,
+    "philippe": -1
+   },
+   "src": {
+    "melenchon": "Retour progressif de la retraite à 60 ans avec 40 annuités",
+    "glucksmann": "Abroger la réforme des retraites de 2023",
+    "philippe": "Retraite à 65 ans avec 45 ans de cotisation"
+   }
+  },
+  {
+   "theme": "Économie",
+   "q": "Le SMIC doit être fortement augmenté.",
+   "pos": {
+    "arthaud": 1,
+    "glucksmann": 1,
+    "tondelier": 1
+   },
+   "src": {
+    "arthaud": "SMIC à 2 200 € et indexation des salaires et pensions sur les prix",
+    "glucksmann": "SMIC à 1 600 € net en deux ans",
+    "tondelier": "SMIC à 2 000 € brut dès 2027"
+   }
+  },
+  {
+   "theme": "Économie",
+   "q": "Il faut inciter à travailler plus, au-delà des 35 heures.",
+   "pos": {
+    "philippe": 1,
+    "retailleau": 1,
+    "riner": 1,
+    "melenchon": -1
+   },
+   "src": {
+    "philippe": "Temps de travail fixé par les entreprises, zéro cotisation patronale après la 37e heure",
+    "retailleau": "Plus de cotisations sociales au-delà de 1 623 heures travaillées par an",
+    "riner": "Permettre de travailler plus sans remettre en cause les 35 heures",
+    "melenchon": "Retour aux 35 heures, 32 heures pour les métiers pénibles"
+   }
+  },
+  {
+   "theme": "Économie",
+   "q": "Il faut réduire fortement la dépense publique.",
+   "pos": {
+    "attal": 1,
+    "lepen": 1,
+    "retailleau": 1,
+    "philippe": 1,
+    "villepin": 1
+   },
+   "src": {
+    "attal": "Aucune hausse d'impôt sur le quinquennat, 150 Md€ d'économies",
+    "lepen": "Plan d'économies de 142 Md€ d'ici 2032",
+    "retailleau": "Plan de 197 Md€ d'économies d'ici 2032",
+    "philippe": "250 000 postes de fonctionnaires en moins sur le quinquennat",
+    "villepin": "Ramener le déficit public à 3 % du PIB"
+   }
+  },
+  {
+   "theme": "Économie",
+   "q": "Il faut baisser les impôts de production des entreprises.",
+   "pos": {
+    "philippe": 1,
+    "lisnard": 1
+   },
+   "src": {
+    "philippe": "50 Md€ d'impôts de production en moins, financés par la baisse des aides aux entreprises",
+    "lisnard": "Supprimer la C3S et la CVAE (11,5 Md€ d'impôts de production en moins)"
+   }
+  },
+  {
+   "theme": "Économie",
+   "q": "Il faut rétablir un impôt sur la fortune.",
+   "pos": {
+    "tondelier": 1,
+    "villepin": 1
+   },
+   "src": {
+    "tondelier": "Rétablir l'impôt sur la grande fortune",
+    "villepin": "Impôt sur le patrimoine des 1 % les plus aisés"
+   }
+  },
+  {
+   "theme": "Économie",
+   "q": "L'État doit reprendre le contrôle de grandes entreprises (énergie, autoroutes…).",
+   "pos": {
+    "lepen": 1,
+    "polony": 1,
+    "arthaud": 1
+   },
+   "src": {
+    "lepen": "Renationaliser les autoroutes pour baisser les péages de 15 %",
+    "polony": "Renationaliser EDF et défendre le nucléaire",
+    "arthaud": "Exproprier sans indemnité les actionnaires, à commencer par pétrole et armement"
+   }
+  },
+  {
+   "theme": "Économie",
+   "q": "Il faut baisser les taxes sur l'énergie et les carburants.",
+   "pos": {
+    "lepen": 1,
+    "dupont-aignan": 1,
+    "polony": 1
+   },
+   "src": {
+    "lepen": "TVA à 5,5 % sur carburants, gaz et électricité",
+    "dupont-aignan": "Baisser de 40 centimes le prix des carburants",
+    "polony": "Taxe flottante sur les carburants"
+   }
+  },
+  {
+   "theme": "Institutions",
+   "q": "Il faut supprimer des postes de fonctionnaires.",
+   "pos": {
+    "philippe": 1,
+    "attal": 1
+   },
+   "src": {
+    "philippe": "250 000 postes de fonctionnaires en moins sur le quinquennat",
+    "attal": "100 000 postes publics en moins, sans licenciement"
+   }
+  },
+  {
+   "theme": "Institutions",
+   "q": "Il faut réduire le nombre de parlementaires.",
+   "pos": {
+    "attal": 1,
+    "dupont-aignan": 1
+   },
+   "src": {
+    "attal": "350 députés et 200 sénateurs",
+    "dupont-aignan": "Passer de 577 à 500 députés"
+   }
+  },
+  {
+   "theme": "Institutions",
+   "q": "Il faut élire les députés à la proportionnelle.",
+   "pos": {
+    "glucksmann": 1,
+    "melenchon": 1,
+    "tondelier": 1,
+    "lepen": 1
+   },
+   "src": {
+    "glucksmann": "Instaurer la proportionnelle",
+    "melenchon": "Proportionnelle à l'Assemblée",
+    "tondelier": "Proportionnelle intégrale aux législatives",
+    "lepen": "Référendum d'initiative citoyenne et proportionnelle"
+   }
+  },
+  {
+   "theme": "Institutions",
+   "q": "Il faut créer un référendum d'initiative citoyenne (RIC).",
+   "pos": {
+    "melenchon": 1,
+    "lepen": 1,
+    "dupont-aignan": 1,
+    "villepin": 1
+   },
+   "src": {
+    "melenchon": "Référendum d'initiative citoyenne",
+    "lepen": "Référendum d'initiative citoyenne et proportionnelle",
+    "dupont-aignan": "Référendum d'initiative citoyenne",
+    "villepin": "Référendum d'initiative citoyenne préparé par une convention permanente"
+   }
+  },
+  {
+   "theme": "Immigration",
+   "q": "Il faut durcir les règles de l'immigration (titres de séjour, regroupement familial).",
+   "pos": {
+    "attal": 1,
+    "philippe": 1,
+    "lisnard": 1,
+    "lepen": 1,
+    "zemmour": 1,
+    "dupont-aignan": 1,
+    "retailleau": 1,
+    "melenchon": -1,
+    "arthaud": -1,
+    "tondelier": -1,
+    "glucksmann": -1
+   },
+   "src": {
+    "attal": "Regroupement familial durci",
+    "philippe": "Suspendre le regroupement familial pendant le quinquennat",
+    "lisnard": "Diviser par huit les titres de séjour délivrés",
+    "lepen": "Expulsion des étrangers en situation irrégulière, délinquants et criminels",
+    "zemmour": "Quitter la CEDH",
+    "dupont-aignan": "Regroupement familial strictement limité",
+    "retailleau": "Hébergement d'urgence conditionné à la régularité du séjour",
+    "melenchon": "Régularisation des travailleurs, étudiants et parents d'élèves sans papiers",
+    "arthaud": "Régulariser les sans-papiers, liberté de circulation",
+    "tondelier": "Respect du droit d'asile, fin des refoulements illégaux",
+    "glucksmann": "Abroger la loi immigration de 2024"
+   }
+  },
+  {
+   "theme": "Immigration",
+   "q": "Le droit du sol doit être maintenu.",
+   "pos": {
+    "melenchon": 1,
+    "tondelier": 1,
+    "lepen": -1,
+    "lisnard": -1
+   },
+   "src": {
+    "melenchon": "Droit du sol intégral et naturalisation facilitée",
+    "tondelier": "Droit du sol sans condition",
+    "lepen": "Supprimer le droit du sol",
+    "lisnard": "Fin de l'automaticité du droit du sol"
+   }
+  },
+  {
+   "theme": "Immigration",
+   "q": "Certaines aides sociales doivent être réservées aux Français ou aux étrangers installés et en activité depuis plusieurs années.",
+   "pos": {
+    "lepen": 1,
+    "retailleau": 1
+   },
+   "src": {
+    "lepen": "Aides sociales réservées aux Français, 5 ans de travail exigés pour certaines",
+    "retailleau": "Aides familiales réservées aux étrangers présents depuis 5 ans et en activité"
+   }
+  },
+  {
+   "theme": "Social et santé",
+   "q": "L'aide médicale d'État pour les sans-papiers doit être limitée aux urgences.",
+   "pos": {
+    "lisnard": 1,
+    "zemmour": 1
+   },
+   "src": {
+    "lisnard": "Remplacer l'AME par une aide d'urgence",
+    "zemmour": "AME limitée à l'aide médicale d'urgence"
+   }
+  },
+  {
+   "theme": "Social et santé",
+   "q": "Il faut légaliser ou dépénaliser le cannabis.",
+   "pos": {
+    "arthaud": 1,
+    "melenchon": 1,
+    "tondelier": 1
+   },
+   "src": {
+    "arthaud": "Dépénaliser le cannabis",
+    "melenchon": "Cannabis légalisé sous monopole d'État",
+    "tondelier": "Légaliser et encadrer le cannabis"
+   }
+  },
+  {
+   "theme": "Sécurité et justice",
+   "q": "Il faut rétablir des peines planchers.",
+   "pos": {
+    "lepen": 1,
+    "lisnard": 1,
+    "philippe": 1
+   },
+   "src": {
+    "lepen": "Rétablir les peines planchers",
+    "lisnard": "Peines planchers pour les récidivistes",
+    "philippe": "Peines planchers pour les violences contre policiers et professeurs"
+   }
+  },
+  {
+   "theme": "Écologie et énergie",
+   "q": "Il faut construire de nouveaux réacteurs nucléaires.",
+   "pos": {
+    "glucksmann": 1,
+    "lisnard": 1,
+    "philippe": 1,
+    "retailleau": 1,
+    "villepin": 1,
+    "lepen": 1,
+    "dupont-aignan": 1,
+    "zemmour": 1,
+    "melenchon": -1
+   },
+   "src": {
+    "glucksmann": "Nucléaire conforté avec de nouvelles unités",
+    "lisnard": "Réacteurs prolongés jusqu'à 60 ans, nouveaux EPR et petits réacteurs",
+    "philippe": "8 EPR de plus en plus des 6 prévus",
+    "retailleau": "8 EPR2 supplémentaires",
+    "villepin": "6 EPR2 et éolien en mer",
+    "lepen": "Relancer nucléaire et hydroélectricité",
+    "dupont-aignan": "Au moins 70 % de nucléaire",
+    "zemmour": "Plan européen de 500 Md€ pour le nucléaire",
+    "melenchon": "Fermeture progressive du nucléaire, arrêt de l'EPR2"
+   }
+  },
+  {
+   "theme": "Écologie et énergie",
+   "q": "Il faut arrêter de soutenir les éoliennes.",
+   "pos": {
+    "lepen": 1,
+    "dupont-aignan": 1,
+    "zemmour": 1,
+    "villepin": -1
+   },
+   "src": {
+    "lepen": "Arrêter les projets éoliens et démanteler progressivement les parcs",
+    "dupont-aignan": "Fin des aides à l'éolien et au solaire",
+    "zemmour": "Supprimer tout financement de l'éolien",
+    "villepin": "6 EPR2 et éolien en mer"
+   }
+  },
+  {
+   "theme": "Écologie et énergie",
+   "q": "Il faut réduire fortement ou interdire les pesticides comme le glyphosate.",
+   "pos": {
+    "melenchon": 1,
+    "villepin": 1
+   },
+   "src": {
+    "melenchon": "Interdire glyphosate et néonicotinoïdes",
+    "villepin": "Moitié moins de pesticides d'ici 2030"
+   }
+  },
+  {
+   "theme": "Europe et international",
+   "q": "Il faut aller plus loin dans l'intégration européenne (budget, défense, décisions en commun).",
+   "pos": {
+    "attal": 1,
+    "glucksmann": 1,
+    "tondelier": 1,
+    "philippe": 1,
+    "villepin": -1,
+    "zemmour": -1,
+    "dupont-aignan": -1,
+    "lepen": -1
+   },
+   "src": {
+    "attal": "Référendum européen pour des « États-Unis d'Europe »",
+    "glucksmann": "Vote à la majorité qualifiée au Conseil européen",
+    "tondelier": "Budget européen porté à 2 % du PIB en 2035",
+    "philippe": "Achever le marché unique",
+    "villepin": "Pause dans l'intégration européenne",
+    "zemmour": "Remplacer la Commission par un secrétariat du Conseil",
+    "dupont-aignan": "Sortie de l'Union européenne",
+    "lepen": "Baisser la contribution française à l'UE"
+   }
+  },
+  {
+   "theme": "Europe et international",
+   "q": "Il faut renforcer l'aide militaire à l'Ukraine.",
+   "pos": {
+    "glucksmann": 1,
+    "tondelier": 1,
+    "dupont-aignan": -1
+   },
+   "src": {
+    "glucksmann": "Aide militaire renforcée à l'Ukraine",
+    "tondelier": "Soutien politique et militaire à l'Ukraine",
+    "dupont-aignan": "Paix en Ukraine et partenariat avec la Russie"
+   }
+  }
+ ]
 }

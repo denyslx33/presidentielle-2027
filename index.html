@@ -132,6 +132,15 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .res .info { flex:1; min-width:0; } .res .who { font-weight:600; font-size:14px; }
 .res .bar1 { height:6px; background:var(--line); border-radius:4px; overflow:hidden; margin-top:4px; } .res .bar1 i { display:block; height:100%; background:var(--accent); }
 .res .pc { font:400 18px Georgia, serif; white-space:nowrap; }
+.inscr { display:flex; gap:10px; align-items:flex-start; background:var(--warn-bg); color:var(--warn-fg); border-radius:12px; padding:10px 12px; font-size:13px; margin:8px 0 4px; }
+.inscr a { color:inherit; font-weight:700; }
+.inscr button { font:inherit; font-size:20px; line-height:1; background:none; border:0; color:inherit; padding:0 2px; cursor:pointer; }
+.sec { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:4px 14px; margin-top:14px; }
+.sec > summary { font-weight:600; font-size:17px; padding:10px 0; }
+.src { font-size:13px; margin:3px 0 0 0; }
+.src .muted { font-size:12px; }
+.other { border-bottom:1px solid var(--line); padding:10px 0; }
+.other a { font-weight:600; }
 </style>
 </head>
 <body>
@@ -139,6 +148,7 @@ details { margin-top:16px; } summary { cursor:pointer; }
   <h1>Présidentielle 2027</h1>
   <div class="jm" id="jm"></div>
   <p class="muted" id="status">Chargement…</p>
+  <div class="inscr" id="inscr"><span>🗳️</span><div>Pour voter les 18 avril et 2 mai 2027, il faut être inscrit sur les listes électorales au plus tard le <b>vendredi 12 mars 2027</b>. Même si vous avez déjà voté, vérifiez : après un déménagement, on peut ne plus être inscrit au bon endroit. <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/R51788" target="_blank" rel="noopener">Vérifier mon inscription</a></div><button id="inscr-x" aria-label="Masquer">×</button></div>
 
   <!-- SONDAGES -->
   <section class="view on" id="v-sondages">
@@ -180,6 +190,27 @@ details { margin-top:16px; } summary { cursor:pointer; }
   <section class="view" id="v-candidats">
     <p>Les candidats testés dans les sondages, par ordre alphabétique. Touchez un portrait pour ouvrir sa fiche.</p>
     <div id="candlist" class="trombi"></div>
+    <details class="sec"><summary>Les 500 signatures</summary>
+
+    <p>Pour être candidat, il faut 500 parrainages d'élus venant d'au moins 30 départements. Le Conseil constitutionnel les publie au fur et à mesure, au moins deux fois par semaine, pendant la collecte.</p>
+    <div class="note">La collecte officielle n'a pas encore commencé. Les chiffres ci-dessous sont des <b>promesses revendiquées</b> par les candidats ou leur entourage, rapportées par la presse. Ils seront remplacés par les chiffres officiels dès leur publication.</div>
+    <div id="sig-list"></div>
+    <h3>Calendrier</h3>
+    <div class="timeline">
+      <div><b>Au plus tard le 7 février 2027</b><br><span class="muted">Décret de convocation : début officiel de la collecte</span></div>
+      <div><b>12 mars 2027</b><br><span class="muted">Fin de la collecte des parrainages</span></div>
+      <div><b>26 mars 2027 au plus tard</b><br><span class="muted">Liste officielle des candidats</span></div>
+      <div><b>18 avril 2027</b><br><span class="muted">Premier tour</span></div>
+      <div><b>2 mai 2027</b><br><span class="muted">Second tour</span></div>
+    </div>
+
+    </details>
+    <details class="sec"><summary>Budgets et financement</summary>
+    <p>Chaque candidat peut dépenser au maximum <b>16,851 M€</b> au premier tour, et <b>22,509 M€</b> s'il est au second. Les dépenses comptent depuis le 1er avril 2026. L'argent vient surtout de prêts bancaires, des partis et des dons de particuliers (4 600 € maximum par personne). L'État rembourse une partie des dépenses aux candidats qui dépassent 5 % des voix.</p>
+    <div class="note">Les comptes de campagne officiels ne sont publiés qu'après l'élection. Avant, on ne connaît que ce que les candidats et leurs partis annoncent.</div>
+    <div id="fin-list"></div>
+    <p class="muted" style="margin-top:10px">Sources des règles : <a href="https://www.info.gouv.fr/actualite/presidentielle-2027-date-a-retenir-et-informations-cles" target="_blank" rel="noopener">info.gouv.fr</a>, <a href="https://www.amf.asso.fr/documents-parrainage-candidats-election-presidentielle-amf-demande-anonymat/43305" target="_blank" rel="noopener">AMF</a>, <a href="https://www.publicsenat.fr/actualites/politique/ouverture-des-comptes-de-campagne-au-1er-avril-ce-que-ca-change-pour-les-candidats-potentiels" target="_blank" rel="noopener">Public Sénat</a>.</p>
+      </details>
     <div class="block">
       <h3>Autres candidatures déclarées</h3>
       <p class="muted" id="autres"></p>
@@ -196,9 +227,12 @@ details { margin-top:16px; } summary { cursor:pointer; }
     <div id="fiche"></div>
   </section>
 
+  <!-- TEST -->
+  <section class="view" id="v-test"><div id="quiz"></div></section>
+
   <!-- PROGRAMMES -->
   <section class="view" id="v-programmes">
-    <div class="seg" id="pseg" style="display:flex;margin-bottom:6px"><button data-m="theme" class="on" style="flex:1">Par thème</button><button data-m="cmp" style="flex:1">Comparer</button><button data-m="quiz" style="flex:1">Le test</button></div>
+    <div class="seg" id="pseg" style="display:flex;margin-bottom:6px"><button data-m="theme" class="on" style="flex:1">Par thème</button><button data-m="cmp" style="flex:1">Comparer</button></div>
     <div id="pm-theme">
     <p>Choisissez un thème pour comparer les propositions des candidats.</p>
     <div class="chips" id="th-chips"></div>
@@ -210,7 +244,6 @@ details { margin-top:16px; } summary { cursor:pointer; }
       <div class="cmp-sel"><select id="cmp-a"></select><select id="cmp-b"></select></div>
       <div id="cmp-out"></div>
     </div>
-    <div id="pm-quiz" hidden><div id="quiz"></div></div>
   </section>
 
   <!-- AGENDA -->
@@ -231,35 +264,16 @@ details { margin-top:16px; } summary { cursor:pointer; }
   </section>
 
   <!-- SIGNATURES & ARGENT -->
-  <section class="view" id="v-signatures">
-    <h2>Les 500 signatures</h2>
-    <p>Pour être candidat, il faut 500 parrainages d'élus venant d'au moins 30 départements. Le Conseil constitutionnel les publie au fur et à mesure, au moins deux fois par semaine, pendant la collecte.</p>
-    <div class="note">La collecte officielle n'a pas encore commencé. Les chiffres ci-dessous sont des <b>promesses revendiquées</b> par les candidats ou leur entourage, rapportées par la presse. Ils seront remplacés par les chiffres officiels dès leur publication.</div>
-    <div id="sig-list"></div>
-    <h3>Calendrier</h3>
-    <div class="timeline">
-      <div><b>Au plus tard le 7 février 2027</b><br><span class="muted">Décret de convocation : début officiel de la collecte</span></div>
-      <div><b>12 mars 2027</b><br><span class="muted">Fin de la collecte des parrainages</span></div>
-      <div><b>26 mars 2027 au plus tard</b><br><span class="muted">Liste officielle des candidats</span></div>
-      <div><b>18 avril 2027</b><br><span class="muted">Premier tour</span></div>
-      <div><b>2 mai 2027</b><br><span class="muted">Second tour</span></div>
-    </div>
 
-    <h2 style="margin-top:26px">Budgets et financement</h2>
-    <p>Chaque candidat peut dépenser au maximum <b>16,851 M€</b> au premier tour, et <b>22,509 M€</b> s'il est au second. Les dépenses comptent depuis le 1er avril 2026. L'argent vient surtout de prêts bancaires, des partis et des dons de particuliers (4 600 € maximum par personne). L'État rembourse une partie des dépenses aux candidats qui dépassent 5 % des voix.</p>
-    <div class="note">Les comptes de campagne officiels ne sont publiés qu'après l'élection. Avant, on ne connaît que ce que les candidats et leurs partis annoncent.</div>
-    <div id="fin-list"></div>
-    <p class="muted" style="margin-top:10px">Sources des règles : <a href="https://www.info.gouv.fr/actualite/presidentielle-2027-date-a-retenir-et-informations-cles" target="_blank" rel="noopener">info.gouv.fr</a>, <a href="https://www.amf.asso.fr/documents-parrainage-candidats-election-presidentielle-amf-demande-anonymat/43305" target="_blank" rel="noopener">AMF</a>, <a href="https://www.publicsenat.fr/actualites/politique/ouverture-des-comptes-de-campagne-au-1er-avril-ce-que-ca-change-pour-les-candidats-potentiels" target="_blank" rel="noopener">Public Sénat</a>.</p>
-  </section>
 </main>
 
 <nav class="tabs" id="tabs">
   <button data-v="sondages" class="on"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Sondages</button>
   <button data-v="candidats"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5M16 4.8a3.5 3.5 0 010 6.4M18 14.7c2 .7 3.2 2.5 3.6 5.3"/></svg>Candidats</button>
   <button data-v="programmes"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 12h7M9 16h7"/></svg>Programmes</button>
+  <button data-v="test"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.3a2.6 2.6 0 015 .9c0 1.8-2.5 2.2-2.5 3.8M12 17.2v.1"/></svg>Test</button>
   <button data-v="agenda"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Agenda</button>
   <button data-v="actu"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h10M7 17h6"/></svg>Actu</button>
-  <button data-v="signatures"><svg viewBox="0 0 24 24"><path d="M4 17c3-1 4-6 6-6s1 5 3 5 2-3 4-3 2 2 3 2M4 21h16"/></svg>Signatures</button>
 </nav>
 
 <script>
@@ -488,8 +502,8 @@ function sparkChart(nom, color) {
 function setPMode(m) {
   PMODE = m;
   for (const b of document.querySelectorAll('#pseg button')) b.classList.toggle('on', b.dataset.m === m);
-  for (const k of ['theme', 'cmp', 'quiz']) $('pm-' + k).hidden = k !== m;
-  if (m === 'cmp') renderCmp(); if (m === 'quiz') renderQuiz();
+  for (const k of ['theme', 'cmp']) $('pm-' + k).hidden = k !== m;
+  if (m === 'cmp') renderCmp();
 }
 function renderCmp() {
   if (!CAND) return;
@@ -520,7 +534,7 @@ function renderQuiz() {
   if (!QANS) QANS = Array(Q.length).fill(null);
   if (QI === 0 && QANS.every((a) => a === null)) {
     const d = el('div', 'qz');
-    d.append(el('div', 'qq', 'Qui pense comme moi ?'), el('p', null, `${Q.length} affirmations tirées des programmes. Pour chacune, dites si vous êtes d'accord. À la fin, les candidats sont classés selon le nombre de réponses communes.`), el('p', 'muted', "Ce n'est pas une consigne de vote : on ne compare que les positions clairement publiées, et beaucoup de candidats n'ont pas encore de programme complet. Vos réponses restent sur votre téléphone."));
+    d.append(el('div', 'qq', 'Qui pense comme moi ?'), el('p', null, `${Q.length} affirmations tirées des programmes. Pour chacune, dites si vous êtes d'accord. À la fin, les candidats sont classés selon le nombre de réponses communes.`), el('p', 'muted', "Ce n'est pas une consigne de vote. Chaque position de candidat vient d'une mesure de son programme ou de ses déclarations publiques, et à la fin vous verrez, question par question, la mesure et le lien vers sa source. Beaucoup de candidats n'ont pas encore de programme complet. Vos réponses restent sur votre téléphone."));
     const b = el('button', 'qbtn', 'Commencer'); b.style.cssText = 'width:100%;background:var(--accent);color:#fff;border-color:var(--accent)'; b.onclick = () => { QI = 0; renderQuizQ(); }; d.append(b);
     box.replaceChildren(d); return;
   }
@@ -567,17 +581,34 @@ function renderQuizRes() {
     d.append(row);
   }
   if (few.length) d.append(el('p', 'muted', 'Pas assez de positions connues pour : ' + few.map((r) => r.c.nom).join(', ') + '.'));
-  const det = el('details'); det.append(el('summary', null, 'Voir les positions question par question'));
-  const byId = new Map(CAND.principaux.map((c) => [c.id, c.nom]));
+  const byId = new Map(CAND.principaux.map((c) => [c.id, c]));
+  const srcUrl = (c) => (c.programme && (c.programme.url || c.programme.recap)) || (c.source_mesures && c.source_mesures.url) || '';
+  const det = el('details'); det.append(el('summary', null, 'Les sources : la mesure de chaque candidat, question par question'));
   Q.forEach((q, i) => {
     const p = el('div', 'news'); const you = QANS[i] === 1 ? "d'accord" : QANS[i] === -1 ? "pas d'accord" : 'sans avis';
-    p.append(el('b', null, q.q), el('div', 'muted', 'Vous : ' + you));
-    const pour = Object.keys(q.pos).filter((k) => q.pos[k] === 1 && byId.has(k)).map((k) => byId.get(k)), contre = Object.keys(q.pos).filter((k) => q.pos[k] === -1 && byId.has(k)).map((k) => byId.get(k));
-    if (pour.length) p.append(el('div', null, "D'accord : " + pour.join(', ')));
-    if (contre.length) p.append(el('div', null, "Pas d'accord : " + contre.join(', ')));
+    p.append(el('b', null, (i + 1) + '. ' + q.q), el('div', 'muted', 'Vous : ' + you));
+    for (const [val, lab] of [[1, "D'accord"], [-1, "Pas d'accord"]]) {
+      const ids = Object.keys(q.pos).filter((k) => q.pos[k] === val && byId.has(k));
+      if (!ids.length) continue;
+      p.append(el('div', 'src', lab + ' :'));
+      const ul = el('ul'); ul.style.margin = '2px 0 4px'; ul.style.paddingLeft = '18px';
+      for (const k of ids) { const c = byId.get(k); const li = el('li', 'src'); li.append(el('b', null, c.nom), ' : « ' + ((q.src || {})[k] || '') + ' » '); const u = srcUrl(c); if (u) li.append(link('source', u)); ul.append(li); }
+      p.append(ul);
+    }
+    const unk = CAND.principaux.filter((c) => !(c.id in q.pos)).map((c) => nomFamille(c.nom));
+    if (unk.length) p.append(el('div', 'muted src', 'Position non publiée : ' + unk.join(', ')));
     det.append(p);
   });
   d.append(det, el('p', 'muted', QUIZ.note));
+  const ot = el('div'); ot.style.marginTop = '18px';
+  ot.append(el('div', 'qq', 'Vérifiez avec un autre test'), el('p', null, "Faites un ou deux autres tests, faits par d'autres équipes avec d'autres questions. Si les mêmes noms reviennent en tête, votre résultat est solide. S'ils changent, c'est que vos idées se partagent entre plusieurs candidats."));
+  for (const [nom, url, txt] of [
+    ['Votons 2027', 'https://votons-2027.fr/composer', 'Test d\'affinité gratuit et sans compte, chaque thème pèse autant.'],
+    ['Swipe Your President', 'https://swipeyourpresident.com/quiz', 'Chaque position de candidat est liée à une citation datée. Le résultat complet est payant (1,99 €).'],
+    ['MonVote2027', 'https://monvote2027.fr', 'Quiz court de 20 questions ou complet de 100. Fait par une équipe bénévole anonyme.'],
+  ]) { const o = el('div', 'other'); o.append(link(nom, url), el('div', 'muted', txt)); ot.append(o); }
+  ot.append(el('p', 'muted', "Ces sites ne sont pas liés à cette appli. Aucun test ne remplace la lecture des programmes."));
+  d.insertBefore(ot, det);
   const nav = el('div', 'qnav'); const mod = el('button', null, '‹ Modifier mes réponses'); mod.onclick = () => { QI = 0; renderQuizQ(); }; const rs = el('button', null, 'Recommencer'); rs.onclick = resetQuiz; nav.append(mod, rs); d.append(nav);
   box.replaceChildren(d);
 }
@@ -730,7 +761,7 @@ async function load() {
   if (!POLLS) { st.textContent = 'Impossible de charger les sondages. Vérifiez la connexion.'; st.className = 'muted err'; }
   else st.textContent = (mv.live ? 'Mis à jour à ' + new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }) : 'Hors ligne : derniers chiffres enregistrés') + ' · premier tour le 18 avril 2027';
   renderSondages(); renderCandidats(); renderProgrammes(); renderActu(); renderAgenda(); renderCredits(); renderFiche(); renderDuels(); countdown();
-  if (PMODE === 'cmp') renderCmp(); if (PMODE === 'quiz' && !$('quiz').firstChild) renderQuiz();
+  if (PMODE === 'cmp') renderCmp(); if (!$('quiz').firstChild || $('quiz').textContent === 'Chargement…') renderQuiz();
 }
 
 function showView(v) {
@@ -742,17 +773,19 @@ function showView(v) {
 }
 let PUSHED = false;
 $('back').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView('candidats'); });
-addEventListener('popstate', () => { PUSHED = false; const h = location.hash.slice(1); if (h.startsWith('c-')) openFiche(h.slice(2), true); else showView(['candidats', 'programmes', 'agenda', 'actu', 'signatures'].includes(h) ? h : 'sondages'); });
+addEventListener('popstate', () => { PUSHED = false; const h = location.hash.slice(1); if (h.startsWith('c-')) openFiche(h.slice(2), true); else showView(['candidats', 'programmes', 'agenda', 'actu', 'test'].includes(h) ? h : 'sondages'); });
 for (const b of document.querySelectorAll('#tabs button')) b.addEventListener('click', () => showView(b.dataset.v));
 for (const b of document.querySelectorAll('#pseg button')) b.addEventListener('click', () => setPMode(b.dataset.m));
 $('cmp-a').addEventListener('change', (e) => { CMPA = e.target.value; renderCmp(); });
 $('cmp-b').addEventListener('change', (e) => { CMPB = e.target.value; renderCmp(); });
 countdown();
+try { if (localStorage.getItem('inscrOK') === '1') $('inscr').hidden = true; } catch (e) {}
+$('inscr-x').addEventListener('click', () => { $('inscr').hidden = true; try { localStorage.setItem('inscrOK', '1'); } catch (e) {} });
 for (const b of document.querySelectorAll('#seg button')) b.addEventListener('click', () => { PERIOD = +b.dataset.p; for (const o of document.querySelectorAll('#seg button')) o.classList.toggle('on', o === b); renderSondages(); });
 let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(renderSondages, 150); });
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') load(); });
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
-const start = (location.hash || '').slice(1); if (start.startsWith('c-')) openFiche(start.slice(2), true); else if (['candidats', 'programmes', 'agenda', 'actu', 'signatures'].includes(start)) showView(start);
+const start = (location.hash || '').slice(1); if (start.startsWith('c-')) openFiche(start.slice(2), true); else if (['candidats', 'programmes', 'agenda', 'actu', 'test'].includes(start)) showView(start);
 load();
 </script>
 </body>
