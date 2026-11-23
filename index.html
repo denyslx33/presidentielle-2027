@@ -54,7 +54,7 @@ th { color:var(--muted); font-weight:600; }
 details { margin-top:16px; } summary { cursor:pointer; }
 .err { color:var(--down); }
 .tabs { position:fixed; left:0; right:0; bottom:0; display:flex; background:var(--panel); border-top:1px solid var(--line); padding-bottom: env(safe-area-inset-bottom); z-index:10; }
-.tabs button { flex:1; font:inherit; font-size:11px; background:none; border:0; color:var(--muted); padding:8px 2px 9px; display:flex; flex-direction:column; align-items:center; gap:2px; }
+.tabs button { flex:1; font:inherit; font-size:10px; background:none; border:0; color:var(--muted); padding:8px 2px 9px; display:flex; flex-direction:column; align-items:center; gap:2px; }
 .tabs button.on { color:var(--accent); font-weight:600; }
 .tabs svg { width:22px; height:22px; stroke:currentColor; fill:none; stroke-width:1.8; }
 .cand { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin-top:10px; }
@@ -81,6 +81,13 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .pg { border-bottom:1px solid var(--line); padding:10px 0; }
 .pg .top { display:flex; align-items:center; gap:10px; margin-bottom:4px; }
 .pg ul { margin:2px 0 0; padding-left:18px; }
+.ev { display:flex; gap:12px; padding:10px 0; border-bottom:1px solid var(--line); }
+.ev .dt { flex:none; width:54px; text-align:center; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:4px 0; }
+.ev .dt b { display:block; font:400 20px/1.1 Georgia, serif; }
+.ev .dt span { font-size:11px; color:var(--muted); text-transform:uppercase; }
+.ev .kind { font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.4px; }
+.k-debat, .k-emission { color:var(--accent); } .k-meeting { color:var(--up); } .k-cle, .k-vote { color:var(--down); } .k-evenement { color:var(--muted); }
+.month { margin:18px 0 2px; font-weight:600; text-transform:capitalize; }
 .timeline { padding-left:14px; border-left:2px solid var(--line); margin:8px 0 0 4px; }
 .timeline div { margin:0 0 10px; position:relative; }
 .timeline div::before { content:""; position:absolute; left:-20px; top:5px; width:10px; height:10px; border-radius:50%; background:var(--accent); }
@@ -143,6 +150,16 @@ details { margin-top:16px; } summary { cursor:pointer; }
     <p class="muted" style="margin-top:12px">Les propositions sont résumées à partir des programmes officiels (lien sur chaque fiche). Ce n'est qu'un aperçu : les programmes complets comptent souvent plus de cent mesures.</p>
   </section>
 
+  <!-- AGENDA -->
+  <section class="view" id="v-agenda">
+    <div class="chips" id="ag-chips"></div>
+    <div id="aglist"></div>
+    <h3>Rendez-vous réguliers</h3>
+    <div id="agrdv"></div>
+    <details class="muted"><summary>Événements passés</summary><div id="agpast"></div></details>
+    <p class="muted" id="ag-maj" style="margin-top:12px"></p>
+  </section>
+
   <!-- ACTU -->
   <section class="view" id="v-actu">
     <div class="chips" id="chips"></div>
@@ -177,6 +194,7 @@ details { margin-top:16px; } summary { cursor:pointer; }
   <button data-v="sondages" class="on"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Sondages</button>
   <button data-v="candidats"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5M16 4.8a3.5 3.5 0 010 6.4M18 14.7c2 .7 3.2 2.5 3.6 5.3"/></svg>Candidats</button>
   <button data-v="programmes"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 12h7M9 16h7"/></svg>Programmes</button>
+  <button data-v="agenda"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Agenda</button>
   <button data-v="actu"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h10M7 17h6"/></svg>Actu</button>
   <button data-v="signatures"><svg viewBox="0 0 24 24"><path d="M4 17c3-1 4-6 6-6s1 5 3 5 2-3 4-3 2 2 3 2M4 21h16"/></svg>Signatures</button>
 </nav>
@@ -203,7 +221,7 @@ const avatar = (c) => {
   img.src = 'data/portraits/' + c.id + '.jpg';
   return a;
 };
-let THEME = null;
+let THEME = null, AGENDA = null, AGF = '';
 let PERIOD = 0, POLLS = null, CAND = null, ACTU = null, FILTRE = '';
 
 function parseCSV(text) {
@@ -388,6 +406,33 @@ function renderProgrammes() {
   }));
 }
 
+const TYPES = { debat: 'Débat télévisé', emission: 'Émission spéciale', meeting: 'Meeting', cle: 'Date clé', vote: 'Vote', evenement: 'Événement' };
+function evRow(e) {
+  const r = el('div', 'ev'); const [y, m, d] = e.date.split('-');
+  const dt = el('div', 'dt'); if (e.date_texte) { dt.append(el('b', null, '~'), el('span', null, MOIS[+m - 1])); } else { dt.append(el('b', null, String(+d)), el('span', null, MOIS[+m - 1])); }
+  const body = el('div'); body.append(el('div', 'kind k-' + e.type, TYPES[e.type] || e.type), el('div', null, e.titre));
+  const info = []; if (e.date_texte) info.push(e.date_texte); else if (e.fin) info.push('du ' + fdateLong(e.date) + ' au ' + fdateLong(e.fin)); if (e.heure) info.push(e.heure); if (e.chaine) info.push(e.chaine); if (e.lieu) info.push(e.lieu);
+  const p = el('div', 'muted'); p.append(info.join(' · ') + ' '); if (e.url) p.append(link('source', e.url)); body.append(p);
+  r.append(dt, body); return r;
+}
+function renderAgenda() {
+  if (!AGENDA) return;
+  const today = new Date().toISOString().slice(0, 10);
+  const kinds = [['', 'Tout'], ['tele', 'Télé'], ['meeting', 'Meetings'], ['cle', 'Dates clés']];
+  $('ag-chips').replaceChildren(...kinds.map(([k, l]) => { const b = el('button', AGF === k ? 'on' : '', l); b.onclick = () => { AGF = k; renderAgenda(); }; return b; }));
+  const ok = (e) => !AGF || (AGF === 'tele' ? ['debat', 'emission'].includes(e.type) : AGF === 'cle' ? ['cle', 'vote'].includes(e.type) : e.type === AGF);
+  const evs = AGENDA.evenements.slice().sort((a, b) => a.date.localeCompare(b.date));
+  const up = evs.filter((e) => (e.fin || e.date) >= today && ok(e));
+  const out = []; let cur = '';
+  const MOISL = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+  up.forEach((e) => { const k = e.date.slice(0, 7); if (k !== cur) { cur = k; out.push(el('div', 'month', MOISL[+k.slice(5) - 1] + ' ' + k.slice(0, 4))); } out.push(evRow(e)); });
+  if (!up.length) out.push(el('p', 'muted', 'Aucun événement à venir dans cette catégorie pour le moment.'));
+  $('aglist').replaceChildren(...out);
+  $('agrdv').replaceChildren(...AGENDA.rendezvous.map((r) => { const p = el('p'); p.append(el('b', null, r.titre), ' · ' + r.quand + ' · ' + r.chaine + ' '); p.append(link('source', r.url)); return p; }));
+  $('agpast').replaceChildren(...evs.filter((e) => (e.fin || e.date) < today).reverse().map(evRow));
+  $('ag-maj').textContent = 'Agenda mis à jour le ' + fdateLong(AGENDA.maj) + '. Horaires donnés par les organisateurs ou la presse, susceptibles de changer.';
+}
+
 function renderActu() {
   if (!ACTU || !CAND) return;
   const names = new Map(CAND.principaux.map((c) => [c.id, nomFamille(c.nom)]));
@@ -408,14 +453,15 @@ async function getText(url, key) {
 }
 
 async function load() {
-  const [mv, aj, ca, ac] = await Promise.all([getText(URL_MV, 'mv'), getText('data/ajouts.csv', 'aj'), getText('data/candidats.json', 'ca'), getText('data/actu.json', 'ac')]);
+  const [mv, aj, ca, ac, ag] = await Promise.all([getText(URL_MV, 'mv'), getText('data/ajouts.csv', 'aj'), getText('data/candidats.json', 'ca'), getText('data/actu.json', 'ac'), getText('data/agenda.json', 'ag')]);
+  if (ag.t) AGENDA = JSON.parse(ag.t);
   if (mv.t) POLLS = build(parseCSV(mv.t), aj.t ? parseCSV(aj.t) : []);
   if (ca.t) CAND = JSON.parse(ca.t);
   if (ac.t) ACTU = JSON.parse(ac.t);
   const st = $('status');
   if (!POLLS) { st.textContent = 'Impossible de charger les sondages. Vérifiez la connexion.'; st.className = 'muted err'; }
   else st.textContent = (mv.live ? 'Mis à jour à ' + new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }) : 'Hors ligne : derniers chiffres enregistrés') + ' · premier tour le 18 avril 2027';
-  renderSondages(); renderCandidats(); renderProgrammes(); renderActu(); renderCredits();
+  renderSondages(); renderCandidats(); renderProgrammes(); renderActu(); renderAgenda(); renderCredits();
 }
 
 function showView(v) {
@@ -430,7 +476,7 @@ for (const b of document.querySelectorAll('#seg button')) b.addEventListener('cl
 let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(renderSondages, 150); });
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') load(); });
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
-const start = (location.hash || '').slice(1); if (['candidats', 'programmes', 'actu', 'signatures'].includes(start)) showView(start);
+const start = (location.hash || '').slice(1); if (['candidats', 'programmes', 'agenda', 'actu', 'signatures'].includes(start)) showView(start);
 load();
 </script>
 </body>

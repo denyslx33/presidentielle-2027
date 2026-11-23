@@ -1,0 +1,231 @@
+{
+ "maj": "2026-11-23",
+ "evenements": [
+  {
+   "date": "2026-08-27",
+   "heure": null,
+   "type": "debat",
+   "titre": "Premier débat entre sept candidats, lors de la Rencontre des entrepreneurs de France (Medef)",
+   "lieu": null,
+   "chaine": "LCI",
+   "qui": [],
+   "url": "https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+  },
+  {
+   "date": "2026-11-12",
+   "heure": null,
+   "type": "emission",
+   "titre": "« Nos services publics » : huit candidats interrogés tour à tour",
+   "lieu": null,
+   "chaine": "franceinfo (radio, télé, numérique)",
+   "qui": [],
+   "url": "https://www.weka.fr/actualite/?p=230194"
+  },
+  {
+   "date": "2026-11-16",
+   "heure": "20h20",
+   "type": "debat",
+   "titre": "Débat « Quelle société pour demain ? » sur le pouvoir d'achat et la précarité, avec cinq candidats (Édouard Philippe a décliné)",
+   "lieu": null,
+   "chaine": "TF1 et LCI, puis LCI seule à partir de 20h45",
+   "qui": [],
+   "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/presidentielle-2027-candidats-horaires-themes-ce-qu-il-faut-savoir-sur-le-debat-du-16-novembre-sur-tf1-et-lci/"
+  },
+  {
+   "date": "2026-11-24",
+   "heure": null,
+   "type": "evenement",
+   "titre": "108e Congrès des maires de France",
+   "lieu": "Paris, Porte de Versailles",
+   "chaine": null,
+   "qui": [],
+   "url": "https://votons-2027.fr/agenda"
+  },
+  {
+   "date": "2026-11-28",
+   "heure": null,
+   "type": "meeting",
+   "titre": "Réunion publique de François Asselineau",
+   "lieu": "Carros (Alpes-Maritimes)",
+   "chaine": null,
+   "qui": [],
+   "url": "https://votons-2027.fr/agenda"
+  },
+  {
+   "date": "2026-12-05",
+   "heure": "15h",
+   "type": "meeting",
+   "titre": "Meeting de Jean-Luc Mélenchon",
+   "lieu": "Le Havre, Docks Océane",
+   "chaine": null,
+   "qui": [
+    "melenchon"
+   ],
+   "url": "https://melenchon2027.fr/agenda-de-campagne/"
+  },
+  {
+   "date": "2026-12-06",
+   "heure": "14h30",
+   "type": "meeting",
+   "titre": "Grand meeting de lancement de campagne de Raphaël Glucksmann (entrée libre sur inscription)",
+   "lieu": "Paris, Paris Event Center (Porte de la Villette)",
+   "chaine": null,
+   "qui": [
+    "glucksmann"
+   ],
+   "url": "https://glucks2027.fr/meeting/"
+  },
+  {
+   "date": "2026-12-07",
+   "heure": "19h",
+   "type": "emission",
+   "titre": "« Le Grand Oral de la Jeunesse » : les candidats face aux étudiants",
+   "lieu": "Paris, Cité des sciences",
+   "chaine": "LCP et Public Sénat",
+   "qui": [],
+   "url": "https://lcp.fr/presse/communiques-de-presse/emission-speciale-presidentielle-2027-les-candidats-face-aux-etudiants"
+  },
+  {
+   "date": "2026-12-10",
+   "fin": "2026-12-13",
+   "heure": null,
+   "type": "vote",
+   "titre": "Vote des adhérents des Écologistes : maintien de la candidature de Marine Tondelier ou soutien à un autre candidat",
+   "lieu": null,
+   "chaine": null,
+   "qui": [
+    "tondelier"
+   ],
+   "url": "https://lcp.fr/actualites/presidentielle-2027-marine-tondelier-prete-a-une-coalition-autour-de-jean-luc-melenchon"
+  },
+  {
+   "date": "2026-12-13",
+   "heure": "15h",
+   "type": "meeting",
+   "titre": "Grand meeting de David Lisnard",
+   "lieu": "Chassieu, Eurexpo Lyon",
+   "chaine": null,
+   "qui": [
+    "lisnard"
+   ],
+   "url": "https://www.lyonmag.com/article/154666/presidentielle-2027-david-lisnard-prepare-un-grand-meeting-a-lyon"
+  },
+  {
+   "date": "2027-01-24",
+   "heure": null,
+   "type": "meeting",
+   "titre": "Grande réunion publique d'Édouard Philippe",
+   "lieu": "Arras (Pas-de-Calais)",
+   "chaine": null,
+   "qui": [
+    "philippe"
+   ],
+   "url": "https://lcp.fr/actualites/presidentielle-2027-edouard-philippe-promet-des-reformes-radicales-pour-relancer-sa"
+  },
+  {
+   "date": "2027-02-07",
+   "heure": null,
+   "type": "cle",
+   "titre": "Au plus tard : décret de convocation des électeurs, début officiel de la collecte des parrainages",
+   "lieu": null,
+   "chaine": null,
+   "qui": [],
+   "url": "https://www.amf.asso.fr/documents-parrainage-candidats-election-presidentielle-amf-demande-anonymat/43305"
+  },
+  {
+   "date": "2027-02-18",
+   "heure": null,
+   "type": "meeting",
+   "titre": "Meeting de Nathalie Arthaud",
+   "lieu": "Rouen, Halle aux toiles",
+   "chaine": null,
+   "qui": [
+    "arthaud"
+   ],
+   "url": "https://votons-2027.fr/agenda"
+  },
+  {
+   "date": "2027-02-27",
+   "heure": null,
+   "type": "evenement",
+   "titre": "Ouverture du Salon international de l'agriculture, passage traditionnel des candidats",
+   "lieu": "Paris, Porte de Versailles",
+   "chaine": null,
+   "qui": [],
+   "url": "https://votons-2027.fr/agenda"
+  },
+  {
+   "date": "2027-03-12",
+   "heure": null,
+   "type": "cle",
+   "titre": "Fin de la collecte des parrainages",
+   "lieu": null,
+   "chaine": null,
+   "qui": [],
+   "url": "https://www.amf.asso.fr/documents-parrainage-candidats-election-presidentielle-amf-demande-anonymat/43305"
+  },
+  {
+   "date": "2027-03-26",
+   "heure": null,
+   "type": "cle",
+   "titre": "Au plus tard : publication de la liste officielle des candidats",
+   "lieu": null,
+   "chaine": null,
+   "qui": [],
+   "url": "https://www.amf.asso.fr/documents-parrainage-candidats-election-presidentielle-amf-demande-anonymat/43305"
+  },
+  {
+   "date": "2027-04-04",
+   "heure": null,
+   "type": "cle",
+   "titre": "Au plus tard début avril : décision attendue de la Cour de cassation sur le pourvoi de Marine Le Pen",
+   "lieu": null,
+   "chaine": null,
+   "qui": [
+    "lepen"
+   ],
+   "url": "https://lcp.fr/actualites/pourvoi-de-marine-le-pen-la-cour-de-cassation-pourrait-etre-en-mesure-de-se-prononcer",
+   "date_texte": "Début avril 2027"
+  },
+  {
+   "date": "2027-04-18",
+   "heure": null,
+   "type": "cle",
+   "titre": "Premier tour de l'élection présidentielle",
+   "lieu": null,
+   "chaine": null,
+   "qui": [],
+   "url": "https://www.info.gouv.fr/actualite/presidentielle-2027-date-a-retenir-et-informations-cles"
+  },
+  {
+   "date": "2027-05-02",
+   "heure": null,
+   "type": "cle",
+   "titre": "Second tour de l'élection présidentielle",
+   "lieu": null,
+   "chaine": null,
+   "qui": [],
+   "url": "https://www.info.gouv.fr/actualite/presidentielle-2027-date-a-retenir-et-informations-cles"
+  }
+ ],
+ "rendezvous": [
+  {
+   "titre": "2027 Le grand Oral BFMTV-Le Figaro",
+   "quand": "Chaque dimanche",
+   "chaine": "BFMTV et Le Figaro TV",
+   "url": "https://fr.themedialeader.com/bfmtv-et-le-figaro-sassocient-pour-la-presidentielle-de-2027/"
+  },
+  {
+   "titre": "Objectif 2027 dimanche",
+   "quand": "Chaque dimanche",
+   "chaine": "TF1 / LCI, avec Le Parisien",
+   "url": "https://www.cbnews.fr/node/103200"
+  },
+  {
+   "titre": "Franc-jeu",
+   "quand": "Chaque dimanche",
+   "chaine": "France 2 et France Inter",
+   "url": "https://www.weka.fr/actualite/?p=230194"
+  }
+ ]
+}
