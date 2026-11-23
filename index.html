@@ -263,6 +263,7 @@ html, body, button, a, summary, select { touch-action: manipulation; }
       <button type="button" id="h-test"><span>🧭</span>Faire le test<small>Qui pense comme moi ?</small></button>
       <button type="button" id="h-guide"><span>🗳️</span>Guide du vote<small>Inscription, procuration…</small></button>
     </div>
+    <p class="muted" id="gc-note" style="font-size:12px;margin-top:16px" hidden>Mesure d'audience anonyme, sans cookies ni données personnelles (GoatCounter).</p>
   </section>
 
   <section class="view" id="v-sondages">
@@ -932,7 +933,7 @@ function renderFiche() {
     $('fiche').replaceChildren(d);
 }
 function openFiche(id, noPush) {
-  CUR = id; renderFiche();
+  CUR = id; renderFiche(); gcCount('/candidat/' + id, 'Fiche ' + id);
   for (const b of document.querySelectorAll('#tabs button')) b.classList.toggle('on', b.dataset.v === 'candidats');
   for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-fiche');
   scrollTo(0, 0);
@@ -1078,6 +1079,7 @@ function showView(v) {
   for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-' + v);
   if (v === 'sondages') renderSondages();
   if (v === 'accueil') renderAccueil();
+  gcCount('/' + v, v);
   scrollTo(0, 0);
   try { history.replaceState(null, '', v === 'accueil' ? location.pathname : '#' + v); } catch (e) {}
 }
@@ -1104,6 +1106,26 @@ for (const b of document.querySelectorAll('#seg button')) b.addEventListener('cl
 let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(renderSondages, 150); });
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') load(); });
 
+
+// Mesure d'audience anonyme (GoatCounter). Laisser vide pour désactiver.
+const GC_CODE = '';
+function gcCount(path, title, event) {
+  try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path, title: title || path, event: !!event }); } catch (e) {}
+}
+(function () {
+  if (!GC_CODE || !/github\.io$/.test(location.hostname)) return;
+  $('gc-note').hidden = false;
+  window.goatcounter = { no_onload: true };
+  const sc = document.createElement('script'); sc.async = true; sc.src = 'https://gc.zgo.at/count.js';
+  sc.dataset.goatcounter = 'https://' + GC_CODE + '.goatcounter.com/count';
+  sc.onload = () => {
+    gcCount('/accueil', 'Ouverture');
+    const standalone = (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone === true;
+    if (standalone) gcCount('ouverture-depuis-ecran-accueil', 'Ouverture depuis l’écran d’accueil', true);
+  };
+  document.head.append(sc);
+  addEventListener('appinstalled', () => gcCount('installation-android', 'Installation (Android)', true));
+})();
 (function () {
   const ua = navigator.userAgent || '';
   const standalone = (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone === true;
