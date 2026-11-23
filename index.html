@@ -61,7 +61,7 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .cand summary { list-style:none; display:flex; justify-content:space-between; align-items:center; gap:10px; }
 .cand summary::-webkit-details-marker { display:none; }
 .cand .who { font-weight:600; }
-.cand .pct { font: 400 20px Georgia, serif; font-variant-numeric:tabular-nums; }
+.cand .pct { font: 400 20px Georgia, serif; font-variant-numeric:tabular-nums; white-space:nowrap; }
 .cand ul { margin:4px 0 8px; padding-left:18px; }
 .cand li { margin-bottom:3px; }
 .tag { display:inline-block; font-size:11px; padding:2px 7px; border-radius:20px; background:var(--warn-bg); color:var(--warn-fg); margin-left:4px; }
@@ -74,6 +74,12 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .row { display:flex; justify-content:space-between; gap:10px; padding:8px 0; border-bottom:1px solid var(--line); }
 .row .l { font-weight:600; }
 .row .r { text-align:right; font-size:13px; color:var(--muted); max-width:60%; }
+.av { width:40px; height:40px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:14px; flex:none; letter-spacing:.5px; }
+.cand summary .idt { display:flex; align-items:center; gap:10px; }
+.th { margin-top:6px; } .th summary { font-weight:600; padding:6px 0; }
+.pg { border-bottom:1px solid var(--line); padding:10px 0; }
+.pg .top { display:flex; align-items:center; gap:10px; margin-bottom:4px; }
+.pg ul { margin:2px 0 0; padding-left:18px; }
 .timeline { padding-left:14px; border-left:2px solid var(--line); margin:8px 0 0 4px; }
 .timeline div { margin:0 0 10px; position:relative; }
 .timeline div::before { content:""; position:absolute; left:-20px; top:5px; width:10px; height:10px; border-radius:50%; background:var(--accent); }
@@ -127,6 +133,14 @@ details { margin-top:16px; } summary { cursor:pointer; }
     </div>
   </section>
 
+  <!-- PROGRAMMES -->
+  <section class="view" id="v-programmes">
+    <p>Choisissez un thème pour comparer les propositions des candidats.</p>
+    <div class="chips" id="th-chips"></div>
+    <div id="proglist"></div>
+    <p class="muted" style="margin-top:12px">Les propositions sont résumées à partir des programmes officiels (lien sur chaque fiche). Ce n'est qu'un aperçu : les programmes complets comptent souvent plus de cent mesures.</p>
+  </section>
+
   <!-- ACTU -->
   <section class="view" id="v-actu">
     <div class="chips" id="chips"></div>
@@ -160,6 +174,7 @@ details { margin-top:16px; } summary { cursor:pointer; }
 <nav class="tabs" id="tabs">
   <button data-v="sondages" class="on"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Sondages</button>
   <button data-v="candidats"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5M16 4.8a3.5 3.5 0 010 6.4M18 14.7c2 .7 3.2 2.5 3.6 5.3"/></svg>Candidats</button>
+  <button data-v="programmes"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 12h7M9 16h7"/></svg>Programmes</button>
   <button data-v="actu"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h10M7 17h6"/></svg>Actu</button>
   <button data-v="signatures"><svg viewBox="0 0 24 24"><path d="M4 17c3-1 4-6 6-6s1 5 3 5 2-3 4-3 2 2 3 2M4 21h16"/></svg>Signatures</button>
 </nav>
@@ -176,6 +191,10 @@ const fdate = (s) => { const [y, m, d] = s.split('-'); return d + '/' + m + '/' 
 const MOIS = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
 const fdateLong = (s) => { const [y, m, d] = s.split('-'); return +d + ' ' + MOIS[+m - 1] + ' ' + y; };
 const nomFamille = (n) => n.split(' ').slice(1).join(' ').replace(/^de /, '');
+const AVC = ['#3b6fe0','#d64a3f','#e8a23a','#2f9e8f','#8a5cd1','#d0629b','#5b8c2a','#c0702b','#4a7fa3','#9a5a8a','#6b8e23','#b5543c','#3f8f7f','#7a6bd1','#a8742a'];
+const avColor = (id) => { let h = 0; for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0; return AVC[h % AVC.length]; };
+const avatar = (c) => { const a = el('span', 'av', c.nom.split(' ').filter((w) => /^[A-ZÉÈ]/.test(w)).map((w) => w[0]).slice(0, 2).join('')); a.style.background = avColor(c.id); a.setAttribute('aria-hidden', 'true'); return a; };
+let THEME = null;
 let PERIOD = 0, POLLS = null, CAND = null, ACTU = null, FILTRE = '';
 
 function parseCSV(text) {
@@ -303,14 +322,21 @@ function renderCandidats() {
   const list = CAND.principaux.slice().sort((a, b) => nomFamille(a.nom).localeCompare(nomFamille(b.nom), 'fr'));
   $('candlist').replaceChildren(...list.map((c) => {
     const d = el('details', 'cand'); d.id = 'c-' + c.id;
-    const s = el('summary'); const left = el('div'); left.append(el('div', 'who', c.nom), el('div', 'party', c.parti));
+    const s = el('summary'); const left = el('div', 'idt'); const nm = el('div'); nm.append(el('div', 'who', c.nom), el('div', 'party', c.parti)); left.append(avatar(c), nm);
     const ls = latestScore(c.nom); const right = el('div', 'pct', ls ? fmt(ls.v) + ' %' : '');
     s.append(left, right); d.append(s);
     d.append(el('p', null, c.role), el('p', 'muted', c.annonce));
     if (ls) d.append(el('p', 'muted', `Score dans son dernier sondage : ${fmt(ls.v)} % (${ls.p.institut}, ${fdate(ls.p.date)}).`));
-    d.append(el('h3', null, 'Quelques propositions'));
+    d.append(el('h3', null, 'Mesures phares'));
     if (c.mesures.length) { const ul = el('ul'); c.mesures.forEach((m) => ul.append(el('li', null, m))); d.append(ul); const p = el('p', 'muted'); p.append('Source : ', link(c.source_mesures.nom, c.source_mesures.url)); d.append(p); }
-    else d.append(el('p', 'muted', 'Programme 2027 pas encore publié ou pas encore relevé.'));
+    else d.append(el('p', 'muted', 'Programme 2027 pas encore publié.'));
+    const pr = c.programme;
+    if (pr && pr.themes.length) {
+      d.append(el('h3', null, 'Programme par thème'));
+      if (pr.note) d.append(el('p', 'note', pr.note));
+      pr.themes.forEach((t) => { const td = el('details', 'th'); td.append(el('summary', null, t.theme + ' (' + t.mesures.length + ')')); const ul = el('ul'); t.mesures.forEach((m) => ul.append(el('li', null, m))); td.append(ul); d.append(td); });
+      const p = el('p', 'muted'); if (pr.url) { p.append(link('Programme officiel', pr.url)); } if (pr.recap) { if (pr.url) p.append(' · '); p.append(link('Toutes les mesures (Votons 2027)', pr.recap)); } d.append(p);
+    } else if (pr && pr.note) d.append(el('p', 'muted', pr.note));
     d.append(el('h3', null, 'Signatures'));
     const sp = el('p'); sp.append(c.parrainages.texte); const t1 = el('span', 'tag', 'non officiel'); sp.append(' ', t1); d.append(sp);
     if (c.parrainages.url) { const p = el('p', 'muted'); p.append('Source : ', link(c.parrainages.source || 'voir', c.parrainages.url)); d.append(p); }
@@ -328,6 +354,21 @@ function renderCandidats() {
   const sig = list;
   $('sig-list').replaceChildren(...sig.map((c) => { const r = el('div', 'row'); const rr = el('div', 'r'); rr.append(c.parrainages.texte + ' '); if (c.parrainages.url) rr.append(link('source', c.parrainages.url)); r.append(el('div', 'l', c.nom), rr); return r; }));
   $('fin-list').replaceChildren(...sig.map((c) => { const r = el('div', 'row'); const rr = el('div', 'r'); if (c.finances) { rr.append(c.finances.texte + ' '); rr.append(link('source', c.finances.url)); } else rr.append('Pas d’information publique fiable'); r.append(el('div', 'l', c.nom), rr); return r; }));
+}
+
+function renderProgrammes() {
+  if (!CAND) return;
+  const themes = CAND.themes || [];
+  if (!THEME) THEME = themes[0];
+  $('th-chips').replaceChildren(...themes.map((t) => { const b = el('button', THEME === t ? 'on' : '', t); b.onclick = () => { THEME = t; renderProgrammes(); }; return b; }));
+  const list = CAND.principaux.slice().sort((a, b) => nomFamille(a.nom).localeCompare(nomFamille(b.nom), 'fr'));
+  $('proglist').replaceChildren(...list.map((c) => {
+    const box = el('div', 'pg'); const top = el('div', 'top'); const nm = el('div'); nm.append(el('div', 'who', c.nom), el('div', 'party', c.parti)); top.append(avatar(c), nm); box.append(top);
+    const t = c.programme && c.programme.themes.find((x) => x.theme === THEME);
+    if (t) { const ul = el('ul'); t.mesures.forEach((m) => ul.append(el('li', null, m))); box.append(ul); if (c.programme.note) box.append(el('p', 'muted', c.programme.note)); }
+    else box.append(el('p', 'muted', 'Pas de proposition publiée sur ce thème à ce jour.'));
+    return box;
+  }));
 }
 
 function renderActu() {
@@ -357,7 +398,7 @@ async function load() {
   const st = $('status');
   if (!POLLS) { st.textContent = 'Impossible de charger les sondages. Vérifiez la connexion.'; st.className = 'muted err'; }
   else st.textContent = (mv.live ? 'Mis à jour à ' + new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }) : 'Hors ligne : derniers chiffres enregistrés') + ' · premier tour le 18 avril 2027';
-  renderSondages(); renderCandidats(); renderActu();
+  renderSondages(); renderCandidats(); renderProgrammes(); renderActu();
 }
 
 function showView(v) {
@@ -372,7 +413,7 @@ for (const b of document.querySelectorAll('#seg button')) b.addEventListener('cl
 let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(renderSondages, 150); });
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') load(); });
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
-const start = (location.hash || '').slice(1); if (['candidats', 'actu', 'signatures'].includes(start)) showView(start);
+const start = (location.hash || '').slice(1); if (['candidats', 'programmes', 'actu', 'signatures'].includes(start)) showView(start);
 load();
 </script>
 </body>

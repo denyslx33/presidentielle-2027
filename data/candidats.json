@@ -1,145 +1,1317 @@
 {
-  "maj": "2026-11-23",
-  "principaux": [
-    {
-      "id": "arthaud", "nom": "Nathalie Arthaud", "parti": "Lutte ouvrière",
-      "role": "Porte-parole de Lutte ouvrière, candidate en 2012, 2017 et 2022.",
-      "annonce": "Candidature annoncée en décembre 2025.",
-      "mesures": ["Interdire les licenciements et les suppressions d'emplois", "SMIC à 2 200 € et indexation des salaires et pensions sur les prix", "Rouvrir maternités, cliniques et centres de santé fermés"],
-      "source_mesures": {"nom": "Votons 2027 (d'après Lutte ouvrière)", "url": "https://votons-2027.fr/candidats/arthaud/programme"},
-      "parrainages": {"texte": "Aucun chiffre revendiqué. A toujours obtenu ses signatures jusqu'ici.", "source": "Le Parisien, 6 nov. 2026", "url": "https://presidentielle2027-france.fr/parrainages"},
-      "finances": null
-    },
-    {
-      "id": "attal", "nom": "Gabriel Attal", "parti": "Renaissance",
-      "role": "Ancien Premier ministre (2024), secrétaire général de Renaissance.",
-      "annonce": "Candidat depuis le 22 mai 2026.",
-      "mesures": ["Moins de 20 élèves par classe", "Aucune hausse d'impôt sur le quinquennat, 150 Md€ d'économies", "350 députés et 200 sénateurs", "100 000 postes publics en moins, sans licenciement", "Tripler le rythme de baisse des émissions d'ici 2030"],
-      "source_mesures": {"nom": "Votons 2027", "url": "https://votons-2027.fr/candidats/attal/programme"},
-      "parrainages": {"texte": "Soutien de 500 élus locaux affiché en mai (pas tous maires).", "source": "Le Parisien, 6 nov. 2026", "url": "https://presidentielle2027-france.fr/parrainages"},
-      "finances": {"texte": "Aucun prêt annoncé. Renaissance dispose de plus de 20 M€ après la vente de son ancien siège.", "source": "La Libre / Le Monde, oct. 2026", "url": "https://www.quebecnouvelles.com/presidentielle-2027-en-france-pourquoi-tant-de-candidats-ont-ils-du-mal-a-financer-leur-campagne-1483041.html"}
-    },
-    {
-      "id": "dupont-aignan", "nom": "Nicolas Dupont-Aignan", "parti": "Debout la France",
-      "role": "Président de Debout la France, député de 1997 à 2024.",
-      "annonce": "Candidat depuis mars 2025.",
-      "mesures": ["Baisser de 40 centimes le prix des carburants", "10 000 policiers et gendarmes de plus en 5 ans", "Passer de 577 à 500 députés"],
-      "source_mesures": {"nom": "Votons 2027 (d'après Debout la France)", "url": "https://votons-2027.fr/candidats/dupont-aignan/programme"},
-      "parrainages": {"texte": "Aucun chiffre revendiqué pour 2027. Les avait obtenues en 2022.", "source": "Le Parisien, 6 nov. 2026", "url": "https://presidentielle2027-france.fr/parrainages"},
-      "finances": null
-    },
-    {
-      "id": "glucksmann", "nom": "Raphaël Glucksmann", "parti": "Place publique (soutenu par le PS)",
-      "role": "Député européen, coprésident de Place publique.",
-      "annonce": "Vainqueur de la primaire sociale-démocrate le 11 octobre 2026.",
-      "mesures": ["200 Md€ d'investissement public pour l'écologie sur le quinquennat", "SMIC à 1 600 € net en deux ans", "Fonds européen de défense de 500 Md€ par emprunt commun", "Interdire les réseaux sociaux aux moins de 15 ans", "Instaurer la proportionnelle"],
-      "source_mesures": {"nom": "Votons 2027 (d'après Place publique)", "url": "https://votons-2027.fr/candidats/glucksmann/programme"},
-      "parrainages": {"texte": "Vu comme une formalité : le PS revendique 800 maires.", "source": "Le Parisien, 6 nov. 2026", "url": "https://presidentielle2027-france.fr/parrainages"},
-      "finances": null
-    },
-    {
-      "id": "lepen", "nom": "Marine Le Pen", "parti": "Rassemblement national",
-      "role": "Députée du Pas-de-Calais, candidate en 2012, 2017 et 2022.",
-      "annonce": "Candidate depuis le 7 juillet 2026, après sa condamnation en appel. Son pourvoi en cassation est pendant : décision attendue avant le premier tour.",
-      "mesures": ["Plan d'économies de 142 Md€ d'ici 2032", "Blocage temporaire des prix de l'énergie financé par une taxe sur les énergéticiens", "TVA à 5,5 % sur carburants, gaz et électricité", "Retraites : 15 à 20 Md€ d'économies à terme"],
-      "source_mesures": {"nom": "LCP, L'Essentiel de l'éco, Votons 2027", "url": "https://votons-2027.fr/candidats/le-pen/programme"},
-      "parrainages": {"texte": "Plus de 400 promesses revendiquées par le RN.", "source": "Le Parisien, 3 sept. 2026", "url": "https://entrevue.fr/presidentielle-2027/presidentielle-2027-ou-en-sont-les-candidats-dans-la-course-aux-500-parrainages/"},
-      "finances": {"texte": "Aucune banque française n'a accepté de prêter. Préaccord annoncé le 10 novembre avec deux banques européennes pour 10,6 M€, pas encore signé. En 2022, prêt du même montant auprès d'une banque hongroise.", "source": "Euronews / AFP, 10 nov. 2026", "url": "https://fr.euronews.com/2026/11/10/presidentielle-le-rn-tient-enfin-une-piste-a-letranger-pour-financer-sa-campagne"}
-    },
-    {
-      "id": "lisnard", "nom": "David Lisnard", "parti": "Nouvelle Énergie",
-      "role": "Maire de Cannes, président de l'Association des maires de France. A quitté LR le 31 mars 2026.",
-      "annonce": "Candidat déclaré en 2026.",
-      "mesures": ["Supprimer la C3S et la CVAE (11,5 Md€ d'impôts de production en moins)", "Remplacer l'AME par une aide d'urgence", "Pension minimale dès 65 ans et minimum vieillesse à 1 000 €", "+20 % pour les enseignants en 5 ans, avec réorganisation du métier", "Diviser par huit les titres de séjour délivrés"],
-      "source_mesures": {"nom": "Votons 2027 (d'après Nouvelle Énergie)", "url": "https://votons-2027.fr/candidats/lisnard/programme"},
-      "parrainages": {"texte": "Revendique ses 500 promesses (2 sept., confirmé le 3 nov. sur BFMTV).", "source": "Le JDD, nov. 2026", "url": "https://www.lejdd.fr/politique/presidentielle-il-manque-encore-100-parrainages-a-marine-le-pen-ou-en-sont-ses-concurrents-188616"},
-      "finances": null
-    },
-    {
-      "id": "melenchon", "nom": "Jean-Luc Mélenchon", "parti": "La France insoumise",
-      "role": "Fondateur de La France insoumise, candidat en 2012, 2017 et 2022.",
-      "annonce": "Candidat depuis début mai 2026.",
-      "mesures": ["200 000 logements publics par an", "Retour progressif de la retraite à 60 ans avec 40 annuités", "Retour aux 35 heures, 32 heures pour les métiers pénibles", "Revenu de chaque personne porté au seuil de pauvreté (1 337 €)", "Baisse de 65 % des émissions d'ici 2033"],
-      "source_mesures": {"nom": "Votons 2027 (d'après L'Avenir en commun 2027)", "url": "https://votons-2027.fr/candidats/melenchon/programme"},
-      "parrainages": {"texte": "LFI reconnaît des difficultés. Un peu plus de 200 promesses fin août. 906 parrainages obtenus en 2022.", "source": "Entrevue / Le Parisien", "url": "https://presidentielle2027-france.fr/parrainages"},
-      "finances": {"texte": "Dit avoir trouvé un prêteur. Montant non communiqué.", "source": "La Libre / Le Monde, oct. 2026", "url": "https://www.quebecnouvelles.com/presidentielle-2027-en-france-pourquoi-tant-de-candidats-ont-ils-du-mal-a-financer-leur-campagne-1483041.html"}
-    },
-    {
-      "id": "philippe", "nom": "Édouard Philippe", "parti": "Horizons",
-      "role": "Maire du Havre, ancien Premier ministre (2017-2020).",
-      "annonce": "Candidat depuis septembre 2024.",
-      "mesures": ["Retraite à 65 ans avec 45 ans de cotisation", "250 000 postes de fonctionnaires en moins sur le quinquennat", "Allocation familiale de 350 € dès le premier enfant, dégressive", "+20 % de salaire pour les enseignants", "50 Md€ d'impôts de production en moins, financés par la baisse des aides aux entreprises"],
-      "source_mesures": {"nom": "Public Sénat, 18 nov. 2026", "url": "https://www.publicsenat.fr/actualites/politique/capitalisation-suppression-de-250-000-postes-de-fonctionnaires-autonomie-des-ecoles-fin-des-35-heures-aides-pour-les-familles-edouard-philippe-presente-son-projet-massif-et"},
-      "parrainages": {"texte": "Vu comme une formalité : Horizons revendique plus de 400 maires.", "source": "Le Parisien, 6 nov. 2026", "url": "https://presidentielle2027-france.fr/parrainages"},
-      "finances": {"texte": "Dit avoir trouvé un prêteur. Montant non communiqué.", "source": "La Libre / Le Monde, oct. 2026", "url": "https://www.quebecnouvelles.com/presidentielle-2027-en-france-pourquoi-tant-de-candidats-ont-ils-du-mal-a-financer-leur-campagne-1483041.html"}
-    },
-    {
-      "id": "polony", "nom": "Natacha Polony", "parti": "Sans étiquette",
-      "role": "Journaliste et essayiste, a lancé un mouvement politique en septembre 2026.",
-      "annonce": "Candidate depuis le 14 octobre 2026.",
-      "mesures": [],
-      "source_mesures": null,
-      "parrainages": {"texte": "174 promesses de maires revendiquées.", "source": "Le Figaro, 1er nov. 2026", "url": "https://presidentielle2027-france.fr/parrainages"},
-      "finances": null
-    },
-    {
-      "id": "retailleau", "nom": "Bruno Retailleau", "parti": "Les Républicains",
-      "role": "Président de LR, sénateur de Vendée, ancien ministre de l'Intérieur.",
-      "annonce": "Candidat depuis le 12 février 2026, désigné par 73,8 % des adhérents LR le 19 avril.",
-      "mesures": ["Plan de 197 Md€ d'économies d'ici 2032", "Plus de cotisations sociales au-delà de 1 623 heures travaillées par an", "Revenu d'insertion de 300 €, + 250 € si formation ou recherche d'emploi", "Fonds France Production de 600 M€ par an pour l'industrie", "Réforme constitutionnelle en première grande réforme"],
-      "source_mesures": {"nom": "Votons 2027, LCP, Public Sénat", "url": "https://votons-2027.fr/candidats/retailleau/programme"},
-      "parrainages": {"texte": "Jugé assuré grâce aux centaines d'élus LR.", "source": "Le Parisien, 6 nov. 2026", "url": "https://presidentielle2027-france.fr/parrainages"},
-      "finances": {"texte": "Cherchait encore un prêt début octobre.", "source": "La Libre / Le Monde, oct. 2026", "url": "https://www.quebecnouvelles.com/presidentielle-2027-en-france-pourquoi-tant-de-candidats-ont-ils-du-mal-a-financer-leur-campagne-1483041.html"}
-    },
-    {
-      "id": "riner", "nom": "Teddy Riner", "parti": "Sans étiquette (« La France qu'on veut »)",
-      "role": "Judoka, champion olympique, se dit « ni de droite ni de gauche ».",
-      "annonce": "Candidat depuis le 9 novembre 2026.",
-      "mesures": ["Réformer les retraites", "Augmenter le salaire net en allégeant les charges", "Permettre de travailler plus sans remettre en cause les 35 heures"],
-      "source_mesures": {"nom": "Le Parisien via La Libre et Paris Match", "url": "https://www.lalibre.be/dernieres-depeches/2026/11/09/des-tatamis-a-lelysee-teddy-riner-annonce-sa-candidature-a-la-presidentielle-TN24TXUYZBDHLNYIUW4YHZJEI4/"},
-      "parrainages": {"texte": "Aucun chiffre public revendiqué.", "source": "Le Parisien, 9 nov. 2026", "url": "https://presidentielle2027-france.fr/parrainages"},
-      "finances": {"texte": "Campagne financée par des dons, des appels de fonds et des fonds propres. L'association de financement est présidée par l'entrepreneur Philippe Véran.", "source": "AFP via La Libre, 9 nov. 2026", "url": "https://www.lalibre.be/dernieres-depeches/2026/11/09/des-tatamis-a-lelysee-teddy-riner-annonce-sa-candidature-a-la-presidentielle-TN24TXUYZBDHLNYIUW4YHZJEI4/"}
-    },
-    {
-      "id": "roussel", "nom": "Fabien Roussel", "parti": "Parti communiste français",
-      "role": "Secrétaire national du PCF, candidat en 2022.",
-      "annonce": "Candidat déclaré.",
-      "mesures": [],
-      "source_mesures": null,
-      "parrainages": {"texte": "Jugé bien placé : 626 parrainages obtenus en 2022.", "source": "Le Parisien, 6 nov. 2026", "url": "https://presidentielle2027-france.fr/parrainages"},
-      "finances": null
-    },
-    {
-      "id": "tondelier", "nom": "Marine Tondelier", "parti": "Les Écologistes",
-      "role": "Secrétaire nationale des Écologistes.",
-      "annonce": "Candidate désignée. Les adhérents votent du 10 au 13 décembre : maintenir sa candidature ou soutenir un autre candidat de gauche.",
-      "mesures": ["SMIC à 2 000 € brut dès 2027", "7 Md€ par an pour l'adaptation au changement climatique", "2 000 centres de santé d'ici 2030", "9 000 magistrats de plus en dix ans"],
-      "source_mesures": {"nom": "Votons 2027 (d'après Les Écologistes)", "url": "https://votons-2027.fr/candidats/tondelier/programme"},
-      "parrainages": {"texte": "Dépend du vote des adhérents de décembre.", "source": "LCP", "url": "https://presidentielle2027-france.fr/parrainages"},
-      "finances": null
-    },
-    {
-      "id": "villepin", "nom": "Dominique de Villepin", "parti": "La France humaniste",
-      "role": "Ancien Premier ministre (2005-2007) et ministre des Affaires étrangères.",
-      "annonce": "Candidat depuis le 20 novembre 2026.",
-      "mesures": ["Supprimer toutes les niches fiscales et sociales", "Refonte globale de la CSG et des grands impôts", "Ramener le déficit public à 3 % du PIB"],
-      "source_mesures": {"nom": "LCP, 28 août 2026", "url": "https://lcp.fr/actualites/presidentielle-2027-dominique-villepin-veut-une-nouvelle-abolition-des-privileges-et-un"},
-      "parrainages": {"texte": "Aucun chiffre revendiqué.", "source": "", "url": "https://presidentielle2027-france.fr/parrainages"},
-      "finances": null
-    },
-    {
-      "id": "zemmour", "nom": "Éric Zemmour", "parti": "Reconquête",
-      "role": "Président de Reconquête, candidat en 2022.",
-      "annonce": "Candidature officialisée le 10 novembre 2026.",
-      "mesures": ["Baisser de 20 % la contribution française au budget de l'UE", "1 000 médecins salariés par l'État pour les déserts médicaux", "Droits de douane de 50 % sur les voitures électriques chinoises", "Trois jours de carence pour les arrêts maladie des fonctionnaires"],
-      "source_mesures": {"nom": "Votons 2027 (d'après Reconquête)", "url": "https://votons-2027.fr/candidats/zemmour/programme"},
-      "parrainages": {"texte": "Au moins 350 promesses revendiquées en septembre.", "source": "AFP, cité par Le Parisien", "url": "https://presidentielle2027-france.fr/parrainages"},
-      "finances": null
-    }
-  ],
-  "autres": ["François Asselineau (UPR)", "Juan Branco (Les Ruches)", "Clara Egger (Solution démocratique)", "Anasse Kazib (Révolution permanente)", "Selma Labib (NPA-Révolutionnaires)", "Francis Lalanne (France Libre)", "Jean Lassalle (Résistons)", "Mira Markovic (Parti animaliste)", "Antoine Mikolajczak (Équinoxe)", "Florian Philippot (Les Patriotes)", "et plusieurs autres candidatures moins connues"],
-  "retraits": [
-    {"nom": "François Ruffin (Debout !)", "texte": "A retiré sa candidature le 21 novembre 2026, faute de primaire de toute la gauche.", "url": "https://www.france24.com/fr/france/20261121-pr%C3%A9sidentielle-prenant-acte-de-l-impasse-de-sa-campagne-fran%C3%A7ois-ruffin-retire-sa-candidature"}
-  ],
-  "source_liste": {"nom": "LCP, liste des candidats déclarés et potentiels", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932"}
+ "maj": "2026-11-23",
+ "principaux": [
+  {
+   "id": "arthaud",
+   "nom": "Nathalie Arthaud",
+   "parti": "Lutte ouvrière",
+   "role": "Porte-parole de Lutte ouvrière, candidate en 2012, 2017 et 2022.",
+   "annonce": "Candidature annoncée en décembre 2025.",
+   "mesures": [
+    "Interdire les licenciements et les suppressions d'emplois",
+    "SMIC à 2 200 € et indexation des salaires et pensions sur les prix",
+    "Rouvrir maternités, cliniques et centres de santé fermés"
+   ],
+   "source_mesures": {
+    "nom": "Votons 2027 (d'après Lutte ouvrière)",
+    "url": "https://votons-2027.fr/candidats/arthaud/programme"
+   },
+   "parrainages": {
+    "texte": "Aucun chiffre revendiqué. A toujours obtenu ses signatures jusqu'ici.",
+    "source": "Le Parisien, 6 nov. 2026",
+    "url": "https://presidentielle2027-france.fr/parrainages"
+   },
+   "finances": null,
+   "programme": {
+    "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/11/Depliant-NA-3nov.pdf",
+    "note": null,
+    "recap": "https://votons-2027.fr/candidats/arthaud/programme",
+    "themes": [
+     {
+      "theme": "Économie",
+      "mesures": [
+       "Interdire les licenciements",
+       "SMIC à 2 200 € et salaires indexés sur les prix",
+       "Exproprier sans indemnité les actionnaires, à commencer par pétrole et armement",
+       "Réquisitionner les profits pour les services publics"
+      ]
+     },
+     {
+      "theme": "Social et santé",
+      "mesures": [
+       "Rouvrir maternités et centres de santé fermés",
+       "Aide à mourir encadrée",
+       "Dépénaliser le cannabis"
+      ]
+     },
+     {
+      "theme": "Immigration",
+      "mesures": [
+       "Régulariser les sans-papiers, liberté de circulation",
+       "Droit de vote des travailleurs immigrés"
+      ]
+     },
+     {
+      "theme": "Écologie et énergie",
+      "mesures": [
+       "Gratuité des transports en commun",
+       "Planifier l'économie"
+      ]
+     },
+     {
+      "theme": "Institutions",
+      "mesures": [
+       "Collectiviser les grands moyens de production et les banques"
+      ]
+     },
+     {
+      "theme": "Europe et international",
+      "mesures": [
+       "Retirer les troupes françaises d'Afrique",
+       "Industrie d'armement sous contrôle des travailleurs"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "attal",
+   "nom": "Gabriel Attal",
+   "parti": "Renaissance",
+   "role": "Ancien Premier ministre (2024), secrétaire général de Renaissance.",
+   "annonce": "Candidat depuis le 22 mai 2026.",
+   "mesures": [
+    "Moins de 20 élèves par classe",
+    "Aucune hausse d'impôt sur le quinquennat, 150 Md€ d'économies",
+    "350 députés et 200 sénateurs",
+    "100 000 postes publics en moins, sans licenciement",
+    "Tripler le rythme de baisse des émissions d'ici 2030"
+   ],
+   "source_mesures": {
+    "nom": "Votons 2027",
+    "url": "https://votons-2027.fr/candidats/attal/programme"
+   },
+   "parrainages": {
+    "texte": "Soutien de 500 élus locaux affiché en mai (pas tous maires).",
+    "source": "Le Parisien, 6 nov. 2026",
+    "url": "https://presidentielle2027-france.fr/parrainages"
+   },
+   "finances": {
+    "texte": "Aucun prêt annoncé. Renaissance dispose de plus de 20 M€ après la vente de son ancien siège.",
+    "source": "La Libre / Le Monde, oct. 2026",
+    "url": "https://www.quebecnouvelles.com/presidentielle-2027-en-france-pourquoi-tant-de-candidats-ont-ils-du-mal-a-financer-leur-campagne-1483041.html"
+   },
+   "programme": {
+    "url": "https://attalpresident.fr/programme",
+    "note": null,
+    "recap": "https://votons-2027.fr/candidats/attal/programme",
+    "themes": [
+     {
+      "theme": "Économie",
+      "mesures": [
+       "Aucune hausse d'impôt pendant le quinquennat",
+       "150 Md€ d'économies",
+       "Un pilier de capitalisation pour les retraites",
+       "Taxer les produits chinois vendus à perte"
+      ]
+     },
+     {
+      "theme": "Social et santé",
+      "mesures": [
+       "Un assistant médical IA pour chaque Français"
+      ]
+     },
+     {
+      "theme": "Éducation",
+      "mesures": [
+       "Moins de 20 élèves par classe",
+       "Certificat d'études en fin de CM2",
+       "Groupes de niveau en maths et français",
+       "Barème national des sanctions scolaires"
+      ]
+     },
+     {
+      "theme": "Sécurité et justice",
+      "mesures": [
+       "Comparution immédiate pour les mineurs récidivistes",
+       "Fichiers police, gendarmerie, justice et école interconnectés",
+       "Nouveau Livre blanc de la défense"
+      ]
+     },
+     {
+      "theme": "Immigration",
+      "mesures": [
+       "Immigration choisie par système à points",
+       "Quotas votés par le Parlement tous les deux ans",
+       "Regroupement familial durci"
+      ]
+     },
+     {
+      "theme": "Écologie et énergie",
+      "mesures": [
+       "Baisse des émissions de 5 % par an d'ici 2030",
+       "Électricité autour de 75 €/MWh",
+       "Ministère de l'Eau",
+       "Neutralité carbone en 2050"
+      ]
+     },
+     {
+      "theme": "Institutions",
+      "mesures": [
+       "350 députés et 200 sénateurs",
+       "100 000 postes publics en moins sans licenciement",
+       "Supprimer un échelon de collectivité",
+       "Silence de l'administration vaut accord sous deux mois"
+      ]
+     },
+     {
+      "theme": "Europe et international",
+      "mesures": [
+       "Référendum européen pour des « États-Unis d'Europe »",
+       "Bouclier européen contre missiles et drones",
+       "Diviser par deux la dépendance militaire hors Europe"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "dupont-aignan",
+   "nom": "Nicolas Dupont-Aignan",
+   "parti": "Debout la France",
+   "role": "Président de Debout la France, député de 1997 à 2024.",
+   "annonce": "Candidat depuis mars 2025.",
+   "mesures": [
+    "Baisser de 40 centimes le prix des carburants",
+    "10 000 policiers et gendarmes de plus en 5 ans",
+    "Passer de 577 à 500 députés"
+   ],
+   "source_mesures": {
+    "nom": "Votons 2027 (d'après Debout la France)",
+    "url": "https://votons-2027.fr/candidats/dupont-aignan/programme"
+   },
+   "parrainages": {
+    "texte": "Aucun chiffre revendiqué pour 2027. Les avait obtenues en 2022.",
+    "source": "Le Parisien, 6 nov. 2026",
+    "url": "https://presidentielle2027-france.fr/parrainages"
+   },
+   "finances": null,
+   "programme": {
+    "url": "https://www.debout-la-france.fr/notre-projet/",
+    "note": null,
+    "recap": "https://votons-2027.fr/candidats/dupont-aignan/programme",
+    "themes": [
+     {
+      "theme": "Économie",
+      "mesures": [
+       "75 % de la commande publique en produits français",
+       "Carburants 40 centimes moins chers",
+       "Diviser les normes par deux",
+       "10 000 € bloqués jusqu'à la retraite pour chaque nouveau-né"
+      ]
+     },
+     {
+      "theme": "Social et santé",
+      "mesures": [
+       "Un hôpital à moins de 45 minutes pour chacun",
+       "Arrêt des fermetures de maternités"
+      ]
+     },
+     {
+      "theme": "Éducation",
+      "mesures": [
+       "Uniforme obligatoire",
+       "+30 % d'heures de français et de maths",
+       "Retour à la méthode syllabique"
+      ]
+     },
+     {
+      "theme": "Sécurité et justice",
+      "mesures": [
+       "10 000 policiers et gendarmes de plus",
+       "Présomption de légitime défense pour les policiers",
+       "Perpétuité réelle"
+      ]
+     },
+     {
+      "theme": "Immigration",
+      "mesures": [
+       "Sortir de Schengen",
+       "Regroupement familial strictement limité",
+       "Asile demandé uniquement aux frontières"
+      ]
+     },
+     {
+      "theme": "Écologie et énergie",
+      "mesures": [
+       "MaPrimeRénov' doublée (6 Md€)",
+       "Fin des aides à l'éolien et au solaire",
+       "Au moins 70 % de nucléaire"
+      ]
+     },
+     {
+      "theme": "Institutions",
+      "mesures": [
+       "Référendum d'initiative citoyenne",
+       "Retour au septennat avec référendum révocatoire",
+       "500 députés"
+      ]
+     },
+     {
+      "theme": "Europe et international",
+      "mesures": [
+       "Sortie de l'Union européenne",
+       "Sortie du marché européen de l'électricité",
+       "Paix en Ukraine et partenariat avec la Russie"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "glucksmann",
+   "nom": "Raphaël Glucksmann",
+   "parti": "Place publique (soutenu par le PS)",
+   "role": "Député européen, coprésident de Place publique.",
+   "annonce": "Vainqueur de la primaire sociale-démocrate le 11 octobre 2026.",
+   "mesures": [
+    "200 Md€ d'investissement public pour l'écologie sur le quinquennat",
+    "SMIC à 1 600 € net en deux ans",
+    "Fonds européen de défense de 500 Md€ par emprunt commun",
+    "Interdire les réseaux sociaux aux moins de 15 ans",
+    "Instaurer la proportionnelle"
+   ],
+   "source_mesures": {
+    "nom": "Votons 2027 (d'après Place publique)",
+    "url": "https://votons-2027.fr/candidats/glucksmann/programme"
+   },
+   "parrainages": {
+    "texte": "Vu comme une formalité : le PS revendique 800 maires.",
+    "source": "Le Parisien, 6 nov. 2026",
+    "url": "https://presidentielle2027-france.fr/parrainages"
+   },
+   "finances": null,
+   "programme": {
+    "url": "https://place-publique.eu/pages/6mRSwq5tuSrSi68Cw1IADX/l-acte-i",
+    "note": "Programme de Place publique, environ 280 mesures, ici un aperçu.",
+    "recap": "https://votons-2027.fr/candidats/glucksmann/programme",
+    "themes": [
+     {
+      "theme": "Économie",
+      "mesures": [
+       "SMIC à 1 600 € net en deux ans",
+       "Abroger la réforme des retraites de 2023",
+       "Prix planchers pour les agriculteurs",
+       "Généraliser Territoires zéro chômeur"
+      ]
+     },
+     {
+      "theme": "Social et santé",
+      "mesures": [
+       "Mieux payer les soignants",
+       "Fin de la tarification à l'acte à l'hôpital",
+       "Santé mentale des jeunes en priorité nationale"
+      ]
+     },
+     {
+      "theme": "Éducation",
+      "mesures": [
+       "Moins d'élèves par enseignant en primaire",
+       "Hausse planifiée des salaires enseignants sur 5 ans",
+       "Refonte de Parcoursup",
+       "Capital formation universel"
+      ]
+     },
+     {
+      "theme": "Sécurité et justice",
+      "mesures": [
+       "Police de proximité",
+       "Lutte renforcée contre le narcotrafic, parquet financier européen",
+       "Convention citoyenne sur la politique des drogues"
+      ]
+     },
+     {
+      "theme": "Immigration",
+      "mesures": [
+       "Force européenne de sauvetage en mer",
+       "Fin du système de Dublin, asile harmonisé dans l'UE",
+       "Voies légales d'immigration de travail",
+       "Abroger la loi immigration de 2024"
+      ]
+     },
+     {
+      "theme": "Écologie et énergie",
+      "mesures": [
+       "200 Md€ d'investissement public sur le quinquennat",
+       "État d'urgence écologique dans la Constitution",
+       "Nucléaire conforté avec de nouvelles unités",
+       "Taxer le kérosène"
+      ]
+     },
+     {
+      "theme": "Institutions",
+      "mesures": [
+       "Proportionnelle immédiate",
+       "Interdire les réseaux sociaux aux moins de 15 ans",
+       "Supprimer l'article 16 de la Constitution",
+       "Sortir de la dépendance aux GAFAM en 5 ans"
+      ]
+     },
+     {
+      "theme": "Europe et international",
+      "mesures": [
+       "Fonds européen de défense de 500 Md€",
+       "Étendre la dissuasion nucléaire aux partenaires européens",
+       "Aide militaire renforcée à l'Ukraine",
+       "Vote à la majorité qualifiée au Conseil européen"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "lepen",
+   "nom": "Marine Le Pen",
+   "parti": "Rassemblement national",
+   "role": "Députée du Pas-de-Calais, candidate en 2012, 2017 et 2022.",
+   "annonce": "Candidate depuis le 7 juillet 2026, après sa condamnation en appel. Son pourvoi en cassation est pendant : décision attendue avant le premier tour.",
+   "mesures": [
+    "Plan d'économies de 142 Md€ d'ici 2032",
+    "Blocage temporaire des prix de l'énergie financé par une taxe sur les énergéticiens",
+    "TVA à 5,5 % sur carburants, gaz et électricité",
+    "Retraites : 15 à 20 Md€ d'économies à terme"
+   ],
+   "source_mesures": {
+    "nom": "LCP, L'Essentiel de l'éco, Votons 2027",
+    "url": "https://votons-2027.fr/candidats/le-pen/programme"
+   },
+   "parrainages": {
+    "texte": "Plus de 400 promesses revendiquées par le RN.",
+    "source": "Le Parisien, 3 sept. 2026",
+    "url": "https://entrevue.fr/presidentielle-2027/presidentielle-2027-ou-en-sont-les-candidats-dans-la-course-aux-500-parrainages/"
+   },
+   "finances": {
+    "texte": "Aucune banque française n'a accepté de prêter. Préaccord annoncé le 10 novembre avec deux banques européennes pour 10,6 M€, pas encore signé. En 2022, prêt du même montant auprès d'une banque hongroise.",
+    "source": "Euronews / AFP, 10 nov. 2026",
+    "url": "https://fr.euronews.com/2026/11/10/presidentielle-le-rn-tient-enfin-une-piste-a-letranger-pour-financer-sa-campagne"
+   },
+   "programme": {
+    "url": "https://rassemblementnational.fr/22-mesures",
+    "note": "Le programme 2027 complet n'est pas encore publié. Ces mesures viennent du programme présidentiel du RN (« 22 mesures », campagne 2022) repris sur son site.",
+    "recap": "https://votons-2027.fr/candidats/le-pen/programme",
+    "themes": [
+     {
+      "theme": "Économie",
+      "mesures": [
+       "TVA ramenée de 20 % à 5,5 % sur l'énergie",
+       "Renationaliser les autoroutes pour baisser les péages de 15 %",
+       "Exonérer d'impôt sur le revenu les actifs de moins de 30 ans",
+       "Minimum vieillesse à 1 000 € par mois"
+      ]
+     },
+     {
+      "theme": "Social et santé",
+      "mesures": [
+       "Plan d'urgence de 20 Md€ pour la santé",
+       "Arrêter les fermetures de lits et de maternités",
+       "AAH revalorisée et calculée sans les revenus du conjoint",
+       "Supprimer les ARS"
+      ]
+     },
+     {
+      "theme": "Éducation",
+      "mesures": [
+       "Uniforme au primaire et au collège",
+       "Revaloriser les salaires des enseignants",
+       "100 000 logements étudiants en cinq ans"
+      ]
+     },
+     {
+      "theme": "Sécurité et justice",
+      "mesures": [
+       "Rétablir les peines planchers",
+       "Supprimer réductions et aménagements de peine pour les violences",
+       "Présomption de légitime défense pour les forces de l'ordre",
+       "85 000 places de prison"
+      ]
+     },
+     {
+      "theme": "Immigration",
+      "mesures": [
+       "Demandes d'asile traitées uniquement depuis l'étranger",
+       "Aides sociales réservées aux Français, 5 ans de travail exigés pour certaines",
+       "Expulsion des étrangers en situation irrégulière, délinquants et criminels",
+       "Supprimer le droit du sol"
+      ]
+     },
+     {
+      "theme": "Écologie et énergie",
+      "mesures": [
+       "Arrêter les projets éoliens et démanteler progressivement les parcs",
+       "Relancer nucléaire et hydroélectricité",
+       "Sortir du marché européen de l'électricité"
+      ]
+     },
+     {
+      "theme": "Institutions",
+      "mesures": [
+       "Référendum d'initiative citoyenne et proportionnelle",
+       "Ministère d'État de la Mer et de l'Outre-mer"
+      ]
+     },
+     {
+      "theme": "Europe et international",
+      "mesures": [
+       "Budget de la défense à 55 Md€",
+       "Baisser la contribution française à l'UE",
+       "Abandonner le marché carbone ETS2"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "lisnard",
+   "nom": "David Lisnard",
+   "parti": "Nouvelle Énergie",
+   "role": "Maire de Cannes, président de l'Association des maires de France. A quitté LR le 31 mars 2026.",
+   "annonce": "Candidat déclaré en 2026.",
+   "mesures": [
+    "Supprimer la C3S et la CVAE (11,5 Md€ d'impôts de production en moins)",
+    "Remplacer l'AME par une aide d'urgence",
+    "Pension minimale dès 65 ans et minimum vieillesse à 1 000 €",
+    "+20 % pour les enseignants en 5 ans, avec réorganisation du métier",
+    "Diviser par huit les titres de séjour délivrés"
+   ],
+   "source_mesures": {
+    "nom": "Votons 2027 (d'après Nouvelle Énergie)",
+    "url": "https://votons-2027.fr/candidats/lisnard/programme"
+   },
+   "parrainages": {
+    "texte": "Revendique ses 500 promesses (2 sept., confirmé le 3 nov. sur BFMTV).",
+    "source": "Le JDD, nov. 2026",
+    "url": "https://www.lejdd.fr/politique/presidentielle-il-manque-encore-100-parrainages-a-marine-le-pen-ou-en-sont-ses-concurrents-188616"
+   },
+   "finances": null,
+   "programme": {
+    "url": "https://www.unenouvelleenergie.fr/notre-programme/",
+    "note": "Programme de Nouvelle Énergie, environ 245 mesures, ici un aperçu.",
+    "recap": "https://votons-2027.fr/candidats/lisnard/programme",
+    "themes": [
+     {
+      "theme": "Économie",
+      "mesures": [
+       "Supprimer la C3S et la CVAE (11,5 Md€)",
+       "Contrat de travail unique fusionnant CDI et CDD",
+       "Pension minimale dès 65 ans, minimum vieillesse à 1 000 €",
+       "Charges négatives pour embaucher des bénéficiaires du RSA de longue durée"
+      ]
+     },
+     {
+      "theme": "Social et santé",
+      "mesures": [
+       "Une maison de santé par canton",
+       "Doubler le nombre d'étudiants en médecine d'ici 2030",
+       "Supprimer les ARS"
+      ]
+     },
+     {
+      "theme": "Éducation",
+      "mesures": [
+       "Libre choix de l'école avec chèque éducation",
+       "Autonomie des chefs d'établissement",
+       "Certificat de fin de primaire pour entrer au collège",
+       "+20 % pour les enseignants en 5 ans, sous conditions"
+      ]
+     },
+     {
+      "theme": "Sécurité et justice",
+      "mesures": [
+       "Peines planchers pour les récidivistes",
+       "Majorité pénale à 16 ans",
+       "Armer les polices municipales volontaires"
+      ]
+     },
+     {
+      "theme": "Immigration",
+      "mesures": [
+       "Diviser par huit les titres de séjour délivrés",
+       "Fin de l'automaticité du droit du sol",
+       "Supprimer l'AME, remplacée par une aide d'urgence",
+       "Réviser l'accord de 1968 avec l'Algérie"
+      ]
+     },
+     {
+      "theme": "Écologie et énergie",
+      "mesures": [
+       "Réacteurs prolongés jusqu'à 60 ans, nouveaux EPR et petits réacteurs",
+       "Fiscalité environnementale à prélèvement total constant",
+       "Autoriser les nouvelles techniques génomiques"
+      ]
+     },
+     {
+      "theme": "Institutions",
+      "mesures": [
+       "Gouvernement de douze ministres",
+       "Supprimer la moitié des agences de l'État",
+       "Nouvelle décentralisation",
+       "Principe de responsabilité à la place du principe de précaution"
+      ]
+     },
+     {
+      "theme": "Europe et international",
+      "mesures": [
+       "Traité de démocratisation de l'Europe",
+       "Référendum possible en cas de blocage européen",
+       "Clauses miroirs sur les produits importés",
+       "Défense à 3,5 % du PIB"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "melenchon",
+   "nom": "Jean-Luc Mélenchon",
+   "parti": "La France insoumise",
+   "role": "Fondateur de La France insoumise, candidat en 2012, 2017 et 2022.",
+   "annonce": "Candidat depuis début mai 2026.",
+   "mesures": [
+    "200 000 logements publics par an",
+    "Retour progressif de la retraite à 60 ans avec 40 annuités",
+    "Retour aux 35 heures, 32 heures pour les métiers pénibles",
+    "Revenu de chaque personne porté au seuil de pauvreté (1 337 €)",
+    "Baisse de 65 % des émissions d'ici 2033"
+   ],
+   "source_mesures": {
+    "nom": "Votons 2027 (d'après L'Avenir en commun 2027)",
+    "url": "https://votons-2027.fr/candidats/melenchon/programme"
+   },
+   "parrainages": {
+    "texte": "LFI reconnaît des difficultés. Un peu plus de 200 promesses fin août. 906 parrainages obtenus en 2022.",
+    "source": "Entrevue / Le Parisien",
+    "url": "https://presidentielle2027-france.fr/parrainages"
+   },
+   "finances": {
+    "texte": "Dit avoir trouvé un prêteur. Montant non communiqué.",
+    "source": "La Libre / Le Monde, oct. 2026",
+    "url": "https://www.quebecnouvelles.com/presidentielle-2027-en-france-pourquoi-tant-de-candidats-ont-ils-du-mal-a-financer-leur-campagne-1483041.html"
+   },
+   "programme": {
+    "url": "https://melenchon2027.fr/programme/livre/",
+    "note": "L'Avenir en commun, édition 2027 : plus de 1 000 mesures, ici un aperçu.",
+    "recap": "https://votons-2027.fr/candidats/melenchon/programme",
+    "themes": [
+     {
+      "theme": "Économie",
+      "mesures": [
+       "200 000 logements publics par an",
+       "Retour aux 35 h, 32 h pour les métiers pénibles",
+       "Retour progressif de la retraite à 60 ans avec 40 annuités",
+       "Garantie d'autonomie au seuil de pauvreté (1 337 €)"
+      ]
+     },
+     {
+      "theme": "Social et santé",
+      "mesures": [
+       "Remboursement à 100 % des soins prescrits",
+       "Sortie de la tarification à l'activité à l'hôpital",
+       "Pôle public du médicament",
+       "Cannabis légalisé sous monopole d'État"
+      ]
+     },
+     {
+      "theme": "Éducation",
+      "mesures": [
+       "Gratuité réelle de l'école publique (cantine, transport, fournitures)",
+       "Moins de 19 élèves par classe en moyenne",
+       "Scolarité obligatoire jusqu'à 18 ans",
+       "Fin de Parcoursup"
+      ]
+     },
+     {
+      "theme": "Sécurité et justice",
+      "mesures": [
+       "Autorité indépendante à la place de l'IGPN et de l'IGGN",
+       "Interdire LBD, tasers et grenades de désencerclement en maintien de l'ordre",
+       "Rétablir la police de proximité, dissoudre BAC et BRAV-M"
+      ]
+     },
+     {
+      "theme": "Immigration",
+      "mesures": [
+       "Droit du sol intégral et naturalisation facilitée",
+       "Carte de séjour de dix ans comme titre de référence",
+       "Régularisation des travailleurs, étudiants et parents d'élèves sans papiers"
+      ]
+     },
+     {
+      "theme": "Écologie et énergie",
+      "mesures": [
+       "Baisse de 65 % des émissions d'ici 2033",
+       "100 % renouvelables au plus tard en 2060",
+       "Fermeture progressive du nucléaire, arrêt de l'EPR2",
+       "Interdire glyphosate et néonicotinoïdes"
+      ]
+     },
+     {
+      "theme": "Institutions",
+      "mesures": [
+       "Constituante pour une 6e République",
+       "Référendum d'initiative citoyenne",
+       "Proportionnelle à l'Assemblée",
+       "Supprimer le 49.3"
+      ]
+     },
+     {
+      "theme": "Europe et international",
+      "mesures": [
+       "Sortie du commandement intégré de l'OTAN puis de l'organisation",
+       "Modifier les traités et le statut de la BCE",
+       "Ukraine : cessez-le-feu et négociations",
+       "Suspendre l'accord d'association UE-Israël"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "philippe",
+   "nom": "Édouard Philippe",
+   "parti": "Horizons",
+   "role": "Maire du Havre, ancien Premier ministre (2017-2020).",
+   "annonce": "Candidat depuis septembre 2024.",
+   "mesures": [
+    "Retraite à 65 ans avec 45 ans de cotisation",
+    "250 000 postes de fonctionnaires en moins sur le quinquennat",
+    "Allocation familiale de 350 € dès le premier enfant, dégressive",
+    "+20 % de salaire pour les enseignants",
+    "50 Md€ d'impôts de production en moins, financés par la baisse des aides aux entreprises"
+   ],
+   "source_mesures": {
+    "nom": "Public Sénat, 18 nov. 2026",
+    "url": "https://www.publicsenat.fr/actualites/politique/capitalisation-suppression-de-250-000-postes-de-fonctionnaires-autonomie-des-ecoles-fin-des-35-heures-aides-pour-les-familles-edouard-philippe-presente-son-projet-massif-et"
+   },
+   "parrainages": {
+    "texte": "Vu comme une formalité : Horizons revendique plus de 400 maires.",
+    "source": "Le Parisien, 6 nov. 2026",
+    "url": "https://presidentielle2027-france.fr/parrainages"
+   },
+   "finances": {
+    "texte": "Dit avoir trouvé un prêteur. Montant non communiqué.",
+    "source": "La Libre / Le Monde, oct. 2026",
+    "url": "https://www.quebecnouvelles.com/presidentielle-2027-en-france-pourquoi-tant-de-candidats-ont-ils-du-mal-a-financer-leur-campagne-1483041.html"
+   },
+   "programme": {
+    "url": "https://www.edouardphilippe.fr/",
+    "note": "« Volume 1 » du programme présenté le 18 novembre 2026, un volume 2 est annoncé.",
+    "recap": "https://votons-2027.fr/candidats/philippe/programme",
+    "themes": [
+     {
+      "theme": "Économie",
+      "mesures": [
+       "Retraite à 65 ans et 45 ans de cotisation",
+       "50 Md€ d'impôts de production en moins contre 50 Md€ d'aides aux entreprises en moins",
+       "Temps de travail fixé par les entreprises, zéro cotisation patronale après la 37e heure",
+       "Allocation familiale de 350 € dès le premier enfant, dégressive"
+      ]
+     },
+     {
+      "theme": "Social et santé",
+      "mesures": [
+       "Stabiliser les dépenses de santé par la prévention et la technologie"
+      ]
+     },
+     {
+      "theme": "Éducation",
+      "mesures": [
+       "Larges pouvoirs aux chefs d'établissement",
+       "+20 % de rémunération pour les enseignants",
+       "Soutien scolaire public universel avec assistant IA",
+       "Moins d'élèves par classe en maternelle et primaire"
+      ]
+     },
+     {
+      "theme": "Sécurité et justice",
+      "mesures": [
+       "Peines planchers pour les violences contre policiers et professeurs",
+       "« État d'urgence narco » ciblé avec reconnaissance faciale",
+       "250 000 réservistes, service militaire volontaire de 50 000 places",
+       "Supprimer le juge d'application des peines"
+      ]
+     },
+     {
+      "theme": "Immigration",
+      "mesures": [
+       "Diviser l'immigration par deux",
+       "Dénoncer l'accord de 1968 avec l'Algérie",
+       "Suspendre le regroupement familial pendant le quinquennat",
+       "Fin de l'asile à vie"
+      ]
+     },
+     {
+      "theme": "Écologie et énergie",
+      "mesures": [
+       "8 EPR de plus en plus des 6 prévus",
+       "Prix du carbone aux frontières européennes",
+       "Plan baignade pour les rivières et piscines"
+      ]
+     },
+     {
+      "theme": "Institutions",
+      "mesures": [
+       "Le garde des Sceaux peut donner des instructions aux procureurs",
+       "Pouvoir de sanction aux maires pour les petites infractions",
+       "250 000 postes de fonctionnaires en moins"
+      ]
+     },
+     {
+      "theme": "Europe et international",
+      "mesures": [
+       "Achever le marché unique",
+       "Union des marchés de capitaux",
+       "Protéger le marché face à la concurrence chinoise",
+       "Infrastructure européenne d'IA souveraine"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "polony",
+   "nom": "Natacha Polony",
+   "parti": "Sans étiquette",
+   "role": "Journaliste et essayiste, a lancé un mouvement politique en septembre 2026.",
+   "annonce": "Candidate depuis le 14 octobre 2026.",
+   "mesures": [],
+   "source_mesures": null,
+   "parrainages": {
+    "texte": "174 promesses de maires revendiquées.",
+    "source": "Le Figaro, 1er nov. 2026",
+    "url": "https://presidentielle2027-france.fr/parrainages"
+   },
+   "finances": null,
+   "programme": {
+    "url": "https://natachapolony2027.fr/natacha-polony/ma-vision",
+    "note": "Pas encore de programme détaillé : ces mesures viennent de ses prises de position publiques.",
+    "recap": "https://votons-2027.fr/candidats/polony/programme",
+    "themes": [
+     {
+      "theme": "Économie",
+      "mesures": [
+       "Priorité française dans la commande publique",
+       "Taxe flottante sur les carburants",
+       "État stratège qui planifie les investissements"
+      ]
+     },
+     {
+      "theme": "Éducation",
+      "mesures": [
+       "Loi de programmation sur 10 ans",
+       "+20 à 30 % pour les enseignants",
+       "Fermer les bacs pro tertiaires peu insérants"
+      ]
+     },
+     {
+      "theme": "Sécurité et justice",
+      "mesures": [
+       "Centres éducatifs fermés pour les jeunes en décrochage"
+      ]
+     },
+     {
+      "theme": "Écologie et énergie",
+      "mesures": [
+       "Renationaliser EDF et défendre le nucléaire"
+      ]
+     },
+     {
+      "theme": "Institutions",
+      "mesures": [
+       "Plan contre la corruption et les conflits d'intérêts",
+       "Référendums réguliers"
+      ]
+     },
+     {
+      "theme": "Europe et international",
+      "mesures": [
+       "Pression sur la BCE contre la hausse des taux"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "retailleau",
+   "nom": "Bruno Retailleau",
+   "parti": "Les Républicains",
+   "role": "Président de LR, sénateur de Vendée, ancien ministre de l'Intérieur.",
+   "annonce": "Candidat depuis le 12 février 2026, désigné par 73,8 % des adhérents LR le 19 avril.",
+   "mesures": [
+    "Plan de 197 Md€ d'économies d'ici 2032",
+    "Plus de cotisations sociales au-delà de 1 623 heures travaillées par an",
+    "Revenu d'insertion de 300 €, + 250 € si formation ou recherche d'emploi",
+    "Fonds France Production de 600 M€ par an pour l'industrie",
+    "Réforme constitutionnelle en première grande réforme"
+   ],
+   "source_mesures": {
+    "nom": "Votons 2027, LCP, Public Sénat",
+    "url": "https://votons-2027.fr/candidats/retailleau/programme"
+   },
+   "parrainages": {
+    "texte": "Jugé assuré grâce aux centaines d'élus LR.",
+    "source": "Le Parisien, 6 nov. 2026",
+    "url": "https://presidentielle2027-france.fr/parrainages"
+   },
+   "finances": {
+    "texte": "Cherchait encore un prêt début octobre.",
+    "source": "La Libre / Le Monde, oct. 2026",
+    "url": "https://www.quebecnouvelles.com/presidentielle-2027-en-france-pourquoi-tant-de-candidats-ont-ils-du-mal-a-financer-leur-campagne-1483041.html"
+   },
+   "programme": {
+    "url": "https://republicains.fr/qrtravail/",
+    "note": "Programme des Républicains, environ 165 mesures, ici un aperçu.",
+    "recap": "https://votons-2027.fr/candidats/retailleau/programme",
+    "themes": [
+     {
+      "theme": "Économie",
+      "mesures": [
+       "Plan de 197 Md€ d'économies d'ici 2032",
+       "Plus de cotisations sociales au-delà de 1 623 heures par an",
+       "Revenu d'insertion de 300 €, +250 € sous conditions d'insertion",
+       "Fonds France Production de 600 M€ par an"
+      ]
+     },
+     {
+      "theme": "Social et santé",
+      "mesures": [
+       "IA médicales françaises entraînées sur les données de santé nationales"
+      ]
+     },
+     {
+      "theme": "Éducation",
+      "mesures": [
+       "+135 € nets en début de carrière, jusqu'à +300 € en milieu",
+       "Une École normale du professorat par académie",
+       "Plus de temps pour lire, écrire, compter",
+       "1 000 établissements publics innovants d'ici 2032"
+      ]
+     },
+     {
+      "theme": "Sécurité et justice",
+      "mesures": [
+       "Moyens contre la désinformation étrangère triplés",
+       "Vidéo intelligente autorisée dans un cadre strict",
+       "Plan de cybersécurité piloté par l'ANSSI"
+      ]
+     },
+     {
+      "theme": "Immigration",
+      "mesures": [
+       "Aides familiales réservées aux étrangers présents depuis 5 ans et en activité",
+       "Hébergement d'urgence conditionné à la régularité du séjour"
+      ]
+     },
+     {
+      "theme": "Écologie et énergie",
+      "mesures": [
+       "8 EPR2 supplémentaires",
+       "Centrales autorisées pour 80 ans",
+       "Modernisation de l'hydroélectricité"
+      ]
+     },
+     {
+      "theme": "Institutions",
+      "mesures": [
+       "Réforme constitutionnelle comme première grande réforme",
+       "Ne jamais imposer plus que ce qu'exige l'Europe",
+       "125 000 agents redéployés vers le terrain"
+      ]
+     },
+     {
+      "theme": "Europe et international",
+      "mesures": [
+       "Clauses de réciprocité dans tous les accords commerciaux",
+       "Taxe carbone aux frontières élargie",
+       "Coalition des pays favorables au nucléaire"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "riner",
+   "nom": "Teddy Riner",
+   "parti": "Sans étiquette (« La France qu'on veut »)",
+   "role": "Judoka, champion olympique, se dit « ni de droite ni de gauche ».",
+   "annonce": "Candidat depuis le 9 novembre 2026.",
+   "mesures": [
+    "Réformer les retraites",
+    "Augmenter le salaire net en allégeant les charges",
+    "Permettre de travailler plus sans remettre en cause les 35 heures"
+   ],
+   "source_mesures": {
+    "nom": "Le Parisien via La Libre et Paris Match",
+    "url": "https://www.lalibre.be/dernieres-depeches/2026/11/09/des-tatamis-a-lelysee-teddy-riner-annonce-sa-candidature-a-la-presidentielle-TN24TXUYZBDHLNYIUW4YHZJEI4/"
+   },
+   "parrainages": {
+    "texte": "Aucun chiffre public revendiqué.",
+    "source": "Le Parisien, 9 nov. 2026",
+    "url": "https://presidentielle2027-france.fr/parrainages"
+   },
+   "finances": {
+    "texte": "Campagne financée par des dons, des appels de fonds et des fonds propres. L'association de financement est présidée par l'entrepreneur Philippe Véran.",
+    "source": "AFP via La Libre, 9 nov. 2026",
+    "url": "https://www.lalibre.be/dernieres-depeches/2026/11/09/des-tatamis-a-lelysee-teddy-riner-annonce-sa-candidature-a-la-presidentielle-TN24TXUYZBDHLNYIUW4YHZJEI4/"
+   },
+   "programme": {
+    "url": null,
+    "note": "Pas encore de programme publié : orientations données dans Le Parisien le 9 novembre.",
+    "recap": null,
+    "themes": [
+     {
+      "theme": "Économie",
+      "mesures": [
+       "Augmenter le salaire net en allégeant les charges",
+       "Pouvoir travailler plus sans remettre en cause les 35 heures",
+       "Réformer les retraites"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "roussel",
+   "nom": "Fabien Roussel",
+   "parti": "Parti communiste français",
+   "role": "Secrétaire national du PCF, candidat en 2022.",
+   "annonce": "Candidat déclaré.",
+   "mesures": [],
+   "source_mesures": null,
+   "parrainages": {
+    "texte": "Jugé bien placé : 626 parrainages obtenus en 2022.",
+    "source": "Le Parisien, 6 nov. 2026",
+    "url": "https://presidentielle2027-france.fr/parrainages"
+   },
+   "finances": null,
+   "programme": {
+    "url": null,
+    "note": "Programme 2027 pas encore publié.",
+    "recap": null,
+    "themes": []
+   }
+  },
+  {
+   "id": "tondelier",
+   "nom": "Marine Tondelier",
+   "parti": "Les Écologistes",
+   "role": "Secrétaire nationale des Écologistes.",
+   "annonce": "Candidate désignée. Les adhérents votent du 10 au 13 décembre : maintenir sa candidature ou soutenir un autre candidat de gauche.",
+   "mesures": [
+    "SMIC à 2 000 € brut dès 2027",
+    "7 Md€ par an pour l'adaptation au changement climatique",
+    "2 000 centres de santé d'ici 2030",
+    "9 000 magistrats de plus en dix ans"
+   ],
+   "source_mesures": {
+    "nom": "Votons 2027 (d'après Les Écologistes)",
+    "url": "https://votons-2027.fr/candidats/tondelier/programme"
+   },
+   "parrainages": {
+    "texte": "Dépend du vote des adhérents de décembre.",
+    "source": "LCP",
+    "url": "https://presidentielle2027-france.fr/parrainages"
+   },
+   "finances": null,
+   "programme": {
+    "url": "https://lesecologistes.fr/pages/6ImK65GKUnvibm33WGkjkj/projet-2027",
+    "note": "Projet 2027 des Écologistes, environ 290 mesures, ici un aperçu.",
+    "recap": "https://votons-2027.fr/candidats/tondelier/programme",
+    "themes": [
+     {
+      "theme": "Économie",
+      "mesures": [
+       "SMIC à 2 000 € brut dès 2027",
+       "Encadrement des loyers généralisé",
+       "Rétablir l'impôt sur la grande fortune",
+       "Prêts à taux zéro pour décarboner PME et ETI"
+      ]
+     },
+     {
+      "theme": "Social et santé",
+      "mesures": [
+       "2 000 centres de santé d'ici 2030",
+       "Interdire PFAS et perturbateurs endocriniens",
+       "Plus de produits ultra-transformés à la cantine",
+       "AAH augmentée de 250 €"
+      ]
+     },
+     {
+      "theme": "Éducation",
+      "mesures": [
+       "19 élèves par classe en 2032, 12 en éducation prioritaire",
+       "+15 % pour les enseignants en 5 ans",
+       "Remplacer Parcoursup et MonMaster"
+      ]
+     },
+     {
+      "theme": "Sécurité et justice",
+      "mesures": [
+       "Police nationale de proximité",
+       "9 000 magistrats de plus en dix ans",
+       "Fin des contrôles d'identité aléatoires",
+       "Légaliser et encadrer le cannabis"
+      ]
+     },
+     {
+      "theme": "Immigration",
+      "mesures": [
+       "Droit du sol sans condition",
+       "Respect du droit d'asile, fin des refoulements illégaux",
+       "Accès aux soins et à l'école pour les exilés"
+      ]
+     },
+     {
+      "theme": "Écologie et énergie",
+      "mesures": [
+       "7 Md€ par an pour l'adaptation au climat",
+       "Moratoire sur les mégabassines",
+       "110 km/h sur autoroute",
+       "25 % de bio en 2032"
+      ]
+     },
+     {
+      "theme": "Institutions",
+      "mesures": [
+       "Proportionnelle intégrale aux législatives",
+       "Loi intégrale contre les violences sexistes et sexuelles (3 Md€)"
+      ]
+     },
+     {
+      "theme": "Europe et international",
+      "mesures": [
+       "Soutien politique et militaire à l'Ukraine",
+       "Arrêt des importations de gaz, uranium et engrais russes",
+       "Budget européen porté à 2 % du PIB en 2035"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "villepin",
+   "nom": "Dominique de Villepin",
+   "parti": "La France humaniste",
+   "role": "Ancien Premier ministre (2005-2007) et ministre des Affaires étrangères.",
+   "annonce": "Candidat depuis le 20 novembre 2026.",
+   "mesures": [
+    "Supprimer toutes les niches fiscales et sociales",
+    "Refonte globale de la CSG et des grands impôts",
+    "Ramener le déficit public à 3 % du PIB"
+   ],
+   "source_mesures": {
+    "nom": "LCP, 28 août 2026",
+    "url": "https://lcp.fr/actualites/presidentielle-2027-dominique-villepin-veut-une-nouvelle-abolition-des-privileges-et-un"
+   },
+   "parrainages": {
+    "texte": "Aucun chiffre revendiqué.",
+    "source": "",
+    "url": "https://presidentielle2027-france.fr/parrainages"
+   },
+   "finances": null,
+   "programme": {
+    "url": "https://lafrancehumaniste.fr/france2027.html",
+    "note": null,
+    "recap": "https://votons-2027.fr/candidats/villepin/programme",
+    "themes": [
+     {
+      "theme": "Économie",
+      "mesures": [
+       "Basculer plus de 200 Md€ de cotisations vers une CSG universelle (+200 € nets par mois en moyenne)",
+       "500 000 logements par an et garantie locative universelle",
+       "Supprimer les niches fiscales en cinq ans",
+       "Impôt sur le patrimoine des 1 % les plus aisés"
+      ]
+     },
+     {
+      "theme": "Social et santé",
+      "mesures": [
+       "Stocks stratégiques de médicaments",
+       "Option pour les hôpitaux vers un statut privé non lucratif"
+      ]
+     },
+     {
+      "theme": "Éducation",
+      "mesures": [
+       "Au moins +10 % pour les personnels scolaires",
+       "Deux ans de délai avant toute nouvelle réforme scolaire",
+       "Plateforme indépendante de signalement des violences"
+      ]
+     },
+     {
+      "theme": "Sécurité et justice",
+      "mesures": [
+       "Agence européenne de recherche de défense",
+       "Porte-avions nucléaire de nouvelle génération"
+      ]
+     },
+     {
+      "theme": "Immigration",
+      "mesures": [
+       "Politique de réciprocité : accueil conditionné à l'acceptation des retours"
+      ]
+     },
+     {
+      "theme": "Écologie et énergie",
+      "mesures": [
+       "Impôt environnemental unique avec dividende climat",
+       "6 EPR2 et éolien en mer",
+       "Moitié moins de pesticides d'ici 2030",
+       "Électricité au coût de production, facture -15 %"
+      ]
+     },
+     {
+      "theme": "Institutions",
+      "mesures": [
+       "Référendum d'initiative citoyenne préparé par une convention permanente",
+       "Diviser les codes juridiques par quatre"
+      ]
+     },
+     {
+      "theme": "Europe et international",
+      "mesures": [
+       "Pause dans l'intégration européenne",
+       "Impôt sur les sociétés harmonisé avec l'Allemagne"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "zemmour",
+   "nom": "Éric Zemmour",
+   "parti": "Reconquête",
+   "role": "Président de Reconquête, candidat en 2022.",
+   "annonce": "Candidature officialisée le 10 novembre 2026.",
+   "mesures": [
+    "Baisser de 20 % la contribution française au budget de l'UE",
+    "1 000 médecins salariés par l'État pour les déserts médicaux",
+    "Droits de douane de 50 % sur les voitures électriques chinoises",
+    "Trois jours de carence pour les arrêts maladie des fonctionnaires"
+   ],
+   "source_mesures": {
+    "nom": "Votons 2027 (d'après Reconquête)",
+    "url": "https://votons-2027.fr/candidats/zemmour/programme"
+   },
+   "parrainages": {
+    "texte": "Au moins 350 promesses revendiquées en septembre.",
+    "source": "AFP, cité par Le Parisien",
+    "url": "https://presidentielle2027-france.fr/parrainages"
+   },
+   "finances": null,
+   "programme": {
+    "url": "https://assets.ericzemmour.fr/document/Programme%20Reconqu%C3%AAte%20Europ%C3%A9ennes%202024.pdf",
+    "note": "Le programme présidentiel 2027 n'est pas encore publié. Ces mesures viennent du programme de Reconquête aux européennes 2024.",
+    "recap": "https://votons-2027.fr/candidats/zemmour/programme",
+    "themes": [
+     {
+      "theme": "Économie",
+      "mesures": [
+       "Baisser de 20 % la contribution française à l'UE",
+       "Une norme créée, deux supprimées",
+       "Droits de douane de 50 % sur les voitures électriques chinoises"
+      ]
+     },
+     {
+      "theme": "Social et santé",
+      "mesures": [
+       "1 000 médecins salariés par l'État sur 5 ans",
+       "Rétablir la garde obligatoire des médecins",
+       "AME limitée à l'aide médicale d'urgence"
+      ]
+     },
+     {
+      "theme": "Éducation",
+      "mesures": [
+       "Erasmus réservé aux jeunes Européens",
+       "Campagnes de soutien à la natalité"
+      ]
+     },
+     {
+      "theme": "Sécurité et justice",
+      "mesures": [
+       "Coordination européenne anti-drogue",
+       "Contrôles renforcés dans les ports",
+       "Saisie des biens liés aux trafics"
+      ]
+     },
+     {
+      "theme": "Immigration",
+      "mesures": [
+       "Quitter la CEDH",
+       "Interdire les Frères musulmans en Europe",
+       "Renvoyer les détenus étrangers",
+       "Couper les subventions aux ONG d'aide aux migrants"
+      ]
+     },
+     {
+      "theme": "Écologie et énergie",
+      "mesures": [
+       "Maintenir les voitures thermiques après 2035",
+       "Supprimer tout financement de l'éolien",
+       "Plan européen de 500 Md€ pour le nucléaire"
+      ]
+     },
+     {
+      "theme": "Institutions",
+      "mesures": [
+       "Garder espèces et chèques",
+       "Abolition de la GPA dans l'UE"
+      ]
+     },
+     {
+      "theme": "Europe et international",
+      "mesures": [
+       "Remplacer la Commission par un secrétariat du Conseil",
+       "Primauté du droit national dans la Constitution",
+       "Refuser tout nouvel élargissement"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "autres": [
+  "François Asselineau (UPR)",
+  "Juan Branco (Les Ruches)",
+  "Clara Egger (Solution démocratique)",
+  "Anasse Kazib (Révolution permanente)",
+  "Selma Labib (NPA-Révolutionnaires)",
+  "Francis Lalanne (France Libre)",
+  "Jean Lassalle (Résistons)",
+  "Mira Markovic (Parti animaliste)",
+  "Antoine Mikolajczak (Équinoxe)",
+  "Florian Philippot (Les Patriotes)",
+  "et plusieurs autres candidatures moins connues"
+ ],
+ "retraits": [
+  {
+   "nom": "François Ruffin (Debout !)",
+   "texte": "A retiré sa candidature le 21 novembre 2026, faute de primaire de toute la gauche.",
+   "url": "https://www.france24.com/fr/france/20261121-pr%C3%A9sidentielle-prenant-acte-de-l-impasse-de-sa-campagne-fran%C3%A7ois-ruffin-retire-sa-candidature"
+  }
+ ],
+ "source_liste": {
+  "nom": "LCP, liste des candidats déclarés et potentiels",
+  "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932"
+ },
+ "themes": [
+  "Économie",
+  "Social et santé",
+  "Éducation",
+  "Sécurité et justice",
+  "Immigration",
+  "Écologie et énergie",
+  "Institutions",
+  "Europe et international"
+ ]
 }
