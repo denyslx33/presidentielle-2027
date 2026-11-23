@@ -110,6 +110,38 @@
    "url": "https://www.publicsenat.fr/actualites/politique/primaire-les-equipes-dattal-retailleau-et-lisnard-salignent-sur-un-vote-en-janvier-moins-sur-le-cas-deric-zemmour"
   },
   {
+   "date": "2026-11-16",
+   "qui": [
+    "lepen",
+    "melenchon",
+    "glucksmann",
+    "retailleau",
+    "attal",
+    "philippe"
+   ],
+   "texte": "Débat sur TF1 et LCI depuis un entrepôt des Restos du Cœur : Marine Le Pen, Jean-Luc Mélenchon, Raphaël Glucksmann, Bruno Retailleau et Gabriel Attal débattent pouvoir d'achat et pauvreté. Édouard Philippe n'y participe pas.",
+   "source": "LCP",
+   "url": "https://lcp.fr/actualites/logement-associations-jeunesse-ce-qu-il-faut-retenir-du-debat-presidentiel-sur-lci"
+  },
+  {
+   "date": "2026-11-14",
+   "qui": [
+    "riner"
+   ],
+   "texte": "Au salon du Made in France, Teddy Riner se dit « ni de droite ni de gauche » et assure ne pas être macroniste. Il qualifie de « baiser empoisonné » les félicitations d'Emmanuel Macron.",
+   "source": "Euronews",
+   "url": "https://fr.euronews.com/2026/11/15/teddy-riner-qualifie-de-baiser-empoisonne-les-felicitations-du-chef-de-letat-pour-sa-candi"
+  },
+  {
+   "date": "2026-11-13",
+   "qui": [
+    "riner"
+   ],
+   "texte": "Premier déplacement de campagne de Teddy Riner, à l'hôpital Delafontaine de Saint-Denis, à la rencontre des soignants.",
+   "source": "Paris Match / AFP",
+   "url": "https://www.parismatch.be/actualites/monde/2026/11/13/teddy-riner-debute-sa-campagne-presidentielle-dans-un-hopital-jai-ecoute-jai-note-le-temps-de-la-reflexion-va-venir-ZX2IYQKNZZAEJD72XUF2ZVSDTQ/"
+  },
+  {
    "date": "2026-11-12",
    "qui": [
     "retailleau"
@@ -127,6 +159,15 @@
    "texte": "Saxo Bank suspend son partenariat publicitaire avec Teddy Riner après l'annonce de sa candidature.",
    "source": "Sud Radio",
    "url": "https://www.sudradio.fr/sud-radio/les-contrats-pub-de-riner-menaces-par-sa-candidature-a-la-presidentielle-202e"
+  },
+  {
+   "date": "2026-11-10",
+   "qui": [
+    "riner"
+   ],
+   "texte": "Teddy Riner donne les premières pistes de son programme (retraites, salaires, sécurité). Son association de financement est présidée par l'entrepreneur Philippe Véran, et l'ancien ministre François Braun fait partie de ses experts.",
+   "source": "LCP",
+   "url": "https://lcp.fr/actualites/retraites-salaires-securite-que-propose-teddy-riner-pour-la-presidentielle-444935"
   },
   {
    "date": "2026-11-10",
@@ -149,6 +190,15 @@
   {
    "date": "2026-11-09",
    "qui": [
+    "glucksmann"
+   ],
+   "texte": "Avec Yannick Jadot, Raphaël Glucksmann présente sa « révolution écologique » : 200 Md€ d'investissements publics sur le quinquennat et une « République écologique » inscrite dans la Constitution.",
+   "source": "Public Sénat",
+   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique"
+  },
+  {
+   "date": "2026-11-09",
+   "qui": [
     "riner"
    ],
    "texte": "Teddy Riner annonce sa candidature dans Le Parisien et sur les réseaux sociaux.",
@@ -164,6 +214,15 @@
    "texte": "Neuf députés communistes et ultramarins, dont trois membres du parti, annoncent soutenir Jean-Luc Mélenchon. Fabien Roussel maintient sa candidature.",
    "source": "La Gazette France",
    "url": "https://www.lagazettefrance.fr/article/presidentielle-malgre-les-defections-roussel-ira-jusqu-au-bout"
+  },
+  {
+   "date": "2026-11-06",
+   "qui": [
+    "philippe"
+   ],
+   "texte": "Édouard Philippe entame une tournée des régions (Chartres, Toulouse, Rillieux-la-Pape) et maintient son refus de la primaire.",
+   "source": "La Gazette France / AFP",
+   "url": "https://www.lagazettefrance.fr/article/edouard-philippe-entame-une-tournee-des-regions-refusant-toujours-la-primaire"
   },
   {
    "date": "2026-11-06",
