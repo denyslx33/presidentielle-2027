@@ -1105,7 +1105,7 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.addEventListener('controllerchange', () => { if (hadCtrl && !reloaded) { reloaded = true; location.reload(); } });
   navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then((reg) => { reg.update(); document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') reg.update(); }); }).catch(() => {});
 }
-const start = (location.hash || '').slice(1); if (start === 'guide') openGuide(); else if (start.startsWith('c-')) openFiche(start.slice(2), true); else if (['candidats', 'programmes', 'agenda', 'actu', 'test', 'sondages'].includes(start)) showView(start);
+const start = (location.hash || '').slice(1); if (start.startsWith('c-')) openFiche(start.slice(2), true); else { try { history.replaceState(null, '', location.pathname); } catch (e) {} }
 load();
 </script>
 </body>
