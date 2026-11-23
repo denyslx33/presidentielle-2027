@@ -221,11 +221,25 @@ html, body, button, a, summary, select { touch-action: manipulation; }
 .cmpbtn .ic, .inst .ic { flex:none; width:44px; height:44px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center; font-size:24px; }
 .thb span { width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; }
 .thb.on span { background:#fff; }
+.topbar { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.topbar h1 { margin:0 0 6px; }
+.tbtn { display:flex; gap:6px; }
+.tbtn button { width:38px; height:38px; border-radius:50%; border:1px solid var(--line); background:var(--panel); color:var(--fg); display:flex; align-items:center; justify-content:center; cursor:pointer; padding:0; }
+.tbtn svg { width:20px; height:20px; stroke:currentColor; fill:none; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; }
+.sharecard { font:inherit; width:100%; display:flex; align-items:center; gap:12px; text-align:left; color:var(--fg); background:var(--panel); border:2px solid var(--accent); border-radius:16px; padding:12px 14px; margin-top:12px; cursor:pointer; }
+.sharecard .ic { flex:none; width:42px; height:42px; border-radius:50%; background:var(--bg); display:flex; align-items:center; justify-content:center; font-size:22px; }
+.sharecard span:nth-child(2) { flex:1; } .sharecard small { color:var(--muted); } .sharecard .chev { font-size:24px; color:var(--accent); }
+.ab { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:4px 16px 8px; margin-top:12px; }
+.ab h3 { margin:12px 0 6px; } .ab ul { padding-left:18px; margin:6px 0; } .ab li { margin-bottom:6px; line-height:1.45; } .ab p { line-height:1.5; }
+.shopts { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:12px 0 6px; }
+.shopts a, .shopts button { font:inherit; font-size:12px; color:var(--fg); text-decoration:none; display:flex; flex-direction:column; align-items:center; gap:6px; background:none; border:0; cursor:pointer; }
+.shopts span { width:52px; height:52px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:24px; color:#fff; }
+.toast { position:fixed; left:50%; bottom:90px; transform:translateX(-50%); background:#1f2a44; color:#fff; padding:10px 16px; border-radius:20px; font-size:14px; z-index:1000; }
 </style>
 </head>
 <body>
 <main>
-  <h1>Présidentielle 2027</h1>
+  <div class="topbar"><h1>Présidentielle 2027</h1><div class="tbtn"><button type="button" id="b-share" aria-label="Partager l'appli"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg></button><button type="button" id="b-about" aria-label="À propos"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.1"/></svg></button></div></div>
   <div class="inst" id="inst" hidden>
     <span class="ic">📲</span>
     <div class="tx"><b>Ajoutez l'appli à votre téléphone</b><br><span>Gratuite, sans compte, mise à jour chaque jour.</span></div>
@@ -263,6 +277,8 @@ html, body, button, a, summary, select { touch-action: manipulation; }
       <button type="button" id="h-test"><span>🧭</span>Faire le test<small>Qui pense comme moi ?</small></button>
       <button type="button" id="h-guide"><span>🗳️</span>Guide du vote<small>Inscription, procuration…</small></button>
     </div>
+    <button type="button" class="sharecard" id="h-share"><span class="ic">💬</span><span><b>Faites connaître l'appli</b><br><small>Envoyez‑la à vos proches en un geste</small></span><span class="chev">›</span></button>
+    <button type="button" class="more" id="h-about" style="text-align:center">Qui sommes‑nous ? D'où viennent les infos ? ›</button>
     <p class="muted" id="gc-note" style="font-size:12px;margin-top:16px" hidden>Mesure d'audience anonyme, sans cookies ni données personnelles (GoatCounter).</p>
   </section>
 
@@ -405,6 +421,51 @@ html, body, button, a, summary, select { touch-action: manipulation; }
       <p>Même date limite d'inscription : le 6e vendredi avant le 1er tour.</p>
       <p><a href="https://www.diplomatie.gouv.fr/fr/services-aux-francaises-et-aux-francais/vie-administrative-et-elections/elections-a-l-etranger/modalites-de-vote/vote-a-l-urne" target="_blank" rel="noopener">Voter depuis l'étranger (diplomatie.gouv.fr)</a></p>
     </details>
+  </section>
+
+  <!-- A PROPOS -->
+  <section class="view" id="v-apropos">
+    <button class="back" id="aback">‹ Retour</button>
+    <h2>À propos</h2>
+    <div class="ab">
+      <h3>Une appli citoyenne, gratuite et indépendante</h3>
+      <p>Présidentielle 2027 est faite par deux citoyens, Dénys et Inès, pour suivre la campagne simplement : sondages, candidats, programmes, débats et infos pratiques pour voter.</p>
+      <ul>
+        <li><b>Gratuite</b>, sans compte et sans publicité.</li>
+        <li><b>Indépendante</b> : aucun lien avec un parti, un candidat ou un média. Personne ne finance l'appli.</li>
+        <li><b>Neutre</b> : les candidats sont présentés par ordre alphabétique, tous de la même façon, sans commentaire ni avis.</li>
+      </ul>
+    </div>
+    <div class="ab">
+      <h3>D'où viennent les infos ?</h3>
+      <ul>
+        <li><b>Sondages</b> : tous ceux déposés à la Commission des sondages, via la compilation ouverte de Mieux Voter, complétée par les rapports officiels des instituts. Les sondages commandés par un parti ou un candidat sont exclus.</li>
+        <li><b>Programmes</b> : résumés à partir des programmes officiels des candidats, avec le lien sur chaque fiche.</li>
+        <li><b>Actu et agenda</b> : presse reconnue (AFP, Le Monde, franceinfo, LCP, Public Sénat…) et sites officiels des campagnes. Chaque info renvoie vers son article.</li>
+        <li><b>Infos pour voter</b> : uniquement les sites officiels (service-public.gouv.fr, info.gouv.fr, diplomatie.gouv.fr).</li>
+        <li><b>Temps de parole</b> : les relevés officiels de l'Arcom.</li>
+        <li><b>Portraits</b> : photos libres de droits issues de Wikimédia Commons (crédits dans l'onglet Candidats).</li>
+      </ul>
+      <p>Les données sont mises à jour chaque jour, avec l'aide d'un assistant d'intelligence artificielle. Chaque chiffre et chaque mesure sont tirés d'une source qu'on peut vérifier, et rien n'est publié sans lien vers cette source.</p>
+    </div>
+    <div class="ab">
+      <h3>Le test « Qui pense comme moi ? »</h3>
+      <p>Chaque position de candidat vient d'une mesure publiée, affichée à la fin du test avec sa source. Un candidat qui ne s'est pas prononcé n'est pas compté. Le test aide à réfléchir, ce n'est pas une consigne de vote.</p>
+    </div>
+    <div class="ab">
+      <h3>Vos données</h3>
+      <ul>
+        <li>Aucun compte, aucune donnée personnelle collectée.</li>
+        <li>Vos réponses au test restent sur votre téléphone.</li>
+        <li>On compte les visites de façon anonyme, sans cookies (GoatCounter), pour savoir combien de personnes utilisent l'appli.</li>
+      </ul>
+    </div>
+    <div class="ab">
+      <h3>Une erreur ? Une question ?</h3>
+      <p>Si vous repérez une info fausse ou un oubli, dites‑le‑nous : on corrige vite.</p>
+      <p id="ab-contact" class="muted">Contact bientôt disponible.</p>
+    </div>
+    <button type="button" class="sharecard" id="ab-share"><span class="ic">💬</span><span><b>Partager l'appli</b><br><small>Plus on est nombreux à s'informer, mieux c'est</small></span><span class="chev">›</span></button>
   </section>
 
   <!-- PROGRAMMES -->
@@ -813,6 +874,7 @@ function renderQuizRes() {
   ]) { const o = el('div', 'other'); o.append(link(nom, url), el('div', 'muted', txt)); ot.append(o); }
   ot.append(el('p', 'muted', "Ces sites ne sont pas liés à cette appli. Aucun test ne remplace la lecture des programmes."));
   d.insertBefore(ot, det);
+  const shq = el('button', 'sharecard'); shq.type = 'button'; shq.innerHTML = '<span class="ic">💬</span><span><b>Proposez le test à vos proches</b><br><small>Comparez vos résultats</small></span><span class="chev">›</span>'; shq.onclick = shareApp; d.append(shq);
   const nav = el('div', 'qnav'); const mod = el('button', null, '‹ Modifier mes réponses'); mod.onclick = () => { QI = 0; renderQuizQ(); }; const rs = el('button', null, 'Nouveau test'); rs.onclick = resetQuiz; nav.append(mod, rs); d.append(nav);
   box.replaceChildren(d);
 }
@@ -888,6 +950,32 @@ function renderAccueil() {
     $('h-next').replaceChildren(...(rows.length ? rows : [el('p', 'muted', 'Aucune émission annoncée pour le moment.')]));
   }
   if (ACTU) $('h-actu').replaceChildren(...ACTU.items.slice(0, 3).map((n) => newsCard(n, byId)));
+}
+
+
+const APP_URL = 'https://denyslx33.github.io/presidentielle-2027/';
+const SHARE_TXT = "Je suis la présidentielle 2027 avec cette appli gratuite : sondages, candidats, programmes, débats et un test pour voir qui pense comme toi. Toutes les infos sont sourcées.";
+function toast(t) { const d = el('div', 'toast', t); document.body.append(d); setTimeout(() => d.remove(), 2200); }
+async function copyLink() { try { await navigator.clipboard.writeText(APP_URL); toast('Lien copié'); } catch (e) { prompt('Copiez le lien :', APP_URL); } }
+function shareSheet() {
+  const body = $('sheet-body'); const enc = encodeURIComponent; const msg = SHARE_TXT + ' ' + APP_URL;
+  const opt = (label, ic, bg, href, fn) => { const a = el(href ? 'a' : 'button'); if (href) { a.href = href; a.target = '_blank'; a.rel = 'noopener'; } else a.type = 'button'; const sp = el('span', null, ic); sp.style.background = bg; a.append(sp, label); if (fn) a.onclick = fn; a.addEventListener('click', () => gcCount('partage-' + label.toLowerCase(), 'Partage ' + label, true)); return a; };
+  const g = el('div', 'shopts');
+  g.append(opt('WhatsApp', '💬', '#25d366', 'https://wa.me/?text=' + enc(msg)), opt('SMS', '✉️', '#34c759', 'sms:?&body=' + enc(msg)), opt('E‑mail', '📧', '#3b6fe0', 'mailto:?subject=' + enc('Une appli pour suivre la présidentielle 2027') + '&body=' + enc(msg)), opt('Copier', '🔗', '#7a7f89', null, copyLink));
+  const head = el('h2', null, "Partager l'appli"); const p = el('p', 'muted', 'Envoyez le lien à vos proches. Ils pourront l’ajouter à leur téléphone en un geste.');
+  body.replaceChildren(p, g);
+  const sheet = $('inst-sheet'); sheet.querySelector('h2').textContent = "Partager l'appli"; sheet.hidden = false;
+}
+async function shareApp() {
+  gcCount('partage-ouvert', 'Ouverture du partage', true);
+  if (navigator.share) { try { await navigator.share({ title: 'Présidentielle 2027', text: SHARE_TXT, url: APP_URL }); gcCount('partage-natif', 'Partage (menu du téléphone)', true); return; } catch (e) { if (e && e.name === 'AbortError') return; } }
+  shareSheet();
+}
+function openAbout() {
+  const cur = document.querySelector('#tabs button.on'); GUIDE_FROM = cur ? cur.dataset.v : 'accueil';
+  for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-apropos');
+  scrollTo(0, 0); gcCount('/a-propos', 'À propos');
+  try { history.pushState(null, '', '#apropos'); PUSHED = true; } catch (e) {}
 }
 
 function sortedCands() { return CAND.principaux.slice().sort((a, b) => nomFamille(a.nom).localeCompare(nomFamille(b.nom), 'fr')); }
@@ -1085,7 +1173,7 @@ function showView(v) {
 }
 let PUSHED = false;
 $('back').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView('candidats'); });
-addEventListener('popstate', () => { PUSHED = false; const h = location.hash.slice(1); if (h === 'guide') { for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-guide'); } else if (h.startsWith('c-')) openFiche(h.slice(2), true); else showView(['candidats', 'programmes', 'agenda', 'actu', 'test', 'sondages'].includes(h) ? h : 'accueil'); });
+addEventListener('popstate', () => { PUSHED = false; const h = location.hash.slice(1); if (h === 'apropos') { for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-apropos'); } else if (h === 'guide') { for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-guide'); } else if (h.startsWith('c-')) openFiche(h.slice(2), true); else showView(['candidats', 'programmes', 'agenda', 'actu', 'test', 'sondages'].includes(h) ? h : 'accueil'); });
 for (const b of document.querySelectorAll('#tabs button')) b.addEventListener('click', () => showView(b.dataset.v));
 $('go-cmp').addEventListener('click', () => { setPMode('cmp'); scrollTo(0, 0); });
 $('cmp-back').addEventListener('click', () => { setPMode('theme'); scrollTo(0, 0); });
@@ -1101,6 +1189,11 @@ $('h-guide').addEventListener('click', openGuide);
 $('inscr-guide').addEventListener('click', (e) => { e.preventDefault(); openGuide(); });
 $('agenda-guide').addEventListener('click', openGuide);
 $('gback').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView(GUIDE_FROM); });
+for (const id of ['b-share', 'h-share', 'ab-share']) $(id).addEventListener('click', shareApp);
+$('sheet-x').addEventListener('click', () => { $('inst-sheet').hidden = true; });
+$('inst-sheet').addEventListener('click', (e) => { if (e.target === $('inst-sheet')) $('inst-sheet').hidden = true; });
+for (const id of ['b-about', 'h-about']) $(id).addEventListener('click', openAbout);
+$('aback').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView(GUIDE_FROM); });
 $('inscr-x').addEventListener('click', () => { $('inscr').hidden = true; });
 for (const b of document.querySelectorAll('#seg button')) b.addEventListener('click', () => { PERIOD = +b.dataset.p; for (const o of document.querySelectorAll('#seg button')) o.classList.toggle('on', o === b); renderSondages(); });
 let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(renderSondages, 150); });
@@ -1146,7 +1239,7 @@ function gcCount(path, title, event) {
     if (inApp) content = [el('p', null, "Vous avez ouvert le lien depuis une autre appli (Instagram, WhatsApp, Messenger…). Il faut d'abord l'ouvrir dans votre navigateur :"), steps(ios ? ["Touchez <span class='k'>⋯</span> ou <span class='k'>⬆︎</span> en haut ou en bas de l'écran", "Choisissez <b>Ouvrir dans Safari</b> (ou dans le navigateur)", "Puis touchez à nouveau <b>Ajouter</b> sur la page"] : ["Touchez <span class='k'>⋮</span> en haut à droite", "Choisissez <b>Ouvrir dans Chrome</b> (ou dans le navigateur)", "Puis touchez à nouveau <b>Ajouter</b> sur la page"])];
     else if (ios) content = [steps(["Touchez le bouton <b>Partager</b> <span class='k'>⬆︎</span> (en bas dans Safari, en haut dans Chrome)", "Faites défiler et choisissez <b>Sur l'écran d'accueil</b>", "Touchez <b>Ajouter</b> en haut à droite"]), el('p', 'muted', "L'icône apparaît sur votre écran d'accueil, comme une appli.")];
     else content = [steps(["Touchez <span class='k'>⋮</span> en haut à droite du navigateur", "Choisissez <b>Installer l'application</b> ou <b>Ajouter à l'écran d'accueil</b>", "Confirmez avec <b>Installer</b>"]), (() => { const x = el('p', 'muted'); x.innerHTML = "Sur Samsung Internet : menu <span class='k'>☰</span> en bas, puis « Ajouter la page à », puis « Écran d'accueil »."; return x; })()];
-    body.replaceChildren(...content);
+    body.replaceChildren(...content); sheet.querySelector('h2').textContent = "Ajouter l'appli";
     sheet.hidden = false;
   };
   $('inst-btn').addEventListener('click', async () => {
@@ -1154,8 +1247,6 @@ function gcCount(path, title, event) {
     show();
   });
   $('inst-x').addEventListener('click', () => { banner.hidden = true; try { sessionStorage.setItem('instX', '1'); } catch (e) {} });
-  $('sheet-x').addEventListener('click', () => { sheet.hidden = true; });
-  sheet.addEventListener('click', (e) => { if (e.target === sheet) sheet.hidden = true; });
 })();
 try { if (screen.orientation && screen.orientation.lock) screen.orientation.lock('portrait').catch(() => {}); } catch (e) {}
 if ('serviceWorker' in navigator) {
