@@ -3,6 +3,15 @@
  "items": [
   {
    "date": "2026-11-23",
+   "qui": [
+    "lisnard"
+   ],
+   "texte": "Ouverture du Congrès des maires à Paris, jusqu'au 26 novembre. Candidat à la présidentielle, David Lisnard remet en jeu la présidence de l'AMF face à Philippe Laurent, résultat le 25 novembre.",
+   "source": "Public Sénat",
+   "url": "https://www.publicsenat.fr/actualites/politique/le-congres-des-maires-de-france-ne-peut-pas-devenir-un-temps-de-la-presidentielle-avec-david-lisnard-conteste-il-se-passe-quelque-chose-a-lamf"
+  },
+  {
+   "date": "2026-11-23",
    "qui": [],
    "texte": "La secrétaire générale de la CFDT, Marylise Léon, redoute de fortes tensions si le second tour reste fixé au 2 mai, au lendemain du 1er mai.",
    "source": "franceinfo",
@@ -30,6 +39,13 @@
    "texte": "Enquête AMF-CEVIPOF : près d'un maire sur deux ne souhaite parrainer aucun candidat.",
    "source": "L'Express via Orange",
    "url": "https://actu.orange.fr/politique/presidentielle-2027-un-maire-sur-deux-reticent-a-parrainer-un-candidat-l-express-via-6medias-CNT000002tW8Dc.html"
+  },
+  {
+   "date": "2026-11-19",
+   "qui": [],
+   "texte": "L'Arcom publie ses règles pour la présidentielle : les plus gros créateurs de contenus vidéo devront aussi respecter le pluralisme. Équité du 16 mars au 4 avril, égalité stricte des temps de parole du 5 au 30 avril.",
+   "source": "Brut",
+   "url": "https://www.brut.media/fr/articles/presidentielle-les-createurs-de-contenus-devront-desormais-respecter-le-pluralisme-annonce-l-arcom"
   },
   {
    "date": "2026-11-19",
@@ -186,6 +202,13 @@
    "texte": "Premier grand meeting de campagne de Marine Le Pen à Orléans, après le congrès du RN.",
    "source": "La Libre / AFP",
    "url": "https://www.lalibre.be/dernieres-depeches/2026/10/25/pour-son-premier-meeting-de-campagne-le-pen-veut-insuffler-de-loptimisme-dans-un-pays-en-crise-QXFUPYUA7JB7ZIVYMIAHQRYFM4/"
+  },
+  {
+   "date": "2026-10-20",
+   "qui": [],
+   "texte": "Le Sénat adopte en première lecture le projet de loi contre les ingérences étrangères, à l'approche de la présidentielle.",
+   "source": "Vie publique",
+   "url": "https://www.vie-publique.fr/lettre_essentiel/46"
   },
   {
    "date": "2026-10-14",
