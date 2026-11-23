@@ -113,7 +113,7 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .duel .meta { font-size:12px; color:var(--muted); }
 .spark svg text { fill:var(--muted); font-size:10px; }
 .cmp-sel { display:flex; gap:8px; margin:10px 0; }
-.cmp-sel select { flex:1; font:inherit; font-size:14px; padding:7px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--fg); min-width:0; }
+.cmp-sel select { flex:1; font:inherit; font-size:16px; padding:7px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--fg); min-width:0; }
 .cmp-h { font-weight:600; margin:16px 0 6px; }
 .cmp-g { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
 .cmp-g > div { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:8px 10px; font-size:13px; }
@@ -141,6 +141,8 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .src .muted { font-size:12px; }
 .other { border-bottom:1px solid var(--line); padding:10px 0; }
 .other a { font-weight:600; }
+[hidden] { display:none !important; }
+html, body, button, a, summary, select { touch-action: manipulation; }
 </style>
 </head>
 <body>
