@@ -167,6 +167,21 @@ html, body, button, a, summary, select { touch-action: manipulation; }
 .tpr .h { display:flex; justify-content:space-between; font-size:14px; } .tpr .h b { font-weight:600; }
 .tpr .b { height:8px; background:var(--line); border-radius:5px; overflow:hidden; margin-top:4px; } .tpr .b i { display:block; height:100%; }
 #v-guide ul { padding-left:18px; } #v-guide li { margin-bottom:4px; }
+.hcard { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:12px 14px; margin-top:12px; }
+.hcard .hh { display:flex; justify-content:space-between; align-items:baseline; gap:8px; }
+.hcard h2 { font-size:17px; margin:0 0 4px; } .hcard .hh .muted { font-size:12px; text-align:right; }
+.hrow { display:flex; align-items:center; gap:10px; padding:7px 0; border-bottom:1px solid var(--line); cursor:pointer; }
+.hrow:last-child { border-bottom:0; }
+.hrow .av { width:34px; height:34px; font-size:12px; }
+.hrow .rk { width:16px; color:var(--muted); font-size:13px; text-align:center; flex:none; }
+.hrow .nm { flex:1; min-width:0; font-weight:600; font-size:15px; } .hrow .nm small { display:block; font-weight:400; color:var(--muted); font-size:12px; }
+.hrow .sc { font:400 20px Georgia, serif; white-space:nowrap; } .hrow .dv { font-size:12px; width:54px; text-align:right; white-space:nowrap; }
+.more { font:inherit; font-size:14px; color:var(--accent); background:none; border:0; padding:10px 0 2px; cursor:pointer; text-align:left; width:100%; font-weight:600; }
+.hcard .ncard { background:transparent; border:0; border-bottom:1px solid var(--line); border-radius:0; padding:10px 0; margin:0; }
+.hcard .ev { border-bottom:0; }
+.hbtns { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px; }
+.hbtns button { font:inherit; font-weight:700; font-size:15px; color:var(--fg); background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:14px 10px; display:flex; flex-direction:column; align-items:center; gap:3px; cursor:pointer; }
+.hbtns span { font-size:28px; } .hbtns small { font-weight:400; font-size:12px; color:var(--muted); }
 </style>
 </head>
 <body>
@@ -177,7 +192,31 @@ html, body, button, a, summary, select { touch-action: manipulation; }
   <div class="inscr" id="inscr"><span>🗳️</span><div>Pour voter les 18 avril et 2 mai 2027, il faut être inscrit sur les listes électorales au plus tard le <b>vendredi 12 mars 2027</b>. Même si vous avez déjà voté, vérifiez : après un déménagement, on peut ne plus être inscrit au bon endroit. <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/R51788" target="_blank" rel="noopener">Vérifier mon inscription</a> · <a href="#guide" id="inscr-guide">Guide du vote</a></div><button id="inscr-x" aria-label="Masquer">×</button></div>
 
   <!-- SONDAGES -->
-  <section class="view on" id="v-sondages">
+  <!-- ACCUEIL -->
+  <section class="view on" id="v-accueil">
+    <div class="hcard">
+      <div class="hh"><h2>Dernier sondage</h2><span class="muted" id="h-src"></span></div>
+      <div id="h-top"></div>
+      <button class="more" id="h-sond" type="button">Tous les sondages, la courbe et le 2nd tour ›</button>
+    </div>
+    <div class="hcard">
+      <div class="hh"><h2>Prochain rendez‑vous</h2></div>
+      <div id="h-next"></div>
+      <button class="more" id="h-agenda" type="button">Tout l'agenda ›</button>
+    </div>
+    <div class="hcard">
+      <div class="hh"><h2>Dernières actus</h2></div>
+      <div id="h-actu"></div>
+      <button class="more" id="h-actus" type="button">Toute l'actu ›</button>
+    </div>
+    <div class="hbtns">
+      <button type="button" id="h-test"><span>🧭</span>Faire le test<small>Qui pense comme moi ?</small></button>
+      <button type="button" id="h-guide"><span>🗳️</span>Guide du vote<small>Inscription, procuration…</small></button>
+    </div>
+  </section>
+
+  <section class="view" id="v-sondages">
+    <button class="back" id="sback">‹ Accueil</button>
     <p id="lede"></p>
     <div class="block">
       <h2>Dernier sondage</h2>
@@ -356,7 +395,7 @@ html, body, button, a, summary, select { touch-action: manipulation; }
 </main>
 
 <nav class="tabs" id="tabs">
-  <button data-v="sondages" class="on"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Sondages</button>
+  <button data-v="accueil" class="on"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg>Accueil</button>
   <button data-v="candidats"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5M16 4.8a3.5 3.5 0 010 6.4M18 14.7c2 .7 3.2 2.5 3.6 5.3"/></svg>Candidats</button>
   <button data-v="programmes"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 12h7M9 16h7"/></svg>Programmes</button>
   <button data-v="test"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.3a2.6 2.6 0 015 .9c0 1.8-2.5 2.2-2.5 3.8M12 17.2v.1"/></svg>Test</button>
@@ -386,7 +425,7 @@ const avatar = (c) => {
   img.src = 'data/portraits/' + c.id + '.jpg';
   return a;
 };
-let TP = null, GUIDE_FROM = 'sondages';
+let TP = null, GUIDE_FROM = 'accueil';
 let THEME = null, AGENDA = null, AGF = '', RAW = null, EXTRA = [], DUELS = null, QUIZ = null, PMODE = 'theme', CMPA = null, CMPB = null, QI = 0, QANS = null;
 let PERIOD = 0, POLLS = null, CAND = null, ACTU = null, FILTRE = '';
 
@@ -704,7 +743,7 @@ function renderQuizRes() {
 
 
 function openGuide() {
-  const cur = document.querySelector('#tabs button.on'); GUIDE_FROM = cur ? cur.dataset.v : 'sondages';
+  const cur = document.querySelector('#tabs button.on'); GUIDE_FROM = cur ? cur.dataset.v : 'accueil';
   for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-guide');
   scrollTo(0, 0);
   try { history.pushState(null, '', '#guide'); PUSHED = true; } catch (e) {}
@@ -731,6 +770,43 @@ function renderTP() {
   }
   const src = el('p', 'muted'); src.append('Source : '); src.append(link(TP && TP.source ? TP.source : 'Arcom', TP && TP.url ? TP.url : 'https://www.arcom.fr')); src.append('. Règles 2027 publiées le 19 novembre 2026.'); out.push(src);
   box.replaceChildren(...out);
+}
+
+
+function newsCard(n, byId) {
+  const a = el('a', 'ncard'); if (/^https?:\/\//.test(n.url)) { a.href = n.url; a.target = '_blank'; a.rel = 'noopener'; }
+  const avs = el('div', 'avs'); const who = n.qui.filter((i) => byId.has(i)).slice(0, 3);
+  if (who.length) who.forEach((i) => avs.append(avatar(byId.get(i)))); else avs.append(el('div', 'gen', '🗳️'));
+  const body = el('div'); body.append(el('div', 't', n.texte));
+  const src = el('div', 's'); src.append(n.source + ' · ', el('b', null, "Lire l'article ›")); body.append(src);
+  a.append(avs, body); return a;
+}
+function goView(v) { try { history.pushState(null, '', '#' + v); PUSHED = true; } catch (e) {} showViewNoHist(v); }
+function showViewNoHist(v) { const h = location.hash; showView(v); try { history.replaceState(null, '', h); } catch (e) {} }
+function renderAccueil() {
+  const byId = new Map((CAND ? CAND.principaux : []).map((c) => [c.id, c]));
+  const byNom = new Map((CAND ? CAND.principaux : []).map((c) => [c.nom, c]));
+  if (POLLS && POLLS.length) {
+    const last = POLLS[0]; const prev = POLLS.slice(1).find((p) => p.institut === last.institut);
+    const pm = new Map(prev ? prev.scores.map((x) => [x.nom, x.v]) : []);
+    $('h-src').textContent = last.institut + ', ' + fdate(last.date);
+    $('h-top').replaceChildren(...last.scores.slice().sort((a, b) => b.v - a.v).slice(0, 5).map((x, i) => {
+      const r = el('div', 'hrow'); const c = byNom.get(x.nom);
+      const av = c ? avatar(c) : el('span', 'av', x.nom.split(' ').map((w) => w[0]).slice(0, 2).join('')); if (!c) av.style.background = '#9a9aa3';
+      const nm = el('div', 'nm'); nm.append(x.nom, el('small', null, x.parti || ''));
+      const ev = el('div', 'dv');
+      if (pm.has(x.nom)) { const dv = Math.round((x.v - pm.get(x.nom)) * 10) / 10; ev.className = 'dv ' + (dv > 0 ? 'up' : dv < 0 ? 'down' : 'muted'); ev.textContent = (dv > 0 ? '+' : '') + fmt(dv) + ' pt'; }
+      r.append(el('span', 'rk', String(i + 1)), av, nm, el('div', 'sc', fmt(x.v) + ' %'), ev);
+      r.onclick = () => c ? openFiche(c.id) : goView('sondages');
+      return r;
+    }));
+  }
+  if (AGENDA) {
+    const today = new Date().toISOString().slice(0, 10);
+    const up = AGENDA.evenements.filter((e) => (e.fin || e.date) >= today).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 2);
+    $('h-next').replaceChildren(...(up.length ? up.map(evRow) : [el('p', 'muted', 'Aucun rendez‑vous annoncé pour le moment.')]));
+  }
+  if (ACTU) $('h-actu').replaceChildren(...ACTU.items.slice(0, 3).map((n) => newsCard(n, byId)));
 }
 
 function sortedCands() { return CAND.principaux.slice().sort((a, b) => nomFamille(a.nom).localeCompare(nomFamille(b.nom), 'fr')); }
@@ -876,12 +952,7 @@ function renderActu() {
   const out = []; let last = '';
   for (const n of items) {
     if (n.date !== last) { last = n.date; const h = el('div', 'dayh', dayLabel(n.date)); out.push(h); }
-    const a = el('a', 'ncard'); if (/^https?:\/\//.test(n.url)) { a.href = n.url; a.target = '_blank'; a.rel = 'noopener'; }
-    const avs = el('div', 'avs'); const who = n.qui.filter((i) => byId.has(i)).slice(0, 3);
-    if (who.length) who.forEach((i) => avs.append(avatar(byId.get(i)))); else avs.append(el('div', 'gen', '🗳️'));
-    const body = el('div'); body.append(el('div', 't', n.texte));
-    const src = el('div', 's'); src.append(n.source + ' · ', el('b', null, "Lire l'article ›")); body.append(src);
-    a.append(avs, body); out.push(a);
+    out.push(newsCard(n, byId));
   }
   if (!items.length) out.push(el('p', 'muted', 'Pas d’actu récente pour ce candidat.'));
   $('newslist').replaceChildren(...out);
@@ -907,25 +978,33 @@ async function load() {
   const st = $('status');
   if (!POLLS) { st.textContent = 'Impossible de charger les sondages. Vérifiez la connexion.'; st.className = 'muted err'; }
   else st.textContent = (mv.live ? 'Mis à jour à ' + new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }) : 'Hors ligne : derniers chiffres enregistrés') + ' · premier tour le 18 avril 2027';
-  renderSondages(); renderCandidats(); renderProgrammes(); renderActu(); renderAgenda(); renderCredits(); renderFiche(); renderDuels(); countdown(); renderTP();
+  renderSondages(); renderCandidats(); renderProgrammes(); renderActu(); renderAgenda(); renderCredits(); renderFiche(); renderDuels(); countdown(); renderTP(); renderAccueil();
   if (PMODE === 'cmp') renderCmp(); if (!$('quiz').firstChild || $('quiz').textContent === 'Chargement…') renderQuiz();
 }
 
 function showView(v) {
-  for (const b of document.querySelectorAll('#tabs button')) b.classList.toggle('on', b.dataset.v === v);
+  const tab = v === 'sondages' ? 'accueil' : v;
+  for (const b of document.querySelectorAll('#tabs button')) b.classList.toggle('on', b.dataset.v === tab);
   for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-' + v);
   if (v === 'sondages') renderSondages();
+  if (v === 'accueil') renderAccueil();
   scrollTo(0, 0);
-  try { history.replaceState(null, '', '#' + v); } catch (e) {}
+  try { history.replaceState(null, '', v === 'accueil' ? location.pathname : '#' + v); } catch (e) {}
 }
 let PUSHED = false;
 $('back').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView('candidats'); });
-addEventListener('popstate', () => { PUSHED = false; const h = location.hash.slice(1); if (h === 'guide') { for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-guide'); } else if (h.startsWith('c-')) openFiche(h.slice(2), true); else showView(['candidats', 'programmes', 'agenda', 'actu', 'test'].includes(h) ? h : 'sondages'); });
+addEventListener('popstate', () => { PUSHED = false; const h = location.hash.slice(1); if (h === 'guide') { for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-guide'); } else if (h.startsWith('c-')) openFiche(h.slice(2), true); else showView(['candidats', 'programmes', 'agenda', 'actu', 'test', 'sondages'].includes(h) ? h : 'accueil'); });
 for (const b of document.querySelectorAll('#tabs button')) b.addEventListener('click', () => showView(b.dataset.v));
 for (const b of document.querySelectorAll('#pseg button')) b.addEventListener('click', () => setPMode(b.dataset.m));
 $('cmp-a').addEventListener('change', (e) => { CMPA = e.target.value; renderCmp(); });
 $('cmp-b').addEventListener('change', (e) => { CMPB = e.target.value; renderCmp(); });
 countdown();
+$('sback').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView('accueil'); });
+$('h-sond').addEventListener('click', () => goView('sondages'));
+$('h-agenda').addEventListener('click', () => showView('agenda'));
+$('h-actus').addEventListener('click', () => showView('actu'));
+$('h-test').addEventListener('click', () => showView('test'));
+$('h-guide').addEventListener('click', openGuide);
 $('inscr-guide').addEventListener('click', (e) => { e.preventDefault(); openGuide(); });
 $('agenda-guide').addEventListener('click', openGuide);
 $('gback').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView(GUIDE_FROM); });
@@ -934,7 +1013,7 @@ for (const b of document.querySelectorAll('#seg button')) b.addEventListener('cl
 let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(renderSondages, 150); });
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') load(); });
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
-const start = (location.hash || '').slice(1); if (start === 'guide') openGuide(); else if (start.startsWith('c-')) openFiche(start.slice(2), true); else if (['candidats', 'programmes', 'agenda', 'actu', 'test'].includes(start)) showView(start);
+const start = (location.hash || '').slice(1); if (start === 'guide') openGuide(); else if (start.startsWith('c-')) openFiche(start.slice(2), true); else if (['candidats', 'programmes', 'agenda', 'actu', 'test', 'sondages'].includes(start)) showView(start);
 load();
 </script>
 </body>
