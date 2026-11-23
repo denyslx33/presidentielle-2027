@@ -955,7 +955,7 @@ function renderAccueil() {
 
 
 const APP_URL = 'https://denyslx33.github.io/presidentielle-2027/';
-const SHARE_TXT = "Je suis la présidentielle 2027 avec cette appli gratuite : sondages, candidats, programmes, débats et un test pour voir qui pense comme toi. Toutes les infos sont sourcées.";
+const SHARE_TXT = "La présidentielle 2027 en une appli : sondages, programmes, agenda des débats. Gratuite, sans pub, sans compte.";
 function toast(t) { const d = el('div', 'toast', t); document.body.append(d); setTimeout(() => d.remove(), 2200); }
 async function copyLink() { try { await navigator.clipboard.writeText(APP_URL); toast('Lien copié'); } catch (e) { prompt('Copiez le lien :', APP_URL); } }
 function shareSheet() {
