@@ -200,7 +200,7 @@ html, body, button, a, summary, select { touch-action: manipulation; }
       <button class="more" id="h-sond" type="button">Tous les sondages, la courbe et le 2nd tour ›</button>
     </div>
     <div class="hcard">
-      <div class="hh"><h2>Prochain rendez‑vous</h2></div>
+      <div class="hh"><h2>À la télé</h2></div>
       <div id="h-next"></div>
       <button class="more" id="h-agenda" type="button">Tout l'agenda ›</button>
     </div>
@@ -803,8 +803,13 @@ function renderAccueil() {
   }
   if (AGENDA) {
     const today = new Date().toISOString().slice(0, 10);
-    const up = AGENDA.evenements.filter((e) => (e.fin || e.date) >= today).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 2);
-    $('h-next').replaceChildren(...(up.length ? up.map(evRow) : [el('p', 'muted', 'Aucun rendez‑vous annoncé pour le moment.')]));
+    const up = AGENDA.evenements.filter((e) => ['debat', 'emission'].includes(e.type) && (e.fin || e.date) >= today).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 2);
+    const rows = up.map(evRow);
+    for (const r of (AGENDA.rendezvous || []).slice(0, 3 - rows.length)) {
+      const d = el('div', 'hrow'); d.style.cursor = 'default';
+      const nm = el('div', 'nm'); nm.append(r.titre, el('small', null, r.quand + ' · ' + r.chaine)); d.append(el('span', null, '📺'), nm); rows.push(d);
+    }
+    $('h-next').replaceChildren(...(rows.length ? rows : [el('p', 'muted', 'Aucune émission annoncée pour le moment.')]));
   }
   if (ACTU) $('h-actu').replaceChildren(...ACTU.items.slice(0, 3).map((n) => newsCard(n, byId)));
 }
