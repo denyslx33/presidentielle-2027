@@ -241,6 +241,7 @@ body.silence #v-sondages .block, body.silence #v-sondages #lede, body.silence #v
 .aseg { display:grid; grid-template-columns:1fr 1fr; gap:6px; background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:4px; margin:2px 0 10px; }
 .aseg button { font:inherit; font-size:15px; font-weight:600; border:0; border-radius:10px; padding:9px; background:none; color:var(--muted); cursor:pointer; }
 .aseg button.on { background:var(--accent); color:#fff; }
+.ptag2 { display:inline-block; font-size:11px; font-weight:600; color:var(--muted); border:1px solid var(--line); border-radius:20px; padding:1px 8px; margin-bottom:4px; }
 </style>
 </head>
 <body>
@@ -941,7 +942,9 @@ function newsCard(n, byId) {
   const a = el('a', 'ncard'); if (/^https?:\/\//.test(n.url)) { a.href = n.url; a.target = '_blank'; a.rel = 'noopener'; }
   const avs = el('div', 'avs'); const who = n.qui.filter((i) => byId.has(i)).slice(0, 3);
   if (who.length) who.forEach((i) => avs.append(avatar(byId.get(i)))); else avs.append(el('div', 'gen', '🗳️'));
-  const body = el('div'); body.append(el('div', 't', n.texte));
+  const body = el('div');
+  if (n.parti && who.length) { const c0 = byId.get(who[0]); body.append(el('div', 'ptag2', 'Parti · ' + (n.parti === true ? c0.parti : n.parti))); }
+  body.append(el('div', 't', n.texte));
   const src = el('div', 's'); src.append(n.source + ' · ', el('b', null, "Lire l'article ›")); body.append(src);
   a.append(avs, body); return a;
 }
