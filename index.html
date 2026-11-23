@@ -197,6 +197,27 @@ html, body, button, a, summary, select { touch-action: manipulation; }
 .sheet-in .x { position:absolute; right:16px; top:12px; color:var(--muted); }
 .sheet-in h2 { margin:0 0 10px; } .sheet-in ol { padding-left:20px; margin:8px 0; } .sheet-in li { margin-bottom:10px; font-size:15px; }
 .sheet-in .k { display:inline-block; border:1px solid var(--line); border-radius:6px; padding:0 6px; background:var(--bg); }
+.cmpbtn { font:inherit; width:100%; display:flex; align-items:center; gap:12px; text-align:left; color:#fff; background:var(--accent); border:0; border-radius:16px; padding:14px 16px; margin:4px 0 14px; cursor:pointer; box-shadow:0 4px 14px rgba(59,111,224,.25); }
+.cmpbtn .ic { font-size:28px; } .cmpbtn span:nth-child(2) { flex:1; font-size:16px; } .cmpbtn small { font-size:13px; opacity:.9; } .cmpbtn .chev { font-size:26px; }
+.throw { display:flex; gap:8px; overflow-x:auto; padding:4px 0 10px; scrollbar-width:none; position:sticky; top:0; background:var(--bg); z-index:5; }
+.throw::-webkit-scrollbar { display:none; }
+.thb { font:inherit; flex:none; display:flex; flex-direction:column; align-items:center; gap:2px; width:78px; padding:8px 4px; border-radius:14px; border:1px solid var(--line); background:var(--panel); color:var(--fg); cursor:pointer; }
+.thb span { font-size:22px; } .thb small { font-size:11px; line-height:1.2; text-align:center; }
+.thb.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+.thh { margin:8px 0 10px; } .thh h2 { margin:0; font-size:20px; } .thh .muted { font-size:13px; }
+.pcard { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:12px 14px; margin-bottom:10px; }
+.pcard .top { display:flex; align-items:center; gap:10px; cursor:pointer; }
+.pcard .top .av { width:42px; height:42px; font-size:14px; }
+.pcard .who { font-weight:700; font-size:16px; } .pcard .party { font-size:12px; color:var(--muted); }
+.pcard .top .chev { margin-left:auto; color:var(--muted); font-size:20px; }
+.pcard ul { list-style:none; padding:0; margin:10px 0 0; }
+.pcard li { position:relative; padding:7px 0 7px 22px; border-top:1px solid var(--line); font-size:15px; line-height:1.4; }
+.pcard li::before { content:""; position:absolute; left:4px; top:14px; width:8px; height:8px; border-radius:50%; background:var(--accent); }
+.ptag { display:inline-block; font-size:11px; font-weight:600; padding:2px 8px; border-radius:20px; background:var(--warn-bg); color:var(--warn-fg); margin-top:8px; }
+.pnone { font-size:13px; color:var(--muted); margin:6px 0 14px; }
+.cmp-g ul { list-style:none; padding:0; margin:0; } .cmp-g li { position:relative; padding:5px 0 5px 14px; line-height:1.35; }
+.cmp-g li::before { content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); }
+.cmp-h { font-size:16px; }
 </style>
 </head>
 <body>
@@ -384,15 +405,17 @@ html, body, button, a, summary, select { touch-action: manipulation; }
 
   <!-- PROGRAMMES -->
   <section class="view" id="v-programmes">
-    <div class="seg" id="pseg" style="display:flex;margin-bottom:6px"><button data-m="theme" class="on" style="flex:1">Par thème</button><button data-m="cmp" style="flex:1">Comparer</button></div>
     <div id="pm-theme">
-    <p>Choisissez un thème pour comparer les propositions des candidats.</p>
-    <div class="chips" id="th-chips"></div>
+    <button type="button" class="cmpbtn" id="go-cmp"><span class="ic">⚖️</span><span><b>Comparer deux candidats</b><br><small>Leurs mesures côte à côte, thème par thème</small></span><span class="chev">›</span></button>
+    <div class="throw" id="th-chips"></div>
+    <div id="th-head"></div>
     <div id="proglist"></div>
     <p class="muted" style="margin-top:12px">Les propositions sont résumées à partir des programmes officiels (lien sur chaque fiche). Ce n'est qu'un aperçu : les programmes complets comptent souvent plus de cent mesures.</p>
     </div>
     <div id="pm-cmp" hidden>
-      <p>Choisissez deux candidats pour voir leurs propositions côte à côte.</p>
+      <button class="back" id="cmp-back" type="button">‹ Programmes</button>
+      <h2 style="margin:6px 0 4px">Comparer deux candidats</h2>
+      <p class="muted" style="margin-top:0">Choisissez les deux candidats.</p>
       <div class="cmp-sel"><select id="cmp-a"></select><select id="cmp-b"></select></div>
       <div id="cmp-out"></div>
     </div>
@@ -657,7 +680,6 @@ function sparkChart(nom, color) {
 
 function setPMode(m) {
   PMODE = m;
-  for (const b of document.querySelectorAll('#pseg button')) b.classList.toggle('on', b.dataset.m === m);
   for (const k of ['theme', 'cmp']) $('pm-' + k).hidden = k !== m;
   if (m === 'cmp') renderCmp();
 }
@@ -670,9 +692,9 @@ function renderCmp() {
   }
   const A = list.find((c) => c.id === CMPA), B = list.find((c) => c.id === CMPB);
   const out = [];
-  const notes = [A, B].filter((c) => c.programme && c.programme.note).map((c) => c.nom + ' : ' + c.programme.note);
+  const notes = [A, B].filter((c) => c.programme && /pas encore|Pas encore/.test(c.programme.note || '')).map((c) => c.nom + ' : ' + c.programme.note);
   if (notes.length) { const n = el('div', 'note'); notes.forEach((t, i) => { if (i) n.append(el('br')); n.append(t); }); out.push(n); }
-  const head = el('div', 'cmp-g'); for (const c of [A, B]) { const d = el('div'); d.style.cssText = 'display:flex;align-items:center;gap:8px;border:0;background:none;padding:0'; const av = avatar(c); av.style.cssText += ';width:34px;height:34px;font-size:12px'; d.append(av, el('b', null, c.nom)); head.append(d); } out.push(head);
+  const head = el('div', 'cmp-g'); for (const c of [A, B]) { const d = el('div'); d.style.cssText = 'display:flex;align-items:center;gap:8px;border:0;background:none;padding:0'; const av = avatar(c); av.style.cssText += ';width:34px;height:34px;font-size:12px'; d.style.justifyContent = 'center'; av.style.cssText += ';width:52px;height:52px;font-size:16px'; d.append(av); head.append(d); } out.unshift(head);
   for (const th of CAND.themes || []) {
     out.push(el('div', 'cmp-h', th));
     const g = el('div', 'cmp-g');
@@ -941,19 +963,29 @@ async function renderCredits() {
   } catch (e) {}
 }
 
+const TH_IC = { 'Économie': ['💶', 'Économie'], 'Social et santé': ['🏥', 'Santé et social'], 'Éducation': ['🎓', 'Éducation'], 'Sécurité et justice': ['⚖️', 'Sécurité, justice'], 'Immigration': ['🛂', 'Immigration'], 'Écologie et énergie': ['🌱', 'Écologie, énergie'], 'Institutions': ['🏛️', 'Institutions'], 'Europe et international': ['🌍', 'Europe, monde'] };
 function renderProgrammes() {
   if (!CAND) return;
   const themes = CAND.themes || [];
   if (!THEME) THEME = themes[0];
-  $('th-chips').replaceChildren(...themes.map((t) => { const b = el('button', THEME === t ? 'on' : '', t); b.onclick = () => { THEME = t; renderProgrammes(); }; return b; }));
-  const list = CAND.principaux.slice().sort((a, b) => nomFamille(a.nom).localeCompare(nomFamille(b.nom), 'fr'));
-  $('proglist').replaceChildren(...list.map((c) => {
-    const box = el('div', 'pg'); const top = el('div', 'top'); const nm = el('div'); nm.append(el('div', 'who', c.nom), el('div', 'party', c.parti)); top.append(avatar(c), nm); box.append(top);
-    const t = c.programme && c.programme.themes.find((x) => x.theme === THEME);
-    if (t) { const ul = el('ul'); t.mesures.forEach((m) => ul.append(el('li', null, m))); box.append(ul); if (c.programme.note) box.append(el('p', 'muted', c.programme.note)); }
-    else box.append(el('p', 'muted', 'Pas de proposition publiée sur ce thème à ce jour.'));
+  const row = $('th-chips'); const sx = row.scrollLeft;
+  row.replaceChildren(...themes.map((t) => { const [ic, lb] = TH_IC[t] || ['•', t]; const b = el('button', 'thb' + (THEME === t ? ' on' : '')); b.type = 'button'; b.append(el('span', null, ic), el('small', null, lb)); b.onclick = () => { THEME = t; renderProgrammes(); const y = $('th-chips').getBoundingClientRect().top + scrollY - 4; if (scrollY > y) scrollTo(0, y); }; return b; }));
+  row.scrollLeft = sx;
+  const list = sortedCands();
+  const withT = list.filter((c) => c.programme && c.programme.themes.some((x) => x.theme === THEME));
+  const without = list.filter((c) => !withT.includes(c));
+  const h = el('div', 'thh'); h.append(el('h2', null, THEME), el('div', 'muted', `${withT.length} candidats sur ${list.length} ont publié des mesures sur ce thème`));
+  $('th-head').replaceChildren(h);
+  const cards = withT.map((c) => {
+    const box = el('div', 'pcard'); const top = el('div', 'top'); const nm = el('div'); nm.append(el('div', 'who', c.nom), el('div', 'party', c.parti)); top.append(avatar(c), nm, el('span', 'chev', '›')); top.onclick = () => openFiche(c.id); box.append(top);
+    const t = c.programme.themes.find((x) => x.theme === THEME);
+    const ul = el('ul'); t.mesures.forEach((m) => ul.append(el('li', null, m))); box.append(ul);
+    const note = c.programme.note || '';
+    if (/pas encore|Pas encore/.test(note)) { const tg = el('span', 'ptag', 'Programme 2027 pas encore complet ⓘ'); tg.title = note; tg.style.cursor = 'pointer'; tg.onclick = () => { tg.textContent = note; tg.style.fontWeight = '400'; }; box.append(tg); }
     return box;
-  }));
+  });
+  if (without.length) cards.push(el('p', 'pnone', 'Rien de publié sur ce thème pour l’instant : ' + without.map((c) => c.nom).join(', ') + '.'));
+  $('proglist').replaceChildren(...cards);
 }
 
 const TYPES = { debat: 'Débat télévisé', emission: 'Émission spéciale', meeting: 'Meeting', cle: 'Date clé', vote: 'Vote', evenement: 'Événement' };
@@ -1050,7 +1082,8 @@ let PUSHED = false;
 $('back').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView('candidats'); });
 addEventListener('popstate', () => { PUSHED = false; const h = location.hash.slice(1); if (h === 'guide') { for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-guide'); } else if (h.startsWith('c-')) openFiche(h.slice(2), true); else showView(['candidats', 'programmes', 'agenda', 'actu', 'test', 'sondages'].includes(h) ? h : 'accueil'); });
 for (const b of document.querySelectorAll('#tabs button')) b.addEventListener('click', () => showView(b.dataset.v));
-for (const b of document.querySelectorAll('#pseg button')) b.addEventListener('click', () => setPMode(b.dataset.m));
+$('go-cmp').addEventListener('click', () => { setPMode('cmp'); scrollTo(0, 0); });
+$('cmp-back').addEventListener('click', () => { setPMode('theme'); scrollTo(0, 0); });
 $('cmp-a').addEventListener('change', (e) => { CMPA = e.target.value; renderCmp(); });
 $('cmp-b').addEventListener('change', (e) => { CMPB = e.target.value; renderCmp(); });
 countdown();
