@@ -106,11 +106,38 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .fhead .big { font:400 30px Georgia, serif; margin-top:6px; }
 .fnav { display:flex; justify-content:space-between; margin-top:20px; gap:10px; }
 .fnav button { font:inherit; font-size:13px; background:var(--panel); border:1px solid var(--line); color:var(--fg); border-radius:20px; padding:6px 12px; cursor:pointer; }
+.jm { display:inline-block; background:var(--accent); color:#fff; border-radius:20px; padding:3px 11px; font-size:13px; font-weight:600; margin-bottom:6px; }
+.duel { padding:10px 0; border-bottom:1px solid var(--line); }
+.duel .nm { display:flex; justify-content:space-between; font-size:14px; font-weight:600; gap:8px; }
+.duel .bar2 { display:flex; height:10px; border-radius:6px; overflow:hidden; margin:5px 0 4px; background:var(--line); }
+.duel .meta { font-size:12px; color:var(--muted); }
+.spark svg text { fill:var(--muted); font-size:10px; }
+.cmp-sel { display:flex; gap:8px; margin:10px 0; }
+.cmp-sel select { flex:1; font:inherit; font-size:14px; padding:7px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--fg); min-width:0; }
+.cmp-h { font-weight:600; margin:16px 0 6px; }
+.cmp-g { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+.cmp-g > div { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:8px 10px; font-size:13px; }
+.cmp-g ul { margin:0; padding-left:16px; } .cmp-g li { margin-bottom:3px; }
+.qz { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:16px; margin-top:12px; }
+.qz .qt { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.4px; }
+.qz .qq { font-size:18px; margin:8px 0 14px; line-height:1.35; }
+.qz .ans { display:flex; flex-direction:column; gap:8px; }
+.qz .ans button, .qbtn { font:inherit; font-size:15px; padding:10px; border-radius:10px; border:1px solid var(--line); background:var(--bg); color:var(--fg); cursor:pointer; }
+.qz .ans button.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+.qz .prog { height:4px; background:var(--line); border-radius:3px; margin-top:14px; overflow:hidden; } .qz .prog i { display:block; height:100%; background:var(--accent); }
+.qnav { display:flex; justify-content:space-between; margin-top:10px; }
+.qnav button { font:inherit; font-size:14px; background:none; border:0; color:var(--accent); cursor:pointer; padding:4px 0; }
+.res { display:flex; align-items:center; gap:10px; padding:8px 0; border-bottom:1px solid var(--line); }
+.res .av { width:36px; height:36px; font-size:13px; }
+.res .info { flex:1; min-width:0; } .res .who { font-weight:600; font-size:14px; }
+.res .bar1 { height:6px; background:var(--line); border-radius:4px; overflow:hidden; margin-top:4px; } .res .bar1 i { display:block; height:100%; background:var(--accent); }
+.res .pc { font:400 18px Georgia, serif; white-space:nowrap; }
 </style>
 </head>
 <body>
 <main>
   <h1>Présidentielle 2027</h1>
+  <div class="jm" id="jm"></div>
   <p class="muted" id="status">Chargement…</p>
 
   <!-- SONDAGES -->
@@ -120,6 +147,12 @@ details { margin-top:16px; } summary { cursor:pointer; }
       <h2>Dernier sondage</h2>
       <p class="muted" id="source"></p>
       <div class="cards" id="cards"></div>
+    </div>
+    <div class="block">
+      <h2>Second tour : les duels testés</h2>
+      <p class="muted">Dernier résultat de chaque duel, du plus récemment testé au plus ancien.</p>
+      <div id="duels"></div>
+      <details id="duels-more-w" class="muted"><summary>Duels plus anciens</summary><div id="duels-more"></div></details>
     </div>
     <div class="block panel">
       <div class="bar">
@@ -139,7 +172,7 @@ details { margin-top:16px; } summary { cursor:pointer; }
     </div>
     <details class="muted">
       <summary>Méthode</summary>
-      <p>Tous les sondages déposés à la Commission des sondages, via la compilation ouverte Mieux Voter, rechargée à chaque ouverture, complétée par les sondages publiés mais pas encore compilés (chiffres relevés dans le rapport officiel de l'institut, marqués « ajout manuel »). Premier tour uniquement, depuis janvier 2026. Les enquêtes commandées par un parti ou un candidat sont exclues. Quand un institut teste plusieurs listes de candidats, le score affiché est la moyenne des listes où la personne figure. L'évolution compare au précédent sondage du même institut. Un sondage n'est pas une prévision : marge d'erreur d'environ 2 à 3 points.</p>
+      <p>Tous les sondages déposés à la Commission des sondages, via la compilation ouverte Mieux Voter, rechargée à chaque ouverture, complétée par les sondages publiés mais pas encore compilés (chiffres relevés dans le rapport officiel de l'institut, marqués « ajout manuel »). Courbe et tableau : premier tour, depuis janvier 2026. Second tour : dernier sondage publié pour chaque duel, avec l'évolution quand le même institut l'avait déjà testé. Les enquêtes commandées par un parti ou un candidat sont exclues. Quand un institut teste plusieurs listes de candidats, le score affiché est la moyenne des listes où la personne figure. L'évolution compare au précédent sondage du même institut. Un sondage n'est pas une prévision : marge d'erreur d'environ 2 à 3 points.</p>
     </details>
   </section>
 
@@ -165,10 +198,19 @@ details { margin-top:16px; } summary { cursor:pointer; }
 
   <!-- PROGRAMMES -->
   <section class="view" id="v-programmes">
+    <div class="seg" id="pseg" style="display:flex;margin-bottom:6px"><button data-m="theme" class="on" style="flex:1">Par thème</button><button data-m="cmp" style="flex:1">Comparer</button><button data-m="quiz" style="flex:1">Le test</button></div>
+    <div id="pm-theme">
     <p>Choisissez un thème pour comparer les propositions des candidats.</p>
     <div class="chips" id="th-chips"></div>
     <div id="proglist"></div>
     <p class="muted" style="margin-top:12px">Les propositions sont résumées à partir des programmes officiels (lien sur chaque fiche). Ce n'est qu'un aperçu : les programmes complets comptent souvent plus de cent mesures.</p>
+    </div>
+    <div id="pm-cmp" hidden>
+      <p>Choisissez deux candidats pour voir leurs propositions côte à côte.</p>
+      <div class="cmp-sel"><select id="cmp-a"></select><select id="cmp-b"></select></div>
+      <div id="cmp-out"></div>
+    </div>
+    <div id="pm-quiz" hidden><div id="quiz"></div></div>
   </section>
 
   <!-- AGENDA -->
@@ -242,7 +284,7 @@ const avatar = (c) => {
   img.src = 'data/portraits/' + c.id + '.jpg';
   return a;
 };
-let THEME = null, AGENDA = null, AGF = '';
+let THEME = null, AGENDA = null, AGF = '', RAW = null, EXTRA = [], DUELS = null, QUIZ = null, PMODE = 'theme', CMPA = null, CMPB = null, QI = 0, QANS = null;
 let PERIOD = 0, POLLS = null, CAND = null, ACTU = null, FILTRE = '';
 
 function parseCSV(text) {
@@ -365,6 +407,181 @@ function drawChart(polls, names, col) {
   box.replaceChildren(svg, tip);
 }
 
+
+function countdown() {
+  const now = new Date(); const t1 = new Date(2027, 3, 18), t2 = new Date(2027, 4, 2);
+  const day = (d) => Math.round((new Date(d.getFullYear(), d.getMonth(), d.getDate()) - new Date(now.getFullYear(), now.getMonth(), now.getDate())) / 864e5);
+  const a = day(t1), b = day(t2), j = $('jm');
+  if (a > 1) j.textContent = 'J-' + a + ' avant le 1er tour';
+  else if (a === 1) j.textContent = 'Demain : 1er tour';
+  else if (a === 0) j.textContent = "Aujourd'hui : 1er tour";
+  else if (b > 1) j.textContent = 'J-' + b + ' avant le 2nd tour';
+  else if (b === 1) j.textContent = 'Demain : 2nd tour';
+  else if (b === 0) j.textContent = "Aujourd'hui : 2nd tour";
+  else j.hidden = true;
+}
+
+function buildDuels(raw, extra) {
+  const g = new Map();
+  for (const r of raw.concat(extra)) {
+    if (r.tour !== '2nd Tour' || r.fin_enquete < '2026-01-01' || EXCLUS.has(r.commanditaire)) continue;
+    const v = parseFloat(r.intentions); if (isNaN(v)) continue;
+    const k = (r.poll_id || r.fin_enquete + r.nom_institut) + '|' + r.hypothese;
+    if (!g.has(k)) g.set(k, { date: r.fin_enquete, institut: r.nom_institut, commanditaire: r.commanditaire, s: [] });
+    g.get(k).s.push({ nom: r.complete_name, v });
+  }
+  const d = new Map();
+  for (const h of g.values()) {
+    if (h.s.length !== 2) continue;
+    h.s.sort((a, b) => b.v - a.v);
+    const key = h.s.map((x) => x.nom).sort().join('|');
+    if (!d.has(key)) d.set(key, { key, n: 0, last: null, prev: null });
+    const o = d.get(key); o.n++;
+    if (!o.last || h.date > o.last.date) { o.prev = o.last; o.last = h; } else if (!o.prev || h.date > o.prev.date) o.prev = h;
+  }
+  return [...d.values()].sort((a, b) => b.last.date.localeCompare(a.last.date) || b.n - a.n);
+}
+function colorFor(nom) { const c = CAND && CAND.principaux.find((x) => x.nom === nom); return c ? avColor(c.id) : '#9a9aa3'; }
+function duelRow(o) {
+  const [a, b] = o.last.s; const tot = a.v + b.v;
+  const r = el('div', 'duel');
+  const nm = el('div', 'nm'); const sb = el('span', null, fmt(b.v) + '\u00a0%\u00a0' + b.nom); sb.style.textAlign = 'right'; nm.append(el('span', null, a.nom + '\u00a0' + fmt(a.v) + '\u00a0%'), sb);
+  const bar = el('div', 'bar2'); const ia = el('i'); ia.style.cssText = `width:${a.v / tot * 100}%;background:${colorFor(a.nom)}`; const ib = el('i'); ib.style.cssText = `width:${b.v / tot * 100}%;background:${colorFor(b.nom)};opacity:.75`; bar.append(ia, ib);
+  let meta = `${o.last.institut}, ${fdate(o.last.date)}`;
+  if (o.prev && o.prev.institut === o.last.institut) { const pa = o.prev.s.find((x) => x.nom === a.nom); if (pa) { const dv = Math.round((a.v - pa.v) * 10) / 10; meta += ` · ${nomFamille(a.nom)} ${dv > 0 ? '+' : ''}${fmt(dv)} pt depuis le ${fdate(o.prev.date)}`; } }
+  meta += ` · testé ${o.n} fois`;
+  r.append(nm, bar, el('div', 'meta', meta));
+  return r;
+}
+function renderDuels() {
+  if (!DUELS) return;
+  const lim = new Date(Date.now() - 62 * 864e5).toISOString().slice(0, 10);
+  const recent = DUELS.filter((o) => o.last.date >= lim), old = DUELS.filter((o) => o.last.date < lim);
+  $('duels').replaceChildren(...(recent.length ? recent : DUELS.slice(0, 8)).map(duelRow));
+  const rest = recent.length ? old : DUELS.slice(8);
+  $('duels-more-w').hidden = !rest.length; $('duels-more').replaceChildren(...rest.map(duelRow));
+}
+
+function sparkChart(nom, color) {
+  const NS = 'http://www.w3.org/2000/svg';
+  const pts = (POLLS || []).slice().reverse().map((p) => { const s = p.scores.find((x) => x.nom === nom); return s ? [p.date, s.v, p.institut] : null; }).filter(Boolean);
+  if (pts.length < 2) return null;
+  const W = Math.min(document.querySelector('main').clientWidth || 340, 720), H = 150, m = { t: 12, r: 34, b: 20, l: 28 };
+  const t = (d) => Date.parse(d); const t0 = t(pts[0][0]), t1 = t(pts[pts.length - 1][0]);
+  const ymax = Math.ceil((Math.max(...pts.map((q) => q[1])) + 3) / 5) * 5;
+  const x = (d) => m.l + (t(d) - t0) / Math.max(1, t1 - t0) * (W - m.l - m.r), y = (v) => H - m.b - v / ymax * (H - m.t - m.b);
+  const mk = (tag, at, par) => { const e = document.createElementNS(NS, tag); for (const k in at) e.setAttribute(k, at[k]); if (par) par.append(e); return e; };
+  const svg = mk('svg', { width: '100%', height: H, viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Évolution dans les sondages' });
+  const stepv = ymax > 20 ? 10 : 5;
+  for (let v = 0; v <= ymax; v += stepv) { mk('line', { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v), stroke: 'var(--line)' }, svg); mk('text', { x: m.l - 5, y: y(v) + 3, 'text-anchor': 'end' }, svg).textContent = v; }
+  const d0 = new Date(t0); const months = [];
+  for (let dt = new Date(Date.UTC(d0.getUTCFullYear(), d0.getUTCMonth() + 1, 1)); dt.getTime() <= t1; dt = new Date(Date.UTC(dt.getUTCFullYear(), dt.getUTCMonth() + 1, 1))) months.push(dt);
+  const st = Math.ceil(months.length / 4); months.forEach((dt, i) => { if (i % st) return; mk('text', { x: x(dt.toISOString().slice(0, 10)), y: H - 5, 'text-anchor': 'middle' }, svg).textContent = MOIS[dt.getUTCMonth()]; });
+  mk('path', { d: 'M' + pts.map((q) => x(q[0]).toFixed(1) + ',' + y(q[1]).toFixed(1)).join('L'), fill: 'none', stroke: color, 'stroke-width': 1.8 }, svg);
+  for (const q of pts) mk('circle', { cx: x(q[0]), cy: y(q[1]), r: 2.2, fill: color }, svg);
+  const lq = pts[pts.length - 1]; const tx = mk('text', { x: W - m.r + 4, y: y(lq[1]) + 4, 'font-weight': 700 }, svg); tx.style.fill = color; tx.textContent = fmt(lq[1]);
+  const box = el('div', 'spark'); box.append(svg);
+  box.append(el('p', 'muted', `Chaque point est un sondage (${pts.length} depuis ${fdateLong(pts[0][0])}). Les instituts n'ont pas la même méthode, une partie des zigzags vient de là.`));
+  return box;
+}
+
+function setPMode(m) {
+  PMODE = m;
+  for (const b of document.querySelectorAll('#pseg button')) b.classList.toggle('on', b.dataset.m === m);
+  for (const k of ['theme', 'cmp', 'quiz']) $('pm-' + k).hidden = k !== m;
+  if (m === 'cmp') renderCmp(); if (m === 'quiz') renderQuiz();
+}
+function renderCmp() {
+  if (!CAND) return;
+  const list = sortedCands();
+  if (!CMPA) { CMPA = list[0].id; CMPB = list[1].id; }
+  for (const [sid, val] of [['cmp-a', CMPA], ['cmp-b', CMPB]]) {
+    const sel = $(sid); sel.replaceChildren(...list.map((c) => { const o = el('option', null, c.nom); o.value = c.id; return o; })); sel.value = val;
+  }
+  const A = list.find((c) => c.id === CMPA), B = list.find((c) => c.id === CMPB);
+  const out = [];
+  const notes = [A, B].filter((c) => c.programme && c.programme.note).map((c) => c.nom + ' : ' + c.programme.note);
+  if (notes.length) { const n = el('div', 'note'); notes.forEach((t, i) => { if (i) n.append(el('br')); n.append(t); }); out.push(n); }
+  const head = el('div', 'cmp-g'); for (const c of [A, B]) { const d = el('div'); d.style.cssText = 'display:flex;align-items:center;gap:8px;border:0;background:none;padding:0'; const av = avatar(c); av.style.cssText += ';width:34px;height:34px;font-size:12px'; d.append(av, el('b', null, c.nom)); head.append(d); } out.push(head);
+  for (const th of CAND.themes || []) {
+    out.push(el('div', 'cmp-h', th));
+    const g = el('div', 'cmp-g');
+    for (const c of [A, B]) { const box = el('div'); const t = c.programme && c.programme.themes.find((x) => x.theme === th); if (t) { const ul = el('ul'); t.mesures.forEach((m) => ul.append(el('li', null, m))); box.append(ul); } else box.append(el('span', 'muted', 'Rien de publié sur ce thème.')); g.append(box); }
+    out.push(g);
+  }
+  $('cmp-out').replaceChildren(...out);
+}
+function loadAns() { try { const a = JSON.parse(localStorage.getItem('quizAns') || 'null'); if (Array.isArray(a) && QUIZ && a.length === QUIZ.questions.length) return a; } catch (e) {} return null; }
+function saveAns() { try { localStorage.setItem('quizAns', JSON.stringify(QANS)); } catch (e) {} }
+function renderQuiz() {
+  const box = $('quiz'); if (!QUIZ || !CAND) { box.textContent = 'Chargement…'; return; }
+  const Q = QUIZ.questions;
+  if (!QANS) { QANS = loadAns(); if (QANS && QANS.every((a) => a !== undefined && a !== null)) QI = Q.length; }
+  if (!QANS) QANS = Array(Q.length).fill(null);
+  if (QI === 0 && QANS.every((a) => a === null)) {
+    const d = el('div', 'qz');
+    d.append(el('div', 'qq', 'Qui pense comme moi ?'), el('p', null, `${Q.length} affirmations tirées des programmes. Pour chacune, dites si vous êtes d'accord. À la fin, les candidats sont classés selon le nombre de réponses communes.`), el('p', 'muted', "Ce n'est pas une consigne de vote : on ne compare que les positions clairement publiées, et beaucoup de candidats n'ont pas encore de programme complet. Vos réponses restent sur votre téléphone."));
+    const b = el('button', 'qbtn', 'Commencer'); b.style.cssText = 'width:100%;background:var(--accent);color:#fff;border-color:var(--accent)'; b.onclick = () => { QI = 0; renderQuizQ(); }; d.append(b);
+    box.replaceChildren(d); return;
+  }
+  if (QI >= Q.length) return renderQuizRes();
+  renderQuizQ();
+}
+function renderQuizQ() {
+  const Q = QUIZ.questions, q = Q[QI], box = $('quiz');
+  const d = el('div', 'qz');
+  d.append(el('div', 'qt', `Question ${QI + 1} sur ${Q.length} · ${q.theme}`), el('div', 'qq', q.q));
+  const ans = el('div', 'ans');
+  for (const [v, t] of [[1, "D'accord"], [-1, "Pas d'accord"], [0, 'Sans avis']]) {
+    const b = el('button', QANS[QI] === v ? 'on' : '', t);
+    b.onclick = () => { QANS[QI] = v; saveAns(); QI++; QI >= Q.length ? renderQuizRes() : renderQuizQ(); };
+    ans.append(b);
+  }
+  d.append(ans);
+  const pr = el('div', 'prog'); const pi = el('i'); pi.style.width = (QI / Q.length * 100) + '%'; pr.append(pi); d.append(pr);
+  const nav = el('div', 'qnav'); const bk = el('button', null, '‹ Précédente'); bk.disabled = QI === 0; bk.style.visibility = QI ? 'visible' : 'hidden'; bk.onclick = () => { QI--; renderQuizQ(); };
+  const rs = el('button', null, 'Recommencer'); rs.onclick = resetQuiz; nav.append(bk, rs); d.append(nav);
+  box.replaceChildren(d);
+}
+function resetQuiz() { QANS = Array(QUIZ.questions.length).fill(null); QI = 0; saveAns(); renderQuiz(); }
+function renderQuizRes() {
+  const Q = QUIZ.questions, box = $('quiz');
+  const rows = CAND.principaux.map((c) => {
+    let n = 0, ok = 0;
+    Q.forEach((q, i) => { const a = QANS[i], p = q.pos[c.id]; if (a && p) { n++; if (a === p) ok++; } });
+    return { c, n, ok, pc: n ? ok / n * 100 : 0 };
+  });
+  const MIN = 3;
+  const main = rows.filter((r) => r.n >= MIN).sort((a, b) => b.pc - a.pc || b.n - a.n || nomFamille(a.c.nom).localeCompare(nomFamille(b.c.nom), 'fr'));
+  const few = rows.filter((r) => r.n < MIN).sort((a, b) => nomFamille(a.c.nom).localeCompare(nomFamille(b.c.nom), 'fr'));
+  const d = el('div', 'qz');
+  const answered = QANS.filter((a) => a === 1 || a === -1).length;
+  d.append(el('div', 'qq', 'Vos résultats'), el('p', 'muted', `Pourcentage de réponses identiques, calculé seulement sur les questions où le candidat a une position publiée. Vous avez donné un avis sur ${answered} affirmations sur ${Q.length}.`));
+  if (!main.length) d.append(el('p', null, "Pas assez de réponses pour comparer. Répondez « d'accord » ou « pas d'accord » à plus d'affirmations."));
+  for (const r of main) {
+    const row = el('div', 'res'); const info = el('div', 'info');
+    info.append(el('div', 'who', r.c.nom), el('div', 'muted', `${r.ok} sur ${r.n} questions comparables`));
+    const bar = el('div', 'bar1'); const bi = el('i'); bi.style.width = r.pc + '%'; bar.append(bi); info.append(bar);
+    row.append(avatar(r.c), info, el('div', 'pc', Math.round(r.pc) + ' %'));
+    row.style.cursor = 'pointer'; row.onclick = () => openFiche(r.c.id);
+    d.append(row);
+  }
+  if (few.length) d.append(el('p', 'muted', 'Pas assez de positions connues pour : ' + few.map((r) => r.c.nom).join(', ') + '.'));
+  const det = el('details'); det.append(el('summary', null, 'Voir les positions question par question'));
+  const byId = new Map(CAND.principaux.map((c) => [c.id, c.nom]));
+  Q.forEach((q, i) => {
+    const p = el('div', 'news'); const you = QANS[i] === 1 ? "d'accord" : QANS[i] === -1 ? "pas d'accord" : 'sans avis';
+    p.append(el('b', null, q.q), el('div', 'muted', 'Vous : ' + you));
+    const pour = Object.keys(q.pos).filter((k) => q.pos[k] === 1 && byId.has(k)).map((k) => byId.get(k)), contre = Object.keys(q.pos).filter((k) => q.pos[k] === -1 && byId.has(k)).map((k) => byId.get(k));
+    if (pour.length) p.append(el('div', null, "D'accord : " + pour.join(', ')));
+    if (contre.length) p.append(el('div', null, "Pas d'accord : " + contre.join(', ')));
+    det.append(p);
+  });
+  d.append(det, el('p', 'muted', QUIZ.note));
+  const nav = el('div', 'qnav'); const mod = el('button', null, '‹ Modifier mes réponses'); mod.onclick = () => { QI = 0; renderQuizQ(); }; const rs = el('button', null, 'Recommencer'); rs.onclick = resetQuiz; nav.append(mod, rs); d.append(nav);
+  box.replaceChildren(d);
+}
+
 function sortedCands() { return CAND.principaux.slice().sort((a, b) => nomFamille(a.nom).localeCompare(nomFamille(b.nom), 'fr')); }
 let CUR = null;
 function renderFiche() {
@@ -376,6 +593,7 @@ function renderFiche() {
   const ls = latestScore(c.nom);
   if (ls) { h.append(el('div', 'big', fmt(ls.v) + ' %'), el('div', 'muted', `Dernier sondage : ${ls.p.institut}, ${fdate(ls.p.date)}`)); }
   d.append(h);
+  const spk = sparkChart(c.nom, avColor(c.id)); if (spk) { d.append(el('h3', null, 'Dans les sondages')); d.append(spk); }
     d.append(el('p', null, c.role), el('p', 'muted', c.annonce));
     d.append(el('h3', null, 'Mesures phares'));
     if (c.mesures.length) { const ul = el('ul'); c.mesures.forEach((m) => ul.append(el('li', null, m))); d.append(ul); const p = el('p', 'muted'); p.append('Source : ', link(c.source_mesures.nom, c.source_mesures.url)); d.append(p); }
@@ -502,15 +720,17 @@ async function getText(url, key) {
 }
 
 async function load() {
-  const [mv, aj, ca, ac, ag] = await Promise.all([getText(URL_MV, 'mv'), getText('data/ajouts.csv', 'aj'), getText('data/candidats.json', 'ca'), getText('data/actu.json', 'ac'), getText('data/agenda.json', 'ag')]);
+  const [mv, aj, ca, ac, ag, qz] = await Promise.all([getText(URL_MV, 'mv'), getText('data/ajouts.csv', 'aj'), getText('data/candidats.json', 'ca'), getText('data/actu.json', 'ac'), getText('data/agenda.json', 'ag'), getText('data/quiz.json', 'qz')]);
+  if (qz.t) QUIZ = JSON.parse(qz.t);
   if (ag.t) AGENDA = JSON.parse(ag.t);
-  if (mv.t) POLLS = build(parseCSV(mv.t), aj.t ? parseCSV(aj.t) : []);
+  if (mv.t) { const raw = parseCSV(mv.t), ex = aj.t ? parseCSV(aj.t) : []; POLLS = build(raw, ex); DUELS = buildDuels(raw, ex); }
   if (ca.t) CAND = JSON.parse(ca.t);
   if (ac.t) ACTU = JSON.parse(ac.t);
   const st = $('status');
   if (!POLLS) { st.textContent = 'Impossible de charger les sondages. Vérifiez la connexion.'; st.className = 'muted err'; }
   else st.textContent = (mv.live ? 'Mis à jour à ' + new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }) : 'Hors ligne : derniers chiffres enregistrés') + ' · premier tour le 18 avril 2027';
-  renderSondages(); renderCandidats(); renderProgrammes(); renderActu(); renderAgenda(); renderCredits(); renderFiche();
+  renderSondages(); renderCandidats(); renderProgrammes(); renderActu(); renderAgenda(); renderCredits(); renderFiche(); renderDuels(); countdown();
+  if (PMODE === 'cmp') renderCmp(); if (PMODE === 'quiz' && !$('quiz').firstChild) renderQuiz();
 }
 
 function showView(v) {
@@ -524,6 +744,10 @@ let PUSHED = false;
 $('back').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView('candidats'); });
 addEventListener('popstate', () => { PUSHED = false; const h = location.hash.slice(1); if (h.startsWith('c-')) openFiche(h.slice(2), true); else showView(['candidats', 'programmes', 'agenda', 'actu', 'signatures'].includes(h) ? h : 'sondages'); });
 for (const b of document.querySelectorAll('#tabs button')) b.addEventListener('click', () => showView(b.dataset.v));
+for (const b of document.querySelectorAll('#pseg button')) b.addEventListener('click', () => setPMode(b.dataset.m));
+$('cmp-a').addEventListener('change', (e) => { CMPA = e.target.value; renderCmp(); });
+$('cmp-b').addEventListener('change', (e) => { CMPB = e.target.value; renderCmp(); });
+countdown();
 for (const b of document.querySelectorAll('#seg button')) b.addEventListener('click', () => { PERIOD = +b.dataset.p; for (const o of document.querySelectorAll('#seg button')) o.classList.toggle('on', o === b); renderSondages(); });
 let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(renderSondages, 150); });
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') load(); });
