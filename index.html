@@ -235,6 +235,9 @@ html, body, button, a, summary, select { touch-action: manipulation; }
 .shopts a, .shopts button { font:inherit; font-size:12px; color:var(--fg); text-decoration:none; display:flex; flex-direction:column; align-items:center; gap:6px; background:none; border:0; cursor:pointer; }
 .shopts span { width:52px; height:52px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:24px; color:#fff; }
 .toast { position:fixed; left:50%; bottom:90px; transform:translateX(-50%); background:#1f2a44; color:#fff; padding:10px 16px; border-radius:20px; font-size:14px; z-index:1000; }
+.legal { font-size:11.5px; line-height:1.4; margin:8px 0 0; }
+.card .mg { font-size:11px; color:var(--muted); }
+body.silence #v-sondages .block, body.silence #v-sondages #lede, body.silence #v-sondages details { display:none; }
 </style>
 </head>
 <body>
@@ -258,9 +261,11 @@ html, body, button, a, summary, select { touch-action: manipulation; }
   <!-- SONDAGES -->
   <!-- ACCUEIL -->
   <section class="view on" id="v-accueil">
-    <div class="hcard">
+    <div id="h-silence"></div>
+    <div class="hcard" id="h-poll">
       <div class="hh"><h2>Dernier sondage</h2><span class="muted" id="h-src"></span></div>
       <div id="h-top"></div>
+      <p class="muted legal" id="h-meta"></p>
       <button class="more" id="h-sond" type="button">Tous les sondages, la courbe et le 2nd tour ›</button>
     </div>
     <div class="hcard">
@@ -284,6 +289,7 @@ html, body, button, a, summary, select { touch-action: manipulation; }
 
   <section class="view" id="v-sondages">
     <button class="back" id="sback">‹ Accueil</button>
+    <div id="silence-s"></div>
     <p id="lede"></p>
     <div class="block">
       <h2>Dernier sondage</h2>
@@ -308,13 +314,14 @@ html, body, button, a, summary, select { touch-action: manipulation; }
     <div class="block">
       <h2>Derniers sondages</h2>
       <div class="wrap"><table>
-        <thead><tr><th>Fin d'enquête</th><th>Institut</th><th>Le Pen</th><th>Mélenchon</th><th>Lisnard</th><th>Glucksmann</th><th>Philippe</th><th>Retailleau</th><th>Attal</th></tr></thead>
+        <thead><tr><th>Fin d'enquête</th><th>Institut</th><th>Pour</th><th>Interrogés</th><th>Le Pen</th><th>Mélenchon</th><th>Lisnard</th><th>Glucksmann</th><th>Philippe</th><th>Retailleau</th><th>Attal</th></tr></thead>
         <tbody id="tbody"></tbody>
       </table></div>
+      <p class="muted legal">Tout sondage est affecté d'une marge d'erreur. Les questions posées et la notice complète de chaque sondage sont consultables sur le site de la <a href="https://www.commission-des-sondages.fr/notices/" target="_blank" rel="noopener">Commission des sondages</a>.</p>
     </div>
     <details class="muted">
       <summary>Méthode</summary>
-      <p>Tous les sondages déposés à la Commission des sondages, via la compilation ouverte Mieux Voter, rechargée à chaque ouverture, complétée par les sondages publiés mais pas encore compilés (chiffres relevés dans le rapport officiel de l'institut, marqués « ajout manuel »). Courbe et tableau : premier tour, depuis janvier 2026. Second tour : dernier sondage publié pour chaque duel, avec l'évolution quand le même institut l'avait déjà testé. Les enquêtes commandées par un parti ou un candidat sont exclues. Quand un institut teste plusieurs listes de candidats, le score affiché est la moyenne des listes où la personne figure. L'évolution compare au précédent sondage du même institut. Un sondage n'est pas une prévision : marge d'erreur d'environ 2 à 3 points.</p>
+      <p>Tous les sondages déposés à la Commission des sondages, via la compilation ouverte Mieux Voter, rechargée à chaque ouverture, complétée par les sondages publiés mais pas encore compilés (chiffres relevés dans le rapport officiel de l'institut, marqués « ajout manuel »). Courbe et tableau : premier tour, depuis janvier 2026. Second tour : dernier sondage publié pour chaque duel, avec l'évolution quand le même institut l'avait déjà testé. Les enquêtes commandées par un parti ou un candidat sont exclues. Quand un institut teste plusieurs listes de candidats, le score affiché est la moyenne des listes où la personne figure. L'évolution compare au précédent sondage du même institut. Un sondage n'est pas une prévision : chaque score a sa marge d'erreur, indiquée à côté. Comme la loi l'impose, aucun sondage n'est affiché la veille et le jour de chaque tour de scrutin.</p>
     </details>
   </section>
 
@@ -561,6 +568,16 @@ function parseCSV(text) {
   return rows.filter((r) => r.length === h.length).map((r) => Object.fromEntries(h.map((k, i) => [k, r[i]])));
 }
 
+
+function marg(v, n) { if (!n) return null; const q = v / 100; return 1.96 * Math.sqrt(q * (1 - q) / n) * 100; }
+const fmtN = (n) => n ? n.toLocaleString('fr-FR') : '';
+function pollDates(p) { return p.debut && p.debut !== p.date ? `du ${fdate(p.debut)} au ${fdate(p.date)}` : `terminée le ${fdate(p.date)}`; }
+function pollMeta(p) { return `${p.institut} pour ${p.commanditaire}, ${p.n ? fmtN(p.n) + ' personnes interrogées, ' : ''}enquête ${pollDates(p)}`; }
+function margTxt(list) { const e = list.map((x) => x.e).filter((x) => x != null && !isNaN(x)); if (!e.length) return ''; const a = Math.min(...e), b = Math.max(...e); return Math.abs(b - a) < 0.15 ? `marge d'erreur d'environ ±${fmt(b)} point` + (b >= 2 ? 's' : '') : `marge d'erreur de ±${fmt(a)} à ±${fmt(b)} points selon les scores`; }
+function legalNote() { const p = el('p', 'muted legal'); p.append("Tout sondage est affecté d'une marge d'erreur. Les questions posées et la notice complète de chaque sondage sont consultables sur le site de la "); p.append(link('Commission des sondages', 'https://www.commission-des-sondages.fr/notices/')); p.append('.'); return p; }
+function silence() { const t = Date.now(); return (t >= Date.parse('2027-04-15T22:00:00Z') && t < Date.parse('2027-04-18T18:00:00Z')) || (t >= Date.parse('2027-04-29T22:00:00Z') && t < Date.parse('2027-05-02T18:00:00Z')); }
+function silenceNote() { const d = el('div', 'note'); d.append(el('b', null, 'Pas de sondage aujourd’hui. '), "La loi interdit de publier ou commenter des sondages la veille et le jour du vote. Ils reviendront après la fermeture des bureaux de vote, à 20h."); return d; }
+
 function build(raw, extra) {
   const have = new Set(raw.filter((r) => r.tour === '1er Tour').map((r) => r.fin_enquete + '|' + r.nom_institut));
   const ext = extra.filter((r) => !have.has(r.fin_enquete + '|' + r.nom_institut)).map((r) => ({ ...r, manuel: true }));
@@ -569,13 +586,13 @@ function build(raw, extra) {
     if (r.tour !== '1er Tour' || r.fin_enquete < '2026-01-01' || EXCLUS.has(r.commanditaire)) continue;
     const v = parseFloat(r.intentions); if (isNaN(v)) continue;
     const k = r.fin_enquete + '|' + r.nom_institut + '|' + r.commanditaire;
-    if (!agg.has(k)) agg.set(k, { date: r.fin_enquete, institut: r.nom_institut, commanditaire: r.commanditaire, manuel: !!r.manuel, src: r.source || '', c: new Map() });
+    if (!agg.has(k)) agg.set(k, { date: r.fin_enquete, debut: r.debut_enquete || '', n: parseInt(r.echantillon) || 0, institut: r.nom_institut, commanditaire: r.commanditaire, manuel: !!r.manuel, src: r.source || '', c: new Map() });
     const p = agg.get(k);
-    if (!p.c.has(r.complete_name)) p.c.set(r.complete_name, { parti: r.parti, v: [] });
-    p.c.get(r.complete_name).v.push(v);
+    if (!p.c.has(r.complete_name)) p.c.set(r.complete_name, { parti: r.parti, v: [], e: [] });
+    p.c.get(r.complete_name).v.push(v); const er = parseFloat(r.erreur_sup); if (!isNaN(er)) p.c.get(r.complete_name).e.push(er);
   }
   const polls = [...agg.values()].map((p) => ({ ...p, key: p.date + '|' + p.institut,
-    scores: [...p.c].map(([nom, o]) => ({ nom, parti: o.parti, v: o.v.reduce((a, b) => a + b, 0) / o.v.length })) }));
+    scores: [...p.c].map(([nom, o]) => { const v = o.v.reduce((a, b) => a + b, 0) / o.v.length; return { nom, parti: o.parti, v, e: o.e.length ? o.e.reduce((a, b) => a + b, 0) / o.e.length : marg(v, p.n) }; }) }));
   polls.sort((a, b) => a.key < b.key ? 1 : -1);
   return polls;
 }
@@ -587,7 +604,9 @@ function latestScore(nom) {
 }
 
 function renderSondages() {
-  const polls = POLLS; if (!polls || !polls.length) return;
+  document.body.classList.toggle('silence', silence());
+  $('silence-s').replaceChildren(...(silence() ? [silenceNote()] : []));
+  const polls = POLLS; if (!polls || !polls.length || silence()) return;
   const last = polls[0];
   const prev = polls.slice(1).find((p) => p.institut === last.institut);
   const prevMap = new Map(prev ? prev.scores.map((s) => [s.nom, s.v]) : []);
@@ -597,7 +616,7 @@ function renderSondages() {
   if (col.has('Marine Le Pen')) col.set('Jordan Bardella', col.get('Marine Le Pen'));
   const [a, b, c] = cur;
   $('lede').textContent = `${a.nom} est en tête avec ${fmt(a.v)} %, devant ${b.nom} (${fmt(b.v)} %) et ${c.nom} (${fmt(c.v)} %).`;
-  const src = $('source'); src.replaceChildren(`${last.institut} pour ${last.commanditaire}, enquête terminée le ${fdate(last.date)}.` + (prev ? ` Évolution par rapport à son sondage du ${fdate(prev.date)}.` : ''));
+  const src = $('source'); src.replaceChildren(pollMeta(last) + ', ' + margTxt(last.scores) + '.' + (prev ? ` Évolution par rapport à son sondage du ${fdate(prev.date)}.` : ''));
   if (last.manuel) { src.append(' '); src.append(el('span', 'tag', 'ajout manuel')); if (last.src) { src.append(' '); src.append(link('rapport', last.src)); } }
   $('cards').replaceChildren(...cur.map((s) => {
     const card = el('div', 'card');
@@ -605,7 +624,7 @@ function renderSondages() {
     const e = el('div', 'evo');
     if (prevMap.has(s.nom)) { const dv = Math.round((s.v - prevMap.get(s.nom)) * 10) / 10; e.append(el('span', dv > 0 ? 'up' : dv < 0 ? 'down' : '', (dv > 0 ? '+' : '') + fmt(dv) + ' pt')); }
     else e.textContent = 'non testé la fois précédente';
-    card.append(n, el('div', 'party', s.parti || 'Sans étiquette'), el('div', 'val', fmt(s.v) + ' %'), e);
+    card.append(n, el('div', 'party', s.parti || 'Sans étiquette'), el('div', 'val', fmt(s.v) + ' %'), e); if (s.e != null) card.append(el('div', 'mg', '± ' + fmt(s.e) + ' pt'));
     return card;
   }));
   $('legend').replaceChildren(...names.map((nm) => { const s = el('span'); const d = el('i', 'dot'); d.style.background = col.get(nm); s.append(d, nm); return s; }));
@@ -613,7 +632,7 @@ function renderSondages() {
   $('tbody').replaceChildren(...polls.slice(0, 12).map((p) => {
     const m = new Map(p.scores.map((s) => [s.nom, s.v]));
     const tr = el('tr');
-    [fdate(p.date), p.institut + (p.manuel ? ' *' : ''), ...order.map((o) => fmt(m.has(o) ? m.get(o) : null))].forEach((c) => tr.append(el('td', null, c)));
+    [fdate(p.date), p.institut + (p.manuel ? ' *' : ''), p.commanditaire, fmtN(p.n), ...order.map((o) => fmt(m.has(o) ? m.get(o) : null))].forEach((c) => tr.append(el('td', null, c)));
     return tr;
   }));
   drawChart(polls, names, col);
@@ -657,7 +676,7 @@ function drawChart(polls, names, col) {
     let best = null, bd = 1e9; for (const p of vis) { const dd = Math.abs(x(p.date) - mx); if (dd < bd) { bd = dd; best = p; } }
     if (!best) return; const xx = x(best.date);
     guide.setAttribute('x1', xx); guide.setAttribute('x2', xx); guide.setAttribute('opacity', 1);
-    tip.replaceChildren(el('div', 'h', best.institut + ', ' + fdate(best.date)), ...best.scores.filter((s) => keep.has(s.nom)).sort((a, b) => b.v - a.v).map((s) => { const row = el('div', 'r'); const a = el('span', null, s.nom); a.style.color = col.get(s.nom); row.append(a, el('span', null, fmt(s.v) + ' %')); return row; }));
+    tip.replaceChildren(el('div', 'h', best.institut + ' pour ' + best.commanditaire + ', ' + fdate(best.date) + (best.n ? ', ' + fmtN(best.n) + ' pers.' : '')), ...best.scores.filter((s) => keep.has(s.nom)).sort((a, b) => b.v - a.v).map((s) => { const row = el('div', 'r'); const a = el('span', null, s.nom); a.style.color = col.get(s.nom); row.append(a, el('span', null, fmt(s.v) + ' %')); return row; }));
     tip.hidden = false; const tw = tip.offsetWidth; const px = xx * r.width / W; let left = px + 12; if (left + tw > r.width) left = px - tw - 12;
     tip.style.left = Math.max(0, left) + 'px'; tip.style.top = '8px';
   };
@@ -686,8 +705,8 @@ function buildDuels(raw, extra) {
     if (r.tour !== '2nd Tour' || r.fin_enquete < '2026-01-01' || EXCLUS.has(r.commanditaire)) continue;
     const v = parseFloat(r.intentions); if (isNaN(v)) continue;
     const k = (r.poll_id || r.fin_enquete + r.nom_institut) + '|' + r.hypothese;
-    if (!g.has(k)) g.set(k, { date: r.fin_enquete, institut: r.nom_institut, commanditaire: r.commanditaire, s: [] });
-    g.get(k).s.push({ nom: r.complete_name, v });
+    if (!g.has(k)) g.set(k, { date: r.fin_enquete, debut: r.debut_enquete || '', n: parseInt(r.echantillon) || 0, institut: r.nom_institut, commanditaire: r.commanditaire, s: [] });
+    const er = parseFloat(r.erreur_sup); g.get(k).s.push({ nom: r.complete_name, v, e: isNaN(er) ? null : er });
   }
   const d = new Map();
   for (const h of g.values()) {
@@ -706,14 +725,14 @@ function duelRow(o) {
   const r = el('div', 'duel');
   const nm = el('div', 'nm'); const sb = el('span', null, fmt(b.v) + '\u00a0%\u00a0' + b.nom); sb.style.textAlign = 'right'; nm.append(el('span', null, a.nom + '\u00a0' + fmt(a.v) + '\u00a0%'), sb);
   const bar = el('div', 'bar2'); const ia = el('i'); ia.style.cssText = `width:${a.v / tot * 100}%;background:${colorFor(a.nom)}`; const ib = el('i'); ib.style.cssText = `width:${b.v / tot * 100}%;background:${colorFor(b.nom)};opacity:.75`; bar.append(ia, ib);
-  let meta = `${o.last.institut}, ${fdate(o.last.date)}`;
+  let meta = pollMeta(o.last) + (o.last.s.some((x) => x.e != null) || o.last.n ? ', ' + margTxt(o.last.s.map((x) => ({ e: x.e != null ? x.e : marg(x.v, o.last.n) }))) : '');
   if (o.prev && o.prev.institut === o.last.institut) { const pa = o.prev.s.find((x) => x.nom === a.nom); if (pa) { const dv = Math.round((a.v - pa.v) * 10) / 10; meta += ` · ${nomFamille(a.nom)} ${dv > 0 ? '+' : ''}${fmt(dv)} pt depuis le ${fdate(o.prev.date)}`; } }
   meta += ` · testé ${o.n} fois`;
   r.append(nm, bar, el('div', 'meta', meta));
   return r;
 }
 function renderDuels() {
-  if (!DUELS) return;
+  if (!DUELS || silence()) return;
   const lim = new Date(Date.now() - 62 * 864e5).toISOString().slice(0, 10);
   const recent = DUELS.filter((o) => o.last.date >= lim), old = DUELS.filter((o) => o.last.date < lim);
   $('duels').replaceChildren(...(recent.length ? recent : DUELS.slice(0, 8)).map(duelRow));
@@ -925,10 +944,11 @@ function showViewNoHist(v) { const h = location.hash; showView(v); try { history
 function renderAccueil() {
   const byId = new Map((CAND ? CAND.principaux : []).map((c) => [c.id, c]));
   const byNom = new Map((CAND ? CAND.principaux : []).map((c) => [c.nom, c]));
-  if (POLLS && POLLS.length) {
+  $('h-poll').hidden = silence(); $('h-silence').replaceChildren(...(silence() ? [silenceNote()] : []));
+  if (POLLS && POLLS.length && !silence()) {
     const last = POLLS[0]; const prev = POLLS.slice(1).find((p) => p.institut === last.institut);
     const pm = new Map(prev ? prev.scores.map((x) => [x.nom, x.v]) : []);
-    $('h-src').textContent = last.institut + ', ' + fdate(last.date);
+    $('h-src').textContent = last.institut + ', ' + fdate(last.date); $('h-meta').replaceChildren(pollMeta(last) + ', ' + margTxt(last.scores) + '. ', link('Notice', 'https://www.commission-des-sondages.fr/notices/'));
     $('h-top').replaceChildren(...last.scores.slice().sort((a, b) => b.v - a.v).slice(0, 5).map((x, i) => {
       const r = el('div', 'hrow'); const c = byNom.get(x.nom);
       const av = c ? avatar(c) : el('span', 'av', x.nom.split(' ').map((w) => w[0]).slice(0, 2).join('')); if (!c) av.style.background = '#9a9aa3';
@@ -950,7 +970,7 @@ function renderAccueil() {
     }
     $('h-next').replaceChildren(...(rows.length ? rows : [el('p', 'muted', 'Aucune émission annoncée pour le moment.')]));
   }
-  if (ACTU) $('h-actu').replaceChildren(...ACTU.items.slice(0, 3).map((n) => newsCard(n, byId)));
+  if (ACTU) $('h-actu').replaceChildren(...ACTU.items.filter((n) => !(silence() && /sondage/i.test(n.texte))).slice(0, 3).map((n) => newsCard(n, byId)));
 }
 
 
@@ -988,10 +1008,10 @@ function renderFiche() {
   const d = el('div');
   const h = el('div', 'fhead'); h.append(avatar(c), el('h2', null, c.nom), el('div', 'party', c.parti));
   const ls = latestScore(c.nom);
-  if (ls) { h.append(el('div', 'big', fmt(ls.v) + ' %'), el('div', 'muted', `Dernier sondage : ${ls.p.institut}, ${fdate(ls.p.date)}`)); }
+  if (ls && !silence()) { const se = ls.p.scores.find((x) => x.nom === c.nom); h.append(el('div', 'big', fmt(ls.v) + ' %'), el('div', 'muted', `Dernier sondage : ${pollMeta(ls.p)}${se && se.e != null ? ', marge d’erreur ±' + fmt(se.e) + ' pt' : ''}.`)); }
   d.append(h);
   const tpv = TP && TP.candidats && TP.candidats[c.id]; if (tpv && tpv.parole) { const p = el('p', 'muted'); p.append('Temps de parole télé et radio' + (TP.periode ? ' (' + TP.periode + ')' : '') + ' : ', el('b', null, fmtDur(tpv.parole)), ', selon l’Arcom.'); h.append(p); }
-  const spk = sparkChart(c.nom, avColor(c.id)); if (spk) { d.append(el('h3', null, 'Dans les sondages')); d.append(spk); }
+  const spk = silence() ? null : sparkChart(c.nom, avColor(c.id)); if (spk) { d.append(el('h3', null, 'Dans les sondages')); d.append(spk); }
     d.append(el('p', null, c.role), el('p', 'muted', c.annonce));
     d.append(el('h3', null, 'Mesures phares'));
     if (c.mesures.length) { const ul = el('ul'); c.mesures.forEach((m) => ul.append(el('li', null, m))); d.append(ul); const p = el('p', 'muted'); p.append('Source : ', link(c.source_mesures.nom, c.source_mesures.url)); d.append(p); }
@@ -1035,7 +1055,7 @@ function renderCandidats() {
   $('candlist').replaceChildren(...list.map((c) => {
     const b = el('button', 'tcard'); b.type = 'button';
     const ls = latestScore(c.nom);
-    b.append(avatar(c), el('div', 'who', c.nom), el('div', 'party', c.parti), el('div', 'sc', ls ? fmt(ls.v) + ' %' : ''));
+    b.append(avatar(c), el('div', 'who', c.nom), el('div', 'party', c.parti));
     b.onclick = () => openFiche(c.id);
     return b;
   }));
@@ -1128,7 +1148,7 @@ function renderActu() {
   };
   const row = $('chips'); const sx = row.scrollLeft;
   row.replaceChildren(fb(''), ...ids.map(fb)); row.scrollLeft = sx;
-  const items = ACTU.items.filter((n) => !FILTRE || n.qui.includes(FILTRE));
+  const items = ACTU.items.filter((n) => (!FILTRE || n.qui.includes(FILTRE)) && !(silence() && /sondage/i.test(n.texte)));
   const out = []; let last = '';
   for (const n of items) {
     if (n.date !== last) { last = n.date; const h = el('div', 'dayh', dayLabel(n.date)); out.push(h); }
