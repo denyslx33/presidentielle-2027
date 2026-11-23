@@ -2,6 +2,13 @@
  "maj": "2026-11-23",
  "items": [
   {
+   "date": "2026-11-23",
+   "qui": [],
+   "texte": "La secrétaire générale de la CFDT, Marylise Léon, redoute de fortes tensions si le second tour reste fixé au 2 mai, au lendemain du 1er mai.",
+   "source": "franceinfo",
+   "url": "https://www.franceinfo.fr/elections/presidentielle-2027-marylise-leon-redoute-de-tres-tres-fortes-tensions-si-le-second-tour-est-maintenu-le-2-mai_8295602.html"
+  },
+  {
    "date": "2026-11-21",
    "qui": [],
    "texte": "François Ruffin retire sa candidature, faute d'avoir obtenu une primaire de toute la gauche.",
@@ -23,6 +30,25 @@
    "texte": "Enquête AMF-CEVIPOF : près d'un maire sur deux ne souhaite parrainer aucun candidat.",
    "source": "L'Express via Orange",
    "url": "https://actu.orange.fr/politique/presidentielle-2027-un-maire-sur-deux-reticent-a-parrainer-un-candidat-l-express-via-6medias-CNT000002tW8Dc.html"
+  },
+  {
+   "date": "2026-11-19",
+   "qui": [
+    "tondelier"
+   ],
+   "parti": true,
+   "texte": "Le conseil fédéral du 26 novembre fixera les options soumises au vote des adhérents, du 10 au 13 décembre : candidature autonome, soutien à Jean-Luc Mélenchon ou rapprochement avec Raphaël Glucksmann.",
+   "source": "Public Sénat",
+   "url": "https://www.publicsenat.fr/actualites/politique/la-main-tendue-de-marine-tondelier-a-melenchon-peut-elle-faire-imploser-les-ecologistes"
+  },
+  {
+   "date": "2026-11-19",
+   "qui": [
+    "attal"
+   ],
+   "texte": "Gabriel Attal reconnaît ne pas avoir convaincu à ce stade de la campagne et cherche une voie entre primaire et coalition.",
+   "source": "AFP via La Gazette France",
+   "url": "https://www.lagazettefrance.fr/article/attal-admet-qu-il-n-a-pas-convaincu-a-ce-stade-de-la-campagne"
   },
   {
    "date": "2026-11-18",
@@ -55,6 +81,27 @@
    "texte": "Une primaire entre Attal, Retailleau et Lisnard se dessine, Philippe refuse toujours d'y participer.",
    "source": "LCP",
    "url": "https://lcp.fr/actualites/presidentielle-2027-entre-gabriel-attal-bruno-retailleau-et-david-lisnard-une-primaire"
+  },
+  {
+   "date": "2026-11-17",
+   "qui": [
+    "attal",
+    "retailleau",
+    "lisnard"
+   ],
+   "texte": "Les équipes d'Attal, Retailleau et Lisnard discutent d'une primaire ouverte à deux tours, en ligne, fin janvier. Le camp d'Édouard Philippe était absent et la participation d'Éric Zemmour divise.",
+   "source": "Public Sénat",
+   "url": "https://www.publicsenat.fr/actualites/politique/primaire-les-equipes-dattal-retailleau-et-lisnard-salignent-sur-un-vote-en-janvier-moins-sur-le-cas-deric-zemmour"
+  },
+  {
+   "date": "2026-11-12",
+   "qui": [
+    "retailleau"
+   ],
+   "parti": true,
+   "texte": "Bruno Retailleau écrit à Édouard Philippe, Gabriel Attal et David Lisnard pour proposer une primaire les 31 janvier et 7 février.",
+   "source": "LCP",
+   "url": "https://lcp.fr/actualites/presidentielle-bruno-retailleau-propose-une-primaire-les-31-janvier-et-7-fevrier-445008"
   },
   {
    "date": "2026-11-12",
@@ -91,6 +138,26 @@
    "texte": "Teddy Riner annonce sa candidature dans Le Parisien et sur les réseaux sociaux.",
    "source": "LCP",
    "url": "https://lcp.fr/actualites/le-judoka-teddy-riner-annonce-sa-candidature-a-l-election-presidentielle-de-2027-444920"
+  },
+  {
+   "date": "2026-11-08",
+   "qui": [
+    "roussel"
+   ],
+   "parti": true,
+   "texte": "Neuf députés communistes et ultramarins, dont trois membres du parti, annoncent soutenir Jean-Luc Mélenchon. Fabien Roussel maintient sa candidature.",
+   "source": "La Gazette France",
+   "url": "https://www.lagazettefrance.fr/article/presidentielle-malgre-les-defections-roussel-ira-jusqu-au-bout"
+  },
+  {
+   "date": "2026-11-06",
+   "qui": [
+    "glucksmann"
+   ],
+   "parti": "Parti socialiste",
+   "texte": "Le premier secrétaire du PS, Olivier Faure, entre au comité politique de la campagne de Raphaël Glucksmann.",
+   "source": "Public Sénat",
+   "url": "https://www.publicsenat.fr/actualites/politique/document-lorganigramme-de-campagne-complet-de-raphael-glucksmann-olivier-faure-membre-du-comite-politique"
   },
   {
    "date": "2026-11-06",
