@@ -161,6 +161,12 @@ html, body, button, a, summary, select { touch-action: manipulation; }
 .ncard .t { font-size:15px; line-height:1.4; }
 .ncard .s { font-size:12px; color:var(--muted); margin-top:5px; }
 .ncard .s b { color:var(--accent); font-weight:600; }
+.gcard { font:inherit; color:var(--fg); width:100%; text-align:left; display:flex; align-items:center; gap:12px; background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:12px 14px; margin:4px 0 10px; cursor:pointer; }
+.gcard > span:first-child { font-size:26px; } .gcard div { flex:1; } .gcard .chev { font-size:22px; color:var(--muted); }
+.tpr { padding:8px 0; border-bottom:1px solid var(--line); }
+.tpr .h { display:flex; justify-content:space-between; font-size:14px; } .tpr .h b { font-weight:600; }
+.tpr .b { height:8px; background:var(--line); border-radius:5px; overflow:hidden; margin-top:4px; } .tpr .b i { display:block; height:100%; }
+#v-guide ul { padding-left:18px; } #v-guide li { margin-bottom:4px; }
 </style>
 </head>
 <body>
@@ -168,7 +174,7 @@ html, body, button, a, summary, select { touch-action: manipulation; }
   <h1>Présidentielle 2027</h1>
   <div class="jm" id="jm"></div>
   <p class="muted" id="status">Chargement…</p>
-  <div class="inscr" id="inscr"><span>🗳️</span><div>Pour voter les 18 avril et 2 mai 2027, il faut être inscrit sur les listes électorales au plus tard le <b>vendredi 12 mars 2027</b>. Même si vous avez déjà voté, vérifiez : après un déménagement, on peut ne plus être inscrit au bon endroit. <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/R51788" target="_blank" rel="noopener">Vérifier mon inscription</a></div><button id="inscr-x" aria-label="Masquer">×</button></div>
+  <div class="inscr" id="inscr"><span>🗳️</span><div>Pour voter les 18 avril et 2 mai 2027, il faut être inscrit sur les listes électorales au plus tard le <b>vendredi 12 mars 2027</b>. Même si vous avez déjà voté, vérifiez : après un déménagement, on peut ne plus être inscrit au bon endroit. <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/R51788" target="_blank" rel="noopener">Vérifier mon inscription</a> · <a href="#guide" id="inscr-guide">Guide du vote</a></div><button id="inscr-x" aria-label="Masquer">×</button></div>
 
   <!-- SONDAGES -->
   <section class="view on" id="v-sondages">
@@ -225,6 +231,9 @@ html, body, button, a, summary, select { touch-action: manipulation; }
     </div>
 
     </details>
+    <details class="sec"><summary>Temps de parole à la télé et à la radio</summary>
+      <div id="tp"></div>
+    </details>
     <details class="sec"><summary>Budgets et financement</summary>
     <p>Chaque candidat peut dépenser au maximum <b>16,851 M€</b> au premier tour, et <b>22,509 M€</b> s'il est au second. Les dépenses comptent depuis le 1er avril 2026. L'argent vient surtout de prêts bancaires, des partis et des dons de particuliers (4 600 € maximum par personne). L'État rembourse une partie des dépenses aux candidats qui dépassent 5 % des voix.</p>
     <div class="note">Les comptes de campagne officiels ne sont publiés qu'après l'élection. Avant, on ne connaît que ce que les candidats et leurs partis annoncent.</div>
@@ -250,6 +259,64 @@ html, body, button, a, summary, select { touch-action: manipulation; }
   <!-- TEST -->
   <section class="view" id="v-test"><div id="quiz"></div></section>
 
+  <!-- GUIDE DU VOTE -->
+  <section class="view" id="v-guide">
+    <button class="back" id="gback">‹ Retour</button>
+    <h2>Guide pratique du vote</h2>
+    <p class="muted">Toutes les infos viennent des sites officiels (service-public.gouv.fr, info.gouv.fr, diplomatie.gouv.fr).</p>
+
+    <details class="sec" open><summary>📅 Les dates</summary>
+      <p>1er tour le <b>dimanche 18 avril 2027</b>, 2nd tour le <b>dimanche 2 mai 2027</b>.</p>
+      <p>Les horaires d'ouverture des bureaux de vote seront fixés par le décret de convocation. Votre mairie les communiquera.</p>
+      <p class="muted">Source : <a href="https://www.info.gouv.fr/actualite/presidentielle-2027-date-a-retenir-et-informations-cles" target="_blank" rel="noopener">info.gouv.fr</a></p>
+    </details>
+
+    <details class="sec"><summary>✅ Être inscrit</summary>
+      <p>Il faut être Français, avoir 18 ans au plus tard la veille du vote et être inscrit sur les listes électorales.</p>
+      <p><b>Date limite pour s'inscrire : vendredi 12 mars 2027</b>, en ligne ou en mairie.</p>
+      <p>À 18 ans, l'inscription est automatique si vous avez fait votre recensement citoyen à 16 ans. Après un déménagement, il faut s'inscrire dans sa nouvelle commune.</p>
+      <p>Pour s'inscrire en ligne : un justificatif d'identité et un justificatif de domicile de moins de 3 mois, scannés.</p>
+      <p><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/R51788" target="_blank" rel="noopener">Vérifier mon inscription et mon bureau de vote</a><br><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F1367" target="_blank" rel="noopener">M'inscrire ou changer d'adresse</a></p>
+    </details>
+
+    <details class="sec"><summary>📍 Trouver son bureau de vote</summary>
+      <p>Le numéro et l'adresse de votre bureau sont sur votre carte électorale. Vous pouvez aussi les retrouver en ligne avec le même outil que pour vérifier son inscription.</p>
+      <p><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/R51788" target="_blank" rel="noopener">Trouver mon bureau de vote</a></p>
+    </details>
+
+    <details class="sec"><summary>🪪 Les papiers à apporter</summary>
+      <p>Dans les communes de 1 000 habitants et plus, une pièce d'identité <b>originale</b> est obligatoire. Une photo ou une photocopie ne sont pas acceptées. La carte électorale n'est pas obligatoire, mais elle aide le bureau de vote.</p>
+      <ul>
+        <li>Carte d'identité ou passeport, valides ou périmés depuis moins de 5 ans</li>
+        <li>Permis de conduire valide</li>
+        <li>Carte Vitale avec photo</li>
+        <li>Carte d'invalidité ou carte mobilité inclusion avec photo</li>
+        <li>Carte d'identité d'élu, de parlementaire, de fonctionnaire de l'État ou militaire, avec photo</li>
+        <li>Carte du combattant ou permis de chasser avec photo</li>
+      </ul>
+      <p>Dans les communes de moins de 1 000 habitants, la pièce d'identité n'est pas obligatoire, mais le bureau peut vous demander de prouver votre identité.</p>
+      <p class="muted">Source : <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F1361" target="_blank" rel="noopener">liste complète sur service-public.gouv.fr</a></p>
+    </details>
+
+    <details class="sec"><summary>✍️ Voter par procuration</summary>
+      <p>Absent le jour du vote ? Un autre électeur peut voter à votre place, dans votre bureau de vote. Aucun justificatif d'absence n'est demandé et c'est gratuit.</p>
+      <ul>
+        <li><b>En ligne sur Maprocuration</b>, puis validation en personne au commissariat ou à la gendarmerie avec une pièce d'identité.</li>
+        <li><b>Entièrement en ligne</b> si vous avez une identité numérique France Identité certifiée.</li>
+        <li><b>Formulaire papier</b> à déposer au commissariat, à la gendarmerie ou au tribunal judiciaire.</li>
+      </ul>
+      <p>Il faut connaître la date de naissance et le numéro d'électeur de la personne qui votera pour vous, ou sa date de naissance, son nom, ses prénoms et sa commune de vote. Elle peut habiter une autre commune que vous. Elle ne peut avoir qu'une seule procuration établie en France.</p>
+      <p>Faites‑la le plus tôt possible : il faut du temps pour qu'elle arrive au bureau de vote.</p>
+      <p><a href="https://www.maprocuration.gouv.fr" target="_blank" rel="noopener">Faire ma procuration (maprocuration.gouv.fr)</a><br><span class="muted">Source : <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F1604" target="_blank" rel="noopener">service-public.gouv.fr</a></span></p>
+    </details>
+
+    <details class="sec"><summary>🌍 Français de l'étranger</summary>
+      <p>Si vous êtes inscrit sur la liste électorale consulaire, vous votez au consulat ou à l'ambassade, ou par procuration. Le vote par internet n'est pas possible pour la présidentielle.</p>
+      <p>Même date limite d'inscription : le 6e vendredi avant le 1er tour.</p>
+      <p><a href="https://www.diplomatie.gouv.fr/fr/services-aux-francaises-et-aux-francais/vie-administrative-et-elections/elections-a-l-etranger/modalites-de-vote/vote-a-l-urne" target="_blank" rel="noopener">Voter depuis l'étranger (diplomatie.gouv.fr)</a></p>
+    </details>
+  </section>
+
   <!-- PROGRAMMES -->
   <section class="view" id="v-programmes">
     <div class="seg" id="pseg" style="display:flex;margin-bottom:6px"><button data-m="theme" class="on" style="flex:1">Par thème</button><button data-m="cmp" style="flex:1">Comparer</button></div>
@@ -268,6 +335,7 @@ html, body, button, a, summary, select { touch-action: manipulation; }
 
   <!-- AGENDA -->
   <section class="view" id="v-agenda">
+    <button class="gcard" id="agenda-guide" type="button"><span>🗳️</span><div><b>Guide pratique du vote</b><br><span class="muted">Inscription, bureau de vote, papiers, procuration</span></div><span class="chev">›</span></button>
     <div class="chips" id="ag-chips"></div>
     <div id="aglist"></div>
     <h3>Rendez-vous réguliers</h3>
@@ -318,6 +386,7 @@ const avatar = (c) => {
   img.src = 'data/portraits/' + c.id + '.jpg';
   return a;
 };
+let TP = null, GUIDE_FROM = 'sondages';
 let THEME = null, AGENDA = null, AGF = '', RAW = null, EXTRA = [], DUELS = null, QUIZ = null, PMODE = 'theme', CMPA = null, CMPB = null, QI = 0, QANS = null;
 let PERIOD = 0, POLLS = null, CAND = null, ACTU = null, FILTRE = '';
 
@@ -633,6 +702,37 @@ function renderQuizRes() {
   box.replaceChildren(d);
 }
 
+
+function openGuide() {
+  const cur = document.querySelector('#tabs button.on'); GUIDE_FROM = cur ? cur.dataset.v : 'sondages';
+  for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-guide');
+  scrollTo(0, 0);
+  try { history.pushState(null, '', '#guide'); PUSHED = true; } catch (e) {}
+}
+function fmtDur(min) { const h = Math.floor(min / 60), m = Math.round(min % 60); return h ? h + ' h ' + String(m).padStart(2, '0') : m + ' min'; }
+function renderTP() {
+  const box = $('tp'); if (!box || !CAND) return;
+  const out = [];
+  out.push(el('p', null, "Les télés et radios doivent respecter un équilibre entre candidats. L'Arcom, le régulateur, contrôle leur temps de parole et publie les relevés."));
+  const per = el('div', 'timeline');
+  [['Du 4 janvier au 15 mars 2027', 'Équité : temps de parole selon le poids de chaque candidat (résultats passés, sondages, activité de campagne).'],
+   ['Du 16 mars au 4 avril 2027', 'Équité renforcée : temps de parole et temps d’antenne, dans des horaires comparables.'],
+   ['Campagne officielle, les 15 jours avant chaque tour', 'Égalité stricte : le même temps pour chaque candidat.']].forEach(([a, b]) => { const d = el('div'); d.append(el('b', null, a), el('br'), el('span', 'muted', b)); per.append(d); });
+  out.push(per);
+  const data = TP && TP.candidats ? Object.entries(TP.candidats) : [];
+  if (!data.length) {
+    out.push(el('div', 'note', 'Les relevés par candidat commencent le 4 janvier 2027. Les premiers chiffres arriveront ici dès que l’Arcom les publiera.'));
+  } else {
+    const byId = new Map(CAND.principaux.map((c) => [c.id, c]));
+    const rows = data.filter(([id]) => byId.has(id)).map(([id, v]) => ({ c: byId.get(id), v: v.parole || 0 })).sort((a, b) => b.v - a.v);
+    const max = Math.max(...rows.map((r) => r.v), 1);
+    out.push(el('p', 'muted', 'Temps de parole cumulé, toutes chaînes de télé et radios suivies' + (TP.periode ? ', ' + TP.periode : '') + '.'));
+    for (const r of rows) { const d = el('div', 'tpr'); const h = el('div', 'h'); h.append(el('b', null, r.c.nom), el('span', null, fmtDur(r.v))); const b = el('div', 'b'); const i = el('i'); i.style.width = (r.v / max * 100) + '%'; i.style.background = avColor(r.c.id); b.append(i); d.append(h, b); out.push(d); }
+  }
+  const src = el('p', 'muted'); src.append('Source : '); src.append(link(TP && TP.source ? TP.source : 'Arcom', TP && TP.url ? TP.url : 'https://www.arcom.fr')); src.append('. Règles 2027 publiées le 19 novembre 2026.'); out.push(src);
+  box.replaceChildren(...out);
+}
+
 function sortedCands() { return CAND.principaux.slice().sort((a, b) => nomFamille(a.nom).localeCompare(nomFamille(b.nom), 'fr')); }
 let CUR = null;
 function renderFiche() {
@@ -644,6 +744,7 @@ function renderFiche() {
   const ls = latestScore(c.nom);
   if (ls) { h.append(el('div', 'big', fmt(ls.v) + ' %'), el('div', 'muted', `Dernier sondage : ${ls.p.institut}, ${fdate(ls.p.date)}`)); }
   d.append(h);
+  const tpv = TP && TP.candidats && TP.candidats[c.id]; if (tpv && tpv.parole) { const p = el('p', 'muted'); p.append('Temps de parole télé et radio' + (TP.periode ? ' (' + TP.periode + ')' : '') + ' : ', el('b', null, fmtDur(tpv.parole)), ', selon l’Arcom.'); h.append(p); }
   const spk = sparkChart(c.nom, avColor(c.id)); if (spk) { d.append(el('h3', null, 'Dans les sondages')); d.append(spk); }
     d.append(el('p', null, c.role), el('p', 'muted', c.annonce));
     d.append(el('h3', null, 'Mesures phares'));
@@ -796,7 +897,8 @@ async function getText(url, key) {
 }
 
 async function load() {
-  const [mv, aj, ca, ac, ag, qz] = await Promise.all([getText(URL_MV, 'mv'), getText('data/ajouts.csv', 'aj'), getText('data/candidats.json', 'ca'), getText('data/actu.json', 'ac'), getText('data/agenda.json', 'ag'), getText('data/quiz.json', 'qz')]);
+  const [mv, aj, ca, ac, ag, qz, tp] = await Promise.all([getText(URL_MV, 'mv'), getText('data/ajouts.csv', 'aj'), getText('data/candidats.json', 'ca'), getText('data/actu.json', 'ac'), getText('data/agenda.json', 'ag'), getText('data/quiz.json', 'qz'), getText('data/temps_parole.json', 'tp')]);
+  if (tp.t) TP = JSON.parse(tp.t);
   if (qz.t) QUIZ = JSON.parse(qz.t);
   if (ag.t) AGENDA = JSON.parse(ag.t);
   if (mv.t) { const raw = parseCSV(mv.t), ex = aj.t ? parseCSV(aj.t) : []; POLLS = build(raw, ex); DUELS = buildDuels(raw, ex); }
@@ -805,7 +907,7 @@ async function load() {
   const st = $('status');
   if (!POLLS) { st.textContent = 'Impossible de charger les sondages. Vérifiez la connexion.'; st.className = 'muted err'; }
   else st.textContent = (mv.live ? 'Mis à jour à ' + new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }) : 'Hors ligne : derniers chiffres enregistrés') + ' · premier tour le 18 avril 2027';
-  renderSondages(); renderCandidats(); renderProgrammes(); renderActu(); renderAgenda(); renderCredits(); renderFiche(); renderDuels(); countdown();
+  renderSondages(); renderCandidats(); renderProgrammes(); renderActu(); renderAgenda(); renderCredits(); renderFiche(); renderDuels(); countdown(); renderTP();
   if (PMODE === 'cmp') renderCmp(); if (!$('quiz').firstChild || $('quiz').textContent === 'Chargement…') renderQuiz();
 }
 
@@ -818,18 +920,21 @@ function showView(v) {
 }
 let PUSHED = false;
 $('back').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView('candidats'); });
-addEventListener('popstate', () => { PUSHED = false; const h = location.hash.slice(1); if (h.startsWith('c-')) openFiche(h.slice(2), true); else showView(['candidats', 'programmes', 'agenda', 'actu', 'test'].includes(h) ? h : 'sondages'); });
+addEventListener('popstate', () => { PUSHED = false; const h = location.hash.slice(1); if (h === 'guide') { for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-guide'); } else if (h.startsWith('c-')) openFiche(h.slice(2), true); else showView(['candidats', 'programmes', 'agenda', 'actu', 'test'].includes(h) ? h : 'sondages'); });
 for (const b of document.querySelectorAll('#tabs button')) b.addEventListener('click', () => showView(b.dataset.v));
 for (const b of document.querySelectorAll('#pseg button')) b.addEventListener('click', () => setPMode(b.dataset.m));
 $('cmp-a').addEventListener('change', (e) => { CMPA = e.target.value; renderCmp(); });
 $('cmp-b').addEventListener('change', (e) => { CMPB = e.target.value; renderCmp(); });
 countdown();
+$('inscr-guide').addEventListener('click', (e) => { e.preventDefault(); openGuide(); });
+$('agenda-guide').addEventListener('click', openGuide);
+$('gback').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView(GUIDE_FROM); });
 $('inscr-x').addEventListener('click', () => { $('inscr').hidden = true; });
 for (const b of document.querySelectorAll('#seg button')) b.addEventListener('click', () => { PERIOD = +b.dataset.p; for (const o of document.querySelectorAll('#seg button')) o.classList.toggle('on', o === b); renderSondages(); });
 let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(renderSondages, 150); });
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') load(); });
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
-const start = (location.hash || '').slice(1); if (start.startsWith('c-')) openFiche(start.slice(2), true); else if (['candidats', 'programmes', 'agenda', 'actu', 'test'].includes(start)) showView(start);
+const start = (location.hash || '').slice(1); if (start === 'guide') openGuide(); else if (start.startsWith('c-')) openFiche(start.slice(2), true); else if (['candidats', 'programmes', 'agenda', 'actu', 'test'].includes(start)) showView(start);
 load();
 </script>
 </body>
