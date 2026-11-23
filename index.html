@@ -188,11 +188,31 @@ html, body, button, a, summary, select { touch-action: manipulation; }
   #paysage span { font-size:44px; display:inline-block; transform:rotate(-90deg); }
   body { overflow:hidden; }
 }
+.inst { display:flex; align-items:center; gap:10px; background:var(--accent); color:#fff; border-radius:14px; padding:10px 12px; margin:6px 0 10px; }
+.inst .ic { font-size:26px; } .inst .tx { flex:1; font-size:13px; line-height:1.35; } .inst .tx span { opacity:.85; }
+.inst #inst-btn { font:inherit; font-weight:700; font-size:14px; background:#fff; color:var(--accent); border:0; border-radius:20px; padding:8px 14px; cursor:pointer; }
+.inst .x, .sheet .x { font:inherit; font-size:22px; line-height:1; background:none; border:0; color:inherit; cursor:pointer; padding:0 2px; }
+.sheet { position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:900; display:flex; align-items:flex-end; }
+.sheet-in { background:var(--panel); color:var(--fg); width:100%; border-radius:18px 18px 0 0; padding:18px 18px calc(24px + env(safe-area-inset-bottom)); position:relative; }
+.sheet-in .x { position:absolute; right:16px; top:12px; color:var(--muted); }
+.sheet-in h2 { margin:0 0 10px; } .sheet-in ol { padding-left:20px; margin:8px 0; } .sheet-in li { margin-bottom:10px; font-size:15px; }
+.sheet-in .k { display:inline-block; border:1px solid var(--line); border-radius:6px; padding:0 6px; background:var(--bg); }
 </style>
 </head>
 <body>
 <main>
   <h1>Présidentielle 2027</h1>
+  <div class="inst" id="inst" hidden>
+    <span class="ic">📲</span>
+    <div class="tx"><b>Ajoutez l'appli à votre téléphone</b><br><span>Gratuite, sans compte, mise à jour chaque jour.</span></div>
+    <button type="button" id="inst-btn">Ajouter</button>
+    <button type="button" class="x" id="inst-x" aria-label="Masquer">×</button>
+  </div>
+  <div class="sheet" id="inst-sheet" hidden><div class="sheet-in">
+    <button type="button" class="x" id="sheet-x" aria-label="Fermer">×</button>
+    <h2>Ajouter l'appli</h2>
+    <div id="sheet-body"></div>
+  </div></div>
   <div class="jm" id="jm"></div>
   <p class="muted" id="status">Chargement…</p>
   <div class="inscr" id="inscr"><span>🗳️</span><div>Pour voter les 18 avril et 2 mai 2027, il faut être inscrit sur les listes électorales au plus tard le <b>vendredi 12 mars 2027</b>. Même si vous avez déjà voté, vérifiez : après un déménagement, on peut ne plus être inscrit au bon endroit. <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/R51788" target="_blank" rel="noopener">Vérifier mon inscription</a> · <a href="#guide" id="inscr-guide">Guide du vote</a></div><button id="inscr-x" aria-label="Masquer">×</button></div>
@@ -1047,6 +1067,38 @@ $('inscr-x').addEventListener('click', () => { $('inscr').hidden = true; });
 for (const b of document.querySelectorAll('#seg button')) b.addEventListener('click', () => { PERIOD = +b.dataset.p; for (const o of document.querySelectorAll('#seg button')) o.classList.toggle('on', o === b); renderSondages(); });
 let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(renderSondages, 150); });
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') load(); });
+
+(function () {
+  const ua = navigator.userAgent || '';
+  const standalone = (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone === true;
+  const mobile = /Android|iPhone|iPad|iPod/i.test(ua) || (navigator.maxTouchPoints > 1 && /Macintosh/.test(ua));
+  if (standalone || !mobile) return;
+  let dismissed = false; try { dismissed = sessionStorage.getItem('instX') === '1'; } catch (e) {}
+  if (dismissed) return;
+  const ios = /iPhone|iPad|iPod/i.test(ua) || (navigator.maxTouchPoints > 1 && /Macintosh/.test(ua));
+  const inApp = /FBAN|FBAV|Instagram|Line\/|Snapchat|TikTok|LinkedInApp|Twitter|WhatsApp|GSA\//i.test(ua);
+  const banner = $('inst'), sheet = $('inst-sheet'), body = $('sheet-body');
+  let deferred = null;
+  banner.hidden = false;
+  addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); deferred = e; });
+  addEventListener('appinstalled', () => { banner.hidden = true; sheet.hidden = true; });
+  const steps = (arr) => { const ol = el('ol'); arr.forEach((h) => { const li = el('li'); li.innerHTML = h; ol.append(li); }); return ol; };
+  const show = () => {
+    let content;
+    if (inApp) content = [el('p', null, "Vous avez ouvert le lien depuis une autre appli (Instagram, WhatsApp, Messenger…). Il faut d'abord l'ouvrir dans votre navigateur :"), steps(ios ? ["Touchez <span class='k'>⋯</span> ou <span class='k'>⬆︎</span> en haut ou en bas de l'écran", "Choisissez <b>Ouvrir dans Safari</b> (ou dans le navigateur)", "Puis touchez à nouveau <b>Ajouter</b> sur la page"] : ["Touchez <span class='k'>⋮</span> en haut à droite", "Choisissez <b>Ouvrir dans Chrome</b> (ou dans le navigateur)", "Puis touchez à nouveau <b>Ajouter</b> sur la page"])];
+    else if (ios) content = [steps(["Touchez le bouton <b>Partager</b> <span class='k'>⬆︎</span> (en bas dans Safari, en haut dans Chrome)", "Faites défiler et choisissez <b>Sur l'écran d'accueil</b>", "Touchez <b>Ajouter</b> en haut à droite"]), el('p', 'muted', "L'icône apparaît sur votre écran d'accueil, comme une appli.")];
+    else content = [steps(["Touchez <span class='k'>⋮</span> en haut à droite du navigateur", "Choisissez <b>Installer l'application</b> ou <b>Ajouter à l'écran d'accueil</b>", "Confirmez avec <b>Installer</b>"]), (() => { const x = el('p', 'muted'); x.innerHTML = "Sur Samsung Internet : menu <span class='k'>☰</span> en bas, puis « Ajouter la page à », puis « Écran d'accueil »."; return x; })()];
+    body.replaceChildren(...content);
+    sheet.hidden = false;
+  };
+  $('inst-btn').addEventListener('click', async () => {
+    if (deferred) { deferred.prompt(); try { const r = await deferred.userChoice; if (r.outcome === 'accepted') banner.hidden = true; } catch (e) {} deferred = null; return; }
+    show();
+  });
+  $('inst-x').addEventListener('click', () => { banner.hidden = true; try { sessionStorage.setItem('instX', '1'); } catch (e) {} });
+  $('sheet-x').addEventListener('click', () => { sheet.hidden = true; });
+  sheet.addEventListener('click', (e) => { if (e.target === sheet) sheet.hidden = true; });
+})();
 try { if (screen.orientation && screen.orientation.lock) screen.orientation.lock('portrait').catch(() => {}); } catch (e) {}
 if ('serviceWorker' in navigator) {
   const hadCtrl = !!navigator.serviceWorker.controller; let reloaded = false;
