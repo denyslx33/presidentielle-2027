@@ -1,0 +1,22 @@
+name: Fil d'actu
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+  push:
+    paths: [".github/scripts/flux.py", ".github/workflows/flux.yml"]
+permissions:
+  contents: write
+concurrency: flux
+jobs:
+  flux:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 .github/scripts/flux.py
+      - run: |
+          git add data/flux.json
+          git diff --cached --quiet && exit 0
+          git -c user.name="denyslx33" -c user.email="denyslx33@users.noreply.github.com" commit -qm "Fil d'actu automatique"
+          git pull -q --rebase origin main && git push -q origin main

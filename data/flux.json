@@ -1,0 +1,33 @@
+{
+"items": [
+{
+"t": "Edouard Philippe en meeting à Arras",
+"s": "Test",
+"u": "https://ex.fr/e",
+"d": "2026-11-23T21:41:11Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "Teddy Riner attendu dans la Manche jeudi",
+"s": "Test",
+"u": "https://ex.fr/a",
+"d": "2026-11-23T16:14:58Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Présidentielle : l'Arcom publie ses règles",
+"s": "Test",
+"u": "https://ex.fr/d",
+"d": "2026-11-23T10:00:00Z",
+"qui": []
+}
+],
+"sources": {
+"Test": 3
+},
+"maj": "2026-11-23T21:41:11Z"
+}

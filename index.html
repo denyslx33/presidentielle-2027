@@ -238,8 +238,8 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .legal { font-size:11.5px; line-height:1.4; margin:8px 0 0; }
 .card .mg { font-size:11px; color:var(--muted); }
 body.silence #v-sondages .block, body.silence #v-sondages #lede, body.silence #v-sondages details { display:none; }
-.aseg { display:grid; grid-template-columns:1fr 1fr; gap:6px; background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:4px; margin:2px 0 10px; }
-.aseg button { font:inherit; font-size:15px; font-weight:600; border:0; border-radius:10px; padding:9px; background:none; color:var(--muted); cursor:pointer; }
+.aseg { display:grid; grid-template-columns:1fr 1fr 1fr; gap:6px; background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:4px; margin:2px 0 10px; }
+.aseg button { font:inherit; font-size:14px; font-weight:600; border:0; border-radius:10px; padding:9px; background:none; color:var(--muted); cursor:pointer; }
 .aseg button.on { background:var(--accent); color:#fff; }
 .ptag2 { display:inline-block; font-size:11px; font-weight:600; color:var(--muted); border:1px solid var(--line); border-radius:20px; padding:1px 8px; margin-bottom:4px; }
 </style>
@@ -502,10 +502,15 @@ body.silence #v-sondages .block, body.silence #v-sondages #lede, body.silence #v
   <!-- ACTU -->
   <section class="view" id="v-actu">
     <div class="frow" id="chips"></div>
-    <div class="aseg" id="aseg"><button type="button" data-a="infos" class="on">📰 Infos</button><button type="button" data-a="agenda">📅 Agenda</button></div>
+    <div class="aseg" id="aseg"><button type="button" data-a="infos" class="on">📰 L'essentiel</button><button type="button" data-a="flux">⚡ En direct</button><button type="button" data-a="agenda">📅 Agenda</button></div>
     <div id="actu-infos">
     <div id="newslist"></div>
     <p class="muted" id="actu-maj" style="margin-top:12px"></p>
+    </div>
+    <div id="actu-flux" hidden>
+    <p class="muted" style="margin:0 0 8px">Tous les titres des médias sur la présidentielle, mis à jour automatiquement toutes les 30 minutes.</p>
+    <div id="fluxlist"></div>
+    <p class="muted" id="flux-maj" style="margin-top:12px"></p>
     </div>
     <div id="actu-agenda" hidden>
     <button class="gcard" id="agenda-guide" type="button"><span>🗳️</span><div><b>Guide pratique du vote</b><br><span class="muted">Inscription, bureau de vote, papiers, procuration</span></div><span class="chev">›</span></button>
@@ -558,7 +563,7 @@ let AMODE = 'infos';
 let TP = null, GUIDE_FROM = 'accueil';
 let THEME = null, AGENDA = null, AGF = '', RAW = null, EXTRA = [], DUELS = null, QUIZ = null, PMODE = 'theme', CMPA = null, CMPB = null, QI = 0, QANS = null, RUNQ = null;
 const QN = 20;
-let PERIOD = 0, POLLS = null, CAND = null, ACTU = null, FILTRE = '';
+let PERIOD = 0, POLLS = null, CAND = null, ACTU = null, FLUX = null, FILTRE = '';
 
 function parseCSV(text) {
   const rows = []; let row = [], f = '', q = false;
@@ -1009,7 +1014,7 @@ function openAbout() {
 }
 
 
-function setAMode(m) { AMODE = m; for (const b of document.querySelectorAll('#aseg button')) b.classList.toggle('on', b.dataset.a === m); $('actu-infos').hidden = m !== 'infos'; $('actu-agenda').hidden = m !== 'agenda'; gcCount('/actu-' + m, 'Actu ' + m); }
+function setAMode(m) { AMODE = m; for (const b of document.querySelectorAll('#aseg button')) b.classList.toggle('on', b.dataset.a === m); $('actu-infos').hidden = m !== 'infos'; $('actu-flux').hidden = m !== 'flux'; $('actu-agenda').hidden = m !== 'agenda'; gcCount('/actu-' + m, 'Actu ' + m); }
 function openAgenda() { setAMode('agenda'); showView('actu'); }
 
 function sortedCands() { return CAND.principaux.slice().sort((a, b) => nomFamille(a.nom).localeCompare(nomFamille(b.nom), 'fr')); }
@@ -1151,7 +1156,7 @@ function dayLabel(d) {
 function renderActu() {
   if (!ACTU || !CAND) return;
   const byId = new Map(CAND.principaux.map((c) => [c.id, c]));
-  const ids = [...new Set(ACTU.items.flatMap((n) => n.qui).concat(AGENDA ? AGENDA.evenements.flatMap((e) => e.qui || []) : []))].filter((i) => byId.has(i)).sort((a, b) => nomFamille(byId.get(a).nom).localeCompare(nomFamille(byId.get(b).nom), 'fr'));
+  const ids = [...new Set(ACTU.items.flatMap((n) => n.qui).concat(AGENDA ? AGENDA.evenements.flatMap((e) => e.qui || []) : []).concat(FLUX ? FLUX.items.flatMap((n) => n.qui || []) : []))].filter((i) => byId.has(i)).sort((a, b) => nomFamille(byId.get(a).nom).localeCompare(nomFamille(byId.get(b).nom), 'fr'));
   const fb = (id) => {
     const b = el('button', 'fbtn' + (FILTRE === id ? ' on' : '')); b.type = 'button';
     if (!id) { const al = el('div', 'all', '🗳️'); al.style.fontSize = '22px'; b.append(al, el('span', 'l', 'Tout')); }
@@ -1170,6 +1175,32 @@ function renderActu() {
   if (!items.length) out.push(el('p', 'muted', 'Pas d’actu récente pour ce candidat.'));
   $('newslist').replaceChildren(...out);
   $('actu-maj').textContent = 'Actu mise à jour le ' + fdateLong(ACTU.maj) + '. Résumés rédigés à partir des articles cités.';
+  renderFlux(byId);
+}
+function ago(iso) {
+  const m = Math.max(0, Math.round((Date.now() - new Date(iso)) / 60000));
+  if (m < 60) return 'il y a ' + Math.max(1, m) + ' min';
+  const h = Math.round(m / 60); if (h < 24) return 'il y a ' + h + ' h';
+  return new Date(iso).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+}
+function renderFlux(byId) {
+  const box = $('fluxlist'); if (!box) return;
+  if (!FLUX || !FLUX.items) { box.replaceChildren(el('p', 'muted', 'Le fil en direct arrive bientôt.')); return; }
+  const iso = (x) => x.getFullYear() + '-' + String(x.getMonth() + 1).padStart(2, '0') + '-' + String(x.getDate()).padStart(2, '0');
+  const items = FLUX.items.filter((n) => (!FILTRE || (n.qui || []).includes(FILTRE)) && !(silence() && /sondage/i.test(n.t)));
+  const out = []; let last = '';
+  for (const n of items) {
+    const day = iso(new Date(n.d)); if (day !== last) { last = day; out.push(el('div', 'dayh', dayLabel(day))); }
+    const a = el('a', 'ncard'); if (/^https?:\/\//.test(n.u)) { a.href = n.u; a.target = '_blank'; a.rel = 'noopener'; }
+    const avs = el('div', 'avs'); const who = (n.qui || []).filter((i) => byId.has(i)).slice(0, 3);
+    if (who.length) who.forEach((i) => avs.append(avatar(byId.get(i)))); else avs.append(el('div', 'gen', '🗳️'));
+    const body = el('div'); body.append(el('div', 't', n.t));
+    const src = el('div', 's'); src.append(n.s + ' · ' + ago(n.d) + ' · ', el('b', null, 'Lire ›')); body.append(src);
+    a.append(avs, body); out.push(a);
+  }
+  if (!items.length) out.push(el('p', 'muted', FILTRE ? 'Pas de titre récent pour ce candidat.' : 'Pas de titre récent.'));
+  box.replaceChildren(...out);
+  $('flux-maj').textContent = (FLUX.maj ? 'Fil mis à jour ' + ago(FLUX.maj) + '. ' : '') + 'Titres repris tels quels des flux RSS publics de médias nationaux (Le Monde, franceinfo, Libération, Le Figaro, Le Parisien, Ouest‑France, BFMTV…), sans tri ni commentaire. Les articles sur les sondages sont exclus.';
 }
 
 async function getText(url, key) {
@@ -1181,13 +1212,14 @@ async function getText(url, key) {
 }
 
 async function load() {
-  const [mv, aj, ca, ac, ag, qz, tp] = await Promise.all([getText(URL_MV, 'mv'), getText('data/ajouts.csv', 'aj'), getText('data/candidats.json', 'ca'), getText('data/actu.json', 'ac'), getText('data/agenda.json', 'ag'), getText('data/quiz.json', 'qz'), getText('data/temps_parole.json', 'tp')]);
+  const [mv, aj, ca, ac, ag, qz, tp, fx] = await Promise.all([getText(URL_MV, 'mv'), getText('data/ajouts.csv', 'aj'), getText('data/candidats.json', 'ca'), getText('data/actu.json', 'ac'), getText('data/agenda.json', 'ag'), getText('data/quiz.json', 'qz'), getText('data/temps_parole.json', 'tp'), getText('data/flux.json', 'fx')]);
   if (tp.t) TP = JSON.parse(tp.t);
   if (qz.t) QUIZ = JSON.parse(qz.t);
   if (ag.t) AGENDA = JSON.parse(ag.t);
   if (mv.t) { const raw = parseCSV(mv.t), ex = aj.t ? parseCSV(aj.t) : []; POLLS = build(raw, ex); DUELS = buildDuels(raw, ex); }
   if (ca.t) CAND = JSON.parse(ca.t);
   if (ac.t) ACTU = JSON.parse(ac.t);
+  if (fx.t) { try { FLUX = JSON.parse(fx.t); } catch (e) {} }
   const st = $('status');
   if (!POLLS) { st.textContent = 'Impossible de charger les sondages. Vérifiez la connexion.'; st.className = 'muted err'; }
   else st.textContent = (mv.live ? 'Mis à jour à ' + new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }) : 'Hors ligne : derniers chiffres enregistrés') + ' · premier tour le 18 avril 2027';
