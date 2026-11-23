@@ -437,7 +437,7 @@ body.silence #v-sondages .block, body.silence #v-sondages #lede, body.silence #v
   <!-- A PROPOS -->
   <section class="view" id="v-apropos">
     <button class="back" id="aback">‹ Retour</button>
-    <h2>À propos</h2>
+    <h2 id="ab-title">À propos</h2>
     <div class="ab">
       <h3>Une appli citoyenne, gratuite et indépendante</h3>
       <p>Présidentielle 2027 est faite par deux citoyens pour suivre la campagne simplement : sondages, candidats, programmes, débats et infos pratiques pour voter.</p>
@@ -1269,7 +1269,12 @@ document.addEventListener('visibilitychange', () => { if (document.visibilitySta
 
 // Mesure d'audience anonyme (GoatCounter). Laisser vide pour désactiver.
 const GC_CODE = 'presidentielle2027';
+(() => { let n = 0, t0 = 0; const h = document.getElementById('ab-title'); if (!h) return;
+  h.addEventListener('click', () => { const now = Date.now(); if (now - t0 > 2500) n = 0; t0 = now; n++;
+    if (n >= 5) { n = 0; const off = !noCount(); try { localStorage.setItem('nocount', off ? '1' : '0'); } catch (e) {} toast(off ? 'Cet appareil n’est plus compté dans les visites' : 'Cet appareil est de nouveau compté'); } }); })();
+function noCount() { try { return localStorage.getItem('nocount') === '1'; } catch (e) { return false; } }
 function gcCount(path, title, event) {
+  if (noCount()) return;
   try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path, title: title || path, event: !!event }); } catch (e) {}
 }
 (function () {
