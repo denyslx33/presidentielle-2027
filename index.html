@@ -238,6 +238,9 @@ html, body, button, a, summary, select { touch-action: manipulation; }
 .legal { font-size:11.5px; line-height:1.4; margin:8px 0 0; }
 .card .mg { font-size:11px; color:var(--muted); }
 body.silence #v-sondages .block, body.silence #v-sondages #lede, body.silence #v-sondages details { display:none; }
+.aseg { display:grid; grid-template-columns:1fr 1fr; gap:6px; background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:4px; margin:2px 0 10px; }
+.aseg button { font:inherit; font-size:15px; font-weight:600; border:0; border-radius:10px; padding:9px; background:none; color:var(--muted); cursor:pointer; }
+.aseg button.on { background:var(--accent); color:#fff; }
 </style>
 </head>
 <body>
@@ -494,7 +497,16 @@ body.silence #v-sondages .block, body.silence #v-sondages #lede, body.silence #v
   </section>
 
   <!-- AGENDA -->
-  <section class="view" id="v-agenda">
+
+  <!-- ACTU -->
+  <section class="view" id="v-actu">
+    <div class="frow" id="chips"></div>
+    <div class="aseg" id="aseg"><button type="button" data-a="infos" class="on">📰 Infos</button><button type="button" data-a="agenda">📅 Agenda</button></div>
+    <div id="actu-infos">
+    <div id="newslist"></div>
+    <p class="muted" id="actu-maj" style="margin-top:12px"></p>
+    </div>
+    <div id="actu-agenda" hidden>
     <button class="gcard" id="agenda-guide" type="button"><span>🗳️</span><div><b>Guide pratique du vote</b><br><span class="muted">Inscription, bureau de vote, papiers, procuration</span></div><span class="chev">›</span></button>
     <div class="chips" id="ag-chips"></div>
     <div id="aglist"></div>
@@ -502,13 +514,7 @@ body.silence #v-sondages .block, body.silence #v-sondages #lede, body.silence #v
     <div id="agrdv"></div>
     <details class="muted"><summary>Événements passés</summary><div id="agpast"></div></details>
     <p class="muted" id="ag-maj" style="margin-top:12px"></p>
-  </section>
-
-  <!-- ACTU -->
-  <section class="view" id="v-actu">
-    <div class="frow" id="chips"></div>
-    <div id="newslist"></div>
-    <p class="muted" id="actu-maj" style="margin-top:12px"></p>
+      </div>
   </section>
 
   <!-- SIGNATURES & ARGENT -->
@@ -521,7 +527,6 @@ body.silence #v-sondages .block, body.silence #v-sondages #lede, body.silence #v
   <button data-v="candidats"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5M16 4.8a3.5 3.5 0 010 6.4M18 14.7c2 .7 3.2 2.5 3.6 5.3"/></svg>Candidats</button>
   <button data-v="programmes"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 12h7M9 16h7"/></svg>Programmes</button>
   <button data-v="test"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.3a2.6 2.6 0 015 .9c0 1.8-2.5 2.2-2.5 3.8M12 17.2v.1"/></svg>Test</button>
-  <button data-v="agenda"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Agenda</button>
   <button data-v="actu"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h10M7 17h6"/></svg>Actu</button>
   <button data-v="partager" id="tab-share" type="button"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>Partager</button>
 </nav>
@@ -548,6 +553,7 @@ const avatar = (c) => {
   img.src = 'data/portraits/' + c.id + '.jpg';
   return a;
 };
+let AMODE = 'infos';
 let TP = null, GUIDE_FROM = 'accueil';
 let THEME = null, AGENDA = null, AGF = '', RAW = null, EXTRA = [], DUELS = null, QUIZ = null, PMODE = 'theme', CMPA = null, CMPB = null, QI = 0, QANS = null, RUNQ = null;
 const QN = 20;
@@ -999,6 +1005,10 @@ function openAbout() {
   try { history.pushState(null, '', '#apropos'); PUSHED = true; } catch (e) {}
 }
 
+
+function setAMode(m) { AMODE = m; for (const b of document.querySelectorAll('#aseg button')) b.classList.toggle('on', b.dataset.a === m); $('actu-infos').hidden = m !== 'infos'; $('actu-agenda').hidden = m !== 'agenda'; gcCount('/actu-' + m, 'Actu ' + m); }
+function openAgenda() { setAMode('agenda'); showView('actu'); }
+
 function sortedCands() { return CAND.principaux.slice().sort((a, b) => nomFamille(a.nom).localeCompare(nomFamille(b.nom), 'fr')); }
 let CUR = null;
 function renderFiche() {
@@ -1115,16 +1125,16 @@ function renderAgenda() {
   const today = new Date().toISOString().slice(0, 10);
   const kinds = [['', 'Tout'], ['tele', 'Télé'], ['meeting', 'Meetings'], ['cle', 'Dates clés']];
   $('ag-chips').replaceChildren(...kinds.map(([k, l]) => { const b = el('button', AGF === k ? 'on' : '', l); b.onclick = () => { AGF = k; renderAgenda(); }; return b; }));
-  const ok = (e) => !AGF || (AGF === 'tele' ? ['debat', 'emission'].includes(e.type) : AGF === 'cle' ? ['cle', 'vote'].includes(e.type) : e.type === AGF);
+  const ok = (e) => (!FILTRE || (e.qui || []).includes(FILTRE)) && (!AGF || (AGF === 'tele' ? ['debat', 'emission'].includes(e.type) : AGF === 'cle' ? ['cle', 'vote'].includes(e.type) : e.type === AGF));
   const evs = AGENDA.evenements.slice().sort((a, b) => a.date.localeCompare(b.date));
   const up = evs.filter((e) => (e.fin || e.date) >= today && ok(e));
   const out = []; let cur = '';
   const MOISL = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
   up.forEach((e) => { const k = e.date.slice(0, 7); if (k !== cur) { cur = k; out.push(el('div', 'month', MOISL[+k.slice(5) - 1] + ' ' + k.slice(0, 4))); } out.push(evRow(e)); });
-  if (!up.length) out.push(el('p', 'muted', 'Aucun événement à venir dans cette catégorie pour le moment.'));
+  if (!up.length) out.push(el('p', 'muted', FILTRE ? 'Aucun rendez‑vous annoncé pour ce candidat pour le moment.' : 'Aucun événement à venir dans cette catégorie pour le moment.'));
   $('aglist').replaceChildren(...out);
   $('agrdv').replaceChildren(...AGENDA.rendezvous.map((r) => { const p = el('p'); p.append(el('b', null, r.titre), ' · ' + r.quand + ' · ' + r.chaine + ' '); p.append(link('source', r.url)); return p; }));
-  $('agpast').replaceChildren(...evs.filter((e) => (e.fin || e.date) < today).reverse().map(evRow));
+  $('agpast').replaceChildren(...evs.filter((e) => (e.fin || e.date) < today && (!FILTRE || (e.qui || []).includes(FILTRE))).reverse().map(evRow));
   $('ag-maj').textContent = 'Agenda mis à jour le ' + fdateLong(AGENDA.maj) + '. Horaires donnés par les organisateurs ou la presse, susceptibles de changer.';
 }
 
@@ -1138,12 +1148,12 @@ function dayLabel(d) {
 function renderActu() {
   if (!ACTU || !CAND) return;
   const byId = new Map(CAND.principaux.map((c) => [c.id, c]));
-  const ids = [...new Set(ACTU.items.flatMap((n) => n.qui))].filter((i) => byId.has(i)).sort((a, b) => nomFamille(byId.get(a).nom).localeCompare(nomFamille(byId.get(b).nom), 'fr'));
+  const ids = [...new Set(ACTU.items.flatMap((n) => n.qui).concat(AGENDA ? AGENDA.evenements.flatMap((e) => e.qui || []) : []))].filter((i) => byId.has(i)).sort((a, b) => nomFamille(byId.get(a).nom).localeCompare(nomFamille(byId.get(b).nom), 'fr'));
   const fb = (id) => {
     const b = el('button', 'fbtn' + (FILTRE === id ? ' on' : '')); b.type = 'button';
     if (!id) { const al = el('div', 'all', '🗳️'); al.style.fontSize = '22px'; b.append(al, el('span', 'l', 'Tout')); }
     else { const c = byId.get(id); b.append(avatar(c), el('span', 'l', nomFamille(c.nom))); }
-    b.onclick = () => { FILTRE = id; renderActu(); };
+    b.onclick = () => { FILTRE = id; renderActu(); renderAgenda(); };
     return b;
   };
   const row = $('chips'); const sx = row.scrollLeft;
@@ -1194,7 +1204,7 @@ function showView(v) {
 }
 let PUSHED = false;
 $('back').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView('candidats'); });
-addEventListener('popstate', () => { PUSHED = false; const h = location.hash.slice(1); if (h === 'apropos') { for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-apropos'); } else if (h === 'guide') { for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-guide'); } else if (h.startsWith('c-')) openFiche(h.slice(2), true); else showView(['candidats', 'programmes', 'agenda', 'actu', 'test', 'sondages'].includes(h) ? h : 'accueil'); });
+addEventListener('popstate', () => { PUSHED = false; const h = location.hash.slice(1); if (h === 'apropos') { for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-apropos'); } else if (h === 'guide') { for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-guide'); } else if (h.startsWith('c-')) openFiche(h.slice(2), true); else if (h === 'agenda') openAgenda(); else showView(['candidats', 'programmes', 'actu', 'test', 'sondages'].includes(h) ? h : 'accueil'); });
 for (const b of document.querySelectorAll('#tabs button')) if (b.dataset.v !== 'partager') b.addEventListener('click', () => showView(b.dataset.v));
 $('go-cmp').addEventListener('click', () => { setPMode('cmp'); scrollTo(0, 0); });
 $('cmp-back').addEventListener('click', () => { setPMode('theme'); scrollTo(0, 0); });
@@ -1203,8 +1213,9 @@ $('cmp-b').addEventListener('change', (e) => { CMPB = e.target.value; renderCmp(
 countdown();
 $('sback').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView('accueil'); });
 $('h-sond').addEventListener('click', () => goView('sondages'));
-$('h-agenda').addEventListener('click', () => showView('agenda'));
-$('h-actus').addEventListener('click', () => showView('actu'));
+$('h-agenda').addEventListener('click', openAgenda);
+for (const b of document.querySelectorAll('#aseg button')) b.addEventListener('click', () => setAMode(b.dataset.a));
+$('h-actus').addEventListener('click', () => { setAMode('infos'); showView('actu'); });
 $('h-test').addEventListener('click', () => showView('test'));
 $('h-guide').addEventListener('click', openGuide);
 $('inscr-guide').addEventListener('click', (e) => { e.preventDefault(); openGuide(); });
