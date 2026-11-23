@@ -182,6 +182,12 @@ html, body, button, a, summary, select { touch-action: manipulation; }
 .hbtns { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px; }
 .hbtns button { font:inherit; font-weight:700; font-size:15px; color:var(--fg); background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:14px 10px; display:flex; flex-direction:column; align-items:center; gap:3px; cursor:pointer; }
 .hbtns span { font-size:28px; } .hbtns small { font-weight:400; font-size:12px; color:var(--muted); }
+#paysage { display:none; }
+@media (orientation: landscape) and (max-height: 500px) and (hover: none) {
+  #paysage { display:flex; position:fixed; inset:0; z-index:1000; background:var(--bg); color:var(--fg); flex-direction:column; align-items:center; justify-content:center; gap:10px; text-align:center; padding:20px; }
+  #paysage span { font-size:44px; display:inline-block; transform:rotate(-90deg); }
+  body { overflow:hidden; }
+}
 </style>
 </head>
 <body>
@@ -394,6 +400,7 @@ html, body, button, a, summary, select { touch-action: manipulation; }
 
 </main>
 
+<div id="paysage" aria-hidden="true"><span>📱</span><b>Tournez votre téléphone</b><span class="muted" style="font-size:14px;transform:none">L’appli s’utilise en mode vertical.</span></div>
 <nav class="tabs" id="tabs">
   <button data-v="accueil" class="on"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg>Accueil</button>
   <button data-v="candidats"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5M16 4.8a3.5 3.5 0 010 6.4M18 14.7c2 .7 3.2 2.5 3.6 5.3"/></svg>Candidats</button>
@@ -1040,6 +1047,7 @@ $('inscr-x').addEventListener('click', () => { $('inscr').hidden = true; });
 for (const b of document.querySelectorAll('#seg button')) b.addEventListener('click', () => { PERIOD = +b.dataset.p; for (const o of document.querySelectorAll('#seg button')) o.classList.toggle('on', o === b); renderSondages(); });
 let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(renderSondages, 150); });
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') load(); });
+try { if (screen.orientation && screen.orientation.lock) screen.orientation.lock('portrait').catch(() => {}); } catch (e) {}
 if ('serviceWorker' in navigator) {
   const hadCtrl = !!navigator.serviceWorker.controller; let reloaded = false;
   navigator.serviceWorker.addEventListener('controllerchange', () => { if (hadCtrl && !reloaded) { reloaded = true; location.reload(); } });
