@@ -2,6 +2,32 @@
 "v": 2,
 "items": [
 {
+"t": "Présidentielle: Boris Vallaud estime que la main tendue de Marine Tondelier à Jean-Luc Mélenchon est \"une sorte de fatalisme\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-un-nouveau-sondage-donne-marine-le-pen-en-baisse-david-lisnard-depasse-edouard-philippe_LN-202611230170.html",
+"d": "2026-11-23T23:20:51Z",
+"qui": [
+"melenchon",
+"tondelier"
+]
+},
+{
+"t": "Le Nigeria impose un couvre-feu après la mort de quatre opposants politiques",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/monde/nigeria/le-nigeria-impose-un-couvre-feu-apres-la-mort-de-quatre-opposants-politiques-ade471e6-e78f-11f1-afa7-9a0bb82a33d1?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-23T23:12:15Z",
+"qui": []
+},
+{
+"t": "Migrants expulsés au Rwanda: \"Humainement, ça questionne\", selon Prisca Thevenot, députée \"Renaissance\" des Hauts-de-Seine, soutien de Gabriel Attal",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/video-migrants-expulses-au-rwanda-humainement-ca-questionne-selon-prisca-thevenot-deputee-renaissance-des-hauts-de-seine-soutien-de-gabriel-attal_VN-202611230956.html",
+"d": "2026-11-23T23:00:18Z",
+"qui": [
+"attal"
+]
+},
+{
 "t": "Présidentielle: le projet de David Lisnard pour 2027",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-le-projet-de-david-lisnard-pour-2027_VN-202611230939.html",
@@ -26,16 +52,6 @@
 "d": "2026-11-23T22:06:54Z",
 "qui": [
 "villepin"
-]
-},
-{
-"t": "DIRECT. Présidentielle: Boris Vallaud estime que la main tendue de Marine Tondelier à Jean-Luc Mélenchon est \"une sorte de fatalisme\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-un-nouveau-sondage-donne-marine-le-pen-en-baisse-david-lisnard-depasse-edouard-philippe_LN-202611230170.html",
-"d": "2026-11-23T22:02:52Z",
-"qui": [
-"melenchon",
-"tondelier"
 ]
 },
 {
@@ -1649,24 +1665,6 @@
 "u": "https://www.la-croix.com/societe/presidentielle-2027-cinq-candidats-confrontent-leurs-positions-sur-la-pauvrete-20261117",
 "d": "2026-11-17T11:08:50Z",
 "qui": []
-},
-{
-"t": "Présidentielle 2027: pourquoi Jean-Luc Mélenchon va dîner ce mardi avec des grands patrons, dont Bernard Arnault et Patrick Pouyanné",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/presidentielle-2027-pourquoi-jean-luc-melenchon-va-diner-ce-mardi-avec-des-grands",
-"d": "2026-11-17T10:11:09Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Ukraine: Marine Le Pen revendique un \"soutien sans faille\" mais veut fermer le robinet financier",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/ukraine-marine-le-pen-revendique-un-soutien-sans-faille-mais-veut-fermer-le-robinet",
-"d": "2026-11-17T09:57:35Z",
-"qui": [
-"lepen"
-]
 }
 ],
 "sources": {
@@ -1676,12 +1674,12 @@
 "Le Figaro": 11,
 "Le Parisien": 56,
 "20 Minutes": 6,
-"Ouest-France": 2,
+"Ouest-France": 3,
 "BFMTV": 26,
 "France 24": 10,
 "La Croix": 32,
 "LCP": 48,
 "RFI": 11
 },
-"maj": "2026-11-23T22:55:57Z"
+"maj": "2026-11-23T23:53:53Z"
 }
