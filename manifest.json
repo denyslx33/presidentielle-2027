@@ -1,11 +1,11 @@
 {
-  "name": "Présidentielle 2027",
-  "short_name": "Présidentielle",
+  "name": "Nous votons",
+  "short_name": "Nous votons",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#1f2a44",
-  "theme_color": "#1f2a44",
+  "background_color": "#fcfcfc",
+  "theme_color": "#f6f5f2",
   "lang": "fr",
   "icons": [
     {
@@ -20,5 +20,6 @@
       "purpose": "any maskable"
     }
   ],
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "description": "La présidentielle 2027 en une appli : sondages, candidats, programmes, actu et agenda. Gratuite, neutre, sans pub."
 }

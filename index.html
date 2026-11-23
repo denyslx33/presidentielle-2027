@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
-<title>Présidentielle 2027</title>
+<title>Nous votons · Présidentielle 2027</title>
 <meta name="theme-color" content="#1f2a44">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Présidentielle 2027">
+<meta name="apple-mobile-web-app-title" content="Nous votons">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" href="icon-192.png">
@@ -223,6 +223,10 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .thb.on span { background:#fff; }
 .topbar { display:flex; align-items:center; justify-content:space-between; gap:8px; }
 .topbar h1 { margin:0 0 6px; }
+.brand { display:flex; align-items:center; gap:10px; }
+.brand img { width:44px; height:32px; object-fit:contain; border-radius:8px; background:#fcfcfc; padding:3px 4px; box-sizing:content-box; }
+.brand span { display:flex; flex-direction:column; line-height:1.05; }
+.brand small { font:600 13px/1.2 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color:var(--muted); letter-spacing:0; margin-top:3px; }
 .tbtn { display:flex; gap:6px; }
 .tbtn button { width:38px; height:38px; border-radius:50%; border:1px solid var(--line); background:var(--panel); color:var(--fg); display:flex; align-items:center; justify-content:center; cursor:pointer; padding:0; }
 .tbtn svg { width:20px; height:20px; stroke:currentColor; fill:none; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; }
@@ -246,7 +250,7 @@ body.silence #v-sondages .block, body.silence #v-sondages #lede, body.silence #v
 </head>
 <body>
 <main>
-  <div class="topbar"><h1>Présidentielle 2027</h1><div class="tbtn"><button type="button" id="b-about" aria-label="À propos"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.1"/></svg></button></div></div>
+  <div class="topbar"><h1 class="brand"><img src="logo-nv.png" alt="" width="44" height="32"><span>Nous votons<small>Présidentielle 2027</small></span></h1><div class="tbtn"><button type="button" id="b-about" aria-label="À propos"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.1"/></svg></button></div></div>
   <div class="inst" id="inst" hidden>
     <span class="ic">📲</span>
     <div class="tx"><b>Ajoutez l'appli à votre téléphone</b><br><span>Gratuite, sans compte, mise à jour chaque jour.</span></div>
@@ -440,7 +444,7 @@ body.silence #v-sondages .block, body.silence #v-sondages #lede, body.silence #v
     <h2 id="ab-title">À propos</h2>
     <div class="ab">
       <h3>Une appli citoyenne, gratuite et indépendante</h3>
-      <p>Présidentielle 2027 est faite par deux citoyens pour suivre la campagne simplement : sondages, candidats, programmes, débats et infos pratiques pour voter.</p>
+      <p>Nous votons est faite par deux citoyens pour suivre la campagne simplement : sondages, candidats, programmes, débats et infos pratiques pour voter.</p>
       <ul>
         <li><b>Gratuite</b>, sans compte et sans publicité.</li>
         <li><b>Indépendante</b> : aucun lien avec un parti, un candidat ou un média. Personne ne finance l'appli.</li>
@@ -1003,7 +1007,7 @@ function shareSheet() {
 }
 async function shareApp() {
   gcCount('partage-ouvert', 'Ouverture du partage', true);
-  if (navigator.share) { try { await navigator.share({ title: 'Présidentielle 2027', text: SHARE_TXT, url: APP_URL }); gcCount('partage-natif', 'Partage (menu du téléphone)', true); return; } catch (e) { if (e && e.name === 'AbortError') return; } }
+  if (navigator.share) { try { await navigator.share({ title: 'Nous votons', text: SHARE_TXT, url: APP_URL }); gcCount('partage-natif', 'Partage (menu du téléphone)', true); return; } catch (e) { if (e && e.name === 'AbortError') return; } }
   shareSheet();
 }
 function openAbout() {
