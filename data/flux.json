@@ -2,6 +2,15 @@
 "v": 2,
 "items": [
 {
+"t": "Présidentielle: le projet de David Lisnard pour 2027",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-le-projet-de-david-lisnard-pour-2027_VN-202611230939.html",
+"d": "2026-11-23T22:32:58Z",
+"qui": [
+"lisnard"
+]
+},
+{
 "t": "Présidentielle: \"Le bloc central est en train de mourir\", analyse Alexandre Ouizille, sénateur PS de l'Oise et directeur de campagne de Raphaël Glucksmann",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-le-bloc-central-est-en-train-de-mourir-analyse-alexandre-ouizille-senateur-ps-de-l-oise-et-directeur-de-campagne-de-raphael-glucksmann_VN-202611230933.html",
@@ -95,7 +104,7 @@
 ]
 },
 {
-"t": "INFO OUEST-FRANCE. « Ça envoie un message positif » : Teddy Riner était présent à la soirée des Trucs qui marchent",
+"t": "INFO OUEST-FRANCE. « C’est inspirant » : Teddy Riner était présent à la soirée des Trucs qui marchent",
 "s": "Ouest-France",
 "u": "https://www.ouest-france.fr/elections/presidentielle/info-ouest-france-ca-envoie-un-message-positif-teddy-riner-etait-present-a-la-soiree-des-trucs-qui-marchent-42f3715e-e77e-11f1-afa7-9a0bb82a33d1?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
 "d": "2026-11-23T21:07:02Z",
@@ -1658,13 +1667,6 @@
 "qui": [
 "lepen"
 ]
-},
-{
-"t": "\"Il y a eu parfois des erreurs\": Emmanuel Macron affirme avoir \"fait de son mieux\" pendant ses deux quinquennats",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
-"d": "2026-11-17T07:50:15Z",
-"qui": []
 }
 ],
 "sources": {
@@ -1675,11 +1677,11 @@
 "Le Parisien": 56,
 "20 Minutes": 6,
 "Ouest-France": 2,
-"BFMTV": 25,
+"BFMTV": 26,
 "France 24": 10,
 "La Croix": 32,
 "LCP": 48,
 "RFI": 11
 },
-"maj": "2026-11-23T22:36:30Z"
+"maj": "2026-11-23T22:55:57Z"
 }
