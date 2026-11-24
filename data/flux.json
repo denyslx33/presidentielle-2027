@@ -2,21 +2,66 @@
 "v": 4,
 "items": [
 {
+"t": "DIRECT. Présidentielle 2027: les candidats au congrès des maires de France, Édouard Philippe est arrivé sur place",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html",
+"d": "2026-11-24T13:58:55Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "La maire de Fontenay-aux-Roses souhaite la \"mise en retrait\" de David Lisnard de la présidence de l'Association des maires de France",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/politique/la-maire-de-fontenay-aux-roses-souhaite-la-mise-en-retrait-de-david-lisnard-de-la-presidence-de-l-association-des-maires-de-france_8297787.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-24T13:48:05Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Le Havre : enquête ouverte pour détournement de fonds dans la communauté urbaine d’Édouard Philippe",
+"s": "La Croix",
+"u": "https://www.la-croix.com/politique/le-havre-enquete-ouverte-pour-detournement-de-fonds-dans-la-ville-presidee-par-edouard-philippe-20261124",
+"d": "2026-11-24T13:33:36Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "Une enquête ouverte après un signalement pour détournement de fonds publics à l'agglomération du Havre présidée par Edouard Philippe",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/politique/edouard-philippe/une-enquete-ouverte-apres-un-signalement-pour-detournement-de-fonds-publics-a-l-agglomeration-du-havre-presidee-par-edouard-philippe_8297676.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-24T13:03:17Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "Jean-Luc Mélenchon tiendra un meeting le samedi 9 janvier à Montpellier",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/24/jean-luc-melenchon-tiendra-un-meeting-le-samedi-9-janvier-a-montpellier_6814763_823448.html",
+"d": "2026-11-24T12:43:41Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Détournement de fonds publics : enquête ouverte à l’agglomération du Havre, présidée par Edouard Philippe",
+"s": "Libération",
+"u": "https://www.liberation.fr/politique/detournement-de-fonds-publics-une-enquete-ouverte-a-lagglomeration-du-havre-presidee-par-edouard-philippe-20261124_YVGEWXKHJBE2JCNJ2GLT242A7E/",
+"d": "2026-11-24T12:40:56Z",
+"qui": [
+"philippe"
+]
+},
+{
 "t": "ÉDITO. David Lisnard propose-t-il du neuf aux Français ?",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/elections/edito-david-lisnard-propose-t-il-du-neuf-aux-francais_8297697.html#xtor=RSS-3-%5Bpolitique%5D",
 "d": "2026-11-24T12:27:40Z",
 "qui": [
 "lisnard"
-]
-},
-{
-"t": "Le Havre : enquête ouverte pour détournement de fonds dans la ville présidée par Édouard Philippe",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/le-havre-enquete-ouverte-pour-detournement-de-fonds-dans-la-ville-presidee-par-edouard-philippe-20261124",
-"d": "2026-11-24T12:24:53Z",
-"qui": [
-"philippe"
 ]
 },
 {
@@ -63,6 +108,33 @@
 ]
 },
 {
+"t": "Présidentielle 2027 : Bruno Retailleau promet aux maires de « libérer la France communale de la bureaucratie »",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-bruno-retailleau-promet-aux-maires-de-liberer-la-france-communale-de-la-bureaucratie-24-11-2026-BVRX6ZJRXVA37O23PUTGI4C2IE.php",
+"d": "2026-11-24T12:00:00Z",
+"qui": [
+"retailleau"
+]
+},
+{
+"t": "Présidentielle 2027 : Éric Ciotti note « des points de convergences » avec David Lisnard et regrette son refus d’une alliance avec le RN",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-eric-ciotti-note-des-points-de-convergences-avec-david-lisnard-et-regrette-son-refus-dune-alliance-avec-le-rn-24-11-2026-CJMYVBZYZBERNF7JS27SHIJKLY.php",
+"d": "2026-11-24T12:00:00Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Une enquête ouverte après un signalement de détournement de fonds publics à l’agglomération du Havre, présidée par Édouard Philippe",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/faits-divers/une-enquete-ouverte-apres-un-signalement-de-detournement-de-fonds-publics-a-lagglomeration-du-havre-presidee-par-edouard-philippe-24-11-2026-7GQ572AIANB7LKSKZPCBEYLTI4.php",
+"d": "2026-11-24T12:00:00Z",
+"qui": [
+"philippe"
+]
+},
+{
 "t": "INFO OUEST-FRANCE. Présidentielle 2027 : pourquoi le Guadeloupéen Ary Chalus donnera son parrainage à Teddy Riner",
 "s": "Ouest-France",
 "u": "https://www.ouest-france.fr/elections/presidentielle/info-ouest-france-presidentielle-2027-pourquoi-le-guadeloupeen-ary-chalus-donnera-son-parrainage-a-teddy-riner-3fd0a0cc-e7f7-11f1-86c1-70195b4d2e52?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
@@ -78,17 +150,6 @@
 "d": "2026-11-24T11:47:36Z",
 "qui": [
 "lepen"
-]
-},
-{
-"t": "DIRECT. Primaire de la droite et du centre: la nouvelle réunion entre les équipes de Gabriel Attal, David Lisnard et Bruno Retailleau reportée",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html",
-"d": "2026-11-24T11:37:42Z",
-"qui": [
-"attal",
-"lisnard",
-"retailleau"
 ]
 },
 {
@@ -1699,62 +1760,21 @@
 "u": "https://www.la-croix.com/politique/presidentielle-2027-ce-que-l-on-sait-du-projet-de-primaire-de-la-droite-et-du-centre-20261117",
 "d": "2026-11-17T20:22:51Z",
 "qui": []
-},
-{
-"t": "Présidentielle 2027 : Teddy Riner suspendu de sa mission d’ambassadeur d’Unicef France",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/presidentielle-2027-teddy-riner-suspendu-de-sa-mission-d-ambassadeur-dunicef-france-20261117",
-"d": "2026-11-17T19:10:15Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "Réforme des retraites: c'est quoi la capitalisation obligatoire que Marine Le Pen veut mettre en place?",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/reforme-des-retraites-c-est-quoi-la-capitalisation-obligatoire-que-marine-le-pen-veut",
-"d": "2026-11-17T17:45:29Z",
-"qui": [
-"lepen"
-]
-},
-{
-"t": "\"J’ai déjà fait des erreurs, bien sûr, beaucoup\": Edouard Philippe passe le \"Brevet présidentiel\" sur LCP",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/j-ai-deja-fait-des-erreurs-bien-sur-beaucoup-edouard-philippe-passe-le-brevet",
-"d": "2026-11-17T17:17:32Z",
-"qui": [
-"philippe"
-]
-},
-{
-"t": "Présidentielle 2027 : le Rassemblement national détaille sa réforme des retraites",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/presidentielle-2027-le-rassemblement-national-detaille-sa-reforme-des-retraites-20261117",
-"d": "2026-11-17T17:00:29Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027 : le rôle symbolique de Gérard Larcher pour une primaire de la droite et du centre",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/presidentielle-2027-le-role-symbolique-de-gerard-larcher-pour-une-primaire-de-la-droite-et-du-centre-20261117",
-"d": "2026-11-17T12:55:36Z",
-"qui": []
 }
 ],
 "sources": {
-"Le Monde": 4,
-"franceinfo": 4,
-"Libération": 20,
+"Le Monde": 5,
+"franceinfo": 6,
+"Libération": 21,
 "Le Figaro": 9,
-"Le Parisien": 48,
+"Le Parisien": 50,
 "20 Minutes": 7,
-"Ouest-France": 1,
-"BFMTV": 23,
+"Ouest-France": 0,
+"BFMTV": 22,
 "France 24": 6,
-"La Croix": 25,
+"La Croix": 24,
 "LCP": 33,
 "RFI": 7
 },
-"maj": "2026-11-24T12:38:05Z"
+"maj": "2026-11-24T14:04:12Z"
 }
