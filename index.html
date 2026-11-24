@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Nous votons · Présidentielle 2027</title>
-<meta name="theme-color" content="#f6f5f2">
+<meta name="theme-color" content="#F0EFF0">
 <meta name="color-scheme" content="light only">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
@@ -14,7 +14,7 @@
 <link rel="icon" href="icon-192.png">
 <link rel="manifest" href="manifest.json">
 <style>
-:root { --bg:#f6f5f2; --panel:#fff; --fg:#1b1b1f; --muted:#6b6b73; --line:#e4e2dc; --up:#1f8a4c; --down:#c2412d; --accent:#3b6fe0; --warn-bg:#fff6e0; --warn-fg:#7a5a00; }
+:root { --bg:#F0EFF0; --panel:#FDFDFD; --fg:#011334; --muted:#8B9FC2; --line:#B1BED6; --up:#06A067; --down:#F8394C; --accent:#022E7B; --warn-bg:#F8F8F8; --warn-fg:#E0061C; --white:#FDFDFD; --night:#011334; }
 * { box-sizing: border-box; }
 body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; -webkit-text-size-adjust:100%; }
 main { max-width:760px; margin:0 auto; padding: calc(env(safe-area-inset-top) + 16px) 16px calc(env(safe-area-inset-bottom) + 84px); }
@@ -70,12 +70,12 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .news .d { font-size:12px; color:var(--muted); }
 .chips { display:flex; flex-wrap:wrap; gap:6px; margin:10px 0; }
 .chips button { font:inherit; font-size:12px; border:1px solid var(--line); background:var(--panel); color:var(--fg); border-radius:20px; padding:4px 10px; }
-.chips button.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+.chips button.on { background:var(--accent); border-color:var(--accent); color:var(--white); }
 .row { display:flex; justify-content:space-between; gap:10px; padding:8px 0; border-bottom:1px solid var(--line); }
 .row .l { font-weight:600; }
 .row .r { text-align:right; font-size:13px; color:var(--muted); max-width:60%; }
 .avimg { width:100%; height:100%; object-fit:cover; border-radius:50%; display:block; }
-.av { overflow:hidden; width:40px; height:40px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:14px; flex:none; letter-spacing:.5px; }
+.av { overflow:hidden; width:40px; height:40px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; color:var(--white); font-weight:700; font-size:14px; flex:none; letter-spacing:.5px; }
 .cand summary .idt { display:flex; align-items:center; gap:10px; }
 .th { margin-top:6px; } .th summary { font-weight:600; padding:6px 0; }
 .pg { border-bottom:1px solid var(--line); padding:10px 0; }
@@ -106,7 +106,7 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .fhead .big { font:400 30px Georgia, serif; margin-top:6px; }
 .fnav { display:flex; justify-content:space-between; margin-top:20px; gap:10px; }
 .fnav button { font:inherit; font-size:13px; background:var(--panel); border:1px solid var(--line); color:var(--fg); border-radius:20px; padding:6px 12px; cursor:pointer; }
-.jm { display:inline-block; background:var(--accent); color:#fff; border-radius:20px; padding:3px 11px; font-size:13px; font-weight:600; margin-bottom:6px; }
+.jm { display:inline-block; background:var(--accent); color:var(--white); border-radius:20px; padding:3px 11px; font-size:13px; font-weight:600; margin-bottom:6px; }
 .duel { padding:10px 0; border-bottom:1px solid var(--line); }
 .duel .nm { display:flex; justify-content:space-between; font-size:14px; font-weight:600; gap:8px; }
 .duel .bar2 { display:flex; height:10px; border-radius:6px; overflow:hidden; margin:5px 0 4px; background:var(--line); }
@@ -123,7 +123,7 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .qz .qq { font-size:18px; margin:8px 0 14px; line-height:1.35; }
 .qz .ans { display:flex; flex-direction:column; gap:8px; }
 .qz .ans button, .qbtn { font:inherit; font-size:15px; padding:10px; border-radius:10px; border:1px solid var(--line); background:var(--bg); color:var(--fg); cursor:pointer; }
-.qz .ans button.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+.qz .ans button.on { background:var(--accent); border-color:var(--accent); color:var(--white); }
 .qz .prog { height:4px; background:var(--line); border-radius:3px; margin-top:14px; overflow:hidden; } .qz .prog i { display:block; height:100%; background:var(--accent); }
 .qnav { display:flex; justify-content:space-between; margin-top:10px; }
 .qnav button { font:inherit; font-size:14px; background:none; border:0; color:var(--accent); cursor:pointer; padding:4px 0; }
@@ -188,22 +188,22 @@ details { margin-top:16px; } summary { cursor:pointer; }
   #paysage span { font-size:44px; display:inline-block; transform:rotate(-90deg); }
   body { overflow:hidden; }
 }
-.inst { display:flex; align-items:center; gap:10px; background:var(--accent); color:#fff; border-radius:14px; padding:10px 12px; margin:6px 0 10px; }
+.inst { display:flex; align-items:center; gap:10px; background:var(--accent); color:var(--white); border-radius:14px; padding:10px 12px; margin:6px 0 10px; }
 .inst .ic { font-size:26px; } .inst .tx { flex:1; font-size:13px; line-height:1.35; } .inst .tx span { opacity:.85; }
-.inst #inst-btn { font:inherit; font-weight:700; font-size:14px; background:#fff; color:var(--accent); border:0; border-radius:20px; padding:8px 14px; cursor:pointer; }
+.inst #inst-btn { font:inherit; font-weight:700; font-size:14px; background:var(--white); color:var(--accent); border:0; border-radius:20px; padding:8px 14px; cursor:pointer; }
 .inst .x, .sheet .x { font:inherit; font-size:22px; line-height:1; background:none; border:0; color:inherit; cursor:pointer; padding:0 2px; }
 .sheet { position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:900; display:flex; align-items:flex-end; }
 .sheet-in { background:var(--panel); color:var(--fg); width:100%; border-radius:18px 18px 0 0; padding:18px 18px calc(24px + env(safe-area-inset-bottom)); position:relative; }
 .sheet-in .x { position:absolute; right:16px; top:12px; color:var(--muted); }
 .sheet-in h2 { margin:0 0 10px; } .sheet-in ol { padding-left:20px; margin:8px 0; } .sheet-in li { margin-bottom:10px; font-size:15px; }
 .sheet-in .k { display:inline-block; border:1px solid var(--line); border-radius:6px; padding:0 6px; background:var(--bg); }
-.cmpbtn { font:inherit; width:100%; display:flex; align-items:center; gap:12px; text-align:left; color:#fff; background:var(--accent); border:0; border-radius:16px; padding:14px 16px; margin:4px 0 14px; cursor:pointer; box-shadow:0 4px 14px rgba(59,111,224,.25); }
+.cmpbtn { font:inherit; width:100%; display:flex; align-items:center; gap:12px; text-align:left; color:var(--white); background:var(--accent); border:0; border-radius:16px; padding:14px 16px; margin:4px 0 14px; cursor:pointer; box-shadow:0 4px 14px rgba(59,111,224,.25); }
 .cmpbtn .ic { font-size:28px; } .cmpbtn span:nth-child(2) { flex:1; font-size:16px; } .cmpbtn small { font-size:13px; opacity:.9; } .cmpbtn .chev { font-size:26px; }
 .throw { display:flex; gap:8px; overflow-x:auto; padding:4px 0 10px; scrollbar-width:none; position:sticky; top:0; background:var(--bg); z-index:5; }
 .throw::-webkit-scrollbar { display:none; }
 .thb { font:inherit; flex:none; display:flex; flex-direction:column; align-items:center; gap:2px; width:78px; padding:8px 4px; border-radius:14px; border:1px solid var(--line); background:var(--panel); color:var(--fg); cursor:pointer; }
 .thb span { font-size:22px; } .thb small { font-size:11px; line-height:1.2; text-align:center; }
-.thb.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+.thb.on { background:var(--accent); border-color:var(--accent); color:var(--white); }
 .thh { margin:8px 0 10px; } .thh h2 { margin:0; font-size:20px; } .thh .muted { font-size:13px; }
 .pcard { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:12px 14px; margin-bottom:10px; }
 .pcard .top { display:flex; align-items:center; gap:10px; cursor:pointer; }
@@ -218,9 +218,9 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .cmp-g ul { list-style:none; padding:0; margin:0; } .cmp-g li { position:relative; padding:5px 0 5px 14px; line-height:1.35; }
 .cmp-g li::before { content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); }
 .cmp-h { font-size:16px; }
-.cmpbtn .ic, .inst .ic { flex:none; width:44px; height:44px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center; font-size:24px; }
+.cmpbtn .ic, .inst .ic { flex:none; width:44px; height:44px; border-radius:50%; background:var(--white); display:flex; align-items:center; justify-content:center; font-size:24px; }
 .thb span { width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; }
-.thb.on span { background:#fff; }
+.thb.on span { background:var(--white); }
 .topbar { display:flex; align-items:center; justify-content:space-between; gap:8px; }
 .topbar h1 { margin:0 0 6px; }
 .brand { display:flex; align-items:center; gap:10px; }
@@ -237,15 +237,34 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .ab h3 { margin:12px 0 6px; } .ab ul { padding-left:18px; margin:6px 0; } .ab li { margin-bottom:6px; line-height:1.45; } .ab p { line-height:1.5; }
 .shopts { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:12px 0 6px; }
 .shopts a, .shopts button { font:inherit; font-size:12px; color:var(--fg); text-decoration:none; display:flex; flex-direction:column; align-items:center; gap:6px; background:none; border:0; cursor:pointer; }
-.shopts span { width:52px; height:52px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:24px; color:#fff; }
-.toast { position:fixed; left:50%; bottom:90px; transform:translateX(-50%); background:#1f2a44; color:#fff; padding:10px 16px; border-radius:20px; font-size:14px; z-index:1000; }
+.shopts span { width:52px; height:52px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:24px; color:var(--white); }
+.toast { position:fixed; left:50%; bottom:90px; transform:translateX(-50%); background:#1f2a44; color:var(--white); padding:10px 16px; border-radius:20px; font-size:14px; z-index:1000; }
 .legal { font-size:11.5px; line-height:1.4; margin:8px 0 0; }
 .card .mg { font-size:11px; color:var(--muted); }
 body.silence #v-sondages .block, body.silence #v-sondages #lede, body.silence #v-sondages details { display:none; }
 .aseg { display:grid; grid-template-columns:1fr 1fr 1fr; gap:6px; background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:4px; margin:2px 0 10px; }
 .aseg button { font:inherit; font-size:14px; font-weight:600; border:0; border-radius:10px; padding:9px; background:none; color:var(--muted); cursor:pointer; }
-.aseg button.on { background:var(--accent); color:#fff; }
+.aseg button.on { background:var(--accent); color:var(--white); }
 .ptag2 { display:inline-block; font-size:11px; font-weight:600; color:var(--muted); border:1px solid var(--line); border-radius:20px; padding:1px 8px; margin-bottom:4px; }
+@font-face { font-family:'Asap'; font-style:normal; font-weight:300; font-display:swap; src:url('fonts/asap-latin-300-normal.woff2') format('woff2'); }
+@font-face { font-family:'Asap'; font-style:normal; font-weight:400; font-display:swap; src:url('fonts/asap-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family:'Asap'; font-style:normal; font-weight:500; font-display:swap; src:url('fonts/asap-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family:'Asap'; font-style:italic; font-weight:500; font-display:swap; src:url('fonts/asap-latin-500-italic.woff2') format('woff2'); }
+@font-face { font-family:'Asap'; font-style:normal; font-weight:600; font-display:swap; src:url('fonts/asap-latin-600-normal.woff2') format('woff2'); }
+/* Charte Nous votons (Inès) */
+body, button, input, select, textarea { font-family:'Asap', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+body { font-size:18px; font-weight:500; }
+h2, .hcard h2 { font-size:28px; font-weight:600; line-height:1.15; }
+h3 { font-size:20px; font-weight:600; }
+.muted, .src, .ncard .s, .back, .more, .qnav button, .row .r { font-size:16px; font-weight:400; }
+.party, .evo, .news .d, .legend, .tag, .chips button, .fbtn span.l, .dayh, .ev .kind, .ev .dt span, .tcard .party, .duel .meta, .src .muted, .hcard .hh .muted, .qz .qt, .ptag2, table, .hrow .nm small, .hrow .dv { font-size:12px; font-weight:400; }
+.tabs button { font-size:10px; font-weight:300; }
+.ncard .t, .qz .ans button, .qbtn, .hbtns button, .gcard, .note, .inscr { font-size:18px; }
+.qz .qq { font-size:24px; font-weight:500; }
+.val, .cand .pct, .ev .dt b, .res .pc, .hrow .sc + .x { font-family:'Asap', sans-serif; font-size:24px; font-weight:500; font-style:normal; }
+.hrow .sc { font-family:'Asap', sans-serif; font-size:28px; font-weight:500; font-style:italic; }
+.fhead .big { font-family:'Asap', sans-serif; font-size:30px; font-weight:500; font-style:italic; }
+.tcard .sc { font-family:'Asap', sans-serif; font-weight:500; }
 </style>
 </head>
 <body>
@@ -544,7 +563,7 @@ body.silence #v-sondages .block, body.silence #v-sondages #lede, body.silence #v
 <script>
 const URL_MV = 'https://raw.githubusercontent.com/MieuxVoter/presidentielle2027/refs/heads/main/presidentielle2027.csv';
 const EXCLUS = new Set(['Parti du vote blanc', 'Sébastien Bonnal']);
-const COLORS = ['#3b6fe0','#d64a3f','#e8a23a','#2f9e8f','#8a5cd1','#d0629b','#5b8c2a','#7a7f89'];
+const COLORS = ['#204A94','#4D87F4','#7DC3FB','#06A067','#74C566','#C7E7A4','#DBE64C','#AB8AE8'];
 const $ = (id) => document.getElementById(id);
 const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
 const link = (txt, url) => { const a = el('a', null, txt); if (/^https?:\/\//.test(url)) { a.href = url; a.target = '_blank'; a.rel = 'noopener'; } return a; };
@@ -553,8 +572,8 @@ const fdate = (s) => { const [y, m, d] = s.split('-'); return d + '/' + m + '/' 
 const MOIS = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
 const fdateLong = (s) => { const [y, m, d] = s.split('-'); return +d + ' ' + MOIS[+m - 1] + ' ' + y; };
 const nomFamille = (n) => n.split(' ').slice(1).join(' ').replace(/^de /, '');
-const AVC = ['#3b6fe0','#d64a3f','#e8a23a','#2f9e8f','#8a5cd1','#d0629b','#5b8c2a','#c0702b','#4a7fa3','#9a5a8a','#6b8e23','#b5543c','#3f8f7f','#7a6bd1','#a8742a'];
-const avColor = (id) => { let h = 0; for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0; return AVC[h % AVC.length]; };
+const AVC = ['#204A94','#4D87F4','#7DC3FB','#06A067','#74C566','#C7E7A4','#DBE64C','#AB8AE8','#403F7A','#675BCF','#ACB9FF','#D5A5E3','#D83041','#A52A3D','#EE9E42'];
+const avColor = (id) => { const i = CAND ? CAND.principaux.findIndex((c) => c.id === id) : -1; if (i >= 0) return AVC[i % AVC.length]; let h = 0; for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0; return AVC[h % AVC.length]; };
 const avatar = (c) => {
   const a = el('span', 'av', c.nom.split(' ').filter((w) => /^[A-ZÉÈ]/.test(w)).map((w) => w[0]).slice(0, 2).join(''));
   a.style.background = avColor(c.id); a.setAttribute('aria-hidden', 'true');
@@ -636,7 +655,7 @@ function renderSondages() {
   if (last.manuel) { src.append(' '); src.append(el('span', 'tag', 'ajout manuel')); if (last.src) { src.append(' '); src.append(link('rapport', last.src)); } }
   $('cards').replaceChildren(...cur.map((s) => {
     const card = el('div', 'card');
-    const n = el('div', 'name'); const d = el('span', 'dot'); d.style.background = col.get(s.nom) || '#9a9aa3'; n.append(d, el('span', null, s.nom));
+    const n = el('div', 'name'); const d = el('span', 'dot'); d.style.background = col.get(s.nom) || '#8B9FC2'; n.append(d, el('span', null, s.nom));
     const e = el('div', 'evo');
     if (prevMap.has(s.nom)) { const dv = Math.round((s.v - prevMap.get(s.nom)) * 10) / 10; e.append(el('span', dv > 0 ? 'up' : dv < 0 ? 'down' : '', (dv > 0 ? '+' : '') + fmt(dv) + ' pt')); }
     else e.textContent = 'non testé la fois précédente';
@@ -735,7 +754,7 @@ function buildDuels(raw, extra) {
   }
   return [...d.values()].sort((a, b) => b.last.date.localeCompare(a.last.date) || b.n - a.n);
 }
-function colorFor(nom) { const c = CAND && CAND.principaux.find((x) => x.nom === nom); return c ? avColor(c.id) : '#9a9aa3'; }
+function colorFor(nom) { const c = CAND && CAND.principaux.find((x) => x.nom === nom); return c ? avColor(c.id) : '#8B9FC2'; }
 function duelRow(o) {
   const [a, b] = o.last.s; const tot = a.v + b.v;
   const r = el('div', 'duel');
@@ -836,7 +855,7 @@ function renderQuiz() {
   if (QI === 0 && QANS.every((a) => a === null)) {
     const d = el('div', 'qz');
     d.append(el('div', 'qq', 'Qui pense comme moi ?'), el('p', null, `${Q.length} affirmations tirées au hasard parmi ${QUIZ.questions.length}, tous thèmes confondus. Pour chacune, dites si vous êtes d'accord. À la fin, les candidats sont classés selon le nombre de réponses communes. Refaites le test : vous aurez d'autres questions.`), el('p', 'muted', "Ce n'est pas une consigne de vote. Chaque position de candidat vient d'une mesure de son programme ou de ses déclarations publiques, et à la fin vous verrez, question par question, la mesure et le lien vers sa source. Beaucoup de candidats n'ont pas encore de programme complet. Vos réponses restent sur votre téléphone."));
-    const b = el('button', 'qbtn', 'Commencer'); b.style.cssText = 'width:100%;background:var(--accent);color:#fff;border-color:var(--accent)'; b.onclick = () => { QI = 0; renderQuizQ(); }; d.append(b);
+    const b = el('button', 'qbtn', 'Commencer'); b.style.cssText = 'width:100%;background:var(--accent);color:var(--white);border-color:var(--accent)'; b.onclick = () => { QI = 0; renderQuizQ(); }; d.append(b);
     box.replaceChildren(d); return;
   }
   if (QI >= Q.length) return renderQuizRes();
@@ -969,7 +988,7 @@ function renderAccueil() {
     $('h-src').textContent = last.institut + ', ' + fdate(last.date); $('h-meta').replaceChildren(pollMeta(last) + ', ' + margTxt(last.scores) + '. ', link('Notice', 'https://www.commission-des-sondages.fr/notices/'));
     $('h-top').replaceChildren(...last.scores.slice().sort((a, b) => b.v - a.v).slice(0, 5).map((x, i) => {
       const r = el('div', 'hrow'); const c = byNom.get(x.nom);
-      const av = c ? avatar(c) : el('span', 'av', x.nom.split(' ').map((w) => w[0]).slice(0, 2).join('')); if (!c) av.style.background = '#9a9aa3';
+      const av = c ? avatar(c) : el('span', 'av', x.nom.split(' ').map((w) => w[0]).slice(0, 2).join('')); if (!c) av.style.background = '#8B9FC2';
       const nm = el('div', 'nm'); nm.append(x.nom, el('small', null, x.parti || ''));
       const ev = el('div', 'dv');
       if (pm.has(x.nom)) { const dv = Math.round((x.v - pm.get(x.nom)) * 10) / 10; ev.className = 'dv ' + (dv > 0 ? 'up' : dv < 0 ? 'down' : 'muted'); ev.textContent = (dv > 0 ? '+' : '') + fmt(dv) + ' pt'; }

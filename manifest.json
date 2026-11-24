@@ -4,8 +4,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#fcfcfc",
-  "theme_color": "#f6f5f2",
+  "background_color": "#F0EFF0",
+  "theme_color": "#F0EFF0",
   "lang": "fr",
   "icons": [
     {
