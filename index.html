@@ -183,7 +183,7 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .engage { border-left:4px solid var(--warn-fg); } .engage .big { font-size:20px; font-weight:600; margin:6px 0; } .engage .big span { color:var(--muted); font-weight:400; }
 .srcchips { display:flex; flex-wrap:wrap; gap:8px; } .srcchips a { border:1px solid var(--line); border-radius:20px; padding:6px 12px; font-size:14px; color:var(--accent); text-decoration:none; background:var(--bg); }
 .pcard, .rcard { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:12px 14px; margin-top:10px; }
-.pcard h3, .rcard h3 { margin:0 0 4px; } .pcard .who { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; }
+.pcard h3, .rcard h3 { margin:0 0 4px; } .plogo { display:block; height:40px; width:auto; max-width:200px; object-fit:contain; margin:4px 0 8px; border-radius:4px; } .pcard .who { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; }
 .pcard .who button { font:inherit; font-size:14px; display:flex; align-items:center; gap:6px; border:1px solid var(--line); border-radius:20px; padding:3px 10px 3px 3px; background:var(--bg); color:var(--fg); cursor:pointer; }
 .pcard .who .av { width:26px; height:26px; font-size:10px; } .pcard ul { margin:6px 0 0; padding-left:18px; } .pcard li { margin:4px 0; }
 .pbloc { margin:18px 0 0; font-size:13px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
@@ -1256,6 +1256,7 @@ function renderKeyDates() {
   }));
 }
 // ---------- Partis
+const PLOGOS = { 'La France insoumise': 'la-france-insoumise.png', 'Lutte ouvrière': 'lutte-ouvriere.svg', 'Les Écologistes': 'les-ecologistes.svg', 'Parti communiste français': 'parti-communiste-francais.svg', 'Place publique': 'place-publique.svg', 'Horizons': 'horizons.svg', 'Renaissance': 'renaissance.svg', 'Debout la France': 'debout-la-france.png', 'Les Républicains': 'les-republicains.svg', 'Rassemblement national': 'rassemblement-national.svg', 'Reconquête': 'reconquete.svg', 'La France humaniste': 'la-france-humaniste.jpg' };
 const nomParti = (p) => (p || '').split(' (')[0].trim();
 function renderPartis() {
   const box = $('c-partis'); if (!box || !CAND) return;
@@ -1278,7 +1279,9 @@ function renderPartis() {
     if (!ps.length) continue;
     out.push(el('div', 'pbloc', l));
     for (const P of ps) {
-      const d = el('div', 'pcard'); d.append(el('h3', null, P.nom));
+      const d = el('div', 'pcard'); const lg = PLOGOS[P.nom];
+      if (lg) { const im = el('img', 'plogo'); im.src = 'data/partis/' + lg; im.alt = 'Logo ' + P.nom; im.loading = 'lazy'; im.onerror = () => im.remove(); d.append(im); }
+      d.append(el('h3', null, P.nom));
       if (P.note) d.append(el('div', 'muted', P.note));
       if (P.cands.length) { const w = el('div', 'who'); for (const c of P.cands) { const b = el('button'); b.type = 'button'; b.append(avatar(c), c.nom); b.onclick = () => openFiche(c.id); w.append(b); } d.append(w); }
       const a = actuOf(P), v = votesOf(P);
