@@ -2,31 +2,93 @@
 "v": 4,
 "items": [
 {
+"t": "ÉDITO. David Lisnard propose-t-il du neuf aux Français ?",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/edito-david-lisnard-propose-t-il-du-neuf-aux-francais_8297697.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-24T12:27:40Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Le Havre : enquête ouverte pour détournement de fonds dans la ville présidée par Édouard Philippe",
+"s": "La Croix",
+"u": "https://www.la-croix.com/politique/le-havre-enquete-ouverte-pour-detournement-de-fonds-dans-la-ville-presidee-par-edouard-philippe-20261124",
+"d": "2026-11-24T12:24:53Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "Présidentielle 2027 : « Tout le monde fait tout, on est dingues… » Le coup de gueule de Borloo pour la « simplification »",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265335-20261124-presidentielle-2027-tout-monde-fait-tout-dingues-coup-gueule-borloo-simplification?at_medium=display&at_campaign=149",
+"d": "2026-11-24T12:18:47Z",
+"qui": []
+},
+{
+"t": "Présidentielle: \"Le président TikTok on l'a depuis quasiment 10 ans\", lance Bruno Retailleau",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/video-presidentielle-le-president-tik-tok-on-l-a-depuis-quasiment-10-ans-lance-bruno-retailleau_VN-202611240562.html",
+"d": "2026-11-24T12:08:29Z",
+"qui": [
+"retailleau"
+]
+},
+{
 "t": "« Il y aura une grande clarification » : à l’Assemblée nationale, le groupe sans queue ni tête de Gabriel Attal",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/politique/il-y-aura-une-grande-clarification-a-lassemblee-nationale-le-groupe-sans-queue-ni-tete-de-gabriel-attal-24-11-2026-M45E6DYDDFHP5PI3TOGJ47KF6E.php",
-"d": "2026-11-24T11:34:35Z",
+"d": "2026-11-24T12:00:00Z",
 "qui": [
 "attal"
 ]
 },
 {
-"t": "DIRECT. Présidentielle 2027 : Dominique de Villepin est arrivé au Congrès des maires, Édouard Philippe attendu ce midi",
+"t": "DIRECT. Présidentielle 2027 : Édouard Philippe est arrivé au Congrès des maires, défilé de candidats attendu",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-au-congres-des-maires-le-candidat-david-lisnard-vise-un-nouveau-mandat-edouard-philippe-attendu-sur-place-24-11-2026-3DBXJVVZXNFVJPOS7CZG6RJ37E.php",
-"d": "2026-11-24T11:34:35Z",
+"d": "2026-11-24T12:00:00Z",
 "qui": [
-"philippe",
-"villepin"
+"philippe"
 ]
 },
 {
 "t": "Présidentielle 2027 : retraites, impôts, Ukraine… Dominique de Villepin dévoile les premières mesures de son programme",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-retraites-impots-ukraine-dominique-de-villepin-devoile-les-premieres-mesures-de-son-programme-24-11-2026-ZXD7QSOHAJHBHIQ6KOLADVAISU.php",
-"d": "2026-11-24T11:34:35Z",
+"d": "2026-11-24T12:00:00Z",
 "qui": [
 "villepin"
+]
+},
+{
+"t": "INFO OUEST-FRANCE. Présidentielle 2027 : pourquoi le Guadeloupéen Ary Chalus donnera son parrainage à Teddy Riner",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/elections/presidentielle/info-ouest-france-presidentielle-2027-pourquoi-le-guadeloupeen-ary-chalus-donnera-son-parrainage-a-teddy-riner-3fd0a0cc-e7f7-11f1-86c1-70195b4d2e52?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-24T11:58:09Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Présidentielle 2027 : Plusieurs candidats entendus par les patrons de la grande distribution, Le Pen la dernière en date",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265355-20261124-presidentielle-2027-plusieurs-candidats-entendus-patrons-grande-distribution-pen-derniere-date?at_medium=display&at_campaign=149",
+"d": "2026-11-24T11:47:36Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "DIRECT. Primaire de la droite et du centre: la nouvelle réunion entre les équipes de Gabriel Attal, David Lisnard et Bruno Retailleau reportée",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html",
+"d": "2026-11-24T11:37:42Z",
+"qui": [
+"attal",
+"lisnard",
+"retailleau"
 ]
 },
 {
@@ -55,17 +117,6 @@
 "d": "2026-11-24T11:11:36Z",
 "qui": [
 "lisnard"
-]
-},
-{
-"t": "DIRECT. Primaire de la droite et du centre: la nouvelle réunion entre les équipes de Gabriel Attal, David Lisnard et Bruno Retailleau reportée",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html",
-"d": "2026-11-24T10:57:09Z",
-"qui": [
-"attal",
-"lisnard",
-"retailleau"
 ]
 },
 {
@@ -336,12 +387,13 @@
 "qui": []
 },
 {
-"t": "EN DIRECT Présidentielle 2027 : La candidature de David Lisnard va agiter le congrès des maires de France, Jadot créé un nouveau parti…",
+"t": "EN DIRECT Présidentielle 2027 : La candidature de David Lisnard va agiter le congrès des maires de France, Polony a fait la moitié du chemin…",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265257-20261124-direct-presidentielle-2027-candidature-david-lisnard-va-agiter-congres-maires-france?at_medium=display&at_campaign=149",
 "d": "2026-11-24T05:02:47Z",
 "qui": [
-"lisnard"
+"lisnard",
+"polony"
 ]
 },
 {
@@ -1691,18 +1743,18 @@
 }
 ],
 "sources": {
-"Le Monde": 5,
+"Le Monde": 4,
 "franceinfo": 4,
 "Libération": 20,
 "Le Figaro": 9,
-"Le Parisien": 49,
-"20 Minutes": 6,
+"Le Parisien": 48,
+"20 Minutes": 7,
 "Ouest-France": 1,
 "BFMTV": 23,
-"France 24": 7,
+"France 24": 6,
 "La Croix": 25,
 "LCP": 33,
 "RFI": 7
 },
-"maj": "2026-11-24T11:34:35Z"
+"maj": "2026-11-24T12:38:05Z"
 }
