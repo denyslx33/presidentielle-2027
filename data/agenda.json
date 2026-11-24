@@ -161,6 +161,22 @@
    "lon": 4.9638
   },
   {
+   "date": "2027-01-09",
+   "heure": null,
+   "type": "meeting",
+   "titre": "Meeting de Jean-Luc Mélenchon",
+   "lieu": "Montpellier (Hérault)",
+   "chaine": null,
+   "qui": [
+    "melenchon"
+   ],
+   "url": "https://www.lemonde.fr/politique/article/2026/11/24/jean-luc-melenchon-tiendra-un-meeting-le-samedi-9-janvier-a-montpellier_6814763_823448.html",
+   "commune": "Montpellier",
+   "dep": "34",
+   "lat": 43.61,
+   "lon": 3.8742
+  },
+  {
    "date": "2027-01-24",
    "heure": null,
    "type": "meeting",
