@@ -72,7 +72,8 @@
       ]
      }
     ]
-   }
+   },
+   "bloc": "eg"
   },
   {
    "id": "attal",
@@ -173,7 +174,8 @@
       ]
      }
     ]
-   }
+   },
+   "bloc": "c"
   },
   {
    "id": "dupont-aignan",
@@ -266,7 +268,8 @@
       ]
      }
     ]
-   }
+   },
+   "bloc": "d"
   },
   {
    "id": "glucksmann",
@@ -367,7 +370,8 @@
       ]
      }
     ]
-   }
+   },
+   "bloc": "g"
   },
   {
    "id": "lepen",
@@ -468,7 +472,8 @@
       ]
      }
     ]
-   }
+   },
+   "bloc": "ed"
   },
   {
    "id": "lisnard",
@@ -568,7 +573,8 @@
       ]
      }
     ]
-   }
+   },
+   "bloc": "d"
   },
   {
    "id": "melenchon",
@@ -673,7 +679,8 @@
       ]
      }
     ]
-   }
+   },
+   "bloc": "eg"
   },
   {
    "id": "philippe",
@@ -775,7 +782,8 @@
       ]
      }
     ]
-   }
+   },
+   "bloc": "c"
   },
   {
    "id": "polony",
@@ -838,7 +846,8 @@
       ]
      }
     ]
-   }
+   },
+   "bloc": null
   },
   {
    "id": "retailleau",
@@ -936,7 +945,8 @@
       ]
      }
     ]
-   }
+   },
+   "bloc": "d"
   },
   {
    "id": "riner",
@@ -977,7 +987,8 @@
       ]
      }
     ]
-   }
+   },
+   "bloc": null
   },
   {
    "id": "roussel",
@@ -998,7 +1009,8 @@
     "note": "Programme 2027 pas encore publié.",
     "recap": null,
     "themes": []
-   }
+   },
+   "bloc": "g"
   },
   {
    "id": "tondelier",
@@ -1095,7 +1107,8 @@
       ]
      }
     ]
-   }
+   },
+   "bloc": "g"
   },
   {
    "id": "villepin",
@@ -1184,7 +1197,8 @@
       ]
      }
     ]
-   }
+   },
+   "bloc": null
   },
   {
    "id": "zemmour",
@@ -1277,7 +1291,8 @@
       ]
      }
     ]
-   }
+   },
+   "bloc": "ed"
   }
  ],
  "autres": [

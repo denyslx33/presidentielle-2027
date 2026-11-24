@@ -183,6 +183,10 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .hbtns button { font:inherit; font-weight:700; font-size:15px; color:var(--fg); background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:14px 10px; display:flex; flex-direction:column; align-items:center; gap:3px; cursor:pointer; }
 .hbtns span { font-size:28px; }
 .hb1 { grid-template-columns:1fr; }
+.hemi { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:12px 14px 4px; }
+.hemi svg { display:block; width:100%; max-width:320px; margin:0 auto; }
+.hemi-t { font:600 18px 'Asap', sans-serif; fill:var(--fg); }
+.hemi-l { display:flex; justify-content:space-between; max-width:320px; margin:2px auto 0; font-size:12px; color:var(--muted); }
 .h3b { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-top:12px; }
 .h3b button { font:inherit; font-weight:600; font-size:16px; color:var(--fg); background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:14px 4px 12px; display:flex; flex-direction:column; align-items:center; gap:4px; cursor:pointer; text-align:center; line-height:1.15; }
 .h3b span { font-size:30px; } .h3b small { font-weight:400; font-size:12px; color:var(--muted); } .hbtns small { font-weight:400; font-size:12px; color:var(--muted); }
@@ -1083,6 +1087,27 @@ function openAgenda() { setAMode('agenda'); showView('actu'); }
 
 function sortedCands() { return CAND.principaux.slice().sort((a, b) => nomFamille(a.nom).localeCompare(nomFamille(b.nom), 'fr')); }
 let CUR = null;
+const BLOCS = [['eg', 'Extrême gauche'], ['g', 'Gauche'], ['c', 'Centre'], ['d', 'Droite'], ['ed', 'Extrême droite']];
+function hemicycle(c) {
+  const box = el('div', 'hemi'); const ns = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(ns, 'svg'); svg.setAttribute('viewBox', '0 0 300 165'); svg.setAttribute('role', 'img');
+  const cx = 150, cy = 150, r = 118, w = 34, gap = 2.2;
+  const pt = (a, rr) => [cx - rr * Math.cos(a * Math.PI / 180), cy - rr * Math.sin(a * Math.PI / 180)];
+  BLOCS.forEach(([k, lab], i) => {
+    const a0 = i * 36 + gap, a1 = (i + 1) * 36 - gap; const [x0, y0] = pt(a0, r), [x1, y1] = pt(a1, r), [x2, y2] = pt(a1, r - w), [x3, y3] = pt(a0, r - w);
+    const p = document.createElementNS(ns, 'path');
+    p.setAttribute('d', `M${x0},${y0} A${r},${r} 0 0 1 ${x1},${y1} L${x2},${y2} A${r - w},${r - w} 0 0 0 ${x3},${y3} Z`);
+    p.setAttribute('fill', c.bloc === k ? avColor(c.id) : 'var(--line)'); svg.append(p);
+    if (c.bloc === k) { const [tx, ty] = pt((a0 + a1) / 2, r - w / 2); const d = document.createElementNS(ns, 'circle'); d.setAttribute('cx', tx); d.setAttribute('cy', ty); d.setAttribute('r', 7); d.setAttribute('fill', 'var(--white)'); svg.append(d); }
+  });
+  const t = document.createElementNS(ns, 'text'); t.setAttribute('x', cx); t.setAttribute('y', cy - 8); t.setAttribute('text-anchor', 'middle'); t.setAttribute('class', 'hemi-t');
+  t.textContent = c.bloc ? BLOCS.find((b) => b[0] === c.bloc)[1] : 'Non classé'; svg.append(t);
+  svg.setAttribute('aria-label', 'Position : ' + t.textContent); box.append(svg);
+  const lg = el('div', 'hemi-l'); lg.append(el('span', null, 'Extrême gauche'), el('span', null, 'Extrême droite')); box.append(lg);
+  const n = el('p', 'muted');
+  n.append(c.bloc ? 'Position de son parti selon la grille officielle du ministère de l’Intérieur, qui range les partis en grands blocs pour publier les résultats des élections. Ce classement est administratif et peut être contesté par les partis. ' : 'Sans parti classé dans la grille officielle du ministère de l’Intérieur, qui range les partis en grands blocs pour publier les résultats des élections. ', link('Grille des nuances', 'https://www.conseil-etat.fr/fr/arianeweb/CE/analyse/2026-02-27/512694'));
+  box.append(n); return box;
+}
 function renderFiche() {
   if (!CAND || !CUR) return;
   const c = CAND.principaux.find((x) => x.id === CUR);
@@ -1092,6 +1117,7 @@ function renderFiche() {
   const ls = latestScore(c.nom);
   if (ls && !silence()) { const se = ls.p.scores.find((x) => x.nom === c.nom); h.append(el('div', 'big', fmt(ls.v) + ' %'), el('div', 'muted', `Dernier sondage : ${pollMeta(ls.p)}${se && se.e != null ? ', marge d’erreur ±' + fmt(se.e) + ' pt' : ''}.`)); }
   d.append(h);
+  d.append(el('h3', null, 'Sur l’échiquier politique'), hemicycle(c));
   const tpv = TP && TP.candidats && TP.candidats[c.id]; if (tpv && tpv.parole) { const p = el('p', 'muted'); p.append('Temps de parole télé et radio' + (TP.periode ? ' (' + TP.periode + ')' : '') + ' : ', el('b', null, fmtDur(tpv.parole)), ', selon l’Arcom.'); h.append(p); }
   const spk = silence() ? null : sparkChart(c.nom, avColor(c.id)); if (spk) { d.append(el('h3', null, 'Dans les sondages')); d.append(spk); }
     d.append(el('p', null, c.role), el('p', 'muted', c.annonce));
