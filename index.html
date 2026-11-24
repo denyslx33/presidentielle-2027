@@ -243,7 +243,7 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .favb { font:inherit; font-size:14px; margin-top:10px; border:1px solid var(--line); border-radius:20px; padding:5px 14px; background:var(--panel); color:var(--accent); cursor:pointer; }
 .favb.on { background:var(--accent); color:var(--white); border-color:var(--accent); }
 details.qexp { margin:4px 0 12px; font-size:14px; } details.qexp summary { color:var(--accent); cursor:pointer; font-weight:500; } details.qexp p { margin:6px 0 2px; }
-.sens { margin:18px 0 8px; } .axe { margin:12px 0; } .axtr { position:relative; height:8px; border-radius:8px; background:var(--line); margin:8px 6px 4px; }
+.sens { margin:18px 0 8px; } .radarbox { margin:6px 0 4px; } .radar { width:100%; max-width:420px; display:block; margin:0 auto; overflow:visible; } .radar-t { font-size:12.5px; font-weight:600; fill:var(--fg); } .radar-t.off { fill:var(--line); font-weight:400; } .axe { margin:12px 0; } .axtr { position:relative; height:8px; border-radius:8px; background:var(--line); margin:8px 6px 4px; }
 .axtr::after { content:''; position:absolute; left:50%; top:-3px; width:1px; height:14px; background:var(--muted); }
 .axtr i { position:absolute; top:50%; width:18px; height:18px; margin:-9px 0 0 -9px; border-radius:50%; background:var(--accent); border:3px solid var(--white); box-shadow:0 0 0 1px var(--accent); z-index:1; }
 .axl { display:flex; justify-content:space-between; gap:12px; font-size:12px; color:var(--muted); } .axl span:last-child { text-align:right; }
@@ -975,6 +975,12 @@ function drawRun() {
   const themes = [...new Set(all.map((q) => q.theme))];
   const pickW = (arr) => { let t = arr.reduce((a, q) => a + 1 + Object.keys(q.pos).length, 0), r = Math.random() * t; for (const q of arr) { r -= 1 + Object.keys(q.pos).length; if (r <= 0) return q; } return arr[arr.length - 1]; };
   const out = []; const pool = new Map(themes.map((t) => [t, fresh.filter((q) => q.theme === t)]));
+  for (const ax of (QUIZ.axes || [])) {
+    for (let k = 0; k < 3; k++) {
+      const cand = fresh.filter((q) => q.axe && q.axe[0] === ax.id && !out.includes(q)); if (!cand.length) break;
+      const q = pickW(cand); out.push(q); const arr = pool.get(q.theme); arr.splice(arr.indexOf(q), 1);
+    }
+  }
   let ti = Math.floor(Math.random() * themes.length);
   while (out.length < QN) {
     const t = themes[ti % themes.length]; ti++;
@@ -1102,7 +1108,8 @@ function renderQuizRes() {
 
 function sensBlock(Q) {
   const sb = el('div', 'sens'); const AX = QUIZ.axes || []; if (!AX.length) return sb;
-  sb.append(el('div', 'qq', 'Votre sensibilité'), el('p', 'muted', "Où vos réponses vous placent sur quatre grands thèmes. Chaque curseur ne tient compte que des questions de ce test liées au thème. Aucun parti n'est associé à ces axes et aucun côté n'est meilleur que l'autre."));
+  sb.append(el('div', 'qq', 'Votre sensibilité'), el('p', 'muted', "Où vos réponses vous placent sur quatre grands thèmes. Chaque thème ne tient compte que des questions de ce test qui s'y rattachent. Aucun parti n'est associé à ces axes et aucun côté n'est meilleur que l'autre."));
+  sb.append(radar(Q, AX));
   for (const a of AX) {
     let s = 0, n = 0; Q.forEach((q, i) => { const v = QANS[i]; if (q.axe && q.axe[0] === a.id && (v === 1 || v === -1)) { s += v * q.axe[1]; n++; } });
     const row = el('div', 'axe'); row.append(el('b', null, a.nom));
@@ -1113,6 +1120,29 @@ function sensBlock(Q) {
   }
   sb.append(el('p', 'muted', "Le rattachement de chaque question à un thème est un choix de notre part : il est indiqué question par question dans les sources, plus bas."));
   return sb;
+}
+function radar(Q, AX) {
+  const ns = 'http://www.w3.org/2000/svg', W = 360, H = 300, cx = 180, cy = 150, R = 95;
+  const mk = (t, at) => { const e = document.createElementNS(ns, t); for (const k in at) e.setAttribute(k, at[k]); return e; };
+  const svg = mk('svg', { viewBox: `0 0 ${W} ${H}`, class: 'radar', role: 'img', 'aria-label': 'Graphique de sensibilité' });
+  const N = AX.length * 2, pts = [], labs = [];
+  AX.forEach((a, k) => {
+    let g = 0, d = 0, n = 0; Q.forEach((q, i) => { const v = QANS[i]; if (q.axe && q.axe[0] === a.id && (v === 1 || v === -1)) { n++; if (v * q.axe[1] > 0) d++; else g++; } });
+    const ok = n >= 2; pts[k] = ok ? g / n : 0; pts[k + AX.length] = ok ? d / n : 0;
+    labs[k] = [a.gc || a.g, ok]; labs[k + AX.length] = [a.dc || a.d, ok];
+  });
+  const ang = (i) => (-90 + i * 360 / N) * Math.PI / 180, P = (i, r) => [cx + r * Math.cos(ang(i)), cy + r * Math.sin(ang(i))];
+  for (const f of [0.25, 0.5, 0.75, 1]) svg.append(mk('polygon', { points: [...Array(N).keys()].map((i) => P(i, R * f).join(',')).join(' '), fill: 'none', stroke: 'var(--line)', 'stroke-width': f === 1 ? 1.2 : 0.7 }));
+  for (let i = 0; i < N; i++) { const [x, y] = P(i, R); svg.append(mk('line', { x1: cx, y1: cy, x2: x, y2: y, stroke: 'var(--line)', 'stroke-width': 0.7 })); }
+  svg.append(mk('polygon', { points: pts.map((v, i) => P(i, R * Math.max(v, 0.04)).join(',')).join(' '), fill: 'rgba(2,46,123,.18)', stroke: 'var(--accent)', 'stroke-width': 2, 'stroke-linejoin': 'round' }));
+  pts.forEach((v, i) => { if (v > 0) { const [x, y] = P(i, R * v); svg.append(mk('circle', { cx: x, cy: y, r: 3.5, fill: 'var(--accent)' })); } });
+  labs.forEach(([t, ok], i) => {
+    const [x, y] = P(i, R + 16), c = Math.cos(ang(i));
+    const tx = mk('text', { x, y: y + 4, 'text-anchor': Math.abs(c) < 0.2 ? 'middle' : c > 0 ? 'start' : 'end', class: 'radar-t' + (ok ? '' : ' off') }); tx.textContent = t; svg.append(tx);
+  });
+  const box = el('div', 'radarbox'); box.append(svg);
+  box.append(el('p', 'muted src', 'Plus la forme s’étire vers un mot, plus vos réponses vont dans ce sens. Les mots face à face sont les deux côtés d’un même thème. En gris : pas assez de réponses dans ce test.'));
+  return box;
 }
 async function shareResult(top) {
   gcCount('partage-resultat', 'Partage du résultat du test', true);

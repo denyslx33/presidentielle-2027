@@ -1778,25 +1778,33 @@
    "id": "eco",
    "nom": "Économie",
    "g": "Plus d'intervention de l'État",
-   "d": "Plus de place au marché"
+   "d": "Plus de place au marché",
+   "gc": "État",
+   "dc": "Marché"
   },
   {
    "id": "soc",
    "nom": "Société et sécurité",
    "g": "Libertés et accueil",
-   "d": "Autorité et contrôle"
+   "d": "Autorité et contrôle",
+   "gc": "Libertés",
+   "dc": "Autorité"
   },
   {
    "id": "eur",
    "nom": "Europe",
    "g": "Plus d'intégration européenne",
-   "d": "Plus de souveraineté nationale"
+   "d": "Plus de souveraineté nationale",
+   "gc": "Europe",
+   "dc": "Nation"
   },
   {
    "id": "eco2",
    "nom": "Écologie",
    "g": "Transition écologique plus rapide",
-   "d": "Moins de contraintes écologiques"
+   "d": "Moins de contraintes écologiques",
+   "gc": "Écologie",
+   "dc": "Moins de normes"
   }
  ]
 }
