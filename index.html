@@ -490,7 +490,7 @@ h3 { font-size:20px; font-weight:600; }
   <!-- A PROPOS -->
   <section class="view" id="v-apropos">
     <button class="back" id="aback">‹ Retour</button>
-    <h2 id="ab-title">À propos</h2>
+    <h2 id="ab-title" style="cursor:pointer;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent">À propos</h2>
     <div class="ab">
       <h3>Une appli citoyenne, gratuite et indépendante</h3>
       <p>Nous votons est faite par deux citoyens pour suivre la campagne simplement : sondages, candidats, programmes, débats et infos pratiques pour voter.</p>
@@ -1433,7 +1433,7 @@ function gcCount(path, title, event) {
   });
   $('inst-x').addEventListener('click', () => { banner.hidden = true; try { sessionStorage.setItem('instX', '1'); } catch (e) {} });
 })();
-(function () { let last = 0; document.addEventListener('touchend', (e) => { const n = Date.now(); if (n - last < 350 && !(e.target.closest && e.target.closest('input, textarea, select'))) e.preventDefault(); last = n; }, { passive: false }); document.addEventListener('dblclick', (e) => e.preventDefault(), { passive: false }); })();
+(function () { let last = 0; document.addEventListener('touchend', (e) => { const n = Date.now(); if (n - last < 350 && !(e.target.closest && e.target.closest('input, textarea, select, #ab-title'))) e.preventDefault(); last = n; }, { passive: false }); document.addEventListener('dblclick', (e) => e.preventDefault(), { passive: false }); })();
 try { if (screen.orientation && screen.orientation.lock) screen.orientation.lock('portrait').catch(() => {}); } catch (e) {}
 if ('serviceWorker' in navigator) {
   const hadCtrl = !!navigator.serviceWorker.controller; let reloaded = false;
