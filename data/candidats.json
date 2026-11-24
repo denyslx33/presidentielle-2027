@@ -1159,13 +1159,16 @@
    "role": "Ancien Premier ministre (2005-2007) et ministre des Affaires étrangères.",
    "annonce": "Candidat depuis le 20 novembre 2026.",
    "mesures": [
+    "Retraite par points, avec une valeur du point fixée par les partenaires sociaux",
+    "Plus de droits de succession sous 1 M€, puis 50 % de 1 à 5 M€ et 60 % au-delà",
+    "Niches fiscales revues chaque année : un tiers gardé, un tiers réorienté, un tiers pour la dette",
+    "Déficit sous 3 % sur le mandat, avec une baisse de la dette chaque année",
     "Supprimer toutes les niches fiscales et sociales",
-    "Refonte globale de la CSG et des grands impôts",
     "Ramener le déficit public à 3 % du PIB"
    ],
    "source_mesures": {
-    "nom": "LCP, 28 août 2026",
-    "url": "https://lcp.fr/actualites/presidentielle-2027-dominique-villepin-veut-une-nouvelle-abolition-des-privileges-et-un"
+    "nom": "franceinfo et France 2, 23 nov. 2026",
+    "url": "https://www.franceinfo.fr/elections/retraites-droits-de-succession-niches-fiscales-dominique-de-villepin-presente-les-premieres-mesures-de-son-programme-pour-la-presidentielle_8296785.html"
    },
    "parrainages": {
     "texte": "Revendique plus de 300 signatures d'élus (annonce du 22 octobre 2026, avant sa déclaration de candidature).",
@@ -1181,6 +1184,10 @@
      {
       "theme": "Économie",
       "mesures": [
+       "Déficit sous 3 % sur le mandat, avec une baisse de la dette chaque année",
+       "Niches fiscales revues chaque année : un tiers gardé, un tiers réorienté, un tiers pour la dette",
+       "Plus de droits de succession sous 1 M€, puis 50 % de 1 à 5 M€ et 60 % au-delà",
+       "Retraite par points, avec une valeur du point fixée par les partenaires sociaux",
        "Basculer plus de 200 Md€ de cotisations vers une CSG universelle (+200 € nets par mois en moyenne)",
        "500 000 logements par an et garantie locative universelle",
        "Supprimer les niches fiscales en cinq ans",
@@ -1237,7 +1244,8 @@
       "mesures": [
        "Pause dans l'intégration européenne",
        "Impôt sur les sociétés harmonisé avec l'Allemagne",
-       "Nouvelle doctrine européenne de dissuasion nucléaire au sein d'un conseil européen de sécurité"
+       "Nouvelle doctrine européenne de dissuasion nucléaire au sein d'un conseil européen de sécurité",
+       "Une stratégie commune entre Européens et Ukraine, sans aucune récompense pour la Russie"
       ]
      }
     ]
