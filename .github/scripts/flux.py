@@ -31,6 +31,8 @@ for c in cand:
         keys.append(fam)
     KEYS[c["id"]] = keys
 GENERAL = ["presidentielle", "2027", "elysee", "parrainage", "primaire", "candidat", "arcom", "conseil constitutionnel"]
+FOREIGN_URL = re.compile(r"/(monde|international|afrique|europe|ameriques?|asie|moyen-orient|world|etats-unis|international-[a-z]+)/", re.I)
+FOREIGN = re.compile(r"\b(nigeria|kenya|ghana|senegal|cameroun|cote d.ivoire|gabon|congo|rdc|benin|togo|mali|guinee|madagascar|tchad|burkina|niger|algerie|maroc|tunisie|egypte|liban|syrie|iran|irak|israel|russie|bielorussie|georgie|moldavie|roumanie|pologne|hongrie|serbie|portugal|espagne|italie|allemagne|autriche|irlande|islande|finlande|turquie|bresil|argentine|chili|colombie|perou|bolivie|equateur|venezuela|mexique|etats-unis|americaine?s?|trump|coree|japon|taiwan|philippines|indonesie|inde|sri lanka|haiti|comores|seychelles|maurice|centrafrique)\b")
 POLL = re.compile(r"sondage|intentions? de vote|barom[eè]tre|\d+\s?%|\bpoints?\b.*\bavance", re.I)
 
 def fetch(url):
@@ -49,7 +51,7 @@ try:
     old = json.load(open("data/flux.json", encoding="utf-8"))
 except Exception:
     old = {"items": []}
-items = {i["u"]: i for i in old.get("items", [])} if old.get("v") == 2 else {}
+items = {i["u"]: i for i in old.get("items", [])} if old.get("v") == 3 else {}
 stats = {}
 for src, url in FEEDS:
     n = 0
@@ -62,8 +64,11 @@ for src, url in FEEDS:
             desc = text(it, "description")
             nt, nd = norm(t), norm(desc)
             qui = [cid for cid, ks in KEYS.items() if any(re.search(r"\b" + re.escape(k) + r"\b", nt) for k in ks)]
-            if not qui and "presidentielle" not in nt and not ("2027" in nt and any(g in nt for g in GENERAL)) and "presidentielle" not in nd:
-                continue
+            if not qui:
+                # sans candidat cité dans le titre : il faut la présidentielle française 2027, sans signe d'un autre pays
+                fr = ("presidentielle" in nt and ("2027" in nt + " " + nd or "elysee" in nt + " " + nd)) or ("2027" in nt and any(g in nt for g in GENERAL))
+                if not fr or FOREIGN_URL.search(link) or FOREIGN.search(nt + " " + nd):
+                    continue
             if POLL.search(t):
                 continue
             d = text(it, "pubDate") or text(it, "date") or text(it, "updated") or text(it, "published")
@@ -96,8 +101,8 @@ for i in sorted(items.values(), key=lambda x: x["d"], reverse=True):
         continue
     seen.add(k); out.append(i)
 out = out[:200]
-new = {"v": 2, "items": out, "sources": stats}
-if old.get("v") != 2 or json.dumps(new.get("items")) != json.dumps(old.get("items")) or old.get("sources") != stats:
+new = {"v": 3, "items": out, "sources": stats}
+if old.get("v") != 3 or json.dumps(new.get("items")) != json.dumps(old.get("items")) or old.get("sources") != stats:
     new["maj"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     json.dump(new, open("data/flux.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 print(json.dumps(stats, ensure_ascii=False), len(out))
