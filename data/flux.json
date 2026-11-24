@@ -2,6 +2,81 @@
 "v": 4,
 "items": [
 {
+"t": "Le Havre : enquête ouverte pour détournement de fonds dans la communauté urbaine d’Édouard Philippe",
+"s": "La Croix",
+"u": "https://www.la-croix.com/politique/le-havre-enquete-ouverte-pour-detournement-de-fonds-dans-la-ville-presidee-par-edouard-philippe-20261124",
+"d": "2026-11-24T16:03:19Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "Présidentielle 2027 : « Ce qui s’effrite sous nos yeux, c’est la légitimité d’un régime bâti sur l’idée de faire barrage au RN »",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/idees/article/2026/11/24/presidentielle-2027-ce-qui-s-effrite-sous-nos-yeux-c-est-la-legitimite-d-un-regime-bati-sur-l-idee-de-faire-barrage-au-rn_6814813_3232.html",
+"d": "2026-11-24T16:00:02Z",
+"qui": []
+},
+{
+"t": "Détournement de fonds publics : enquête ouverte au Havre, Edouard Philippe dénonce une «vendetta judiciaire»",
+"s": "Libération",
+"u": "https://www.liberation.fr/politique/detournement-de-fonds-publics-une-enquete-ouverte-a-lagglomeration-du-havre-presidee-par-edouard-philippe-20261124_YVGEWXKHJBE2JCNJ2GLT242A7E/",
+"d": "2026-11-24T15:57:12Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "Présidentielle 2027 : Un « esprit de défaite typiquement vichyste », lance Mélenchon à propos de Bayrou",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265445-20261124-presidentielle-2027-esprit-defaite-typiquement-vichyste-lance-melenchon-propos-bayrou?at_medium=display&at_campaign=149",
+"d": "2026-11-24T15:55:20Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Eric Zemmour définitivement condamné pour \"contestation de l’existence de crime contre l’humanité\" après avoir affirmé que le maréchal Pétain \"avait sauvé les juifs français\"",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/politique/eric-zemmour/eric-zemmour-definitivement-condamne-pour-contestation-de-l-existence-de-crime-contre-l-humanite-apres-avoir-affirme-que-le-marechal-petain-avait-sauve-les-juifs-francais_8297988.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-24T15:50:16Z",
+"qui": [
+"zemmour"
+]
+},
+{
+"t": "Présidentielle 2027 : « Le pire scénario possible »… Les dates de l’élection vont-elles être modifiées ?",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/societe/4265440-20261124-presidentielle-2027-pire-scenario-possible-dates-election-vont-elles-etre-modifiees?at_medium=display&at_campaign=149",
+"d": "2026-11-24T15:46:27Z",
+"qui": []
+},
+{
+"t": "Une enquête ouverte après un signalement pour détournement de fonds publics à l'agglomération du Havre présidée par Edouard Philippe",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/politique/edouard-philippe/une-enquete-ouverte-apres-un-signalement-pour-detournement-de-fonds-publics-a-l-agglomeration-du-havre-presidee-par-edouard-philippe_8297676.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-24T15:32:51Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "Eric Zemmour définitivement condamné pour avoir affirmé que le maréchal Pétain « avait sauvé les juifs français »",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/societe/article/2026/11/24/eric-zemmour-definitivement-condamne-pour-avoir-affirme-que-le-marechal-petain-avait-sauve-les-juifs-francais_6814807_3224.html",
+"d": "2026-11-24T15:11:21Z",
+"qui": [
+"zemmour"
+]
+},
+{
+"t": "Présidentielle 2027 : le bal des aventuriers, saison 2, par Denis Pingaud",
+"s": "Libération",
+"u": "https://www.liberation.fr/idees-et-debats/opinions/presidentielle-2027-le-bal-des-aventuriers-saison-2-par-denis-pingaud-20261124_LYIBGOIQ4FHBNOSMDGPL3KMTDU/",
+"d": "2026-11-24T15:06:33Z",
+"qui": []
+},
+{
 "t": "Présidentielle 2027. Christophe Béchu compte sur Gérard Larcher pour départager les candidats à droite sans primaire",
 "s": "Ouest-France",
 "u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-christophe-bechu-compte-sur-gerard-larcher-pour-departager-les-candidats-a-droite-sans-primaire-518a4fa2-e7f7-11f1-9b33-2f81462d3339?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
@@ -34,15 +109,6 @@
 ]
 },
 {
-"t": "DIRECT. Présidentielle 2027: les candidats au congrès des maires de France, Édouard Philippe est arrivé sur place",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html",
-"d": "2026-11-24T14:38:27Z",
-"qui": [
-"philippe"
-]
-},
-{
 "t": "\"Il n'y aura plus d'étrangers\" chante une exposante devant E. Zemmour",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/elections/il-n-y-aura-plus-d-etrangers-chante-une-exposante-devant-e-zemmour_8297877.html#xtor=RSS-3-%5Bpolitique%5D",
@@ -61,19 +127,10 @@
 ]
 },
 {
-"t": "Le Havre : enquête ouverte pour détournement de fonds dans la communauté urbaine d’Édouard Philippe",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/le-havre-enquete-ouverte-pour-detournement-de-fonds-dans-la-ville-presidee-par-edouard-philippe-20261124",
-"d": "2026-11-24T13:33:36Z",
-"qui": [
-"philippe"
-]
-},
-{
-"t": "Une enquête ouverte après un signalement pour détournement de fonds publics à l'agglomération du Havre présidée par Edouard Philippe",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/politique/edouard-philippe/une-enquete-ouverte-apres-un-signalement-pour-detournement-de-fonds-publics-a-l-agglomeration-du-havre-presidee-par-edouard-philippe_8297676.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-24T13:03:17Z",
+"t": "DIRECT. Présidentielle 2027: les candidats au congrès des maires de France, Édouard Philippe est arrivé sur place",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html",
+"d": "2026-11-24T13:09:11Z",
 "qui": [
 "philippe"
 ]
@@ -85,15 +142,6 @@
 "d": "2026-11-24T12:43:41Z",
 "qui": [
 "melenchon"
-]
-},
-{
-"t": "Détournement de fonds publics : enquête ouverte à l’agglomération du Havre, présidée par Edouard Philippe",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/detournement-de-fonds-publics-une-enquete-ouverte-a-lagglomeration-du-havre-presidee-par-edouard-philippe-20261124_YVGEWXKHJBE2JCNJ2GLT242A7E/",
-"d": "2026-11-24T12:40:56Z",
-"qui": [
-"philippe"
 ]
 },
 {
@@ -131,12 +179,12 @@
 ]
 },
 {
-"t": "DIRECT. Présidentielle 2027 : Édouard Philippe est arrivé au Congrès des maires, défilé de candidats attendu",
+"t": "DIRECT. Présidentielle 2027 : David Lisnard s'engage à continuer à « défendre les mairies » s'il est élu président",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-au-congres-des-maires-le-candidat-david-lisnard-vise-un-nouveau-mandat-edouard-philippe-attendu-sur-place-24-11-2026-3DBXJVVZXNFVJPOS7CZG6RJ37E.php",
 "d": "2026-11-24T12:00:00Z",
 "qui": [
-"philippe"
+"lisnard"
 ]
 },
 {
@@ -186,12 +234,21 @@
 ]
 },
 {
-"t": "Pétain a « sauvé les juif français » : Zemmour définitivement condamné pour « contestation de l’existence de crime contre l’humanité »",
+"t": "Pétain a « sauvé les juifs français » : Zemmour définitivement condamné pour « contestation de l’existence de crime contre l’humanité »",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-eric-zemmour-definitivement-condamne-pour-contestation-de-lexistence-de-crime-contre-lhumanite-24-11-2026-GATCYMK26BBJ7I732YJRWDN4UQ.php",
 "d": "2026-11-24T12:00:00Z",
 "qui": [
 "zemmour"
+]
+},
+{
+"t": "Présidentielle 2027 : Natacha Polony assure avoir la moitié des parrainages requis",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-natacha-polony-assure-avoir-la-moitie-des-parrainages-requis-24-11-2026-6267XF4HSJD3NIAALKATMPUTZY.php",
+"d": "2026-11-24T12:00:00Z",
+"qui": [
+"polony"
 ]
 },
 {
@@ -508,11 +565,12 @@
 "qui": []
 },
 {
-"t": "EN DIRECT Présidentielle 2027 : Les ex purgés insoumis proposent aussi une « coalition » à Mélenchon…",
+"t": "EN DIRECT Présidentielle 2027 : Mélenchon lance un scud sur Bayrou, Lisnard ouvre le Congrès des maires sur un air de campagne...",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265257-20261124-direct-presidentielle-2027-candidature-david-lisnard-va-agiter-congres-maires-france?at_medium=display&at_campaign=149",
 "d": "2026-11-24T05:02:47Z",
 "qui": [
+"lisnard",
 "melenchon"
 ]
 },
@@ -1691,86 +1749,21 @@
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-les-createurs-de-contenus-devront-respecter-le-pluralisme-annonce-larcom-19-11-2026-YOMWY4UBRBDTHIQF2K2OTUJHJE.php",
 "d": "2026-11-19T12:00:00Z",
 "qui": []
-},
-{
-"t": "Présidentielle 2027 : un porte-parole de David Lisnard affirme que son candidat ne participera pas à une primaire sans Édouard Philippe",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-un-porte-parole-de-david-lisnard-affirme-que-son-candidat-ne-participera-pas-a-une-primaire-sans-edouard-philippe-19-11-2026-3XWAAFKGSBEALHGGIIZFS7LDMU.php",
-"d": "2026-11-19T12:00:00Z",
-"qui": [
-"lisnard",
-"philippe"
-]
-},
-{
-"t": "« Voler une voiture, c’est pas bien » : jeu alternatif, affiches… quand les candidats à la présidentielle 2027 reprennent les codes de GTA 6",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/voler-une-voiture-cest-pas-bien-jeu-alternatif-affiches-quand-les-candidats-a-la-presidentielle-2027-reprennent-les-codes-de-gta-6-19-11-2026-VCHR4LN3UZGYHDMPLZHHQ52NBE.php",
-"d": "2026-11-19T12:00:00Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027 : Jean-Louis Borloo salue la candidature de son « ami » Teddy Riner",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-jean-louis-borloo-salue-la-candidature-de-son-ami-teddy-riner-19-11-2026-DKKJPW7HFRBVBB4DVGATEEMYEE.php",
-"d": "2026-11-19T12:00:00Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "Des policiers manifestent devant Beauvau: Jean-Luc Mélenchon appelle à \"sévèrement\" les \"punir\"",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/des-policiers-manifestent-devant-beauvau-jean-luc-melenchon-appelle-a-severement-les",
-"d": "2026-11-19T07:42:41Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Présidentielle : Marine Tondelier \"prête à travailler à une coalition\" autour de Jean-Luc Mélenchon",
-"s": "France 24",
-"u": "https://www.france24.com/fr/france/20261118-presidentielle-2027-election-marine-tondelier-ecologistes-prete-travailler-coalition-autour-jean-luc-melenchon-la-france-insoumise-soutien",
-"d": "2026-11-18T22:39:24Z",
-"qui": [
-"melenchon",
-"tondelier"
-]
-},
-{
-"t": "Présidentielle 2027: Marine Tondelier \"prête\" à une \"coalition\" autour de Jean-Luc Mélenchon",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/presidentielle-2027-marine-tondelier-prete-a-une-coalition-autour-de-jean-luc-melenchon",
-"d": "2026-11-18T20:59:50Z",
-"qui": [
-"melenchon",
-"tondelier"
-]
-},
-{
-"t": "Présidentielle 2027 : Marine Tondelier prête à travailler à une « coalition autour de la candidature » Mélenchon",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/presidentielle-2027-marine-tondelier-prete-a-travailler-a-une-coalition-autour-de-la-candidature-melenchon-20261118",
-"d": "2026-11-18T20:48:47Z",
-"qui": [
-"melenchon",
-"tondelier"
-]
 }
 ],
 "sources": {
-"Le Monde": 5,
-"franceinfo": 6,
+"Le Monde": 6,
+"franceinfo": 7,
 "Libération": 20,
 "Le Figaro": 9,
-"Le Parisien": 50,
-"20 Minutes": 7,
-"Ouest-France": 1,
-"BFMTV": 21,
-"France 24": 6,
+"Le Parisien": 51,
+"20 Minutes": 8,
+"Ouest-France": 0,
+"BFMTV": 22,
+"France 24": "erreur: HTTPError",
 "La Croix": 24,
 "LCP": 33,
 "RFI": 8
 },
-"maj": "2026-11-24T15:03:14Z"
+"maj": "2026-11-24T16:11:29Z"
 }
