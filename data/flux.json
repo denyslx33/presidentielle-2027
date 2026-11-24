@@ -2,10 +2,77 @@
 "v": 4,
 "items": [
 {
+"t": "Constitution: comment le député Pouria Amirshahi veut provoquer le débat contre les référendums promis par Marine Le Pen",
+"s": "LCP",
+"u": "https://lcp.fr/actualites/constitution-comment-le-depute-pouria-amirshahi-veut-provoquer-le-debat-contre-les",
+"d": "2026-11-24T19:05:11Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "« Il est déjà élu à l’applaudimètre »: dans les coulisses du match entre David Lisnard et Philippe Laurent pour la présidence de l’AMF",
+"s": "Le Figaro",
+"u": "https://www.lefigaro.fr/elections/presidentielles/il-est-deja-elu-a-l-applaudimetre-dans-les-coulisses-du-match-entre-david-lisnard-et-philippe-laurent-pour-la-presidence-de-l-amf-20261124",
+"d": "2026-11-24T18:52:21Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Présidentielle 2027 : devant des maires, Marine Le Pen promet plus de « liberté » pour les communes et veut s’attaquer au « millefeuille territorial »",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/24/presidentielle-2027-devant-des-maires-marine-le-pen-promet-plus-de-liberte-pour-les-communes-et-veut-s-attaquer-au-millefeuille-territorial_6814839_823448.html",
+"d": "2026-11-24T18:33:50Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "Guillaume Tabard : «David Lisnard, se droitiser ou se recentrer pour accéder en finale ?»",
+"s": "Le Figaro",
+"u": "https://www.lefigaro.fr/politique/guillaume-tabard-david-lisnard-se-droitiser-ou-se-recentrer-pour-acceder-en-finale-20261124",
+"d": "2026-11-24T18:15:00Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Présidentielle 2027 : Cette députée Génération. s était porte-parole de Ruffin, LFI ne veut pas d’elle dans l’accord",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265495-20261124-presidentielle-2027-deputee-generation-porte-parole-ruffin-lfi-veut-accord?at_medium=display&at_campaign=149",
+"d": "2026-11-24T18:10:59Z",
+"qui": []
+},
+{
+"t": "DIRECT. Présidentielle 2027: \"on peut aimer les tronçonneuses, mais pas savoir trancher”, le tacle d'Édouard Philippe à David Lisnard",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html",
+"d": "2026-11-24T18:03:55Z",
+"qui": [
+"lisnard",
+"philippe"
+]
+},
+{
 "t": "Présidentielle 2027 : « Je ne voudrais pas froisser mes administrés »… Les maires face au casse-tête des parrainages",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265401-20261124-presidentielle-2027-voudrais-froisser-administres-maires-face-casse-tete-parrainages?at_medium=display&at_campaign=149",
 "d": "2026-11-24T17:51:58Z",
+"qui": []
+},
+{
+"t": "SIGNÉ CONSIGNY - Présidentielle 2027: \"Cette histoire des extrêmes et d'un candidat unique pour tous ces gens raisonnables nous a menés à ces extrêmes très élevés\", estime l'avocat et essayiste",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-signe-consigny-presidentielle-2027-cette-histoire-des-extremes-et-d-un-candidat-unique-pour-tous-ces-gens-raisonnables-nous-a-menes-a-ces-extremes-tres-eleves-estime-l-avocat-et-essayiste_VN-202611240828.html",
+"d": "2026-11-24T17:51:07Z",
+"qui": []
+},
+{
+"t": "\"LE 20.27\" - Congrès des maires de France: les candidats à la présidentielle à la chasse aux parrainages",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-le-20-27-congres-des-maires-de-france-les-candidats-a-la-presidentielle-a-la-chasse-aux-parrainages_VN-202611240824.html",
+"d": "2026-11-24T17:44:41Z",
 "qui": []
 },
 {
@@ -17,6 +84,13 @@
 "lisnard",
 "philippe"
 ]
+},
+{
+"t": "Présidentielle 2027: \"Mon candidat c'est le fédéralisme\", déclare Jean-Louis Borloo",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-mon-candidat-c-est-le-federalisme-declare-jean-louis-borloo_VN-202611240812.html",
+"d": "2026-11-24T17:32:11Z",
+"qui": []
 },
 {
 "t": "Marine Le Pen",
@@ -96,16 +170,6 @@
 "u": "https://lcp.fr/actualites/presidentielle-2027-pourquoi-autant-de-maires-refusent-de-donner-leur-parrainage-a-un",
 "d": "2026-11-24T16:30:30Z",
 "qui": []
-},
-{
-"t": "DIRECT. Présidentielle 2027: \"on peut aimer les tronçonneuses, mais pas savoir trancher”, le tacle d'Édouard Philippe à David Lisnard",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html",
-"d": "2026-11-24T16:21:30Z",
-"qui": [
-"lisnard",
-"philippe"
-]
 },
 {
 "t": "Au Congrès des maires, Marine Tondelier présente ses propositions \"Pour un État-providence climatique\"",
@@ -410,6 +474,25 @@
 "d": "2026-11-24T12:00:00Z",
 "qui": [
 "melenchon"
+]
+},
+{
+"t": "« Je sais que je vais devoir me battre » : après un début de campagne qui patine, les confidences de Teddy Riner",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/je-sais-que-je-vais-devoir-me-battre-apres-un-debut-de-campagne-qui-patine-les-confidences-de-teddy-riner-24-11-2026-VAWTORWTQ5DXLCUSWNXBQUBWO4.php",
+"d": "2026-11-24T12:00:00Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Gabriel Attal monte le son pour une primaire : « Édouard Philippe doit proposer une autre modalité de départage »",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/gabriel-attal-monte-le-son-pour-une-primaire-edouard-philippe-doit-proposer-une-autre-modalite-de-departage-24-11-2026-EKRI3NCTHVBKVOUCLFHAO2I2KU.php",
+"d": "2026-11-24T12:00:00Z",
+"qui": [
+"attal",
+"philippe"
 ]
 },
 {
@@ -1664,111 +1747,21 @@
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-il-y-a-des-regles-qui-sappliquent-larcom-confirme-que-les-createurs-de-contenus-devront-respecter-le-pluralisme-20-11-2026-I7W5NLMAWBFLJLF27EVNM4FDGA.php",
 "d": "2026-11-20T12:00:00Z",
 "qui": []
-},
-{
-"t": "Présidentielle 2027 : Marine Tondelier tacle Yannick Jadot qui « continuait à considérer être membre » des Écologistes",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-vers-une-candidature-de-dominique-de-villepin-suivez-lactualite-politique-du-jour-20-11-2026-PCZIC5XTXFBZJIAKDIKADQLMCA.php",
-"d": "2026-11-20T12:00:00Z",
-"qui": [
-"tondelier"
-]
-},
-{
-"t": "Main tendue par Marine Tondelier à Jean-Luc Mélenchon: une \"trahison\" selon Yannick Jadot, qui quitte les Écologistes",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/main-tendue-par-marine-tondelier-a-jean-luc-melenchon-une-trahison-selon-yannick-jadot",
-"d": "2026-11-20T11:47:35Z",
-"qui": [
-"melenchon",
-"tondelier"
-]
-},
-{
-"t": "Dominique de Villepin annonce sa candidature à l'élection présidentielle de 2027",
-"s": "France 24",
-"u": "https://www.france24.com/fr/vid%C3%A9o/20261120-pr%C3%A9sidentielle-2027-l-ancien-premier-ministre-dominique-de-villepin-annonce-sa-candidature",
-"d": "2026-11-20T11:42:32Z",
-"qui": [
-"villepin"
-]
-},
-{
-"t": "Présidentielle 2027: Dominique de Villepin officiellement candidat à l'Élysée",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/presidentielle-2027-dominique-de-villepin-officiellement-candidat-a-l-elysee-445372",
-"d": "2026-11-20T10:32:07Z",
-"qui": [
-"villepin"
-]
-},
-{
-"t": "Main tendue de Tondelier à Mélenchon : Jadot annonce son départ des Ecologistes",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/elections/main-tendue-de-tondelier-a-melenchon-jadot-annonce-son-depart-des-ecologistes-20261120_UZTRMFUYAZHGZCDOXMPPCZW75M/",
-"d": "2026-11-20T09:53:55Z",
-"qui": [
-"melenchon",
-"tondelier"
-]
-},
-{
-"t": "Présidentielle: Clémentine Autain appelle à soutenir la candidature de Jean-Luc Mélenchon",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/presidentielle-clementine-autain-appelle-a-soutenir-la-candidature-de-jean-luc-melenchon",
-"d": "2026-11-20T09:43:05Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Présidentielle 2027 : Marine Tondelier remet-elle en question les engagements internationaux des Écologistes ?",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/presidentielle-2027-marine-tondelier-remet-elle-en-question-les-engagements-internationaux-des-ecologistes-20261119",
-"d": "2026-11-20T08:42:06Z",
-"qui": [
-"tondelier"
-]
-},
-{
-"t": "\"Une atteinte à la liberté de la presse\": les créateurs de contenu en colère contre les nouvelles règles de l'Arcom pour la présidentielle",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/une-atteinte-a-la-liberte-de-la-presse-les-createurs-de-contenu-en-colere-contre-les",
-"d": "2026-11-20T08:08:17Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027 : Dominique de Villepin, les coulisses d’une entrée en campagne imminente",
-"s": "Le Figaro",
-"u": "https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-dominique-de-villepin-les-coulisses-d-une-entree-en-campagne-imminente-20261118",
-"d": "2026-11-20T08:04:44Z",
-"qui": [
-"villepin"
-]
-},
-{
-"t": "Présidentielle 2027: Dominique de Villepin sur le point d'officialiser sa candidature à l'Élysée",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/presidentielle-2027-dominique-de-villepin-sur-le-point-d-officialiser-sa-candidature-a-l",
-"d": "2026-11-20T07:47:10Z",
-"qui": [
-"villepin"
-]
 }
 ],
 "sources": {
 "Le Monde": 7,
-"franceinfo": 6,
-"Libération": 20,
+"franceinfo": 5,
+"Libération": 19,
 "Le Figaro": 9,
 "Le Parisien": 53,
-"20 Minutes": 8,
+"20 Minutes": 9,
 "Ouest-France": 0,
-"BFMTV": 17,
+"BFMTV": 16,
 "France 24": 5,
 "La Croix": 24,
-"LCP": 34,
+"LCP": 35,
 "RFI": 8
 },
-"maj": "2026-11-24T18:11:10Z"
+"maj": "2026-11-24T19:23:02Z"
 }
