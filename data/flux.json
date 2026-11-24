@@ -1,5 +1,5 @@
 {
-"v": 3,
+"v": 4,
 "items": [
 {
 "t": "Présidentielle: Boris Vallaud estime que la main tendue de Marine Tondelier à Jean-Luc Mélenchon est \"une sorte de fatalisme\"",
@@ -97,13 +97,6 @@
 ]
 },
 {
-"t": "Budget 2027 : Sébastien Lecornu tend la main aux parlementaires pour un compromis, sans toucher au déficit",
-"s": "Ouest-France",
-"u": "https://www.ouest-france.fr/economie/budget-collectivites-etat/budget-2027-sebastien-lecornu-tend-la-main-aux-parlementaires-pour-un-compromis-sans-toucher-au-deficit-7907f528-e781-11f1-bd4e-6f30b8f49e21?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
-"d": "2026-11-23T21:20:54Z",
-"qui": []
-},
-{
 "t": "Les écolos pro-Glucksmann fondent «Ecologistes et démocrates», un nouveau parti",
 "s": "Libération",
 "u": "https://www.liberation.fr/politique/elections/les-ecolos-pro-glucksmann-fondent-ecologistes-et-democrates-un-nouveau-parti-20261123_MLJLZCW7TFETBE4P665OQHQB5Y/",
@@ -120,13 +113,6 @@
 "qui": [
 "riner"
 ]
-},
-{
-"t": "Budget 2027 : Sébastien Lecornu appelle au « compromis » dans une lettre aux parlementaires et liste les priorités du gouvernement",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/politique/article/2026/11/23/budget-2027-sebastien-lecornu-appelle-au-compromis-dans-une-lettre-aux-parlementaires-et-liste-les-priorites-du-gouvernement_6814451_823448.html",
-"d": "2026-11-23T20:42:50Z",
-"qui": []
 },
 {
 "t": "Primaire: en septembre, Édouard Philippe \"a proposé aux candidats de la droite et du centre de se rencontrer et de discuter\", assure Jérémie Patrier-Leitus, député \"Horizons\"",
@@ -275,13 +261,6 @@
 "qui": [
 "melenchon"
 ]
-},
-{
-"t": "Le gouvernement fait adopter au Sénat une prolongation de la prime carburant en 2027",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/economie/automobile/essence/le-gouvernement-fait-adopter-au-senat-une-prolongation-de-la-prime-carburant-en-2027_8296031.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-23T14:07:35Z",
-"qui": []
 },
 {
 "t": "Présidentielle 2027 : à Tarascon, le maire RN veut faire de la ville « une vitrine » pour Marine Le Pen",
@@ -520,13 +499,6 @@
 "qui": []
 },
 {
-"t": "Budget 2027 : c’est quoi la règle d’or qu’Emmanuel Macron voudrait inscrire dans la Constitution ?",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/politique/budget-2027-cest-quoi-la-regle-dor-quemmanuel-macron-voudrait-inscrire-dans-la-constitution-22-11-2026-L4UL66I4K5G6BCRZ7GV37KXBFE.php",
-"d": "2026-11-22T12:00:00Z",
-"qui": []
-},
-{
 "t": "Présidentielle 2027 : contrôle continu, horaires… Gabriel Attal veut modifier son « pacte jeunesse » pour mieux refléter les préoccupations",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-controle-continu-horaires-gabriel-attal-veut-modifier-son-pacte-jeunesse-pour-mieux-refleter-les-preoccupations-22-11-2026-37NQJ22MMRGXVHJSVNHGV4T2SY.php",
@@ -534,13 +506,6 @@
 "qui": [
 "attal"
 ]
-},
-{
-"t": "La colère des modérés face aux somnambules de 2027",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/politique/la-colere-des-moderes-face-aux-somnambules-de-2027-22-11-2026-5I4XFEWO4VAX5DP3XF56ZJZ2OY.php",
-"d": "2026-11-22T12:00:00Z",
-"qui": []
 },
 {
 "t": "Vautrin briefe les candidats, la dette publique, l’organigramme d’Édouard Philippe… Nos indiscrétions de la semaine",
@@ -898,13 +863,6 @@
 "melenchon",
 "tondelier"
 ]
-},
-{
-"t": "Concert de Barbara Butch interrompu à Grenoble en juillet : l’élu LFI Allan Brunon sera jugé en février 2027",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/politique/concert-de-barbara-butch-interrompu-a-grenoble-en-juillet-lelu-lfi-allan-brunon-sera-juge-en-fevrier-2027-20-11-2026-XJHRIIZHKJFGJLSXOAB2DAZTTY.php",
-"d": "2026-11-20T12:00:00Z",
-"qui": []
 },
 {
 "t": "Retraites à 62 ans : Jean-Pierre Farandou dénonce le projet « en trompe-l’œil » de Marine Le Pen",
@@ -1278,13 +1236,6 @@
 ]
 },
 {
-"t": "Le projet de budget 2027 de la Sécurité sociale adopté en première lecture au Sénat",
-"s": "La Croix",
-"u": "https://www.la-croix.com/economie/le-projet-de-budget-2027-de-la-securite-sociale-adopte-en-premiere-lecture-au-senat-20261118",
-"d": "2026-11-18T18:16:00Z",
-"qui": []
-},
-{
 "t": "Présidentielle 2027: Édouard Philippe promet \"des réformes radicales\" pour relancer sa campagne, loin des discussions sur la primaire",
 "s": "LCP",
 "u": "https://lcp.fr/actualites/presidentielle-2027-edouard-philippe-promet-des-reformes-radicales-pour-relancer-sa",
@@ -1413,18 +1364,18 @@
 }
 ],
 "sources": {
-"Le Monde": 8,
-"franceinfo": 3,
+"Le Monde": 7,
+"franceinfo": 2,
 "Libération": 20,
 "Le Figaro": 9,
-"Le Parisien": 53,
+"Le Parisien": 50,
 "20 Minutes": 6,
-"Ouest-France": 2,
+"Ouest-France": 1,
 "BFMTV": 15,
 "France 24": 8,
-"La Croix": 27,
-"LCP": 35,
+"La Croix": 26,
+"LCP": 34,
 "RFI": 7
 },
-"maj": "2026-11-24T00:04:41Z"
+"maj": "2026-11-24T00:05:30Z"
 }
