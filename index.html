@@ -246,6 +246,8 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .sharecard .ic { flex:none; width:42px; height:42px; border-radius:50%; background:var(--bg); display:flex; align-items:center; justify-content:center; font-size:22px; }
 .sharecard span:nth-child(2) { flex:1; } .sharecard small { color:var(--muted); } .sharecard .chev { font-size:24px; color:var(--accent); }
 .ab { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:4px 16px 8px; margin-top:12px; }
+details.ab > summary { cursor:pointer; padding:12px 0 8px; list-style-position:inside; }
+details.ab p { font-size:16px; }
 .ab h3 { margin:12px 0 6px; } .ab ul { padding-left:18px; margin:6px 0; } .ab li { margin-bottom:6px; line-height:1.45; } .ab p { line-height:1.5; }
 .shopts { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:12px 0 6px; }
 .shopts a, .shopts button { font:inherit; font-size:12px; color:var(--fg); text-decoration:none; display:flex; flex-direction:column; align-items:center; gap:6px; background:none; border:0; cursor:pointer; }
@@ -510,7 +512,7 @@ h3 { font-size:20px; font-weight:600; }
         <li><b>Temps de parole</b> : les relevés officiels de l'Arcom.</li>
         <li><b>Portraits</b> : photos libres de droits issues de Wikimédia Commons (crédits dans l'onglet Candidats).</li>
       </ul>
-      <p>Les données sont mises à jour chaque jour, avec l'aide d'un assistant d'intelligence artificielle. Chaque chiffre et chaque mesure sont tirés d'une source qu'on peut vérifier, et rien n'est publié sans lien vers cette source.</p>
+      <p>Les données sont mises à jour plusieurs fois par jour, avec l'aide d'un assistant d'intelligence artificielle. Chaque chiffre et chaque mesure sont tirés d'une source qu'on peut vérifier, et rien n'est publié sans lien vers cette source.</p>
     </div>
     <div class="ab">
       <h3>Le test « Quel candidat pense comme moi ? »</h3>
@@ -529,6 +531,15 @@ h3 { font-size:20px; font-weight:600; }
       <p>Si vous repérez une info fausse ou un oubli, dites‑le‑nous : on corrige vite.</p>
       <p id="ab-contact" class="muted">Contact bientôt disponible.</p>
     </div>
+    <details class="ab" id="ab-legal">
+      <summary><b>Mentions légales</b></summary>
+      <p><b>Éditeur</b> : Nous votons est un site personnel, non commercial, édité par des particuliers. Conformément à l'article 6 de la loi n° 2004‑575 du 21 juin 2004 pour la confiance dans l'économie numérique, les éditeurs non professionnels peuvent garder l'anonymat : leurs coordonnées sont connues de l'hébergeur.</p>
+      <p><b>Hébergeur</b> : GitHub, Inc. (service GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États‑Unis. <a href="https://github.com" target="_blank" rel="noopener">github.com</a></p>
+      <p><b>Sondages</b> : conformément à la loi n° 77‑808 du 19 juillet 1977, chaque sondage est présenté avec le nom de l'institut, le commanditaire, les dates de l'enquête et la taille de l'échantillon. Les notices complètes sont consultables sur le site de la <a href="https://www.commission-des-sondages.fr" target="_blank" rel="noopener">Commission des sondages</a>. Aucun sondage n'est publié la veille et le jour du scrutin.</p>
+      <p><b>Contenus</b> : les titres du fil « En direct » et les articles cités restent la propriété de leurs médias ; l'appli renvoie vers leurs sites. Les marques et logos cités appartiennent à leurs titulaires.</p>
+      <p><b>Données personnelles</b> : aucune donnée personnelle n'est collectée, aucun cookie n'est déposé. La mesure d'audience (GoatCounter) est anonyme. Les réponses au test et les préférences sont stockées uniquement sur votre appareil, et disparaissent si vous supprimez l'appli.</p>
+      <p><b>Responsabilité</b> : les informations sont fournies à titre indicatif, avec leur source. Malgré le soin apporté, des erreurs peuvent subsister ; la source d'origine fait foi.</p>
+    </details>
     <button type="button" class="sharecard" id="ab-share"><span class="ic">💬</span><span><b>Partager l'appli</b><br><small>Plus on est nombreux à s'informer, mieux c'est</small></span><span class="chev">›</span></button>
   </section>
 

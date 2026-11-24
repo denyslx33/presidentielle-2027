@@ -1,7 +1,7 @@
 name: Fil d'actu
 on:
   schedule:
-    - cron: "7,37 * * * *"
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
   push:
     paths: [".github/scripts/flux.py", ".github/workflows/flux.yml"]
