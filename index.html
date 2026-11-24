@@ -241,6 +241,10 @@ details.qexp { margin:4px 0 12px; font-size:14px; } details.qexp summary { color
 .axtr::after { content:''; position:absolute; left:50%; top:-3px; width:1px; height:14px; background:var(--muted); }
 .axtr i { position:absolute; top:50%; width:18px; height:18px; margin:-9px 0 0 -9px; border-radius:50%; background:var(--accent); border:3px solid var(--white); box-shadow:0 0 0 1px var(--accent); z-index:1; }
 .axl { display:flex; justify-content:space-between; gap:12px; font-size:12px; color:var(--muted); } .axl span:last-child { text-align:right; }
+.hnew { display:flex; align-items:center; gap:6px; background:var(--panel); border:1px solid var(--accent); border-radius:14px; padding:4px 6px 4px 4px; margin:0 0 12px; }
+.hnew .go { flex:1; font:inherit; display:flex; align-items:center; gap:10px; background:none; border:0; color:var(--fg); text-align:left; cursor:pointer; padding:8px; }
+.hnew .ic { font-size:24px; } .hnew small { color:var(--muted); } .hnew .chev { margin-left:auto; color:var(--accent); font-size:20px; }
+.hnew .x { font:inherit; font-size:22px; background:none; border:0; color:var(--muted); cursor:pointer; padding:0 6px; }
 .newsl { padding-left:20px; margin:8px 0 14px; } .newsl li { margin-bottom:8px; font-size:15px; }
 .sheet-in .k { display:inline-block; border:1px solid var(--line); border-radius:6px; padding:0 6px; background:var(--bg); }
 .cmpbtn { font:inherit; width:100%; display:flex; align-items:center; gap:12px; text-align:left; color:var(--white); background:var(--accent); border:0; border-radius:16px; padding:14px 16px; margin:4px 0 14px; cursor:pointer; box-shadow:0 4px 14px rgba(59,111,224,.25); }
@@ -351,6 +355,7 @@ h3 { font-size:20px; font-weight:600; }
   <!-- ACCUEIL -->
   <section class="view on" id="v-accueil">
     <div id="h-silence"></div>
+    <div class="hnew" id="h-new" hidden><button type="button" class="go" id="h-new-go"><span class="ic">✨</span><span><b>Nouveau dans l’appli</b><br><small>Favoris, test enrichi, sensibilité politique…</small></span><span class="chev">›</span></button><button type="button" class="x" id="h-new-x" aria-label="Masquer">×</button></div>
     <div class="h3b">
       <button type="button" id="h-test"><span>🧭</span>Le test<small>Quel candidat pense comme moi ?</small></button>
       <button type="button" id="h-prog"><span>📄</span>Programmes<small>Comparer les idées</small></button>
@@ -601,7 +606,6 @@ h3 { font-size:20px; font-weight:600; }
       <p>Si vous repérez une info fausse ou un oubli, dites‑le‑nous : on corrige vite.</p>
       <p id="ab-contact" class="muted">Contact bientôt disponible.</p>
     </div>
-    <button type="button" class="more" id="ab-news" style="margin:4px 0 10px">Quoi de neuf dans l’appli ? ›</button>
     <details class="ab" id="ab-legal">
       <summary><b>Mentions légales</b></summary>
       <p><b>Éditeur</b> : Nous votons est un site personnel, non commercial, édité par des particuliers. Conformément à l'article 6 de la loi n° 2004‑575 du 21 juin 2004 pour la confiance dans l'économie numérique, les éditeurs non professionnels peuvent garder l'anonymat : leurs coordonnées sont connues de l'hébergeur.</p>
@@ -1164,7 +1168,7 @@ function renderHomeTP() {
   out.push(el('p', 'muted', 'Les 5 temps de parole les plus longs' + (TP.periode ? ', ' + TP.periode : '') + '. Le temps attendu pour chacun dépend de la période de campagne.'));
   $('h-tp-in').replaceChildren(...out);
 }
-const NEWS = { v: '2026-11-24b', items: [
+const NEWS = { v: '2026-11-24b', date: '2026-11-24', items: [
   'Mes favoris : touchez l’étoile sur la fiche d’un ou deux candidats, leurs dernières actus s’affichent en haut de l’accueil.',
   'Le test pose maintenant 25 questions, avec un « C’est quoi ? » pour les sujets techniques.',
   'À la fin du test : votre sensibilité sur quatre grands thèmes, et un score plus clair.',
@@ -1176,6 +1180,14 @@ function openNews() {
   const ok = el('button', 'qbtn', 'Super !'); ok.type = 'button'; ok.style.width = '100%'; ok.onclick = () => { $('inst-sheet').hidden = true; };
   $('sheet-body').replaceChildren(ul, ok);
   const sh = $('inst-sheet'); sh.querySelector('h2').textContent = 'Quoi de neuf ?'; sh.hidden = false;
+}
+function renderNewsBanner() {
+  const box = $('h-new'); if (!box) return;
+  let vu = null; try { vu = localStorage.getItem('newsBan'); } catch (e) {}
+  const age = (Date.now() - new Date(NEWS.date + 'T00:00:00')) / 864e5;
+  box.hidden = vu === NEWS.v || age > 14;
+  $('h-new-go').onclick = () => { openNews(); gcCount('nouveautes-ouvert', 'Nouveautés ouvertes', true); };
+  $('h-new-x').onclick = () => { try { localStorage.setItem('newsBan', NEWS.v); } catch (e) {} box.hidden = true; };
 }
 function showNews() {
   try {
@@ -1646,7 +1658,7 @@ for (const id of ['tab-share', 'h-share', 'ab-share']) $(id).addEventListener('c
 $('sheet-x').addEventListener('click', () => { $('inst-sheet').hidden = true; });
 $('h-tp-more').addEventListener('click', () => { openGuide(); const t = $('tp'); if (t && t.closest('details')) { t.closest('details').open = true; setTimeout(() => t.scrollIntoView({ block: 'start' }), 50); } });
 setTimeout(showNews, 1500);
-$('ab-news').addEventListener('click', openNews);
+renderNewsBanner();
 $('inst-sheet').addEventListener('click', (e) => { if (e.target === $('inst-sheet')) $('inst-sheet').hidden = true; });
 for (const id of ['b-about', 'h-about']) $(id).addEventListener('click', openAbout);
 $('aback').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView(GUIDE_FROM); });
