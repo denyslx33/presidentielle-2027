@@ -313,8 +313,8 @@ details.ab p { font-size:16px; }
 .legal { font-size:11.5px; line-height:1.4; margin:8px 0 0; }
 .card .mg { font-size:11px; color:var(--muted); }
 body.silence #v-sondages .block, body.silence #v-sondages #lede, body.silence #v-sondages details { display:none; }
-.aseg { display:grid; grid-template-columns:1fr 1fr 1fr; gap:6px; background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:4px; margin:2px 0 10px; }
-.aseg button { font:inherit; font-size:14px; font-weight:600; border:0; border-radius:10px; padding:9px; background:none; color:var(--muted); cursor:pointer; }
+.aseg { display:grid; grid-template-columns:repeat(auto-fit, minmax(0, 1fr)); gap:6px; background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:4px; margin:2px 0 10px; }
+.aseg button { font:inherit; font-size:13.5px; font-weight:600; border:0; border-radius:10px; padding:9px 2px; white-space:nowrap; letter-spacing:-.2px; background:none; color:var(--muted); cursor:pointer; }
 .aseg button.on { background:var(--accent); color:var(--white); }
 .ptag2 { display:inline-block; font-size:11px; font-weight:600; color:var(--muted); border:1px solid var(--line); border-radius:20px; padding:1px 8px; margin-bottom:4px; }
 @font-face { font-family:'Asap'; font-style:normal; font-weight:300; font-display:swap; src:url('fonts/asap-latin-300-normal.woff2') format('woff2'); }
@@ -482,8 +482,9 @@ h3 { font-size:20px; font-weight:600; }
 
   <!-- CANDIDATS -->
   <section class="view" id="v-candidats">
-    <div class="aseg" id="cseg"><button type="button" data-c="cands" class="on">👤 Candidats</button><button type="button" data-c="partis">🏛️ Partis</button><button type="button" data-c="retraits">↩️ Retraits</button></div>
+    <div class="aseg" id="cseg"><button type="button" data-c="cands" class="on">👤 Candidats</button><button type="button" data-c="partis">🏛️ Partis</button><button type="button" data-c="votes">🗳️ Votes</button><button type="button" data-c="retraits">↩️ Retraits</button></div>
     <div id="c-partis" hidden></div>
+    <div id="c-votes" hidden></div>
     <div id="c-retraits" hidden></div>
     <div id="c-cands">
     <p>Les candidats testés dans les sondages, par ordre alphabétique. Touchez un portrait pour ouvrir sa fiche.</p>
@@ -1542,6 +1543,13 @@ function voteCard(v) {
   f.append(link('Scrutin n°' + v.scrutin + ' sur le site de l’Assemblée', v.url)); d.append(f);
   return d;
 }
+function renderVotes() {
+  const box = $('c-votes'); if (!box) return;
+  if (!SCRUT) { box.replaceChildren(el('p', 'muted', 'Chargement des votes…')); return; }
+  box.replaceChildren(el('p', 'muted', 'Comment les députés ont voté sur des sujets du test « Quel candidat pense comme moi ? ». Seuls les votes de l’Assemblée actuelle, élue en juillet 2024, sont retenus. Chiffres officiels de l’Assemblée nationale.'),
+    el('p', 'muted src', 'Un groupe de députés n’est pas un candidat : certains candidats n’ont pas de groupe à l’Assemblée, et les députés d’un même groupe ne votent pas toujours pareil.'),
+    ...SCRUT.votes.map(voteCard));
+}
 function renderPartis() {
   const box = $('c-partis'); if (!box || !CAND) return;
   const today = new Date().toISOString().slice(0, 10);
@@ -1557,9 +1565,8 @@ function renderPartis() {
   const actuOf = (P) => (ACTU ? ACTU.items : []).filter((n) => n.parti && (n.parti === P.nom || (n.parti === true && P.nom !== 'Candidats sans étiquette' && P.cands.some((c) => n.qui.includes(c.id))))).slice(0, 3);
   const votesOf = (P) => (AGENDA ? AGENDA.evenements : []).filter((e) => e.type === 'vote' && /adhérent|militant|congrès|conseil (national|fédéral)|investiture|primaire|bureau national/i.test(e.titre || '') && (e.fin || e.date) >= today && P.cands.some((c) => (e.qui || []).includes(c.id))).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 2);
   loadScrut();
-  const vsec = [];
-  if (SCRUT && SCRUT.votes.length) { vsec.push(el('h2', 'vh', 'Les grands votes à l’Assemblée')); vsec.push(el('p', 'muted', 'Les votes de l’Assemblée actuelle, élue en juillet 2024, sur des sujets du test « Quel candidat pense comme moi ? ». Chiffres officiels de l’Assemblée nationale.')); SCRUT.votes.forEach((v) => vsec.push(voteCard(v))); vsec.push(el('h2', 'vh', 'Les partis')); }
-  const out = [...vsec, el('p', 'muted', "Les partis des candidats, rangés selon la grille officielle des nuances politiques du ministère de l'Intérieur, puis par ordre alphabétique. Pour chacun : son ou ses candidats, sa vie interne et ses prochains votes.")];
+  renderVotes();
+  const out = [el('p', 'muted', "Les partis des candidats, rangés selon la grille officielle des nuances politiques du ministère de l'Intérieur, puis par ordre alphabétique. Pour chacun : son ou ses candidats, sa vie interne et ses prochains votes.")];
   const groups = BLOCS.map(([k, l]) => [k, l]).concat([['sans', 'Sans étiquette'], [null, 'Non classés'], ['autre', 'Autres partis cités dans l’actu']]);
   for (const [k, l] of groups) {
     const ps = [...map.values()].filter((P) => (P.bloc ?? null) === k).sort((a, b) => a.nom.localeCompare(b.nom, 'fr'));
@@ -1575,7 +1582,7 @@ function renderPartis() {
       if (gk) { d.append(el('b', null, 'À l’Assemblée, groupe ' + SCRUT.groupes[gk].nom)); const ul = el('ul');
         for (const sv of SCRUT.votes) { const g = sv.groupes.find((x) => x.g === gk); if (!g) continue; const parts = []; if (g.pour) parts.push(g.pour + ' pour'); if (g.contre) parts.push(g.contre + ' contre'); if (g.abst) parts.push(g.abst + ' abst.');
           const li = el('li'); li.append(sv.titre + ' : ' + (parts.join(', ') || 'aucun vote') + ' (sur ' + g.membres + ') '); li.append(link('scrutin', sv.url)); ul.append(li); }
-        d.append(ul); }
+        d.append(ul); const vb = el('button', 'more', 'Voir ces votes en détail ›'); vb.type = 'button'; vb.onclick = () => { setCMode('votes'); window.scrollTo(0, 0); }; d.append(vb); }
       const a = actuOf(P), v = votesOf(P);
       if (v.length) { d.append(el('b', null, 'Prochains votes')); const ul = el('ul'); for (const e of v) { const li = el('li'); li.append(fdateLong(e.date) + ' : ' + e.titre + ' '); if (e.url) li.append(link('source', e.url)); ul.append(li); } d.append(ul); }
       if (a.length) { d.append(el('b', null, 'Dans l’actu')); const ul = el('ul'); for (const n of a) { const li = el('li'); li.append(fdateLong(n.date) + ' : ' + n.texte + ' '); li.append(link(n.source || 'source', n.url)); ul.append(li); } d.append(ul); }
@@ -1603,7 +1610,7 @@ function renderRetraits() {
 }
 function setCMode(m) {
   for (const b of document.querySelectorAll('#cseg button')) b.classList.toggle('on', b.dataset.c === m);
-  $('c-cands').hidden = m !== 'cands'; $('c-partis').hidden = m !== 'partis'; $('c-retraits').hidden = m !== 'retraits';
+  $('c-cands').hidden = m !== 'cands'; $('c-partis').hidden = m !== 'partis'; $('c-retraits').hidden = m !== 'retraits'; $('c-votes').hidden = m !== 'votes';
   if (m !== 'cands') gcCount('/candidats-' + m, 'Candidats ' + m);
 }
 
