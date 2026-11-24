@@ -2,6 +2,34 @@
 "v": 4,
 "items": [
 {
+"t": "Ralliement de Marine Tondelier à la candidature de Jean-Luc Mélenchon: \"Il faut une cohésion\", explique Manuel Bompard, coordinateur de La France insoumise",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-ralliement-de-marine-tondelier-a-la-candidature-de-jean-luc-melenchon-il-faut-une-cohesion-explique-manuel-bompard-coordinateur-de-la-france-insoumise_VN-202611241019.html",
+"d": "2026-11-24T22:22:08Z",
+"qui": [
+"melenchon",
+"tondelier"
+]
+},
+{
+"t": "Jean-Luc Mélenchon",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
+"d": "2026-11-24T22:21:36Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Dans le cas où Jean-Luc Mélenchon est élu président, \"il doit y avoir une dissolution assez rapide\", explique Manuel Bompard, coordinateur de la France insoumise",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-dans-le-cas-ou-jean-luc-melenchon-est-elu-president-il-doit-y-avoir-une-dissolution-assez-rapide-explique-manuel-bompard-coordinateur-de-la-france-insoumise_VN-202611241010.html",
+"d": "2026-11-24T21:56:13Z",
+"qui": [
+"melenchon"
+]
+},
+{
 "t": "Présidentielle 2027: Manuel Bompard et LFI souhaitent \"remettre en cause\" la règle des 500 parrainages d'élus et proposent de la remplacer par 150.000 parrainages citoyens",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-manuel-bompard-et-lfi-souhaitent-remettre-en-cause-la-regle-des-500-parrainages-d-elus-et-de-la-remplacer-par-150-000-parrainages-citoyens_AN-202611240978.html",
@@ -138,7 +166,7 @@
 "qui": []
 },
 {
-"t": "Présidentielle 2027 : Edouard Philippe souhaite un débat télévisé avec David Lisnard, qu’il soupçonne de ne pas être « étanche » avec l’extrême droite",
+"t": "Présidentielle 2027 : Edouard Philippe souhaite un débat télévisé avec David Lisnard, qu’il soupçonne de ne pas être « étanche » vis-à-vis de l’extrême droite",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/24/edouard-philippe-a-vote-pour-david-lisnard-a-la-presidence-de-l-amf-mais-fustige-sa-posture-dans-la-course-a-l-elysee_6814832_6205049.html",
 "d": "2026-11-24T17:43:11Z",
@@ -161,15 +189,6 @@
 "d": "2026-11-24T17:09:29Z",
 "qui": [
 "lepen"
-]
-},
-{
-"t": "Jean-Luc Mélenchon",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
-"d": "2026-11-24T17:09:29Z",
-"qui": [
-"melenchon"
 ]
 },
 {
@@ -1733,22 +1752,6 @@
 "qui": [
 "glucksmann"
 ]
-},
-{
-"t": "Présidentielle 2027 : les influenceurs devront respecter l’égalité du temps de parole, les questions que ça pose",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-les-influenceurs-devront-respecter-legalite-du-temps-de-parole-les-questions-que-ca-pose-20-11-2026-CWHSWOVBPNGC3HLJH7KOYJ3DCI.php",
-"d": "2026-11-20T12:00:00Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027 : Tiakola, Médine, Theodora... le monde du rap multiplie les appels à voter pour Jean-Luc Mélenchon et LFI",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/politique/presidentielle-2027-tiakola-medine-theodora-le-monde-du-rap-multiplie-les-appels-a-voter-pour-jean-luc-melenchon-et-lfi-20-11-2026-4QTQ2MSXLRDVRFLSU6B7CVVU2A.php",
-"d": "2026-11-20T12:00:00Z",
-"qui": [
-"melenchon"
-]
 }
 ],
 "sources": {
@@ -1765,5 +1768,5 @@
 "LCP": 34,
 "RFI": 8
 },
-"maj": "2026-11-24T21:29:47Z"
+"maj": "2026-11-24T22:30:08Z"
 }
