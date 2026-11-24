@@ -2,6 +2,15 @@
 "v": 4,
 "items": [
 {
+"t": "« Il y aura une grande clarification » : à l’Assemblée nationale, le groupe sans queue ni tête de Gabriel Attal",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/politique/il-y-aura-une-grande-clarification-a-lassemblee-nationale-le-groupe-sans-queue-ni-tete-de-gabriel-attal-24-11-2026-M45E6DYDDFHP5PI3TOGJ47KF6E.php",
+"d": "2026-11-24T03:36:16Z",
+"qui": [
+"attal"
+]
+},
+{
 "t": "Présidentielle: Boris Vallaud estime que la main tendue de Marine Tondelier à Jean-Luc Mélenchon est \"une sorte de fatalisme\"",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-un-nouveau-sondage-donne-marine-le-pen-en-baisse-david-lisnard-depasse-edouard-philippe_LN-202611230170.html",
@@ -1375,7 +1384,7 @@
 "franceinfo": 2,
 "Libération": 20,
 "Le Figaro": 9,
-"Le Parisien": 50,
+"Le Parisien": 51,
 "20 Minutes": 6,
 "Ouest-France": 0,
 "BFMTV": 15,
@@ -1384,5 +1393,5 @@
 "LCP": 34,
 "RFI": 7
 },
-"maj": "2026-11-24T02:36:49Z"
+"maj": "2026-11-24T03:36:16Z"
 }
