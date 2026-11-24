@@ -183,6 +183,10 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .hbtns button { font:inherit; font-weight:700; font-size:15px; color:var(--fg); background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:14px 10px; display:flex; flex-direction:column; align-items:center; gap:3px; cursor:pointer; }
 .hbtns span { font-size:28px; }
 .hb1 { grid-template-columns:1fr; }
+.res .chev { color:var(--muted); font-size:22px; margin-left:4px; transition:transform .15s; } .res.open .chev { transform:rotate(90deg); }
+.resdet { background:var(--bg); border-radius:12px; padding:8px 12px 4px; margin:2px 0 10px; }
+.rdh { font-size:16px; font-weight:600; margin:8px 0 4px; } .rdh.ok { color:var(--up); } .rdh.ko { color:var(--down); }
+.rdi { padding:8px 0; border-bottom:1px solid var(--line); } .rdi:last-of-type { border-bottom:0; } .rdi .t { font-size:16px; line-height:1.35; }
 .hemi { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:12px 14px 4px; }
 .hemi svg { display:block; width:100%; max-width:320px; margin:0 auto; }
 .hemi-t { font:600 18px 'Asap', sans-serif; fill:var(--fg); }
@@ -941,9 +945,26 @@ function renderQuizRes() {
     const row = el('div', 'res'); const info = el('div', 'info');
     info.append(el('div', 'who', r.c.nom), el('div', 'muted', `${r.ok} sur ${r.n} questions comparables`));
     const bar = el('div', 'bar1'); const bi = el('i'); bi.style.width = r.pc + '%'; bar.append(bi); info.append(bar);
-    row.append(avatar(r.c), info, el('div', 'pc', Math.round(r.pc) + ' %'));
-    row.style.cursor = 'pointer'; row.onclick = () => openFiche(r.c.id);
-    d.append(row);
+    row.append(avatar(r.c), info, el('div', 'pc', Math.round(r.pc) + ' %'), el('span', 'chev', '›'));
+    row.style.cursor = 'pointer';
+    const det2 = el('div', 'resdet'); det2.hidden = true;
+    const lab = (v) => (v === 1 ? "d'accord" : "pas d'accord");
+    const items = Q.map((q, i) => ({ q, a: QANS[i], p: q.pos[r.c.id] })).filter((x) => x.a && x.p);
+    const same = items.filter((x) => x.a === x.p), diff = items.filter((x) => x.a !== x.p);
+    const blk = (titre, list, ok) => {
+      if (!list.length) return;
+      det2.append(el('div', 'rdh ' + (ok ? 'ok' : 'ko'), (ok ? '✓ ' : '✗ ') + titre + ' (' + list.length + ')'));
+      for (const x of list) {
+        const it = el('div', 'rdi'); it.append(el('div', 't', x.q.q));
+        it.append(el('div', 'src', 'Vous : ' + lab(x.a) + ' · ' + nomFamille(r.c.nom) + ' : ' + lab(x.p)));
+        const sm = (x.q.src || {})[r.c.id]; if (sm) it.append(el('div', 'muted src', '« ' + sm + ' »'));
+        det2.append(it);
+      }
+    };
+    blk('Vos avis en commun', same, true); blk('Vos avis différents', diff, false);
+    const fb = el('button', 'more', 'Voir la fiche de ' + r.c.nom + ' ›'); fb.type = 'button'; fb.onclick = (e) => { e.stopPropagation(); openFiche(r.c.id); }; det2.append(fb);
+    row.onclick = () => { det2.hidden = !det2.hidden; row.classList.toggle('open', !det2.hidden); };
+    d.append(row, det2);
   }
   if (few.length) d.append(el('p', 'muted', 'Pas assez de positions connues pour : ' + few.map((r) => r.c.nom).join(', ') + '.'));
   const byId = new Map(CAND.principaux.map((c) => [c.id, c]));
