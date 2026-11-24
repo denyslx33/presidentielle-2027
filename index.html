@@ -282,6 +282,18 @@ h3 { font-size:20px; font-weight:600; }
     <button type="button" id="inst-btn">Ajouter</button>
     <button type="button" class="x" id="inst-x" aria-label="Masquer">×</button>
   </div>
+  <div class="sheet" id="icon-sheet" hidden><div class="sheet-in">
+    <button type="button" class="x" id="icon-x" aria-label="Fermer">×</button>
+    <h2 style="font-size:24px;padding-right:28px">Nouveau nom, nouveau logo !</h2>
+    <p>L'appli s'appelle maintenant <b>Nous votons</b>. Sur iPhone, l'icône de l'écran d'accueil ne se met pas à jour toute seule. Pour avoir le nouveau logo :</p>
+    <ol>
+      <li>Restez appuyé sur l'icône de l'appli, puis <b>Supprimer l'app</b>.</li>
+      <li>Ouvrez <b>denyslx33.github.io/presidentielle-2027</b> dans Safari.</li>
+      <li>Touchez <span class="k">Partager</span> puis <b>Sur l'écran d'accueil</b>.</li>
+    </ol>
+    <p class="muted">Les sondages et l'actu se rechargent tout seuls à l'ouverture.</p>
+    <button type="button" class="qbtn" id="icon-ok" style="width:100%">J'ai compris</button>
+  </div></div>
   <div class="sheet" id="inst-sheet" hidden><div class="sheet-in">
     <button type="button" class="x" id="sheet-x" aria-label="Fermer">×</button>
     <h2>Ajouter l'appli</h2>
@@ -571,6 +583,19 @@ h3 { font-size:20px; font-weight:600; }
 </nav>
 
 <script>
+// iPhone installé avant le changement de nom : prévenir une seule fois pour réinstaller (icône figée par iOS)
+(() => { try {
+  const ios = /iPhone|iPad|iPod/.test(navigator.userAgent) && navigator.standalone === true;
+  const ancien = localStorage.getItem('mv') !== null || localStorage.getItem('ca') !== null;
+  const vu = localStorage.getItem('iconNV') === '1';
+  localStorage.setItem('iconNV', '1');
+  if (ios && ancien && !vu) addEventListener('DOMContentLoaded', () => {
+    const sh = document.getElementById('icon-sheet'); sh.hidden = false;
+    const close = () => { sh.hidden = true; };
+    document.getElementById('icon-x').onclick = close; document.getElementById('icon-ok').onclick = close;
+    sh.addEventListener('click', (e) => { if (e.target === sh) close(); });
+  });
+} catch (e) {} })();
 const URL_MV = 'https://raw.githubusercontent.com/MieuxVoter/presidentielle2027/refs/heads/main/presidentielle2027.csv';
 const EXCLUS = new Set(['Parti du vote blanc', 'Sébastien Bonnal']);
 const COLORS = ['#204A94','#4D87F4','#7DC3FB','#06A067','#74C566','#C7E7A4','#DBE64C','#AB8AE8'];
