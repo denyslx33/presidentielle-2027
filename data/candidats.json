@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-23",
+ "maj": "2026-11-24",
  "principaux": [
   {
    "id": "arthaud",
@@ -48,7 +48,8 @@
       "theme": "Immigration",
       "mesures": [
        "Régulariser les sans-papiers, liberté de circulation",
-       "Droit de vote des travailleurs immigrés"
+       "Droit de vote des travailleurs immigrés",
+       "Contre la « préférence nationale » : unité des travailleurs quelle que soit leur origine"
       ]
      },
      {
@@ -68,7 +69,8 @@
       "theme": "Europe et international",
       "mesures": [
        "Retirer les troupes françaises d'Afrique",
-       "Industrie d'armement sous contrôle des travailleurs"
+       "Industrie d'armement sous contrôle des travailleurs",
+       "Arrêter la course aux armements : l'argent pour la santé, pas pour l'armée"
       ]
      }
     ]
@@ -887,7 +889,9 @@
        "Plan de 197 Md€ d'économies d'ici 2032",
        "Plus de cotisations sociales au-delà de 1 623 heures par an",
        "Revenu d'insertion de 300 €, +250 € sous conditions d'insertion",
-       "Fonds France Production de 600 M€ par an"
+       "Fonds France Production de 600 M€ par an",
+       "Réduire de 40 Md€ le handicap fiscal des entreprises",
+       "Une part de retraite par capitalisation pour les nouveaux entrants (25 à 30 %)"
       ]
      },
      {
@@ -902,7 +906,8 @@
        "+135 € nets en début de carrière, jusqu'à +300 € en milieu",
        "Une École normale du professorat par académie",
        "Plus de temps pour lire, écrire, compter",
-       "1 000 établissements publics innovants d'ici 2032"
+       "1 000 établissements publics innovants d'ici 2032",
+       "Examen d'entrée en sixième et groupes de niveau évolutifs"
       ]
      },
      {
@@ -925,7 +930,8 @@
       "mesures": [
        "8 EPR2 supplémentaires",
        "Centrales autorisées pour 80 ans",
-       "Modernisation de l'hydroélectricité"
+       "Modernisation de l'hydroélectricité",
+       "Plus de nouveaux appels d'offres solaire et éolien en mer tant que la demande ne remonte pas"
       ]
      },
      {
@@ -933,7 +939,8 @@
       "mesures": [
        "Réforme constitutionnelle comme première grande réforme",
        "Ne jamais imposer plus que ce qu'exige l'Europe",
-       "125 000 agents redéployés vers le terrain"
+       "125 000 agents redéployés vers le terrain",
+       "Supprimer ou recentrer dès l'élection les 50 normes qui pénalisent le plus la production"
       ]
      },
      {
@@ -983,7 +990,8 @@
       "mesures": [
        "Augmenter le salaire net en allégeant les charges",
        "Pouvoir travailler plus sans remettre en cause les 35 heures",
-       "Réformer les retraites"
+       "Réformer les retraites",
+       "Dépenser moins et mieux réinvestir pour réduire la dette"
       ]
      }
     ]
@@ -996,8 +1004,16 @@
    "parti": "Parti communiste français",
    "role": "Secrétaire national du PCF, candidat en 2022.",
    "annonce": "Candidat déclaré.",
-   "mesures": [],
-   "source_mesures": null,
+   "mesures": [
+    "60 000 policiers, gendarmes et douaniers de proximité contre le narcotrafic",
+    "Créer 500 000 postes de fonctionnaires",
+    "Nationaliser TotalEnergies",
+    "Augmentation généralisée des salaires, à commencer par le SMIC"
+   ],
+   "source_mesures": {
+    "nom": "franceinfo et BFMTV, nov. 2026",
+    "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-fabien-roussel-propose-la-mise-en-place-de-60-000-policiers-gendarmes-et-douaniers-de-proximite_8279156.html"
+   },
    "parrainages": {
     "texte": "Jugé bien placé : 626 parrainages obtenus en 2022.",
     "source": "Le Parisien, 6 nov. 2026",
@@ -1006,9 +1022,35 @@
    "finances": null,
    "programme": {
     "url": null,
-    "note": "Programme 2027 pas encore publié.",
+    "note": "Programme 2027 pas encore publié : ces mesures viennent de ses déclarations publiques.",
     "recap": null,
-    "themes": []
+    "themes": [
+     {
+      "theme": "Économie",
+      "mesures": [
+       "Nationaliser TotalEnergies",
+       "Augmentation généralisée des salaires, à commencer par le SMIC"
+      ]
+     },
+     {
+      "theme": "Sécurité et justice",
+      "mesures": [
+       "60 000 policiers, gendarmes et douaniers de proximité contre le narcotrafic"
+      ]
+     },
+     {
+      "theme": "Immigration",
+      "mesures": [
+       "Pas de « priorité nationale » pour les HLM : construire plutôt que trier"
+      ]
+     },
+     {
+      "theme": "Institutions",
+      "mesures": [
+       "Créer 500 000 postes de fonctionnaires"
+      ]
+     }
+    ]
    },
    "bloc": "g"
   },
@@ -1186,14 +1228,16 @@
       "theme": "Institutions",
       "mesures": [
        "Référendum d'initiative citoyenne préparé par une convention permanente",
-       "Diviser les codes juridiques par quatre"
+       "Diviser les codes juridiques par quatre",
+       "Diviser les codes juridiques par quatre et mettre fin aux surtranspositions"
       ]
      },
      {
       "theme": "Europe et international",
       "mesures": [
        "Pause dans l'intégration européenne",
-       "Impôt sur les sociétés harmonisé avec l'Allemagne"
+       "Impôt sur les sociétés harmonisé avec l'Allemagne",
+       "Nouvelle doctrine européenne de dissuasion nucléaire au sein d'un conseil européen de sécurité"
       ]
      }
     ]
@@ -1232,7 +1276,8 @@
       "mesures": [
        "Baisser de 20 % la contribution française à l'UE",
        "Une norme créée, deux supprimées",
-       "Droits de douane de 50 % sur les voitures électriques chinoises"
+       "Droits de douane de 50 % sur les voitures électriques chinoises",
+       "Baisser les taxes sur l'énergie pour réduire les factures d'électricité"
       ]
      },
      {
@@ -1287,7 +1332,8 @@
       "mesures": [
        "Remplacer la Commission par un secrétariat du Conseil",
        "Primauté du droit national dans la Constitution",
-       "Refuser tout nouvel élargissement"
+       "Refuser tout nouvel élargissement",
+       "Refuser une armée européenne et tout partage de la dissuasion nucléaire"
       ]
      }
     ]
