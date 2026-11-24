@@ -1,0 +1,401 @@
+{
+ "maj": "2026-11-24",
+ "source": "Assemblée nationale, analyses officielles des scrutins publics",
+ "ordre": [
+  "LFI",
+  "GDR",
+  "ECOS",
+  "SOC",
+  "LIOT",
+  "DEM",
+  "EPR",
+  "HOR",
+  "DR",
+  "UDR",
+  "RN",
+  "NI"
+ ],
+ "groupes": {
+  "RN": {
+   "nom": "Rassemblement National"
+  },
+  "EPR": {
+   "nom": "Ensemble pour la République"
+  },
+  "LFI": {
+   "nom": "La France insoumise - NFP"
+  },
+  "SOC": {
+   "nom": "Socialistes et apparentés"
+  },
+  "DR": {
+   "nom": "Droite Républicaine"
+  },
+  "ECOS": {
+   "nom": "Écologiste et Social"
+  },
+  "DEM": {
+   "nom": "Les Démocrates"
+  },
+  "HOR": {
+   "nom": "Horizons & Indépendants"
+  },
+  "LIOT": {
+   "nom": "Libertés, Indépendants, Outre-mer et Territoires"
+  },
+  "GDR": {
+   "nom": "Gauche Démocrate et Républicaine"
+  },
+  "UDR": {
+   "nom": "Union des droites pour la République"
+  },
+  "NI": {
+   "nom": "Non inscrits"
+  }
+ },
+ "partis": {
+  "Rassemblement national": "RN",
+  "Renaissance": "EPR",
+  "La France insoumise": "LFI",
+  "Les Républicains": "DR",
+  "Les Écologistes": "ECOS",
+  "Horizons": "HOR",
+  "Parti communiste français": "GDR",
+  "Parti socialiste": "SOC"
+ },
+ "votes": [
+  {
+   "id": "v5729",
+   "titre": "Créer un droit à l'aide à mourir",
+   "contexte": "Vote sur l'ensemble de la proposition de loi relative au droit à l'aide à mourir, en deuxième lecture.",
+   "date": "2026-02-25",
+   "scrutin": 5729,
+   "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/5729",
+   "adopte": true,
+   "q": "q43",
+   "pour": 299,
+   "contre": 226,
+   "abst": 37,
+   "groupes": [
+    {
+     "g": "RN",
+     "membres": 122,
+     "pour": 17,
+     "contre": 102,
+     "abst": 3,
+     "nv": 0
+    },
+    {
+     "g": "EPR",
+     "membres": 92,
+     "pour": 64,
+     "contre": 14,
+     "abst": 9,
+     "nv": 1
+    },
+    {
+     "g": "LFI",
+     "membres": 71,
+     "pour": 62,
+     "contre": 1,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "SOC",
+     "membres": 69,
+     "pour": 60,
+     "contre": 4,
+     "abst": 3,
+     "nv": 0
+    },
+    {
+     "g": "DR",
+     "membres": 49,
+     "pour": 5,
+     "contre": 42,
+     "abst": 2,
+     "nv": 0
+    },
+    {
+     "g": "ECOS",
+     "membres": 38,
+     "pour": 35,
+     "contre": 1,
+     "abst": 2,
+     "nv": 0
+    },
+    {
+     "g": "DEM",
+     "membres": 36,
+     "pour": 20,
+     "contre": 12,
+     "abst": 4,
+     "nv": 0
+    },
+    {
+     "g": "HOR",
+     "membres": 34,
+     "pour": 14,
+     "contre": 18,
+     "abst": 2,
+     "nv": 0
+    },
+    {
+     "g": "LIOT",
+     "membres": 22,
+     "pour": 8,
+     "contre": 6,
+     "abst": 8,
+     "nv": 0
+    },
+    {
+     "g": "GDR",
+     "membres": 17,
+     "pour": 11,
+     "contre": 2,
+     "abst": 4,
+     "nv": 0
+    },
+    {
+     "g": "UDR",
+     "membres": 17,
+     "pour": 0,
+     "contre": 17,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "NI",
+     "membres": 10,
+     "pour": 3,
+     "contre": 7,
+     "abst": 0,
+     "nv": 0
+    }
+   ]
+  },
+  {
+   "id": "v3684",
+   "titre": "Suspendre la réforme des retraites de 2023",
+   "contexte": "Article 45 bis du budget de la Sécurité sociale pour 2026, en première lecture : il suspend jusqu'au 1er janvier 2028 le relèvement de l'âge légal de départ.",
+   "date": "2025-11-12",
+   "scrutin": 3684,
+   "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3684",
+   "adopte": true,
+   "q": "q1",
+   "pour": 255,
+   "contre": 146,
+   "abst": 104,
+   "groupes": [
+    {
+     "g": "RN",
+     "membres": 123,
+     "pour": 112,
+     "contre": 0,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "EPR",
+     "membres": 92,
+     "pour": 3,
+     "contre": 5,
+     "abst": 67,
+     "nv": 6
+    },
+    {
+     "g": "LFI",
+     "membres": 71,
+     "pour": 0,
+     "contre": 60,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "SOC",
+     "membres": 69,
+     "pour": 67,
+     "contre": 0,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "DR",
+     "membres": 49,
+     "pour": 8,
+     "contre": 25,
+     "abst": 9,
+     "nv": 3
+    },
+    {
+     "g": "ECOS",
+     "membres": 38,
+     "pour": 30,
+     "contre": 0,
+     "abst": 4,
+     "nv": 0
+    },
+    {
+     "g": "DEM",
+     "membres": 36,
+     "pour": 11,
+     "contre": 1,
+     "abst": 18,
+     "nv": 1
+    },
+    {
+     "g": "HOR",
+     "membres": 34,
+     "pour": 0,
+     "contre": 29,
+     "abst": 1,
+     "nv": 2
+    },
+    {
+     "g": "LIOT",
+     "membres": 22,
+     "pour": 17,
+     "contre": 0,
+     "abst": 3,
+     "nv": 1
+    },
+    {
+     "g": "GDR",
+     "membres": 17,
+     "pour": 1,
+     "contre": 11,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "UDR",
+     "membres": 16,
+     "pour": 0,
+     "contre": 14,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "NI",
+     "membres": 9,
+     "pour": 6,
+     "contre": 1,
+     "abst": 2,
+     "nv": 0
+    }
+   ]
+  },
+  {
+   "id": "v3260",
+   "titre": "Dénoncer l'accord franco-algérien de 1968",
+   "contexte": "Proposition de résolution : elle demande au gouvernement de dénoncer l'accord, sans l'y obliger.",
+   "date": "2025-10-30",
+   "scrutin": 3260,
+   "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3260",
+   "adopte": true,
+   "q": "q74",
+   "pour": 185,
+   "contre": 184,
+   "abst": 5,
+   "groupes": [
+    {
+     "g": "RN",
+     "membres": 123,
+     "pour": 122,
+     "contre": 0,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "EPR",
+     "membres": 92,
+     "pour": 0,
+     "contre": 30,
+     "abst": 3,
+     "nv": 7
+    },
+    {
+     "g": "LFI",
+     "membres": 71,
+     "pour": 0,
+     "contre": 52,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "SOC",
+     "membres": 69,
+     "pour": 0,
+     "contre": 53,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "DR",
+     "membres": 50,
+     "pour": 26,
+     "contre": 0,
+     "abst": 0,
+     "nv": 3
+    },
+    {
+     "g": "ECOS",
+     "membres": 38,
+     "pour": 0,
+     "contre": 32,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "DEM",
+     "membres": 36,
+     "pour": 0,
+     "contre": 10,
+     "abst": 2,
+     "nv": 1
+    },
+    {
+     "g": "HOR",
+     "membres": 34,
+     "pour": 17,
+     "contre": 0,
+     "abst": 0,
+     "nv": 2
+    },
+    {
+     "g": "LIOT",
+     "membres": 22,
+     "pour": 2,
+     "contre": 1,
+     "abst": 0,
+     "nv": 1
+    },
+    {
+     "g": "GDR",
+     "membres": 17,
+     "pour": 0,
+     "contre": 6,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "UDR",
+     "membres": 16,
+     "pour": 15,
+     "contre": 0,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "NI",
+     "membres": 9,
+     "pour": 3,
+     "contre": 0,
+     "abst": 0,
+     "nv": 0
+    }
+   ]
+  }
+ ]
+}

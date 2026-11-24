@@ -256,6 +256,14 @@ details.qexp { margin:4px 0 12px; font-size:14px; } details.qexp summary { color
 .vsearch { width:100%; font:inherit; font-size:16px; padding:10px 12px; border:1px solid var(--line); border-radius:12px; background:var(--white); color:var(--fg); box-sizing:border-box; }
 .vres button, .vgeo { display:block; width:100%; text-align:left; font:inherit; font-size:15px; padding:10px 4px; background:none; border:0; border-bottom:1px solid var(--line); color:var(--fg); cursor:pointer; }
 .vgeo { color:var(--accent); border:0; padding:12px 4px 6px; } .vr { display:flex; gap:6px; margin:10px 0; } .vr button { flex:1; font:inherit; padding:8px; border:1px solid var(--line); border-radius:20px; background:var(--panel); color:var(--fg); } .vr button.on { background:var(--accent); color:var(--white); border-color:var(--accent); }
+.vh { margin:18px 0 6px; } .vcard { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:14px 14px 10px; margin:10px 0 14px; }
+.vcard h3 { margin:6px 0 4px; font-size:19px; } .vtop { display:flex; justify-content:space-between; align-items:center; font-size:13px; color:var(--muted); }
+.vres { font-weight:600; padding:2px 10px; border-radius:12px; color:#fff; } .vres.ok { background:#3B7DD8; } .vres.ko { background:#E2566B; }
+.hemi { width:100%; display:block; margin:6px 0 2px; border:0 !important; background:none !important; border-radius:0 !important; padding:0 !important; }
+.vtot { display:flex; justify-content:space-around; background:var(--bg); border-radius:12px; padding:8px 4px; margin:4px 0 8px; }
+.vt { display:grid; grid-template-columns:auto auto; grid-template-rows:auto auto; column-gap:6px; align-items:center; } .vt i { grid-row:1 / 3; } .vt small { grid-column:2; line-height:1; } .vt i { font-style:normal; width:24px; height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:14px; }
+.vt b { font-size:21px; line-height:1.1; } .vt small { color:var(--muted); font-size:11px; } .vt.pour i { background:#3B7DD8; } .vt.pour b { color:#3B7DD8; } .vt.contre i { background:#E2566B; } .vt.contre b { color:#E2566B; } .vt.abst i { background:#9AA3AF; }
+.vdet summary { color:var(--accent); cursor:pointer; font-weight:500; margin:4px 0; } .vg { margin:8px 0; font-size:14px; } .vbar { display:flex; height:8px; border-radius:6px; overflow:hidden; background:var(--bg); margin:3px 0; } .vbar i { display:block; height:100%; }
 .newsl { padding-left:20px; margin:8px 0 14px; } .newsl li { margin-bottom:8px; font-size:15px; }
 .sheet-in .k { display:inline-block; border:1px solid var(--line); border-radius:6px; padding:0 6px; background:var(--bg); }
 .cmpbtn { font:inherit; width:100%; display:flex; align-items:center; gap:12px; text-align:left; color:var(--white); background:var(--accent); border:0; border-radius:16px; padding:14px 16px; margin:4px 0 14px; cursor:pointer; box-shadow:0 4px 14px rgba(59,111,224,.25); }
@@ -1500,6 +1508,40 @@ function renderKeyDates() {
 // ---------- Partis
 const PLOGOS = { 'La France insoumise': 'la-france-insoumise.png', 'Lutte ouvrière': 'lutte-ouvriere.svg', 'Les Écologistes': 'les-ecologistes.svg', 'Parti communiste français': 'parti-communiste-francais.svg', 'Place publique': 'place-publique.svg', 'Horizons': 'horizons.svg', 'Renaissance': 'renaissance.svg', 'Debout la France': 'debout-la-france.png', 'Les Républicains': 'les-republicains.svg', 'Rassemblement national': 'rassemblement-national.svg', 'Reconquête': 'reconquete.svg', 'La France humaniste': 'la-france-humaniste.jpg', 'Nouvelle Énergie': 'nouvelle-energie.png', 'Parti socialiste': 'parti-socialiste.svg' };
 const nomParti = (p) => (p || '').split(' (')[0].trim();
+let SCRUT = null, SCRUT_LOAD = false;
+function loadScrut() { if (SCRUT_LOAD) return; SCRUT_LOAD = true; fetch('data/votes.json', { cache: 'no-cache' }).then((r) => r.json()).then((j) => { SCRUT = j; renderPartis(); }).catch(() => {}); }
+const VCOL = { pour: '#3B7DD8', contre: '#E2566B', abst: '#9AA3AF' };
+function hemicycle(v) {
+  const ns = 'http://www.w3.org/2000/svg', mk = (t, at) => { const e = document.createElementNS(ns, t); for (const k in at) e.setAttribute(k, at[k]); return e; };
+  const N = 577, ROWS = 11, r0 = 34, r1 = 96, cx = 100, cy = 100;
+  const radii = [...Array(ROWS).keys()].map((i) => r0 + (r1 - r0) * i / (ROWS - 1)), tot = radii.reduce((a, b) => a + b, 0);
+  const per = radii.map((r) => Math.round(N * r / tot)); per[ROWS - 1] += N - per.reduce((a, b) => a + b, 0);
+  const seats = []; radii.forEach((r, i) => { const n = per[i]; for (let k = 0; k < n; k++) { const a = Math.PI - Math.PI * k / (n - 1); seats.push({ a, x: cx + r * Math.cos(a), y: cy - r * Math.sin(a) }); } });
+  seats.sort((p, q) => q.a - p.a);
+  const byG = new Map(v.groupes.map((g) => [g.g, g])); const st = [];
+  for (const k of SCRUT.ordre) { const g = byG.get(k); if (!g) continue; const abs = g.membres - g.pour - g.contre - g.abst;
+    st.push(...Array(g.pour).fill('pour'), ...Array(g.abst).fill('abst'), ...Array(g.contre).fill('contre'), ...Array(Math.max(abs, 0)).fill('')); }
+  const svg = mk('svg', { viewBox: '0 0 200 104', class: 'hemi', role: 'img', 'aria-label': `Hémicycle : ${v.pour} pour, ${v.contre} contre, ${v.abst} abstentions` });
+  seats.forEach((p, i) => { const c = st[i]; svg.append(mk('circle', c ? { cx: p.x.toFixed(2), cy: p.y.toFixed(2), r: 2.15, fill: VCOL[c] } : { cx: p.x.toFixed(2), cy: p.y.toFixed(2), r: 1.75, fill: 'none', stroke: '#C9D0DC', 'stroke-width': 0.6 })); });
+  return svg;
+}
+function voteCard(v) {
+  const d = el('div', 'vcard');
+  const top = el('div', 'vtop'); top.append(el('span', 'vdate', fdateLong(v.date)), el('span', 'vres ' + (v.adopte ? 'ok' : 'ko'), v.adopte ? 'Adopté' : 'Rejeté')); d.append(top);
+  d.append(el('h3', null, v.titre), el('p', 'muted', v.contexte), hemicycle(v));
+  const t = el('div', 'vtot'); [['pour', '✓', v.pour, 'pour'], ['abst', '–', v.abst, 'abstentions'], ['contre', '✕', v.contre, 'contre']].forEach(([k, ic, n, l]) => { const s = el('span', 'vt ' + k); s.append(el('i', null, ic), el('b', null, String(n)), el('small', null, l)); t.append(s); }); d.append(t);
+  const votants = v.pour + v.contre + v.abst; d.append(el('p', 'muted src', `${votants} députés sur 577 ont pris part au vote. Chaque point est un député, rangé avec son groupe, de la gauche à la droite de l’hémicycle. Les cercles vides : absents ou sièges vacants.`));
+  const det = el('details', 'vdet'); det.append(el('summary', null, 'Le vote de chaque groupe'));
+  for (const k of SCRUT.ordre) { const g = v.groupes.find((x) => x.g === k); if (!g) continue; const row = el('div', 'vg');
+    const bar = el('div', 'vbar'); [['pour', g.pour], ['abst', g.abst], ['contre', g.contre]].forEach(([c, n]) => { if (n) { const i = el('i'); i.style.width = (n / g.membres * 100) + '%'; i.style.background = VCOL[c]; bar.append(i); } });
+    const parts = []; if (g.pour) parts.push(g.pour + ' pour'); if (g.contre) parts.push(g.contre + ' contre'); if (g.abst) parts.push(g.abst + ' abst.');
+    row.append(el('b', null, SCRUT.groupes[k].nom), bar, el('span', 'muted src', (parts.join(' · ') || 'aucun vote') + ' · ' + g.membres + ' membres')); det.append(row); }
+  d.append(det);
+  const q = QUIZ && QUIZ.questions.find((x) => x.id === v.q); const f = el('p', 'muted src');
+  if (q) f.append('Lié à la question du test : « ' + q.q + ' » · ');
+  f.append(link('Scrutin n°' + v.scrutin + ' sur le site de l’Assemblée', v.url)); d.append(f);
+  return d;
+}
 function renderPartis() {
   const box = $('c-partis'); if (!box || !CAND) return;
   const today = new Date().toISOString().slice(0, 10);
@@ -1514,7 +1556,10 @@ function renderPartis() {
   for (const n of (ACTU ? ACTU.items : [])) if (typeof n.parti === 'string' && !map.has(n.parti)) map.set(n.parti, { nom: n.parti, bloc: 'autre', cands: [], note: '' });
   const actuOf = (P) => (ACTU ? ACTU.items : []).filter((n) => n.parti && (n.parti === P.nom || (n.parti === true && P.nom !== 'Candidats sans étiquette' && P.cands.some((c) => n.qui.includes(c.id))))).slice(0, 3);
   const votesOf = (P) => (AGENDA ? AGENDA.evenements : []).filter((e) => e.type === 'vote' && /adhérent|militant|congrès|conseil (national|fédéral)|investiture|primaire|bureau national/i.test(e.titre || '') && (e.fin || e.date) >= today && P.cands.some((c) => (e.qui || []).includes(c.id))).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 2);
-  const out = [el('p', 'muted', "Les partis des candidats, rangés selon la grille officielle des nuances politiques du ministère de l'Intérieur, puis par ordre alphabétique. Pour chacun : son ou ses candidats, sa vie interne et ses prochains votes.")];
+  loadScrut();
+  const vsec = [];
+  if (SCRUT && SCRUT.votes.length) { vsec.push(el('h2', 'vh', 'Les grands votes à l’Assemblée')); vsec.push(el('p', 'muted', 'Les votes de l’Assemblée actuelle, élue en juillet 2024, sur des sujets du test « Quel candidat pense comme moi ? ». Chiffres officiels de l’Assemblée nationale.')); SCRUT.votes.forEach((v) => vsec.push(voteCard(v))); vsec.push(el('h2', 'vh', 'Les partis')); }
+  const out = [...vsec, el('p', 'muted', "Les partis des candidats, rangés selon la grille officielle des nuances politiques du ministère de l'Intérieur, puis par ordre alphabétique. Pour chacun : son ou ses candidats, sa vie interne et ses prochains votes.")];
   const groups = BLOCS.map(([k, l]) => [k, l]).concat([['sans', 'Sans étiquette'], [null, 'Non classés'], ['autre', 'Autres partis cités dans l’actu']]);
   for (const [k, l] of groups) {
     const ps = [...map.values()].filter((P) => (P.bloc ?? null) === k).sort((a, b) => a.nom.localeCompare(b.nom, 'fr'));
@@ -1526,6 +1571,11 @@ function renderPartis() {
       d.append(el('h3', null, P.nom));
       if (P.note) d.append(el('div', 'muted', P.note));
       if (P.cands.length) { const w = el('div', 'who'); for (const c of P.cands) { const b = el('button'); b.type = 'button'; b.append(avatar(c), c.nom); b.onclick = () => openFiche(c.id); w.append(b); } d.append(w); }
+      const gk = SCRUT && SCRUT.partis[P.nom];
+      if (gk) { d.append(el('b', null, 'À l’Assemblée, groupe ' + SCRUT.groupes[gk].nom)); const ul = el('ul');
+        for (const sv of SCRUT.votes) { const g = sv.groupes.find((x) => x.g === gk); if (!g) continue; const parts = []; if (g.pour) parts.push(g.pour + ' pour'); if (g.contre) parts.push(g.contre + ' contre'); if (g.abst) parts.push(g.abst + ' abst.');
+          const li = el('li'); li.append(sv.titre + ' : ' + (parts.join(', ') || 'aucun vote') + ' (sur ' + g.membres + ') '); li.append(link('scrutin', sv.url)); ul.append(li); }
+        d.append(ul); }
       const a = actuOf(P), v = votesOf(P);
       if (v.length) { d.append(el('b', null, 'Prochains votes')); const ul = el('ul'); for (const e of v) { const li = el('li'); li.append(fdateLong(e.date) + ' : ' + e.titre + ' '); if (e.url) li.append(link('source', e.url)); ul.append(li); } d.append(ul); }
       if (a.length) { d.append(el('b', null, 'Dans l’actu')); const ul = el('ul'); for (const n of a) { const li = el('li'); li.append(fdateLong(n.date) + ' : ' + n.texte + ' '); li.append(link(n.source || 'source', n.url)); ul.append(li); } d.append(ul); }
