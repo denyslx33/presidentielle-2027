@@ -259,6 +259,8 @@ details.qexp { margin:4px 0 12px; font-size:14px; } details.qexp summary { color
 .vh { margin:18px 0 6px; } .vcard { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:14px 14px 10px; margin:10px 0 14px; }
 .vcard h3 { margin:6px 0 4px; font-size:19px; } .vtop { display:flex; justify-content:space-between; align-items:center; font-size:13px; color:var(--muted); }
 .vres { font-weight:600; padding:2px 10px; border-radius:12px; color:#fff; } .vres.ok { background:#3B7DD8; } .vres.ko { background:#E2566B; }
+.hlab { font-size:5.2px; font-weight:600; fill:var(--muted); cursor:pointer; } .hlab.on { fill:var(--accent); font-size:6px; } .hemi circle { cursor:pointer; transition:opacity .15s; }
+.hinfo { text-align:center; font-size:14px; color:var(--muted); min-height:40px; margin:2px 0 6px; } .hinfo.on { color:var(--fg); }
 .hemi { width:100%; display:block; margin:6px 0 2px; border:0 !important; background:none !important; border-radius:0 !important; padding:0 !important; }
 .vtot { display:flex; justify-content:space-around; background:var(--bg); border-radius:12px; padding:8px 4px; margin:4px 0 8px; }
 .vt { display:grid; grid-template-columns:auto auto; grid-template-rows:auto auto; column-gap:6px; align-items:center; } .vt i { grid-row:1 / 3; } .vt small { grid-column:2; line-height:1; } .vt i { font-style:normal; width:24px; height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:14px; }
@@ -1512,31 +1514,45 @@ const nomParti = (p) => (p || '').split(' (')[0].trim();
 let SCRUT = null, SCRUT_LOAD = false;
 function loadScrut() { if (SCRUT_LOAD) return; SCRUT_LOAD = true; fetch('data/votes.json', { cache: 'no-cache' }).then((r) => r.json()).then((j) => { SCRUT = j; renderPartis(); }).catch(() => {}); }
 const VCOL = { pour: '#3B7DD8', contre: '#E2566B', abst: '#9AA3AF' };
-function hemicycle(v) {
+function hemicycle(v, onPick) {
   const ns = 'http://www.w3.org/2000/svg', mk = (t, at) => { const e = document.createElementNS(ns, t); for (const k in at) e.setAttribute(k, at[k]); return e; };
   const N = 577, ROWS = 11, r0 = 34, r1 = 96, cx = 100, cy = 100;
   const radii = [...Array(ROWS).keys()].map((i) => r0 + (r1 - r0) * i / (ROWS - 1)), tot = radii.reduce((a, b) => a + b, 0);
   const per = radii.map((r) => Math.round(N * r / tot)); per[ROWS - 1] += N - per.reduce((a, b) => a + b, 0);
   const seats = []; radii.forEach((r, i) => { const n = per[i]; for (let k = 0; k < n; k++) { const a = Math.PI - Math.PI * k / (n - 1); seats.push({ a, x: cx + r * Math.cos(a), y: cy - r * Math.sin(a) }); } });
   seats.sort((p, q) => q.a - p.a);
-  const byG = new Map(v.groupes.map((g) => [g.g, g])); const st = [];
-  for (const k of SCRUT.ordre) { const g = byG.get(k); if (!g) continue; const abs = g.membres - g.pour - g.contre - g.abst;
-    st.push(...Array(g.pour).fill('pour'), ...Array(g.abst).fill('abst'), ...Array(g.contre).fill('contre'), ...Array(Math.max(abs, 0)).fill('')); }
-  const svg = mk('svg', { viewBox: '0 0 200 104', class: 'hemi', role: 'img', 'aria-label': `Hémicycle : ${v.pour} pour, ${v.contre} contre, ${v.abst} abstentions` });
-  seats.forEach((p, i) => { const c = st[i]; svg.append(mk('circle', c ? { cx: p.x.toFixed(2), cy: p.y.toFixed(2), r: 2.15, fill: VCOL[c] } : { cx: p.x.toFixed(2), cy: p.y.toFixed(2), r: 1.75, fill: 'none', stroke: '#C9D0DC', 'stroke-width': 0.6 })); });
+  const byG = new Map(v.groupes.map((g) => [g.g, g])); const st = [], sg = [], spans = [];
+  for (const k of SCRUT.ordre) { const g = byG.get(k); if (!g) continue; const abs = g.membres - g.pour - g.contre - g.abst; const from = st.length;
+    st.push(...Array(g.pour).fill('pour'), ...Array(g.abst).fill('abst'), ...Array(g.contre).fill('contre'), ...Array(Math.max(abs, 0)).fill('')); sg.push(...Array(st.length - from).fill(k)); spans.push([k, from, st.length - 1]); }
+  const svg = mk('svg', { viewBox: '-18 -18 236 122', class: 'hemi', role: 'img', 'aria-label': `Hémicycle : ${v.pour} pour, ${v.contre} contre, ${v.abst} abstentions` });
+  const dots = [];
+  seats.forEach((p, i) => { const c = st[i], g = sg[i] || ''; const e = mk('circle', c ? { cx: p.x.toFixed(2), cy: p.y.toFixed(2), r: 2.15, fill: VCOL[c] } : { cx: p.x.toFixed(2), cy: p.y.toFixed(2), r: 1.75, fill: 'none', stroke: '#C9D0DC', 'stroke-width': 0.6 }); e.dataset.g = g; dots.push(e); svg.append(e); });
+  spans.forEach(([k, a, b], n) => {
+    const a1 = seats[a].a, a2 = seats[b].a, am = (a1 + a2) / 2;
+    if (n > 0) { const x1 = cx + 30 * Math.cos(a1 + 0.004), y1 = cy - 30 * Math.sin(a1 + 0.004), x2 = cx + 99.5 * Math.cos(a1 + 0.004), y2 = cy - 99.5 * Math.sin(a1 + 0.004); svg.append(mk('line', { x1, y1, x2, y2, stroke: 'var(--fg)', 'stroke-width': 0.35, opacity: 0.35 })); }
+    const deg = -am * 180 / Math.PI, lx = cx + 101.5 * Math.cos(am), ly = cy - 101.5 * Math.sin(am), left = am > Math.PI / 2;
+    const t = mk('text', { x: lx, y: ly, class: 'hlab', transform: `rotate(${left ? deg + 180 : deg} ${lx} ${ly})`, 'text-anchor': left ? 'end' : 'start', 'dominant-baseline': 'middle' });
+    t.textContent = k === 'LFI' ? 'LFI' : k; t.dataset.g = k; svg.append(t);
+  });
+  const pick = (k) => { for (const d of dots) d.style.opacity = !k || d.dataset.g === k ? 1 : 0.18; for (const t of svg.querySelectorAll('.hlab')) t.classList.toggle('on', t.dataset.g === k); if (onPick) onPick(k); };
+  svg.addEventListener('click', (e) => { const k = e.target.dataset && e.target.dataset.g; pick(k && svg.dataset.sel !== k ? k : ''); svg.dataset.sel = k && svg.dataset.sel !== k ? k : ''; });
+  svg.pick = pick;
   return svg;
 }
 function voteCard(v) {
   const d = el('div', 'vcard');
   const top = el('div', 'vtop'); top.append(el('span', 'vdate', fdateLong(v.date)), el('span', 'vres ' + (v.adopte ? 'ok' : 'ko'), v.adopte ? 'Adopté' : 'Rejeté')); d.append(top);
-  d.append(el('h3', null, v.titre), el('p', 'muted', v.contexte), hemicycle(v));
+  const info = el('div', 'hinfo'); const lbl = (k) => { if (!k) { info.textContent = 'Touchez un groupe sur le schéma pour voir son vote.'; info.classList.remove('on'); return; } const g = v.groupes.find((x) => x.g === k); const parts = []; if (g.pour) parts.push(g.pour + ' pour'); if (g.contre) parts.push(g.contre + ' contre'); if (g.abst) parts.push(g.abst + ' abst.'); const abs = g.membres - g.pour - g.contre - g.abst; if (abs > 0) parts.push(abs + ' absents'); info.replaceChildren(el('b', null, SCRUT.groupes[k].nom + ' (' + k + ')'), el('br'), parts.join(' · ')); info.classList.add('on'); };
+  const hs = hemicycle(v, lbl); lbl('');
+  d.append(el('h3', null, v.titre), el('p', 'muted', v.contexte), hs, info);
   const t = el('div', 'vtot'); [['pour', '✓', v.pour, 'pour'], ['abst', '–', v.abst, 'abstentions'], ['contre', '✕', v.contre, 'contre']].forEach(([k, ic, n, l]) => { const s = el('span', 'vt ' + k); s.append(el('i', null, ic), el('b', null, String(n)), el('small', null, l)); t.append(s); }); d.append(t);
-  const votants = v.pour + v.contre + v.abst; d.append(el('p', 'muted src', `${votants} députés sur 577 ont pris part au vote. Chaque point est un député, rangé avec son groupe, de la gauche à la droite de l’hémicycle. Les cercles vides : absents ou sièges vacants.`));
+  const votants = v.pour + v.contre + v.abst; d.append(el('p', 'muted src', `${votants} députés sur 577 ont pris part au vote. Chaque point est un député, rangé avec son groupe (sigle au bord du schéma), de la gauche à la droite de l’hémicycle. Les cercles vides : absents ou sièges vacants.`));
   const det = el('details', 'vdet'); det.append(el('summary', null, 'Le vote de chaque groupe'));
   for (const k of SCRUT.ordre) { const g = v.groupes.find((x) => x.g === k); if (!g) continue; const row = el('div', 'vg');
     const bar = el('div', 'vbar'); [['pour', g.pour], ['abst', g.abst], ['contre', g.contre]].forEach(([c, n]) => { if (n) { const i = el('i'); i.style.width = (n / g.membres * 100) + '%'; i.style.background = VCOL[c]; bar.append(i); } });
     const parts = []; if (g.pour) parts.push(g.pour + ' pour'); if (g.contre) parts.push(g.contre + ' contre'); if (g.abst) parts.push(g.abst + ' abst.');
-    row.append(el('b', null, SCRUT.groupes[k].nom), bar, el('span', 'muted src', (parts.join(' · ') || 'aucun vote') + ' · ' + g.membres + ' membres')); det.append(row); }
+    row.onclick = () => { hs.pick(k); hs.dataset.sel = k; hs.scrollIntoView({ block: 'center', behavior: 'smooth' }); }; row.style.cursor = 'pointer';
+    row.append(el('b', null, SCRUT.groupes[k].nom + ' (' + k + ')'), bar, el('span', 'muted src', (parts.join(' · ') || 'aucun vote') + ' · ' + g.membres + ' membres')); det.append(row); }
   d.append(det);
   const q = QUIZ && QUIZ.questions.find((x) => x.id === v.q); const f = el('p', 'muted src');
   if (q) f.append('Lié à la question du test : « ' + q.q + ' » · ');
