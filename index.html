@@ -256,7 +256,12 @@ details.qexp { margin:4px 0 12px; font-size:14px; } details.qexp summary { color
 .vsearch { width:100%; font:inherit; font-size:16px; padding:10px 12px; border:1px solid var(--line); border-radius:12px; background:var(--white); color:var(--fg); box-sizing:border-box; }
 .vres button, .vgeo { display:block; width:100%; text-align:left; font:inherit; font-size:15px; padding:10px 4px; background:none; border:0; border-bottom:1px solid var(--line); color:var(--fg); cursor:pointer; }
 .vgeo { color:var(--accent); border:0; padding:12px 4px 6px; } .vr { display:flex; gap:6px; margin:10px 0; } .vr button { flex:1; font:inherit; padding:8px; border:1px solid var(--line); border-radius:20px; background:var(--panel); color:var(--fg); } .vr button.on { background:var(--accent); color:var(--white); border-color:var(--accent); }
-.vh { margin:18px 0 6px; } .vcard { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:14px 14px 10px; margin:10px 0 14px; }
+.vh { margin:18px 0 6px; } .vintro { font-size:16px; margin:2px 0 4px; } .vhow summary { color:var(--accent); font-size:14px; cursor:pointer; margin-bottom:6px; }
+.vsplit { display:flex; height:12px; border-radius:8px; overflow:hidden; margin:10px 0 4px; } .vsplit i { display:block; } .vsplit .p { background:#3B7DD8; } .vsplit .c { background:#E2566B; }
+.vnums { display:flex; justify-content:space-between; font-weight:600; font-size:15px; margin-bottom:10px; } .vnums .p { color:#3B7DD8; } .vnums .c { color:#E2566B; }
+.vrow { display:flex; gap:10px; align-items:flex-start; margin:10px 0; } .vrow b { font-size:14px; }
+.vic { flex:none; width:26px; height:26px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; } .vrow.pour .vic { background:#3B7DD8; } .vrow.contre .vic { background:#E2566B; } .vrow.abst .vic, .vrow.div .vic { background:#9AA3AF; }
+.vchips { display:flex; flex-wrap:wrap; gap:5px; margin-top:4px; } .vchip { font-size:13px; padding:3px 9px; border-radius:12px; background:var(--bg); border:1px solid var(--line); } .vcard { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:14px 14px 10px; margin:10px 0 14px; }
 .vcard h3 { margin:6px 0 4px; font-size:19px; } .vtop { display:flex; justify-content:space-between; align-items:center; font-size:13px; color:var(--muted); }
 .vres { font-weight:600; padding:2px 10px; border-radius:12px; color:#fff; } .vres.ok { background:#3B7DD8; } .vres.ko { background:#E2566B; }
 .hlab { font-size:5.2px; font-weight:600; fill:var(--muted); cursor:pointer; } .hlab.on { fill:var(--accent); font-size:6px; } .hemi circle { cursor:pointer; transition:opacity .15s; }
@@ -1539,32 +1544,38 @@ function hemicycle(v, onPick) {
   svg.pick = pick;
   return svg;
 }
+function groupPos(g) { const e = g.pour + g.contre + g.abst; if (!e) return 'abs'; for (const k of ['pour', 'contre', 'abst']) if (g[k] / e >= 2 / 3) return k; return 'div'; }
 function voteCard(v) {
   const d = el('div', 'vcard');
   const top = el('div', 'vtop'); top.append(el('span', 'vdate', fdateLong(v.date)), el('span', 'vres ' + (v.adopte ? 'ok' : 'ko'), v.adopte ? 'Adopté' : 'Rejeté')); d.append(top);
-  const info = el('div', 'hinfo'); const lbl = (k) => { if (!k) { info.textContent = 'Touchez un groupe sur le schéma pour voir son vote.'; info.classList.remove('on'); return; } const g = v.groupes.find((x) => x.g === k); const parts = []; if (g.pour) parts.push(g.pour + ' pour'); if (g.contre) parts.push(g.contre + ' contre'); if (g.abst) parts.push(g.abst + ' abst.'); const abs = g.membres - g.pour - g.contre - g.abst; if (abs > 0) parts.push(abs + ' absents'); info.replaceChildren(el('b', null, SCRUT.groupes[k].nom + ' (' + k + ')'), el('br'), parts.join(' · ')); info.classList.add('on'); };
+  d.append(el('h3', null, v.titre));
+  const ex = v.pour + v.contre, bar = el('div', 'vsplit'); const bp = el('i', 'p'); bp.style.width = (v.pour / ex * 100) + '%'; const bc = el('i', 'c'); bc.style.width = (v.contre / ex * 100) + '%'; bar.append(bp, bc);
+  const nums = el('div', 'vnums'); nums.append(el('span', 'p', v.pour + ' pour'), el('span', 'c', v.contre + ' contre')); d.append(bar, nums);
+  const rows = { pour: [], contre: [], abst: [], div: [] };
+  for (const k of SCRUT.ordre) { const g = v.groupes.find((x) => x.g === k); if (!g) continue; const p = groupPos(g); if (rows[p]) rows[p].push(k); }
+  const L = { pour: ['✓', 'Ont voté pour'], contre: ['✕', 'Ont voté contre'], abst: ['–', 'Se sont abstenus'], div: ['≈', 'Divisés'] };
+  for (const p of ['pour', 'contre', 'abst', 'div']) { if (!rows[p].length) continue; const r = el('div', 'vrow ' + p); r.append(el('span', 'vic', L[p][0]));
+    const w = el('div'); w.append(el('b', null, L[p][1])); const ch = el('div', 'vchips'); rows[p].forEach((k) => ch.append(el('span', 'vchip', SCRUT.groupes[k].court || k))); w.append(ch); r.append(w); d.append(r); }
+  const det = el('details', 'vdet'); det.append(el('summary', null, 'Voir le détail'));
+  const info = el('div', 'hinfo'); const lbl = (k) => { if (!k) { info.textContent = 'Touchez un groupe sur le schéma pour voir son vote.'; info.classList.remove('on'); return; } const g = v.groupes.find((x) => x.g === k); const parts = []; if (g.pour) parts.push(g.pour + ' pour'); if (g.contre) parts.push(g.contre + ' contre'); if (g.abst) parts.push(g.abst + ' abst.'); const abs = g.membres - g.pour - g.contre - g.abst; if (abs > 0) parts.push(abs + ' absents'); info.replaceChildren(el('b', null, SCRUT.groupes[k].court || k), el('br'), parts.join(' · ')); info.classList.add('on'); };
   const hs = hemicycle(v, lbl); lbl('');
-  d.append(el('h3', null, v.titre), el('p', 'muted', v.contexte), hs, info);
-  const t = el('div', 'vtot'); [['pour', '✓', v.pour, 'pour'], ['abst', '–', v.abst, 'abstentions'], ['contre', '✕', v.contre, 'contre']].forEach(([k, ic, n, l]) => { const s = el('span', 'vt ' + k); s.append(el('i', null, ic), el('b', null, String(n)), el('small', null, l)); t.append(s); }); d.append(t);
-  const votants = v.pour + v.contre + v.abst; d.append(el('p', 'muted src', `${votants} députés sur 577 ont pris part au vote. Chaque point est un député, rangé avec son groupe (sigle au bord du schéma), de la gauche à la droite de l’hémicycle. Les cercles vides : absents ou sièges vacants.`));
-  const det = el('details', 'vdet'); det.append(el('summary', null, 'Le vote de chaque groupe'));
+  det.append(el('p', 'muted', v.contexte), hs, info, el('p', 'muted src', `${v.pour + v.contre + v.abst} députés sur 577 ont voté, dont ${v.abst} abstentions. Chaque point est un député, rangé avec son groupe. Cercles vides : absents.`));
   for (const k of SCRUT.ordre) { const g = v.groupes.find((x) => x.g === k); if (!g) continue; const row = el('div', 'vg');
-    const bar = el('div', 'vbar'); [['pour', g.pour], ['abst', g.abst], ['contre', g.contre]].forEach(([c, n]) => { if (n) { const i = el('i'); i.style.width = (n / g.membres * 100) + '%'; i.style.background = VCOL[c]; bar.append(i); } });
+    const b2 = el('div', 'vbar'); [['pour', g.pour], ['abst', g.abst], ['contre', g.contre]].forEach(([c, n]) => { if (n) { const i = el('i'); i.style.width = (n / g.membres * 100) + '%'; i.style.background = VCOL[c]; b2.append(i); } });
     const parts = []; if (g.pour) parts.push(g.pour + ' pour'); if (g.contre) parts.push(g.contre + ' contre'); if (g.abst) parts.push(g.abst + ' abst.');
     row.onclick = () => { hs.pick(k); hs.dataset.sel = k; hs.scrollIntoView({ block: 'center', behavior: 'smooth' }); }; row.style.cursor = 'pointer';
-    row.append(el('b', null, SCRUT.groupes[k].nom + ' (' + k + ')'), bar, el('span', 'muted src', (parts.join(' · ') || 'aucun vote') + ' · ' + g.membres + ' membres')); det.append(row); }
-  d.append(det);
+    row.append(el('b', null, SCRUT.groupes[k].court || k), b2, el('span', 'muted src', (parts.join(' · ') || 'aucun vote') + ' · ' + g.membres + ' députés')); det.append(row); }
   const q = QUIZ && QUIZ.questions.find((x) => x.id === v.q); const f = el('p', 'muted src');
-  if (q) f.append('Lié à la question du test : « ' + q.q + ' » · ');
-  f.append(link('Scrutin n°' + v.scrutin + ' sur le site de l’Assemblée', v.url)); d.append(f);
+  if (q) f.append('Question du test liée : « ' + q.q + ' » · ');
+  f.append(link('Scrutin officiel n°' + v.scrutin, v.url)); det.append(f);
+  d.append(det);
   return d;
 }
 function renderVotes() {
   const box = $('c-votes'); if (!box) return;
   if (!SCRUT) { box.replaceChildren(el('p', 'muted', 'Chargement des votes…')); return; }
-  box.replaceChildren(el('p', 'muted', 'Comment les députés ont voté sur des sujets du test « Quel candidat pense comme moi ? ». Seuls les votes de l’Assemblée actuelle, élue en juillet 2024, sont retenus. Chiffres officiels de l’Assemblée nationale.'),
-    el('p', 'muted src', 'Un groupe de députés n’est pas un candidat : certains candidats n’ont pas de groupe à l’Assemblée, et les députés d’un même groupe ne votent pas toujours pareil.'),
-    ...SCRUT.votes.map(voteCard));
+  const how = el('details', 'vhow'); how.append(el('summary', null, 'Comment lire'), el('p', 'muted src', 'Un groupe est classé « pour » ou « contre » quand au moins deux tiers de ses députés présents ont voté ainsi, sinon il est « divisé ». Seuls les votes de l’Assemblée élue en juillet 2024 sont retenus, sur des sujets du test. Un groupe de députés n’est pas un candidat. Chiffres officiels de l’Assemblée nationale.'));
+  box.replaceChildren(el('p', 'vintro', 'Ce que les députés ont voté sur les grands sujets de la campagne.'), how, ...SCRUT.votes.map(voteCard));
 }
 function renderPartis() {
   const box = $('c-partis'); if (!box || !CAND) return;

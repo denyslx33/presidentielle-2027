@@ -17,40 +17,52 @@
  ],
  "groupes": {
   "RN": {
-   "nom": "Rassemblement National"
+   "nom": "Rassemblement National",
+   "court": "Rassemblement national"
   },
   "EPR": {
-   "nom": "Ensemble pour la République"
+   "nom": "Ensemble pour la République",
+   "court": "Renaissance (EPR)"
   },
   "LFI": {
-   "nom": "La France insoumise - NFP"
+   "nom": "La France insoumise - NFP",
+   "court": "La France insoumise"
   },
   "SOC": {
-   "nom": "Socialistes et apparentés"
+   "nom": "Socialistes et apparentés",
+   "court": "Socialistes"
   },
   "DR": {
-   "nom": "Droite Républicaine"
+   "nom": "Droite Républicaine",
+   "court": "Les Républicains (DR)"
   },
   "ECOS": {
-   "nom": "Écologiste et Social"
+   "nom": "Écologiste et Social",
+   "court": "Écologistes"
   },
   "DEM": {
-   "nom": "Les Démocrates"
+   "nom": "Les Démocrates",
+   "court": "MoDem"
   },
   "HOR": {
-   "nom": "Horizons & Indépendants"
+   "nom": "Horizons & Indépendants",
+   "court": "Horizons"
   },
   "LIOT": {
-   "nom": "Libertés, Indépendants, Outre-mer et Territoires"
+   "nom": "Libertés, Indépendants, Outre-mer et Territoires",
+   "court": "LIOT (indépendants)"
   },
   "GDR": {
-   "nom": "Gauche Démocrate et Républicaine"
+   "nom": "Gauche Démocrate et Républicaine",
+   "court": "Communistes et ultramarins (GDR)"
   },
   "UDR": {
-   "nom": "Union des droites pour la République"
+   "nom": "Union des droites pour la République",
+   "court": "UDR"
   },
   "NI": {
-   "nom": "Non inscrits"
+   "nom": "Non inscrits",
+   "court": "Non inscrits"
   }
  },
  "partis": {
