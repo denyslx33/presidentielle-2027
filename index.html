@@ -1520,7 +1520,7 @@ const nomParti = (p) => (p || '').split(' (')[0].trim();
 let SCRUT = null, SCRUT_LOAD = false;
 function loadScrut() { if (SCRUT_LOAD) return; SCRUT_LOAD = true; fetch('data/votes.json', { cache: 'no-cache' }).then((r) => r.json()).then((j) => { SCRUT = j; renderPartis(); }).catch(() => {}); }
 const VCOL = { pour: '#3B7DD8', contre: '#E2566B', abst: '#9AA3AF' };
-function hemicycle(v, onPick) {
+function hemiVote(v, onPick) {
   const ns = 'http://www.w3.org/2000/svg', mk = (t, at) => { const e = document.createElementNS(ns, t); for (const k in at) e.setAttribute(k, at[k]); return e; };
   const N = 577, ROWS = 11, r0 = 34, r1 = 96, cx = 100, cy = 100;
   const radii = [...Array(ROWS).keys()].map((i) => r0 + (r1 - r0) * i / (ROWS - 1)), tot = radii.reduce((a, b) => a + b, 0);
@@ -1560,7 +1560,7 @@ function voteCard(v) {
     const w = el('div'); w.append(el('b', null, L[p][1])); const ch = el('div', 'vchips'); rows[p].forEach((k) => ch.append(el('span', 'vchip', SCRUT.groupes[k].court || k))); w.append(ch); r.append(w); d.append(r); }
   const det = el('details', 'vdet'); det.append(el('summary', null, 'Voir le détail'));
   const info = el('div', 'hinfo'); const lbl = (k) => { if (!k) { info.textContent = 'Touchez un groupe sur le schéma pour voir son vote.'; info.classList.remove('on'); return; } const g = v.groupes.find((x) => x.g === k); const parts = []; if (g.pour) parts.push(g.pour + ' pour'); if (g.contre) parts.push(g.contre + ' contre'); if (g.abst) parts.push(g.abst + ' abst.'); const abs = g.membres - g.pour - g.contre - g.abst; if (abs > 0) parts.push(abs + ' absents'); info.replaceChildren(el('b', null, SCRUT.groupes[k].court || k), el('br'), parts.join(' · ')); info.classList.add('on'); };
-  const hs = hemicycle(v, lbl); lbl('');
+  const hs = hemiVote(v, lbl); lbl('');
   det.append(el('p', 'muted', v.contexte), hs, info, el('p', 'muted src', `${v.pour + v.contre + v.abst} députés sur 577 ont voté, dont ${v.abst} abstentions. Chaque point est un député, rangé avec son groupe. Cercles vides : absents.`));
   for (const k of SCRUT.ordre) { const g = v.groupes.find((x) => x.g === k); if (!g) continue; const row = el('div', 'vg');
     const b2 = el('div', 'vbar'); [['pour', g.pour], ['abst', g.abst], ['contre', g.contre]].forEach(([c, n]) => { if (n) { const i = el('i'); i.style.width = (n / g.membres * 100) + '%'; i.style.background = VCOL[c]; b2.append(i); } });
