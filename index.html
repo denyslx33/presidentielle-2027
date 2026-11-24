@@ -575,7 +575,9 @@ const MOIS = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.
 const fdateLong = (s) => { const [y, m, d] = s.split('-'); return +d + ' ' + MOIS[+m - 1] + ' ' + y; };
 const nomFamille = (n) => n.split(' ').slice(1).join(' ').replace(/^de /, '');
 const AVC = ['#204A94','#4D87F4','#7DC3FB','#06A067','#74C566','#C7E7A4','#DBE64C','#AB8AE8','#403F7A','#675BCF','#ACB9FF','#D5A5E3','#D83041','#A52A3D','#EE9E42'];
-const avColor = (id) => { const i = CAND ? CAND.principaux.findIndex((c) => c.id === id) : -1; if (i >= 0) return AVC[i % AVC.length]; let h = 0; for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0; return AVC[h % AVC.length]; };
+// Une couleur fixe par candidat (palette d'Inès), la même partout : avatars, pastilles, courbes, barres.
+const CAND_COL = { lepen:'#204A94', melenchon:'#D83041', lisnard:'#EE9E42', glucksmann:'#06A067', philippe:'#675BCF', attal:'#4D87F4', retailleau:'#A52A3D', riner:'#403F7A', zemmour:'#AB8AE8', tondelier:'#74C566', villepin:'#7DC3FB', roussel:'#D5A5E3', polony:'#ACB9FF', 'dupont-aignan':'#C7E7A4', arthaud:'#DBE64C' };
+const avColor = (id) => { if (CAND_COL[id]) return CAND_COL[id]; let h = 0; for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0; return AVC[h % AVC.length]; };
 const avatar = (c) => {
   const a = el('span', 'av', c.nom.split(' ').filter((w) => /^[A-ZÉÈ]/.test(w)).map((w) => w[0]).slice(0, 2).join(''));
   a.style.background = avColor(c.id); a.setAttribute('aria-hidden', 'true');
@@ -649,8 +651,7 @@ function renderSondages() {
   const prevMap = new Map(prev ? prev.scores.map((s) => [s.nom, s.v]) : []);
   const cur = last.scores.slice().sort((a, b) => b.v - a.v);
   const names = cur.slice(0, 8).map((s) => s.nom);
-  const col = new Map(names.map((n, i) => [n, COLORS[i]]));
-  if (col.has('Marine Le Pen')) col.set('Jordan Bardella', col.get('Marine Le Pen'));
+  const col = new Map(names.map((n) => [n, colorFor(n)])); col.set('Jordan Bardella', colorFor('Marine Le Pen'));
   const [a, b, c] = cur;
   $('lede').textContent = `${a.nom} est en tête avec ${fmt(a.v)} %, devant ${b.nom} (${fmt(b.v)} %) et ${c.nom} (${fmt(c.v)} %).`;
   const src = $('source'); src.replaceChildren(pollMeta(last) + ', ' + margTxt(last.scores) + '.' + (prev ? ` Évolution par rapport à son sondage du ${fdate(prev.date)}.` : ''));
@@ -756,7 +757,12 @@ function buildDuels(raw, extra) {
   }
   return [...d.values()].sort((a, b) => b.last.date.localeCompare(a.last.date) || b.n - a.n);
 }
-function colorFor(nom) { const c = CAND && CAND.principaux.find((x) => x.nom === nom); return c ? avColor(c.id) : '#8B9FC2'; }
+const nNom = (x) => x.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z]/g, '');
+function candByNom(nom) {
+  if (!CAND) return null; const k = nNom(nom === 'Jordan Bardella' ? 'Marine Le Pen' : nom);
+  return CAND.principaux.find((x) => nNom(x.nom) === k) || CAND.principaux.find((x) => k.endsWith(nNom(x.nom.split(' ').slice(-1)[0]))) || null;
+}
+function colorFor(nom) { const c = candByNom(nom); return c ? avColor(c.id) : '#8B9FC2'; }
 function duelRow(o) {
   const [a, b] = o.last.s; const tot = a.v + b.v;
   const r = el('div', 'duel');
