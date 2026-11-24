@@ -668,6 +668,7 @@ h3 { font-size:20px; font-weight:600; }
 </nav>
 
 <script>
+const DEJA_VENU = (() => { try { return ['visite', 'iconNV', 'iconV2', 'quizSeen', 'quizRun', 'mv', 'ca'].some((k) => localStorage.getItem(k) !== null); } catch (e) { return false; } })();
 // iPhone installé avant le nouveau logo : prévenir une seule fois pour réinstaller (icône figée par iOS)
 (() => { try {
   const ios = /iPhone|iPad|iPod/.test(navigator.userAgent) && navigator.standalone === true;
@@ -1147,7 +1148,7 @@ function renderHomeTP() {
   out.push(el('p', 'muted', 'Les 5 temps de parole les plus longs' + (TP.periode ? ', ' + TP.periode : '') + '. Le temps attendu pour chacun dépend de la période de campagne.'));
   $('h-tp-in').replaceChildren(...out);
 }
-const NEWS = { v: '2026-11-24', items: [
+const NEWS = { v: '2026-11-24b', items: [
   'Mes favoris : touchez l’étoile sur la fiche d’un ou deux candidats, leurs dernières actus s’affichent en haut de l’accueil.',
   'Le test pose maintenant 25 questions, avec un « C’est quoi ? » pour les sujets techniques.',
   'À la fin du test : votre sensibilité sur quatre grands thèmes, et un score plus clair.',
@@ -1156,7 +1157,7 @@ const NEWS = { v: '2026-11-24', items: [
 ] };
 function showNews() {
   try {
-    const revenu = localStorage.getItem('visite') === '1'; localStorage.setItem('visite', '1');
+    const revenu = DEJA_VENU; localStorage.setItem('visite', '1');
     if (!revenu) { localStorage.setItem('newsV', NEWS.v); return; }
     if (localStorage.getItem('newsV') === NEWS.v || !$('icon-sheet').hidden) return;
     localStorage.setItem('newsV', NEWS.v);
