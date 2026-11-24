@@ -13,8 +13,8 @@
     "Rouvrir maternités, cliniques et centres de santé fermés"
    ],
    "source_mesures": {
-    "nom": "Votons 2027 (d'après Lutte ouvrière)",
-    "url": "https://votons-2027.fr/candidats/arthaud/programme"
+    "nom": "Lutte ouvrière, document de campagne",
+    "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/11/Depliant-NA-3nov.pdf"
    },
    "parrainages": {
     "texte": "Aucun chiffre revendiqué. A toujours obtenu ses signatures jusqu'ici.",
@@ -25,7 +25,7 @@
    "programme": {
     "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/11/Depliant-NA-3nov.pdf",
     "note": null,
-    "recap": "https://votons-2027.fr/candidats/arthaud/programme",
+    "recap": null,
     "themes": [
      {
       "theme": "Économie",
@@ -91,8 +91,8 @@
     "Tripler le rythme de baisse des émissions d'ici 2030"
    ],
    "source_mesures": {
-    "nom": "Votons 2027",
-    "url": "https://votons-2027.fr/candidats/attal/programme"
+    "nom": "Site de campagne de Gabriel Attal",
+    "url": "https://attalpresident.fr/programme"
    },
    "parrainages": {
     "texte": "Soutien de 500 élus locaux affiché en mai (pas tous maires).",
@@ -107,7 +107,7 @@
    "programme": {
     "url": "https://attalpresident.fr/programme",
     "note": null,
-    "recap": "https://votons-2027.fr/candidats/attal/programme",
+    "recap": null,
     "themes": [
      {
       "theme": "Économie",
@@ -191,8 +191,8 @@
     "Passer de 577 à 500 députés"
    ],
    "source_mesures": {
-    "nom": "Votons 2027 (d'après Debout la France)",
-    "url": "https://votons-2027.fr/candidats/dupont-aignan/programme"
+    "nom": "Debout la France",
+    "url": "https://www.debout-la-france.fr/notre-projet/"
    },
    "parrainages": {
     "texte": "Aucun chiffre revendiqué pour 2027. Les avait obtenues en 2022.",
@@ -203,7 +203,7 @@
    "programme": {
     "url": "https://www.debout-la-france.fr/notre-projet/",
     "note": null,
-    "recap": "https://votons-2027.fr/candidats/dupont-aignan/programme",
+    "recap": null,
     "themes": [
      {
       "theme": "Économie",
@@ -287,8 +287,8 @@
     "Instaurer la proportionnelle"
    ],
    "source_mesures": {
-    "nom": "Votons 2027 (d'après Place publique)",
-    "url": "https://votons-2027.fr/candidats/glucksmann/programme"
+    "nom": "Place publique",
+    "url": "https://place-publique.eu/pages/6mRSwq5tuSrSi68Cw1IADX/l-acte-i"
    },
    "parrainages": {
     "texte": "Vu comme une formalité : le PS revendique 800 maires.",
@@ -299,7 +299,7 @@
    "programme": {
     "url": "https://place-publique.eu/pages/6mRSwq5tuSrSi68Cw1IADX/l-acte-i",
     "note": "Programme de Place publique, environ 280 mesures, ici un aperçu.",
-    "recap": "https://votons-2027.fr/candidats/glucksmann/programme",
+    "recap": null,
     "themes": [
      {
       "theme": "Économie",
@@ -388,8 +388,8 @@
     "Retraites : 15 à 20 Md€ d'économies à terme"
    ],
    "source_mesures": {
-    "nom": "LCP, L'Essentiel de l'éco, Votons 2027",
-    "url": "https://votons-2027.fr/candidats/le-pen/programme"
+    "nom": "Rassemblement national, LCP, L'Essentiel de l'éco",
+    "url": "https://rassemblementnational.fr/22-mesures"
    },
    "parrainages": {
     "texte": "Plus de 400 promesses revendiquées par le RN.",
@@ -404,7 +404,7 @@
    "programme": {
     "url": "https://rassemblementnational.fr/22-mesures",
     "note": "Le programme 2027 complet n'est pas encore publié. Ces mesures viennent du programme présidentiel du RN (« 22 mesures », campagne 2022) repris sur son site.",
-    "recap": "https://votons-2027.fr/candidats/le-pen/programme",
+    "recap": null,
     "themes": [
      {
       "theme": "Économie",
@@ -491,8 +491,8 @@
     "Diviser par huit les titres de séjour délivrés"
    ],
    "source_mesures": {
-    "nom": "Votons 2027 (d'après Nouvelle Énergie)",
-    "url": "https://votons-2027.fr/candidats/lisnard/programme"
+    "nom": "Nouvelle Énergie",
+    "url": "https://www.unenouvelleenergie.fr/notre-programme/"
    },
    "parrainages": {
     "texte": "Revendique ses 500 promesses (2 sept., confirmé le 3 nov. sur BFMTV).",
@@ -503,7 +503,7 @@
    "programme": {
     "url": "https://www.unenouvelleenergie.fr/notre-programme/",
     "note": "Programme de Nouvelle Énergie, environ 245 mesures, ici un aperçu.",
-    "recap": "https://votons-2027.fr/candidats/lisnard/programme",
+    "recap": null,
     "themes": [
      {
       "theme": "Économie",
@@ -592,8 +592,8 @@
     "Baisse de 65 % des émissions d'ici 2033"
    ],
    "source_mesures": {
-    "nom": "Votons 2027 (d'après L'Avenir en commun 2027)",
-    "url": "https://votons-2027.fr/candidats/melenchon/programme"
+    "nom": "L'Avenir en commun 2027",
+    "url": "https://melenchon2027.fr/programme/livre/"
    },
    "parrainages": {
     "texte": "LFI reconnaît des difficultés. Un peu plus de 200 promesses fin août. 906 parrainages obtenus en 2022.",
@@ -608,7 +608,7 @@
    "programme": {
     "url": "https://melenchon2027.fr/programme/livre/",
     "note": "L'Avenir en commun, édition 2027 : plus de 1 000 mesures, ici un aperçu.",
-    "recap": "https://votons-2027.fr/candidats/melenchon/programme",
+    "recap": null,
     "themes": [
      {
       "theme": "Économie",
@@ -714,7 +714,7 @@
    "programme": {
     "url": "https://www.edouardphilippe.fr/",
     "note": "« Volume 1 » du programme présenté le 18 novembre 2026, un volume 2 est annoncé.",
-    "recap": "https://votons-2027.fr/candidats/philippe/programme",
+    "recap": null,
     "themes": [
      {
       "theme": "Économie",
@@ -804,7 +804,7 @@
    "programme": {
     "url": "https://natachapolony2027.fr/natacha-polony/ma-vision",
     "note": "Pas encore de programme détaillé : ces mesures viennent de ses prises de position publiques.",
-    "recap": "https://votons-2027.fr/candidats/polony/programme",
+    "recap": null,
     "themes": [
      {
       "theme": "Économie",
@@ -865,8 +865,8 @@
     "Réforme constitutionnelle en première grande réforme"
    ],
    "source_mesures": {
-    "nom": "Votons 2027, LCP, Public Sénat",
-    "url": "https://votons-2027.fr/candidats/retailleau/programme"
+    "nom": "Les Républicains, LCP, Public Sénat",
+    "url": "https://republicains.fr/qrtravail/"
    },
    "parrainages": {
     "texte": "Jugé assuré grâce aux centaines d'élus LR.",
@@ -881,7 +881,7 @@
    "programme": {
     "url": "https://republicains.fr/qrtravail/",
     "note": "Programme des Républicains, environ 165 mesures, ici un aperçu.",
-    "recap": "https://votons-2027.fr/candidats/retailleau/programme",
+    "recap": null,
     "themes": [
      {
       "theme": "Économie",
@@ -1067,8 +1067,8 @@
     "9 000 magistrats de plus en dix ans"
    ],
    "source_mesures": {
-    "nom": "Votons 2027 (d'après Les Écologistes)",
-    "url": "https://votons-2027.fr/candidats/tondelier/programme"
+    "nom": "Les Écologistes",
+    "url": "https://lesecologistes.fr/pages/6ImK65GKUnvibm33WGkjkj/projet-2027"
    },
    "parrainages": {
     "texte": "Dépend du vote des adhérents de décembre.",
@@ -1079,7 +1079,7 @@
    "programme": {
     "url": "https://lesecologistes.fr/pages/6ImK65GKUnvibm33WGkjkj/projet-2027",
     "note": "Projet 2027 des Écologistes, environ 290 mesures, ici un aperçu.",
-    "recap": "https://votons-2027.fr/candidats/tondelier/programme",
+    "recap": null,
     "themes": [
      {
       "theme": "Économie",
@@ -1178,7 +1178,7 @@
    "programme": {
     "url": "https://lafrancehumaniste.fr/france2027.html",
     "note": null,
-    "recap": "https://votons-2027.fr/candidats/villepin/programme",
+    "recap": null,
     "themes": [
      {
       "theme": "Économie",
@@ -1264,8 +1264,8 @@
     "Trois jours de carence pour les arrêts maladie des fonctionnaires"
    ],
    "source_mesures": {
-    "nom": "Votons 2027 (d'après Reconquête)",
-    "url": "https://votons-2027.fr/candidats/zemmour/programme"
+    "nom": "Reconquête (programme des européennes 2024)",
+    "url": "https://assets.ericzemmour.fr/document/Programme%20Reconqu%C3%AAte%20Europ%C3%A9ennes%202024.pdf"
    },
    "parrainages": {
     "texte": "Au moins 350 promesses revendiquées en septembre.",
@@ -1276,7 +1276,7 @@
    "programme": {
     "url": "https://assets.ericzemmour.fr/document/Programme%20Reconqu%C3%AAte%20Europ%C3%A9ennes%202024.pdf",
     "note": "Le programme présidentiel 2027 n'est pas encore publié. Ces mesures viennent du programme de Reconquête aux européennes 2024.",
-    "recap": "https://votons-2027.fr/candidats/zemmour/programme",
+    "recap": null,
     "themes": [
      {
       "theme": "Économie",

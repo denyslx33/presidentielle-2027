@@ -1467,7 +1467,7 @@ function renderFiche() {
       d.append(el('h3', null, 'Programme par thème'));
       if (pr.note) d.append(el('p', 'note', pr.note));
       pr.themes.forEach((t) => { const td = el('details', 'th'); td.append(el('summary', null, t.theme + ' (' + t.mesures.length + ')')); const ul = el('ul'); t.mesures.forEach((m) => ul.append(el('li', null, m))); td.append(ul); d.append(td); });
-      const p = el('p', 'muted'); if (pr.url) { p.append(link('Programme officiel', pr.url)); } if (pr.recap) { if (pr.url) p.append(' · '); p.append(link('Toutes les mesures (Votons 2027)', pr.recap)); } d.append(p);
+      const p = el('p', 'muted'); if (pr.url) { p.append(link('Programme officiel', pr.url)); } if (pr.recap) { if (pr.url) p.append(' · '); p.append(link('Synthèse des mesures', pr.recap)); } d.append(p);
     } else if (pr && pr.note) d.append(el('p', 'muted', pr.note));
     d.append(el('h3', null, 'Signatures'));
     const sp = el('p'); sp.append(c.parrainages.texte); const t1 = el('span', 'tag', 'non officiel'); sp.append(' ', t1); d.append(sp);

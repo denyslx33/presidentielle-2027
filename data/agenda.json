@@ -39,7 +39,7 @@
    "lieu": "Paris, Porte de Versailles",
    "chaine": null,
    "qui": [],
-   "url": "https://votons-2027.fr/agenda"
+   "url": null
   },
   {
    "date": "2026-11-25",
@@ -73,7 +73,7 @@
    "lieu": "Carros (Alpes-Maritimes)",
    "chaine": null,
    "qui": [],
-   "url": "https://votons-2027.fr/agenda",
+   "url": null,
    "commune": "Carros",
    "dep": "06",
    "lat": 43.785,
@@ -196,7 +196,7 @@
    "qui": [
     "arthaud"
    ],
-   "url": "https://votons-2027.fr/agenda",
+   "url": null,
    "commune": "Rouen",
    "dep": "76",
    "lat": 49.4412,
@@ -210,7 +210,7 @@
    "lieu": "Paris, Porte de Versailles",
    "chaine": null,
    "qui": [],
-   "url": "https://votons-2027.fr/agenda"
+   "url": null
   },
   {
    "date": "2027-03-12",
