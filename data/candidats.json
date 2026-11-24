@@ -728,7 +728,8 @@
      {
       "theme": "Social et santé",
       "mesures": [
-       "Stabiliser les dépenses de santé par la prévention et la technologie"
+       "Stabiliser les dépenses de santé par la prévention et la technologie",
+       "Rendre obligatoire la vaccination contre les papillomavirus"
       ]
      },
      {
@@ -826,6 +827,12 @@
       "theme": "Sécurité et justice",
       "mesures": [
        "Centres éducatifs fermés pour les jeunes en décrochage"
+      ]
+     },
+     {
+      "theme": "Immigration",
+      "mesures": [
+       "Conditionner les visas à l'acceptation des laissez-passer consulaires"
       ]
      },
      {

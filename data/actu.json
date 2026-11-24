@@ -4,6 +4,100 @@
   {
    "date": "2026-11-24",
    "qui": [
+    "philippe"
+   ],
+   "texte": "Édouard Philippe propose de rendre obligatoire la vaccination contre les papillomavirus pour éradiquer le cancer du col de l'utérus.",
+   "source": "LCP",
+   "url": "https://lcp.fr/actualites/eradiquer-le-cancer-du-col-de-l-uterus-edouard-philippe-veut-rendre-obligatoire-la"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "philippe",
+    "lisnard"
+   ],
+   "texte": "Édouard Philippe indique avoir voté pour David Lisnard à la présidence de l'Association des maires de France, et lui reproche son silence sur un éventuel second tour face à Marine Le Pen : « On peut aimer les tronçonneuses, mais pas savoir trancher ».",
+   "source": "Le Monde",
+   "url": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/24/edouard-philippe-a-vote-pour-david-lisnard-a-la-presidence-de-l-amf-mais-fustige-sa-posture-dans-la-course-a-l-elysee_6814832_6205049.html"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "riner"
+   ],
+   "texte": "Le président de la région Guadeloupe, Ary Chalus, donnera son parrainage à Teddy Riner.",
+   "source": "Ouest-France",
+   "url": "https://www.ouest-france.fr/elections/presidentielle/info-ouest-france-presidentielle-2027-pourquoi-le-guadeloupeen-ary-chalus-donnera-son-parrainage-a-teddy-riner-3fd0a0cc-e7f7-11f1-86c1-70195b4d2e52"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "lepen"
+   ],
+   "texte": "Marine Le Pen est reçue à son tour par les patrons de la grande distribution, après plusieurs autres candidats.",
+   "source": "20 Minutes",
+   "url": "https://www.20minutes.fr/politique/4265355-20261124-presidentielle-2027-plusieurs-candidats-entendus-patrons-grande-distribution-pen-derniere-date"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "lisnard",
+    "zemmour",
+    "dupont-aignan"
+   ],
+   "texte": "François Bayrou juge « contraire aux principes » la proposition d'inclure Éric Zemmour et Nicolas Dupont-Aignan dans une primaire de la droite et du centre, souhaitée par David Lisnard.",
+   "source": "Le Parisien",
+   "url": "https://www.leparisien.fr/elections/presidentielle/contraire-aux-principes-francois-bayrou-fustige-la-proposition-dinclure-eric-zemmour-et-nicolas-dupont-aignan-dans-la-primaire-24-11-2026-U5DYDDXUNRAHPCW2LQPP7KB7NQ.php"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "retailleau"
+   ],
+   "texte": "Au Congrès des maires, Bruno Retailleau promet de « libérer la France communale de la bureaucratie ».",
+   "source": "Le Parisien",
+   "url": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-bruno-retailleau-promet-aux-maires-de-liberer-la-france-communale-de-la-bureaucratie-24-11-2026-BVRX6ZJRXVA37O23PUTGI4C2IE.php"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "philippe"
+   ],
+   "texte": "Christophe Béchu, secrétaire général d'Horizons, compte sur Gérard Larcher pour départager les candidats de la droite et du centre sans primaire.",
+   "source": "Ouest-France",
+   "url": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-christophe-bechu-compte-sur-gerard-larcher-pour-departager-les-candidats-a-droite-sans-primaire-518a4fa2-e7f7-11f1-9b33-2f81462d3339",
+   "parti": true
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "melenchon"
+   ],
+   "texte": "Le mouvement L'Après, fondé par d'anciens insoumis, propose une rencontre à La France insoumise.",
+   "source": "Le Parisien",
+   "url": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-mouvement-des-ex-insoumis-lapres-propose-une-rencontre-avec-lfi-24-11-2026-3CMAVEZS4ZHE5KY7Q42I5U3OT4.php"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "melenchon"
+   ],
+   "texte": "Le député Benjamin Lucas-Lundy défend un accord de coalition entre Génération.s et La France insoumise pour la présidentielle.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-c-est-la-premiere-fois-que-je-vote-jean-luc-melenchon-le-depute-benjamin-lucas-lundy-defend-un-accord-de-coalition-entre-le-parti-gerenation-s-et-lfi_VN-202611240504.html"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "polony"
+   ],
+   "texte": "Natacha Polony propose de conditionner la délivrance de visas à certains pays à leur acceptation des laissez-passer consulaires.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/video-immigration-il-faut-conditionner-la-delivrance-de-visas-a-certains-pays-en-fonction-de-leur-acceptation-de-laisser-passer-consulaires-estime-natacha-polony-candidate-a-la-presidentielle_VN-202611240317.html"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
     "zemmour"
    ],
    "texte": "La condamnation d'Éric Zemmour pour « contestation de l'existence de crime contre l'humanité », après ses propos de 2019 sur Pétain, devient définitive.",
