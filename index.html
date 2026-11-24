@@ -14,7 +14,7 @@
 <link rel="icon" href="icon-192.png">
 <link rel="manifest" href="manifest.json">
 <style>
-:root { --bg:#F0EFF0; --panel:#FDFDFD; --fg:#011334; --muted:#8B9FC2; --line:#B1BED6; --up:#06A067; --down:#F8394C; --accent:#022E7B; --warn-bg:#F8F8F8; --warn-fg:#E0061C; --white:#FDFDFD; --night:#011334; }
+:root { --bg:#F0EFF0; --panel:#FDFDFD; --fg:#011334; --muted:#566A8E; --line:#B1BED6; --up:#06A067; --down:#F8394C; --accent:#022E7B; --warn-bg:#F8F8F8; --warn-fg:#E0061C; --white:#FDFDFD; --night:#011334; }
 * { box-sizing: border-box; }
 body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; -webkit-text-size-adjust:100%; }
 main { max-width:760px; margin:0 auto; padding: calc(env(safe-area-inset-top) + 16px) 16px calc(env(safe-area-inset-bottom) + 84px); }
@@ -259,7 +259,9 @@ h3 { font-size:20px; font-weight:600; }
 .muted, .src, .ncard .s, .back, .more, .qnav button, .row .r { font-size:16px; font-weight:400; }
 .party, .evo, .news .d, .legend, .tag, .chips button, .fbtn span.l, .dayh, .ev .kind, .ev .dt span, .tcard .party, .duel .meta, .src .muted, .hcard .hh .muted, .qz .qt, .ptag2, table, .hrow .nm small, .hrow .dv { font-size:12px; font-weight:400; }
 .tabs button { font-size:10px; font-weight:300; }
-.ncard .t, .qz .ans button, .qbtn, .hbtns button, .gcard, .note, .inscr { font-size:18px; }
+.ncard .t, .qz .ans button, .qbtn, .hbtns button, .gcard, .note { font-size:18px; }
+.inscr { font-size:16px; padding:10px 12px; }
+.hcard .hh { flex-direction:column; align-items:flex-start; gap:0; } .hcard .hh .muted { text-align:left; margin-bottom:4px; }
 .qz .qq { font-size:24px; font-weight:500; }
 .val, .cand .pct, .ev .dt b, .res .pc, .hrow .sc + .x { font-family:'Asap', sans-serif; font-size:24px; font-weight:500; font-style:normal; }
 .hrow .sc { font-family:'Asap', sans-serif; font-size:28px; font-weight:500; font-style:italic; }
@@ -283,7 +285,7 @@ h3 { font-size:20px; font-weight:600; }
   </div></div>
   <div class="jm" id="jm"></div>
   <p class="muted" id="status">Chargement…</p>
-  <div class="inscr" id="inscr"><span>🗳️</span><div>Pour voter les 18 avril et 2 mai 2027, il faut être inscrit sur les listes électorales au plus tard le <b>vendredi 12 mars 2027</b>. Même si vous avez déjà voté, vérifiez : après un déménagement, on peut ne plus être inscrit au bon endroit. <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/R51788" target="_blank" rel="noopener">Vérifier mon inscription</a> · <a href="#guide" id="inscr-guide">Guide du vote</a></div><button id="inscr-x" aria-label="Masquer">×</button></div>
+  <div class="inscr" id="inscr"><span>🗳️</span><div>Inscrivez‑vous sur les listes électorales avant le <b>vendredi 12 mars 2027</b>. <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/R51788" target="_blank" rel="noopener">Vérifier mon inscription</a> · <a href="#guide" id="inscr-guide">Guide du vote</a></div><button id="inscr-x" aria-label="Masquer">×</button></div>
 
   <!-- SONDAGES -->
   <!-- ACCUEIL -->
