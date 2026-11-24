@@ -5,9 +5,55 @@
 "t": "« Il y aura une grande clarification » : à l’Assemblée nationale, le groupe sans queue ni tête de Gabriel Attal",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/politique/il-y-aura-une-grande-clarification-a-lassemblee-nationale-le-groupe-sans-queue-ni-tete-de-gabriel-attal-24-11-2026-M45E6DYDDFHP5PI3TOGJ47KF6E.php",
-"d": "2026-11-24T04:43:37Z",
+"d": "2026-11-24T06:02:50Z",
 "qui": [
 "attal"
+]
+},
+{
+"t": "À suivre Loïc de la Mornais : Dominique de Villepin entend \"lutter contre la société d'héritiers\"",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/replay-magazine/franceinfo/a-suivre-avec-loic-de-la-mornais/a-suivre-loic-de-la-mornais-dominique-de-villepin-entend-lutter-contre-la-societe-d-heritiers_8297127.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-24T05:59:15Z",
+"qui": [
+"villepin"
+]
+},
+{
+"t": "À suivre Loïc de la Mornais : Dominique de Villepin invité exceptionnel de franceinfo",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/replay-magazine/franceinfo/a-suivre-avec-loic-de-la-mornais/a-suivre-loic-de-la-mornais-dominique-de-villepin-invite-exceptionnel-de-franceinfo_8297115.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-24T05:46:52Z",
+"qui": [
+"villepin"
+]
+},
+{
+"t": "EN DIRECT Présidentielle 2027 : La candidature de David Lisnard va agiter le congrès des maires de France…",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265257-20261124-direct-presidentielle-2027-candidature-david-lisnard-va-agiter-congres-maires-france?at_medium=display&at_campaign=149",
+"d": "2026-11-24T05:02:47Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Présidentielle 2027 : « Face au RN, beaucoup va se jouer sur la capacité d’Edouard Philippe ou de Raphaël Glucksmann à s’imposer au centre »",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/idees/article/2026/11/24/presidentielle-2027-face-au-rn-beaucoup-va-se-jouer-sur-la-capacite-d-edouard-philippe-ou-de-raphael-glucksmann-a-s-imposer-au-centre_6814705_3232.html",
+"d": "2026-11-24T05:00:24Z",
+"qui": [
+"glucksmann",
+"philippe"
+]
+},
+{
+"t": "Enquête sur des fuites présumées vers le RN : qui est Frédéric Chatillon, ex-président du GUD et ancien proche de Marine Le Pen ?",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/societe/justice/enquete-sur-des-fuites-presumees-vers-le-rn-qui-est-frederic-chatillon-ex-president-du-gud-et-ancien-proche-de-marine-le-pen_8296470.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-24T04:57:22Z",
+"qui": [
+"lepen"
 ]
 },
 {
@@ -1370,28 +1416,21 @@
 "qui": [
 "lepen"
 ]
-},
-{
-"t": "Présidentielle 2027 : quatre questions sur la « priorité nationale », au cœur du projet du RN",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/presidentielle-2027-quatre-questions-sur-la-priorite-nationale-au-cour-du-projet-du-rn-20261116",
-"d": "2026-11-17T04:59:14Z",
-"qui": []
 }
 ],
 "sources": {
 "Le Monde": 6,
-"franceinfo": 2,
-"Libération": 20,
+"franceinfo": 5,
+"Libération": 19,
 "Le Figaro": 9,
-"Le Parisien": 51,
+"Le Parisien": 49,
 "20 Minutes": 6,
 "Ouest-France": 0,
 "BFMTV": 15,
 "France 24": 8,
-"La Croix": 26,
+"La Croix": 25,
 "LCP": 34,
 "RFI": 7
 },
-"maj": "2026-11-24T04:43:37Z"
+"maj": "2026-11-24T06:02:50Z"
 }
