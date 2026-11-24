@@ -30,7 +30,7 @@ for c in cand:
     if fam not in ("philippe",) and len(fam) > 4:
         keys.append(fam)
     KEYS[c["id"]] = keys
-GENERAL = ["presidentielle", "2027", "elysee", "parrainage", "primaire", "candidat", "arcom", "conseil constitutionnel"]
+GENERAL = ["presidentielle", "elysee", "parrainage", "primaire", "candidat", "arcom", "conseil constitutionnel"]
 FOREIGN_URL = re.compile(r"/(monde|international|afrique|europe|ameriques?|asie|moyen-orient|world|etats-unis|international-[a-z]+)/", re.I)
 FOREIGN = re.compile(r"\b(nigeria|kenya|ghana|senegal|cameroun|cote d.ivoire|gabon|congo|rdc|benin|togo|mali|guinee|madagascar|tchad|burkina|niger|algerie|maroc|tunisie|egypte|liban|syrie|iran|irak|israel|russie|bielorussie|georgie|moldavie|roumanie|pologne|hongrie|serbie|portugal|espagne|italie|allemagne|autriche|irlande|islande|finlande|turquie|bresil|argentine|chili|colombie|perou|bolivie|equateur|venezuela|mexique|etats-unis|americaine?s?|trump|coree|japon|taiwan|philippines|indonesie|inde|sri lanka|haiti|comores|seychelles|maurice|centrafrique)\b")
 POLL = re.compile(r"sondage|intentions? de vote|barom[eè]tre|\d+\s?%|\bpoints?\b.*\bavance", re.I)
@@ -51,7 +51,7 @@ try:
     old = json.load(open("data/flux.json", encoding="utf-8"))
 except Exception:
     old = {"items": []}
-items = {i["u"]: i for i in old.get("items", [])} if old.get("v") == 3 else {}
+items = {i["u"]: i for i in old.get("items", [])} if old.get("v") == 4 else {}
 stats = {}
 for src, url in FEEDS:
     n = 0
@@ -101,8 +101,8 @@ for i in sorted(items.values(), key=lambda x: x["d"], reverse=True):
         continue
     seen.add(k); out.append(i)
 out = out[:200]
-new = {"v": 3, "items": out, "sources": stats}
-if old.get("v") != 3 or json.dumps(new.get("items")) != json.dumps(old.get("items")) or old.get("sources") != stats:
+new = {"v": 4, "items": out, "sources": stats}
+if old.get("v") != 4 or json.dumps(new.get("items")) != json.dumps(old.get("items")) or old.get("sources") != stats:
     new["maj"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     json.dump(new, open("data/flux.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 print(json.dumps(stats, ensure_ascii=False), len(out))
