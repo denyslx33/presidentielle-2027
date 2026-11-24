@@ -300,6 +300,12 @@ h3 { font-size:20px; font-weight:600; }
       <button type="button" id="h-prog"><span>📄</span>Programmes<small>Comparer les idées</small></button>
       <button type="button" id="h-sond"><span>📊</span>Sondages<small>Courbe et 2nd tour</small></button>
     </div>
+    <div class="hcard" id="h-poll">
+      <div class="hh"><h2>Dernier sondage</h2><span class="muted" id="h-src"></span></div>
+      <div id="h-top"></div>
+      <p class="muted legal" id="h-meta"></p>
+      <button class="more" id="h-sond2" type="button">Tous les sondages, la courbe et le 2nd tour ›</button>
+    </div>
     <div class="hcard">
       <div class="hh"><h2>Dernières actus</h2></div>
       <div id="h-actu"></div>
@@ -309,11 +315,6 @@ h3 { font-size:20px; font-weight:600; }
       <div class="hh"><h2>À la télé</h2></div>
       <div id="h-next"></div>
       <button class="more" id="h-agenda" type="button">Tout l'agenda ›</button>
-    </div>
-    <div class="hcard" id="h-poll" hidden>
-      <div class="hh"><h2>Dernier sondage</h2><span class="muted" id="h-src"></span></div>
-      <div id="h-top"></div>
-      <p class="muted legal" id="h-meta"></p>
     </div>
     <div class="hbtns hb1">
       <button type="button" id="h-guide"><span>🗳️</span>Guide du vote<small>Inscription, procuration…</small></button>
@@ -996,7 +997,7 @@ function showViewNoHist(v) { const h = location.hash; showView(v); try { history
 function renderAccueil() {
   const byId = new Map((CAND ? CAND.principaux : []).map((c) => [c.id, c]));
   const byNom = new Map((CAND ? CAND.principaux : []).map((c) => [c.nom, c]));
-  $('h-poll').hidden = true; $('h-silence').replaceChildren(...(silence() ? [silenceNote()] : []));
+  $('h-poll').hidden = silence(); $('h-silence').replaceChildren(...(silence() ? [silenceNote()] : []));
   if (POLLS && POLLS.length && !silence()) {
     const last = POLLS[0]; const prev = POLLS.slice(1).find((p) => p.institut === last.institut);
     const pm = new Map(prev ? prev.scores.map((x) => [x.nom, x.v]) : []);
@@ -1291,6 +1292,7 @@ for (const b of document.querySelectorAll('#aseg button')) b.addEventListener('c
 $('h-actus').addEventListener('click', () => { setAMode('infos'); showView('actu'); });
 $('h-test').addEventListener('click', () => showView('test'));
 $('h-prog').addEventListener('click', () => showView('programmes'));
+$('h-sond2').addEventListener('click', () => goView('sondages'));
 $('h-guide').addEventListener('click', openGuide);
 $('inscr-guide').addEventListener('click', (e) => { e.preventDefault(); openGuide(); });
 $('agenda-guide').addEventListener('click', openGuide);
