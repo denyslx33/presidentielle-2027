@@ -2,13 +2,30 @@
 "v": 4,
 "items": [
 {
-"t": "DIRECT. Présidentielle 2027: \"on peut aimer les tronçonneuses, mais pas savoir trancher”, le tacle d'Édouard Philippe à David Lisnard",
+"t": "Présidentielle 2027: Manuel Bompard et LFI souhaitent \"remettre en cause\" la règle des 500 parrainages d'élus et proposent de la remplacer par 150.000 parrainages citoyens",
 "s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html",
-"d": "2026-11-24T20:25:41Z",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-manuel-bompard-et-lfi-souhaitent-remettre-en-cause-la-regle-des-500-parrainages-d-elus-et-de-la-remplacer-par-150-000-parrainages-citoyens_AN-202611240978.html",
+"d": "2026-11-24T21:07:00Z",
+"qui": []
+},
+{
+"t": "Edouard Philippe propose un débat télévisé avant mi-décembre à David Lisnard, qu'il soupçonne de ne pas être \"étanche\" avec l'extrême droite",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/edouard-philippe-propose-un-debat-televise-avant-mi-decembre-a-david-lisnard-qu-il-soupconn-de-ne-pas-etre-etanche-avec-l-extreme-droite_8298417.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-24T21:02:56Z",
 "qui": [
 "lisnard",
 "philippe"
+]
+},
+{
+"t": "DIRECT. Présidentielle: Fabien Roussel assure qu’il ne “rejoindra pas Jean-Luc Mélenchon” et souhaite “convaincre les abstentionnistes”",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html",
+"d": "2026-11-24T20:50:36Z",
+"qui": [
+"melenchon",
+"roussel"
 ]
 },
 {
@@ -121,7 +138,7 @@
 "qui": []
 },
 {
-"t": "Présidentielle 2027 : Edouard Philippe a voté pour David Lisnard à la présidence de l’AMF, mais fustige sa posture dans la course à l’Elysée",
+"t": "Présidentielle 2027 : Edouard Philippe souhaite un débat télévisé avec David Lisnard, qu’il soupçonne de ne pas être « étanche » avec l’extrême droite",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/24/edouard-philippe-a-vote-pour-david-lisnard-a-la-presidence-de-l-amf-mais-fustige-sa-posture-dans-la-course-a-l-elysee_6814832_6205049.html",
 "d": "2026-11-24T17:43:11Z",
@@ -541,12 +558,13 @@
 ]
 },
 {
-"t": "« Son objectif, ce n’est pas de rassembler la droite » : Philippe propose un débat à Lisnard",
+"t": "« Son objectif, ce n’est pas de rassembler la droite » : Édouard Philippe propose un débat à David Lisnard",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/son-objectif-ce-nest-pas-de-rassembler-la-droite-philippe-propose-un-debat-a-lisnard-24-11-2026-BK5ODLZ7UBDPVCVVLGJFLJRW5U.php",
 "d": "2026-11-24T12:00:00Z",
 "qui": [
-"lisnard"
+"lisnard",
+"philippe"
 ]
 },
 {
@@ -1731,40 +1749,21 @@
 "qui": [
 "melenchon"
 ]
-},
-{
-"t": "« Je ne reconnais plus mon parti » : après la main tendue de Marine Tondelier à Jean-Luc Mélenchon, un député quitte les Écologistes",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/je-ne-reconnais-plus-mon-parti-apres-la-main-tendue-de-marine-tondelier-a-jean-luc-melenchon-un-depute-quitte-les-ecologistes-20-11-2026-7XUDPI3WRREKJKPNYFECEVDYNU.php",
-"d": "2026-11-20T12:00:00Z",
-"qui": [
-"melenchon",
-"tondelier"
-]
-},
-{
-"t": "Retraites à 62 ans : Jean-Pierre Farandou dénonce le projet « en trompe-l’œil » de Marine Le Pen",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/retraites-a-62-ans-jean-pierre-farandou-denonce-le-projet-en-trompe-loeil-de-marine-le-pen-20-11-2026-EJIDPYP6BFCETKR2OYT5STRF2E.php",
-"d": "2026-11-20T12:00:00Z",
-"qui": [
-"lepen"
-]
 }
 ],
 "sources": {
 "Le Monde": 7,
-"franceinfo": 5,
+"franceinfo": 6,
 "Libération": 19,
 "Le Figaro": 9,
 "Le Parisien": 52,
 "20 Minutes": 10,
 "Ouest-France": 0,
-"BFMTV": 13,
+"BFMTV": 5,
 "France 24": 5,
 "La Croix": 24,
-"LCP": 35,
+"LCP": 34,
 "RFI": 8
 },
-"maj": "2026-11-24T20:26:27Z"
+"maj": "2026-11-24T21:29:47Z"
 }
