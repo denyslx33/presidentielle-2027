@@ -4,6 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Nous votons · Présidentielle 2027</title>
+<meta name="description" content="Toute la présidentielle 2027 dans une appli : sondages, candidats, programmes, actu et le test « Quel candidat pense comme moi ? ». Gratuite, neutre, sans pub.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nous votons">
+<meta property="og:title" content="Nous votons · Présidentielle 2027">
+<meta property="og:description" content="Sondages, candidats, programmes, actu et le test « Quel candidat pense comme moi ? ». Gratuite, neutre, sans pub.">
+<meta property="og:url" content="https://denyslx33.github.io/presidentielle-2027/">
+<meta property="og:image" content="https://denyslx33.github.io/presidentielle-2027/icon-512.png">
+<meta property="og:locale" content="fr_FR">
 <meta name="theme-color" content="#F0EFF0">
 <meta name="color-scheme" content="light only">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -1090,14 +1098,14 @@ function renderAccueil() {
 
 
 const APP_URL = 'https://denyslx33.github.io/presidentielle-2027/';
-const SHARE_TXT = "La présidentielle 2027 en une appli : sondages, programmes, agenda des débats. Gratuite, sans pub, sans compte.";
+const SHARE_TXT = "Nous votons : toute la présidentielle 2027 dans une appli. Sondages, candidats, programmes, actu et le test « Quel candidat pense comme moi ? ». Gratuite, neutre, sans pub et sans compte.";
 function toast(t) { const d = el('div', 'toast', t); document.body.append(d); setTimeout(() => d.remove(), 2200); }
 async function copyLink() { try { await navigator.clipboard.writeText(APP_URL); toast('Lien copié'); } catch (e) { prompt('Copiez le lien :', APP_URL); } }
 function shareSheet() {
   const body = $('sheet-body'); const enc = encodeURIComponent; const msg = SHARE_TXT + ' ' + APP_URL;
   const opt = (label, ic, bg, href, fn) => { const a = el(href ? 'a' : 'button'); if (href) { a.href = href; a.target = '_blank'; a.rel = 'noopener'; } else a.type = 'button'; const sp = el('span', null, ic); sp.style.background = bg; a.append(sp, label); if (fn) a.onclick = fn; a.addEventListener('click', () => gcCount('partage-' + label.toLowerCase(), 'Partage ' + label, true)); return a; };
   const g = el('div', 'shopts');
-  g.append(opt('WhatsApp', '💬', '#25d366', 'https://wa.me/?text=' + enc(msg)), opt('SMS', '✉️', '#34c759', 'sms:?&body=' + enc(msg)), opt('E‑mail', '📧', '#3b6fe0', 'mailto:?subject=' + enc('Une appli pour suivre la présidentielle 2027') + '&body=' + enc(msg)), opt('Copier', '🔗', '#7a7f89', null, copyLink));
+  g.append(opt('WhatsApp', '💬', '#25d366', 'https://wa.me/?text=' + enc(msg)), opt('SMS', '✉️', '#34c759', 'sms:?&body=' + enc(msg)), opt('E‑mail', '📧', '#3b6fe0', 'mailto:?subject=' + enc('Nous votons, l’appli pour suivre la présidentielle 2027') + '&body=' + enc(msg)), opt('Copier', '🔗', '#7a7f89', null, copyLink));
   const head = el('h2', null, "Partager l'appli"); const p = el('p', 'muted', 'Envoyez le lien à vos proches. Ils pourront l’ajouter à leur téléphone en un geste.');
   body.replaceChildren(p, g);
   const sheet = $('inst-sheet'); sheet.querySelector('h2').textContent = "Partager l'appli"; sheet.hidden = false;
