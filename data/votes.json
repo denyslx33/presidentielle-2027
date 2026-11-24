@@ -185,7 +185,8 @@
      "abst": 0,
      "nv": 0
     }
-   ]
+   ],
+   "concret": "Une personne majeure, atteinte d'une maladie grave et incurable en phase avancée ou terminale, et qui endure des souffrances qu'on ne peut pas soulager, pourrait demander à recevoir un produit mortel. Elle se l'administre elle-même, ou avec l'aide d'un soignant si elle ne le peut pas. Une équipe médicale examine chaque demande."
   },
   {
    "id": "v3684",
@@ -296,7 +297,8 @@
      "abst": 2,
      "nv": 0
     }
-   ]
+   ],
+   "concret": "La réforme de 2023 recule peu à peu l'âge de départ de 62 à 64 ans. Avec cet article, ce recul s'arrête : l'âge de départ et la durée de cotisation restent bloqués à leur niveau actuel jusqu'au 1er janvier 2028, après l'élection présidentielle."
   },
   {
    "id": "v3300",
@@ -407,7 +409,8 @@
      "abst": 0,
      "nv": 0
     }
-   ]
+   ],
+   "concret": "Les personnes dont le patrimoine dépasse 100 millions d'euros auraient dû payer chaque année au moins 2 % de ce patrimoine en impôts. Celles qui payaient déjà moins auraient réglé la différence."
   },
   {
    "id": "v3260",
@@ -518,12 +521,13 @@
      "abst": 0,
      "nv": 0
     }
-   ]
+   ],
+   "concret": "Depuis 1968, un accord donne aux Algériens des règles à part pour venir, s'installer et travailler en France. Le texte demande au gouvernement d'y mettre fin, pour qu'ils relèvent des mêmes règles que les autres étrangers. C'est un avis : il n'oblige pas le gouvernement."
   },
   {
    "id": "v2957",
    "titre": "Adopter la loi Duplomb sur l'agriculture",
-   "contexte": "Vote final de la loi « visant à lever les contraintes à l'exercice du métier d'agriculteur ». Elle permet notamment de réintroduire sous conditions un pesticide néonicotinoïde.",
+   "contexte": "Vote final de la loi « visant à lever les contraintes à l'exercice du métier d'agriculteur », promulguée le 11 août 2025.",
    "date": "2025-07-08",
    "scrutin": 2957,
    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2957",
@@ -629,7 +633,8 @@
      "abst": 1,
      "nv": 0
     }
-   ]
+   ],
+   "concret": "La loi assouplit plusieurs règles pour les agriculteurs, notamment pour les grands élevages et les réserves d'eau. Elle prévoyait aussi de réautoriser sous conditions l'acétamipride, un pesticide interdit en France depuis 2018, mais le Conseil constitutionnel a censuré cette mesure le 7 août 2025."
   },
   {
    "id": "v988",
@@ -740,7 +745,8 @@
      "abst": 1,
      "nv": 3
     }
-   ]
+   ],
+   "concret": "L'Assemblée demande de renforcer l'aide à l'Ukraine et d'utiliser les avoirs russes gelés en Europe pour la financer. C'est un avis : il n'oblige pas le gouvernement."
   }
  ]
 }

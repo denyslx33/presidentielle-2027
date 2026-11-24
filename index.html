@@ -256,7 +256,8 @@ details.qexp { margin:4px 0 12px; font-size:14px; } details.qexp summary { color
 .vsearch { width:100%; font:inherit; font-size:16px; padding:10px 12px; border:1px solid var(--line); border-radius:12px; background:var(--white); color:var(--fg); box-sizing:border-box; }
 .vres button, .vgeo { display:block; width:100%; text-align:left; font:inherit; font-size:15px; padding:10px 4px; background:none; border:0; border-bottom:1px solid var(--line); color:var(--fg); cursor:pointer; }
 .vgeo { color:var(--accent); border:0; padding:12px 4px 6px; } .vr { display:flex; gap:6px; margin:10px 0; } .vr button { flex:1; font:inherit; padding:8px; border:1px solid var(--line); border-radius:20px; background:var(--panel); color:var(--fg); } .vr button.on { background:var(--accent); color:var(--white); border-color:var(--accent); }
-.vh { margin:18px 0 6px; } .vintro { font-size:16px; margin:2px 0 4px; } .vhow summary { color:var(--accent); font-size:14px; cursor:pointer; margin-bottom:6px; }
+.vh { margin:18px 0 6px; } .vconc { font-size:15px; line-height:1.45; margin:4px 0 2px; } .vconc b { color:var(--accent); }
+.vintro { font-size:16px; margin:2px 0 4px; } .vhow summary { color:var(--accent); font-size:14px; cursor:pointer; margin-bottom:6px; }
 .vsplit { display:flex; height:12px; border-radius:8px; overflow:hidden; margin:10px 0 4px; } .vsplit i { display:block; } .vsplit .p { background:#3B7DD8; } .vsplit .c { background:#E2566B; }
 .vnums { display:flex; justify-content:space-between; font-weight:600; font-size:15px; margin-bottom:10px; } .vnums .p { color:#3B7DD8; } .vnums .c { color:#E2566B; }
 .vrow { display:flex; gap:10px; align-items:flex-start; margin:10px 0; } .vrow b { font-size:14px; }
@@ -1549,6 +1550,7 @@ function voteCard(v) {
   const d = el('div', 'vcard');
   const top = el('div', 'vtop'); top.append(el('span', 'vdate', fdateLong(v.date)), el('span', 'vres ' + (v.adopte ? 'ok' : 'ko'), v.adopte ? 'Adopté' : 'Rejeté')); d.append(top);
   d.append(el('h3', null, v.titre));
+  if (v.concret) { const c = el('p', 'vconc'); c.append(el('b', null, 'Concrètement : '), v.concret); d.append(c); }
   const ex = v.pour + v.contre, bar = el('div', 'vsplit'); const bp = el('i', 'p'); bp.style.width = (v.pour / ex * 100) + '%'; const bc = el('i', 'c'); bc.style.width = (v.contre / ex * 100) + '%'; bar.append(bp, bc);
   const nums = el('div', 'vnums'); nums.append(el('span', 'p', v.pour + ' pour'), el('span', 'c', v.contre + ' contre')); d.append(bar, nums);
   const rows = { pour: [], contre: [], abst: [], div: [] };
