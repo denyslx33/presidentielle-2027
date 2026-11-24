@@ -2,6 +2,61 @@
 "v": 4,
 "items": [
 {
+"t": "DIRECT. Présidentielle 2027: \"on peut aimer les tronçonneuses, mais pas savoir trancher”, le tacle d'Édouard Philippe à David Lisnard",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html",
+"d": "2026-11-24T20:25:41Z",
+"qui": [
+"lisnard",
+"philippe"
+]
+},
+{
+"t": "Présidentielle 2027: \"On n'a pas encore les 500 parrainages\", confie Manuel Bompard, coordinateur de la France insoumise",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-on-n-a-pas-encore-les-500-parrainages-confie-manuel-bompard-coordinateur-de-la-france-insoumise_VN-202611240951.html",
+"d": "2026-11-24T20:21:32Z",
+"qui": []
+},
+{
+"t": "Pour Manuel Bompard, coordinateur de la France insoumise, \"Jean-Luc Mélenchon est en mesure de l'emporter au second tour de l'élection présidentielle\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-pour-manuel-bompard-coordinateur-de-la-france-insoumise-jean-luc-melenchon-est-en-mesure-de-l-emporter-au-second-tour-de-l-election-presidentielle_VN-202611240949.html",
+"d": "2026-11-24T20:16:46Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Présidentielle 2027 : Robert Ménard attend Teddy Riner à Béziers vendredi",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265511-20261124-presidentielle-2027-robert-menard-attend-teddy-riner-beziers-vendredi?at_medium=display&at_campaign=149",
+"d": "2026-11-24T20:04:57Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "\"Je voterai pour Marine Le Pen parce que je voterai contre la France Insoumise\", en cas de duel Marine Le Pen/Jean-Luc Mélenchon au second tour de l'élection présidentielle",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-je-voterai-pour-marine-le-pen-parce-que-je-voterai-contre-la-france-insoumise-en-cas-de-duel-marine-le-pen-jean-luc-melenchon-au-second-tour-de-l-election-presidentielle_VN-202611240933.html",
+"d": "2026-11-24T19:58:56Z",
+"qui": [
+"lepen",
+"melenchon"
+]
+},
+{
+"t": "Présidentielle 2027 : Gabriel Attal presse Edouard Philippe de « proposer une autre modalité de départage », face à son refus de la primaire",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/24/presidentielle-2027-gabriel-attal-presse-edouard-philippe-de-proposer-une-autre-modalite-de-departage-face-a-son-refus-de-la-primaire_6814848_823448.html",
+"d": "2026-11-24T19:56:50Z",
+"qui": [
+"attal",
+"philippe"
+]
+},
+{
 "t": "Constitution: comment le député Pouria Amirshahi veut provoquer le débat contre les référendums promis par Marine Le Pen",
 "s": "LCP",
 "u": "https://lcp.fr/actualites/constitution-comment-le-depute-pouria-amirshahi-veut-provoquer-le-debat-contre-les",
@@ -23,7 +78,7 @@
 "t": "Présidentielle 2027 : devant des maires, Marine Le Pen promet plus de « liberté » pour les communes et veut s’attaquer au « millefeuille territorial »",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/24/presidentielle-2027-devant-des-maires-marine-le-pen-promet-plus-de-liberte-pour-les-communes-et-veut-s-attaquer-au-millefeuille-territorial_6814839_823448.html",
-"d": "2026-11-24T18:33:50Z",
+"d": "2026-11-24T18:33:49Z",
 "qui": [
 "lepen"
 ]
@@ -43,16 +98,6 @@
 "u": "https://www.20minutes.fr/politique/4265495-20261124-presidentielle-2027-deputee-generation-porte-parole-ruffin-lfi-veut-accord?at_medium=display&at_campaign=149",
 "d": "2026-11-24T18:10:59Z",
 "qui": []
-},
-{
-"t": "DIRECT. Présidentielle 2027: \"on peut aimer les tronçonneuses, mais pas savoir trancher”, le tacle d'Édouard Philippe à David Lisnard",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html",
-"d": "2026-11-24T18:03:55Z",
-"qui": [
-"lisnard",
-"philippe"
-]
 },
 {
 "t": "Présidentielle 2027 : « Je ne voudrais pas froisser mes administrés »… Les maires face au casse-tête des parrainages",
@@ -496,6 +541,15 @@
 ]
 },
 {
+"t": "« Son objectif, ce n’est pas de rassembler la droite » : Philippe propose un débat à Lisnard",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/son-objectif-ce-nest-pas-de-rassembler-la-droite-philippe-propose-un-debat-a-lisnard-24-11-2026-BK5ODLZ7UBDPVCVVLGJFLJRW5U.php",
+"d": "2026-11-24T12:00:00Z",
+"qui": [
+"lisnard"
+]
+},
+{
 "t": "INFO OUEST-FRANCE. Présidentielle 2027 : pourquoi le Guadeloupéen Ary Chalus donnera son parrainage à Teddy Riner",
 "s": "Ouest-France",
 "u": "https://www.ouest-france.fr/elections/presidentielle/info-ouest-france-presidentielle-2027-pourquoi-le-guadeloupeen-ary-chalus-donnera-son-parrainage-a-teddy-riner-3fd0a0cc-e7f7-11f1-86c1-70195b4d2e52?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
@@ -800,14 +854,13 @@
 "qui": []
 },
 {
-"t": "EN DIRECT Présidentielle 2027 : Mélenchon lance un scud sur Bayrou, Édouard Philippe vote Lisnard…",
+"t": "Présidentielle 2027 : Attal propose deux débats avec ses rivaux de droite, Riner attendu à Béziers",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265257-20261124-direct-presidentielle-2027-candidature-david-lisnard-va-agiter-congres-maires-france?at_medium=display&at_campaign=149",
 "d": "2026-11-24T05:02:47Z",
 "qui": [
-"lisnard",
-"melenchon",
-"philippe"
+"attal",
+"riner"
 ]
 },
 {
@@ -1697,56 +1750,6 @@
 "qui": [
 "lepen"
 ]
-},
-{
-"t": "Présidentielle 2027 : dettes, place de la jeunesse, « guerre civile »… Ce qu’il faut retenir de l’annonce de la candidature de Dominique de Villepin",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-dettes-place-de-la-jeunesse-guerre-civile-ce-quil-faut-retenir-de-lannonce-de-la-candidature-de-dominique-de-villepin-20-11-2026-VXL7D3ZQB5GJPJG4E73ZBNXXCA.php",
-"d": "2026-11-20T12:00:00Z",
-"qui": [
-"villepin"
-]
-},
-{
-"t": "Présidentielle 2027 : Jean Massiet, pionnier des interviews politiques sur Twitch, prévient qu’il ne « respectera pas » les règles de l’Arcom",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-jean-massiet-pionnier-des-interviews-politiques-sur-twitch-previent-quil-ne-respectera-pas-les-regles-de-larcom-20-11-2026-OFI3YM6MS5DPBH56AAMHQZ25YY.php",
-"d": "2026-11-20T12:00:00Z",
-"qui": []
-},
-{
-"t": "« Je suis candidat » : Dominique de Villepin officialise sa course à la présidentielle de 2027",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-dominique-de-villepin-annonce-officiellement-sa-candidature-a-lelection-20-11-2026-VXX4JKEYUJCJJBGEHVGO2KG5IY.php",
-"d": "2026-11-20T12:00:00Z",
-"qui": [
-"villepin"
-]
-},
-{
-"t": "Présidentielle 2027 : « Ne déconne pas », Vincent Jeanbrun presse Édouard Philippe à participer à la primaire du centre et de la droite",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-ne-deconne-pas-vincent-jeanbrun-presse-edouard-philippe-a-participer-a-la-primaire-du-centre-et-de-la-droite-20-11-2026-FPLEJBE4Z5BZ7ISOVUGWBGP7TA.php",
-"d": "2026-11-20T12:00:00Z",
-"qui": [
-"philippe"
-]
-},
-{
-"t": "« À ce stade, je n’ai pas convaincu » : le va-tout de Gabriel Attal pour la présidentielle",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/a-ce-stade-je-nai-pas-convaincu-le-va-tout-de-gabriel-attal-pour-la-presidentielle-20-11-2026-72U3QPMBMVDYXDDF4T5LZWYMBY.php",
-"d": "2026-11-20T12:00:00Z",
-"qui": [
-"attal"
-]
-},
-{
-"t": "Présidentielle 2027 : « Il y a des règles qui s’appliquent », l’Arcom confirme que les créateurs de contenus devront respecter le pluralisme",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-il-y-a-des-regles-qui-sappliquent-larcom-confirme-que-les-createurs-de-contenus-devront-respecter-le-pluralisme-20-11-2026-I7W5NLMAWBFLJLF27EVNM4FDGA.php",
-"d": "2026-11-20T12:00:00Z",
-"qui": []
 }
 ],
 "sources": {
@@ -1754,14 +1757,14 @@
 "franceinfo": 5,
 "Libération": 19,
 "Le Figaro": 9,
-"Le Parisien": 53,
-"20 Minutes": 9,
+"Le Parisien": 52,
+"20 Minutes": 10,
 "Ouest-France": 0,
-"BFMTV": 16,
+"BFMTV": 13,
 "France 24": 5,
 "La Croix": 24,
 "LCP": 35,
 "RFI": 8
 },
-"maj": "2026-11-24T19:23:02Z"
+"maj": "2026-11-24T20:26:27Z"
 }
