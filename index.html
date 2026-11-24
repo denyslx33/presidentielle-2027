@@ -1875,6 +1875,7 @@ function gcCount(path, title, event) {
     gcCount('/accueil', 'Ouverture');
     const standalone = (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone === true;
     if (standalone) gcCount('ouverture-depuis-ecran-accueil', 'Ouverture depuis l’écran d’accueil', true);
+    try { if (standalone && !localStorage.getItem('instCompte')) { gcCount('telephone-installe', 'Téléphone avec l’appli installée (compté une fois)', true); localStorage.setItem('instCompte', '1'); } } catch (e) {}
   };
   document.head.append(sc);
   addEventListener('appinstalled', () => gcCount('installation-android', 'Installation (Android)', true));
