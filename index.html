@@ -177,6 +177,17 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .tpr .b { height:8px; background:var(--line); border-radius:5px; overflow:hidden; margin-top:4px; } .tpr .b i { display:block; height:100%; }
 #v-guide ul { padding-left:18px; } #v-guide li { margin-bottom:4px; }
 .hcard { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:12px 14px; margin-top:12px; }
+.kd { display:flex; justify-content:space-between; align-items:baseline; gap:10px; padding:9px 0; border-bottom:1px solid var(--line); }
+.kd:last-child { border-bottom:0; } .kd b { font-weight:600; } .kd .w { text-align:right; white-space:nowrap; } .kd .w small { display:block; color:var(--muted); font-size:12px; }
+.kd.next b, .kd.next .w { color:var(--accent); } .kd.past { opacity:.45; }
+.engage { border-left:4px solid var(--warn-fg); } .engage .big { font-size:20px; font-weight:600; margin:6px 0; } .engage .big span { color:var(--muted); font-weight:400; }
+.srcchips { display:flex; flex-wrap:wrap; gap:8px; } .srcchips a { border:1px solid var(--line); border-radius:20px; padding:6px 12px; font-size:14px; color:var(--accent); text-decoration:none; background:var(--bg); }
+.pcard, .rcard { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:12px 14px; margin-top:10px; }
+.pcard h3, .rcard h3 { margin:0 0 4px; } .pcard .who { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; }
+.pcard .who button { font:inherit; font-size:14px; display:flex; align-items:center; gap:6px; border:1px solid var(--line); border-radius:20px; padding:3px 10px 3px 3px; background:var(--bg); color:var(--fg); cursor:pointer; }
+.pcard .who .av { width:26px; height:26px; font-size:10px; } .pcard ul { margin:6px 0 0; padding-left:18px; } .pcard li { margin:4px 0; }
+.pbloc { margin:18px 0 0; font-size:13px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+.rcard .d { font-weight:600; margin:2px 0 6px; }
 .hcard .hh { display:flex; justify-content:space-between; align-items:baseline; gap:8px; }
 .hcard h2 { font-size:17px; margin:0 0 4px; } .hcard .hh .muted { font-size:12px; text-align:right; }
 .hrow { display:flex; align-items:center; gap:10px; padding:7px 0; border-bottom:1px solid var(--line); cursor:pointer; }
@@ -337,6 +348,11 @@ h3 { font-size:20px; font-weight:600; }
       <p class="muted legal" id="h-meta"></p>
       <button class="more" id="h-sond2" type="button">Tous les sondages, la courbe et le 2nd tour ›</button>
     </div>
+    <div class="hcard" id="h-dates">
+      <div class="hh"><h2>Les dates clés</h2><span class="muted">Sources officielles</span></div>
+      <div id="h-kd"></div>
+      <button class="more" id="h-guide2" type="button">Inscription, procuration : le guide du vote ›</button>
+    </div>
     <div class="hcard">
       <div class="hh"><h2>Dernières actus</h2></div>
       <div id="h-actu"></div>
@@ -349,6 +365,25 @@ h3 { font-size:20px; font-weight:600; }
     </div>
     <div class="hbtns hb1">
       <button type="button" id="h-guide"><span>🗳️</span>Guide du vote<small>Inscription, procuration…</small></button>
+    </div>
+    <div class="hcard engage">
+      <h2>Notre engagement</h2>
+      <p class="big">Neutres et indépendants.<br><span>Aucun parti, aucun média derrière l'appli.</span></p>
+      <p class="muted">Tous les candidats sont présentés de la même façon, par ordre alphabétique, et chaque info renvoie à sa source.</p>
+      <button class="more" id="h-method" type="button">Notre méthode ›</button>
+    </div>
+    <div class="hcard">
+      <div class="hh"><h2>Des infos vérifiables</h2></div>
+      <p class="muted" style="margin:2px 0 8px">Les données viennent de sources officielles, citées sur chaque page :</p>
+      <div class="srcchips">
+        <a href="https://www.conseil-constitutionnel.fr/" target="_blank" rel="noopener">Conseil constitutionnel</a>
+        <a href="https://www.commission-des-sondages.fr/" target="_blank" rel="noopener">Commission des sondages</a>
+        <a href="https://www.arcom.fr/" target="_blank" rel="noopener">Arcom</a>
+        <a href="https://www.cnccfp.fr/" target="_blank" rel="noopener">CNCCFP</a>
+        <a href="https://www.interieur.gouv.fr/" target="_blank" rel="noopener">Ministère de l'Intérieur</a>
+        <a href="https://www.service-public.gouv.fr/" target="_blank" rel="noopener">Service-public</a>
+      </div>
+      <button class="more" id="h-sources" type="button">Toutes nos sources ›</button>
     </div>
     <button type="button" class="sharecard" id="h-share"><span class="ic">💬</span><span><b>Faites connaître l'appli</b><br><small>Envoyez‑la à vos proches en un geste</small></span><span class="chev">›</span></button>
     <button type="button" class="more" id="h-about" style="text-align:center">Qui sommes‑nous ? D'où viennent les infos ? ›</button>
@@ -395,6 +430,10 @@ h3 { font-size:20px; font-weight:600; }
 
   <!-- CANDIDATS -->
   <section class="view" id="v-candidats">
+    <div class="aseg" id="cseg"><button type="button" data-c="cands" class="on">👤 Candidats</button><button type="button" data-c="partis">🏛️ Partis</button><button type="button" data-c="retraits">↩️ Retraits</button></div>
+    <div id="c-partis" hidden></div>
+    <div id="c-retraits" hidden></div>
+    <div id="c-cands">
     <p>Les candidats testés dans les sondages, par ordre alphabétique. Touchez un portrait pour ouvrir sa fiche.</p>
     <div id="candlist" class="trombi"></div>
     <details class="sec"><summary>Les 500 signatures</summary>
@@ -424,10 +463,9 @@ h3 { font-size:20px; font-weight:600; }
     <div class="block">
       <h3>Autres candidatures déclarées</h3>
       <p class="muted" id="autres"></p>
-      <h3>Retraits</h3>
-      <div id="retraits" class="muted"></div>
       <p class="muted" id="cand-maj" style="margin-top:12px"></p>
       <details class="muted"><summary>Crédits photos</summary><div id="credits"></div></details>
+    </div>
     </div>
   </section>
 
@@ -1198,6 +1236,81 @@ function openFiche(id, noPush) {
   try { if (!noPush) { if (location.hash.startsWith('#c-')) history.replaceState(null, '', '#c-' + id); else { history.pushState(null, '', '#c-' + id); PUSHED = true; } } } catch (e) {}
 }
 
+
+// ---------- Dates clés (accueil)
+const KEYDATES = [
+  ['2027-03-12', "Fin des inscriptions sur les listes électorales", "et fin de la collecte des parrainages"],
+  ['2027-03-26', "Liste officielle des candidats", "publiée au plus tard ce jour‑là"],
+  ['2027-04-18', "Premier tour", "Dimanche"],
+  ['2027-05-02', "Second tour", "Dimanche"],
+];
+function renderKeyDates() {
+  const box = $('h-kd'); if (!box) return;
+  const t0 = new Date(); t0.setHours(0, 0, 0, 0); let nextDone = false;
+  box.replaceChildren(...KEYDATES.map(([d, t, sub]) => {
+    const dt = new Date(d + 'T00:00:00'); const n = Math.round((dt - t0) / 864e5);
+    const r = el('div', 'kd'); const l = el('div'); l.append(el('b', null, t)); l.append(el('div', 'muted', sub));
+    const w = el('div', 'w', fdateLong(d)); w.append(el('small', null, n > 1 ? 'dans ' + n + ' jours' : n === 1 ? 'demain' : n === 0 ? "aujourd'hui" : 'passé'));
+    if (n < 0) r.classList.add('past'); else if (!nextDone) { r.classList.add('next'); nextDone = true; }
+    r.append(l, w); return r;
+  }));
+}
+// ---------- Partis
+const nomParti = (p) => (p || '').split(' (')[0].trim();
+function renderPartis() {
+  const box = $('c-partis'); if (!box || !CAND) return;
+  const today = new Date().toISOString().slice(0, 10);
+  const map = new Map();
+  for (const c of CAND.principaux) {
+    const sans = /^Sans étiquette/.test(c.parti);
+    const k = sans ? 'Candidats sans étiquette' : nomParti(c.parti);
+    if (!map.has(k)) map.set(k, { nom: k, bloc: sans ? 'sans' : c.bloc, cands: [], note: '' });
+    const P = map.get(k); P.cands.push(c);
+    const m = (c.parti || '').match(/\((.*)\)/); if (m && !sans) P.note = m[1].replace(/^soutenu/, 'Soutenu');
+  }
+  for (const n of (ACTU ? ACTU.items : [])) if (typeof n.parti === 'string' && !map.has(n.parti)) map.set(n.parti, { nom: n.parti, bloc: 'autre', cands: [], note: '' });
+  const actuOf = (P) => (ACTU ? ACTU.items : []).filter((n) => n.parti && (n.parti === P.nom || (n.parti === true && P.nom !== 'Candidats sans étiquette' && P.cands.some((c) => n.qui.includes(c.id))))).slice(0, 3);
+  const votesOf = (P) => (AGENDA ? AGENDA.evenements : []).filter((e) => e.type === 'vote' && /adhérent|militant|congrès|conseil (national|fédéral)|investiture|primaire|bureau national/i.test(e.titre || '') && (e.fin || e.date) >= today && P.cands.some((c) => (e.qui || []).includes(c.id))).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 2);
+  const out = [el('p', 'muted', "Les partis des candidats, rangés selon la grille officielle des nuances politiques du ministère de l'Intérieur, puis par ordre alphabétique. Pour chacun : son ou ses candidats, sa vie interne et ses prochains votes.")];
+  const groups = BLOCS.map(([k, l]) => [k, l]).concat([['sans', 'Sans étiquette'], [null, 'Non classés'], ['autre', 'Autres partis cités dans l’actu']]);
+  for (const [k, l] of groups) {
+    const ps = [...map.values()].filter((P) => (P.bloc ?? null) === k).sort((a, b) => a.nom.localeCompare(b.nom, 'fr'));
+    if (!ps.length) continue;
+    out.push(el('div', 'pbloc', l));
+    for (const P of ps) {
+      const d = el('div', 'pcard'); d.append(el('h3', null, P.nom));
+      if (P.note) d.append(el('div', 'muted', P.note));
+      if (P.cands.length) { const w = el('div', 'who'); for (const c of P.cands) { const b = el('button'); b.type = 'button'; b.append(avatar(c), c.nom); b.onclick = () => openFiche(c.id); w.append(b); } d.append(w); }
+      const a = actuOf(P), v = votesOf(P);
+      if (v.length) { d.append(el('b', null, 'Prochains votes')); const ul = el('ul'); for (const e of v) { const li = el('li'); li.append(fdateLong(e.date) + ' : ' + e.titre + ' '); if (e.url) li.append(link('source', e.url)); ul.append(li); } d.append(ul); }
+      if (a.length) { d.append(el('b', null, 'Dans l’actu')); const ul = el('ul'); for (const n of a) { const li = el('li'); li.append(fdateLong(n.date) + ' : ' + n.texte + ' '); li.append(link(n.source || 'source', n.url)); ul.append(li); } d.append(ul); }
+      if (!a.length && !v.length && P.cands.length) d.append(el('p', 'muted', 'Pas d’actualité récente sur la vie du parti.'));
+      out.push(d);
+    }
+  }
+  box.replaceChildren(...out);
+}
+// ---------- Retraits
+function renderRetraits() {
+  const box = $('c-retraits'); if (!box || !CAND) return;
+  const out = [el('p', 'muted', 'Personnalités qui étaient candidates à la présidentielle 2027 et ont renoncé.')];
+  for (const r of CAND.retraits || []) {
+    const m = r.nom.match(/^(.*?)\s*\((.*)\)\s*$/); const nom = m ? m[1] : r.nom, parti = m ? m[2] : '';
+    const dm = (r.texte || '').match(/le (\d{1,2}(?:er)? \S+ \d{4})/);
+    const d = el('div', 'rcard'); d.append(el('h3', null, nom)); if (parti) d.append(el('div', 'muted', parti));
+    if (dm) d.append(el('div', 'd', (/^Battu/.test(r.texte) ? 'Hors course le ' : 'Retrait le ') + dm[1]));
+    d.append(el('p', null, r.texte)); const p = el('p', 'muted'); p.append(link('Source', r.url)); d.append(p);
+    out.push(d);
+  }
+  if (!(CAND.retraits || []).length) out.push(el('p', null, 'Aucun retrait pour le moment.'));
+  box.replaceChildren(...out);
+}
+function setCMode(m) {
+  for (const b of document.querySelectorAll('#cseg button')) b.classList.toggle('on', b.dataset.c === m);
+  $('c-cands').hidden = m !== 'cands'; $('c-partis').hidden = m !== 'partis'; $('c-retraits').hidden = m !== 'retraits';
+  if (m !== 'cands') gcCount('/candidats-' + m, 'Candidats ' + m);
+}
+
 function renderCandidats() {
   if (!CAND) return;
   const list = sortedCands();
@@ -1209,7 +1322,7 @@ function renderCandidats() {
     return b;
   }));
   $('autres').textContent = CAND.autres.join(', ') + '.';
-  $('retraits').replaceChildren(...CAND.retraits.map((r) => { const p = el('p'); p.append(el('b', null, r.nom), ' : ', r.texte, ' '); p.append(link('source', r.url)); return p; }));
+  renderPartis(); renderRetraits();
   const m = $('cand-maj'); m.replaceChildren('Fiches mises à jour le ' + fdateLong(CAND.maj) + '. Liste : '); m.append(link(CAND.source_liste.nom, CAND.source_liste.url));
 
   const sig = list;
@@ -1354,7 +1467,7 @@ async function load() {
   const st = $('status');
   if (!POLLS) { st.textContent = 'Impossible de charger les sondages. Vérifiez la connexion.'; st.className = 'muted err'; }
   else st.textContent = (mv.live ? 'Mis à jour à ' + new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }) : 'Hors ligne : derniers chiffres enregistrés') + ' · premier tour le 18 avril 2027';
-  renderSondages(); renderCandidats(); renderProgrammes(); renderActu(); renderAgenda(); renderCredits(); renderFiche(); renderDuels(); countdown(); renderTP(); renderAccueil();
+  renderSondages(); renderCandidats(); renderProgrammes(); renderActu(); renderAgenda(); renderCredits(); renderFiche(); renderDuels(); countdown(); renderTP(); renderAccueil(); renderKeyDates();
   if (PMODE === 'cmp') renderCmp(); if (!$('quiz').firstChild || $('quiz').textContent === 'Chargement…') renderQuiz();
 }
 
@@ -1386,6 +1499,9 @@ $('h-test').addEventListener('click', () => showView('test'));
 $('h-prog').addEventListener('click', () => showView('programmes'));
 $('h-sond2').addEventListener('click', () => goView('sondages'));
 $('h-guide').addEventListener('click', openGuide);
+$('h-guide2').addEventListener('click', openGuide);
+for (const id of ['h-method', 'h-sources']) $(id).addEventListener('click', openAbout);
+for (const b of document.querySelectorAll('#cseg button')) b.addEventListener('click', () => setCMode(b.dataset.c));
 $('inscr-guide').addEventListener('click', (e) => { e.preventDefault(); openGuide(); });
 $('agenda-guide').addEventListener('click', openGuide);
 $('gback').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView(GUIDE_FROM); });
