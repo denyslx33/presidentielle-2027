@@ -2,12 +2,53 @@
 "v": 4,
 "items": [
 {
+"t": "Présidentielle 2027. Christophe Béchu compte sur Gérard Larcher pour départager les candidats à droite sans primaire",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-christophe-bechu-compte-sur-gerard-larcher-pour-departager-les-candidats-a-droite-sans-primaire-518a4fa2-e7f7-11f1-9b33-2f81462d3339?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-24T14:59:03Z",
+"qui": []
+},
+{
+"t": "Présidentielle 2027: le Congrès des maires de France, marché aux parrainages des candidats",
+"s": "RFI",
+"u": "https://www.rfi.fr/fr/france/20261124-pr%C3%A9sidentielle-2027-le-congr%C3%A8s-des-maires-de-france-march%C3%A9-aux-parrainages-des-candidats",
+"d": "2026-11-24T14:53:36Z",
+"qui": []
+},
+{
+"t": "«Aujourd'hui, le candidat de la droite est Bruno Retailleau», martèle le porte-parole de sa campagne, Pierre Henri-Dumont",
+"s": "RFI",
+"u": "https://www.rfi.fr/fr/podcasts/invit%C3%A9-politique/20261124-aujourd-hui-le-candidat-de-la-droite-est-bruno-retailleau-mart%C3%A8le-le-porte-parole-de-sa-campagne-pierre-henri-dumont",
+"d": "2026-11-24T14:45:59Z",
+"qui": [
+"retailleau"
+]
+},
+{
+"t": "Édouard Philippe: une enquête ouverte pour détournement de fonds publics à l'agglomération du Havre",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/video-edouard-philippe-une-enquete-ouverte-pour-detournement-de-fonds-publics-a-l-agglomeration-du-havre_VN-202611240665.html",
+"d": "2026-11-24T14:38:29Z",
+"qui": [
+"philippe"
+]
+},
+{
 "t": "DIRECT. Présidentielle 2027: les candidats au congrès des maires de France, Édouard Philippe est arrivé sur place",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html",
-"d": "2026-11-24T13:58:55Z",
+"d": "2026-11-24T14:38:27Z",
 "qui": [
 "philippe"
+]
+},
+{
+"t": "\"Il n'y aura plus d'étrangers\" chante une exposante devant E. Zemmour",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/il-n-y-aura-plus-d-etrangers-chante-une-exposante-devant-e-zemmour_8297877.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-24T14:30:32Z",
+"qui": [
+"zemmour"
 ]
 },
 {
@@ -135,6 +176,25 @@
 ]
 },
 {
+"t": "« Contraire aux principes » : François Bayrou fustige la proposition d’inclure Éric Zemmour et Nicolas Dupont-Aignan dans la primaire",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/contraire-aux-principes-francois-bayrou-fustige-la-proposition-dinclure-eric-zemmour-et-nicolas-dupont-aignan-dans-la-primaire-24-11-2026-U5DYDDXUNRAHPCW2LQPP7KB7NQ.php",
+"d": "2026-11-24T12:00:00Z",
+"qui": [
+"dupont-aignan",
+"zemmour"
+]
+},
+{
+"t": "Pétain a « sauvé les juif français » : Zemmour définitivement condamné pour « contestation de l’existence de crime contre l’humanité »",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-eric-zemmour-definitivement-condamne-pour-contestation-de-lexistence-de-crime-contre-lhumanite-24-11-2026-GATCYMK26BBJ7I732YJRWDN4UQ.php",
+"d": "2026-11-24T12:00:00Z",
+"qui": [
+"zemmour"
+]
+},
+{
 "t": "INFO OUEST-FRANCE. Présidentielle 2027 : pourquoi le Guadeloupéen Ary Chalus donnera son parrainage à Teddy Riner",
 "s": "Ouest-France",
 "u": "https://www.ouest-france.fr/elections/presidentielle/info-ouest-france-presidentielle-2027-pourquoi-le-guadeloupeen-ary-chalus-donnera-son-parrainage-a-teddy-riner-3fd0a0cc-e7f7-11f1-86c1-70195b4d2e52?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
@@ -144,7 +204,7 @@
 ]
 },
 {
-"t": "Présidentielle 2027 : Plusieurs candidats entendus par les patrons de la grande distribution, Le Pen la dernière en date",
+"t": "Présidentielle 2027 : Marine Le Pen à son tour reçue par les patrons de la grande distribution",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265355-20261124-presidentielle-2027-plusieurs-candidats-entendus-patrons-grande-distribution-pen-derniere-date?at_medium=display&at_campaign=149",
 "d": "2026-11-24T11:47:36Z",
@@ -448,13 +508,12 @@
 "qui": []
 },
 {
-"t": "EN DIRECT Présidentielle 2027 : La candidature de David Lisnard va agiter le congrès des maires de France, Polony a fait la moitié du chemin…",
+"t": "EN DIRECT Présidentielle 2027 : Les ex purgés insoumis proposent aussi une « coalition » à Mélenchon…",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265257-20261124-direct-presidentielle-2027-candidature-david-lisnard-va-agiter-congres-maires-france?at_medium=display&at_campaign=149",
 "d": "2026-11-24T05:02:47Z",
 "qui": [
-"lisnard",
-"polony"
+"melenchon"
 ]
 },
 {
@@ -1697,84 +1756,21 @@
 "melenchon",
 "tondelier"
 ]
-},
-{
-"t": "GTA 6 : Bardella, Ciotti, Zemmour… Entre attente et détournement, les politiques aussi guettent la sortie du jeu vidéo",
-"s": "Le Figaro",
-"u": "https://www.lefigaro.fr/elections/presidentielles/gta-vi-bardella-ciotti-zemmour-entre-attente-et-detournement-les-politiques-aussi-guettent-la-sortie-du-jeu-video-20261118",
-"d": "2026-11-18T18:36:46Z",
-"qui": [
-"zemmour"
-]
-},
-{
-"t": "Présidentielle 2027: Édouard Philippe promet \"des réformes radicales\" pour relancer sa campagne, loin des discussions sur la primaire",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/presidentielle-2027-edouard-philippe-promet-des-reformes-radicales-pour-relancer-sa",
-"d": "2026-11-18T17:37:53Z",
-"qui": [
-"philippe"
-]
-},
-{
-"t": "Présidentielle 2027 : ce que proposent les candidats sur la guerre en Ukraine",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/presidentielle-2027-ce-que-proposent-les-candidats-sur-la-guerre-en-ukraine-20261118",
-"d": "2026-11-18T11:17:33Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027 : face à Marine Le Pen, Jean-Luc Mélenchon gagnera l’élection, assure Darmanin",
-"s": "Le Figaro",
-"u": "https://www.lefigaro.fr/politique/presidentielle-2027-face-a-marine-le-pen-jean-luc-melenchon-gagnera-l-election-assure-darmanin-20261118",
-"d": "2026-11-18T09:28:37Z",
-"qui": [
-"lepen",
-"melenchon"
-]
-},
-{
-"t": "Guillaume Tabard : «Marine Le Pen sous le totem des 62 ans, un tournant bienvenu»",
-"s": "Le Figaro",
-"u": "https://www.lefigaro.fr/politique/guillaume-tabard-marine-le-pen-sous-le-totem-des-62-ans-un-tournant-bienvenu-20261117",
-"d": "2026-11-18T09:04:43Z",
-"qui": [
-"lepen"
-]
-},
-{
-"t": "Présidentielle 2027: Entre Gabriel Attal, Bruno Retailleau et David Lisnard, une primaire se profile malgré le refus d’Edouard Philippe",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/presidentielle-2027-entre-gabriel-attal-bruno-retailleau-et-david-lisnard-une-primaire",
-"d": "2026-11-18T07:59:43Z",
-"qui": [
-"attal",
-"lisnard",
-"philippe",
-"retailleau"
-]
-},
-{
-"t": "Présidentielle 2027 : ce que l’on sait du projet de primaire de la droite et du centre",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/presidentielle-2027-ce-que-l-on-sait-du-projet-de-primaire-de-la-droite-et-du-centre-20261117",
-"d": "2026-11-17T20:22:51Z",
-"qui": []
 }
 ],
 "sources": {
 "Le Monde": 5,
 "franceinfo": 6,
-"Libération": 21,
+"Libération": 20,
 "Le Figaro": 9,
 "Le Parisien": 50,
 "20 Minutes": 7,
-"Ouest-France": 0,
-"BFMTV": 22,
+"Ouest-France": 1,
+"BFMTV": 21,
 "France 24": 6,
 "La Croix": 24,
 "LCP": 33,
-"RFI": 7
+"RFI": 8
 },
-"maj": "2026-11-24T14:04:12Z"
+"maj": "2026-11-24T15:03:14Z"
 }
