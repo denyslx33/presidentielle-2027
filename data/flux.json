@@ -1,5 +1,5 @@
 {
-"v": 2,
+"v": 3,
 "items": [
 {
 "t": "Présidentielle: Boris Vallaud estime que la main tendue de Marine Tondelier à Jean-Luc Mélenchon est \"une sorte de fatalisme\"",
@@ -10,13 +10,6 @@
 "melenchon",
 "tondelier"
 ]
-},
-{
-"t": "Le Nigeria impose un couvre-feu après la mort de quatre opposants politiques",
-"s": "Ouest-France",
-"u": "https://www.ouest-france.fr/monde/nigeria/le-nigeria-impose-un-couvre-feu-apres-la-mort-de-quatre-opposants-politiques-ade471e6-e78f-11f1-afa7-9a0bb82a33d1?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
-"d": "2026-11-23T23:12:15Z",
-"qui": []
 },
 {
 "t": "Migrants expulsés au Rwanda: \"Humainement, ça questionne\", selon Prisca Thevenot, députée \"Renaissance\" des Hauts-de-Seine, soutien de Gabriel Attal",
@@ -145,24 +138,10 @@
 ]
 },
 {
-"t": "\"Sortir des ambiguïtés et de la confusion\": Yannick Jadot lance son nouveau parti Écologistes et démocrates",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-sortir-des-ambiguites-et-de-la-confusion-yannick-jadot-lance-son-nouveau-parti-ecologistes-et-democrates_VN-202611230857.html",
-"d": "2026-11-23T20:02:22Z",
-"qui": []
-},
-{
 "t": "Présidentielle : qui pourra rassembler ?",
 "s": "France 24",
 "u": "https://www.france24.com/fr/%C3%A9missions/le-d%C3%A9bat/20261123-pr%C3%A9sidentielle-qui-pourra-rassembler",
 "d": "2026-11-23T19:58:31Z",
-"qui": []
-},
-{
-"t": "Suspicions de fuites pour le RN: \"Je n'ai reçu aucune information de la part du préfet Moutouh\", assure Jordan Bardella",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-suspicions-de-fuites-pour-le-rn-je-n-ai-recu-aucune-information-de-la-part-du-prefet-moutouh-assure-jordan-bardella_VN-202611230881.html",
-"d": "2026-11-23T19:55:14Z",
 "qui": []
 },
 {
@@ -184,48 +163,6 @@
 ]
 },
 {
-"t": "Attaques contre Brigitte Macron: \"On peut combattre le président de la République sans s'attaquer à sa famille ou à son épouse\", affirme Jordan Bardella, président du Rassemblement national",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-attaques-contre-brigitte-macron-on-peut-combattre-le-president-de-la-republique-sans-s-attaquer-a-sa-famille-ou-a-son-epouse-affirme-jordan-bardella-president-du-rassemblement-national_VN-202611230852.html",
-"d": "2026-11-23T19:48:15Z",
-"qui": []
-},
-{
-"t": "Thierry Lhermitte \"angoissé d'avoir à choisir entre la peste et le choléra\" pour la présidentielle: \"Pourquoi insulter des millions de gens en les comparant à la pire maladie?\", réagit Jordan Bardella",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-thierry-lhermitte-angoisse-d-avoir-a-choisir-entre-la-peste-et-le-cholera-pour-la-presidentielle-pourquoi-insulter-des-millions-de-gens-en-les-comparant-a-la-pire-maladie-reagit-jordan-bardella_VN-202611230846.html",
-"d": "2026-11-23T19:35:24Z",
-"qui": []
-},
-{
-"t": "Laure Lavalette accusée d'avoir cautionné des écrits antisémites: \"Effectivement c'était une erreur\", reconnaît Jordan Bardella",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-laure-lavalette-accusee-d-avoir-cautionne-des-ecrits-antisemites-effectivement-c-etait-une-erreur-reconnait-jordan-bardella_VN-202611230844.html",
-"d": "2026-11-23T19:29:34Z",
-"qui": []
-},
-{
-"t": "Retraites: Jordan Bardella, président du Rassemblement national, souhaite \"une réforme ambitieuse, pour la France du travail\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-retraites-jordan-bardella-president-du-rassemblement-national-souhaite-une-reforme-ambitieuse-pour-la-france-du-travail_VN-202611230837.html",
-"d": "2026-11-23T19:24:35Z",
-"qui": []
-},
-{
-"t": "\"Le problème de l'économie française c'est que les jeunes rentrent trop tard sur le marché du travail\", note Jordan Bardella",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-le-probleme-de-l-economie-francaise-c-est-que-les-jeunes-rentrent-trop-tard-sur-le-marche-du-travail-note-jordan-bardella_VN-202611230836.html",
-"d": "2026-11-23T19:22:34Z",
-"qui": []
-},
-{
-"t": "Règle d'or budgétaire envisagée par Emmanuel Macron: \"Nous soutenons sur le prinicipe\", explique Jordan Bardella",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-regle-d-or-budgetaire-envisagee-par-emmanuel-macron-nous-soutenons-sur-le-prinicipe-explique-jordan-bardella_VN-202611230831.html",
-"d": "2026-11-23T19:17:26Z",
-"qui": []
-},
-{
 "t": "Jordan Bardella, président du Rassemblement national, affirme que Marine Le Pen a un peu plus de \"400 parrainages\" pour la présidentielle de 2027",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-jordan-bardella-president-du-rassemblement-national-affirme-que-marine-le-pen-a-un-peu-plus-de-400-parrainages-pour-la-presidentielle-de-2027_VN-202611230827.html",
@@ -233,13 +170,6 @@
 "qui": [
 "lepen"
 ]
-},
-{
-"t": "Parrainages: \"Les maires sont un peu plus réticents à accorder leur signature\", reconnaît Jordan Bardella, président du Rassemblement national",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-parrainages-les-maires-sont-un-peu-plus-reticents-a-accorder-leur-signature-reconnait-jordan-bardella-president-du-rassemblement-national_VN-202611230823.html",
-"d": "2026-11-23T19:11:48Z",
-"qui": []
 },
 {
 "t": "\"On ne se met pas dans cette hypothèse\": Jordan Bardella assure ne pas chercher à obtenir de parrainages pour l'élection présidentielle en cas d'inégibilité de Marine Le Pen",
@@ -260,13 +190,6 @@
 ]
 },
 {
-"t": "\"Nous allons remettre de l'ordre dans les comptes de l'État, parce que l'État français n'est pas un guichet social\", déclare Jordan Bardella, président du Rassemblement national",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-nous-allons-remettre-de-l-ordre-dans-les-comptes-de-l-etat-parce-que-l-etat-francais-n-est-pas-un-guichet-social-declare-jordan-bardella-president-du-rassemblement-national_VN-202611230812.html",
-"d": "2026-11-23T19:03:51Z",
-"qui": []
-},
-{
 "t": "Jordan Bardella qualifie David Lisnard de \"contrebandier du macronisme\"",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-jordan-bardella-qualifie-david-lisnard-de-contrebandier-du-macronisme_VN-202611230806.html",
@@ -274,34 +197,6 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "Subventions versées aux associations: \"Les gens ne supportent plus qu'avec leur argent, on fasse campagne contre eux\", estime Jordan Bardella, président du Rassemblement national",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-subventions-versees-aux-associations-les-gens-ne-supportent-plus-qu-avec-leur-argent-on-fasse-campagne-contre-eux-estime-jordan-bardella-president-du-rassemblement-national_VN-202611230803.html",
-"d": "2026-11-23T18:59:33Z",
-"qui": []
-},
-{
-"t": "« Règle d’or » budgétaire : Emmanuel Macron mise sur un Congrès pour parfaire son inventaire",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/regle-d-or-budgetaire-emmanuel-macron-mise-sur-un-congres-pour-parfaire-son-inventaire-20261123",
-"d": "2026-11-23T18:56:25Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027: \"La première mesure que nous prendrons sera la dissolution de tous les groupuscules d'ultragauche et d'ultradroite qui prônent la violence contre la démocratie et les institutions\", assure Jordan Bardella",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-la-premiere-mesure-que-nous-prendrons-sera-la-dissolution-de-tous-les-groupuscules-d-ultragauche-et-d-ultradroite-qui-pronent-la-violence-contre-la-democratie-et-les-institutions-assure-jordan-bardella_VN-202611230799.html",
-"d": "2026-11-23T18:56:24Z",
-"qui": []
-},
-{
-"t": "Lutter contre «l’oligarchie» : la gauche a raison de s’emparer du sujet",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/lutter-contre-loligarchie-la-gauche-a-raison-de-semparer-du-sujet-20261123_26V2TEGOIJGPVIPRVK6NRBUX64/",
-"d": "2026-11-23T18:24:11Z",
-"qui": []
 },
 {
 "t": "Présidentielle : la date du 2 mai 2027 ne passe (toujours) pas",
@@ -320,13 +215,6 @@
 ]
 },
 {
-"t": "«Il a réussi à nous avoir» : avec sa règle d’or budgétaire, Macron s’incruste dans la campagne présidentielle",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/il-a-reussi-a-nous-avoir-avec-sa-regle-dor-budgetaire-macron-sincruste-dans-la-campagne-20261123_SOURM2OF2NBULILOORRIDBIG3M/",
-"d": "2026-11-23T17:33:39Z",
-"qui": []
-},
-{
 "t": "Après leur rupture avec Marine Tondelier, Yannick Jadot et Jérémie Iordanoff lancent un nouveau parti écolo",
 "s": "Libération",
 "u": "https://www.liberation.fr/politique/marine-tondelier-a-mene-les-ecologistes-dans-une-impasse-apres-leur-rupture-yannick-jadot-et-jeremie-iordanoff-annoncent-la-creation-dun-nouveau-parti-20261123_WAYO5QZHJ5DZJOGEXCTCM266LY/",
@@ -334,13 +222,6 @@
 "qui": [
 "tondelier"
 ]
-},
-{
-"t": "Faut-il changer les dates de l'élection présidentielle ? On fait le point sur ce débat qui agite la classe politique",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/presidentielle/faut-il-changer-les-dates-de-l-election-presidentielle-on-fait-le-point-sur-le-debat-politique-sur-cette-question_8296431.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-23T17:15:13Z",
-"qui": []
 },
 {
 "t": "Présidentielle 2027 : Le parti Génération. s (créé par Benoît Hamon) rallie la candidature de Mélenchon",
@@ -380,24 +261,10 @@
 ]
 },
 {
-"t": "A Saint-Fons, Hadi Mebarki met en œuvre le « communalisme » de LFI",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/politique/article/2026/11/23/a-saint-fons-hadi-mebarki-met-en-uvre-le-communalisme-de-lfi_6814413_823448.html",
-"d": "2026-11-23T16:00:31Z",
-"qui": []
-},
-{
 "t": "Présidentielle 2027 : pourquoi la date du second tour inquiète syndicats et candidats",
 "s": "La Croix",
 "u": "https://www.la-croix.com/politique/presidentielle-2027-pourquoi-la-date-du-second-tour-inquiete-syndicats-et-candidats-20261123",
 "d": "2026-11-23T15:57:25Z",
-"qui": []
-},
-{
-"t": "Le gouvernement peut-il encore changer la date de l’élection présidentielle ?",
-"s": "Le Figaro",
-"u": "https://www.lefigaro.fr/politique/le-gouvernement-peut-il-encore-changer-la-date-de-l-election-presidentielle-20261123",
-"d": "2026-11-23T15:37:19Z",
 "qui": []
 },
 {
@@ -408,13 +275,6 @@
 "qui": [
 "melenchon"
 ]
-},
-{
-"t": "Règle d'or: que prévoit vraiment le texte qu'Emmanuel Macron envisage de faire adopter par le Parlement?",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/regle-d-or-que-prevoit-vraiment-le-texte-qu-emmanuel-macron-envisage-de-faire-adopter",
-"d": "2026-11-23T14:51:46Z",
-"qui": []
 },
 {
 "t": "Le gouvernement fait adopter au Sénat une prolongation de la prime carburant en 2027",
@@ -442,13 +302,6 @@
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/23/presidentielle-2027-les-elus-locaux-au-c-ur-de-la-campagne_6814386_823448.html",
 "d": "2026-11-23T13:00:02Z",
-"qui": []
-},
-{
-"t": "«Une règle d'or budgétaire, proposée par Emmanuel Macron, n'a aucun sens», déplore le député LFI Aurélien Taché",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/podcasts/invit%C3%A9-politique/20261123-une-r%C3%A8gle-d-or-budg%C3%A9taire-propos%C3%A9e-par-emmanuel-macron-n-a-aucun-sens-d%C3%A9plore-le-d%C3%A9put%C3%A9-lfi-aur%C3%A9lien-tach%C3%A9",
-"d": "2026-11-23T12:49:21Z",
 "qui": []
 },
 {
@@ -598,20 +451,6 @@
 "qui": []
 },
 {
-"t": "Suspension des prestations sociales, peines planchers, responsabilité pénale à 16 ans... Les députés LR à l'offensive sur la sécurité",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/suspension-des-prestations-sociales-peines-planchers-responsabilite-penale-a-16-ans-les",
-"d": "2026-11-23T06:05:12Z",
-"qui": []
-},
-{
-"t": "Gaspard G, youtubeur : « Les règles de la TV, sans les aides de la presse c’est le pire des deux mondes »",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/idees/article/2026/11/23/gaspard-g-youtubeur-les-regles-de-la-tv-sans-les-aides-de-la-presse-c-est-le-pire-des-deux-mondes_6814347_3232.html",
-"d": "2026-11-23T05:20:06Z",
-"qui": []
-},
-{
 "t": "Présidentielle 2027 : Marine Le Pen est « à un peu plus de 400 signatures », selon Jordan Bardella",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4264973-20261123-direct-presidentielle-2027-nunez-ferme-contre-antisemitisme-bataille-electorale?at_medium=display&at_campaign=149",
@@ -713,13 +552,6 @@
 ]
 },
 {
-"t": "Dossier d’informations, visite d’un site « secret-défense »… Catherine Vautrin lance la mission « présidentielle Défense »",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/politique/dossier-dinformations-visite-dun-site-secret-defense-catherine-vautrin-lance-la-mission-presidentielle-defense-22-11-2026-ZSYE5JISZRBV5J4Q5FVMPHDJ2Y.php",
-"d": "2026-11-22T12:00:00Z",
-"qui": []
-},
-{
 "t": "Présidentielle 2027 : David Lisnard voit une primaire comme « le pré-premier tour » et « un moyen d’exclure les macronistes »",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-david-lisnard-voit-une-primaire-comme-le-pre-premier-tour-et-un-moyen-dexclure-les-macronistes-22-11-2026-NV73BW4JAJAO5IYVOPOYOCXCUI.php",
@@ -732,13 +564,6 @@
 "t": "Présidentielle 2027 : « le pire scénario possible », la CFDT appelle à son tour à changer la date du second tour prévu le 2 mai",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-pire-scenario-possible-la-cfdt-appelle-a-son-tour-a-changer-la-date-du-second-tour-prevu-le-2-mai-22-11-2026-HOML65PUUBDGTOHZDW5CZTK2JE.php",
-"d": "2026-11-22T12:00:00Z",
-"qui": []
-},
-{
-"t": "« Cela devient irrespirable » : entre médias et politiques, une campagne présidentielle sous tension",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/culture-loisirs/tv/cela-devient-irrespirable-entre-medias-et-politiques-une-campagne-presidentielle-sous-tension-22-11-2026-OP7JQUXBDVFDTGRSK3CUQ2QOEM.php",
 "d": "2026-11-22T12:00:00Z",
 "qui": []
 },
@@ -768,20 +593,6 @@
 "qui": [
 "lepen"
 ]
-},
-{
-"t": "Présidentielle : Marylise Léon demande à son tour au gouvernement de décaler les dates de l’élection",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/elections/dates-de-la-presidentielle-marylise-leon-critique-a-son-tour-la-tenue-du-second-tour-le-2-mai-20261122_BE4JGJEYDNB43AIUNEO4XROBRU/",
-"d": "2026-11-22T11:19:52Z",
-"qui": []
-},
-{
-"t": "Présidentielle : Ruffin renonce, le paysage se clarifie à gauche",
-"s": "La Croix",
-"u": "https://www.la-croix.com/presidentielle-ruffin-renonce-le-paysage-se-clarifie-a-gauche-20261121",
-"d": "2026-11-22T09:59:20Z",
-"qui": []
 },
 {
 "t": "Pour David Lisnard, la primaire de la droite et du centre est un «moyen d’éliminer les macronistes»",
@@ -965,38 +776,10 @@
 ]
 },
 {
-"t": "Karim Bouamrane : «LFI déteste les quartiers populaires»",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/podcasts/l-atelier-politique/20261121-karim-bouamrane-lfi-d%C3%A9teste-les-quartiers-populaires",
-"d": "2026-11-21T06:00:28Z",
-"qui": []
-},
-{
 "t": "Présidentielle 2027: contraints par l’Arcom de respecter le pluralisme, des créateurs de contenus s’insurgent",
 "s": "RFI",
 "u": "https://www.rfi.fr/fr/podcasts/chronique-des-m%C3%A9dias/20261120-pr%C3%A9sidentielle-2027-contraints-par-l-arcom-de-respecter-le-pluralisme-des-cr%C3%A9ateurs-de-contenus-s-insurgent",
 "d": "2026-11-20T23:00:25Z",
-"qui": []
-},
-{
-"t": "France: le silence du RN interroge après la révélation par la presse de fuites du ministère de l'Intérieur",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/france/20261120-france-le-silence-du-rn-interroge-apr%C3%A8s-la-r%C3%A9v%C3%A9lation-par-la-presse-de-fuites-du-minist%C3%A8re-de-l-int%C3%A9rieur",
-"d": "2026-11-20T22:24:04Z",
-"qui": []
-},
-{
-"t": "Johann Chapoutot : \"La dédiabolisation du RN est véritablement un mythe\"",
-"s": "France 24",
-"u": "https://www.france24.com/fr/%C3%A9missions/au-c%C5%93ur-de-l-info-l-invit%C3%A9/20261120-johann-chapoutot-la-d%C3%A9diabolisation-du-rn-est-v%C3%A9ritablement-un-mythe",
-"d": "2026-11-20T20:58:03Z",
-"qui": []
-},
-{
-"t": "«Une funeste connerie» : bronca des créateurs de contenu contre les nouvelles mesures de l’Arcom pour le pluralisme",
-"s": "Libération",
-"u": "https://www.liberation.fr/economie/medias/une-funeste-connerie-bronca-des-createurs-de-contenu-contre-les-nouvelles-mesures-de-larcom-pour-le-pluralisme-20261120_R5C6BOL6WNG3DOZIOIIQLFITYU/",
-"d": "2026-11-20T20:34:01Z",
 "qui": []
 },
 {
@@ -1027,13 +810,6 @@
 ]
 },
 {
-"t": "Villepin candidat en 2027 : le jour où son discours à l’ONU l’a placé sous les projecteurs",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/villepin-candidat-en-2027-le-jour-ou-son-discours-a-l-onu-la-place-sous-les-projecteurs-20261120",
-"d": "2026-11-20T18:02:12Z",
-"qui": []
-},
-{
 "t": "«Je suis candidat à l’élection présidentielle de 2027», annonce Dominique de Villepin",
 "s": "Libération",
 "u": "https://www.liberation.fr/politique/elections/je-suis-candidat-a-lelection-presidentielle-de-2027-annonce-dominique-de-villepin-20261120_SF2ZFQEWNJEXNAR3E2QCZPRSFI/",
@@ -1041,13 +817,6 @@
 "qui": [
 "villepin"
 ]
-},
-{
-"t": "Pluralisme imposé aux créateurs de contenus français: «Ces règles ne sont pas faites pour des médias en ligne»",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/france/20261120-pluralisme-impos%C3%A9-aux-cr%C3%A9ateurs-de-contenus-fran%C3%A7ais-ces-r%C3%A8gles-ne-sont-pas-faites-pour-des-m%C3%A9dias-en-ligne",
-"d": "2026-11-20T17:25:03Z",
-"qui": []
 },
 {
 "t": "Présidentielle 2027: que retenir des 258 propositions du programme de Dominique de Villepin?",
@@ -1287,13 +1056,6 @@
 ]
 },
 {
-"t": "Fuites sur des enquêtes mettant en cause le RN: un préfet convoqué par Laurent Nuñez",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/fuites-sur-des-enquetes-mettant-en-cause-le-rn-un-prefet-convoque-par-laurent-nunez",
-"d": "2026-11-20T07:35:39Z",
-"qui": []
-},
-{
 "t": "Dominique de Villepin candidat : un homme de droite populaire à gauche mais en quête d'électeurs",
 "s": "France 24",
 "u": "https://www.france24.com/fr/france/20261120-france-presidentielle-2027-dominique-de-villepin-homme-droite-populaire-gauche-sans-electeurs",
@@ -1341,13 +1103,6 @@
 ]
 },
 {
-"t": "Les écologistes et la présidentielle : retour sur 50 ans de rendez-vous manqués",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/les-ecologistes-et-la-presidentielle-retour-sur-50-ans-de-rendez-vous-manques-20261119",
-"d": "2026-11-19T18:47:28Z",
-"qui": []
-},
-{
 "t": "Présidentielle : les créateurs de contenus sommés de respecter le pluralisme par l'Arcom",
 "s": "France 24",
 "u": "https://www.france24.com/fr/france/20261119-pr%C3%A9sidentielle-cr%C3%A9ateurs-contenus-somm%C3%A9s-respecter-pluralisme-arcom",
@@ -1359,20 +1114,6 @@
 "s": "Le Figaro",
 "u": "https://www.lefigaro.fr/politique/presidentielle-2027-pres-de-cinq-ans-apres-l-invasion-russe-l-effet-drapeau-disparu-de-la-guerre-en-ukraine-20261119",
 "d": "2026-11-19T18:00:00Z",
-"qui": []
-},
-{
-"t": "Le RN visé par une nouvelle enquête autour de fuites impliquant un préfet",
-"s": "France 24",
-"u": "https://www.france24.com/fr/france/20261119-le-rn-vis%C3%A9-par-une-nouvelle-enqu%C3%AAte-autour-de-fuites-impliquant-un-pr%C3%A9fet",
-"d": "2026-11-19T17:40:23Z",
-"qui": []
-},
-{
-"t": "David Habib, député des Pyrénées-Atlantiques depuis 24 ans, est mort à 65 ans",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/david-habib-depute-des-pyrenees-atlantiques-depuis-24-ans-est-mort-a-65-ans-445340",
-"d": "2026-11-19T15:57:07Z",
 "qui": []
 },
 {
@@ -1418,13 +1159,6 @@
 "melenchon",
 "tondelier"
 ]
-},
-{
-"t": "« La cellule a été lancée » : comment Marine Le Pen prépare (déjà) son entre-deux-tours de la présidentielle",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/la-cellule-a-ete-lancee-comment-marine-le-pen-prepare-deja-son-entre-deux-tours-de-la-presidentielle-19-11-2026-CJFFMX7SEBDAHN3E3OIRTTVJDA.php",
-"d": "2026-11-19T12:00:00Z",
-"qui": []
 },
 {
 "t": "Présidentielle 2027 : Édouard Philippe propose un moratoire de cinq ans sur l’interdiction de location des passoires thermiques",
@@ -1586,13 +1320,6 @@
 ]
 },
 {
-"t": "Politique de la ville: les députés approuvent un troisième programme de renouvellement urbain",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/politique-de-la-ville-les-deputes-approuvent-un-troisieme-programme-de-renouvellement",
-"d": "2026-11-18T08:46:58Z",
-"qui": []
-},
-{
 "t": "Présidentielle 2027: Entre Gabriel Attal, Bruno Retailleau et David Lisnard, une primaire se profile malgré le refus d’Edouard Philippe",
 "s": "LCP",
 "u": "https://lcp.fr/actualites/presidentielle-2027-entre-gabriel-attal-bruno-retailleau-et-david-lisnard-une-primaire",
@@ -1646,13 +1373,6 @@
 "qui": []
 },
 {
-"t": "Réforme des retraites: pourquoi le RN veut supprimer les critères de pénibilité du travail",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/reforme-des-retraites-pourquoi-le-rn-veut-supprimer-les-criteres-de-penibilite-du",
-"d": "2026-11-17T13:55:42Z",
-"qui": []
-},
-{
 "t": "Présidentielle 2027 : le rôle symbolique de Gérard Larcher pour une primaire de la droite et du centre",
 "s": "La Croix",
 "u": "https://www.la-croix.com/politique/presidentielle-2027-le-role-symbolique-de-gerard-larcher-pour-une-primaire-de-la-droite-et-du-centre-20261117",
@@ -1665,21 +1385,46 @@
 "u": "https://www.la-croix.com/societe/presidentielle-2027-cinq-candidats-confrontent-leurs-positions-sur-la-pauvrete-20261117",
 "d": "2026-11-17T11:08:50Z",
 "qui": []
+},
+{
+"t": "Présidentielle 2027: pourquoi Jean-Luc Mélenchon va dîner ce mardi avec des grands patrons, dont Bernard Arnault et Patrick Pouyanné",
+"s": "LCP",
+"u": "https://lcp.fr/actualites/presidentielle-2027-pourquoi-jean-luc-melenchon-va-diner-ce-mardi-avec-des-grands",
+"d": "2026-11-17T10:11:09Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Ukraine: Marine Le Pen revendique un \"soutien sans faille\" mais veut fermer le robinet financier",
+"s": "LCP",
+"u": "https://lcp.fr/actualites/ukraine-marine-le-pen-revendique-un-soutien-sans-faille-mais-veut-fermer-le-robinet",
+"d": "2026-11-17T09:57:35Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "Présidentielle 2027 : quatre questions sur la « priorité nationale », au cœur du projet du RN",
+"s": "La Croix",
+"u": "https://www.la-croix.com/politique/presidentielle-2027-quatre-questions-sur-la-priorite-nationale-au-cour-du-projet-du-rn-20261116",
+"d": "2026-11-17T04:59:14Z",
+"qui": []
 }
 ],
 "sources": {
-"Le Monde": 10,
-"franceinfo": 4,
-"Libération": 24,
-"Le Figaro": 11,
-"Le Parisien": 56,
+"Le Monde": 8,
+"franceinfo": 3,
+"Libération": 20,
+"Le Figaro": 9,
+"Le Parisien": 53,
 "20 Minutes": 6,
-"Ouest-France": 3,
-"BFMTV": 26,
-"France 24": 10,
-"La Croix": 32,
-"LCP": 48,
-"RFI": 11
+"Ouest-France": 2,
+"BFMTV": 15,
+"France 24": 8,
+"La Croix": 27,
+"LCP": 35,
+"RFI": 7
 },
-"maj": "2026-11-23T23:53:53Z"
+"maj": "2026-11-24T00:04:41Z"
 }
