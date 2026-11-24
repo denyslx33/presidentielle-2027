@@ -2,6 +2,23 @@
 "v": 4,
 "items": [
 {
+"t": "Présidentielle 2027 : « Je ne voudrais pas froisser mes administrés »… Les maires face au casse-tête des parrainages",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265401-20261124-presidentielle-2027-voudrais-froisser-administres-maires-face-casse-tete-parrainages?at_medium=display&at_campaign=149",
+"d": "2026-11-24T17:51:58Z",
+"qui": []
+},
+{
+"t": "Présidentielle 2027 : Edouard Philippe a voté pour David Lisnard à la présidence de l’AMF, mais fustige sa posture dans la course à l’Elysée",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/24/edouard-philippe-a-vote-pour-david-lisnard-a-la-presidence-de-l-amf-mais-fustige-sa-posture-dans-la-course-a-l-elysee_6814832_6205049.html",
+"d": "2026-11-24T17:43:11Z",
+"qui": [
+"lisnard",
+"philippe"
+]
+},
+{
 "t": "Marine Le Pen",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/marine-le-pen_DN-201201010011.html",
@@ -26,16 +43,6 @@
 "d": "2026-11-24T17:09:28Z",
 "qui": [
 "melenchon"
-]
-},
-{
-"t": "DIRECT. Présidentielle 2027: \"on peut aimer les tronçonneuses, mais pas savoir trancher”, le tacle d'Édouard Philippe à David Lisnard",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html",
-"d": "2026-11-24T17:04:59Z",
-"qui": [
-"lisnard",
-"philippe"
 ]
 },
 {
@@ -89,6 +96,16 @@
 "u": "https://lcp.fr/actualites/presidentielle-2027-pourquoi-autant-de-maires-refusent-de-donner-leur-parrainage-a-un",
 "d": "2026-11-24T16:30:30Z",
 "qui": []
+},
+{
+"t": "DIRECT. Présidentielle 2027: \"on peut aimer les tronçonneuses, mais pas savoir trancher”, le tacle d'Édouard Philippe à David Lisnard",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html",
+"d": "2026-11-24T16:21:30Z",
+"qui": [
+"lisnard",
+"philippe"
+]
 },
 {
 "t": "Au Congrès des maires, Marine Tondelier présente ses propositions \"Pour un État-providence climatique\"",
@@ -307,7 +324,7 @@
 ]
 },
 {
-"t": "DIRECT. Présidentielle 2027 : David Lisnard s'engage à continuer à « défendre les mairies » s'il est élu président",
+"t": "Présidentielle 2027 : David Lisnard s'engage à continuer à « défendre les mairies » s'il est élu président",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-au-congres-des-maires-le-candidat-david-lisnard-vise-un-nouveau-mandat-edouard-philippe-attendu-sur-place-24-11-2026-3DBXJVVZXNFVJPOS7CZG6RJ37E.php",
 "d": "2026-11-24T12:00:00Z",
@@ -700,13 +717,14 @@
 "qui": []
 },
 {
-"t": "EN DIRECT Présidentielle 2027 : Mélenchon lance un scud sur Bayrou, Lisnard ouvre le Congrès des maires sur un air de campagne...",
+"t": "EN DIRECT Présidentielle 2027 : Mélenchon lance un scud sur Bayrou, Édouard Philippe vote Lisnard…",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265257-20261124-direct-presidentielle-2027-candidature-david-lisnard-va-agiter-congres-maires-france?at_medium=display&at_campaign=149",
 "d": "2026-11-24T05:02:47Z",
 "qui": [
 "lisnard",
-"melenchon"
+"melenchon",
+"philippe"
 ]
 },
 {
@@ -1736,40 +1754,21 @@
 "qui": [
 "villepin"
 ]
-},
-{
-"t": "Dominique de Villepin candidat : un homme de droite populaire à gauche mais en quête d'électeurs",
-"s": "France 24",
-"u": "https://www.france24.com/fr/france/20261120-france-presidentielle-2027-dominique-de-villepin-homme-droite-populaire-gauche-sans-electeurs",
-"d": "2026-11-20T06:43:38Z",
-"qui": [
-"villepin"
-]
-},
-{
-"t": "Yannick Jadot quitte Les Écologistes après la main tendue de Tondelier à Mélenchon",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/yannick-jadot-quitte-les-ecologistes-apres-la-main-tendue-de-tondelier-a-melenchon-20261120",
-"d": "2026-11-20T06:21:52Z",
-"qui": [
-"melenchon",
-"tondelier"
-]
 }
 ],
 "sources": {
-"Le Monde": 6,
-"franceinfo": 7,
+"Le Monde": 7,
+"franceinfo": 6,
 "Libération": 20,
 "Le Figaro": 9,
 "Le Parisien": 53,
 "20 Minutes": 8,
 "Ouest-France": 0,
-"BFMTV": 16,
+"BFMTV": 17,
 "France 24": 5,
 "La Croix": 24,
 "LCP": 34,
 "RFI": 8
 },
-"maj": "2026-11-24T17:20:23Z"
+"maj": "2026-11-24T18:11:10Z"
 }
