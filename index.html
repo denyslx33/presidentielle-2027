@@ -296,7 +296,7 @@ h3 { font-size:20px; font-weight:600; }
   <section class="view on" id="v-accueil">
     <div id="h-silence"></div>
     <div class="h3b">
-      <button type="button" id="h-test"><span>🧭</span>Le test<small>Qui pense comme moi ?</small></button>
+      <button type="button" id="h-test"><span>🧭</span>Le test<small>Quel candidat pense comme moi ?</small></button>
       <button type="button" id="h-prog"><span>📄</span>Programmes<small>Comparer les idées</small></button>
       <button type="button" id="h-sond"><span>📊</span>Sondages<small>Courbe et 2nd tour</small></button>
     </div>
@@ -492,7 +492,7 @@ h3 { font-size:20px; font-weight:600; }
       <p>Les données sont mises à jour chaque jour, avec l'aide d'un assistant d'intelligence artificielle. Chaque chiffre et chaque mesure sont tirés d'une source qu'on peut vérifier, et rien n'est publié sans lien vers cette source.</p>
     </div>
     <div class="ab">
-      <h3>Le test « Qui pense comme moi ? »</h3>
+      <h3>Le test « Quel candidat pense comme moi ? »</h3>
       <p>Chaque position de candidat vient d'une mesure publiée, affichée à la fin du test avec sa source. Un candidat qui ne s'est pas prononcé n'est pas compté. Le test aide à réfléchir, ce n'est pas une consigne de vote.</p>
     </div>
     <div class="ab">
@@ -869,7 +869,7 @@ function renderQuiz() {
   const Q = RUNQ;
   if (QI === 0 && QANS.every((a) => a === null)) {
     const d = el('div', 'qz');
-    d.append(el('div', 'qq', 'Qui pense comme moi ?'), el('p', null, `${Q.length} affirmations tirées au hasard parmi ${QUIZ.questions.length}, tous thèmes confondus. Pour chacune, dites si vous êtes d'accord. À la fin, les candidats sont classés selon le nombre de réponses communes. Refaites le test : vous aurez d'autres questions.`), el('p', 'muted', "Ce n'est pas une consigne de vote. Chaque position de candidat vient d'une mesure de son programme ou de ses déclarations publiques, et à la fin vous verrez, question par question, la mesure et le lien vers sa source. Beaucoup de candidats n'ont pas encore de programme complet. Vos réponses restent sur votre téléphone."));
+    d.append(el('div', 'qq', 'Quel candidat pense comme moi ?'), el('p', null, `${Q.length} affirmations tirées au hasard parmi ${QUIZ.questions.length}, tous thèmes confondus. Pour chacune, dites si vous êtes d'accord. À la fin, les candidats sont classés selon le nombre de réponses communes. Refaites le test : vous aurez d'autres questions.`), el('p', 'muted', "Ce n'est pas une consigne de vote. Chaque position de candidat vient d'une mesure de son programme ou de ses déclarations publiques, et à la fin vous verrez, question par question, la mesure et le lien vers sa source. Beaucoup de candidats n'ont pas encore de programme complet. Vos réponses restent sur votre téléphone."));
     const b = el('button', 'qbtn', 'Commencer'); b.style.cssText = 'width:100%;background:var(--accent);color:var(--white);border-color:var(--accent)'; b.onclick = () => { QI = 0; renderQuizQ(); }; d.append(b);
     box.replaceChildren(d); return;
   }
