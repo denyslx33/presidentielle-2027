@@ -299,6 +299,117 @@
    ]
   },
   {
+   "id": "v3300",
+   "titre": "Créer la taxe Zucman sur les très grandes fortunes",
+   "contexte": "Amendement au budget de l'État pour 2026 : un impôt minimum de 2 % sur les patrimoines de plus de 100 millions d'euros.",
+   "date": "2025-10-31",
+   "scrutin": 3300,
+   "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300",
+   "adopte": false,
+   "q": "q6",
+   "pour": 172,
+   "contre": 228,
+   "abst": 6,
+   "groupes": [
+    {
+     "g": "RN",
+     "membres": 123,
+     "pour": 0,
+     "contre": 88,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "EPR",
+     "membres": 92,
+     "pour": 0,
+     "contre": 60,
+     "abst": 3,
+     "nv": 7
+    },
+    {
+     "g": "LFI",
+     "membres": 71,
+     "pour": 60,
+     "contre": 0,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "SOC",
+     "membres": 69,
+     "pour": 61,
+     "contre": 0,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "DR",
+     "membres": 50,
+     "pour": 0,
+     "contre": 28,
+     "abst": 0,
+     "nv": 3
+    },
+    {
+     "g": "ECOS",
+     "membres": 38,
+     "pour": 33,
+     "contre": 0,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "DEM",
+     "membres": 36,
+     "pour": 0,
+     "contre": 18,
+     "abst": 2,
+     "nv": 1
+    },
+    {
+     "g": "HOR",
+     "membres": 34,
+     "pour": 0,
+     "contre": 21,
+     "abst": 1,
+     "nv": 2
+    },
+    {
+     "g": "LIOT",
+     "membres": 22,
+     "pour": 5,
+     "contre": 5,
+     "abst": 0,
+     "nv": 1
+    },
+    {
+     "g": "GDR",
+     "membres": 17,
+     "pour": 12,
+     "contre": 0,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "UDR",
+     "membres": 16,
+     "pour": 0,
+     "contre": 5,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "NI",
+     "membres": 9,
+     "pour": 1,
+     "contre": 3,
+     "abst": 0,
+     "nv": 0
+    }
+   ]
+  },
+  {
    "id": "v3260",
    "titre": "Dénoncer l'accord franco-algérien de 1968",
    "contexte": "Proposition de résolution : elle demande au gouvernement de dénoncer l'accord, sans l'y obliger.",
@@ -406,6 +517,228 @@
      "contre": 0,
      "abst": 0,
      "nv": 0
+    }
+   ]
+  },
+  {
+   "id": "v2957",
+   "titre": "Adopter la loi Duplomb sur l'agriculture",
+   "contexte": "Vote final de la loi « visant à lever les contraintes à l'exercice du métier d'agriculteur ». Elle permet notamment de réintroduire sous conditions un pesticide néonicotinoïde.",
+   "date": "2025-07-08",
+   "scrutin": 2957,
+   "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2957",
+   "adopte": true,
+   "q": "q21",
+   "pour": 316,
+   "contre": 223,
+   "abst": 25,
+   "groupes": [
+    {
+     "g": "RN",
+     "membres": 123,
+     "pour": 119,
+     "contre": 0,
+     "abst": 2,
+     "nv": 0
+    },
+    {
+     "g": "EPR",
+     "membres": 93,
+     "pour": 64,
+     "contre": 14,
+     "abst": 10,
+     "nv": 1
+    },
+    {
+     "g": "LFI",
+     "membres": 71,
+     "pour": 0,
+     "contre": 71,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "SOC",
+     "membres": 66,
+     "pour": 0,
+     "contre": 65,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "DR",
+     "membres": 48,
+     "pour": 47,
+     "contre": 0,
+     "abst": 1,
+     "nv": 0
+    },
+    {
+     "g": "ECOS",
+     "membres": 38,
+     "pour": 0,
+     "contre": 38,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "DEM",
+     "membres": 36,
+     "pour": 26,
+     "contre": 9,
+     "abst": 1,
+     "nv": 0
+    },
+    {
+     "g": "HOR",
+     "membres": 34,
+     "pour": 26,
+     "contre": 3,
+     "abst": 4,
+     "nv": 1
+    },
+    {
+     "g": "LIOT",
+     "membres": 23,
+     "pour": 12,
+     "contre": 3,
+     "abst": 6,
+     "nv": 0
+    },
+    {
+     "g": "GDR",
+     "membres": 17,
+     "pour": 0,
+     "contre": 17,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "UDR",
+     "membres": 16,
+     "pour": 16,
+     "contre": 0,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "NI",
+     "membres": 12,
+     "pour": 6,
+     "contre": 3,
+     "abst": 1,
+     "nv": 0
+    }
+   ]
+  },
+  {
+   "id": "v988",
+   "titre": "Renforcer le soutien à l'Ukraine",
+   "contexte": "Proposition de résolution européenne, sans valeur contraignante, qui appelle notamment à saisir les avoirs russes gelés au profit de l'Ukraine.",
+   "date": "2025-03-12",
+   "scrutin": 988,
+   "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/988",
+   "adopte": true,
+   "q": "q23",
+   "pour": 288,
+   "contre": 54,
+   "abst": 132,
+   "groupes": [
+    {
+     "g": "RN",
+     "membres": 123,
+     "pour": 0,
+     "contre": 0,
+     "abst": 114,
+     "nv": 9
+    },
+    {
+     "g": "EPR",
+     "membres": 94,
+     "pour": 81,
+     "contre": 0,
+     "abst": 0,
+     "nv": 13
+    },
+    {
+     "g": "LFI",
+     "membres": 71,
+     "pour": 0,
+     "contre": 45,
+     "abst": 0,
+     "nv": 26
+    },
+    {
+     "g": "SOC",
+     "membres": 66,
+     "pour": 46,
+     "contre": 0,
+     "abst": 0,
+     "nv": 20
+    },
+    {
+     "g": "DR",
+     "membres": 47,
+     "pour": 28,
+     "contre": 0,
+     "abst": 0,
+     "nv": 19
+    },
+    {
+     "g": "ECOS",
+     "membres": 38,
+     "pour": 34,
+     "contre": 0,
+     "abst": 2,
+     "nv": 2
+    },
+    {
+     "g": "DEM",
+     "membres": 36,
+     "pour": 36,
+     "contre": 0,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "HOR",
+     "membres": 33,
+     "pour": 33,
+     "contre": 0,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "LIOT",
+     "membres": 23,
+     "pour": 23,
+     "contre": 0,
+     "abst": 0,
+     "nv": 0
+    },
+    {
+     "g": "GDR",
+     "membres": 17,
+     "pour": 0,
+     "contre": 9,
+     "abst": 3,
+     "nv": 5
+    },
+    {
+     "g": "UDR",
+     "membres": 16,
+     "pour": 0,
+     "contre": 0,
+     "abst": 12,
+     "nv": 4
+    },
+    {
+     "g": "NI",
+     "membres": 11,
+     "pour": 7,
+     "contre": 0,
+     "abst": 1,
+     "nv": 3
     }
    ]
   }
