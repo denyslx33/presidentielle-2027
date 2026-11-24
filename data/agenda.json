@@ -73,7 +73,11 @@
    "lieu": "Carros (Alpes-Maritimes)",
    "chaine": null,
    "qui": [],
-   "url": "https://votons-2027.fr/agenda"
+   "url": "https://votons-2027.fr/agenda",
+   "commune": "Carros",
+   "dep": "06",
+   "lat": 43.785,
+   "lon": 7.1798
   },
   {
    "date": "2026-12-02",
@@ -95,7 +99,11 @@
    "qui": [
     "melenchon"
    ],
-   "url": "https://melenchon2027.fr/agenda-de-campagne/"
+   "url": "https://melenchon2027.fr/agenda-de-campagne/",
+   "commune": "Le Havre",
+   "dep": "76",
+   "lat": 49.4958,
+   "lon": 0.1312
   },
   {
    "date": "2026-12-06",
@@ -107,7 +115,11 @@
    "qui": [
     "glucksmann"
    ],
-   "url": "https://glucks2027.fr/meeting/"
+   "url": "https://glucks2027.fr/meeting/",
+   "commune": "Paris",
+   "dep": "75",
+   "lat": 48.8589,
+   "lon": 2.347
   },
   {
    "date": "2026-12-07",
@@ -142,7 +154,11 @@
    "qui": [
     "lisnard"
    ],
-   "url": "https://www.lyonmag.com/article/154666/presidentielle-2027-david-lisnard-prepare-un-grand-meeting-a-lyon"
+   "url": "https://www.lyonmag.com/article/154666/presidentielle-2027-david-lisnard-prepare-un-grand-meeting-a-lyon",
+   "commune": "Chassieu",
+   "dep": "69",
+   "lat": 45.7366,
+   "lon": 4.9638
   },
   {
    "date": "2027-01-24",
@@ -154,7 +170,11 @@
    "qui": [
     "philippe"
    ],
-   "url": "https://lcp.fr/actualites/presidentielle-2027-edouard-philippe-promet-des-reformes-radicales-pour-relancer-sa"
+   "url": "https://lcp.fr/actualites/presidentielle-2027-edouard-philippe-promet-des-reformes-radicales-pour-relancer-sa",
+   "commune": "Arras",
+   "dep": "62",
+   "lat": 50.2893,
+   "lon": 2.7679
   },
   {
    "date": "2027-02-07",
@@ -176,7 +196,11 @@
    "qui": [
     "arthaud"
    ],
-   "url": "https://votons-2027.fr/agenda"
+   "url": "https://votons-2027.fr/agenda",
+   "commune": "Rouen",
+   "dep": "76",
+   "lat": 49.4412,
+   "lon": 1.0912
   },
   {
    "date": "2027-02-27",

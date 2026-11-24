@@ -251,6 +251,11 @@ details.qexp { margin:4px 0 12px; font-size:14px; } details.qexp summary { color
 .hnew .go { flex:1; font:inherit; display:flex; align-items:center; gap:10px; background:none; border:0; color:var(--fg); text-align:left; cursor:pointer; padding:8px; }
 .hnew .ic { font-size:24px; } .hnew small { color:var(--muted); } .hnew .chev { margin-left:auto; color:var(--accent); font-size:20px; }
 .hnew .x { font:inherit; font-size:22px; background:none; border:0; color:var(--muted); cursor:pointer; padding:0 6px; }
+.dist { font-size:13px; color:var(--accent); font-weight:500; margin-top:3px; }
+.locbar { display:flex; align-items:center; gap:8px; font-size:14px; margin:4px 0 10px; color:var(--muted); } .locbar b { color:var(--fg); } .locbar button { font:inherit; font-size:14px; background:none; border:0; color:var(--accent); padding:0; cursor:pointer; text-decoration:underline; }
+.vsearch { width:100%; font:inherit; font-size:16px; padding:10px 12px; border:1px solid var(--line); border-radius:12px; background:var(--white); color:var(--fg); box-sizing:border-box; }
+.vres button, .vgeo { display:block; width:100%; text-align:left; font:inherit; font-size:15px; padding:10px 4px; background:none; border:0; border-bottom:1px solid var(--line); color:var(--fg); cursor:pointer; }
+.vgeo { color:var(--accent); border:0; padding:12px 4px 6px; } .vr { display:flex; gap:6px; margin:10px 0; } .vr button { flex:1; font:inherit; padding:8px; border:1px solid var(--line); border-radius:20px; background:var(--panel); color:var(--fg); } .vr button.on { background:var(--accent); color:var(--white); border-color:var(--accent); }
 .newsl { padding-left:20px; margin:8px 0 14px; } .newsl li { margin-bottom:8px; font-size:15px; }
 .sheet-in .k { display:inline-block; border:1px solid var(--line); border-radius:6px; padding:0 6px; background:var(--bg); }
 .cmpbtn { font:inherit; width:100%; display:flex; align-items:center; gap:12px; text-align:left; color:var(--white); background:var(--accent); border:0; border-radius:16px; padding:14px 16px; margin:4px 0 14px; cursor:pointer; box-shadow:0 4px 14px rgba(59,111,224,.25); }
@@ -361,7 +366,7 @@ h3 { font-size:20px; font-weight:600; }
   <!-- ACCUEIL -->
   <section class="view on" id="v-accueil">
     <div id="h-silence"></div>
-    <div class="hnew" id="h-new" hidden><button type="button" class="go" id="h-new-go"><span class="ic">✨</span><span><b>Nouveau dans l’appli</b><br><small>Favoris, test enrichi, sensibilité politique…</small></span><span class="chev">›</span></button><button type="button" class="x" id="h-new-x" aria-label="Masquer">×</button></div>
+    <div class="hnew" id="h-new" hidden><button type="button" class="go" id="h-new-go"><span class="ic">✨</span><span><b>Nouveau dans l’appli</b><br><small>Meetings près de chez vous, favoris, test enrichi…</small></span><span class="chev">›</span></button><button type="button" class="x" id="h-new-x" aria-label="Masquer">×</button></div>
     <div class="h3b">
       <button type="button" id="h-test"><span>🧭</span>Le test<small>Quel candidat pense comme moi ?</small></button>
       <button type="button" id="h-prog"><span>📄</span>Programmes<small>Comparer les idées</small></button>
@@ -381,6 +386,11 @@ h3 { font-size:20px; font-weight:600; }
       <div class="hh"><h2>Les dates clés</h2><span class="muted">Sources officielles</span></div>
       <div id="h-kd"></div>
       <button class="more" id="h-guide2" type="button">Inscription, procuration : le guide du vote ›</button>
+    </div>
+    <div class="hcard" id="h-pres" hidden>
+      <div class="hh"><h2>Près de chez vous</h2><span class="muted" id="h-pres-sub"></span></div>
+      <div id="h-pres-in"></div>
+      <button class="more" id="h-pres-more" type="button">Tous les rendez-vous près de chez moi ›</button>
     </div>
     <div class="hcard" id="h-tp" hidden>
       <div class="hh"><h2>Temps de parole</h2><span class="muted">Arcom</span></div>
@@ -659,6 +669,7 @@ h3 { font-size:20px; font-weight:600; }
     </div>
     <div id="actu-agenda" hidden>
     <button class="gcard" id="agenda-guide" type="button"><span>🗳️</span><div><b>Guide pratique du vote</b><br><span class="muted">Inscription, bureau de vote, papiers, procuration</span></div><span class="chev">›</span></button>
+    <div id="ag-loc"></div>
     <div class="chips" id="ag-chips"></div>
     <div id="aglist"></div>
     <h3>Rendez-vous réguliers</h3>
@@ -1204,7 +1215,8 @@ function renderHomeTP() {
   out.push(el('p', 'muted', 'Les 5 temps de parole les plus longs' + (TP.periode ? ', ' + TP.periode : '') + '. Le temps attendu pour chacun dépend de la période de campagne.'));
   $('h-tp-in').replaceChildren(...out);
 }
-const NEWS = { v: '2026-11-24b', date: '2026-11-24', items: [
+const NEWS = { v: '2026-11-24c', date: '2026-11-24', items: [
+  'Près de chez moi : indiquez votre ville dans l’Agenda pour voir les meetings à 30, 50 ou 100 km. Elle reste sur votre téléphone.',
   'Mes favoris : touchez l’étoile sur la fiche d’un ou deux candidats, leurs dernières actus s’affichent en haut de l’accueil.',
   'Le test pose maintenant 25 questions, avec un « C’est quoi ? » pour les sujets techniques.',
   'À la fin du test : votre sensibilité sur quatre grands thèmes, et un score plus clair.',
@@ -1216,6 +1228,55 @@ function openNews() {
   const ok = el('button', 'qbtn', 'Super !'); ok.type = 'button'; ok.style.width = '100%'; ok.onclick = () => { $('inst-sheet').hidden = true; };
   $('sheet-body').replaceChildren(ul, ok);
   const sh = $('inst-sheet'); sh.querySelector('h2').textContent = 'Quoi de neuf ?'; sh.hidden = false;
+}
+let LOC = (() => { try { const v = JSON.parse(localStorage.getItem('maVille') || 'null'); return v && typeof v.lat === 'number' ? v : null; } catch (e) { return null; } })();
+function distKm(e) {
+  if (!LOC || typeof e.lat !== 'number' || typeof e.lon !== 'number') return null;
+  const R = 6371, rad = Math.PI / 180, dLa = (e.lat - LOC.lat) * rad, dLo = (e.lon - LOC.lon) * rad;
+  const a = Math.sin(dLa / 2) ** 2 + Math.cos(LOC.lat * rad) * Math.cos(e.lat * rad) * Math.sin(dLo / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(a));
+}
+function setLoc(v) { LOC = v; try { if (v) localStorage.setItem('maVille', JSON.stringify(v)); else localStorage.removeItem('maVille'); } catch (e) {} if (!v && AGF === 'pres') AGF = ''; renderAgenda(); renderPres(); }
+function renderLocBar() {
+  const box = $('ag-loc'); if (!box) return;
+  const d = el('div', 'locbar');
+  if (LOC) { d.append('📍 ', el('b', null, LOC.nom), ' · ' + LOC.r + ' km'); const b = el('button', null, 'Modifier'); b.type = 'button'; b.onclick = () => villeSheet(); d.append(b); }
+  else { const b = el('button', null, '📍 Indiquer ma ville pour voir les meetings près de chez moi'); b.type = 'button'; b.onclick = () => villeSheet(() => { AGF = 'pres'; renderAgenda(); }); d.append(b); }
+  box.replaceChildren(d);
+}
+function villeSheet(after) {
+  const body = $('sheet-body'); let r = LOC ? LOC.r : 50, choix = LOC ? { nom: LOC.nom, lat: LOC.lat, lon: LOC.lon } : null;
+  const inp = el('input', 'vsearch'); inp.type = 'search'; inp.placeholder = 'Votre commune'; inp.autocomplete = 'off'; if (LOC) inp.value = LOC.nom;
+  const res = el('div', 'vres'); const st = el('p', 'muted src');
+  const save = () => { if (!choix) { st.textContent = 'Choisissez d’abord une commune dans la liste.'; return; } setLoc({ ...choix, r }); gcCount('ville-definie', 'Ville définie', true); $('inst-sheet').hidden = true; if (after) after(); };
+  const pick = (c) => { choix = c; inp.value = c.nom; res.replaceChildren(); st.textContent = ''; };
+  let t = null;
+  inp.oninput = () => { clearTimeout(t); choix = null; const q = inp.value.trim(); if (q.length < 2) { res.replaceChildren(); return; }
+    t = setTimeout(async () => { try {
+      const isCp = /^\d{5}$/.test(q);
+      const u = 'https://geo.api.gouv.fr/communes?' + (isCp ? 'codePostal=' + q : 'nom=' + encodeURIComponent(q)) + '&fields=nom,centre,codeDepartement&boost=population&limit=6';
+      const js = await (await fetch(u)).json();
+      res.replaceChildren(...js.filter((c) => c.centre).map((c) => { const b = el('button', null, c.nom + ' (' + c.codeDepartement + ')'); b.type = 'button'; b.onclick = () => pick({ nom: c.nom, lat: c.centre.coordinates[1], lon: c.centre.coordinates[0] }); return b; }));
+      if (!js.length) res.replaceChildren(el('p', 'muted src', 'Aucune commune trouvée.'));
+    } catch (e) { res.replaceChildren(el('p', 'muted src', 'Recherche impossible sans connexion.')); } }, 250); };
+  const geo = el('button', 'vgeo', '🎯 Utiliser ma position actuelle'); geo.type = 'button';
+  geo.onclick = () => { if (!navigator.geolocation) { st.textContent = 'Localisation non disponible sur cet appareil.'; return; } st.textContent = 'Localisation…';
+    navigator.geolocation.getCurrentPosition((p) => { pick({ nom: 'ma position', lat: Math.round(p.coords.latitude * 100) / 100, lon: Math.round(p.coords.longitude * 100) / 100 }); inp.value = 'Ma position actuelle'; }, () => { st.textContent = 'Localisation refusée. Tapez plutôt votre commune.'; }, { maximumAge: 600000, timeout: 10000 }); };
+  const rr = el('div', 'vr'); const drawR = () => rr.replaceChildren(...[30, 50, 100].map((v) => { const b = el('button', r === v ? 'on' : '', v + ' km'); b.type = 'button'; b.onclick = () => { r = v; drawR(); }; return b; })); drawR();
+  const ok = el('button', 'qbtn', 'Valider'); ok.type = 'button'; ok.style.cssText = 'width:100%;background:var(--accent);color:var(--white);border-color:var(--accent)'; ok.onclick = save;
+  const parts = [inp, res, geo, el('b', null, 'Distance maximale'), rr, ok, st, el('p', 'muted src', 'Votre ville reste sur ce téléphone, elle ne nous est jamais envoyée. La recherche de commune passe par la base officielle de l’État (geo.api.gouv.fr).')];
+  if (LOC) { const off = el('button', 'vgeo', 'Ne plus utiliser de ville'); off.type = 'button'; off.style.color = 'var(--muted)'; off.onclick = () => { setLoc(null); $('inst-sheet').hidden = true; }; parts.push(off); }
+  body.replaceChildren(...parts);
+  const sh = $('inst-sheet'); sh.querySelector('h2').textContent = 'Près de chez moi'; sh.hidden = false; setTimeout(() => inp.focus(), 100);
+}
+function renderPres() {
+  const box = $('h-pres'); if (!box) return;
+  if (!LOC || !AGENDA) { box.hidden = true; return; }
+  const today = new Date().toISOString().slice(0, 10);
+  const evs = AGENDA.evenements.filter((e) => (e.fin || e.date) >= today && distKm(e) != null && distKm(e) <= LOC.r).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 3);
+  box.hidden = !evs.length; if (!evs.length) return;
+  $('h-pres-sub').textContent = 'à moins de ' + LOC.r + ' km';
+  $('h-pres-in').replaceChildren(...evs.map(evRow));
 }
 function renderNewsBanner() {
   const box = $('h-new'); if (!box) return;
@@ -1309,7 +1370,7 @@ function renderAccueil() {
     }
     $('h-next').replaceChildren(...(rows.length ? rows : [el('p', 'muted', 'Aucune émission annoncée pour le moment.')]));
   }
-  renderFavs(); renderHomeTP();
+  renderFavs(); renderHomeTP(); renderPres();
   if (ACTU) $('h-actu').replaceChildren(...ACTU.items.filter((n) => !(silence() && /sondage/i.test(n.texte))).slice(0, 3).map((n) => newsCard(n, byId)));
 }
 
@@ -1555,20 +1616,23 @@ function evRow(e) {
   const body = el('div'); body.append(el('div', 'kind k-' + e.type, TYPES[e.type] || e.type), el('div', null, e.titre));
   const info = []; if (e.date_texte) info.push(e.date_texte); else if (e.fin) info.push('du ' + fdateLong(e.date) + ' au ' + fdateLong(e.fin)); if (e.heure) info.push(e.heure); if (e.chaine) info.push(e.chaine); if (e.lieu) info.push(e.lieu);
   const p = el('div', 'muted'); p.append(info.join(' · ') + ' '); if (e.url) p.append(link('source', e.url)); body.append(p);
+  const km = distKm(e); if (km != null) body.append(el('div', 'dist', '📍 à ' + (km < 1 ? 'moins de 1' : Math.round(km)) + ' km de ' + LOC.nom));
   r.append(dt, body); return r;
 }
 function renderAgenda() {
   if (!AGENDA) return;
   const today = new Date().toISOString().slice(0, 10);
-  const kinds = [['', 'Tout'], ['tele', 'Télé'], ['meeting', 'Meetings'], ['cle', 'Dates clés']];
-  $('ag-chips').replaceChildren(...kinds.map(([k, l]) => { const b = el('button', AGF === k ? 'on' : '', l); b.onclick = () => { AGF = k; renderAgenda(); }; return b; }));
-  const ok = (e) => (!FILTRE || (e.qui || []).includes(FILTRE)) && (!AGF || (AGF === 'tele' ? ['debat', 'emission'].includes(e.type) : AGF === 'cle' ? ['cle', 'vote'].includes(e.type) : e.type === AGF));
+  const kinds = [['', 'Tout'], ['pres', '📍 Près de moi'], ['tele', 'Télé'], ['meeting', 'Meetings'], ['cle', 'Dates clés']];
+  $('ag-chips').replaceChildren(...kinds.map(([k, l]) => { const b = el('button', AGF === k ? 'on' : '', l); b.onclick = () => { if (k === 'pres' && !LOC) { villeSheet(() => { AGF = 'pres'; renderAgenda(); }); return; } AGF = k; renderAgenda(); }; return b; }));
+  renderLocBar();
+  const ok = (e) => (!FILTRE || (e.qui || []).includes(FILTRE)) && (!AGF || (AGF === 'pres' ? (distKm(e) != null && distKm(e) <= LOC.r) : AGF === 'tele' ? ['debat', 'emission'].includes(e.type) : AGF === 'cle' ? ['cle', 'vote'].includes(e.type) : e.type === AGF));
   const evs = AGENDA.evenements.slice().sort((a, b) => a.date.localeCompare(b.date));
   const up = evs.filter((e) => (e.fin || e.date) >= today && ok(e));
   const out = []; let cur = '';
   const MOISL = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
   up.forEach((e) => { const k = e.date.slice(0, 7); if (k !== cur) { cur = k; out.push(el('div', 'month', MOISL[+k.slice(5) - 1] + ' ' + k.slice(0, 4))); } out.push(evRow(e)); });
-  if (!up.length) out.push(el('p', 'muted', FILTRE ? 'Aucun rendez‑vous annoncé pour ce candidat pour le moment.' : 'Aucun événement à venir dans cette catégorie pour le moment.'));
+  if (!up.length && AGF === 'pres') out.push(el('p', 'muted', `Aucun meeting annoncé à moins de ${LOC.r} km de ${LOC.nom} pour le moment. Ils se multiplient à partir de février.`));
+  else if (!up.length) out.push(el('p', 'muted', FILTRE ? 'Aucun rendez‑vous annoncé pour ce candidat pour le moment.' : 'Aucun événement à venir dans cette catégorie pour le moment.'));
   $('aglist').replaceChildren(...out);
   $('agrdv').replaceChildren(...AGENDA.rendezvous.map((r) => { const p = el('p'); p.append(el('b', null, r.titre), ' · ' + r.quand + ' · ' + r.chaine + ' '); p.append(link('source', r.url)); return p; }));
   $('agpast').replaceChildren(...evs.filter((e) => (e.fin || e.date) < today && (!FILTRE || (e.qui || []).includes(FILTRE))).reverse().map(evRow));
@@ -1692,6 +1756,7 @@ $('agenda-guide').addEventListener('click', openGuide);
 $('gback').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView(GUIDE_FROM); });
 for (const id of ['tab-share', 'h-share', 'ab-share']) $(id).addEventListener('click', shareApp);
 $('sheet-x').addEventListener('click', () => { $('inst-sheet').hidden = true; });
+$('h-pres-more').addEventListener('click', () => { AGF = 'pres'; openAgenda(); renderAgenda(); });
 $('h-tp-more').addEventListener('click', () => { openGuide(); const t = $('tp'); if (t && t.closest('details')) { t.closest('details').open = true; setTimeout(() => t.scrollIntoView({ block: 'start' }), 50); } });
 setTimeout(showNews, 1500);
 renderNewsBanner();
