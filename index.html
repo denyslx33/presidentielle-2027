@@ -924,7 +924,7 @@ function renderQuiz() {
   if (QI === 0 && QANS.every((a) => a === null)) {
     const d = el('div', 'qz');
     d.append(el('div', 'qq', 'Quel candidat pense comme moi ?'), el('p', null, `${Q.length} affirmations tirées au hasard parmi ${QUIZ.questions.length}, tous thèmes confondus. Pour chacune, dites si vous êtes d'accord. À la fin, les candidats sont classés selon le nombre de réponses communes. Refaites le test : vous aurez d'autres questions.`), el('p', 'muted', "Ce n'est pas une consigne de vote. Chaque position de candidat vient d'une mesure de son programme ou de ses déclarations publiques, et à la fin vous verrez, question par question, la mesure et le lien vers sa source. Beaucoup de candidats n'ont pas encore de programme complet. Vos réponses restent sur votre téléphone."));
-    const b = el('button', 'qbtn', 'Commencer'); b.style.cssText = 'width:100%;background:var(--accent);color:var(--white);border-color:var(--accent)'; b.onclick = () => { QI = 0; renderQuizQ(); }; d.append(b);
+    const b = el('button', 'qbtn', 'Commencer'); b.style.cssText = 'width:100%;background:var(--accent);color:var(--white);border-color:var(--accent)'; b.onclick = () => { QI = 0; gcCount('test-commence', 'Test commencé', true); renderQuizQ(); }; d.append(b);
     box.replaceChildren(d); return;
   }
   if (QI >= Q.length) return renderQuizRes();
@@ -937,7 +937,7 @@ function renderQuizQ() {
   const ans = el('div', 'ans');
   for (const [v, t] of [[1, "D'accord"], [-1, "Pas d'accord"], [0, 'Sans avis']]) {
     const b = el('button', QANS[QI] === v ? 'on' : '', t);
-    b.onclick = () => { QANS[QI] = v; saveAns(); QI++; QI >= Q.length ? renderQuizRes() : renderQuizQ(); };
+    b.onclick = () => { QANS[QI] = v; saveAns(); QI++; if (QI >= Q.length) { if (!RUNQ.done) { RUNQ.done = true; gcCount('test-termine', 'Test terminé', true); } renderQuizRes(); } else renderQuizQ(); };
     ans.append(b);
   }
   d.append(ans);
