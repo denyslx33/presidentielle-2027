@@ -224,7 +224,7 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .topbar { display:flex; align-items:center; justify-content:space-between; gap:8px; }
 .topbar h1 { margin:0 0 6px; }
 .brand { display:flex; align-items:center; gap:10px; }
-.brand img { width:44px; height:32px; object-fit:contain; border-radius:8px; background:#fcfcfc; padding:3px 4px; box-sizing:content-box; }
+.brand img { display:block; height:28px; width:auto; max-width:100%; margin:6px 0 4px; }
 .brand span { display:flex; flex-direction:column; line-height:1.05; }
 .brand small { font:600 13px/1.2 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color:var(--muted); letter-spacing:0; margin-top:3px; }
 .tbtn { display:flex; gap:6px; }
@@ -250,7 +250,7 @@ body.silence #v-sondages .block, body.silence #v-sondages #lede, body.silence #v
 </head>
 <body>
 <main>
-  <div class="topbar"><h1 class="brand"><img src="logo-nv.png" alt="" width="44" height="32"><span>Nous votons<small>Présidentielle 2027</small></span></h1><div class="tbtn"><button type="button" id="b-about" aria-label="À propos"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.1"/></svg></button></div></div>
+  <div class="topbar"><h1 class="brand"><picture><source srcset="logo-titre-dark.png" media="(prefers-color-scheme: dark)"><img src="logo-titre.png" alt="Nous votons 2027" width="290" height="28"></picture></h1><div class="tbtn"><button type="button" id="b-about" aria-label="À propos"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.1"/></svg></button></div></div>
   <div class="inst" id="inst" hidden>
     <span class="ic">📲</span>
     <div class="tx"><b>Ajoutez l'appli à votre téléphone</b><br><span>Gratuite, sans compte, mise à jour chaque jour.</span></div>
