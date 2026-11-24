@@ -11,7 +11,8 @@
 <meta name="apple-mobile-web-app-title" content="Nous votons">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="apple-touch-icon" href="icon-180.png">
-<link rel="icon" href="icon-192.png">
+<link rel="icon" href="logo-appli.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
 <link rel="manifest" href="manifest.json">
 <style>
 :root { --bg:#F0EFF0; --panel:#FDFDFD; --fg:#011334; --muted:#566A8E; --line:#B1BED6; --up:#06A067; --down:#F8394C; --accent:#022E7B; --warn-bg:#F8F8F8; --warn-fg:#E0061C; --white:#FDFDFD; --night:#011334; }
@@ -236,7 +237,7 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .topbar { display:flex; align-items:center; justify-content:space-between; gap:8px; }
 .topbar h1 { margin:0 0 6px; }
 .brand { display:flex; align-items:center; gap:10px; }
-.brand img { display:block; height:28px; width:auto; max-width:100%; margin:6px 0 4px; }
+.brand img { display:block; height:34px; width:auto; max-width:100%; margin:6px 0 4px; }
 .brand span { display:flex; flex-direction:column; line-height:1.05; }
 .brand small { font:600 13px/1.2 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color:var(--muted); letter-spacing:0; margin-top:3px; }
 .tbtn { display:flex; gap:6px; }
@@ -285,7 +286,7 @@ h3 { font-size:20px; font-weight:600; }
 </head>
 <body>
 <main>
-  <div class="topbar"><h1 class="brand"><picture><img src="logo-titre.png" alt="Nous votons 2027" width="290" height="28"></picture></h1><div class="tbtn"><button type="button" id="b-about" aria-label="À propos"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.1"/></svg></button></div></div>
+  <div class="topbar"><h1 class="brand"><img src="logo-header.svg" alt="Nous votons 2027" width="225" height="36"></h1><div class="tbtn"><button type="button" id="b-about" aria-label="À propos"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.1"/></svg></button></div></div>
   <div class="inst" id="inst" hidden>
     <span class="ic">📲</span>
     <div class="tx"><b>Ajoutez l'appli à votre téléphone</b><br><span>Gratuite, sans compte, mise à jour chaque jour.</span></div>
@@ -295,7 +296,7 @@ h3 { font-size:20px; font-weight:600; }
   <div class="sheet" id="icon-sheet" hidden><div class="sheet-in">
     <button type="button" class="x" id="icon-x" aria-label="Fermer">×</button>
     <h2 style="font-size:24px;padding-right:28px">Nouveau nom, nouveau logo !</h2>
-    <p>L'appli s'appelle maintenant <b>Nous votons</b>. Sur iPhone, l'icône de l'écran d'accueil ne se met pas à jour toute seule. Pour avoir le nouveau logo :</p>
+    <p><b>Nous votons</b> a un nouveau logo. Sur iPhone, l'icône de l'écran d'accueil ne se met pas à jour toute seule. Pour l'avoir :</p>
     <ol>
       <li>Restez appuyé sur l'icône de l'appli, puis <b>Supprimer l'app</b>.</li>
       <li>Ouvrez <b>denyslx33.github.io/presidentielle-2027</b> dans Safari.</li>
@@ -602,12 +603,12 @@ h3 { font-size:20px; font-weight:600; }
 </nav>
 
 <script>
-// iPhone installé avant le changement de nom : prévenir une seule fois pour réinstaller (icône figée par iOS)
+// iPhone installé avant le nouveau logo : prévenir une seule fois pour réinstaller (icône figée par iOS)
 (() => { try {
   const ios = /iPhone|iPad|iPod/.test(navigator.userAgent) && navigator.standalone === true;
-  const ancien = localStorage.getItem('mv') !== null || localStorage.getItem('ca') !== null;
-  const vu = localStorage.getItem('iconNV') === '1';
-  localStorage.setItem('iconNV', '1');
+  const ancien = localStorage.getItem('mv') !== null || localStorage.getItem('ca') !== null || localStorage.getItem('iconNV') !== null;
+  const vu = localStorage.getItem('iconV2') === '1';
+  localStorage.setItem('iconNV', '1'); localStorage.setItem('iconV2', '1');
   if (ios && ancien && !vu) addEventListener('DOMContentLoaded', () => {
     const sh = document.getElementById('icon-sheet'); sh.hidden = false;
     const close = () => { sh.hidden = true; };
