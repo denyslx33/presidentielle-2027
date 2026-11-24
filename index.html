@@ -187,7 +187,7 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .pcard .who button { font:inherit; font-size:14px; display:flex; align-items:center; gap:6px; border:1px solid var(--line); border-radius:20px; padding:3px 10px 3px 3px; background:var(--bg); color:var(--fg); cursor:pointer; }
 .pcard .who .av { width:26px; height:26px; font-size:10px; } .pcard ul { margin:6px 0 0; padding-left:18px; } .pcard li { margin:4px 0; }
 .pbloc { margin:18px 0 0; font-size:13px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
-.rcard .d { font-weight:600; margin:2px 0 6px; }
+.rcard .d { font-weight:600; margin:8px 0 6px; } .rhead { display:flex; align-items:center; gap:12px; } .rhead img { width:56px; height:56px; border-radius:50%; object-fit:cover; flex:none; }
 .hcard .hh { display:flex; justify-content:space-between; align-items:baseline; gap:8px; }
 .hcard h2 { font-size:17px; margin:0 0 4px; } .hcard .hh .muted { font-size:12px; text-align:right; }
 .hrow { display:flex; align-items:center; gap:10px; padding:7px 0; border-bottom:1px solid var(--line); cursor:pointer; }
@@ -1297,8 +1297,9 @@ function renderRetraits() {
   for (const r of CAND.retraits || []) {
     const m = r.nom.match(/^(.*?)\s*\((.*)\)\s*$/); const nom = m ? m[1] : r.nom, parti = m ? m[2] : '';
     const dm = (r.texte || '').match(/le (\d{1,2}(?:er)? \S+ \d{4})/);
-    const d = el('div', 'rcard'); d.append(el('h3', null, nom)); if (parti) d.append(el('div', 'muted', parti));
-    if (dm) d.append(el('div', 'd', (/^Battu/.test(r.texte) ? 'Hors course le ' : 'Retrait le ') + dm[1]));
+    const d = el('div', 'rcard'); const hd = el('div', 'rhead');
+    if (r.id) { const im = el('img'); im.src = 'data/portraits/' + r.id + '.jpg'; im.alt = ''; im.loading = 'lazy'; im.onerror = () => im.remove(); hd.append(im); }
+    const tt = el('div'); tt.append(el('h3', null, nom)); if (parti) tt.append(el('div', 'muted', parti)); hd.append(tt); d.append(hd);     if (dm) d.append(el('div', 'd', (/^Battu/.test(r.texte) ? 'Hors course le ' : 'Retrait le ') + dm[1]));
     d.append(el('p', null, r.texte)); const p = el('p', 'muted'); p.append(link('Source', r.url)); d.append(p);
     out.push(d);
   }
@@ -1333,7 +1334,7 @@ function renderCandidats() {
 async function renderCredits() {
   try {
     const r = await fetch('data/portraits/credits.json', { cache: 'no-store' }); if (!r.ok) return; const cr = await r.json();
-    const list = (CAND ? CAND.principaux : []).slice().sort((a, b) => nomFamille(a.nom).localeCompare(nomFamille(b.nom), 'fr'));
+    const list = (CAND ? CAND.principaux.concat((CAND.retraits || []).filter((r) => r.id).map((r) => ({ id: r.id, nom: r.nom.split(' (')[0] }))) : []).slice().sort((a, b) => nomFamille(a.nom).localeCompare(nomFamille(b.nom), 'fr'));
     $('credits').replaceChildren(...list.filter((c) => cr[c.id]).map((c) => { const p = el('p'); p.append(c.nom + ' : '); if (cr[c.id].url) p.append(link(cr[c.id].texte, cr[c.id].url)); else p.append(cr[c.id].texte); return p; }));
   } catch (e) {}
 }

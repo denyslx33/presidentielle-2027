@@ -23,3 +23,16 @@ Tant qu'il n'y a pas de photo, l'appli affiche les initiales.
 
 Conseil : une photo carrée, visage centré, 400 × 400 pixels suffit.
 Vérifiez la licence de chaque photo : celles de Wikimedia Commons indiquent leur licence et l'auteur à citer.
+
+## Anciens candidats (onglet Retraits)
+
+| Personnalité | Nom du fichier |
+|---|---|
+| Gérald Darmanin | darmanin.jpg |
+| Olivier Faure | faure.jpg |
+| Jérôme Guedj | guedj.jpg |
+| Emmanuel Maurel | maurel.jpg |
+| Ségolène Royal | royal.jpg |
+| François Ruffin | ruffin.jpg |
+
+Pour un nouveau retrait, ajoutez "id" dans son entrée de « retraits » (candidats.json) et déposez la photo au même nom.

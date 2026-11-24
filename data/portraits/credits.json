@@ -58,5 +58,29 @@
  "glucksmann": {
   "texte": "Wikipédia (auteur et licence sur la page de la photo)",
   "url": "https://fr.wikipedia.org/wiki/Rapha%C3%ABl_Glucksmann"
+ },
+ "darmanin": {
+  "texte": "Wikimedia Commons (auteur et licence sur la page)",
+  "url": "https://commons.wikimedia.org/w/index.php?search=French+Justice+Minister+G%C3%A9rald+Darmanin+in+2025+cropped+2&title=Special:MediaSearch&type=image"
+ },
+ "guedj": {
+  "texte": "Wikimedia Commons (auteur et licence sur la page)",
+  "url": "https://commons.wikimedia.org/w/index.php?search=J%C3%A9r%C3%B4me+Guedj+2010&title=Special:MediaSearch&type=image"
+ },
+ "maurel": {
+  "texte": "Wikimedia Commons (auteur et licence sur la page)",
+  "url": "https://commons.wikimedia.org/w/index.php?search=Emmanuel+Maurel+en+2016&title=Special:MediaSearch&type=image"
+ },
+ "royal": {
+  "texte": "Wikimedia Commons (auteur et licence sur la page)",
+  "url": "https://commons.wikimedia.org/w/index.php?search=Royal+Toulouse+2012&title=Special:MediaSearch&type=image"
+ },
+ "faure": {
+  "texte": "Wikimedia Commons (auteur et licence sur la page)",
+  "url": "https://commons.wikimedia.org/w/index.php?search=OF+MATIGNON+MAXIME+CLAM+cropped&title=Special:MediaSearch&type=image"
+ },
+ "ruffin": {
+  "texte": "Wikimedia Commons (auteur et licence sur la page)",
+  "url": "https://commons.wikimedia.org/w/index.php?search=Fran%C3%A7ois+Ruffin+cropped&title=Special:MediaSearch&type=image"
  }
 }
