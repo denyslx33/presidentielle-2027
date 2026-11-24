@@ -207,6 +207,90 @@
    "url": "https://outremers360.com/bassin-atlantique-appli/presidentielle-2027-edouard-philippe-aux-maires-des-outre-mer-je-veux-pour-les-outre-mer-exactement-ce-que-je-veux-pour-toute-la-france-remettre-de-lordre-pour-permettre-le-progres"
   },
   {
+   "date": "2026-11-24",
+   "qui": [
+    "philippe",
+    "lisnard"
+   ],
+   "texte": "Édouard Philippe propose à David Lisnard un débat télévisé avant la mi-décembre.",
+   "source": "franceinfo",
+   "url": "https://www.franceinfo.fr/elections/edouard-philippe-propose-un-debat-televise-avant-mi-decembre-a-david-lisnard-qu-il-soupconn-de-ne-pas-etre-etanche-avec-l-extreme-droite_8298417.html"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "attal",
+    "philippe"
+   ],
+   "texte": "Gabriel Attal demande à Édouard Philippe de « proposer une autre modalité de départage », face à son refus d'une primaire.",
+   "source": "Le Monde",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/24/presidentielle-2027-gabriel-attal-presse-edouard-philippe-de-proposer-une-autre-modalite-de-departage-face-a-son-refus-de-la-primaire_6814848_823448.html"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "lepen"
+   ],
+   "texte": "Devant des maires, Marine Le Pen promet plus de « liberté » aux communes et veut s'attaquer au « millefeuille territorial ».",
+   "source": "Le Monde",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/24/presidentielle-2027-devant-des-maires-marine-le-pen-promet-plus-de-liberte-pour-les-communes-et-veut-s-attaquer-au-millefeuille-territorial_6814839_823448.html"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "melenchon"
+   ],
+   "texte": "Manuel Bompard, coordinateur de La France insoumise, indique que LFI n'a pas encore ses 500 parrainages et propose de remplacer les parrainages d'élus par 150 000 parrainages citoyens.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-manuel-bompard-et-lfi-souhaitent-remettre-en-cause-la-regle-des-500-parrainages-d-elus-et-de-la-remplacer-par-150-000-parrainages-citoyens_AN-202611240978.html"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "melenchon"
+   ],
+   "texte": "Selon Manuel Bompard, une élection de Jean-Luc Mélenchon devrait être suivie d'une dissolution « assez rapide » de l'Assemblée nationale.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-dans-le-cas-ou-jean-luc-melenchon-est-elu-president-il-doit-y-avoir-une-dissolution-assez-rapide-explique-manuel-bompard-coordinateur-de-la-france-insoumise_VN-202611241010.html"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "roussel",
+    "melenchon"
+   ],
+   "texte": "Fabien Roussel assure qu'il ne « rejoindra pas Jean-Luc Mélenchon » et dit vouloir « convaincre les abstentionnistes ».",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "riner"
+   ],
+   "texte": "Teddy Riner est attendu vendredi 27 novembre à Béziers, où le maire Robert Ménard l'accueillera.",
+   "source": "20 Minutes",
+   "url": "https://www.20minutes.fr/politique/4265511-20261124-presidentielle-2027-robert-menard-attend-teddy-riner-beziers-vendredi"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "lisnard"
+   ],
+   "texte": "Éric Ciotti relève « des points de convergence » avec David Lisnard et regrette son refus d'une alliance avec le RN.",
+   "source": "Le Parisien",
+   "url": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-eric-ciotti-note-des-points-de-convergences-avec-david-lisnard-et-regrette-son-refus-dune-alliance-avec-le-rn-24-11-2026-CJMYVBZYZBERNF7JS27SHIJKLY.php"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "lisnard"
+   ],
+   "texte": "David Lisnard, qui avait parrainé Jean-Luc Mélenchon en 2022, invite les maires à parrainer les candidats.",
+   "source": "Ouest-France",
+   "url": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-david-lisnard-parrain-de-jean-luc-melenchon-en-2022-invite-les-maires-a-parrainer-les-candidats-79f1e146-e7eb-11f1-9b33-2f81462d3339"
+  },
+  {
    "date": "2026-11-23",
    "qui": [
     "lisnard"
@@ -242,6 +326,24 @@
    "texte": "Sur franceinfo et France 2, Dominique de Villepin présente ses premières mesures : retraite par points, fin des droits de succession sous 1 M€, révision annuelle des niches fiscales et déficit sous 3 % sur le mandat.",
    "source": "franceinfo",
    "url": "https://www.franceinfo.fr/elections/retraites-droits-de-succession-niches-fiscales-dominique-de-villepin-presente-les-premieres-mesures-de-son-programme-pour-la-presidentielle_8296785.html"
+  },
+  {
+   "date": "2026-11-23",
+   "qui": [
+    "lepen"
+   ],
+   "texte": "Jordan Bardella, président du Rassemblement national, affirme que Marine Le Pen a un peu plus de 400 promesses de parrainage.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-jordan-bardella-president-du-rassemblement-national-affirme-que-marine-le-pen-a-un-peu-plus-de-400-parrainages-pour-la-presidentielle-de-2027_VN-202611230827.html"
+  },
+  {
+   "date": "2026-11-23",
+   "qui": [
+    "glucksmann"
+   ],
+   "texte": "Des écologistes soutiens de Raphaël Glucksmann fondent un nouveau parti, « Écologistes et démocrates ».",
+   "source": "Libération",
+   "url": "https://www.liberation.fr/politique/elections/les-ecolos-pro-glucksmann-fondent-ecologistes-et-democrates-un-nouveau-parti-20261123_MLJLZCW7TFETBE4P665OQHQB5Y/"
   },
   {
    "date": "2026-11-21",
@@ -459,77 +561,6 @@
    "texte": "Le premier secrétaire du PS, Olivier Faure, entre au comité politique de la campagne de Raphaël Glucksmann.",
    "source": "Public Sénat",
    "url": "https://www.publicsenat.fr/actualites/politique/document-lorganigramme-de-campagne-complet-de-raphael-glucksmann-olivier-faure-membre-du-comite-politique"
-  },
-  {
-   "date": "2026-11-06",
-   "qui": [
-    "melenchon"
-   ],
-   "texte": "LFI publie la nouvelle édition de L'Avenir en commun, programme de Jean-Luc Mélenchon, avant un meeting au Bourget.",
-   "source": "LCP",
-   "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841"
-  },
-  {
-   "date": "2026-11-02",
-   "qui": [
-    "attal",
-    "philippe"
-   ],
-   "texte": "Gabriel Attal juge une primaire de la droite et du centre « inéluctable », malgré le refus d'Édouard Philippe.",
-   "source": "LCP",
-   "url": "https://lcp.fr/actualites/c-est-ineluctable-gabriel-attal-s-accroche-a-sa-primaire-malgre-le-refus-d-edouard"
-  },
-  {
-   "date": "2026-10-25",
-   "qui": [
-    "lepen"
-   ],
-   "texte": "Premier grand meeting de campagne de Marine Le Pen à Orléans, après le congrès du RN.",
-   "source": "La Libre / AFP",
-   "url": "https://www.lalibre.be/dernieres-depeches/2026/10/25/pour-son-premier-meeting-de-campagne-le-pen-veut-insuffler-de-loptimisme-dans-un-pays-en-crise-QXFUPYUA7JB7ZIVYMIAHQRYFM4/"
-  },
-  {
-   "date": "2026-10-20",
-   "qui": [],
-   "texte": "Le Sénat adopte en première lecture le projet de loi contre les ingérences étrangères, à l'approche de la présidentielle.",
-   "source": "Vie publique",
-   "url": "https://www.vie-publique.fr/lettre_essentiel/46"
-  },
-  {
-   "date": "2026-10-14",
-   "qui": [
-    "polony"
-   ],
-   "texte": "Natacha Polony annonce sa candidature sur France Inter.",
-   "source": "Paris Match",
-   "url": "https://www.parismatch.be/actualites/monde/2026/10/14/france-natacha-polony-annonce-sa-candidature-a-lelection-presidentielle-OUVKQKV6MBFQZCJKLBGST2N4CY/"
-  },
-  {
-   "date": "2026-10-12",
-   "qui": [
-    "retailleau"
-   ],
-   "texte": "Bruno Retailleau présente un plan de 197 Md€ d'économies d'ici 2032.",
-   "source": "LCP",
-   "url": "https://lcp.fr/actualites/face-a-une-france-quasiment-en-faillite-bruno-retailleau-presente-un-plan-d-economies-de"
-  },
-  {
-   "date": "2026-10-11",
-   "qui": [
-    "glucksmann"
-   ],
-   "texte": "Raphaël Glucksmann remporte la primaire du camp social-démocrate.",
-   "source": "LCP",
-   "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932"
-  },
-  {
-   "date": "2026-07-08",
-   "qui": [
-    "lepen"
-   ],
-   "texte": "La Cour de cassation indique pouvoir se prononcer sur le pourvoi de Marine Le Pen au plus tard début avril 2027.",
-   "source": "LCP",
-   "url": "https://lcp.fr/actualites/pourvoi-de-marine-le-pen-la-cour-de-cassation-pourrait-etre-en-mesure-de-se-prononcer"
   }
  ]
 }

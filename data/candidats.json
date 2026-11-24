@@ -392,9 +392,9 @@
     "url": "https://rassemblementnational.fr/22-mesures"
    },
    "parrainages": {
-    "texte": "Plus de 400 promesses revendiquées par le RN.",
-    "source": "Le Parisien, 3 sept. 2026",
-    "url": "https://entrevue.fr/presidentielle-2027/presidentielle-2027-ou-en-sont-les-candidats-dans-la-course-aux-500-parrainages/"
+    "texte": "Un peu plus de 400 promesses de parrainage, selon Jordan Bardella (annonce du 23 novembre 2026).",
+    "source": "BFMTV, 23 nov. 2026",
+    "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-jordan-bardella-president-du-rassemblement-national-affirme-que-marine-le-pen-a-un-peu-plus-de-400-parrainages-pour-la-presidentielle-de-2027_VN-202611230827.html"
    },
    "finances": {
     "texte": "Aucune banque française n'a accepté de prêter. Préaccord annoncé le 10 novembre avec deux banques européennes pour 10,6 M€, pas encore signé. En 2022, prêt du même montant auprès d'une banque hongroise.",
@@ -596,9 +596,9 @@
     "url": "https://melenchon2027.fr/programme/livre/"
    },
    "parrainages": {
-    "texte": "Un peu plus de 200 promesses fin août, selon LFI. 906 parrainages obtenus en 2022.",
-    "source": "Entrevue / Le Parisien",
-    "url": null
+    "texte": "N'a pas encore ses 500 parrainages, selon Manuel Bompard (24 novembre 2026). 906 parrainages obtenus en 2022.",
+    "source": "BFMTV, 24 nov. 2026",
+    "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-on-n-a-pas-encore-les-500-parrainages-confie-manuel-bompard-coordinateur-de-la-france-insoumise_VN-202611240951.html"
    },
    "finances": {
     "texte": "Dit avoir trouvé un prêteur. Montant non communiqué.",
@@ -794,8 +794,17 @@
    "parti": "Sans étiquette",
    "role": "Journaliste et essayiste, a lancé un mouvement politique en septembre 2026.",
    "annonce": "Candidate depuis le 14 octobre 2026.",
-   "mesures": [],
-   "source_mesures": null,
+   "mesures": [
+    "Conditionner les visas à l'acceptation des laissez-passer consulaires",
+    "Renationaliser EDF et défendre le nucléaire",
+    "Priorité française dans la commande publique",
+    "+20 à 30 % pour les enseignants",
+    "Référendums réguliers"
+   ],
+   "source_mesures": {
+    "nom": "Site de campagne de Natacha Polony, BFMTV",
+    "url": "https://natachapolony2027.fr/natacha-polony/ma-vision"
+   },
    "parrainages": {
     "texte": "Revendique la moitié des parrainages nécessaires (annonce du 24 novembre 2026).",
     "source": "BFMTV, 24 nov. 2026",
