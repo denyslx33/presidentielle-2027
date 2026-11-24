@@ -185,6 +185,10 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .pcard, .rcard { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:12px 14px; margin-top:10px; }
 .pcard h3, .rcard h3 { margin:0 0 4px; } .plogo { display:block; height:40px; width:auto; max-width:200px; object-fit:contain; margin:4px 0 8px; border-radius:4px; } .pcard .who { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; }
 #h-favs .who { display:flex; flex-wrap:wrap; gap:6px; margin:4px 0 10px; }
+.favblk + .favblk { border-top:1px solid var(--line); margin-top:10px; padding-top:12px; }
+.favhd { font:inherit; display:flex; align-items:center; gap:10px; width:100%; background:none; border:0; padding:4px 0 6px; color:var(--fg); cursor:pointer; text-align:left; }
+.favhd .av { width:44px; height:44px; } .favhd .n { flex:1; font-weight:600; font-size:17px; }
+.favhd .fsc { font-size:20px; font-weight:600; font-style:italic; color:var(--accent); }
 #h-favs .who button, .pcard .who button { font:inherit; font-size:14px; display:flex; align-items:center; gap:6px; border:1px solid var(--line); border-radius:20px; padding:3px 10px 3px 3px; background:var(--bg); color:var(--fg); cursor:pointer; }
 .pcard .who .av { width:26px; height:26px; font-size:10px; } .pcard ul { margin:6px 0 0; padding-left:18px; } .pcard li { margin:4px 0; }
 .pbloc { margin:18px 0 0; font-size:13px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
@@ -1134,9 +1138,20 @@ function renderFavs() {
   const box = $('h-favs'); if (!box || !CAND) return;
   const byId = new Map(CAND.principaux.map((c) => [c.id, c]));
   const f = getFavs().filter((i) => byId.has(i)); box.hidden = !f.length; if (!f.length) return;
-  const w = el('div', 'who'); for (const i of f) { const c = byId.get(i); const b = el('button'); b.type = 'button'; b.append(avatar(c), c.nom); b.onclick = () => openFiche(i); w.append(b); }
-  const news = (ACTU ? ACTU.items : []).filter((n) => n.qui.some((i) => f.includes(i)) && !(silence() && /sondage/i.test(n.texte))).slice(0, 3);
-  $('h-favs-in').replaceChildren(w, ...(news.length ? news.map((n) => newsCard(n, byId)) : [el('p', 'muted', 'Pas d’actu récente pour vos favoris.')]));
+  const out = []; let sc = false;
+  for (const id of f) {
+    const c = byId.get(id); const blk = el('div', 'favblk');
+    const b = el('button', 'favhd'); b.type = 'button'; b.append(avatar(c), el('span', 'n', c.nom));
+    const ls = silence() ? null : latestScore(c.nom); if (ls) { b.append(el('span', 'fsc', fmt(ls.v) + ' %')); sc = true; }
+    b.onclick = () => openFiche(id); blk.append(b);
+    const news = (ACTU ? ACTU.items : []).filter((n) => n.qui.includes(id) && !(silence() && /sondage/i.test(n.texte))).slice(0, 2);
+    if (news.length) news.forEach((n) => blk.append(newsCard(n, byId))); else blk.append(el('p', 'muted', 'Pas d’actu récente.'));
+    const m = el('button', 'more', 'Toute l’actu de ' + c.nom + ' ›'); m.type = 'button';
+    m.onclick = () => { FILTRE = id; setAMode('infos'); renderActu(); renderAgenda(); goView('actu'); };
+    blk.append(m); out.push(blk);
+  }
+  if (sc) out.push(el('p', 'muted', 'Score : dernier sondage publié où figure le candidat.'));
+  $('h-favs-in').replaceChildren(...out);
 }
 function renderHomeTP() {
   const box = $('h-tp'); if (!box || !CAND) return;
