@@ -2,6 +2,16 @@
 "v": 4,
 "items": [
 {
+"t": "Présidentielle: Boris Vallaud estime que la main tendue de Marine Tondelier à Jean-Luc Mélenchon est \"une sorte de fatalisme\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-un-nouveau-sondage-donne-marine-le-pen-en-baisse-david-lisnard-depasse-edouard-philippe_LN-202611230170.html",
+"d": "2026-11-23T23:20:51Z",
+"qui": [
+"melenchon",
+"tondelier"
+]
+},
+{
 "t": "Migrants expulsés au Rwanda: \"Humainement, ça questionne\", selon Prisca Thevenot, députée \"Renaissance\" des Hauts-de-Seine, soutien de Gabriel Attal",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/video-migrants-expulses-au-rwanda-humainement-ca-questionne-selon-prisca-thevenot-deputee-renaissance-des-hauts-de-seine-soutien-de-gabriel-attal_VN-202611230956.html",
@@ -35,16 +45,6 @@
 "d": "2026-11-23T22:06:54Z",
 "qui": [
 "villepin"
-]
-},
-{
-"t": "DIRECT. Présidentielle: Boris Vallaud estime que la main tendue de Marine Tondelier à Jean-Luc Mélenchon est \"une sorte de fatalisme\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-un-nouveau-sondage-donne-marine-le-pen-en-baisse-david-lisnard-depasse-edouard-philippe_LN-202611230170.html",
-"d": "2026-11-23T22:02:52Z",
-"qui": [
-"melenchon",
-"tondelier"
 ]
 },
 {
@@ -1384,5 +1384,5 @@
 "LCP": 34,
 "RFI": 7
 },
-"maj": "2026-11-24T01:10:02Z"
+"maj": "2026-11-24T02:36:49Z"
 }
