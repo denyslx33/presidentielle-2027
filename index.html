@@ -1253,6 +1253,27 @@ function distKm(e) {
   const a = Math.sin(dLa / 2) ** 2 + Math.cos(LOC.lat * rad) * Math.cos(e.lat * rad) * Math.sin(dLo / 2) ** 2;
   return 2 * R * Math.asin(Math.sqrt(a));
 }
+async function geoAgenda() {
+  // Meetings avec commune mais sans coordonnées : on les cherche dans la base officielle (cache sur le téléphone)
+  if (!AGENDA) return;
+  let cache = {}; try { cache = JSON.parse(localStorage.getItem('geoCommunes') || '{}'); } catch (e) {}
+  const manque = AGENDA.evenements.filter((e) => e.commune && (typeof e.lat !== 'number' || typeof e.lon !== 'number'));
+  if (!manque.length) return;
+  let change = false;
+  for (const e of manque) {
+    const k = e.commune + '|' + (e.dep || '');
+    if (!cache[k]) {
+      try {
+        const u = 'https://geo.api.gouv.fr/communes?nom=' + encodeURIComponent(e.commune) + (e.dep ? '&codeDepartement=' + encodeURIComponent(e.dep) : '') + '&fields=nom,centre,codeDepartement&boost=population&limit=1';
+        const js = await (await fetch(u)).json();
+        if (js[0] && js[0].centre) { cache[k] = [js[0].centre.coordinates[1], js[0].centre.coordinates[0]]; change = true; }
+      } catch (err) { continue; }
+    }
+    if (cache[k]) { e.lat = cache[k][0]; e.lon = cache[k][1]; }
+  }
+  if (change) { try { localStorage.setItem('geoCommunes', JSON.stringify(cache)); } catch (e) {} }
+  if (LOC) { renderAgenda(); renderPres(); }
+}
 function setLoc(v) { LOC = v; try { if (v) localStorage.setItem('maVille', JSON.stringify(v)); else localStorage.removeItem('maVille'); } catch (e) {} if (!v && AGF === 'pres') AGF = ''; renderAgenda(); renderPres(); }
 function renderLocBar() {
   const box = $('ag-loc'); if (!box) return;
@@ -1794,7 +1815,7 @@ async function load() {
   const [mv, aj, ca, ac, ag, qz, tp, fx] = await Promise.all([getText(URL_MV, 'mv'), getText('data/ajouts.csv', 'aj'), getText('data/candidats.json', 'ca'), getText('data/actu.json', 'ac'), getText('data/agenda.json', 'ag'), getText('data/quiz.json', 'qz'), getText('data/temps_parole.json', 'tp'), getText('data/flux.json', 'fx')]);
   if (tp.t) TP = JSON.parse(tp.t);
   if (qz.t) QUIZ = JSON.parse(qz.t);
-  if (ag.t) AGENDA = JSON.parse(ag.t);
+  if (ag.t) { AGENDA = JSON.parse(ag.t); geoAgenda(); }
   if (mv.t) { const raw = parseCSV(mv.t), ex = aj.t ? parseCSV(aj.t) : []; POLLS = build(raw, ex); DUELS = buildDuels(raw, ex); }
   if (ca.t) CAND = JSON.parse(ca.t);
   if (ac.t) ACTU = JSON.parse(ac.t);
