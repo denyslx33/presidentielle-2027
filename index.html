@@ -184,7 +184,8 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .srcchips { display:flex; flex-wrap:wrap; gap:8px; } .srcchips a { border:1px solid var(--line); border-radius:20px; padding:6px 12px; font-size:14px; color:var(--accent); text-decoration:none; background:var(--bg); }
 .pcard, .rcard { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:12px 14px; margin-top:10px; }
 .pcard h3, .rcard h3 { margin:0 0 4px; } .plogo { display:block; height:40px; width:auto; max-width:200px; object-fit:contain; margin:4px 0 8px; border-radius:4px; } .pcard .who { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; }
-.pcard .who button { font:inherit; font-size:14px; display:flex; align-items:center; gap:6px; border:1px solid var(--line); border-radius:20px; padding:3px 10px 3px 3px; background:var(--bg); color:var(--fg); cursor:pointer; }
+#h-favs .who { display:flex; flex-wrap:wrap; gap:6px; margin:4px 0 10px; }
+#h-favs .who button, .pcard .who button { font:inherit; font-size:14px; display:flex; align-items:center; gap:6px; border:1px solid var(--line); border-radius:20px; padding:3px 10px 3px 3px; background:var(--bg); color:var(--fg); cursor:pointer; }
 .pcard .who .av { width:26px; height:26px; font-size:10px; } .pcard ul { margin:6px 0 0; padding-left:18px; } .pcard li { margin:4px 0; }
 .pbloc { margin:18px 0 0; font-size:13px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
 .rcard .d { font-weight:600; margin:8px 0 6px; } .rhead { display:flex; align-items:center; gap:12px; } .rhead img { width:56px; height:56px; border-radius:50%; object-fit:cover; flex:none; }
@@ -228,6 +229,15 @@ details { margin-top:16px; } summary { cursor:pointer; }
 .sheet-in { background:var(--panel); color:var(--fg); width:100%; border-radius:18px 18px 0 0; padding:18px 18px calc(24px + env(safe-area-inset-bottom)); position:relative; }
 .sheet-in .x { position:absolute; right:16px; top:12px; color:var(--muted); }
 .sheet-in h2 { margin:0 0 10px; } .sheet-in ol { padding-left:20px; margin:8px 0; } .sheet-in li { margin-bottom:10px; font-size:15px; }
+.fhead .flogo { margin:10px auto 0; height:34px; }
+.favb { font:inherit; font-size:14px; margin-top:10px; border:1px solid var(--line); border-radius:20px; padding:5px 14px; background:var(--panel); color:var(--accent); cursor:pointer; }
+.favb.on { background:var(--accent); color:var(--white); border-color:var(--accent); }
+details.qexp { margin:4px 0 12px; font-size:14px; } details.qexp summary { color:var(--accent); cursor:pointer; font-weight:500; } details.qexp p { margin:6px 0 2px; }
+.sens { margin:18px 0 8px; } .axe { margin:12px 0; } .axtr { position:relative; height:8px; border-radius:8px; background:var(--line); margin:8px 6px 4px; }
+.axtr::after { content:''; position:absolute; left:50%; top:-3px; width:1px; height:14px; background:var(--muted); }
+.axtr i { position:absolute; top:50%; width:18px; height:18px; margin:-9px 0 0 -9px; border-radius:50%; background:var(--accent); border:3px solid var(--white); box-shadow:0 0 0 1px var(--accent); z-index:1; }
+.axl { display:flex; justify-content:space-between; gap:12px; font-size:12px; color:var(--muted); } .axl span:last-child { text-align:right; }
+.newsl { padding-left:20px; margin:8px 0 14px; } .newsl li { margin-bottom:8px; font-size:15px; }
 .sheet-in .k { display:inline-block; border:1px solid var(--line); border-radius:6px; padding:0 6px; background:var(--bg); }
 .cmpbtn { font:inherit; width:100%; display:flex; align-items:center; gap:12px; text-align:left; color:var(--white); background:var(--accent); border:0; border-radius:16px; padding:14px 16px; margin:4px 0 14px; cursor:pointer; box-shadow:0 4px 14px rgba(59,111,224,.25); }
 .cmpbtn .ic { font-size:28px; } .cmpbtn span:nth-child(2) { flex:1; font-size:16px; } .cmpbtn small { font-size:13px; opacity:.9; } .cmpbtn .chev { font-size:26px; }
@@ -342,6 +352,10 @@ h3 { font-size:20px; font-weight:600; }
       <button type="button" id="h-prog"><span>📄</span>Programmes<small>Comparer les idées</small></button>
       <button type="button" id="h-sond"><span>📊</span>Sondages<small>Courbe et 2nd tour</small></button>
     </div>
+    <div class="hcard" id="h-favs" hidden>
+      <div class="hh"><h2>Mes favoris</h2><span class="muted">Sur ce téléphone</span></div>
+      <div id="h-favs-in"></div>
+    </div>
     <div class="hcard" id="h-poll">
       <div class="hh"><h2>Dernier sondage</h2><span class="muted" id="h-src"></span></div>
       <div id="h-top"></div>
@@ -352,6 +366,11 @@ h3 { font-size:20px; font-weight:600; }
       <div class="hh"><h2>Les dates clés</h2><span class="muted">Sources officielles</span></div>
       <div id="h-kd"></div>
       <button class="more" id="h-guide2" type="button">Inscription, procuration : le guide du vote ›</button>
+    </div>
+    <div class="hcard" id="h-tp" hidden>
+      <div class="hh"><h2>Temps de parole</h2><span class="muted">Arcom</span></div>
+      <div id="h-tp-in"></div>
+      <button class="more" id="h-tp-more" type="button">Le détail et les règles ›</button>
     </div>
     <div class="hcard">
       <div class="hh"><h2>Dernières actus</h2></div>
@@ -688,7 +707,7 @@ const avatar = (c) => {
 let AMODE = 'infos';
 let TP = null, GUIDE_FROM = 'accueil';
 let THEME = null, AGENDA = null, AGF = '', RAW = null, EXTRA = [], DUELS = null, QUIZ = null, PMODE = 'theme', CMPA = null, CMPB = null, QI = 0, QANS = null, RUNQ = null;
-const QN = 20;
+const QN = 25;
 let PERIOD = 0, POLLS = null, CAND = null, ACTU = null, FLUX = null, FILTRE = '';
 
 function parseCSV(text) {
@@ -972,6 +991,7 @@ function renderQuizQ() {
   const Q = RUNQ, q = Q[QI], box = $('quiz');
   const d = el('div', 'qz');
   d.append(el('div', 'qt', `Question ${QI + 1} sur ${Q.length} · ${q.theme}`), el('div', 'qq', q.q));
+  if (q.exp) { const ex = el('details', 'qexp'); ex.append(el('summary', null, 'C’est quoi ?'), el('p', null, q.exp)); const pl = el('p', 'muted src'); pl.append('Pour aller plus loin : ', link('vie-publique.fr', 'https://www.vie-publique.fr')); ex.append(pl); d.append(ex); }
   const ans = el('div', 'ans');
   for (const [v, t] of [[1, "D'accord"], [-1, "Pas d'accord"], [0, 'Sans avis']]) {
     const b = el('button', QANS[QI] === v ? 'on' : '', t);
@@ -997,11 +1017,12 @@ function renderQuizRes() {
   const few = rows.filter((r) => r.n < MIN).sort((a, b) => nomFamille(a.c.nom).localeCompare(nomFamille(b.c.nom), 'fr'));
   const d = el('div', 'qz');
   const answered = QANS.filter((a) => a === 1 || a === -1).length;
-  d.append(el('div', 'qq', 'Vos résultats'), el('p', 'muted', `Pourcentage de réponses identiques, calculé seulement sur les questions où le candidat a une position publiée. Vous avez donné un avis sur ${answered} affirmations sur ${Q.length}.`));
+  d.append(el('div', 'qq', 'Vos résultats'), el('p', 'muted', `Pourcentage de réponses identiques, calculé seulement sur les questions où le candidat a une position publiée. À score égal, celui qui a le plus de questions comparables passe devant. Vous avez donné un avis sur ${answered} affirmations sur ${Q.length}.`));
   if (!main.length) d.append(el('p', null, "Pas assez de réponses pour comparer. Répondez « d'accord » ou « pas d'accord » à plus d'affirmations."));
   for (const r of main) {
     const row = el('div', 'res'); const info = el('div', 'info');
-    info.append(el('div', 'who', r.c.nom), el('div', 'muted', `${r.ok} sur ${r.n} questions comparables`));
+    const cm = el('div', 'muted', `${r.ok} sur ${r.n} questions comparables`); if (r.n < 5) cm.append(' ', el('span', 'tag', 'peu fiable'));
+    info.append(el('div', 'who', r.c.nom), cm);
     const bar = el('div', 'bar1'); const bi = el('i'); bi.style.width = r.pc + '%'; bar.append(bi); info.append(bar);
     row.append(avatar(r.c), info, el('div', 'pc', Math.round(r.pc) + ' %'), el('span', 'chev', '›'));
     row.style.cursor = 'pointer';
@@ -1024,13 +1045,17 @@ function renderQuizRes() {
     row.onclick = () => { det2.hidden = !det2.hidden; row.classList.toggle('open', !det2.hidden); };
     d.append(row, det2);
   }
+  if (main.some((r) => r.n < 5)) d.append(el('p', 'muted', '« Peu fiable » : moins de 5 positions connues dans ce test. Un 100 % sur 3 questions dit beaucoup moins qu’un 80 % sur 10.'));
   if (few.length) d.append(el('p', 'muted', 'Pas assez de positions connues pour : ' + few.map((r) => r.c.nom).join(', ') + '.'));
+  if (main.length) { const sr = el('button', 'sharecard'); sr.type = 'button'; sr.innerHTML = '<span class="ic">🖼️</span><span><b>Partager mon résultat en image</b><br><small>Seulement si vous le souhaitez</small></span><span class="chev">›</span>'; sr.onclick = () => shareResult(main.slice(0, 3)); d.append(sr); }
+  d.append(sensBlock(Q));
   const byId = new Map(CAND.principaux.map((c) => [c.id, c]));
   const srcUrl = (c) => (c.programme && (c.programme.url || c.programme.recap)) || (c.source_mesures && c.source_mesures.url) || '';
   const det = el('details'); det.append(el('summary', null, 'Les sources : la mesure de chaque candidat, question par question'));
   Q.forEach((q, i) => {
     const p = el('div', 'news'); const you = QANS[i] === 1 ? "d'accord" : QANS[i] === -1 ? "pas d'accord" : 'sans avis';
     p.append(el('b', null, (i + 1) + '. ' + q.q), el('div', 'muted', 'Vous : ' + you));
+    const ax = q.axe && (QUIZ.axes || []).find((a) => a.id === q.axe[0]); if (ax) p.append(el('div', 'muted src', 'Compte pour l’axe ' + ax.nom + ' : être d’accord rapproche de « ' + (q.axe[1] > 0 ? ax.d : ax.g) + ' ».'));
     for (const [val, lab] of [[1, "D'accord"], [-1, "Pas d'accord"]]) {
       const ids = Object.keys(q.pos).filter((k) => q.pos[k] === val && byId.has(k));
       if (!ids.length) continue;
@@ -1059,6 +1084,88 @@ function renderQuizRes() {
 }
 
 
+function sensBlock(Q) {
+  const sb = el('div', 'sens'); const AX = QUIZ.axes || []; if (!AX.length) return sb;
+  sb.append(el('div', 'qq', 'Votre sensibilité'), el('p', 'muted', "Où vos réponses vous placent sur quatre grands thèmes. Chaque curseur ne tient compte que des questions de ce test liées au thème. Aucun parti n'est associé à ces axes et aucun côté n'est meilleur que l'autre."));
+  for (const a of AX) {
+    let s = 0, n = 0; Q.forEach((q, i) => { const v = QANS[i]; if (q.axe && q.axe[0] === a.id && (v === 1 || v === -1)) { s += v * q.axe[1]; n++; } });
+    const row = el('div', 'axe'); row.append(el('b', null, a.nom));
+    if (n < 2) { row.append(el('div', 'muted src', 'Pas assez de réponses sur ce thème dans ce test.')); sb.append(row); continue; }
+    const tr = el('div', 'axtr'); const dot = el('i'); dot.style.left = (50 + s / n * 50) + '%'; tr.append(dot);
+    const lab = el('div', 'axl'); lab.append(el('span', null, a.g), el('span', null, a.d));
+    row.append(tr, lab, el('div', 'muted src', 'Sur ' + n + ' réponses liées à ce thème')); sb.append(row);
+  }
+  sb.append(el('p', 'muted', "Le rattachement de chaque question à un thème est un choix de notre part : il est indiqué question par question dans les sources, plus bas."));
+  return sb;
+}
+async function shareResult(top) {
+  gcCount('partage-resultat', 'Partage du résultat du test', true);
+  const W = 1080, H = 1350, cv = document.createElement('canvas'); cv.width = W; cv.height = H; const x = cv.getContext('2d');
+  try { await document.fonts.load('600 40px Asap'); } catch (e) {}
+  const F = (w, sz) => w + ' ' + sz + 'px Asap, Arial, sans-serif';
+  x.fillStyle = '#F0EFF0'; x.fillRect(0, 0, W, H);
+  x.fillStyle = '#022E7B'; x.fillRect(0, 0, W, 230);
+  x.fillStyle = '#FDFDFD'; x.font = F('700', 64); x.fillText('Nous votons 2027', 80, 120); x.font = F('400', 38); x.fillText('Mon test « Quel candidat pense comme moi ? »', 80, 185);
+  let y = 340; x.fillStyle = '#011334'; x.font = F('600', 44); x.fillText('Mes candidats les plus proches', 80, y); y += 70;
+  for (const [i, r] of top.entries()) {
+    x.fillStyle = '#FDFDFD'; x.beginPath(); x.roundRect ? x.roundRect(80, y, W - 160, 200, 28) : x.rect(80, y, W - 160, 200); x.fill();
+    x.fillStyle = '#011334'; x.font = F('700', 50); x.fillText((i + 1) + '. ' + r.c.nom, 120, y + 80);
+    x.fillStyle = '#566A8E'; x.font = F('400', 34); x.fillText(r.ok + ' sur ' + r.n + ' questions comparables' + (r.n < 5 ? ' (peu fiable)' : ''), 120, y + 135);
+    x.fillStyle = '#022E7B'; x.font = F('700', 70); x.textAlign = 'right'; x.fillText(Math.round(r.pc) + ' %', W - 120, y + 115); x.textAlign = 'left';
+    x.fillStyle = '#B1BED6'; x.fillRect(120, y + 160, W - 240, 12); x.fillStyle = '#022E7B'; x.fillRect(120, y + 160, (W - 240) * r.pc / 100, 12);
+    y += 230;
+  }
+  x.fillStyle = '#566A8E'; x.font = F('400', 32); x.fillText("Ce n'est pas une consigne de vote.", 80, H - 170);
+  x.fillStyle = '#011334'; x.font = F('600', 38); x.fillText('Faites le test : denyslx33.github.io/presidentielle-2027', 80, H - 100);
+  const blob = await new Promise((res) => cv.toBlob(res, 'image/png'));
+  const file = new File([blob], 'mon-resultat-nous-votons.png', { type: 'image/png' });
+  if (navigator.canShare && navigator.canShare({ files: [file] })) { try { await navigator.share({ files: [file], text: 'Mon résultat au test de Nous votons : ' + APP_URL }); return; } catch (e) { if (e && e.name === 'AbortError') return; } }
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = file.name; document.body.append(a); a.click(); a.remove(); toast('Image enregistrée');
+}
+function getFavs() { const f = lsGet('favs'); return Array.isArray(f) ? f : []; }
+function favBtn(c) {
+  const b = el('button', 'favb'); b.type = 'button';
+  const upd = () => { const on = getFavs().includes(c.id); b.textContent = on ? '★ Dans mes favoris' : '☆ Ajouter à mes favoris'; b.classList.toggle('on', on); };
+  b.onclick = () => { let f = getFavs(); if (f.includes(c.id)) f = f.filter((i) => i !== c.id); else { if (f.length >= 2) { toast('Deux favoris au maximum : retirez-en un d’abord'); return; } f.push(c.id); gcCount('favori-ajoute', 'Favori ajouté', true); toast('Ses actus s’affichent en haut de l’accueil'); } lsSet('favs', f); upd(); renderFavs(); };
+  upd(); return b;
+}
+function renderFavs() {
+  const box = $('h-favs'); if (!box || !CAND) return;
+  const byId = new Map(CAND.principaux.map((c) => [c.id, c]));
+  const f = getFavs().filter((i) => byId.has(i)); box.hidden = !f.length; if (!f.length) return;
+  const w = el('div', 'who'); for (const i of f) { const c = byId.get(i); const b = el('button'); b.type = 'button'; b.append(avatar(c), c.nom); b.onclick = () => openFiche(i); w.append(b); }
+  const news = (ACTU ? ACTU.items : []).filter((n) => n.qui.some((i) => f.includes(i)) && !(silence() && /sondage/i.test(n.texte))).slice(0, 3);
+  $('h-favs-in').replaceChildren(w, ...(news.length ? news.map((n) => newsCard(n, byId)) : [el('p', 'muted', 'Pas d’actu récente pour vos favoris.')]));
+}
+function renderHomeTP() {
+  const box = $('h-tp'); if (!box || !CAND) return;
+  const data = TP && TP.candidats ? Object.entries(TP.candidats) : []; const byId = new Map(CAND.principaux.map((c) => [c.id, c]));
+  const rows = data.filter(([id, v]) => byId.has(id) && v.parole).map(([id, v]) => ({ c: byId.get(id), v: v.parole })).sort((a, b) => b.v - a.v).slice(0, 5);
+  box.hidden = !rows.length; if (!rows.length) return;
+  const max = Math.max(...rows.map((r) => r.v), 1); const out = [];
+  for (const r of rows) { const d = el('div', 'tpr'); const h = el('div', 'h'); h.append(el('b', null, r.c.nom), el('span', null, fmtDur(r.v))); const b = el('div', 'b'); const i = el('i'); i.style.width = (r.v / max * 100) + '%'; i.style.background = avColor(r.c.id); b.append(i); d.append(h, b); out.push(d); }
+  out.push(el('p', 'muted', 'Les 5 temps de parole les plus longs' + (TP.periode ? ', ' + TP.periode : '') + '. Le temps attendu pour chacun dépend de la période de campagne.'));
+  $('h-tp-in').replaceChildren(...out);
+}
+const NEWS = { v: '2026-11-24', items: [
+  'Mes favoris : touchez l’étoile sur la fiche d’un ou deux candidats, leurs dernières actus s’affichent en haut de l’accueil.',
+  'Le test pose maintenant 25 questions, avec un « C’est quoi ? » pour les sujets techniques.',
+  'À la fin du test : votre sensibilité sur quatre grands thèmes, et un score plus clair.',
+  'Vous pouvez partager votre résultat du test en image, si vous le souhaitez.',
+  'Le logo des partis sur les fiches, et deux nouveaux onglets dans Candidats : Partis et Retraits.',
+] };
+function showNews() {
+  try {
+    const revenu = localStorage.getItem('visite') === '1'; localStorage.setItem('visite', '1');
+    if (!revenu) { localStorage.setItem('newsV', NEWS.v); return; }
+    if (localStorage.getItem('newsV') === NEWS.v || !$('icon-sheet').hidden) return;
+    localStorage.setItem('newsV', NEWS.v);
+    const ul = el('ul', 'newsl'); NEWS.items.forEach((t) => ul.append(el('li', null, t)));
+    const ok = el('button', 'qbtn', 'Super !'); ok.type = 'button'; ok.style.width = '100%'; ok.onclick = () => { $('inst-sheet').hidden = true; };
+    $('sheet-body').replaceChildren(ul, ok);
+    const sh = $('inst-sheet'); sh.querySelector('h2').textContent = 'Quoi de neuf ?'; sh.hidden = false;
+  } catch (e) {}
+}
 function openGuide() {
   const cur = document.querySelector('#tabs button.on'); GUIDE_FROM = cur ? cur.dataset.v : 'accueil';
   for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-guide');
@@ -1086,7 +1193,7 @@ function renderTP() {
     for (const r of rows) { const d = el('div', 'tpr'); const h = el('div', 'h'); h.append(el('b', null, r.c.nom), el('span', null, fmtDur(r.v))); const b = el('div', 'b'); const i = el('i'); i.style.width = (r.v / max * 100) + '%'; i.style.background = avColor(r.c.id); b.append(i); d.append(h, b); out.push(d); }
   }
   const src = el('p', 'muted'); src.append('Source : '); src.append(link(TP && TP.source ? TP.source : 'Arcom', TP && TP.url ? TP.url : 'https://www.arcom.fr')); src.append('. Règles 2027 publiées le 19 novembre 2026.'); out.push(src);
-  box.replaceChildren(...out);
+  box.replaceChildren(...out); renderHomeTP();
 }
 
 
@@ -1131,6 +1238,7 @@ function renderAccueil() {
     }
     $('h-next').replaceChildren(...(rows.length ? rows : [el('p', 'muted', 'Aucune émission annoncée pour le moment.')]));
   }
+  renderFavs(); renderHomeTP();
   if (ACTU) $('h-actu').replaceChildren(...ACTU.items.filter((n) => !(silence() && /sondage/i.test(n.texte))).slice(0, 3).map((n) => newsCard(n, byId)));
 }
 
@@ -1193,6 +1301,8 @@ function renderFiche() {
   if (!c) { showView('candidats'); return; }
   const d = el('div');
   const h = el('div', 'fhead'); h.append(avatar(c), el('h2', null, c.nom), el('div', 'party', c.parti));
+  const plg = PLOGOS[nomParti(c.parti)]; if (plg) { const im = el('img', 'plogo flogo'); im.src = 'data/partis/' + plg; im.alt = 'Logo ' + nomParti(c.parti); im.onerror = () => im.remove(); h.append(im); }
+  h.append(el('br'), favBtn(c));
   const ls = latestScore(c.nom);
   if (ls && !silence()) { const se = ls.p.scores.find((x) => x.nom === c.nom); h.append(el('div', 'big', fmt(ls.v) + ' %'), el('div', 'muted', `Dernier sondage : ${pollMeta(ls.p)}${se && se.e != null ? ', marge d’erreur ±' + fmt(se.e) + ' pt' : ''}.`)); }
   d.append(h);
@@ -1511,6 +1621,8 @@ $('agenda-guide').addEventListener('click', openGuide);
 $('gback').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView(GUIDE_FROM); });
 for (const id of ['tab-share', 'h-share', 'ab-share']) $(id).addEventListener('click', shareApp);
 $('sheet-x').addEventListener('click', () => { $('inst-sheet').hidden = true; });
+$('h-tp-more').addEventListener('click', () => { openGuide(); const t = $('tp'); if (t && t.closest('details')) { t.closest('details').open = true; setTimeout(() => t.scrollIntoView({ block: 'start' }), 50); } });
+setTimeout(showNews, 1500);
 $('inst-sheet').addEventListener('click', (e) => { if (e.target === $('inst-sheet')) $('inst-sheet').hidden = true; });
 for (const id of ['b-about', 'h-about']) $(id).addEventListener('click', openAbout);
 $('aback').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView(GUIDE_FROM); });

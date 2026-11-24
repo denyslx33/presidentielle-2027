@@ -15,7 +15,12 @@
     "glucksmann": "Abroger la réforme des retraites de 2023",
     "philippe": "Retraite à 65 ans avec 45 ans de cotisation"
    },
-   "id": "q1"
+   "id": "q1",
+   "exp": "La réforme de 2023 a reculé progressivement l'âge légal de départ à la retraite de 62 à 64 ans.",
+   "axe": [
+    "eco",
+    -1
+   ]
   },
   {
    "theme": "Économie",
@@ -32,7 +37,11 @@
     "tondelier": "SMIC à 2 000 € brut dès 2027",
     "roussel": "Augmentation généralisée des salaires, à commencer par le SMIC"
    },
-   "id": "q2"
+   "id": "q2",
+   "axe": [
+    "eco",
+    -1
+   ]
   },
   {
    "theme": "Économie",
@@ -49,7 +58,11 @@
     "riner": "Permettre de travailler plus sans remettre en cause les 35 heures",
     "melenchon": "Retour aux 35 heures, 32 heures pour les métiers pénibles"
    },
-   "id": "q3"
+   "id": "q3",
+   "axe": [
+    "eco",
+    1
+   ]
   },
   {
    "theme": "Économie",
@@ -70,7 +83,11 @@
     "villepin": "Ramener le déficit public à 3 % du PIB",
     "riner": "Dépenser moins et mieux réinvestir pour réduire la dette"
    },
-   "id": "q4"
+   "id": "q4",
+   "axe": [
+    "eco",
+    1
+   ]
   },
   {
    "theme": "Économie",
@@ -85,7 +102,12 @@
     "lisnard": "Supprimer la C3S et la CVAE (11,5 Md€ d'impôts de production en moins)",
     "retailleau": "Réduire de 40 Md€ le handicap fiscal des entreprises"
    },
-   "id": "q5"
+   "id": "q5",
+   "exp": "Ce sont des taxes payées par les entreprises même quand elles ne font pas de bénéfice, calculées sur leur chiffre d'affaires ou leurs locaux, comme la CFE ou la C3S. Elles financent surtout les collectivités locales.",
+   "axe": [
+    "eco",
+    1
+   ]
   },
   {
    "theme": "Économie",
@@ -98,7 +120,12 @@
     "tondelier": "Rétablir l'impôt sur la grande fortune",
     "villepin": "Impôt sur le patrimoine des 1 % les plus aisés"
    },
-   "id": "q6"
+   "id": "q6",
+   "exp": "L'impôt de solidarité sur la fortune taxait chaque année les patrimoines de plus de 1,3 million d'euros. Il a été remplacé en 2018 par l'impôt sur la fortune immobilière (IFI), qui ne porte que sur l'immobilier.",
+   "axe": [
+    "eco",
+    -1
+   ]
   },
   {
    "theme": "Économie",
@@ -115,7 +142,11 @@
     "arthaud": "Exproprier sans indemnité les actionnaires, à commencer par pétrole et armement",
     "roussel": "Nationaliser TotalEnergies"
    },
-   "id": "q7"
+   "id": "q7",
+   "axe": [
+    "eco",
+    -1
+   ]
   },
   {
    "theme": "Économie",
@@ -147,7 +178,11 @@
     "attal": "100 000 postes publics en moins, sans licenciement",
     "roussel": "Créer 500 000 postes de fonctionnaires"
    },
-   "id": "q9"
+   "id": "q9",
+   "axe": [
+    "eco",
+    1
+   ]
   },
   {
    "theme": "Institutions",
@@ -177,7 +212,8 @@
     "tondelier": "Proportionnelle intégrale aux législatives",
     "lepen": "Référendum d'initiative citoyenne et proportionnelle"
    },
-   "id": "q11"
+   "id": "q11",
+   "exp": "Aujourd'hui, chaque député est élu dans sa circonscription au scrutin majoritaire à deux tours. À la proportionnelle, les sièges sont répartis selon le pourcentage de voix obtenu par chaque liste."
   },
   {
    "theme": "Institutions",
@@ -194,7 +230,8 @@
     "dupont-aignan": "Référendum d'initiative citoyenne",
     "villepin": "Référendum d'initiative citoyenne préparé par une convention permanente"
    },
-   "id": "q12"
+   "id": "q12",
+   "exp": "Un référendum que les citoyens déclenchent eux-mêmes en réunissant un nombre de signatures fixé à l'avance, par exemple pour proposer ou abroger une loi."
   },
   {
    "theme": "Immigration",
@@ -225,7 +262,11 @@
     "tondelier": "Respect du droit d'asile, fin des refoulements illégaux",
     "glucksmann": "Abroger la loi immigration de 2024"
    },
-   "id": "q13"
+   "id": "q13",
+   "axe": [
+    "soc",
+    1
+   ]
   },
   {
    "theme": "Immigration",
@@ -242,7 +283,12 @@
     "lepen": "Supprimer le droit du sol",
     "lisnard": "Fin de l'automaticité du droit du sol"
    },
-   "id": "q14"
+   "id": "q14",
+   "exp": "Un enfant né en France de parents étrangers peut devenir français, en général à sa majorité, s'il a vécu en France plusieurs années. C'est ce qu'on appelle le droit du sol.",
+   "axe": [
+    "soc",
+    -1
+   ]
   },
   {
    "theme": "Immigration",
@@ -259,7 +305,11 @@
     "arthaud": "Contre la « préférence nationale » : unité des travailleurs quelle que soit leur origine",
     "roussel": "Pas de « priorité nationale » pour les HLM : construire plutôt que trier"
    },
-   "id": "q15"
+   "id": "q15",
+   "axe": [
+    "soc",
+    1
+   ]
   },
   {
    "theme": "Social et santé",
@@ -272,7 +322,12 @@
     "lisnard": "Remplacer l'AME par une aide d'urgence",
     "zemmour": "AME limitée à l'aide médicale d'urgence"
    },
-   "id": "q16"
+   "id": "q16",
+   "exp": "L'aide médicale d'État (AME) prend en charge les soins des étrangers en situation irrégulière qui vivent en France depuis plus de trois mois et ont de faibles ressources.",
+   "axe": [
+    "soc",
+    1
+   ]
   },
   {
    "theme": "Social et santé",
@@ -287,7 +342,12 @@
     "melenchon": "Cannabis légalisé sous monopole d'État",
     "tondelier": "Légaliser et encadrer le cannabis"
    },
-   "id": "q17"
+   "id": "q17",
+   "exp": "Légaliser, c'est autoriser et encadrer la vente. Dépénaliser, c'est ne plus punir l'usage par la prison ou une amende pénale, sans forcément autoriser la vente.",
+   "axe": [
+    "soc",
+    -1
+   ]
   },
   {
    "theme": "Sécurité et justice",
@@ -302,7 +362,12 @@
     "lisnard": "Peines planchers pour les récidivistes",
     "philippe": "Peines planchers pour les violences contre policiers et professeurs"
    },
-   "id": "q18"
+   "id": "q18",
+   "exp": "Des peines minimales que le juge doit prononcer, sauf décision motivée, notamment en cas de récidive. Elles ont existé en France de 2007 à 2014.",
+   "axe": [
+    "soc",
+    1
+   ]
   },
   {
    "theme": "Écologie et énergie",
@@ -348,7 +413,11 @@
     "villepin": "6 EPR2 et éolien en mer",
     "retailleau": "Plus de nouveaux appels d'offres solaire et éolien en mer tant que la demande ne remonte pas"
    },
-   "id": "q20"
+   "id": "q20",
+   "axe": [
+    "eco2",
+    1
+   ]
   },
   {
    "theme": "Écologie et énergie",
@@ -361,7 +430,11 @@
     "melenchon": "Interdire glyphosate et néonicotinoïdes",
     "villepin": "Moitié moins de pesticides d'ici 2030"
    },
-   "id": "q21"
+   "id": "q21",
+   "axe": [
+    "eco2",
+    -1
+   ]
   },
   {
    "theme": "Europe et international",
@@ -386,7 +459,11 @@
     "dupont-aignan": "Sortie de l'Union européenne",
     "lepen": "Baisser la contribution française à l'UE"
    },
-   "id": "q22"
+   "id": "q22",
+   "axe": [
+    "eur",
+    -1
+   ]
   },
   {
    "theme": "Europe et international",
@@ -412,7 +489,11 @@
    "src": {
     "arthaud": "Interdire les licenciements et les suppressions d'emplois"
    },
-   "id": "q24"
+   "id": "q24",
+   "axe": [
+    "eco",
+    -1
+   ]
   },
   {
    "theme": "Économie",
@@ -423,7 +504,11 @@
    "src": {
     "tondelier": "Encadrement des loyers généralisé"
    },
-   "id": "q25"
+   "id": "q25",
+   "axe": [
+    "eco",
+    -1
+   ]
   },
   {
    "theme": "Économie",
@@ -436,7 +521,11 @@
     "melenchon": "200 000 logements publics par an",
     "villepin": "500 000 logements par an et garantie locative universelle"
    },
-   "id": "q26"
+   "id": "q26",
+   "axe": [
+    "eco",
+    -1
+   ]
   },
   {
    "theme": "Économie",
@@ -449,7 +538,12 @@
     "attal": "Un pilier de capitalisation pour les retraites",
     "retailleau": "Une part de retraite par capitalisation pour les nouveaux entrants (25 à 30 %)"
    },
-   "id": "q27"
+   "id": "q27",
+   "exp": "Aujourd'hui, les pensions sont payées par les cotisations des actifs : c'est la répartition. Avec la capitalisation, chacun épargne et place de l'argent pour financer sa propre retraite.",
+   "axe": [
+    "eco",
+    1
+   ]
   },
   {
    "theme": "Économie",
@@ -460,7 +554,11 @@
    "src": {
     "lisnard": "Contrat de travail unique fusionnant CDI et CDD"
    },
-   "id": "q28"
+   "id": "q28",
+   "axe": [
+    "eco",
+    1
+   ]
   },
   {
    "theme": "Économie",
@@ -471,7 +569,8 @@
    "src": {
     "villepin": "Supprimer les niches fiscales en cinq ans"
    },
-   "id": "q29"
+   "id": "q29",
+   "exp": "Des réductions, crédits ou exonérations d'impôt accordés pour encourager certaines dépenses, comme l'emploi à domicile, les dons ou certains investissements."
   },
   {
    "theme": "Économie",
@@ -521,7 +620,12 @@
    "src": {
     "melenchon": "Revenu de chaque personne porté au seuil de pauvreté (1 337 €)"
    },
-   "id": "q33"
+   "id": "q33",
+   "exp": "Le seuil de pauvreté correspond à 60 % du revenu médian, soit environ 1 200 € par mois pour une personne seule.",
+   "axe": [
+    "eco",
+    -1
+   ]
   },
   {
    "theme": "Économie",
@@ -567,7 +671,11 @@
    "src": {
     "attal": "Aucune hausse d'impôt sur le quinquennat, 150 Md€ d'économies"
    },
-   "id": "q37"
+   "id": "q37",
+   "axe": [
+    "eco",
+    1
+   ]
   },
   {
    "theme": "Économie",
@@ -584,7 +692,11 @@
     "retailleau": "Supprimer ou recentrer dès l'élection les 50 normes qui pénalisent le plus la production",
     "villepin": "Diviser les codes juridiques par quatre et mettre fin aux surtranspositions"
    },
-   "id": "q38"
+   "id": "q38",
+   "axe": [
+    "eco",
+    1
+   ]
   },
   {
    "theme": "Social et santé",
@@ -608,7 +720,8 @@
     "lepen": "Supprimer les ARS",
     "lisnard": "Supprimer les ARS"
    },
-   "id": "q40"
+   "id": "q40",
+   "exp": "Les agences régionales de santé (ARS) organisent la santé dans chaque région pour le compte de l'État : hôpitaux, autorisations, prévention."
   },
   {
    "theme": "Social et santé",
@@ -662,7 +775,8 @@
     "melenchon": "Sortie de la tarification à l'activité à l'hôpital",
     "glucksmann": "Fin de la tarification à l'acte à l'hôpital"
    },
-   "id": "q44"
+   "id": "q44",
+   "exp": "Depuis 2004, les hôpitaux sont en grande partie payés selon le nombre et le type de soins et de séjours qu'ils réalisent : c'est la tarification à l'activité (T2A)."
   },
   {
    "theme": "Social et santé",
@@ -673,7 +787,8 @@
    "src": {
     "tondelier": "Interdire PFAS et perturbateurs endocriniens"
    },
-   "id": "q45"
+   "id": "q45",
+   "exp": "Les PFAS, appelés polluants éternels, sont des substances chimiques très résistantes présentes dans de nombreux produits, qui s'accumulent dans l'environnement. Les perturbateurs endocriniens sont des substances qui agissent sur les hormones."
   },
   {
    "theme": "Social et santé",
@@ -686,7 +801,8 @@
     "lepen": "AAH revalorisée et calculée sans les revenus du conjoint",
     "tondelier": "AAH augmentée de 250 €"
    },
-   "id": "q46"
+   "id": "q46",
+   "exp": "L'allocation aux adultes handicapés (AAH) est un revenu minimum versé aux personnes handicapées. Depuis octobre 2023, elle ne dépend plus des revenus du conjoint."
   },
   {
    "theme": "Social et santé",
@@ -731,7 +847,11 @@
     "dupont-aignan": "Uniforme obligatoire",
     "lepen": "Uniforme au primaire et au collège"
    },
-   "id": "q49"
+   "id": "q49",
+   "axe": [
+    "soc",
+    1
+   ]
   },
   {
    "theme": "Éducation",
@@ -746,7 +866,8 @@
     "tondelier": "Remplacer Parcoursup et MonMaster",
     "glucksmann": "Refonte de Parcoursup"
    },
-   "id": "q50"
+   "id": "q50",
+   "exp": "La plateforme nationale qui gère depuis 2018 les candidatures des lycéens dans l'enseignement supérieur."
   },
   {
    "theme": "Éducation",
@@ -798,7 +919,8 @@
     "attal": "Groupes de niveau en maths et français",
     "retailleau": "Examen d'entrée en sixième et groupes de niveau évolutifs"
    },
-   "id": "q54"
+   "id": "q54",
+   "exp": "Répartir les élèves selon leur niveau dans certaines matières plutôt que par classe entière. Une réforme de 2024 l'a introduit en partie au collège, en maths et en français."
   },
   {
    "theme": "Éducation",
@@ -844,7 +966,12 @@
    "src": {
     "lisnard": "Majorité pénale à 16 ans"
    },
-   "id": "q58"
+   "id": "q58",
+   "exp": "La majorité pénale est l'âge à partir duquel on est jugé comme un adulte. Elle est aujourd'hui de 18 ans : avant, les mineurs relèvent d'une justice spécifique, avec des peines atténuées.",
+   "axe": [
+    "soc",
+    1
+   ]
   },
   {
    "theme": "Sécurité et justice",
@@ -857,7 +984,12 @@
     "lepen": "Présomption de légitime défense pour les forces de l'ordre",
     "dupont-aignan": "Présomption de légitime défense pour les policiers"
    },
-   "id": "q59"
+   "id": "q59",
+   "exp": "Le principe serait de considérer d'emblée qu'un policier qui fait usage de la force était en légitime défense, et que ce soit à l'accusation de prouver le contraire.",
+   "axe": [
+    "soc",
+    1
+   ]
   },
   {
    "theme": "Sécurité et justice",
@@ -868,7 +1000,12 @@
    "src": {
     "melenchon": "Interdire LBD, tasers et grenades de désencerclement en maintien de l'ordre"
    },
-   "id": "q60"
+   "id": "q60",
+   "exp": "Le lanceur de balles de défense (LBD) tire des projectiles en caoutchouc. Les forces de l'ordre l'utilisent notamment pendant certaines manifestations, comme les grenades de désencerclement.",
+   "axe": [
+    "soc",
+    -1
+   ]
   },
   {
    "theme": "Sécurité et justice",
@@ -881,7 +1018,11 @@
     "dupont-aignan": "10 000 policiers et gendarmes de plus en 5 ans",
     "roussel": "60 000 policiers, gendarmes et douaniers de proximité contre le narcotrafic"
    },
-   "id": "q61"
+   "id": "q61",
+   "axe": [
+    "soc",
+    1
+   ]
   },
   {
    "theme": "Sécurité et justice",
@@ -892,7 +1033,11 @@
    "src": {
     "lepen": "85 000 places de prison"
    },
-   "id": "q62"
+   "id": "q62",
+   "axe": [
+    "soc",
+    1
+   ]
   },
   {
    "theme": "Sécurité et justice",
@@ -905,7 +1050,12 @@
     "philippe": "« État d'urgence narco » ciblé avec reconnaissance faciale",
     "retailleau": "Vidéo intelligente autorisée dans un cadre strict"
    },
-   "id": "q63"
+   "id": "q63",
+   "exp": "Des caméras couplées à des logiciels qui identifient des personnes ou repèrent automatiquement certains comportements. La vidéo dite intelligente a été testée en France pour les Jeux olympiques de 2024.",
+   "axe": [
+    "soc",
+    1
+   ]
   },
   {
    "theme": "Sécurité et justice",
@@ -933,7 +1083,11 @@
    "src": {
     "tondelier": "Fin des contrôles d'identité aléatoires"
    },
-   "id": "q65"
+   "id": "q65",
+   "axe": [
+    "soc",
+    -1
+   ]
   },
   {
    "theme": "Sécurité et justice",
@@ -944,7 +1098,11 @@
    "src": {
     "lisnard": "Armer les polices municipales volontaires"
    },
-   "id": "q66"
+   "id": "q66",
+   "axe": [
+    "soc",
+    1
+   ]
   },
   {
    "theme": "Sécurité et justice",
@@ -966,7 +1124,12 @@
    "src": {
     "dupont-aignan": "Perpétuité réelle"
    },
-   "id": "q68"
+   "id": "q68",
+   "exp": "Une condamnation à perpétuité sans aucune possibilité de libération. Elle existe déjà pour quelques crimes très graves, avec un réexamen possible après 30 ans.",
+   "axe": [
+    "soc",
+    1
+   ]
   },
   {
    "theme": "Sécurité et justice",
@@ -977,7 +1140,11 @@
    "src": {
     "lepen": "Supprimer réductions et aménagements de peine pour les violences"
    },
-   "id": "q69"
+   "id": "q69",
+   "axe": [
+    "soc",
+    1
+   ]
   },
   {
    "theme": "Immigration",
@@ -988,7 +1155,12 @@
    "src": {
     "zemmour": "Quitter la CEDH"
    },
-   "id": "q70"
+   "id": "q70",
+   "exp": "La Cour européenne des droits de l'homme, à Strasbourg, vérifie que les États respectent la Convention européenne des droits de l'homme. Elle dépend du Conseil de l'Europe, pas de l'Union européenne.",
+   "axe": [
+    "eur",
+    1
+   ]
   },
   {
    "theme": "Immigration",
@@ -1001,7 +1173,11 @@
     "melenchon": "Régularisation des travailleurs, étudiants et parents d'élèves sans papiers",
     "arthaud": "Régulariser les sans-papiers, liberté de circulation"
    },
-   "id": "q71"
+   "id": "q71",
+   "axe": [
+    "soc",
+    -1
+   ]
   },
   {
    "theme": "Immigration",
@@ -1014,7 +1190,12 @@
     "dupont-aignan": "Sortir de Schengen",
     "arthaud": "Régulariser les sans-papiers, liberté de circulation"
    },
-   "id": "q72"
+   "id": "q72",
+   "exp": "L'espace Schengen permet de circuler sans contrôle aux frontières entre une trentaine de pays européens.",
+   "axe": [
+    "eur",
+    1
+   ]
   },
   {
    "theme": "Immigration",
@@ -1027,7 +1208,11 @@
     "lepen": "Demandes d'asile traitées uniquement depuis l'étranger",
     "dupont-aignan": "Asile demandé uniquement aux frontières"
    },
-   "id": "q73"
+   "id": "q73",
+   "axe": [
+    "soc",
+    1
+   ]
   },
   {
    "theme": "Immigration",
@@ -1040,7 +1225,12 @@
     "lisnard": "Réviser l'accord de 1968 avec l'Algérie",
     "philippe": "Dénoncer l'accord de 1968 avec l'Algérie"
    },
-   "id": "q74"
+   "id": "q74",
+   "exp": "Un accord entre la France et l'Algérie qui fixe des règles particulières pour le séjour et le travail des Algériens en France, différentes des règles appliquées aux autres étrangers.",
+   "axe": [
+    "soc",
+    1
+   ]
   },
   {
    "theme": "Immigration",
@@ -1051,7 +1241,11 @@
    "src": {
     "attal": "Quotas votés par le Parlement tous les deux ans"
    },
-   "id": "q75"
+   "id": "q75",
+   "axe": [
+    "soc",
+    1
+   ]
   },
   {
    "theme": "Immigration",
@@ -1062,7 +1256,11 @@
    "src": {
     "glucksmann": "Force européenne de sauvetage en mer"
    },
-   "id": "q76"
+   "id": "q76",
+   "axe": [
+    "soc",
+    -1
+   ]
   },
   {
    "theme": "Immigration",
@@ -1073,7 +1271,11 @@
    "src": {
     "arthaud": "Droit de vote des travailleurs immigrés"
    },
-   "id": "q77"
+   "id": "q77",
+   "axe": [
+    "soc",
+    -1
+   ]
   },
   {
    "theme": "Écologie et énergie",
@@ -1084,7 +1286,11 @@
    "src": {
     "tondelier": "110 km/h sur autoroute"
    },
-   "id": "q78"
+   "id": "q78",
+   "axe": [
+    "eco2",
+    -1
+   ]
   },
   {
    "theme": "Écologie et énergie",
@@ -1095,7 +1301,11 @@
    "src": {
     "zemmour": "Maintenir les voitures thermiques après 2035"
    },
-   "id": "q79"
+   "id": "q79",
+   "axe": [
+    "eco2",
+    1
+   ]
   },
   {
    "theme": "Écologie et énergie",
@@ -1108,7 +1318,12 @@
     "lepen": "Sortir du marché européen de l'électricité",
     "dupont-aignan": "Sortie du marché européen de l'électricité"
    },
-   "id": "q80"
+   "id": "q80",
+   "exp": "En Europe, le prix de gros de l'électricité est souvent fixé par la dernière centrale appelée pour répondre à la demande, souvent au gaz. En sortir permettrait de fixer des prix selon les coûts de production en France.",
+   "axe": [
+    "eur",
+    1
+   ]
   },
   {
    "theme": "Écologie et énergie",
@@ -1130,7 +1345,12 @@
    "src": {
     "tondelier": "Moratoire sur les mégabassines"
    },
-   "id": "q82"
+   "id": "q82",
+   "exp": "Les mégabassines sont de grandes réserves d'eau à ciel ouvert, remplies en hiver en pompant dans les nappes, pour irriguer les cultures en été. Leurs défenseurs y voient une sécurité pour les agriculteurs, leurs opposants un accaparement de l'eau.",
+   "axe": [
+    "eco2",
+    -1
+   ]
   },
   {
    "theme": "Écologie et énergie",
@@ -1141,7 +1361,11 @@
    "src": {
     "glucksmann": "Taxer le kérosène"
    },
-   "id": "q83"
+   "id": "q83",
+   "axe": [
+    "eco2",
+    -1
+   ]
   },
   {
    "theme": "Écologie et énergie",
@@ -1152,7 +1376,12 @@
    "src": {
     "lisnard": "Autoriser les nouvelles techniques génomiques"
    },
-   "id": "q84"
+   "id": "q84",
+   "exp": "Des plantes dont l'ADN est modifié avec des techniques récentes comme CRISPR, souvent sans ajouter de gène d'une autre espèce. L'Union européenne discute d'un assouplissement de leurs règles.",
+   "axe": [
+    "eco2",
+    1
+   ]
   },
   {
    "theme": "Écologie et énergie",
@@ -1163,7 +1392,11 @@
    "src": {
     "glucksmann": "État d'urgence écologique dans la Constitution"
    },
-   "id": "q85"
+   "id": "q85",
+   "axe": [
+    "eco2",
+    -1
+   ]
   },
   {
    "theme": "Écologie et énergie",
@@ -1176,7 +1409,8 @@
     "philippe": "Prix du carbone aux frontières européennes",
     "retailleau": "Taxe carbone aux frontières élargie"
    },
-   "id": "q86"
+   "id": "q86",
+   "exp": "Faire payer aux produits importés le coût du CO₂ émis pour les fabriquer, comme le paient déjà les industriels européens. L'Union européenne a lancé un mécanisme de ce type."
   },
   {
    "theme": "Écologie et énergie",
@@ -1187,7 +1421,12 @@
    "src": {
     "lepen": "Abandonner le marché carbone ETS2"
    },
-   "id": "q87"
+   "id": "q87",
+   "exp": "Un système européen qui ferait payer des quotas de CO₂ aux fournisseurs de carburants et de fioul de chauffage, avec un effet attendu sur les prix. Il est prévu vers 2028.",
+   "axe": [
+    "eco2",
+    1
+   ]
   },
   {
    "theme": "Écologie et énergie",
@@ -1200,7 +1439,11 @@
     "tondelier": "7 Md€ par an pour l'adaptation au changement climatique",
     "glucksmann": "200 Md€ d'investissement public pour l'écologie sur le quinquennat"
    },
-   "id": "q88"
+   "id": "q88",
+   "axe": [
+    "eco2",
+    -1
+   ]
   },
   {
    "theme": "Institutions",
@@ -1211,7 +1454,8 @@
    "src": {
     "melenchon": "Constituante pour une 6e République"
    },
-   "id": "q89"
+   "id": "q89",
+   "exp": "Changer de Constitution : celle de 1958 fonde la 5e République. Une Assemblée constituante serait élue pour en écrire une nouvelle."
   },
   {
    "theme": "Institutions",
@@ -1222,7 +1466,8 @@
    "src": {
     "melenchon": "Supprimer le 49.3"
    },
-   "id": "q90"
+   "id": "q90",
+   "exp": "Cet article permet au gouvernement de faire adopter un texte sans vote des députés, sauf si une motion de censure le renverse."
   },
   {
    "theme": "Institutions",
@@ -1338,7 +1583,11 @@
     "glucksmann": "Vote à la majorité qualifiée au Conseil européen",
     "tondelier": "Budget européen porté à 2 % du PIB en 2035"
    },
-   "id": "q100"
+   "id": "q100",
+   "axe": [
+    "eur",
+    1
+   ]
   },
   {
    "theme": "Europe et international",
@@ -1353,7 +1602,12 @@
     "zemmour": "Refuser une armée européenne et tout partage de la dissuasion nucléaire",
     "villepin": "Nouvelle doctrine européenne de dissuasion nucléaire au sein d'un conseil européen de sécurité"
    },
-   "id": "q101"
+   "id": "q101",
+   "exp": "La France possède l'arme nucléaire pour dissuader toute attaque contre ses intérêts vitaux. La question est d'étendre clairement cette protection aux autres pays européens.",
+   "axe": [
+    "eur",
+    -1
+   ]
   },
   {
    "theme": "Europe et international",
@@ -1379,7 +1633,11 @@
    "src": {
     "glucksmann": "Fonds européen de défense de 500 Md€ par emprunt commun"
    },
-   "id": "q103"
+   "id": "q103",
+   "axe": [
+    "eur",
+    -1
+   ]
   },
   {
    "theme": "Europe et international",
@@ -1412,7 +1670,11 @@
    "src": {
     "zemmour": "Refuser tout nouvel élargissement"
    },
-   "id": "q106"
+   "id": "q106",
+   "axe": [
+    "eur",
+    1
+   ]
   },
   {
    "theme": "Europe et international",
@@ -1447,7 +1709,94 @@
    "src": {
     "villepin": "Impôt sur les sociétés harmonisé avec l'Allemagne"
    },
-   "id": "q109"
+   "id": "q109",
+   "axe": [
+    "eur",
+    -1
+   ]
+  },
+  {
+   "id": "q110",
+   "theme": "Éducation",
+   "q": "Les enseignants doivent être nettement mieux payés.",
+   "pos": {
+    "lepen": 1,
+    "lisnard": 1,
+    "philippe": 1,
+    "polony": 1,
+    "retailleau": 1,
+    "tondelier": 1,
+    "glucksmann": 1,
+    "villepin": 1
+   },
+   "src": {
+    "lepen": "Revaloriser les salaires des enseignants",
+    "lisnard": "+20 % pour les enseignants en 5 ans, avec réorganisation du métier",
+    "philippe": "+20 % de salaire pour les enseignants",
+    "polony": "+20 à 30 % pour les enseignants",
+    "retailleau": "+135 € nets en début de carrière, jusqu'à +300 € en milieu",
+    "tondelier": "+15 % pour les enseignants en 5 ans",
+    "glucksmann": "Hausse planifiée des salaires enseignants sur 5 ans",
+    "villepin": "Au moins +10 % pour les personnels scolaires"
+   }
+  },
+  {
+   "id": "q111",
+   "theme": "Écologie et énergie",
+   "q": "L'État doit faire baisser le prix de l'électricité.",
+   "pos": {
+    "villepin": 1,
+    "attal": 1,
+    "lepen": 1
+   },
+   "src": {
+    "villepin": "Électricité au coût de production, facture -15 %",
+    "attal": "Électricité autour de 75 €/MWh",
+    "lepen": "Blocage temporaire des prix de l'énergie financé par une taxe sur les énergéticiens"
+   }
+  },
+  {
+   "id": "q112",
+   "theme": "Économie",
+   "q": "L'État doit planifier l'économie et les grands investissements.",
+   "pos": {
+    "arthaud": 1,
+    "polony": 1
+   },
+   "src": {
+    "arthaud": "Planifier l'économie",
+    "polony": "État stratège qui planifie les investissements"
+   },
+   "axe": [
+    "eco",
+    -1
+   ]
+  }
+ ],
+ "axes": [
+  {
+   "id": "eco",
+   "nom": "Économie",
+   "g": "Plus d'intervention de l'État",
+   "d": "Plus de place au marché"
+  },
+  {
+   "id": "soc",
+   "nom": "Société et sécurité",
+   "g": "Libertés et accueil",
+   "d": "Autorité et contrôle"
+  },
+  {
+   "id": "eur",
+   "nom": "Europe",
+   "g": "Plus d'intégration européenne",
+   "d": "Plus de souveraineté nationale"
+  },
+  {
+   "id": "eco2",
+   "nom": "Écologie",
+   "g": "Transition écologique plus rapide",
+   "d": "Moins de contraintes écologiques"
   }
  ]
 }
