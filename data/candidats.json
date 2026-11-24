@@ -17,9 +17,9 @@
     "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/11/Depliant-NA-3nov.pdf"
    },
    "parrainages": {
-    "texte": "Aucun chiffre revendiqué. A toujours obtenu ses signatures jusqu'ici.",
+    "texte": "Aucun chiffre revendiqué. A obtenu ses signatures aux précédentes présidentielles.",
     "source": "Le Parisien, 6 nov. 2026",
-    "url": "https://presidentielle2027-france.fr/parrainages"
+    "url": null
    },
    "finances": null,
    "programme": {
@@ -97,7 +97,7 @@
    "parrainages": {
     "texte": "Soutien de 500 élus locaux affiché en mai (pas tous maires).",
     "source": "Le Parisien, 6 nov. 2026",
-    "url": "https://presidentielle2027-france.fr/parrainages"
+    "url": null
    },
    "finances": {
     "texte": "Aucun prêt annoncé. Renaissance dispose de plus de 20 M€ après la vente de son ancien siège.",
@@ -197,7 +197,7 @@
    "parrainages": {
     "texte": "Aucun chiffre revendiqué pour 2027. Les avait obtenues en 2022.",
     "source": "Le Parisien, 6 nov. 2026",
-    "url": "https://presidentielle2027-france.fr/parrainages"
+    "url": null
    },
    "finances": null,
    "programme": {
@@ -291,9 +291,9 @@
     "url": "https://place-publique.eu/pages/6mRSwq5tuSrSi68Cw1IADX/l-acte-i"
    },
    "parrainages": {
-    "texte": "Vu comme une formalité : le PS revendique 800 maires.",
+    "texte": "Le PS revendique le soutien de 800 maires.",
     "source": "Le Parisien, 6 nov. 2026",
-    "url": "https://presidentielle2027-france.fr/parrainages"
+    "url": null
    },
    "finances": null,
    "programme": {
@@ -596,9 +596,9 @@
     "url": "https://melenchon2027.fr/programme/livre/"
    },
    "parrainages": {
-    "texte": "LFI reconnaît des difficultés. Un peu plus de 200 promesses fin août. 906 parrainages obtenus en 2022.",
+    "texte": "Un peu plus de 200 promesses fin août, selon LFI. 906 parrainages obtenus en 2022.",
     "source": "Entrevue / Le Parisien",
-    "url": "https://presidentielle2027-france.fr/parrainages"
+    "url": null
    },
    "finances": {
     "texte": "Dit avoir trouvé un prêteur. Montant non communiqué.",
@@ -702,9 +702,9 @@
     "url": "https://www.publicsenat.fr/actualites/politique/capitalisation-suppression-de-250-000-postes-de-fonctionnaires-autonomie-des-ecoles-fin-des-35-heures-aides-pour-les-familles-edouard-philippe-presente-son-projet-massif-et"
    },
    "parrainages": {
-    "texte": "Vu comme une formalité : Horizons revendique plus de 400 maires.",
+    "texte": "Horizons revendique plus de 400 maires.",
     "source": "Le Parisien, 6 nov. 2026",
-    "url": "https://presidentielle2027-france.fr/parrainages"
+    "url": null
    },
    "finances": {
     "texte": "Dit avoir trouvé un prêteur. Montant non communiqué.",
@@ -876,9 +876,9 @@
     "url": "https://republicains.fr/qrtravail/"
    },
    "parrainages": {
-    "texte": "Jugé assuré grâce aux centaines d'élus LR.",
+    "texte": "Aucun chiffre revendiqué.",
     "source": "Le Parisien, 6 nov. 2026",
-    "url": "https://presidentielle2027-france.fr/parrainages"
+    "url": null
    },
    "finances": {
     "texte": "Cherchait encore un prêt début octobre.",
@@ -980,7 +980,7 @@
    "parrainages": {
     "texte": "Aucun chiffre public revendiqué.",
     "source": "Le Parisien, 9 nov. 2026",
-    "url": "https://presidentielle2027-france.fr/parrainages"
+    "url": null
    },
    "finances": {
     "texte": "Campagne financée par des dons, des appels de fonds et des fonds propres. L'association de financement est présidée par l'entrepreneur Philippe Véran.",
@@ -1022,9 +1022,9 @@
     "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-fabien-roussel-propose-la-mise-en-place-de-60-000-policiers-gendarmes-et-douaniers-de-proximite_8279156.html"
    },
    "parrainages": {
-    "texte": "Jugé bien placé : 626 parrainages obtenus en 2022.",
+    "texte": "Aucun chiffre revendiqué. 626 parrainages obtenus en 2022.",
     "source": "Le Parisien, 6 nov. 2026",
-    "url": "https://presidentielle2027-france.fr/parrainages"
+    "url": null
    },
    "finances": null,
    "programme": {
@@ -1080,7 +1080,7 @@
    "parrainages": {
     "texte": "Dépend du vote des adhérents de décembre.",
     "source": "LCP",
-    "url": "https://presidentielle2027-france.fr/parrainages"
+    "url": null
    },
    "finances": null,
    "programme": {
@@ -1103,7 +1103,8 @@
        "2 000 centres de santé d'ici 2030",
        "Interdire PFAS et perturbateurs endocriniens",
        "Plus de produits ultra-transformés à la cantine",
-       "AAH augmentée de 250 €"
+       "AAH augmentée de 250 €",
+       "Congé climatique payé de 5 jours par an en cas d'alerte rouge canicule"
       ]
      },
      {
@@ -1277,7 +1278,7 @@
    "parrainages": {
     "texte": "Au moins 350 promesses revendiquées en septembre.",
     "source": "AFP, cité par Le Parisien",
-    "url": "https://presidentielle2027-france.fr/parrainages"
+    "url": null
    },
    "finances": null,
    "programme": {
