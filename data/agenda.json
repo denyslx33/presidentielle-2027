@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-23",
+ "maj": "2026-11-24",
  "evenements": [
   {
    "date": "2026-08-27",
@@ -42,6 +42,18 @@
    "url": "https://votons-2027.fr/agenda"
   },
   {
+   "date": "2026-11-25",
+   "heure": null,
+   "type": "vote",
+   "titre": "Élection à la présidence de l'Association des maires de France : David Lisnard face à Philippe Laurent",
+   "lieu": "Paris, Congrès des maires",
+   "chaine": null,
+   "qui": [
+    "lisnard"
+   ],
+   "url": "https://www.publicsenat.fr/actualites/politique/le-congres-des-maires-de-france-ne-peut-pas-devenir-un-temps-de-la-presidentielle-avec-david-lisnard-conteste-il-se-passe-quelque-chose-a-lamf"
+  },
+  {
    "date": "2026-11-26",
    "heure": null,
    "type": "vote",
@@ -62,6 +74,16 @@
    "chaine": null,
    "qui": [],
    "url": "https://votons-2027.fr/agenda"
+  },
+  {
+   "date": "2026-12-02",
+   "heure": "8h45",
+   "type": "evenement",
+   "titre": "« Les candidats face à l'industrie », rencontre organisée par France Industrie (liste des candidats à venir)",
+   "lieu": null,
+   "chaine": "En direct sur latribune.fr",
+   "qui": [],
+   "url": "https://www.polyvia.fr/fr/evenement/presidentielle-2027-les-candidats-face-lindustrie-le-2-decembre-en-direct"
   },
   {
    "date": "2026-12-05",
