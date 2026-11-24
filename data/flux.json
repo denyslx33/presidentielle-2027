@@ -5,9 +5,27 @@
 "t": "« Il y aura une grande clarification » : à l’Assemblée nationale, le groupe sans queue ni tête de Gabriel Attal",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/politique/il-y-aura-une-grande-clarification-a-lassemblee-nationale-le-groupe-sans-queue-ni-tete-de-gabriel-attal-24-11-2026-M45E6DYDDFHP5PI3TOGJ47KF6E.php",
-"d": "2026-11-24T06:02:50Z",
+"d": "2026-11-24T07:20:43Z",
 "qui": [
 "attal"
+]
+},
+{
+"t": "Le Congrès des maires de France s’ouvre sur fond de course à la présidentielle et de protestations autour de la double candidature de David Lisnard",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/24/le-congres-des-maires-de-france-s-ouvre-sur-fond-de-course-a-la-presidentielle-et-de-protestations-autour-de-la-double-candidature-de-david-lisnard_6814718_823448.html",
+"d": "2026-11-24T07:09:50Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "EDITO. David Lisnard propose-t-il vraiment du nouveau aux Français ?",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/replay-radio/l-edito-politique/edito-que-propose-david-lisnard-de-nouveau-aux-francais_8275352.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-24T07:06:38Z",
+"qui": [
+"lisnard"
 ]
 },
 {
@@ -27,6 +45,13 @@
 "qui": [
 "villepin"
 ]
+},
+{
+"t": "Présidentielle 2027: au Congrès des maires, les candidats affluent",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/video-presidentielle-2027-au-congres-des-maires-les-candidats-affluent_VN-202611240113.html",
+"d": "2026-11-24T05:15:44Z",
+"qui": []
 },
 {
 "t": "EN DIRECT Présidentielle 2027 : La candidature de David Lisnard va agiter le congrès des maires de France…",
@@ -1419,18 +1444,18 @@
 }
 ],
 "sources": {
-"Le Monde": 6,
-"franceinfo": 5,
+"Le Monde": 7,
+"franceinfo": 6,
 "Libération": 19,
 "Le Figaro": 9,
 "Le Parisien": 49,
 "20 Minutes": 6,
-"Ouest-France": 0,
-"BFMTV": 15,
+"Ouest-France": "erreur: HTTPError",
+"BFMTV": 14,
 "France 24": 8,
 "La Croix": 25,
 "LCP": 34,
 "RFI": 7
 },
-"maj": "2026-11-24T06:02:50Z"
+"maj": "2026-11-24T07:20:43Z"
 }
