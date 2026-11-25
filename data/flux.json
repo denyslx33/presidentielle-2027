@@ -2,10 +2,224 @@
 "v": 4,
 "items": [
 {
-"t": "DIRECT. Présidentielle 2027: Raphaël Glucksmann assure que \"nous éviterons le duel\" RN-LFI au second tour",
+"t": "Après sa réélection à la tête des maires de France, David Lisnard y voit \"une responsabilité supplémentaire\" mais pas \"un tremplin\" pour la présidentielle",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/apres-sa-reelection-a-la-tete-des-maires-de-france-david-lisnard-y-voit-une-responsabilite-supplementaire-mais-pas-un-tremplin-pour-la-presidentielle_AD-202611250646.html",
+"d": "2026-11-25T13:51:03Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "DIRECT. Présidentielle 2027: \"on a déjà dépassé la centaine\", Teddy Riner assure que ses parrainages \"avancent bien\" mais reconnaît \"un petit stress\"",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html",
-"d": "2026-11-25T12:20:56Z",
+"d": "2026-11-25T13:48:57Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "David Lisnard, candidat à la présidentielle, réélu à la tête de l'Association des maires de France",
+"s": "RFI",
+"u": "https://www.rfi.fr/fr/france/20261125-david-lisnard-candidat-%C3%A0-la-pr%C3%A9sidentielle-r%C3%A9%C3%A9lu-%C3%A0-la-t%C3%AAte-de-l-association-des-maires-de-france",
+"d": "2026-11-25T13:41:27Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Présidentielle 2027 : le gouvernement défend la tenue du deuxième tour le 2 mai, et s’engage à ce que le 1ᵉʳ-Mai se passe « dans les meilleures conditions possibles »",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/25/presidentielle-2027-le-gouvernement-defend-la-tenue-du-deuxieme-tour-du-scrutin-le-2-mai-et-s-engage-a-ce-que-le-1er-mai-se-passe-dans-les-meilleures-conditions-possibles_6815102_823448.html",
+"d": "2026-11-25T13:40:17Z",
+"qui": []
+},
+{
+"t": "\"C'est le fruit de la mobilisation d'une France de terrain\" : David Lisnard, candidat à la présidentielle, est réélu à la tête de l'Association des maires de France",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/politique/david-lisnard/c-est-le-fruit-de-la-mobilisation-d-une-france-de-terrain-david-lisnard-candidat-a-la-presidentielle-est-reelu-a-la-tete-de-l-association-des-maires-de-france_8299698.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-25T13:39:48Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Présidentielle: Teddy Riner a déjà recueilli une centaine de signatures de maires pour ses parrainages",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-teddy-riner-a-deja-recueilli-une-centaine-de-signatures-de-maires-pour-ses-parrainages_VN-202611250627.html",
+"d": "2026-11-25T13:34:13Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Présidentielle 2027 : Le 2 mai est bien la meilleure date pour un second tour, selon le gouvernement",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265662-20261125-presidentielle-2027-2-mai-bien-meilleure-date-second-tour-selon-gouvernement?at_medium=display&at_campaign=149",
+"d": "2026-11-25T13:31:21Z",
+"qui": []
+},
+{
+"t": "Association des maires de France : David Lisnard réélu pour un troisième mandat",
+"s": "La Croix",
+"u": "https://www.la-croix.com/politique/association-des-maires-de-france-david-lisnard-reelu-pour-un-troisieme-mandat-20261125",
+"d": "2026-11-25T13:28:47Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Hypothèse d'un duel RN/LFI au second tour de la présidentielle: \"Si je me lève c'est parce que je ne veux pas voir mon pays dans un état qui va mener à une guerre civile\", confie Teddy Riner, candidat à la présidentielle",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-hypothese-d-un-duel-rn-lfi-au-second-tour-de-la-presidentielle-si-je-me-leve-c-est-parce-que-je-ne-veux-pas-voir-mon-pays-dans-un-etat-qui-va-mener-a-une-guerre-civile-confie-teddy-riner-candidat-a-la-presidentielle_VN-202611250617.html",
+"d": "2026-11-25T13:27:02Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Assises de la mer : seul candidat à la Présidentielle présent, Jean-Luc Mélenchon regrette « le désintérêt » des autres",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/politique/jean-luc-melenchon/assises-de-la-mer-seul-candidat-a-la-presidentielle-present-jean-luc-melenchon-regrette-le-desinteret-des-autres-149aa44e-e8c8-11f1-9b33-2f81462d3339?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-25T13:24:23Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Parrainages: \"Une signature ne remplacera jamais un contrat de confiance\", souligne Teddy Riner, candidat à l'élection présidentielle",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-parrainages-une-signature-ne-remplacera-jamais-un-contrat-de-confiance-souligne-teddy-riner-candidat-a-l-election-presidentielle_VN-202611250615.html",
+"d": "2026-11-25T13:24:11Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "\"Nos démocraties sont en jeu aujourd’hui\", estime David Lisnard, candidat à la présidentielle, réélu à la tête de l'Association des maires de France",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-nos-democraties-sont-en-jeu-aujourd-hui-estime-david-lisnard-candidat-a-la-presidentielle-reelu-a-la-tete-de-l-association-des-maires-de-france_VN-202611250608.html",
+"d": "2026-11-25T13:17:03Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "INFOGRAPHIES. Avant David Lisnard, qui étaient les présidents de l’Association des maires de France ?",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/politique/infographies-avant-david-lisnard-qui-etaient-les-presidents-de-lassociation-des-maires-de-france-93812722-e7ee-11f1-86c1-70195b4d2e52?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-25T13:16:41Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "\"Je veux être une alternative à d’autres changements proposés auxquels je ne crois pas et que je veux combattre ardemment, l’extrême gauche et le RN\", explique David Lisnard, réélu à la tête de l'AMF",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-je-veux-etre-une-alternative-a-d-autres-changements-proposes-auxquels-je-ne-crois-pas-et-que-je-veux-combattre-ardemment-l-extreme-gauche-et-le-rn-explique-david-lisnard-reelu-a-la-tete-de-l-amf_VN-202611250599.html",
+"d": "2026-11-25T13:05:24Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Présidentielle 2027: David Lisnard très largement réélu à la tête de l'Association des maires de France",
+"s": "LCP",
+"u": "https://lcp.fr/actualites/presidentielle-2027-david-lisnard-tres-largement-reelu-a-la-tete-de-l-association-des",
+"d": "2026-11-25T13:01:07Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Réélection à la tête de l'AMF: \"Pas un tremplin\" pour la présidentielle mais  \"ça me renforce dans mes convictions\", estime David Lisnard",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-reelection-a-la-tete-de-l-amf-pas-un-tremplin-pour-la-presidentielle-mais-ca-me-renforce-dans-mes-convictions-estime-david-lisnard_VN-202611250593.html",
+"d": "2026-11-25T12:56:49Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "David Lisnard réélu à la tête de l'AMF: \"C'est le fruit de la mobilisation d’une France du terrain\", assure-t-il",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-david-lisnard-reelu-a-la-tete-de-l-amf-c-est-le-fruit-de-la-mobilisation-d-une-france-du-terrain-assure-t-il_VN-202611250590.html",
+"d": "2026-11-25T12:53:46Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "David Lisnard, candidat à l’élection présidentielle, réélu à la tête de l’Association des maires de France",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/25/david-lisnard-candidat-a-l-election-presidentielle-reelu-a-la-tete-de-l-association-des-maires-de-france_6815094_823448.html",
+"d": "2026-11-25T12:43:58Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "David Lisnard largement réélu à la tête de l'Association des maires de France",
+"s": "France 24",
+"u": "https://www.france24.com/fr/france/20261125-france-david-lisnard-annonce-sa-reelection-a-la-tete-de-l-association-des-maires-de-france",
+"d": "2026-11-25T12:42:22Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Présidentielle 2027 : Le bloc central prône déjà le « ni-ni » en cas de duel Mélenchon-Le Pen au second tour",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265638-20261125-presidentielle-2027-bloc-central-prone-deja-ni-ni-cas-duel-melenchon-pen-second-tour?at_medium=display&at_campaign=149",
+"d": "2026-11-25T12:38:52Z",
+"qui": [
+"lepen",
+"melenchon"
+]
+},
+{
+"t": "En campagne pour l’Elysée, David Lisnard réélu à la tête des maires de France",
+"s": "Libération",
+"u": "https://www.liberation.fr/politique/elections/en-campagne-pour-lelysee-david-lisnard-reelu-a-la-tete-des-maires-de-france-20261125_SGKQEG6H3FHHPMAGJUG2OU2I2Q/",
+"d": "2026-11-25T12:37:49Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Julie Boillot, porte-parole d'Édouard Philippe: \"Nous avons le sentiment que la ligne de droite et du centre n'est pas la même pour tout le monde\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-julie-boillot-porte-parole-d-edouard-philippe-nous-avons-le-sentiment-que-la-ligne-de-droite-et-du-centre-n-est-pas-la-meme-pour-tout-le-monde_VN-202611250582.html",
+"d": "2026-11-25T12:37:39Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "Possible candidature de François Hollande: \"Chacun son rythme, nous on est en campagne\", déclare Raphaël Glucksmann",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-possible-candidature-de-francois-hollande-chacun-son-rythme-nous-on-est-en-campagne-declare-raphael-glucksmann_VN-202611250581.html",
+"d": "2026-11-25T12:31:24Z",
+"qui": [
+"glucksmann"
+]
+},
+{
+"t": "Présidentielle : Mais pourquoi David Lisnard a parrainé Jean-Luc Mélenchon en 2022 ?",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265622-20261125-presidentielle-pourquoi-david-lisnard-parraine-jean-luc-melenchon-2022?at_medium=display&at_campaign=149",
+"d": "2026-11-25T12:24:44Z",
+"qui": [
+"lisnard",
+"melenchon"
+]
+},
+{
+"t": "Présidentielle: Raphaël Glucksmann estime que \"nous éviterons le duel\" RN-LFI au second tour",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-raphael-glucksmann-estime-que-nous-eviterons-le-duel-rn-lfi-au-second-tour_VN-202611250577.html",
+"d": "2026-11-25T12:22:14Z",
 "qui": [
 "glucksmann"
 ]
@@ -37,15 +251,12 @@
 "qui": []
 },
 {
-"t": "DIRECT. Présidentielle 2027 : Riner, Glucksmann, Hollande, Attal, Roussel... les candidats vont se bousculer au congrès des maires",
+"t": "DIRECT. Présidentielle 2027 : au congrès des maires, Teddy Riner assure avoir déjà «une centaine» de parrainages",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-deuxieme-jour-du-congres-des-maires-de-france-de-nombreux-candidats-attendus-sur-place-25-11-2026-EL5DLN7IZNHUBPHP32WEMDQEM4.php",
 "d": "2026-11-25T12:00:00Z",
 "qui": [
-"attal",
-"glucksmann",
-"riner",
-"roussel"
+"riner"
 ]
 },
 {
@@ -76,6 +287,15 @@
 ]
 },
 {
+"t": "« Je les dérange et je ne compte pas arrêter » : pour David Lisnard, réélu à la tête de l’AMF, le plus dur commence",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/politique/je-les-derange-et-je-ne-compte-pas-arreter-pour-david-lisnard-reelu-a-la-tete-de-lamf-le-plus-dur-commence-25-11-2026-IS5UQZ5SLFEKNFBHP5E4NDY7E4.php",
+"d": "2026-11-25T12:00:00Z",
+"qui": [
+"lisnard"
+]
+},
+{
 "t": "Présidentielle 2027: malgré les critiques, le gouvernement maintient, à ce stade, le second tour au lendemain du 1er-Mai",
 "s": "LCP",
 "u": "https://lcp.fr/actualites/presidentielle-2027-malgre-les-critiques-le-gouvernement-maintient-a-ce-stade-le-second",
@@ -101,7 +321,7 @@
 ]
 },
 {
-"t": "EN DIRECT, congrès des maires 2026 : David Lisnard va-t-il être réélu à la tête des maires de France ? Suivez la journée et posez-nous vos questions",
+"t": "EN DIRECT, congrès des maires 2026 : David Lisnard affirme que sa réélection n’est « pas un tremplin » pour la présidentielle de 2027",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/live/2026/11/25/en-direct-congres-des-maires-2026-david-lisnard-va-t-il-etre-reelu-a-la-tete-des-maires-de-france-suivez-la-journee-et-posez-nous-vos-questions_6815062_823448.html",
 "d": "2026-11-25T11:17:23Z",
@@ -372,6 +592,15 @@
 "qui": [
 "lisnard",
 "philippe"
+]
+},
+{
+"t": "EN DIRECT Présidentielle 2027 : David Lisnard annonce sa réélection à la tête de l'Association des maires de France…",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265545-20261125-direct-presidentielle-2027-david-lisnard-annonce-reelection-tete-association-maires-france?at_medium=display&at_campaign=149",
+"d": "2026-11-25T04:53:33Z",
+"qui": [
+"lisnard"
 ]
 },
 {
@@ -1536,243 +1765,21 @@
 "u": "https://www.la-croix.com/politique/presidentielle-2027-pourquoi-la-date-du-second-tour-inquiete-syndicats-et-candidats-20261123",
 "d": "2026-11-23T15:57:25Z",
 "qui": []
-},
-{
-"t": "Le catho, Mélenchon et Les Restos du cœur",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/le-catho-melenchon-et-les-restos-du-cour-20261123",
-"d": "2026-11-23T15:01:27Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Présidentielle 2027 : à Tarascon, le maire RN veut faire de la ville « une vitrine » pour Marine Le Pen",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/politique/article/2026/11/23/presidentielle-2027-a-tarascon-le-maire-rn-veut-faire-de-la-ville-une-vitrine-pour-marine-le-pen_6814388_823448.html",
-"d": "2026-11-23T13:36:07Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027: le calendrier électoral contesté par des syndicats et responsables politiques",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/france/20261123-pr%C3%A9sidentielle-2027-le-calendrier-%C3%A9lectoral-contest%C3%A9-par-des-syndicats-et-responsables-politiques",
-"d": "2026-11-23T13:25:33Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027 : les élus locaux au cœur de la campagne",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/politique/article/2026/11/23/presidentielle-2027-les-elus-locaux-au-c-ur-de-la-campagne_6814386_823448.html",
-"d": "2026-11-23T13:00:02Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027 : le mouvement Génération.s s’engage dans la campagne de Jean-Luc Mélenchon",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/23/presidentielle-2027-le-mouvement-generation-s-s-engage-dans-la-campagne-de-jean-luc-melenchon_6814385_6205049.html",
-"d": "2026-11-23T12:40:04Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Présidentielle: Génération.s officialise son soutien à Jean-Luc Mélenchon",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/presidentielle-generations-officialise-son-soutien-a-jean-luc-melenchon-445502",
-"d": "2026-11-23T12:27:57Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "« Manifester une forme de neutralité » : ce maire de l’Aude refuse encore de parrainer un candidat en 2027",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/manifester-une-forme-de-neutralite-ce-maire-de-laude-refuse-encore-de-parrainer-un-candidat-en-2027-23-11-2026-W35HGZGPTVCJNFERNSSIGPSRFA.php",
-"d": "2026-11-23T12:00:00Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027 : Thierry Lhermitte se dit « angoissé » d’avoir à choisir « entre la peste et le choléra »",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-thierry-lhermitte-se-dit-angoisse-davoir-a-choisir-entre-la-peste-et-le-cholera-23-11-2026-JJIXIQDBABACBLVMJTKA5MZNJA.php",
-"d": "2026-11-23T12:00:00Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027 : Clémentine Autain, François Ruffin… Les ex-Insoumis se convertissent à la poussée Mélenchon",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/politique/clementine-autain-francois-ruffin-les-ex-insoumis-se-convertissent-a-la-poussee-melenchon-23-11-2026-GLLWJP5BSZF25PYQW4OO4QPGTE.php",
-"d": "2026-11-23T12:00:00Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Présidentielle 2027 : Raphaël Glucksmann salue le « combat » de François Ruffin et « espère rassembler au maximum »",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-raphael-glucksmann-salue-le-combat-de-francois-ruffin-et-espere-rassembler-au-maximum-23-11-2026-2IRJJXVKPNCQ5MHSNXPSBKVMWU.php",
-"d": "2026-11-23T12:00:00Z",
-"qui": [
-"glucksmann"
-]
-},
-{
-"t": "Présidentielle 2027 : David Lisnard refuse de dire pour qui il votera en cas de duel entre Édouard Philippe et Marine Le Pen au second tour",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-david-lisnard-refuse-de-dire-pour-qui-il-votera-en-cas-de-duel-entre-edouard-philippe-et-marine-le-pen-au-second-tour-23-11-2026-WXPECVKV3VBNFJX5XNZEBYVLT4.php",
-"d": "2026-11-23T12:00:00Z",
-"qui": [
-"lisnard",
-"philippe"
-]
-},
-{
-"t": "Présidentielle 2027 : Glucksmann, Pécresse, Payan… Les appels à changer la date du second tour prévu le dimanche 2 mai se multiplient",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-glucksmann-pecresse-payan-les-appels-a-changer-la-date-du-second-tour-prevu-le-dimanche-2-mai-se-multiplient-23-11-2026-ZHQJA75RX5HERDUEWLQ6T24VUE.php",
-"d": "2026-11-23T12:00:00Z",
-"qui": [
-"glucksmann"
-]
-},
-{
-"t": "Présidentielle 2027 : Génération. s, le parti fondé par Benoît Hamon, annonce soutenir la candidature de Jean-Luc Mélenchon",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-generations-le-parti-fonde-par-benoit-hamon-annonce-soutenir-la-candidature-de-jean-luc-melenchon-23-11-2026-CNYDQ4MWUJERDEQY5ZX33N3ZWQ.php",
-"d": "2026-11-23T12:00:00Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "« Mon souvenir de cette polémique ? Surjouée » : Marine Tondelier revient sur le « tollé » né de sa réponse sur Pompidou",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/mon-souvenir-de-cette-polemique-surjouee-marine-tondelier-revient-sur-le-tolle-ne-de-sa-reponse-sur-pompidou-23-11-2026-ZPHMO24JX5E6FGIOE4O44JDISM.php",
-"d": "2026-11-23T12:00:00Z",
-"qui": [
-"tondelier"
-]
-},
-{
-"t": "Présidentielle 2027 : « Il n’est absolument pas question » qu’Éric Zemmour retire sa candidature, affirme Sarah Knafo",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-il-nest-absolument-pas-question-queric-zemmour-retire-sa-candidature-affirme-sarah-knafo-23-11-2026-TNZP3YKHMND3JBOCA2AKUMIDIM.php",
-"d": "2026-11-23T12:00:00Z",
-"qui": [
-"zemmour"
-]
-},
-{
-"t": "Présidentielle 2027 : sans le soutenir directement, François Ruffin « souhaite » la victoire de Jean-Luc Mélenchon",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-sans-le-soutenir-directement-francois-ruffin-souhaite-la-victoire-de-jean-luc-melenchon-23-11-2026-UDFPY5M5EBG3DP2MZLRSXD447E.php",
-"d": "2026-11-23T12:00:00Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Présidentielle 2027 : David Lisnard juge « étrange » qu’Emmanuel Macron veuille changer la Constitution pour y introduire une règle d’or budgétaire",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-david-lisnard-juge-etrange-quemmanuel-macron-veuille-changer-la-constitution-pour-y-introduire-une-regle-dor-budgetaire-23-11-2026-WSNENPXZEFCCRMVGZ2SX2BQZFA.php",
-"d": "2026-11-23T12:00:00Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Le Pen, Mélenchon, de Villepin, Riner : avant le Congrès des maires, où en sont les candidats avec leurs parrainages ?",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/le-pen-melenchon-de-villepin-riner-avant-le-congres-des-maires-ou-en-sont-les-candidats-avec-leurs-parrainages-23-11-2026-YLTG42LDXRHTBBTL3AQSKKOPVQ.php",
-"d": "2026-11-23T12:00:00Z",
-"qui": [
-"melenchon",
-"riner",
-"villepin"
-]
-},
-{
-"t": "Génération·s signe un accord avec LFI pour la présidentielle et les législatives : «C’était la seule option possible face à l’extrême droite»",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/elections/generations-signe-un-accord-avec-lfi-pour-la-presidentielle-et-les-legislatives-cetait-la-seule-option-possible-face-a-lextreme-droite-20261123_OA62OUMQBJAL3JNDSDNTTIQ3KQ/",
-"d": "2026-11-23T10:59:09Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027 : la droite et le centre réussiront-ils à choisir un candidat unique?",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/podcasts/appels-sur-l-actualit%C3%A9/20261123-pr%C3%A9sidentielle-2027-la-droite-et-le-centre-r%C3%A9ussiront-ils-%C3%A0-choisir-un-candidat-unique",
-"d": "2026-11-23T10:25:23Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027 : « La démocratie doit être une confrontation d’idées et non de comptes en banque »",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/idees/article/2026/11/23/presidentielle-2027-la-democratie-doit-etre-une-confrontation-d-idees-et-non-de-comptes-en-banque_6814356_3232.html",
-"d": "2026-11-23T06:30:06Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027 : Marine Le Pen est « à un peu plus de 400 signatures », selon Jordan Bardella",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4264973-20261123-direct-presidentielle-2027-nunez-ferme-contre-antisemitisme-bataille-electorale?at_medium=display&at_campaign=149",
-"d": "2026-11-23T04:59:07Z",
-"qui": [
-"lepen"
-]
-},
-{
-"t": "Présidentielle 2027 : Marine Le Pen et le RN, cernés par les procédures, misent sur l’indifférence présumée des électeurs pour les affaires judiciaires",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/politique/article/2026/11/23/presidentielle-2027-marine-le-pen-une-campagne-au-defi-de-la-justice_6814312_823448.html",
-"d": "2026-11-23T04:30:07Z",
-"qui": [
-"lepen"
-]
-},
-{
-"t": "Teddy Riner, le candidat que personne n’attendait",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/podcasts/article/2026/11/23/teddy-riner-le-candidat-que-personne-n-attendait_6814307_5463015.html",
-"d": "2026-11-23T04:00:05Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "Présidentielle 2027 : Guerre ouverte entre Lisnard et Le Pen, Macron culotté sur le déficit",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4264788-20261122-presidentielle-2027-guerre-ouverte-entre-lisnard-pen-macron-culotte-deficit?at_medium=display&at_campaign=149",
-"d": "2026-11-22T17:39:08Z",
-"qui": [
-"lepen",
-"lisnard"
-]
-},
-{
-"t": "Raquel Garrido : «Notre sujet, c’est comment élargir et je ne suis pas certaine que Jean-Luc Mélenchon soit une solution gagnante»",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/elections/raquel-garrido-notre-sujet-cest-comment-elargir-et-je-ne-suis-pas-certaine-que-jean-luc-melenchon-soit-une-solution-gagnante-20261123_5H4XIPXKZNHYZDL7CV2NPPZMCI/",
-"d": "2026-11-22T17:09:00Z",
-"qui": [
-"melenchon"
-]
 }
 ],
 "sources": {
-"Le Monde": 10,
-"franceinfo": 6,
+"Le Monde": 9,
+"franceinfo": 4,
 "Libération": 20,
 "Le Figaro": 9,
-"Le Parisien": 54,
-"20 Minutes": 12,
-"Ouest-France": 0,
-"BFMTV": 17,
-"France 24": 4,
+"Le Parisien": 55,
+"20 Minutes": 13,
+"Ouest-France": 2,
+"BFMTV": 18,
+"France 24": 5,
 "La Croix": 24,
-"LCP": 36,
-"RFI": 7
+"LCP": 37,
+"RFI": 8
 },
-"maj": "2026-11-25T12:24:08Z"
+"maj": "2026-11-25T13:53:49Z"
 }
