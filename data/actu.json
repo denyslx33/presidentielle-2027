@@ -3,6 +3,45 @@
  "items": [
   {
    "date": "2026-11-25",
+   "qui": [],
+   "texte": "Pour le gouvernement, il n'y a « pas de raison de changer » les dates de l'élection, fixées aux 18 avril et 2 mai 2027. Selon Mathieu Lefèvre, ce choix a été fait pour « maximiser la participation ».",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-dates-de-l-election-presidentielle-le-choix-a-ete-en-fonction-de-la-maximisation-de-la-participation-des-francais-affirme-mathieu-lefevre_VN-202611250525.html"
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [
+    "melenchon"
+   ],
+   "texte": "La France insoumise propose de revoir la règle des 500 parrainages, pour permettre une candidature sans passer par les signatures des maires.",
+   "source": "20 Minutes",
+   "url": "https://www.20minutes.fr/politique/4265565-20261125-presidentielle-2027-lfi-veut-revoir-regle-500-parrainages-etre-candidat-passer-maires",
+   "parti": true
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [
+    "lisnard",
+    "zemmour"
+   ],
+   "texte": "Gérald Darmanin estime que « travailler avec Éric Zemmour », comme l'envisage selon lui David Lisnard, serait « une rupture fondamentale avec la droite traditionnelle ».",
+   "source": "franceinfo",
+   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-lance-dans-la-course-a-l-elysee-david-lisnard-fixe-dans-la-journee-sur-sa-reelection-a-la-tete-de-l-association-des-maires-de-france_8298708.html"
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [
+    "attal",
+    "glucksmann",
+    "riner",
+    "roussel"
+   ],
+   "texte": "Teddy Riner, Raphaël Glucksmann, Gabriel Attal et Fabien Roussel sont attendus au Congrès des maires, tout comme François Hollande.",
+   "source": "Le Parisien",
+   "url": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-deuxieme-jour-du-congres-des-maires-de-france-de-nombreux-candidats-attendus-sur-place-25-11-2026-EL5DLN7IZNHUBPHP32WEMDQEM4.php"
+  },
+  {
+   "date": "2026-11-25",
    "qui": [
     "lepen"
    ],
@@ -37,6 +76,15 @@
    "texte": "Comme François Bayrou, Jean-Noël Barrot indique qu'il ne votera ni pour Marine Le Pen ni pour Jean-Luc Mélenchon en cas de second tour entre eux, et qualifie l'extrême droite et l'extrême gauche de « deux poisons mortels ».",
    "source": "Le Parisien",
    "url": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-lextreme-droite-et-lextreme-gauche-sont-deux-poisons-mortels-estime-jean-noel-barrot-25-11-2026-HIAJ32PPXVDTHE3WPTR4INGQLU.php"
+  },
+  {
+   "date": "2026-11-24",
+   "qui": [
+    "lepen"
+   ],
+   "texte": "Le député Pouria Amirshahi veut provoquer un débat à l'Assemblée contre les référendums promis par Marine Le Pen.",
+   "source": "LCP",
+   "url": "https://lcp.fr/actualites/constitution-comment-le-depute-pouria-amirshahi-veut-provoquer-le-debat-contre-les"
   },
   {
    "date": "2026-11-24",
@@ -515,51 +563,6 @@
    "texte": "Bruno Retailleau écrit à Édouard Philippe, Gabriel Attal et David Lisnard pour proposer une primaire les 31 janvier et 7 février.",
    "source": "LCP",
    "url": "https://lcp.fr/actualites/presidentielle-bruno-retailleau-propose-une-primaire-les-31-janvier-et-7-fevrier-445008"
-  },
-  {
-   "date": "2026-11-12",
-   "qui": [
-    "riner"
-   ],
-   "texte": "Saxo Bank suspend son partenariat publicitaire avec Teddy Riner après l'annonce de sa candidature.",
-   "source": "Sud Radio",
-   "url": "https://www.sudradio.fr/sud-radio/les-contrats-pub-de-riner-menaces-par-sa-candidature-a-la-presidentielle-202e"
-  },
-  {
-   "date": "2026-11-10",
-   "qui": [
-    "riner"
-   ],
-   "texte": "Teddy Riner donne les premières pistes de son programme (retraites, salaires, sécurité). Son association de financement est présidée par l'entrepreneur Philippe Véran, et l'ancien ministre François Braun fait partie de ses experts.",
-   "source": "LCP",
-   "url": "https://lcp.fr/actualites/retraites-salaires-securite-que-propose-teddy-riner-pour-la-presidentielle-444935"
-  },
-  {
-   "date": "2026-11-10",
-   "qui": [
-    "lepen"
-   ],
-   "texte": "Le RN annonce un préaccord avec deux banques européennes pour un prêt de 10,6 M€, pas encore signé.",
-   "source": "Euronews",
-   "url": "https://fr.euronews.com/2026/11/10/presidentielle-le-rn-tient-enfin-une-piste-a-letranger-pour-financer-sa-campagne"
-  },
-  {
-   "date": "2026-11-10",
-   "qui": [
-    "zemmour"
-   ],
-   "texte": "Éric Zemmour officialise sa candidature au journal de 20 heures de TF1.",
-   "source": "i24NEWS",
-   "url": "https://www.i24news.tv/fr/actu/france/artc-eric-zemmour-officialise-sa-candidature-a-l-election-presidentielle-2027"
-  },
-  {
-   "date": "2026-11-09",
-   "qui": [
-    "glucksmann"
-   ],
-   "texte": "Avec Yannick Jadot, Raphaël Glucksmann présente sa « révolution écologique » : 200 Md€ d'investissements publics sur le quinquennat et une « République écologique » inscrite dans la Constitution.",
-   "source": "Public Sénat",
-   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique"
   }
  ]
 }
