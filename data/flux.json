@@ -2,6 +2,52 @@
 "v": 4,
 "items": [
 {
+"t": "DIRECT. Présidentielle 2027: Gabriel Attal estime qu'il faudra proposer \"une alternative\" si la primaire de la droite et du centre n'a pas lieu",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html",
+"d": "2026-11-25T19:38:39Z",
+"qui": [
+"attal"
+]
+},
+{
+"t": "«Ce n’est pas notre guerre» : Teddy Riner veut stopper l’aide à l’Ukraine",
+"s": "Libération",
+"u": "https://www.liberation.fr/sports/lukraine-nest-pas-notre-guerre-teddy-riner-se-prend-les-pieds-dans-le-tatami-avant-de-retropedaler-20261125_7JEBWXSMBRH3VHKPFGQKYILKCM/",
+"d": "2026-11-25T19:37:07Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Comment le candidat David Lisnard séduit les déçus d’une partie de la droite : « Avec Retailleau et Philippe, on continue sans rien changer »",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/25/comment-le-candidat-david-lisnard-seduit-les-decus-d-une-partie-de-la-droite-avec-retailleau-et-philippe-on-continue-sans-rien-changer_6815170_823448.html",
+"d": "2026-11-25T19:25:00Z",
+"qui": [
+"lisnard",
+"retailleau"
+]
+},
+{
+"t": "\"Il n'y aura qu'un seul candidat de la droite et du centre sur la ligne de départ\", assure Maël de Calan, le porte-parole d’Édouard Philippe",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/replay-magazine/franceinfo/avant-le-20h/il-n-y-aura-qu-un-seul-candidat-de-la-droite-et-du-centre-sur-la-ligne-de-depart-promet-mael-de-calan-le-porte-parole-d-edouard-philippe_8300205.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-25T19:18:54Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "Teddy Riner affirme, à propos de la guerre en Ukraine, que la France doit « arrêter de donner de l’argent » qu’elle n’a pas",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/25/teddy-riner-affirme-a-propos-de-la-guerre-en-ukraine-que-la-france-doit-arreter-de-donner-de-l-argent-que-nous-n-avons-pas_6815137_823449.html",
+"d": "2026-11-25T18:57:23Z",
+"qui": [
+"riner"
+]
+},
+{
 "t": "Lisnard réélu à l’AMF, nouvelle plainte contre Bruel, le 7 Octobre en question en Israël… L’actu de ce mercredi 25 novembre",
 "s": "Libération",
 "u": "https://www.liberation.fr/international/lisnard-reelu-a-lamf-nouvelle-plainte-contre-bruel-le-7-octobre-en-question-en-israel-lactu-de-ce-mercredi-25-novembre-20261125_M2ZU2JA4YBHVLLQ24VS76TUFDE/",
@@ -20,20 +66,23 @@
 ]
 },
 {
-"t": "\"Il n'y aura qu'un seul candidat de la droite et du centre sur la ligne de départ\", promet Maël de Calan, le porte-parole d’Édouard Philippe",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/replay-magazine/franceinfo/avant-le-20h/il-n-y-aura-qu-un-seul-candidat-de-la-droite-et-du-centre-sur-la-ligne-de-depart-promet-mael-de-calan-le-porte-parole-d-edouard-philippe_8300205.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-25T18:38:03Z",
+"t": "Propos de Teddy Riner sur l'Ukraine: \"Il a commis une faute politique\", estime Jérémie Patrier-Leitus, député Horizons et porte-parole d’Édouard Philippe",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-propos-de-teddy-riner-sur-l-ukraine-il-a-commis-une-faute-politique-estime-jeremie-patrier-leitus-depute-horizons-et-porte-parole-d-edouard-philippe_VN-202611250881.html",
+"d": "2026-11-25T18:34:26Z",
 "qui": [
-"philippe"
+"philippe",
+"riner"
 ]
 },
 {
-"t": "DIRECT. Présidentielle 2027: François Hollande estime que “ce sont les dernières semaines” de la campagne “qui comptent”",
+"t": "\"Le bloc central est en train de mourir\", remarque Alexandre Ouizille, directeur de campagne de Raphaël Glucksmann",
 "s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html",
-"d": "2026-11-25T17:46:13Z",
-"qui": []
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-le-bloc-central-est-en-train-de-mourir-remarque-alexandre-ouizille-directeur-de-campagne-de-raphael-glucksmann_VN-202611250874.html",
+"d": "2026-11-25T18:24:49Z",
+"qui": [
+"glucksmann"
+]
 },
 {
 "t": "SIGNÉ CONSIGNY - Propos de Teddy Riner sur l'Ukraine: \"C'est évidemment notre guerre puisque si l'Ukraine tombe c'est l'Europe qui devra se défendre à son tour\", souligne l'avocat et essayiste",
@@ -67,15 +116,6 @@
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265766-20261125-presidentielle-2027-ukraine-guerre-glisse-teddy-riner-entre-deux-micros?at_medium=display&at_campaign=149",
 "d": "2026-11-25T17:10:46Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "«L’Ukraine n’est pas notre guerre» : Teddy Riner se prend les pieds dans le tatami avant de rétropédaler",
-"s": "Libération",
-"u": "https://www.liberation.fr/sports/lukraine-nest-pas-notre-guerre-teddy-riner-se-prend-les-pieds-dans-le-tatami-avant-de-retropedaler-20261125_7JEBWXSMBRH3VHKPFGQKYILKCM/",
-"d": "2026-11-25T17:07:37Z",
 "qui": [
 "riner"
 ]
@@ -268,7 +308,7 @@
 ]
 },
 {
-"t": "\"Le soutien à l'Ukraine n'est pas humanitaire, c'est la défense de nos intérêts en France et en Europe\", rappelle Grabiel Attal, candidat à la présidentielle",
+"t": "\"Le soutien à l'Ukraine n'est pas humanitaire, c'est la défense de nos intérêts en France et en Europe\", rappelle Gabriel Attal, candidat à la présidentielle",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-le-soutien-a-l-ukraine-n-est-pas-humanitaire-c-est-la-defense-de-nos-interets-en-france-et-en-europe-rappelle-grabiel-attal-candidat-a-la-presidentielle_VN-202611250726.html",
 "d": "2026-11-25T15:46:16Z",
@@ -656,12 +696,13 @@
 "qui": []
 },
 {
-"t": "DIRECT. Présidentielle 2027 : Gabriel Attal «appelle au rassemblement des démocrates» pour éviter les extrêmes",
+"t": "DIRECT. Présidentielle 2027 : David Lisnard « ne désespère pas » de convaincre Édouard Philippe de participer à une primaire",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-deuxieme-jour-du-congres-des-maires-de-france-de-nombreux-candidats-attendus-sur-place-25-11-2026-EL5DLN7IZNHUBPHP32WEMDQEM4.php",
 "d": "2026-11-25T12:00:00Z",
 "qui": [
-"attal"
+"lisnard",
+"philippe"
 ]
 },
 {
@@ -733,6 +774,24 @@
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-malgre-les-craintes-de-debordements-un-second-tour-le-2-mai-reste-la-meilleure-option-assure-le-gouvernement-25-11-2026-G5MZDYEZOBGBHPGMAHPVBR2PRE.php",
 "d": "2026-11-25T12:00:00Z",
 "qui": []
+},
+{
+"t": "« Chacun son rythme » : chez les maires, un salon, deux ambiances pour Raphaël Glucksmann et François Hollande",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/chacun-son-rythme-chez-les-maires-un-salon-deux-ambiances-pour-raphael-glucksmann-et-francois-hollande-25-11-2026-G2W3A4D4CRDVPB2F3DCHGD2CZQ.php",
+"d": "2026-11-25T12:00:00Z",
+"qui": [
+"glucksmann"
+]
+},
+{
+"t": "« Ça va nous occuper la semaine » : au Salon des maires, Teddy Riner crispe sur la guerre en Ukraine",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/ca-va-nous-occuper-la-semaine-au-salon-des-maires-teddy-riner-crispe-sur-la-guerre-en-ukraine-25-11-2026-DBGVVE7J7JCENI5TBJPKF5NENA.php",
+"d": "2026-11-25T12:00:00Z",
+"qui": [
+"riner"
+]
 },
 {
 "t": "Présidentielle 2027: malgré les critiques, le gouvernement maintient, à ce stade, le second tour au lendemain du 1er-Mai",
@@ -1007,7 +1066,7 @@
 ]
 },
 {
-"t": "EN DIRECT Présidentielle 2027 : François Hollande pense que Jean-Luc Mélenchon « ne veut pas gagner »...",
+"t": "EN DIRECT Présidentielle 2027 : Hollande pense que Mélenchon « ne veut pas gagner », LFI envoie paître les Insoumis « purgés »...",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265545-20261125-direct-presidentielle-2027-david-lisnard-annonce-reelection-tete-association-maires-france?at_medium=display&at_campaign=149",
 "d": "2026-11-25T04:53:33Z",
@@ -1693,75 +1752,21 @@
 "qui": [
 "glucksmann"
 ]
-},
-{
-"t": "Présidentielle 2027 : « On va faire un grand parti… » Jadot et Iordanoff lancent un nouveau mouvement écologiste",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4265280-20261124-presidentielle-2027-va-faire-grand-parti-jadot-iordanoff-lancent-nouveau-mouvement-ecologiste?at_medium=display&at_campaign=149",
-"d": "2026-11-24T09:59:31Z",
-"qui": []
-},
-{
-"t": "Attal, Retailleau et Lisnard annulent leur deuxième réunion sur la primaire en attendant la rencontre autour de Larcher",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/attal-retailleau-et-lisnard-annulent-leur-deuxieme-reunion-sur-la-primaire-en-attendant-la-rencontre-autour-de-larcher-20261124_A65DDJYCZFFQNN75YDHKX5CZ2M/",
-"d": "2026-11-24T09:54:59Z",
-"qui": [
-"attal",
-"lisnard",
-"retailleau"
-]
-},
-{
-"t": "Le libéralisme hémiplégique de David Lisnard",
-"s": "Libération",
-"u": "https://www.liberation.fr/idees-et-debats/tribunes/le-liberalisme-hemiplegique-de-david-lisnard-20261124_26ZVAVEKXFGD5DUFUM3A7IHXQM/",
-"d": "2026-11-24T09:50:19Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "INFO BFMTV. Salon des maires, Béziers, Guadeloupe...Les déplacements prévus par Teddy Riner",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-info-bfmtv-salon-des-maires-beziers-guadeloupe-les-deplacements-prevus-par-teddy-riner_VN-202611240432.html",
-"d": "2026-11-24T09:13:53Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "Maël de Calan, porte-parole d'Édouard Philippe: \"Les primaires sont une machine à diviser extraordinaire dont tout le monde sort perdant\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-mael-de-calan-porte-parole-d-edouard-philippe-les-primaires-sont-une-machine-a-diviser-extraordinaire-dont-tout-le-monde-sort-perdant_VN-202611240425.html",
-"d": "2026-11-24T09:05:54Z",
-"qui": [
-"philippe"
-]
-},
-{
-"t": "\"J'ai décidé d'agir\": Natacha Polony évoque sa candidature à l'élection présidentielle",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-j-ai-decide-d-agir-natacha-polony-evoque-sa-candidature-a-l-election-presidentielle_VN-202611240430.html",
-"d": "2026-11-24T09:04:34Z",
-"qui": [
-"polony"
-]
 }
 ],
 "sources": {
 "Le Monde": 5,
 "franceinfo": 5,
-"Libération": 20,
+"Libération": 19,
 "Le Figaro": 9,
-"Le Parisien": 55,
+"Le Parisien": 54,
 "20 Minutes": 10,
 "Ouest-France": 0,
-"BFMTV": 24,
+"BFMTV": 25,
 "France 24": 9,
 "La Croix": 24,
 "LCP": 38,
 "RFI": 7
 },
-"maj": "2026-11-25T18:55:38Z"
+"maj": "2026-11-25T19:57:29Z"
 }
