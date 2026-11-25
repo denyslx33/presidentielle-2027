@@ -4,6 +4,25 @@
   {
    "date": "2026-11-25",
    "qui": [
+    "lepen"
+   ],
+   "texte": "Boris Vallaud, président du groupe socialiste à l'Assemblée, indique qu'il fera « toujours le front républicain » en votant pour le candidat opposé à Marine Le Pen au second tour.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html"
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [
+    "melenchon",
+    "lepen"
+   ],
+   "texte": "Gérald Darmanin estime qu'un second tour entre Jean-Luc Mélenchon et Marine Le Pen mettrait la France « au bord de la guerre civile ».",
+   "source": "franceinfo",
+   "url": "https://www.franceinfo.fr/elections/un-second-tour-melenchon-le-pen-a-la-presidentielle-2027-mettrait-la-france-au-bord-de-la-guerre-civile-affirme-gerald-darmanin_8298966.html"
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [
     "philippe",
     "melenchon",
     "lepen"
@@ -541,25 +560,6 @@
    "texte": "Avec Yannick Jadot, Raphaël Glucksmann présente sa « révolution écologique » : 200 Md€ d'investissements publics sur le quinquennat et une « République écologique » inscrite dans la Constitution.",
    "source": "Public Sénat",
    "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique"
-  },
-  {
-   "date": "2026-11-09",
-   "qui": [
-    "riner"
-   ],
-   "texte": "Teddy Riner annonce sa candidature dans Le Parisien et sur les réseaux sociaux.",
-   "source": "LCP",
-   "url": "https://lcp.fr/actualites/le-judoka-teddy-riner-annonce-sa-candidature-a-l-election-presidentielle-de-2027-444920"
-  },
-  {
-   "date": "2026-11-08",
-   "qui": [
-    "roussel"
-   ],
-   "parti": true,
-   "texte": "Neuf députés communistes et ultramarins, dont trois membres du parti, annoncent soutenir Jean-Luc Mélenchon. Fabien Roussel maintient sa candidature.",
-   "source": "La Gazette France",
-   "url": "https://www.lagazettefrance.fr/article/presidentielle-malgre-les-defections-roussel-ira-jusqu-au-bout"
   }
  ]
 }
