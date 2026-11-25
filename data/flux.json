@@ -2,6 +2,52 @@
 "v": 4,
 "items": [
 {
+"t": "\"Marine Le Pen, elle représente le nouveau en-même-tempisme\", estime Alexandra Martin, secrétaire générale de Nouvelle Énergie",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-marine-le-pen-elle-represente-le-nouveau-en-meme-tempisme-estime-alexandra-martin-secretaire-generale-de-nouvelle-energie_VN-202611251026.html",
+"d": "2026-11-25T22:50:10Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "David Lisnard, l'outsider qui bouscule la campagne présidentielle",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-david-lisnard-l-outsider-qui-bouscule-la-campagne-presidentielle_VN-202611251013.html",
+"d": "2026-11-25T22:27:42Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Un second tour Le Pen-Mélenchon serait \"une guerre civile\" pour Gérald Darmanin: \"Banaliser quelque chose d'aussi épouvantable est extrêmement grave\", assure Jean-Philippe Tanguy, député RN",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/video-un-second-tour-le-pen-melenchon-serait-une-guerre-civile-pour-gerald-darmanin-banaliser-quelque-chose-d-aussi-epouvantable-est-extremement-grave-assure-jean-philippe-tanguy-depute-rn_VN-202611251000.html",
+"d": "2026-11-25T22:12:30Z",
+"qui": [
+"lepen",
+"melenchon"
+]
+},
+{
+"t": "Présidentielle 2027 : \"Il faut une compétition, il faut une sélection\", défend le candidat David Lisnard, partisan d'une primaire",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/presidentielle-2027-il-faut-une-competition-il-faut-une-selection-defend-le-candidat-david-lisnard-partisan-d-une-primaire_8300388.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-25T22:12:07Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Présidentielle 2027 : « La démocratie, c’est le vote »… Lisnard refuse le débat proposé par Philippe",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265806-20261125-presidentielle-2027-democratie-vote-lisnard-refuse-debat-propose-philippe?at_medium=display&at_campaign=149",
+"d": "2026-11-25T22:06:30Z",
+"qui": [
+"lisnard"
+]
+},
+{
 "t": "Présidentielle 2027 : l'ascension de David Lisnard, réélu président de l'Association des maires de France",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/elections/presidentielle-2027-l-ascension-de-david-lisnard-reelu-president-de-l-association-des-maires-de-france_8300370.html#xtor=RSS-3-%5Bpolitique%5D",
@@ -305,6 +351,13 @@
 "qui": [
 "philippe"
 ]
+},
+{
+"t": "Présidentielle 2027 : « Je suis fan et je vais le parrainer »… Comment les candidats tentent de séduire les maires",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265748-20261125-presidentielle-2027-fan-vais-parrainer-comment-candidats-tentent-seduire-maires?at_medium=display&at_campaign=149",
+"d": "2026-11-25T19:13:17Z",
+"qui": []
 },
 {
 "t": "Teddy Riner affirme, à propos de la guerre en Ukraine, que la France doit « arrêter de donner de l’argent » qu’elle n’a pas",
@@ -1298,7 +1351,7 @@
 ]
 },
 {
-"t": "EN DIRECT Présidentielle 2027 : Hollande pense que Mélenchon « ne veut pas gagner », LFI envoie paître les Insoumis « purgés »...",
+"t": "Présidentielle 2027 : Hollande pense que Mélenchon « ne veut pas gagner », LFI envoie paître les Insoumis « purgés »",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265545-20261125-direct-presidentielle-2027-david-lisnard-annonce-reelection-tete-association-maires-france?at_medium=display&at_campaign=149",
 "d": "2026-11-25T04:53:33Z",
@@ -1707,75 +1760,21 @@
 "u": "https://www.rfi.fr/fr/france/20261124-pr%C3%A9sidentielle-2027-le-congr%C3%A8s-des-maires-de-france-march%C3%A9-aux-parrainages-des-candidats",
 "d": "2026-11-24T14:53:36Z",
 "qui": []
-},
-{
-"t": "Détournement de fonds de publics : une enquête vise l'agglomération du Havre d'Édouard Philippe",
-"s": "France 24",
-"u": "https://www.france24.com/fr/france/20261124-edouard-philippe-vis%C3%A9-par-une-enqu%C3%AAte-pour-d%C3%A9tournement-de-fonds-publics-au-havre",
-"d": "2026-11-24T14:47:28Z",
-"qui": [
-"philippe"
-]
-},
-{
-"t": "«Aujourd'hui, le candidat de la droite est Bruno Retailleau», martèle le porte-parole de sa campagne, Pierre Henri-Dumont",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/podcasts/invit%C3%A9-politique/20261124-aujourd-hui-le-candidat-de-la-droite-est-bruno-retailleau-mart%C3%A8le-le-porte-parole-de-sa-campagne-pierre-henri-dumont",
-"d": "2026-11-24T14:45:59Z",
-"qui": [
-"retailleau"
-]
-},
-{
-"t": "Édouard Philippe: une enquête ouverte pour détournement de fonds publics à l'agglomération du Havre",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-edouard-philippe-une-enquete-ouverte-pour-detournement-de-fonds-publics-a-l-agglomeration-du-havre_VN-202611240665.html",
-"d": "2026-11-24T14:38:29Z",
-"qui": [
-"philippe"
-]
-},
-{
-"t": "\"Il n'y aura plus d'étrangers\" chante une exposante devant E. Zemmour",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/il-n-y-aura-plus-d-etrangers-chante-une-exposante-devant-e-zemmour_8297877.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-24T14:30:32Z",
-"qui": [
-"zemmour"
-]
-},
-{
-"t": "La maire de Fontenay-aux-Roses souhaite la \"mise en retrait\" de David Lisnard de la présidence de l'Association des maires de France",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/politique/la-maire-de-fontenay-aux-roses-souhaite-la-mise-en-retrait-de-david-lisnard-de-la-presidence-de-l-association-des-maires-de-france_8297787.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-24T13:48:05Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Jean-Luc Mélenchon tiendra un meeting le samedi 9 janvier à Montpellier",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/politique/article/2026/11/24/jean-luc-melenchon-tiendra-un-meeting-le-samedi-9-janvier-a-montpellier_6814763_823448.html",
-"d": "2026-11-24T12:43:41Z",
-"qui": [
-"melenchon"
-]
 }
 ],
 "sources": {
 "Le Monde": 5,
-"franceinfo": 6,
+"franceinfo": 7,
 "Libération": 19,
 "Le Figaro": 8,
 "Le Parisien": 54,
 "20 Minutes": 10,
-"Ouest-France": 1,
-"BFMTV": 28,
+"Ouest-France": 0,
+"BFMTV": 26,
 "France 24": 9,
 "La Croix": 24,
 "LCP": 37,
 "RFI": 7
 },
-"maj": "2026-11-25T21:57:21Z"
+"maj": "2026-11-25T22:55:59Z"
 }
