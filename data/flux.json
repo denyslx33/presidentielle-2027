@@ -2,7 +2,16 @@
 "v": 4,
 "items": [
 {
-"t": "Présidentielle 2027 : « L’Ukraine, ce n’est pas notre guerre », glisse Teddy Riner entre deux micros",
+"t": "Présidentielle 2027. « Ce n’est pas notre guerre », estime Teddy Riner, évoquant les soldats français en Ukraine",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-ce-nest-pas-notre-guerre-estime-teddy-riner-evoquant-les-soldats-francais-en-ukraine-c0719d36-e8f0-11f1-9b33-2f81462d3339?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-25T17:36:08Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Présidentielle 2027 : « L’Ukraine, ce n’est pas notre guerre », estime Teddy Riner",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265766-20261125-presidentielle-2027-ukraine-guerre-glisse-teddy-riner-entre-deux-micros?at_medium=display&at_campaign=149",
 "d": "2026-11-25T17:10:46Z",
@@ -83,6 +92,15 @@
 ]
 },
 {
+"t": "EN DIRECT, congrès des maires 2026 : Gabriel Attal espère que la réunion des candidats de la droite et du centre autour de Gérard Larcher permettra « d’avancer » vers une méthode de départage",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/live/2026/11/25/en-direct-congres-des-maires-2026-au-quotidien-on-constate-de-plus-en-plus-une-solitude-des-communes_6815062_823448.html",
+"d": "2026-11-25T15:53:02Z",
+"qui": [
+"attal"
+]
+},
+{
 "t": "Présidentielle 2027: Gabriel Attal \"appelle au rassemblement des démocrates pour épargner à la France un second tour entre les extrêmes\"",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-gabriel-attal-appelle-au-rassemblement-des-democrates-pour-epargner-a-la-france-un-second-tour-entre-les-extremes_VN-202611250734.html",
@@ -90,13 +108,6 @@
 "qui": [
 "attal"
 ]
-},
-{
-"t": "DIRECT. Présidentielle 2027: François Hollande estime que “ce sont les dernières semaines” de la campagne “qui comptent”",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html",
-"d": "2026-11-25T15:50:45Z",
-"qui": []
 },
 {
 "t": "Présidentielle 2027: \"Il faut plus partager le pouvoir en France\", estime Gabriel Attal, candidat à l'élection",
@@ -115,6 +126,13 @@
 "qui": [
 "attal"
 ]
+},
+{
+"t": "DIRECT. Présidentielle 2027: François Hollande estime que “ce sont les dernières semaines” de la campagne “qui comptent”",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html",
+"d": "2026-11-25T15:43:06Z",
+"qui": []
 },
 {
 "t": "Guerre en Ukraine: Teddy Riner veut être \"acteur de la paix\"",
@@ -1734,39 +1752,21 @@
 "lepen",
 "melenchon"
 ]
-},
-{
-"t": "À suivre Loïc de la Mornais : Dominique de Villepin entend \"lutter contre la société d'héritiers\"",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/replay-magazine/franceinfo/a-suivre-avec-loic-de-la-mornais/a-suivre-loic-de-la-mornais-dominique-de-villepin-entend-lutter-contre-la-societe-d-heritiers_8297127.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-24T05:59:15Z",
-"qui": [
-"villepin"
-]
-},
-{
-"t": "À suivre Loïc de la Mornais : Dominique de Villepin invité exceptionnel de franceinfo",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/replay-magazine/franceinfo/a-suivre-avec-loic-de-la-mornais/a-suivre-loic-de-la-mornais-dominique-de-villepin-invite-exceptionnel-de-franceinfo_8297115.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-24T05:46:52Z",
-"qui": [
-"villepin"
-]
 }
 ],
 "sources": {
-"Le Monde": 6,
+"Le Monde": 5,
 "franceinfo": 4,
 "Libération": 21,
 "Le Figaro": 9,
 "Le Parisien": 54,
 "20 Minutes": 10,
 "Ouest-France": 1,
-"BFMTV": 24,
+"BFMTV": 23,
 "France 24": 9,
 "La Croix": 24,
 "LCP": 38,
 "RFI": 7
 },
-"maj": "2026-11-25T17:19:59Z"
+"maj": "2026-11-25T18:04:50Z"
 }
