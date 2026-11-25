@@ -2,6 +2,15 @@
 "v": 4,
 "items": [
 {
+"t": "« Ça vous intéresserait de venir la voir ? » : Robert Ménard raconte comment il a invité Teddy Riner à Béziers",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/ca-vous-interesserait-de-venir-la-voir-robert-menard-raconte-comment-il-a-invite-teddy-riner-a-beziers-25-11-2026-FALECOIWZFCB7GMV5Q5HA5AB6A.php",
+"d": "2026-11-25T01:56:18Z",
+"qui": [
+"riner"
+]
+},
+{
 "t": "Edouard Philippe",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/edouard-philippe_DN-202108310657.html",
@@ -1741,16 +1750,6 @@
 "qui": [
 "melenchon"
 ]
-},
-{
-"t": "Présidentielle : depuis Lyon, Marine Tondelier attend «les pas» de Jean-Luc Mélenchon en direction des écologistes",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/elections/presidentielle-depuis-lyon-marine-tondelier-attend-les-pas-de-jean-luc-melenchon-en-direction-des-ecologistes-20261120_RWMA5LDG25HUJCM5Q4RBDIC2S4/",
-"d": "2026-11-20T13:56:00Z",
-"qui": [
-"melenchon",
-"tondelier"
-]
 }
 ],
 "sources": {
@@ -1758,7 +1757,7 @@
 "franceinfo": 6,
 "Libération": 19,
 "Le Figaro": 9,
-"Le Parisien": 52,
+"Le Parisien": 53,
 "20 Minutes": 10,
 "Ouest-France": 0,
 "BFMTV": 7,
@@ -1767,5 +1766,5 @@
 "LCP": 34,
 "RFI": 7
 },
-"maj": "2026-11-25T00:23:18Z"
+"maj": "2026-11-25T01:56:18Z"
 }
