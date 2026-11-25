@@ -2,10 +2,19 @@
 "v": 4,
 "items": [
 {
+"t": "DIRECT. Présidentielle 2027: Raphaël Glucksmann assure que \"nous éviterons le duel\" RN-LFI au second tour",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html",
+"d": "2026-11-25T12:20:56Z",
+"qui": [
+"glucksmann"
+]
+},
+{
 "t": "« Ça vous intéresserait de venir la voir ? » : Robert Ménard raconte comment il a invité Teddy Riner à Béziers",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/ca-vous-interesserait-de-venir-la-voir-robert-menard-raconte-comment-il-a-invite-teddy-riner-a-beziers-25-11-2026-FALECOIWZFCB7GMV5Q5HA5AB6A.php",
-"d": "2026-11-25T11:19:20Z",
+"d": "2026-11-25T12:00:00Z",
 "qui": [
 "riner"
 ]
@@ -14,7 +23,7 @@
 "t": "Présidentielle 2027 : en cas de second tour Mélenchon-Le Pen, Édouard Philippe annonce qu’il votera blanc",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-en-cas-de-second-tour-melenchon-le-pen-edouard-philippe-annonce-quil-votera-blanc-25-11-2026-4E6INSGPNFDP7HIPB7GUSFGVSY.php",
-"d": "2026-11-25T11:19:20Z",
+"d": "2026-11-25T12:00:00Z",
 "qui": [
 "melenchon",
 "philippe"
@@ -24,14 +33,14 @@
 "t": "Présidentielle 2027 : « L’extrême droite et l’extrême gauche sont deux poisons mortels », estime Jean-Noël Barrot",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-lextreme-droite-et-lextreme-gauche-sont-deux-poisons-mortels-estime-jean-noel-barrot-25-11-2026-HIAJ32PPXVDTHE3WPTR4INGQLU.php",
-"d": "2026-11-25T11:19:20Z",
+"d": "2026-11-25T12:00:00Z",
 "qui": []
 },
 {
 "t": "DIRECT. Présidentielle 2027 : Riner, Glucksmann, Hollande, Attal, Roussel... les candidats vont se bousculer au congrès des maires",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-deuxieme-jour-du-congres-des-maires-de-france-de-nombreux-candidats-attendus-sur-place-25-11-2026-EL5DLN7IZNHUBPHP32WEMDQEM4.php",
-"d": "2026-11-25T11:19:20Z",
+"d": "2026-11-25T12:00:00Z",
 "qui": [
 "attal",
 "glucksmann",
@@ -43,22 +52,65 @@
 "t": "Présidentielle 2027 : un duel Mélenchon-Le Pen « mènerait notre pays au bord de la guerre civile », juge Darmanin",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-un-duel-melenchon-le-pen-menerait-notre-pays-au-bord-de-la-guerre-civile-juge-darmanin-25-11-2026-OR3WJXPKINEUDGEDS2CKLOK4ZA.php",
-"d": "2026-11-25T11:19:20Z",
+"d": "2026-11-25T12:00:00Z",
 "qui": [
 "melenchon"
+]
+},
+{
+"t": "« Votre club d’énarques » : David Lisnard s’en prend vivement à Jean-François Copé qui l’a qualifié de « populiste »",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/votre-club-denarques-david-lisnard-sen-prend-vivement-a-jean-francois-cope-qui-la-qualifie-de-populiste-25-11-2026-AEBJX6TQWFE45EL6W3OEQVZ53E.php",
+"d": "2026-11-25T12:00:00Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Présidentielle 2027 : « Je ferai toujours le front républicain », Boris Vallaud prêt à voter Mélenchon contre Le Pen",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-je-ferai-toujours-le-front-republicain-boris-vallaud-pret-a-voter-melenchon-contre-le-pen-25-11-2026-B36ME2BMEJCINI3AJKYEANG6KM.php",
+"d": "2026-11-25T12:00:00Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Présidentielle 2027: malgré les critiques, le gouvernement maintient, à ce stade, le second tour au lendemain du 1er-Mai",
+"s": "LCP",
+"u": "https://lcp.fr/actualites/presidentielle-2027-malgre-les-critiques-le-gouvernement-maintient-a-ce-stade-le-second",
+"d": "2026-11-25T11:32:49Z",
+"qui": []
+},
+{
+"t": "\"Une nécessité de redonner de l'oxygène aux très petites entreprises\": Marine Le Pen à la rencontre d'artisans et de commerçants à Reims",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/front-national/video-une-necessite-de-redonner-de-l-oxygene-aux-tres-petites-entreprises-marine-le-pen-a-la-rencontre-d-artisans-et-de-commercants-a-reims_VN-202611250533.html",
+"d": "2026-11-25T11:21:03Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "Présidentielle 2027: après un début de campagne difficile, Teddy Riner s'explique et mise sur les maires pour se relancer",
+"s": "LCP",
+"u": "https://lcp.fr/actualites/presidentielle-2027-apres-un-debut-de-campagne-difficile-teddy-riner-s-explique-et-mise",
+"d": "2026-11-25T11:19:47Z",
+"qui": [
+"riner"
 ]
 },
 {
 "t": "EN DIRECT, congrès des maires 2026 : David Lisnard va-t-il être réélu à la tête des maires de France ? Suivez la journée et posez-nous vos questions",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/live/2026/11/25/en-direct-congres-des-maires-2026-david-lisnard-va-t-il-etre-reelu-a-la-tete-des-maires-de-france-suivez-la-journee-et-posez-nous-vos-questions_6815062_823448.html",
-"d": "2026-11-25T11:17:24Z",
+"d": "2026-11-25T11:17:23Z",
 "qui": [
 "lisnard"
 ]
 },
 {
-"t": "Dates de l’élection présidentielle: \"Le choix a été en fonction de la maximisation de la participation des Français, affirme Mathieu Lefèvre",
+"t": "Dates de l’élection présidentielle: \"Le choix a été en fonction de la maximisation de la participation des Français\", affirme Mathieu Lefèvre",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-dates-de-l-election-presidentielle-le-choix-a-ete-en-fonction-de-la-maximisation-de-la-participation-des-francais-affirme-mathieu-lefevre_VN-202611250525.html",
 "d": "2026-11-25T11:09:08Z",
@@ -140,15 +192,6 @@
 "qui": [
 "lisnard",
 "philippe"
-]
-},
-{
-"t": "DIRECT. Présidentielle 2027: Boris Vallaud fera \"toujours le front républicain\" en votant pour le candidat face à Marine Le Pen",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html",
-"d": "2026-11-25T08:44:13Z",
-"qui": [
-"lepen"
 ]
 },
 {
@@ -1715,51 +1758,10 @@
 "qui": [
 "melenchon"
 ]
-},
-{
-"t": "Présidentielle 2027 : prenant acte d’une «impasse», François Ruffin retire sa candidature",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/elections/presidentielle-2027-francois-ruffin-retire-sa-candidature-20261121_KUCTZ27WZFBDRP62V22OJEAVBY/",
-"d": "2026-11-22T16:22:21Z",
-"qui": []
-},
-{
-"t": "Marine Le Pen dit n'avoir «jamais reçu d'information confidentielle» du préfet Moutouh",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/france/20261122-marine-le-pen-dit-n-avoir-jamais-re%C3%A7u-d-information-confidentielle-du-pr%C3%A9fet-moutouh",
-"d": "2026-11-22T14:36:16Z",
-"qui": [
-"lepen"
-]
-},
-{
-"t": "Présidentielle 2027 : CBS, Financial Times, télé égyptienne… Marine Le Pen en campagne dans les médias internationaux, sans jamais quitter la France",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-cbs-financial-times-tele-egyptienne-marine-le-pen-en-campagne-dans-les-medias-internationaux-sans-jamais-quitter-la-france-22-11-2026-IV37MRJVO5BSDOLN4RI4J26GUM.php",
-"d": "2026-11-22T12:00:00Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027 : contrôle continu, horaires… Gabriel Attal veut modifier son « pacte jeunesse » pour mieux refléter les préoccupations",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-controle-continu-horaires-gabriel-attal-veut-modifier-son-pacte-jeunesse-pour-mieux-refleter-les-preoccupations-22-11-2026-37NQJ22MMRGXVHJSVNHGV4T2SY.php",
-"d": "2026-11-22T12:00:00Z",
-"qui": [
-"attal"
-]
-},
-{
-"t": "Vautrin briefe les candidats, la dette publique, l’organigramme d’Édouard Philippe… Nos indiscrétions de la semaine",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/politique/vautrin-briefe-les-candidats-la-dette-publique-lorganigramme-dedouard-philippe-nos-indiscretions-de-la-semaine-22-11-2026-ZC3APGQBO5BG3MP2NXDIHNZEDI.php",
-"d": "2026-11-22T12:00:00Z",
-"qui": [
-"philippe"
-]
 }
 ],
 "sources": {
-"Le Monde": 11,
+"Le Monde": 10,
 "franceinfo": 6,
 "Libération": 20,
 "Le Figaro": 9,
@@ -1769,8 +1771,8 @@
 "BFMTV": 17,
 "France 24": 4,
 "La Croix": 24,
-"LCP": 35,
+"LCP": 36,
 "RFI": 7
 },
-"maj": "2026-11-25T11:19:20Z"
+"maj": "2026-11-25T12:24:08Z"
 }
