@@ -2,6 +2,75 @@
 "v": 4,
 "items": [
 {
+"t": "Teddy Riner critique le déploiement de soldats français en Ukraine pour des missions non-combattantes : « Ce n’est pas notre guerre »",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/25/teddy-riner-critique-le-deploiement-de-soldats-francais-en-ukraine-pour-des-missions-non-combattantes-ce-n-est-pas-notre-guerre_6815137_823448.html",
+"d": "2026-11-25T16:10:39Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Présidentielle 2027 : « À ce stade », l’Élysée n’envisage pas de modifier les dates du scrutin",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-a-ce-stade-lelysee-nenvisage-pas-de-modifier-les-dates-du-scrutin-a4f6fd46-e8df-11f1-86c1-70195b4d2e52?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-25T15:54:50Z",
+"qui": []
+},
+{
+"t": "Le «ni Mélenchon, ni Le Pen», un naufrage moral à responsabilités multiples",
+"s": "Libération",
+"u": "https://www.liberation.fr/politique/le-ni-melenchon-ni-le-pen-un-naufrage-moral-a-responsabilites-multiples-20261125_6YU345BZNRGL3CYMT4XLN3I5S4/",
+"d": "2026-11-25T15:53:10Z",
+"qui": [
+"lepen",
+"melenchon"
+]
+},
+{
+"t": "Présidentielle 2027 : près de 40 candidats au départ, combien au premier tour ?",
+"s": "France 24",
+"u": "https://www.france24.com/fr/vid%C3%A9o/20261125-pr%C3%A9sidentielle-2027-pr%C3%A8s-de-40-candidats-au-d%C3%A9part-combien-au-premier-tour",
+"d": "2026-11-25T15:33:07Z",
+"qui": []
+},
+{
+"t": "\"On a déjà dépassé la centaine\": Teddy Riner assure que ses parrainages pour la présidentielle \"avancent bien\" mais reconnaît \"un petit stress\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/on-a-deja-depasse-la-centaine-teddy-riner-assure-que-ses-parrainages-pour-la-presidentielle-avancent-bien-mais-reconnait-un-petit-stress_AV-202611250706.html",
+"d": "2026-11-25T15:16:04Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "David Lisnard à la tête des Maires de France : \"un record de participation depuis 1989\"",
+"s": "France 24",
+"u": "https://www.france24.com/fr/vid%C3%A9o/20261125-david-lisnard-%C3%A0-la-t%C3%AAte-des-maires-de-france-un-record-de-participation-depuis-1989",
+"d": "2026-11-25T15:15:51Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Présidentielle 2027: \"C'est un bon début de campagne\", assure Teddy Riner, candidat à l'élection",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/video-presidentielle-2027-c-est-un-bon-debut-de-campagne-assure-teddy-riner-candidat-a-l-election_VN-202611250704.html",
+"d": "2026-11-25T15:13:25Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "France : David Lisnard réelu à la présidence de l'Association de Maire de France",
+"s": "France 24",
+"u": "https://www.france24.com/fr/vid%C3%A9o/20261125-france-david-lisnard-r%C3%A9elu-%C3%A0-la-pr%C3%A9sidence-de-l-association-de-maire-de-france",
+"d": "2026-11-25T15:08:36Z",
+"qui": [
+"lisnard"
+]
+},
+{
 "t": "Dates de la présidentielle 2027: le second tour le 2 mai reste la meilleure option, selon le porte-parole du gouvernement",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/dates-de-la-presidentielle-2027-le-second-tour-le-2-mai-reste-la-meilleure-option-selon-le-porte-parole-du-gouvernement_AD-202611250700.html",
@@ -336,12 +405,12 @@
 "qui": []
 },
 {
-"t": "DIRECT. Présidentielle 2027 : «Jean-Luc Mélenchon ne veut pas gagner», estime François Hollande, toujours pas candidat",
+"t": "DIRECT. Présidentielle 2027 : Gabriel Attal «appelle au rassemblement des démocrates» pour éviter les extrêmes",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-deuxieme-jour-du-congres-des-maires-de-france-de-nombreux-candidats-attendus-sur-place-25-11-2026-EL5DLN7IZNHUBPHP32WEMDQEM4.php",
 "d": "2026-11-25T12:00:00Z",
 "qui": [
-"melenchon"
+"attal"
 ]
 },
 {
@@ -378,6 +447,24 @@
 "d": "2026-11-25T12:00:00Z",
 "qui": [
 "lisnard"
+]
+},
+{
+"t": "Présidentielle 2027 : en cas de duel opposant Marine Le Pen à Jean-Luc Mélenchon, qui voterait quoi ?",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-en-cas-de-duel-opposant-marine-le-pen-a-jean-luc-melenchon-qui-voterait-quoi-25-11-2026-J6MR2JWXF5GOBITIZAVYVU6KW4.php",
+"d": "2026-11-25T12:00:00Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "« Ce n’est pas notre guerre » : Teddy Riner s’empêtre sur le conflit en Ukraine avant de se rétracter",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/ce-nest-pas-notre-guerre-teddy-riner-bouscule-par-les-journalistes-sur-le-conflit-en-ukraine-25-11-2026-67V5SOZHOJC53OFIAG7XQWCOWA.php",
+"d": "2026-11-25T12:00:00Z",
+"qui": [
+"riner"
 ]
 },
 {
@@ -680,12 +767,12 @@
 ]
 },
 {
-"t": "EN DIRECT Présidentielle 2027 : David Lisnard annonce sa réélection à la tête de l'Association des maires de France…",
+"t": "EN DIRECT Présidentielle 2027 : François Hollande pense que Jean-Luc Mélenchon « ne veut pas gagner »...",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265545-20261125-direct-presidentielle-2027-david-lisnard-annonce-reelection-tete-association-maires-france?at_medium=display&at_campaign=149",
 "d": "2026-11-25T04:53:33Z",
 "qui": [
-"lisnard"
+"melenchon"
 ]
 },
 {
@@ -1667,110 +1754,21 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "Présidentielle 2027: \"quand on est antifasciste, on vote Raphaël Glucksmann\", lance Boris Vallaud, député PS",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-quand-on-est-antifasciste-on-vote-raphael-glucksmann-lance-boris-vallaud-depute-ps_VN-202611230907.html",
-"d": "2026-11-23T21:29:56Z",
-"qui": [
-"glucksmann"
-]
-},
-{
-"t": "Présidentielle 2027: \"Le ralliement de Marine Tondelier [à Jean-Luc Mélenchon], il y a une sorte de fatalisme\", analyse Boris Vallaud, député PS",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-le-ralliement-de-marine-tondelier-a-jean-luc-melenchon-il-y-a-une-sorte-de-fatalisme-analyse-boris-vallaud-depute-ps_VN-202611230906.html",
-"d": "2026-11-23T21:28:18Z",
-"qui": [
-"melenchon",
-"tondelier"
-]
-},
-{
-"t": "Les écolos pro-Glucksmann fondent «Ecologistes et démocrates», un nouveau parti",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/elections/les-ecolos-pro-glucksmann-fondent-ecologistes-et-democrates-un-nouveau-parti-20261123_MLJLZCW7TFETBE4P665OQHQB5Y/",
-"d": "2026-11-23T21:09:41Z",
-"qui": [
-"glucksmann"
-]
-},
-{
-"t": "INFO OUEST-FRANCE. « C’est inspirant » : Teddy Riner était présent à la soirée des Trucs qui marchent",
-"s": "Ouest-France",
-"u": "https://www.ouest-france.fr/elections/presidentielle/info-ouest-france-ca-envoie-un-message-positif-teddy-riner-etait-present-a-la-soiree-des-trucs-qui-marchent-42f3715e-e77e-11f1-afa7-9a0bb82a33d1?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
-"d": "2026-11-23T21:07:02Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "Primaire: en septembre, Édouard Philippe \"a proposé aux candidats de la droite et du centre de se rencontrer et de discuter\", assure Jérémie Patrier-Leitus, député \"Horizons\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/video-primaire-en-septembre-edouard-philippe-a-propose-aux-candidats-de-la-droite-et-du-centre-de-se-rencontrer-et-de-discuter-assure-jeremie-patrier-leitus-depute-horizons_VN-202611230883.html",
-"d": "2026-11-23T20:39:41Z",
-"qui": [
-"philippe"
-]
-},
-{
-"t": "Présidentielle 2027 : qui pourra rassembler ?",
-"s": "France 24",
-"u": "https://www.france24.com/fr/%C3%A9missions/le-d%C3%A9bat/20261123-pr%C3%A9sidentielle-qui-pourra-rassembler",
-"d": "2026-11-23T19:58:31Z",
-"qui": []
-},
-{
-"t": "Pour Jordan Bardella (RN), David Lisnard est le \"contrebandier du macronisme\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-pour-jordan-bardella-rn-david-lisnard-est-le-contrebandier-du-macronisme_VN-202611230854.html",
-"d": "2026-11-23T19:54:12Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "David Lisnard fait-il des \"appels du pied\" à l'extrême droite comme l'affirme Jean-François Copé ?",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/vrai-ou-fake/david-lisnard-fait-il-des-appels-du-pied-a-l-extreme-droite-comme-l-affirme-jean-francois-cope_8296674.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-23T19:50:50Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Jordan Bardella, président du Rassemblement national, affirme que Marine Le Pen a un peu plus de \"400 parrainages\" pour la présidentielle de 2027",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-jordan-bardella-president-du-rassemblement-national-affirme-que-marine-le-pen-a-un-peu-plus-de-400-parrainages-pour-la-presidentielle-de-2027_VN-202611230827.html",
-"d": "2026-11-23T19:13:03Z",
-"qui": [
-"lepen"
-]
-},
-{
-"t": "\"On ne se met pas dans cette hypothèse\": Jordan Bardella assure ne pas chercher à obtenir de parrainages pour l'élection présidentielle en cas d'inégibilité de Marine Le Pen",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-on-ne-se-met-pas-dans-cette-hypothese-jordan-bardella-assure-ne-pas-chercher-a-obtenir-de-parrainages-pour-l-election-presidentielle-en-cas-d-inegibilite-de-marine-le-pen_VN-202611230820.html",
-"d": "2026-11-23T19:09:18Z",
-"qui": [
-"lepen"
-]
 }
 ],
 "sources": {
-"Le Monde": 7,
+"Le Monde": 8,
 "franceinfo": 4,
 "Libération": 20,
 "Le Figaro": 9,
 "Le Parisien": 55,
-"20 Minutes": 11,
-"Ouest-France": 0,
-"BFMTV": 20,
-"France 24": 6,
+"20 Minutes": 10,
+"Ouest-France": 1,
+"BFMTV": 22,
+"France 24": 8,
 "La Croix": 24,
 "LCP": 37,
-"RFI": 8
+"RFI": 7
 },
-"maj": "2026-11-25T15:05:10Z"
+"maj": "2026-11-25T16:12:54Z"
 }
