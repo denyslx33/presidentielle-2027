@@ -1,6 +1,24 @@
 {
- "maj": "2026-11-24",
+ "maj": "2026-11-25",
  "items": [
+  {
+   "date": "2026-11-25",
+   "qui": [
+    "philippe",
+    "melenchon",
+    "lepen"
+   ],
+   "texte": "Édouard Philippe annonce qu'il votera blanc en cas de second tour entre Jean-Luc Mélenchon et Marine Le Pen.",
+   "source": "Le Parisien",
+   "url": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-en-cas-de-second-tour-melenchon-le-pen-edouard-philippe-annonce-quil-votera-blanc-25-11-2026-4E6INSGPNFDP7HIPB7GUSFGVSY.php"
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [],
+   "texte": "Comme François Bayrou, Jean-Noël Barrot indique qu'il ne votera ni pour Marine Le Pen ni pour Jean-Luc Mélenchon en cas de second tour entre eux, et qualifie l'extrême droite et l'extrême gauche de « deux poisons mortels ».",
+   "source": "Le Parisien",
+   "url": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-lextreme-droite-et-lextreme-gauche-sont-deux-poisons-mortels-estime-jean-noel-barrot-25-11-2026-HIAJ32PPXVDTHE3WPTR4INGQLU.php"
+  },
   {
    "date": "2026-11-24",
    "qui": [
@@ -542,25 +560,6 @@
    "texte": "Neuf députés communistes et ultramarins, dont trois membres du parti, annoncent soutenir Jean-Luc Mélenchon. Fabien Roussel maintient sa candidature.",
    "source": "La Gazette France",
    "url": "https://www.lagazettefrance.fr/article/presidentielle-malgre-les-defections-roussel-ira-jusqu-au-bout"
-  },
-  {
-   "date": "2026-11-06",
-   "qui": [
-    "philippe"
-   ],
-   "texte": "Édouard Philippe entame une tournée des régions (Chartres, Toulouse, Rillieux-la-Pape) et maintient son refus de la primaire.",
-   "source": "La Gazette France / AFP",
-   "url": "https://www.lagazettefrance.fr/article/edouard-philippe-entame-une-tournee-des-regions-refusant-toujours-la-primaire"
-  },
-  {
-   "date": "2026-11-06",
-   "qui": [
-    "glucksmann"
-   ],
-   "parti": "Parti socialiste",
-   "texte": "Le premier secrétaire du PS, Olivier Faure, entre au comité politique de la campagne de Raphaël Glucksmann.",
-   "source": "Public Sénat",
-   "url": "https://www.publicsenat.fr/actualites/politique/document-lorganigramme-de-campagne-complet-de-raphael-glucksmann-olivier-faure-membre-du-comite-politique"
   }
  ]
 }

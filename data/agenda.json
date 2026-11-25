@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-24",
+ "maj": "2026-11-25",
  "evenements": [
   {
    "date": "2026-08-27",
@@ -75,7 +75,9 @@
    "qui": [
     "riner"
    ],
-   "url": "https://www.20minutes.fr/politique/4265511-20261124-presidentielle-2027-robert-menard-attend-teddy-riner-beziers-vendredi"
+   "url": "https://www.20minutes.fr/politique/4265511-20261124-presidentielle-2027-robert-menard-attend-teddy-riner-beziers-vendredi",
+   "commune": "Béziers",
+   "dep": "34"
   },
   {
    "date": "2026-11-28",
