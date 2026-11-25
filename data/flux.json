@@ -5,7 +5,7 @@
 "t": "« Ça vous intéresserait de venir la voir ? » : Robert Ménard raconte comment il a invité Teddy Riner à Béziers",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/ca-vous-interesserait-de-venir-la-voir-robert-menard-raconte-comment-il-a-invite-teddy-riner-a-beziers-25-11-2026-FALECOIWZFCB7GMV5Q5HA5AB6A.php",
-"d": "2026-11-25T06:17:44Z",
+"d": "2026-11-25T07:49:20Z",
 "qui": [
 "riner"
 ]
@@ -14,9 +14,124 @@
 "t": "Présidentielle 2027 : en cas de second tour Mélenchon-Le Pen, Édouard Philippe annonce qu’il votera blanc",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-en-cas-de-second-tour-melenchon-le-pen-edouard-philippe-annonce-quil-votera-blanc-25-11-2026-4E6INSGPNFDP7HIPB7GUSFGVSY.php",
-"d": "2026-11-25T06:17:44Z",
+"d": "2026-11-25T07:49:20Z",
 "qui": [
 "melenchon",
+"philippe"
+]
+},
+{
+"t": "Présidentielle 2027 : « L’extrême droite et l’extrême gauche sont deux poisons mortels », estime Jean-Noël Barrot",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-lextreme-droite-et-lextreme-gauche-sont-deux-poisons-mortels-estime-jean-noel-barrot-25-11-2026-HIAJ32PPXVDTHE3WPTR4INGQLU.php",
+"d": "2026-11-25T07:49:20Z",
+"qui": []
+},
+{
+"t": "DIRECT. Présidentielle 2027 : l’extrême droite et l’extrême gauche sont « deux poisons mortels », estime Jean-Noël Barrot",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-deuxieme-jour-du-congres-des-maires-de-france-de-nombreux-candidats-attendus-sur-place-25-11-2026-EL5DLN7IZNHUBPHP32WEMDQEM4.php",
+"d": "2026-11-25T07:49:20Z",
+"qui": []
+},
+{
+"t": "DIRECT. Ni Le Pen, ni Mélenchon: comme François Bayrou, Jean-Noël Barrot ne votera pour aucun de ces \"poisons mortels\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html",
+"d": "2026-11-25T07:34:10Z",
+"qui": [
+"lepen",
+"melenchon"
+]
+},
+{
+"t": "Edouard Philippe",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/edouard-philippe_DN-202108310657.html",
+"d": "2026-11-25T06:25:53Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "Jean-Luc Mélenchon",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
+"d": "2026-11-25T06:25:53Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Marine Le Pen",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/marine-le-pen_DN-201201010011.html",
+"d": "2026-11-25T06:25:53Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "Fabien Roussel",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/fabien-roussel_DN-202105090296.html",
+"d": "2026-11-25T06:25:53Z",
+"qui": [
+"roussel"
+]
+},
+{
+"t": "Gabriel Attal",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/gabriel-attal_DN-202108310662.html",
+"d": "2026-11-25T06:25:53Z",
+"qui": [
+"attal"
+]
+},
+{
+"t": "Raphaël Glucksmann",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/raphael-glucksmann_DN-202405270322.html",
+"d": "2026-11-25T06:25:53Z",
+"qui": [
+"glucksmann"
+]
+},
+{
+"t": "Eric Zemmour",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/eric-zemmour_DN-202110270595.html",
+"d": "2026-11-25T06:25:53Z",
+"qui": [
+"zemmour"
+]
+},
+{
+"t": "Bruno Retailleau",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/gouvernement/bruno-retailleau_DN-202410030418.html",
+"d": "2026-11-25T06:25:53Z",
+"qui": [
+"retailleau"
+]
+},
+{
+"t": "Eric Zemmour définitivement condamné pour avoir affirmé que le maréchal Pétain \"avait sauvé les juifs français\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/video-eric-zemmour-definitivement-condamne-pour-avoir-affirme-que-le-marechal-petain-avait-sauve-les-juifs-francais_VN-202611250203.html",
+"d": "2026-11-25T06:06:37Z",
+"qui": [
+"zemmour"
+]
+},
+{
+"t": "L'ÉDITO POLITIQUE DE GUILLAUME DARET - Édouard Philippe lance son offensive contre David Lisnard",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/video-l-edito-politique-edouard-philippe-lance-son-offensive-contre-david-lisnard_VN-202611250202.html",
+"d": "2026-11-25T06:03:35Z",
+"qui": [
+"lisnard",
 "philippe"
 ]
 },
@@ -34,6 +149,15 @@
 "d": "2026-11-25T05:32:36Z",
 "qui": [
 "lepen"
+]
+},
+{
+"t": "Présidentielle 2027: Teddy Riner se défend après un début de campagne très difficile",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/video-presidentielle-2027-teddy-riner-se-defend-apres-un-debut-de-campagne-tres-difficile_VN-202611250153.html",
+"d": "2026-11-25T05:14:02Z",
+"qui": [
+"riner"
 ]
 },
 {
@@ -75,7 +199,7 @@
 "t": "Présidentielle 2027 : au RN, la certitude de la victoire enivre les élus et inquiète Marine Le Pen",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/25/presidentielle-2027-au-rn-la-certitude-de-la-victoire-enivre-les-elus-et-inquiete-marine-le-pen_6815034_823448.html",
-"d": "2026-11-25T04:15:07Z",
+"d": "2026-11-25T04:15:03Z",
 "qui": []
 },
 {
@@ -85,15 +209,6 @@
 "d": "2026-11-25T03:37:46Z",
 "qui": [
 "lisnard",
-"philippe"
-]
-},
-{
-"t": "Edouard Philippe",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/edouard-philippe_DN-202108310657.html",
-"d": "2026-11-24T23:00:27Z",
-"qui": [
 "philippe"
 ]
 },
@@ -137,7 +252,7 @@
 ]
 },
 {
-"t": "Présidentielle 2027 : les maires s’inquiètent du « ras-le-bol général » des électeurs",
+"t": "Présidentielle 2027 : les maires s’inquiètent du « ras-le-bol général » des électeurs",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/24/presidentielle-2027-les-maires-s-inquietent-du-ras-le-bol-general-des-electeurs_6814869_823448.html",
 "d": "2026-11-24T22:36:38Z",
@@ -151,15 +266,6 @@
 "qui": [
 "melenchon",
 "tondelier"
-]
-},
-{
-"t": "Jean-Luc Mélenchon",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
-"d": "2026-11-24T22:21:36Z",
-"qui": [
-"melenchon"
 ]
 },
 {
@@ -303,15 +409,6 @@
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-mon-candidat-c-est-le-federalisme-declare-jean-louis-borloo_VN-202611240812.html",
 "d": "2026-11-24T17:32:11Z",
 "qui": []
-},
-{
-"t": "Marine Le Pen",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/marine-le-pen_DN-201201010011.html",
-"d": "2026-11-24T17:09:29Z",
-"qui": [
-"lepen"
-]
 },
 {
 "t": "\"Le pire de l'esprit de défaite typiquement vichiste\": Jean-Luc Mélenchon répond à François Bayrou sur son refus de choisir en cas de second tour entre LFI et le RN",
@@ -470,15 +567,6 @@
 "d": "2026-11-24T15:20:46Z",
 "qui": [
 "philippe"
-]
-},
-{
-"t": "Eric Zemmour définitivement condamné pour avoir affirmé que le maréchal Pétain « avait sauvé les juifs français »",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/societe/article/2026/11/24/eric-zemmour-definitivement-condamne-pour-avoir-affirme-que-le-marechal-petain-avait-sauve-les-juifs-francais_6814807_3224.html",
-"d": "2026-11-24T15:11:21Z",
-"qui": [
-"zemmour"
 ]
 },
 {
@@ -844,15 +932,6 @@
 ]
 },
 {
-"t": "Fabien Roussel",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/fabien-roussel_DN-202105090296.html",
-"d": "2026-11-24T08:37:10Z",
-"qui": [
-"roussel"
-]
-},
-{
 "t": "Présidentielle 2027 : courtisés dans la course aux parrainages, les maires se tiennent en retrait",
 "s": "La Croix",
 "u": "https://www.la-croix.com/politique/presidentielle-2027-courtises-dans-la-course-aux-parrainages-les-maires-se-tiennent-en-retrait-20261124",
@@ -957,15 +1036,6 @@
 "d": "2026-11-24T07:06:38Z",
 "qui": [
 "lisnard"
-]
-},
-{
-"t": "Gabriel Attal",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/gabriel-attal_DN-202108310662.html",
-"d": "2026-11-24T06:02:30Z",
-"qui": [
-"attal"
 ]
 },
 {
@@ -1678,79 +1748,6 @@
 "qui": [
 "melenchon"
 ]
-},
-{
-"t": "« Sur un malentendu, ça peut marcher » : David Lisnard, l’homme qui bouscule la campagne présidentielle",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/politique/sur-un-malentendu-ca-peut-marcher-david-lisnard-lhomme-qui-bouscule-la-campagne-presidentielle-21-11-2026-PLZP2HYR4NEG7LL22MUOFZMRXA.php",
-"d": "2026-11-21T12:00:00Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Présidentielle 2027 : François Ruffin retire sa candidature prenant « acte de l’impasse » de sa campagne",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-francois-ruffin-retire-sa-candidature-prenant-acte-de-limpasse-de-sa-campagne-21-11-2026-U32SHNW4YVHQNKT3Z6GQX5AEVM.php",
-"d": "2026-11-21T12:00:00Z",
-"qui": []
-},
-{
-"t": "« Lisnard, c’est Pac-Man, il a mangé Retailleau » : Philippe et Attal bousculés par le phénomène Lisnard",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/lisnard-cest-pac-man-il-a-mange-retailleau-philippe-et-attal-bouscules-par-le-phenomene-lisnard-21-11-2026-D237CPRATVHDLDKUFBRMSE2PQU.php",
-"d": "2026-11-21T12:00:00Z",
-"qui": [
-"attal",
-"lisnard",
-"retailleau"
-]
-},
-{
-"t": "Présidentielle 2027 : le tacle de Sandrine Rousseau à Yannick Jadot qui s’est « enfermé dans un truc anti-Mélenchon primaire »",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/cest-une-impasse-le-tacle-de-sandrine-rousseau-a-yannick-jadot-qui-sest-enferme-dans-un-truc-anti-melenchon-primaire-21-11-2026-26JTMGDY4VEZLBKY3G3YSUBKF4.php",
-"d": "2026-11-21T12:00:00Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "« Nous sommes plus proches de lui que de Lisnard » : chez les macronistes, la tentation Hollande",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/nous-sommes-plus-proches-de-lui-que-de-lisnard-chez-les-macronistes-la-tentation-hollande-21-11-2026-5DPD5N4HGRAHZKOFH4KIUPN5BA.php",
-"d": "2026-11-21T12:00:00Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Tondelier-Mélenchon : et si l’histoire n’était pas encore écrite ?",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/elections/tondelier-melenchon-et-si-lhistoire-netait-pas-encore-ecrite-20261121_HK7DHTMEIJC2LMGTVCRHITA4HU/",
-"d": "2026-11-21T08:08:00Z",
-"qui": [
-"melenchon",
-"tondelier"
-]
-},
-{
-"t": "Les policiers ont-ils le droit de manifester? Les règles derrière la polémique engagée par Jean-Luc Mélenchon",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/les-policiers-ont-ils-le-droit-de-manifester-les-regles-derriere-la-polemique-engagee",
-"d": "2026-11-21T08:05:03Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Le candidat LR Bruno Retailleau cherche la meilleure porte de sortie",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/podcasts/politique-le-choix-de-la-semaine/20261121-le-candidat-lr-bruno-retailleau-cherche-la-meilleure-porte-de-sortie",
-"d": "2026-11-21T06:46:52Z",
-"qui": [
-"retailleau"
-]
 }
 ],
 "sources": {
@@ -1758,14 +1755,14 @@
 "franceinfo": 6,
 "Libération": 19,
 "Le Figaro": 9,
-"Le Parisien": 53,
+"Le Parisien": 54,
 "20 Minutes": 12,
 "Ouest-France": 0,
-"BFMTV": 7,
+"BFMTV": 16,
 "France 24": 5,
 "La Croix": 24,
 "LCP": 35,
 "RFI": 7
 },
-"maj": "2026-11-25T06:17:44Z"
+"maj": "2026-11-25T07:49:20Z"
 }
