@@ -5,7 +5,7 @@
 "t": "« Ça vous intéresserait de venir la voir ? » : Robert Ménard raconte comment il a invité Teddy Riner à Béziers",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/ca-vous-interesserait-de-venir-la-voir-robert-menard-raconte-comment-il-a-invite-teddy-riner-a-beziers-25-11-2026-FALECOIWZFCB7GMV5Q5HA5AB6A.php",
-"d": "2026-11-25T08:52:41Z",
+"d": "2026-11-25T10:12:48Z",
 "qui": [
 "riner"
 ]
@@ -14,7 +14,7 @@
 "t": "Présidentielle 2027 : en cas de second tour Mélenchon-Le Pen, Édouard Philippe annonce qu’il votera blanc",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-en-cas-de-second-tour-melenchon-le-pen-edouard-philippe-annonce-quil-votera-blanc-25-11-2026-4E6INSGPNFDP7HIPB7GUSFGVSY.php",
-"d": "2026-11-25T08:52:41Z",
+"d": "2026-11-25T10:12:48Z",
 "qui": [
 "melenchon",
 "philippe"
@@ -24,7 +24,59 @@
 "t": "Présidentielle 2027 : « L’extrême droite et l’extrême gauche sont deux poisons mortels », estime Jean-Noël Barrot",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-lextreme-droite-et-lextreme-gauche-sont-deux-poisons-mortels-estime-jean-noel-barrot-25-11-2026-HIAJ32PPXVDTHE3WPTR4INGQLU.php",
-"d": "2026-11-25T08:52:41Z",
+"d": "2026-11-25T10:12:48Z",
+"qui": []
+},
+{
+"t": "DIRECT. Présidentielle 2027 : David Lisnard saura dans deux heures s'il est réélu à la tête de l'AMF",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-deuxieme-jour-du-congres-des-maires-de-france-de-nombreux-candidats-attendus-sur-place-25-11-2026-EL5DLN7IZNHUBPHP32WEMDQEM4.php",
+"d": "2026-11-25T10:12:48Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Un second tour Mélenchon-Le Pen à la présidentielle 2027 mettrait la France \"au bord de la guerre civile\", affirme Gérald Darmanin",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/un-second-tour-melenchon-le-pen-a-la-presidentielle-2027-mettrait-la-france-au-bord-de-la-guerre-civile-affirme-gerald-darmanin_8298966.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-25T09:49:33Z",
+"qui": [
+"lepen",
+"melenchon"
+]
+},
+{
+"t": "LES ÉCLAIREURS - Édouard Philippe - David Lisnard: quelles différences dans leurs projets?",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/video-les-eclaireurs-edouard-philippe-david-lisnard-quelles-differences-dans-leurs-projets_VN-202611250463.html",
+"d": "2026-11-25T09:47:43Z",
+"qui": [
+"lisnard",
+"philippe"
+]
+},
+{
+"t": "Présidentielle 2027 : \"Je ne comprends pas du tout les ralliements à Jean-Luc Mélenchon, il y a un côté maso\", estime Karim Bouamrane",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/replay-jt/franceinfo/6h30-9h30/7-heures/la-matinale-info-du-mercredi-25-novembre-2026_8291456.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-25T09:37:12Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Pourquoi l’Elysée ne veut pas bouger les dates de l’élection présidentielle",
+"s": "Libération",
+"u": "https://www.liberation.fr/politique/pourquoi-lelysee-ne-veut-pas-bouger-les-dates-de-la-presidentielle-20261125_J7FPPYC42FBF7L7EMLTCI7M7SI/",
+"d": "2026-11-25T09:32:26Z",
+"qui": []
+},
+{
+"t": "Présidentielle 2027 : LFI veut revoir la règle des 500 parrainages pour être candidat (sans passer par les maires)",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265565-20261125-presidentielle-2027-lfi-veut-revoir-regle-500-parrainages-etre-candidat-passer-maires?at_medium=display&at_campaign=149",
+"d": "2026-11-25T09:12:05Z",
 "qui": []
 },
 {
@@ -66,16 +118,6 @@
 ]
 },
 {
-"t": "Un second tour Mélenchon-Le Pen à la présidentielle 2027 mettrait la France \"au bord de la guerre civile\", affirme Gérald Darmanin",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/un-second-tour-melenchon-le-pen-a-la-presidentielle-2027-mettrait-la-france-au-bord-de-la-guerre-civile-affirme-gerald-darmanin_8298966.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-25T08:14:41Z",
-"qui": [
-"lepen",
-"melenchon"
-]
-},
-{
 "t": "Présidentielle 2027: Edouard Philippe défie David Lisnard et lui propose un débat télévisé",
 "s": "LCP",
 "u": "https://lcp.fr/actualites/presidentielle-2027-edouard-philippe-defie-david-lisnard-et-lui-propose-un-debat",
@@ -100,13 +142,6 @@
 "qui": [
 "glucksmann"
 ]
-},
-{
-"t": "DIRECT. Présidentielle 2027 : l’extrême droite et l’extrême gauche sont « deux poisons mortels », estime Jean-Noël Barrot",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-deuxieme-jour-du-congres-des-maires-de-france-de-nombreux-candidats-attendus-sur-place-25-11-2026-EL5DLN7IZNHUBPHP32WEMDQEM4.php",
-"d": "2026-11-25T07:49:20Z",
-"qui": []
 },
 {
 "t": "Edouard Philippe",
@@ -1720,51 +1755,14 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "Présidentielle 2027 : Marine Le Pen couperait les subventions du Planning familial s'il continue « à faire de la politique »...",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4264740-20261122-presidentielle-2027-marylise-leon-veut-eviter-second-tour-lendemain-1er-mai?at_medium=display&at_campaign=149",
-"d": "2026-11-22T07:10:24Z",
-"qui": [
-"lepen"
-]
-},
-{
-"t": "Présidentielle 2027 : Après son retrait, Ruffin courtisé par Roussel et Glucksmann vers l’Élysée",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4264738-20261122-presidentielle-2027-apres-retrait-ruffin-courtise-roussel-glucksmann-vers-elysee?at_medium=display&at_campaign=149",
-"d": "2026-11-22T06:00:01Z",
-"qui": [
-"glucksmann",
-"roussel"
-]
-},
-{
-"t": "Pour Jean-Luc Mélenchon, les limites du modèle brésilien Lula",
-"s": "Libération",
-"u": "https://www.liberation.fr/idees-et-debats/tribunes/pour-jean-luc-melenchon-les-limites-du-modele-bresilien-lula-20261122_OW7T3RMFRJBCFBXKDFS5VMLKXY/",
-"d": "2026-11-22T05:14:00Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Présidentielle 2027: la stratégie d'Éric Zemmour pour retrouver de l'élan",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/france/20261121-pr%C3%A9sidentielle-2027-la-strat%C3%A9gie-d-%C3%A9ric-zemmour-pour-retrouver-de-l-%C3%A9lan",
-"d": "2026-11-21T20:42:34Z",
-"qui": [
-"zemmour"
-]
 }
 ],
 "sources": {
 "Le Monde": 10,
-"franceinfo": 5,
-"Libération": 19,
+"franceinfo": 6,
+"Libération": 20,
 "Le Figaro": 9,
-"Le Parisien": 53,
+"Le Parisien": 54,
 "20 Minutes": 12,
 "Ouest-France": 0,
 "BFMTV": 16,
@@ -1773,5 +1771,5 @@
 "LCP": 36,
 "RFI": 8
 },
-"maj": "2026-11-25T08:52:41Z"
+"maj": "2026-11-25T10:12:48Z"
 }
