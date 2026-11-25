@@ -2,21 +2,115 @@
 "v": 4,
 "items": [
 {
+"t": "Dates de la présidentielle 2027: le second tour le 2 mai reste la meilleure option, selon le porte-parole du gouvernement",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/dates-de-la-presidentielle-2027-le-second-tour-le-2-mai-reste-la-meilleure-option-selon-le-porte-parole-du-gouvernement_AD-202611250700.html",
+"d": "2026-11-25T15:04:19Z",
+"qui": []
+},
+{
+"t": "Après la réélection de David Lisnard à la tête de l'AMF, Jean-Luc Mélenchon appelle à sa mise en retrait",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-apres-la-reelection-de-david-lisnard-a-la-tete-de-l-amf-jean-luc-melenchon-appelle-a-sa-mise-en-retrait_VN-202611250695.html",
+"d": "2026-11-25T14:59:52Z",
+"qui": [
+"lisnard",
+"melenchon"
+]
+},
+{
+"t": "DIRECT. Présidentielle 2027: François Hollande estime que “ce sont les dernières semaines” de la campagne “qui comptent”",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html",
+"d": "2026-11-25T14:56:52Z",
+"qui": []
+},
+{
+"t": "Présidentielle 2027 : quelles sont les prochaines étapes pour les 38 candidats à l'Élysée ?",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/presidentielle-2027-quelles-sont-les-prochaines-etapes-pour-les-38-candidats-a-l-elysee_8299836.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-25T14:54:05Z",
+"qui": []
+},
+{
+"t": "Présidentielle 2027: \"La discussion a lieu\" entre Jean-Luc Mélenchon et Marine Tondelier",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-la-discussion-a-lieu-entre-jean-luc-melenchon-et-marine-tondelier_VN-202611250688.html",
+"d": "2026-11-25T14:44:09Z",
+"qui": [
+"melenchon",
+"tondelier"
+]
+},
+{
+"t": "En campagne pour l’Elysée, David Lisnard réélu à la tête des maires de France",
+"s": "Libération",
+"u": "https://www.liberation.fr/politique/elections/en-campagne-pour-lelysee-david-lisnard-reelu-a-la-tete-des-maires-de-france-20261125_SGKQEG6H3FHHPMAGJUG2OU2I2Q/",
+"d": "2026-11-25T14:43:21Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Présidentielle 2027: \"Il y a suffisamment de candidats\", juge François Hollande",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-il-y-a-suffisamment-de-candidats-juge-francois-hollande_VN-202611250685.html",
+"d": "2026-11-25T14:40:32Z",
+"qui": []
+},
+{
+"t": "François Hollande pense que Jean-Luc Mélenchon \"ne veut pas gagner\" l'élection présidentielle",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-francois-hollande-pense-que-jean-luc-melenchon-ne-veut-pas-gagner-l-election-presidentielle_VN-202611250675.html",
+"d": "2026-11-25T14:26:56Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Présidentielle 2027: \"On ne gagne pas une élection sur la peur\", rappelle François Hollande",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-on-ne-gagne-pas-une-election-sur-la-peur-rappelle-francois-hollande_VN-202611250673.html",
+"d": "2026-11-25T14:25:17Z",
+"qui": []
+},
+{
+"t": "Présidentielle 2027: \"Ce sont les dernières semaines qui comptent, ça va s'éclaircir de plus en plus\", lance François Hollande",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-ce-sont-les-dernieres-semaines-qui-comptent-ca-va-s-eclaircir-de-plus-en-plus-lance-francois-hollande_VN-202611250670.html",
+"d": "2026-11-25T14:21:11Z",
+"qui": []
+},
+{
+"t": "ÉDITO. Présidentielle 2027 : à quoi joue François Hollande ?",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/politique/francois-hollande/edito-presidentielle-2027-a-quoi-joue-francois-hollande_8299791.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-25T14:08:38Z",
+"qui": []
+},
+{
+"t": "Congrès des maires : les candidats à la Présidentielle défilent en quête de parrainages",
+"s": "France 24",
+"u": "https://www.france24.com/fr/vid%C3%A9o/20261125-congr%C3%A8s-des-maires-les-candidats-%C3%A0-la-pr%C3%A9sidentielle-d%C3%A9filent-en-qu%C3%AAte-de-parrainages",
+"d": "2026-11-25T14:00:09Z",
+"qui": []
+},
+{
+"t": "Présidentielle 2027: Teddy Riner a \"passé la centaine\" de parrainages",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-teddy-riner-a-passe-la-centaine-de-parrainages_VN-202611250658.html",
+"d": "2026-11-25T13:59:04Z",
+"qui": [
+"riner"
+]
+},
+{
 "t": "Après sa réélection à la tête des maires de France, David Lisnard y voit \"une responsabilité supplémentaire\" mais pas \"un tremplin\" pour la présidentielle",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/apres-sa-reelection-a-la-tete-des-maires-de-france-david-lisnard-y-voit-une-responsabilite-supplementaire-mais-pas-un-tremplin-pour-la-presidentielle_AD-202611250646.html",
 "d": "2026-11-25T13:51:03Z",
 "qui": [
 "lisnard"
-]
-},
-{
-"t": "DIRECT. Présidentielle 2027: \"on a déjà dépassé la centaine\", Teddy Riner assure que ses parrainages \"avancent bien\" mais reconnaît \"un petit stress\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html",
-"d": "2026-11-25T13:48:57Z",
-"qui": [
-"riner"
 ]
 },
 {
@@ -179,15 +273,6 @@
 ]
 },
 {
-"t": "En campagne pour l’Elysée, David Lisnard réélu à la tête des maires de France",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/elections/en-campagne-pour-lelysee-david-lisnard-reelu-a-la-tete-des-maires-de-france-20261125_SGKQEG6H3FHHPMAGJUG2OU2I2Q/",
-"d": "2026-11-25T12:37:49Z",
-"qui": [
-"lisnard"
-]
-},
-{
 "t": "Julie Boillot, porte-parole d'Édouard Philippe: \"Nous avons le sentiment que la ligne de droite et du centre n'est pas la même pour tout le monde\"",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-julie-boillot-porte-parole-d-edouard-philippe-nous-avons-le-sentiment-que-la-ligne-de-droite-et-du-centre-n-est-pas-la-meme-pour-tout-le-monde_VN-202611250582.html",
@@ -251,12 +336,12 @@
 "qui": []
 },
 {
-"t": "DIRECT. Présidentielle 2027 : au congrès des maires, Teddy Riner assure avoir déjà «une centaine» de parrainages",
+"t": "DIRECT. Présidentielle 2027 : «Jean-Luc Mélenchon ne veut pas gagner», estime François Hollande, toujours pas candidat",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-deuxieme-jour-du-congres-des-maires-de-france-de-nombreux-candidats-attendus-sur-place-25-11-2026-EL5DLN7IZNHUBPHP32WEMDQEM4.php",
 "d": "2026-11-25T12:00:00Z",
 "qui": [
-"riner"
+"melenchon"
 ]
 },
 {
@@ -1671,115 +1756,21 @@
 "qui": [
 "lepen"
 ]
-},
-{
-"t": "David Lisnard est \"un macroniste démasqué\", estime Jordan Bardella, président du Rassemblement national",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-david-lisnard-est-un-macroniste-demasque-estime-jordan-bardella-president-du-rassemblement-national_VN-202611230815.html",
-"d": "2026-11-23T19:06:18Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Jordan Bardella qualifie David Lisnard de \"contrebandier du macronisme\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-jordan-bardella-qualifie-david-lisnard-de-contrebandier-du-macronisme_VN-202611230806.html",
-"d": "2026-11-23T19:00:56Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Présidentielle 2027: \"La première mesure que nous prendrons sera la dissolution de tous les groupuscules d'ultragauche et d'ultradroite qui prônent la violence contre la démocratie et les institutions\", assure Jordan Bardella",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-la-premiere-mesure-que-nous-prendrons-sera-la-dissolution-de-tous-les-groupuscules-d-ultragauche-et-d-ultradroite-qui-pronent-la-violence-contre-la-democratie-et-les-institutions-assure-jordan-bardella_VN-202611230799.html",
-"d": "2026-11-23T18:56:24Z",
-"qui": []
-},
-{
-"t": "Présidentielle : la date du 2 mai 2027 ne passe (toujours) pas",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/elections/presidentielle-la-date-du-2-mai-ne-passe-toujours-pas-20261123_FUH7MUQFCRBKVFT2VLPHMSGF2I/",
-"d": "2026-11-23T18:06:55Z",
-"qui": []
-},
-{
-"t": "Yannick Jadot et Jérémie Iordanoff, en rupture avec Marine Tondelier, créent un nouveau parti écologiste",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/politique/article/2026/11/23/yannick-jadot-et-jeremie-iordanoff-en-rupture-avec-marine-tondelier-creent-un-nouveau-parti-ecologiste_6814435_823448.html",
-"d": "2026-11-23T17:43:27Z",
-"qui": [
-"tondelier"
-]
-},
-{
-"t": "Après leur rupture avec Marine Tondelier, Yannick Jadot et Jérémie Iordanoff lancent un nouveau parti écolo",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/marine-tondelier-a-mene-les-ecologistes-dans-une-impasse-apres-leur-rupture-yannick-jadot-et-jeremie-iordanoff-annoncent-la-creation-dun-nouveau-parti-20261123_WAYO5QZHJ5DZJOGEXCTCM266LY/",
-"d": "2026-11-23T17:19:34Z",
-"qui": [
-"tondelier"
-]
-},
-{
-"t": "Présidentielle 2027 : Le parti Génération. s (créé par Benoît Hamon) rallie la candidature de Mélenchon",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4265178-20261123-presidentielle-2027-parti-generation-cree-benoit-hamon-rallie-candidature-melenchon?at_medium=display&at_campaign=149",
-"d": "2026-11-23T16:55:59Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Présidentielle 2027 : des tatamis aux mairies, Teddy Riner en quête des 500 signatures",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/presidentielle-2027-des-tatamis-aux-mairies-teddy-riner-en-quete-des-500-signatures-20261123",
-"d": "2026-11-23T16:34:29Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "«Tintin au Congo» : Teddy Riner envisage de porter plainte contre Emmanuelle Mignon",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/elections/tintin-au-congo-teddy-riner-porte-plainte-contre-emmanuelle-mignon-20261123_VVC77KHMFJBHPHXYX3GTIT44XA/",
-"d": "2026-11-23T16:21:13Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "Main tendue de Tondelier à Mélenchon : survivre pour vivre, une passion écologiste",
-"s": "Libération",
-"u": "https://www.liberation.fr/idees-et-debats/tribunes/main-tendue-de-tondelier-a-melenchon-survivre-pour-vivre-une-passion-ecologiste-20261123_LZWF3PPKDBBO3OG7FALPD5IFSE/",
-"d": "2026-11-23T16:03:08Z",
-"qui": [
-"melenchon",
-"tondelier"
-]
-},
-{
-"t": "Présidentielle 2027 : pourquoi la date du second tour inquiète syndicats et candidats",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/presidentielle-2027-pourquoi-la-date-du-second-tour-inquiete-syndicats-et-candidats-20261123",
-"d": "2026-11-23T15:57:25Z",
-"qui": []
 }
 ],
 "sources": {
-"Le Monde": 9,
+"Le Monde": 7,
 "franceinfo": 4,
 "Libération": 20,
 "Le Figaro": 9,
 "Le Parisien": 55,
-"20 Minutes": 13,
-"Ouest-France": 2,
-"BFMTV": 18,
-"France 24": 5,
+"20 Minutes": 11,
+"Ouest-France": 0,
+"BFMTV": 20,
+"France 24": 6,
 "La Croix": 24,
 "LCP": 37,
 "RFI": 8
 },
-"maj": "2026-11-25T13:53:49Z"
+"maj": "2026-11-25T15:05:10Z"
 }
