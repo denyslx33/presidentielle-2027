@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-24",
+ "maj": "2026-11-25",
  "principaux": [
   {
    "id": "arthaud",
@@ -481,7 +481,7 @@
    "id": "lisnard",
    "nom": "David Lisnard",
    "parti": "Nouvelle Énergie",
-   "role": "Maire de Cannes, président de l'Association des maires de France. A quitté LR le 31 mars 2026.",
+   "role": "Maire de Cannes, président de l'Association des maires de France (réélu le 25 novembre 2026 pour un troisième mandat). A quitté LR le 31 mars 2026.",
    "annonce": "Candidat déclaré en 2026.",
    "mesures": [
     "Supprimer la C3S et la CVAE (11,5 Md€ d'impôts de production en moins)",
@@ -987,9 +987,9 @@
     "url": "https://www.lalibre.be/dernieres-depeches/2026/11/09/des-tatamis-a-lelysee-teddy-riner-annonce-sa-candidature-a-la-presidentielle-TN24TXUYZBDHLNYIUW4YHZJEI4/"
    },
    "parrainages": {
-    "texte": "Aucun chiffre public revendiqué.",
-    "source": "Le Parisien, 9 nov. 2026",
-    "url": null
+    "texte": "Revendique plus d'une centaine de promesses de parrainage (annonce du 25 novembre 2026).",
+    "source": "BFMTV, 25 nov. 2026",
+    "url": "https://www.bfmtv.com/politique/elections/presidentielle/on-a-deja-depasse-la-centaine-teddy-riner-assure-que-ses-parrainages-pour-la-presidentielle-avancent-bien-mais-reconnait-un-petit-stress_AV-202611250706.html"
    },
    "finances": {
     "texte": "Campagne financée par des dons, des appels de fonds et des fonds propres. L'association de financement est présidée par l'entrepreneur Philippe Véran.",

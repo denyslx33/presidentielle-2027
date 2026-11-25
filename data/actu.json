@@ -3,6 +3,115 @@
  "items": [
   {
    "date": "2026-11-25",
+   "qui": [
+    "lisnard"
+   ],
+   "texte": "David Lisnard est réélu à la présidence de l'Association des maires de France, pour un troisième mandat.",
+   "source": "Le Monde",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/25/david-lisnard-candidat-a-l-election-presidentielle-reelu-a-la-tete-de-l-association-des-maires-de-france_6815094_823448.html"
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [
+    "melenchon",
+    "lisnard"
+   ],
+   "texte": "Après la réélection de David Lisnard à la tête de l'Association des maires de France, Jean-Luc Mélenchon appelle à sa mise en retrait.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-apres-la-reelection-de-david-lisnard-a-la-tete-de-l-amf-jean-luc-melenchon-appelle-a-sa-mise-en-retrait_VN-202611250695.html"
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [
+    "lisnard"
+   ],
+   "texte": "David Lisnard répond à Jean-François Copé, qui l'a qualifié de « populiste », en dénonçant « votre club d'énarques ».",
+   "source": "Le Parisien",
+   "url": "https://www.leparisien.fr/elections/presidentielle/votre-club-denarques-david-lisnard-sen-prend-vivement-a-jean-francois-cope-qui-la-qualifie-de-populiste-25-11-2026-AEBJX6TQWFE45EL6W3OEQVZ53E.php"
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [
+    "riner"
+   ],
+   "texte": "Teddy Riner critique le déploiement de soldats français en Ukraine pour des missions non combattantes : « Ce n'est pas notre guerre ». Il revient ensuite sur ses propos et dit vouloir être « acteur de la paix ».",
+   "source": "Le Monde",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/25/teddy-riner-critique-le-deploiement-de-soldats-francais-en-ukraine-pour-des-missions-non-combattantes-ce-n-est-pas-notre-guerre_6815137_823448.html"
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [
+    "riner"
+   ],
+   "texte": "Teddy Riner affirme avoir « déjà dépassé la centaine » de promesses de parrainage.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/on-a-deja-depasse-la-centaine-teddy-riner-assure-que-ses-parrainages-pour-la-presidentielle-avancent-bien-mais-reconnait-un-petit-stress_AV-202611250706.html"
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [
+    "attal"
+   ],
+   "texte": "Au Congrès des maires, Gabriel Attal appelle au « rassemblement des démocrates pour épargner à la France un second tour entre les extrêmes » et espère que la réunion des candidats de la droite et du centre autour de Gérard Larcher permettra d'avancer vers une méthode de départage.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-gabriel-attal-appelle-au-rassemblement-des-democrates-pour-epargner-a-la-france-un-second-tour-entre-les-extremes_VN-202611250734.html"
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [
+    "glucksmann"
+   ],
+   "texte": "Raphaël Glucksmann estime que « nous éviterons le duel » RN-LFI au second tour. Sur une possible candidature de François Hollande : « Chacun son rythme, nous on est en campagne ».",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-raphael-glucksmann-estime-que-nous-eviterons-le-duel-rn-lfi-au-second-tour_VN-202611250577.html"
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [],
+   "texte": "Au Congrès des maires, François Hollande juge qu'« il y a suffisamment de candidats » et que « ce sont les dernières semaines » de la campagne « qui comptent ».",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-il-y-a-suffisamment-de-candidats-juge-francois-hollande_VN-202611250685.html"
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [
+    "melenchon"
+   ],
+   "texte": "Seul candidat présent aux Assises de la mer, Jean-Luc Mélenchon regrette « le désintérêt » des autres. La France insoumise présente un plan pour en finir avec le « saccage de la mer » (urbanisation du littoral, mouillage des yachts, pêche intensive).",
+   "source": "Ouest-France",
+   "url": "https://www.ouest-france.fr/politique/jean-luc-melenchon/assises-de-la-mer-seul-candidat-a-la-presidentielle-present-jean-luc-melenchon-regrette-le-desinteret-des-autres-149aa44e-e8c8-11f1-9b33-2f81462d3339"
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [
+    "lepen"
+   ],
+   "texte": "À Reims, Marine Le Pen rencontre des artisans et des commerçants et évoque « une nécessité de redonner de l'oxygène aux très petites entreprises ».",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/front-national/video-une-necessite-de-redonner-de-l-oxygene-aux-tres-petites-entreprises-marine-le-pen-a-la-rencontre-d-artisans-et-de-commercants-a-reims_VN-202611250533.html"
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [
+    "melenchon",
+    "tondelier"
+   ],
+   "texte": "« La discussion a lieu » entre Jean-Luc Mélenchon et Marine Tondelier, avant le vote des adhérents des Écologistes en décembre.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-la-discussion-a-lieu-entre-jean-luc-melenchon-et-marine-tondelier_VN-202611250688.html"
+  },
+  {
+   "date": "2026-11-25",
+   "qui": [
+    "melenchon"
+   ],
+   "texte": "Au Congrès des maires, des responsables de La France insoumise cherchent des parrainages en l'absence de Jean-Luc Mélenchon : « Nous les aurons, ces 500 signatures ! ».",
+   "source": "Ouest-France",
+   "url": "https://www.ouest-france.fr/politique/nous-les-aurons-ces-500-signatures-lfi-a-la-peche-aux-parrainages-sans-jean-luc-melenchon-au-congres-des-maires-4ea6d218-e8d5-11f1-86c1-70195b4d2e52",
+   "parti": true
+  },
+  {
+   "date": "2026-11-25",
    "qui": [],
    "texte": "Pour le gouvernement, il n'y a « pas de raison de changer » les dates de l'élection, fixées aux 18 avril et 2 mai 2027. Selon Mathieu Lefèvre, ce choix a été fait pour « maximiser la participation ».",
    "source": "BFMTV",
@@ -445,124 +554,6 @@
    "texte": "Dominique de Villepin officialise sa candidature lors d'une conférence de presse.",
    "source": "Toute l'Europe",
    "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/presidentielle-2027-qui-sont-les-candidats-deja-declares/"
-  },
-  {
-   "date": "2026-11-20",
-   "qui": [],
-   "texte": "Enquête AMF-CEVIPOF : près d'un maire sur deux ne souhaite parrainer aucun candidat.",
-   "source": "L'Express via Orange",
-   "url": "https://actu.orange.fr/politique/presidentielle-2027-un-maire-sur-deux-reticent-a-parrainer-un-candidat-l-express-via-6medias-CNT000002tW8Dc.html"
-  },
-  {
-   "date": "2026-11-19",
-   "qui": [],
-   "texte": "L'Arcom publie ses règles pour la présidentielle : les plus gros créateurs de contenus vidéo devront aussi respecter le pluralisme. Équité du 16 mars au 4 avril, égalité stricte des temps de parole du 5 au 30 avril.",
-   "source": "Brut",
-   "url": "https://www.brut.media/fr/articles/presidentielle-les-createurs-de-contenus-devront-desormais-respecter-le-pluralisme-annonce-l-arcom"
-  },
-  {
-   "date": "2026-11-19",
-   "qui": [
-    "tondelier"
-   ],
-   "parti": true,
-   "texte": "Le conseil fédéral du 26 novembre fixera les options soumises au vote des adhérents, du 10 au 13 décembre : candidature autonome, soutien à Jean-Luc Mélenchon ou rapprochement avec Raphaël Glucksmann.",
-   "source": "Public Sénat",
-   "url": "https://www.publicsenat.fr/actualites/politique/la-main-tendue-de-marine-tondelier-a-melenchon-peut-elle-faire-imploser-les-ecologistes"
-  },
-  {
-   "date": "2026-11-19",
-   "qui": [
-    "attal"
-   ],
-   "texte": "Gabriel Attal reconnaît ne pas avoir convaincu à ce stade de la campagne et cherche une voie entre primaire et coalition.",
-   "source": "AFP via La Gazette France",
-   "url": "https://www.lagazettefrance.fr/article/attal-admet-qu-il-n-a-pas-convaincu-a-ce-stade-de-la-campagne"
-  },
-  {
-   "date": "2026-11-18",
-   "qui": [
-    "tondelier",
-    "melenchon",
-    "glucksmann"
-   ],
-   "texte": "Marine Tondelier se dit prête à une coalition autour de Jean-Luc Mélenchon. Raphaël Glucksmann critique ce choix. Vote des adhérents écologistes du 10 au 13 décembre.",
-   "source": "LCP",
-   "url": "https://lcp.fr/actualites/presidentielle-2027-marine-tondelier-prete-a-une-coalition-autour-de-jean-luc-melenchon"
-  },
-  {
-   "date": "2026-11-18",
-   "qui": [
-    "philippe"
-   ],
-   "texte": "Édouard Philippe présente le « volume 1 » de son programme (142 propositions). Grande réunion publique prévue à Arras le 24 janvier.",
-   "source": "LCP",
-   "url": "https://lcp.fr/actualites/presidentielle-2027-edouard-philippe-promet-des-reformes-radicales-pour-relancer-sa"
-  },
-  {
-   "date": "2026-11-18",
-   "qui": [
-    "attal",
-    "retailleau",
-    "lisnard",
-    "philippe"
-   ],
-   "texte": "Une primaire entre Attal, Retailleau et Lisnard se dessine, Philippe refuse toujours d'y participer.",
-   "source": "LCP",
-   "url": "https://lcp.fr/actualites/presidentielle-2027-entre-gabriel-attal-bruno-retailleau-et-david-lisnard-une-primaire"
-  },
-  {
-   "date": "2026-11-17",
-   "qui": [
-    "attal",
-    "retailleau",
-    "lisnard"
-   ],
-   "texte": "Les équipes d'Attal, Retailleau et Lisnard discutent d'une primaire ouverte à deux tours, en ligne, fin janvier. Le camp d'Édouard Philippe était absent et la participation d'Éric Zemmour divise.",
-   "source": "Public Sénat",
-   "url": "https://www.publicsenat.fr/actualites/politique/primaire-les-equipes-dattal-retailleau-et-lisnard-salignent-sur-un-vote-en-janvier-moins-sur-le-cas-deric-zemmour"
-  },
-  {
-   "date": "2026-11-16",
-   "qui": [
-    "lepen",
-    "melenchon",
-    "glucksmann",
-    "retailleau",
-    "attal",
-    "philippe"
-   ],
-   "texte": "Débat sur TF1 et LCI depuis un entrepôt des Restos du Cœur : Marine Le Pen, Jean-Luc Mélenchon, Raphaël Glucksmann, Bruno Retailleau et Gabriel Attal débattent pouvoir d'achat et pauvreté. Édouard Philippe n'y participe pas.",
-   "source": "LCP",
-   "url": "https://lcp.fr/actualites/logement-associations-jeunesse-ce-qu-il-faut-retenir-du-debat-presidentiel-sur-lci"
-  },
-  {
-   "date": "2026-11-14",
-   "qui": [
-    "riner"
-   ],
-   "texte": "Au salon du Made in France, Teddy Riner se dit « ni de droite ni de gauche » et assure ne pas être macroniste. Il qualifie de « baiser empoisonné » les félicitations d'Emmanuel Macron.",
-   "source": "Euronews",
-   "url": "https://fr.euronews.com/2026/11/15/teddy-riner-qualifie-de-baiser-empoisonne-les-felicitations-du-chef-de-letat-pour-sa-candi"
-  },
-  {
-   "date": "2026-11-13",
-   "qui": [
-    "riner"
-   ],
-   "texte": "Premier déplacement de campagne de Teddy Riner, à l'hôpital Delafontaine de Saint-Denis, à la rencontre des soignants.",
-   "source": "Paris Match / AFP",
-   "url": "https://www.parismatch.be/actualites/monde/2026/11/13/teddy-riner-debute-sa-campagne-presidentielle-dans-un-hopital-jai-ecoute-jai-note-le-temps-de-la-reflexion-va-venir-ZX2IYQKNZZAEJD72XUF2ZVSDTQ/"
-  },
-  {
-   "date": "2026-11-12",
-   "qui": [
-    "retailleau"
-   ],
-   "parti": true,
-   "texte": "Bruno Retailleau écrit à Édouard Philippe, Gabriel Attal et David Lisnard pour proposer une primaire les 31 janvier et 7 février.",
-   "source": "LCP",
-   "url": "https://lcp.fr/actualites/presidentielle-bruno-retailleau-propose-une-primaire-les-31-janvier-et-7-fevrier-445008"
   }
  ]
 }
