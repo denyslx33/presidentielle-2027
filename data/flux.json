@@ -5,7 +5,7 @@
 "t": "« Ça vous intéresserait de venir la voir ? » : Robert Ménard raconte comment il a invité Teddy Riner à Béziers",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/ca-vous-interesserait-de-venir-la-voir-robert-menard-raconte-comment-il-a-invite-teddy-riner-a-beziers-25-11-2026-FALECOIWZFCB7GMV5Q5HA5AB6A.php",
-"d": "2026-11-25T05:10:19Z",
+"d": "2026-11-25T06:17:44Z",
 "qui": [
 "riner"
 ]
@@ -14,9 +14,44 @@
 "t": "Présidentielle 2027 : en cas de second tour Mélenchon-Le Pen, Édouard Philippe annonce qu’il votera blanc",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-en-cas-de-second-tour-melenchon-le-pen-edouard-philippe-annonce-quil-votera-blanc-25-11-2026-4E6INSGPNFDP7HIPB7GUSFGVSY.php",
-"d": "2026-11-25T05:10:19Z",
+"d": "2026-11-25T06:17:44Z",
 "qui": [
 "melenchon",
+"philippe"
+]
+},
+{
+"t": "Présidentielle 2027: où en sont les candidats dans leur récolte des 500 parrainages?",
+"s": "LCP",
+"u": "https://lcp.fr/actualites/presidentielle-2027-ou-en-sont-les-candidats-dans-leur-recolte-des-500-parrainages",
+"d": "2026-11-25T05:35:12Z",
+"qui": []
+},
+{
+"t": "Six milliards d’euros d’aide versés chaque année à l’Ukraine, selon Marine Le Pen ? Une affirmation trompeuse",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/monde/ukraine/4265337-20261125-six-milliards-euros-aide-verses-chaque-annee-ukraine-selon-marine-pen-affirmation-trompeuse?at_medium=display&at_campaign=149",
+"d": "2026-11-25T05:32:36Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "« On a beaucoup échangé » : Macron-Lisnard, les coulisses d’un rendez-vous manqué qui a viré à la guerre froide",
+"s": "Le Figaro",
+"u": "https://www.lefigaro.fr/elections/presidentielles/on-a-beaucoup-echange-macron-lisnard-les-coulisses-d-un-rendez-vous-manque-qui-a-vire-a-la-guerre-froide-20261125",
+"d": "2026-11-25T05:05:00Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "EN DIRECT Présidentielle 2027 : Édouard Philippe propose à David Lisnard un débat télévisé…",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265545-20261125-direct-presidentielle-2027-edouard-philippe-propose-david-lisnard-debat-televise?at_medium=display&at_campaign=149",
+"d": "2026-11-25T04:53:33Z",
+"qui": [
+"lisnard",
 "philippe"
 ]
 },
@@ -33,7 +68,7 @@
 "t": "Présidentielle 2027 : LFI, force d’attraction à gauche",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/25/presidentielle-2027-lfi-force-d-attraction-a-gauche_6815035_823448.html",
-"d": "2026-11-25T04:29:29Z",
+"d": "2026-11-25T04:29:28Z",
 "qui": []
 },
 {
@@ -1716,38 +1751,6 @@
 "qui": [
 "retailleau"
 ]
-},
-{
-"t": "Présidentielle: pourquoi LFI n'a pas encore dévoilé le chiffrage de son programme",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/presidentielle-pourquoi-lfi-n-a-pas-encore-devoile-le-chiffrage-de-son-programme-445313",
-"d": "2026-11-21T06:35:14Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027 : David Lisnard, la percée surprise d’un libéral",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/presidentielle-2027-david-lisnard-la-percee-surprise-d-un-liberal-20261120",
-"d": "2026-11-21T06:30:05Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Présidentielle 2027: contraints par l’Arcom de respecter le pluralisme, des créateurs de contenus s’insurgent",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/podcasts/chronique-des-m%C3%A9dias/20261120-pr%C3%A9sidentielle-2027-contraints-par-l-arcom-de-respecter-le-pluralisme-des-cr%C3%A9ateurs-de-contenus-s-insurgent",
-"d": "2026-11-20T23:00:25Z",
-"qui": []
-},
-{
-"t": "David Lisnard, dynamiteur populiste de la bataille à droite",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/lisnard-dynamiteur-populiste-de-la-bataille-a-droite-20261120_XBOH6GUQORBZPOVFP6T6TZRUFA/",
-"d": "2026-11-20T19:52:48Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
@@ -1756,13 +1759,13 @@
 "Libération": 19,
 "Le Figaro": 9,
 "Le Parisien": 53,
-"20 Minutes": 10,
+"20 Minutes": 12,
 "Ouest-France": 0,
 "BFMTV": 7,
 "France 24": 5,
 "La Croix": 24,
-"LCP": 34,
-"RFI": 8
+"LCP": 35,
+"RFI": 7
 },
-"maj": "2026-11-25T05:10:19Z"
+"maj": "2026-11-25T06:17:44Z"
 }
