@@ -2,6 +2,31 @@
 "v": 4,
 "items": [
 {
+"t": "Présidentielle 2027: pour les candidats comme pour les maires, la galère des parrainages",
+"s": "RFI",
+"u": "https://www.rfi.fr/fr/podcasts/reportage-france/20261125-pr%C3%A9sidentielle-2027-pour-les-candidats-comme-pour-les-maires-la-gal%C3%A8re-des-parrainages",
+"d": "2026-11-25T23:06:58Z",
+"qui": []
+},
+{
+"t": "Présidentielle 2027 : \"Il faut une compétition, il faut une sélection\", défend le candidat David Lisnard, partisan d'une primaire",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/presidentielle-2027-il-faut-une-competition-il-faut-une-selection-defend-le-candidat-david-lisnard-partisan-d-une-primaire_8300388.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-25T22:53:33Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Présidentielle 2027 : l'ascension de David Lisnard, réélu président de l'Association des maires de France",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/presidentielle-2027-l-ascension-de-david-lisnard-reelu-president-de-l-association-des-maires-de-france_8300370.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-25T22:51:49Z",
+"qui": [
+"lisnard"
+]
+},
+{
 "t": "\"Marine Le Pen, elle représente le nouveau en-même-tempisme\", estime Alexandra Martin, secrétaire générale de Nouvelle Énergie",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-marine-le-pen-elle-represente-le-nouveau-en-meme-tempisme-estime-alexandra-martin-secretaire-generale-de-nouvelle-energie_VN-202611251026.html",
@@ -30,28 +55,10 @@
 ]
 },
 {
-"t": "Présidentielle 2027 : \"Il faut une compétition, il faut une sélection\", défend le candidat David Lisnard, partisan d'une primaire",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/presidentielle-2027-il-faut-une-competition-il-faut-une-selection-defend-le-candidat-david-lisnard-partisan-d-une-primaire_8300388.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-25T22:12:07Z",
-"qui": [
-"lisnard"
-]
-},
-{
 "t": "Présidentielle 2027 : « La démocratie, c’est le vote »… Lisnard refuse le débat proposé par Philippe",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265806-20261125-presidentielle-2027-democratie-vote-lisnard-refuse-debat-propose-philippe?at_medium=display&at_campaign=149",
 "d": "2026-11-25T22:06:30Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Présidentielle 2027 : l'ascension de David Lisnard, réélu président de l'Association des maires de France",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/presidentielle-2027-l-ascension-de-david-lisnard-reelu-president-de-l-association-des-maires-de-france_8300370.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-25T21:45:11Z",
 "qui": [
 "lisnard"
 ]
@@ -90,16 +97,6 @@
 "d": "2026-11-25T21:25:48Z",
 "qui": [
 "villepin"
-]
-},
-{
-"t": "DIRECT. Présidentielle: David Lisnard rejette la proposition d'un débat avec Édouard Philippe",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html",
-"d": "2026-11-25T21:17:36Z",
-"qui": [
-"lisnard",
-"philippe"
 ]
 },
 {
@@ -219,6 +216,16 @@
 "d": "2026-11-25T20:39:56Z",
 "qui": [
 "villepin"
+]
+},
+{
+"t": "DIRECT. Présidentielle: David Lisnard rejette la proposition d'un débat avec Édouard Philippe",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html",
+"d": "2026-11-25T20:39:05Z",
+"qui": [
+"lisnard",
+"philippe"
 ]
 },
 {
@@ -1753,13 +1760,6 @@
 "u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-christophe-bechu-compte-sur-gerard-larcher-pour-departager-les-candidats-a-droite-sans-primaire-518a4fa2-e7f7-11f1-9b33-2f81462d3339?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
 "d": "2026-11-24T14:59:03Z",
 "qui": []
-},
-{
-"t": "Présidentielle 2027: le Congrès des maires de France, marché aux parrainages des candidats",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/france/20261124-pr%C3%A9sidentielle-2027-le-congr%C3%A8s-des-maires-de-france-march%C3%A9-aux-parrainages-des-candidats",
-"d": "2026-11-24T14:53:36Z",
-"qui": []
 }
 ],
 "sources": {
@@ -1770,11 +1770,11 @@
 "Le Parisien": 54,
 "20 Minutes": 10,
 "Ouest-France": 0,
-"BFMTV": 26,
+"BFMTV": 25,
 "France 24": 9,
 "La Croix": 24,
 "LCP": 37,
-"RFI": 7
+"RFI": 8
 },
-"maj": "2026-11-25T22:55:59Z"
+"maj": "2026-11-25T23:51:35Z"
 }
