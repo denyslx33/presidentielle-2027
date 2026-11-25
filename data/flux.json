@@ -5,9 +5,19 @@
 "t": "« Ça vous intéresserait de venir la voir ? » : Robert Ménard raconte comment il a invité Teddy Riner à Béziers",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/ca-vous-interesserait-de-venir-la-voir-robert-menard-raconte-comment-il-a-invite-teddy-riner-a-beziers-25-11-2026-FALECOIWZFCB7GMV5Q5HA5AB6A.php",
-"d": "2026-11-25T02:56:35Z",
+"d": "2026-11-25T04:02:44Z",
 "qui": [
 "riner"
+]
+},
+{
+"t": "Présidentielle 2027: Édouard Philippe marque ses différences avec David Lisnard",
+"s": "RFI",
+"u": "https://www.rfi.fr/fr/france/20261125-pr%C3%A9sidentielle-2027-%C3%A9douard-philippe-marque-ses-diff%C3%A9rences-avec-david-lisnard",
+"d": "2026-11-25T03:37:46Z",
+"qui": [
+"lisnard",
+"philippe"
 ]
 },
 {
@@ -1741,15 +1751,6 @@
 "qui": [
 "villepin"
 ]
-},
-{
-"t": "Présidentielle 2027 : avec ou sans Mélenchon, Les Écologistes se déchirent sur leur stratégie",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/presidentielle-2027-avec-ou-sans-melenchon-les-ecologistes-se-dechirent-sur-leur-strategie-20261120",
-"d": "2026-11-20T17:23:30Z",
-"qui": [
-"melenchon"
-]
 }
 ],
 "sources": {
@@ -1764,7 +1765,7 @@
 "France 24": 5,
 "La Croix": 24,
 "LCP": 34,
-"RFI": 7
+"RFI": 8
 },
-"maj": "2026-11-25T02:56:35Z"
+"maj": "2026-11-25T04:02:44Z"
 }
