@@ -2,6 +2,70 @@
 "v": 4,
 "items": [
 {
+"t": "Présidentielle 2027 : Marine Le Pen propose un barème progressif à cinq tranches pour l’impôt sur les sociétés",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-marine-le-pen-propose-un-bareme-progressif-a-cinq-tranches-pour-limpot-sur-les-societes-26-11-2026-6Y7VWED4SZB6PFPUCM37VYVOPA.php",
+"d": "2026-11-26T07:46:27Z",
+"qui": []
+},
+{
+"t": "DIRECT. Présidentielle 2027 : Bruno Retailleau qualifie les étudiants qui bloquent La Sorbonne de «petits commissaires de l’extrême gauche»",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-dernier-jour-du-congres-des-maires-premier-deplacement-en-region-de-teddy-riner-26-11-2026-IYAKVLLACJF2XKI27PCGJEG74U.php",
+"d": "2026-11-26T07:46:27Z",
+"qui": [
+"retailleau"
+]
+},
+{
+"t": "David Lisnard, Gabriel Attal, Raphaël Glucksmann... Journée de campagne au Salon des maires",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/david-lisnard-gabriel-attal-raphael-glucksmann-journee-de-campagne-au-salon-des-maires_8300931.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-26T07:30:39Z",
+"qui": [
+"attal",
+"glucksmann",
+"lisnard"
+]
+},
+{
+"t": "« La France n’a plus les moyens » : Teddy Riner veut arrêter de financer la guerre en Ukraine",
+"s": "La Croix",
+"u": "https://www.la-croix.com/au-salon-des-maires-teddy-riner-retrouve-la-foule-et-la-polemique-20261125",
+"d": "2026-11-26T07:10:51Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "EDITO. À droite, le duel Lisnard-Philippe pour la présidentielle s'intensifie",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/replay-radio/l-edito-politique/edito-a-droite-le-duel-lisnard-philippe-pour-la-presidentielle-s-intensifie_8278496.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-26T07:03:36Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "À suivre Loïc de la Mornais : la guerre des droites est-elle déclarée entre Édouard Philippe et David Lisnard ?",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/replay-magazine/franceinfo/a-suivre-avec-loic-de-la-mornais/a-suivre-loic-de-la-mornais-la-guerre-des-droites-est-elle-declaree-entre-edouard-philippe-et-david-lisnard_8300895.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-26T06:48:42Z",
+"qui": [
+"lisnard",
+"philippe"
+]
+},
+{
+"t": "Présidentielle 2027: au salon des maires de France, Teddy Riner s'emmêle les pinceaux sur la guerre en Ukraine",
+"s": "RFI",
+"u": "https://www.rfi.fr/fr/france/20261126-pr%C3%A9sidentielle-2027-au-salon-des-maires-de-france-teddy-riner-s-emm%C3%AAle-les-pinceaux-sur-la-guerre-en-ukraine",
+"d": "2026-11-26T06:34:50Z",
+"qui": [
+"riner"
+]
+},
+{
 "t": "Présidentielle 2027: l'idée d'une primaire à droite divise les électeurs",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/video-presidentielle-2027-l-idee-d-une-primaire-a-droite-divise-les-electeurs_VN-202611260225.html",
@@ -36,12 +100,14 @@
 ]
 },
 {
-"t": "EN DIRECT Présidentielle 2027 : Lisnard veut convaincre des électeurs de « tous horizons y compris le RN »…",
+"t": "EN DIRECT Présidentielle 2027 : Lisnard veut convaincre les électeurs de « tous horizons y compris le RN », Riner rejoint Le Pen sur l'Ukraine…",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265846-20261126-direct-presidentielle-2027-lisnard-veut-convaincre-electeurs-tous-horizons-compris-rn?at_medium=display&at_campaign=149",
 "d": "2026-11-26T05:00:03Z",
 "qui": [
-"lisnard"
+"lepen",
+"lisnard",
+"riner"
 ]
 },
 {
@@ -403,7 +469,7 @@
 ]
 },
 {
-"t": "Comment le candidat David Lisnard séduit les déçus d’une partie de la droite : « Avec Retailleau et Philippe, on continue sans rien changer »",
+"t": "Comment le candidat David Lisnard séduit les déçus d’une partie de la droite pour la présidentielle 2027 : « Avec Retailleau et Philippe, on continue sans rien changer »",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/25/comment-le-candidat-david-lisnard-seduit-les-decus-d-une-partie-de-la-droite-avec-retailleau-et-philippe-on-continue-sans-rien-changer_6815170_823448.html",
 "d": "2026-11-25T19:25:00Z",
@@ -1703,82 +1769,21 @@
 "qui": [
 "lepen"
 ]
-},
-{
-"t": "Présidentielle 2027: pourquoi autant de maires refusent de donner leur parrainage à un candidat",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/presidentielle-2027-pourquoi-autant-de-maires-refusent-de-donner-leur-parrainage-a-un",
-"d": "2026-11-24T16:30:30Z",
-"qui": []
-},
-{
-"t": "Au Congrès des maires, Marine Tondelier présente ses propositions \"Pour un État-providence climatique\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/video-au-congres-des-maires-marine-tondelier-presente-ses-propositions-pour-un-etat-providence-climatique_VN-202611240736.html",
-"d": "2026-11-24T16:11:34Z",
-"qui": [
-"tondelier"
-]
-},
-{
-"t": "\"On peut aimer les tronçonneuses, mais pas savoir trancher\": le tacle d'Édouard Philippe à David Lisnard sur son silence autour d'un second tour avec Marine Le Pen",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/on-peut-aimer-les-tronconneuses-mais-pas-savoir-trancher-le-tacle-d-edouard-philippe-a-david-lisnard-sur-son-silence-autour-d-un-second-tour-avec-marine-le-pen_AV-202611240730.html",
-"d": "2026-11-24T16:09:15Z",
-"qui": [
-"lepen",
-"lisnard",
-"philippe"
-]
-},
-{
-"t": "Le Havre : enquête ouverte pour détournement de fonds dans la communauté urbaine d’Édouard Philippe",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/le-havre-enquete-ouverte-pour-detournement-de-fonds-dans-la-ville-presidee-par-edouard-philippe-20261124",
-"d": "2026-11-24T16:03:19Z",
-"qui": [
-"philippe"
-]
-},
-{
-"t": "Présidentielle 2027 : « Ce qui s’effrite sous nos yeux, c’est la légitimité d’un régime bâti sur l’idée de faire barrage au RN »",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/idees/article/2026/11/24/presidentielle-2027-ce-qui-s-effrite-sous-nos-yeux-c-est-la-legitimite-d-un-regime-bati-sur-l-idee-de-faire-barrage-au-rn_6814813_3232.html",
-"d": "2026-11-24T16:00:02Z",
-"qui": []
-},
-{
-"t": "Détournement de fonds publics : enquête ouverte au Havre, Edouard Philippe dénonce une «vendetta judiciaire»",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/detournement-de-fonds-publics-une-enquete-ouverte-a-lagglomeration-du-havre-presidee-par-edouard-philippe-20261124_YVGEWXKHJBE2JCNJ2GLT242A7E/",
-"d": "2026-11-24T15:57:12Z",
-"qui": [
-"philippe"
-]
-},
-{
-"t": "Présidentielle 2027 : Un « esprit de défaite typiquement vichyste », lance Mélenchon à propos de Bayrou",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4265445-20261124-presidentielle-2027-esprit-defaite-typiquement-vichyste-lance-melenchon-propos-bayrou?at_medium=display&at_campaign=149",
-"d": "2026-11-24T15:55:20Z",
-"qui": [
-"melenchon"
-]
 }
 ],
 "sources": {
 "Le Monde": 5,
 "franceinfo": 9,
-"Libération": 18,
+"Libération": 17,
 "Le Figaro": 8,
-"Le Parisien": 53,
+"Le Parisien": 51,
 "20 Minutes": 9,
 "Ouest-France": 0,
-"BFMTV": 24,
+"BFMTV": 25,
 "France 24": 9,
 "La Croix": 24,
 "LCP": 36,
-"RFI": 8
+"RFI": 9
 },
-"maj": "2026-11-26T06:17:09Z"
+"maj": "2026-11-26T07:46:27Z"
 }
