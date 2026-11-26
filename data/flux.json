@@ -2,6 +2,50 @@
 "v": 4,
 "items": [
 {
+"t": "Présidentielle 2027 : Huit députés Les Républicains lâchent Bruno Retailleau pour David Lisnard",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4266095-20261126-presidentielle-2027-huit-deputes-republicains-lachent-bruno-retailleau-david-lisnard?at_medium=display&at_campaign=149",
+"d": "2026-11-26T17:40:11Z",
+"qui": [
+"lisnard",
+"retailleau"
+]
+},
+{
+"t": "Dominique de Villepin, l’apôtre de l’amour, par Julie Neveux",
+"s": "Libération",
+"u": "https://www.liberation.fr/idees-et-debats/opinions/dominique-de-villepin-lapotre-de-lamour-par-julie-neveux-20261126_W7SRJD6MRZFZFJFKXK7IDQ552A/",
+"d": "2026-11-26T17:33:04Z",
+"qui": [
+"villepin"
+]
+},
+{
+"t": "Présidentielle 2027 : Edouard Philippe présente ses propositions en matière de santé, entre nouveaux vaccins obligatoires et « obligation de solidarité » pour les médecins",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/26/presidentielle-2027-edouard-philippe-presente-ses-propositions-en-matiere-de-sante-entre-nouveaux-vaccins-obligatoires-et-obligation-de-solidarite-pour-les-medecins_6815577_6205049.html",
+"d": "2026-11-26T17:15:19Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "Présidentielle 2007 : l’étrange campagne « selfies et huis clos » de Teddy Riner, en déplacement dans la Manche ce jeudi",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/sport/judo/teddy-riner/il-etait-ce-jeudi-dans-la-manche-letrange-campagne-selfies-et-huis-clos-de-teddy-riner-a8a8e314-e9a7-11f1-86c1-70195b4d2e52?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-26T17:10:46Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Présidentielle 2027 : Marine Le Pen courtise les PME avec un nouveau projet de réforme fiscale",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/26/presidentielle-2027-marine-le-pen-courtise-les-pme-avec-un-nouveau-projet-de-reforme-fiscale_6815572_823448.html",
+"d": "2026-11-26T17:00:09Z",
+"qui": []
+},
+{
 "t": "« Tout est faux dans ce qu’il a dit » : Jean-Noël Barrot répond sèchement à Teddy Riner concernant l’aide à l’Ukraine",
 "s": "Ouest-France",
 "u": "https://www.ouest-france.fr/politique/jean-noel-barrot/tout-est-faux-dans-ce-quil-dit-jean-noel-barrot-repond-sechement-a-teddy-riner-concernant-laide-a-lukraine-afecf222-e9b2-11f1-86c1-70195b4d2e52?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
@@ -273,7 +317,7 @@
 ]
 },
 {
-"t": "Présidentielle 2027 : Edouard Philippe passe à l’offensive face à David Lisnard",
+"t": "Présidentielle 2027 : Edouard Philippe passe à l’offensive face à David Lisnard",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/26/presidentielle-2027-edouard-philippe-passe-a-l-offensive-face-a-david-lisnard_6815527_823448.html",
 "d": "2026-11-26T12:00:07Z",
@@ -290,13 +334,11 @@
 "qui": []
 },
 {
-"t": "DIRECT. Présidentielle 2027 : David Lisnard appelle à un « retour à l’anonymat sur les parrainages »",
+"t": "DIRECT. Présidentielle 2027 : Bardella « envisage un complément de plainte » après les révélations de nouveaux écrits antisémites",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-dernier-jour-du-congres-des-maires-premier-deplacement-en-region-de-teddy-riner-26-11-2026-IYAKVLLACJF2XKI27PCGJEG74U.php",
 "d": "2026-11-26T12:00:00Z",
-"qui": [
-"lisnard"
-]
+"qui": []
 },
 {
 "t": "« Il a des relations complexes avec l’Allemagne » : à Berlin, Jean-Luc Mélenchon veut faire entendre ses différences",
@@ -383,6 +425,15 @@
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-terra-nova-juge-le-programme-energetique-de-lfi-ambitieux-mais-depourvu-de-moyens-26-11-2026-43NMGCW6VBGNVAMYSXGMAUBVKE.php",
 "d": "2026-11-26T12:00:00Z",
 "qui": []
+},
+{
+"t": "Édouard Philippe : la campagne bousculée d’un candidat mal en point",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/podcasts/code-source/edouard-philippe-la-campagne-bousculee-dun-candidat-mal-en-point-26-11-2026-C2QE7FXWWZF2FKWPFQQGHXDRD4.php",
+"d": "2026-11-26T12:00:00Z",
+"qui": [
+"philippe"
+]
 },
 {
 "t": "\"David Lisnard combat le RN\", affirme Romain Marsily, directeur général de Nouvelle Énergie",
@@ -716,13 +767,13 @@
 ]
 },
 {
-"t": "EN DIRECT Présidentielle 2027 : « La guerre en Ukraine est notre guerre », réplique Raphaël Glucksmann à Teddy Riner…",
+"t": "EN DIRECT Présidentielle 2027 : Huit députés LR lâchent Bruno Retailleau pour David Lisnard...",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265846-20261126-direct-presidentielle-2027-lisnard-veut-convaincre-electeurs-tous-horizons-compris-rn?at_medium=display&at_campaign=149",
 "d": "2026-11-26T05:00:03Z",
 "qui": [
-"glucksmann",
-"riner"
+"lisnard",
+"retailleau"
 ]
 },
 {
@@ -1729,76 +1780,21 @@
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-lextreme-droite-et-lextreme-gauche-sont-deux-poisons-mortels-estime-jean-noel-barrot-25-11-2026-HIAJ32PPXVDTHE3WPTR4INGQLU.php",
 "d": "2026-11-25T12:00:00Z",
 "qui": []
-},
-{
-"t": "Présidentielle 2027 : David Lisnard « ne désespère pas » de convaincre Édouard Philippe de participer à une primaire",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-deuxieme-jour-du-congres-des-maires-de-france-de-nombreux-candidats-attendus-sur-place-25-11-2026-EL5DLN7IZNHUBPHP32WEMDQEM4.php",
-"d": "2026-11-25T12:00:00Z",
-"qui": [
-"lisnard",
-"philippe"
-]
-},
-{
-"t": "Présidentielle 2027 : un duel Mélenchon-Le Pen « mènerait notre pays au bord de la guerre civile », juge Darmanin",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-un-duel-melenchon-le-pen-menerait-notre-pays-au-bord-de-la-guerre-civile-juge-darmanin-25-11-2026-OR3WJXPKINEUDGEDS2CKLOK4ZA.php",
-"d": "2026-11-25T12:00:00Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "« Votre club d’énarques » : David Lisnard s’en prend vivement à Jean-François Copé qui l’a qualifié de « populiste »",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/votre-club-denarques-david-lisnard-sen-prend-vivement-a-jean-francois-cope-qui-la-qualifie-de-populiste-25-11-2026-AEBJX6TQWFE45EL6W3OEQVZ53E.php",
-"d": "2026-11-25T12:00:00Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Présidentielle 2027 : « Je ferai toujours le front républicain », Boris Vallaud prêt à voter Mélenchon contre Le Pen",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-je-ferai-toujours-le-front-republicain-boris-vallaud-pret-a-voter-melenchon-contre-le-pen-25-11-2026-B36ME2BMEJCINI3AJKYEANG6KM.php",
-"d": "2026-11-25T12:00:00Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "« Je les dérange et je ne compte pas arrêter » : pour David Lisnard, réélu à la tête de l’AMF, le plus dur commence",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/politique/je-les-derange-et-je-ne-compte-pas-arreter-pour-david-lisnard-reelu-a-la-tete-de-lamf-le-plus-dur-commence-25-11-2026-IS5UQZ5SLFEKNFBHP5E4NDY7E4.php",
-"d": "2026-11-25T12:00:00Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Présidentielle 2027 : en cas de duel opposant Marine Le Pen à Jean-Luc Mélenchon, qui voterait quoi ?",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-en-cas-de-duel-opposant-marine-le-pen-a-jean-luc-melenchon-qui-voterait-quoi-25-11-2026-J6MR2JWXF5GOBITIZAVYVU6KW4.php",
-"d": "2026-11-25T12:00:00Z",
-"qui": [
-"melenchon"
-]
 }
 ],
 "sources": {
-"Le Monde": 5,
-"franceinfo": 9,
-"Libération": 20,
+"Le Monde": 6,
+"franceinfo": 6,
+"Libération": 21,
 "Le Figaro": 8,
 "Le Parisien": 54,
-"20 Minutes": 7,
-"Ouest-France": 4,
+"20 Minutes": 8,
+"Ouest-France": 1,
 "BFMTV": 11,
 "France 24": 8,
 "La Croix": 25,
 "LCP": 36,
 "RFI": 9
 },
-"maj": "2026-11-26T16:40:38Z"
+"maj": "2026-11-26T17:40:44Z"
 }
