@@ -2,6 +2,15 @@
 "v": 4,
 "items": [
 {
+"t": "« C’est ma dernière campagne » : Éric Zemmour annonce qu’il ne briguera plus l’Élysée après la Présidentielle 2027",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/cest-ma-derniere-campagne-eric-zemmour-annonce-quil-ne-briguera-plus-lelysee-apres-la-presidentielle-2027-27-11-2026-IH6CFANF7FGSNGZZ47MCRJSVGM.php",
+"d": "2026-11-26T23:40:06Z",
+"qui": [
+"zemmour"
+]
+},
+{
 "t": "\"Il faut plus d'humilité quand on fait campagne\" : Emmanuel Macron tacle la \"drôle d'arrogance\" de Marine Le Pen",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/politique/emmanuel-macron/il-faut-plus-d-humilite-quand-on-fait-campagne-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen_8302119.html#xtor=RSS-3-%5Bpolitique%5D",
@@ -17,6 +26,15 @@
 "d": "2026-11-26T22:02:17Z",
 "qui": [
 "lepen"
+]
+},
+{
+"t": "DIRECT. Présidentielle: après les propos de Teddy Riner, Emmanuel Macron estime qu'il ne \"faut pas créer de doute et de trouble\" sur l'aide à l'Ukraine",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-emmanuel-macron-en-route-pour-bruxelle-pour-negocier-avec-les-dirigeants-de-l-ue-sur-le-budget-europeen_LN-202611260221.html",
+"d": "2026-11-26T21:58:23Z",
+"qui": [
+"riner"
 ]
 },
 {
@@ -47,7 +65,7 @@
 ]
 },
 {
-"t": "Depuis Bruxelles, Emmanuel Macron reproche à Marine Le Pen de faire preuve d’une « drôle d’arrogance de penser qu’elle serait déjà en charge du destin de la France »",
+"t": "Depuis Bruxelles, Emmanuel Macron reproche à Marine Le Pen de faire preuve d’une « drôle d’arrogance » en pensant « qu’elle serait déjà en charge du destin de la France »",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/26/emmanuel-macron-rabroue-marine-le-pen-et-sa-drole-d-arrogance_6815601_823448.html",
 "d": "2026-11-26T21:31:24Z",
@@ -105,15 +123,6 @@
 "u": "https://www.lemonde.fr/politique/live/2026/11/26/en-direct-presidentielle-2027-emmanuel-macron-a-propos-de-marine-le-pen-c-est-une-drole-d-arrogance-de-penser-qu-elle-serait-deja-en-charge-du-destin-de-la-france_6815062_823448.html",
 "d": "2026-11-26T20:08:26Z",
 "qui": []
-},
-{
-"t": "DIRECT. Présidentielle: après les propos de Teddy Riner, Emmanuel Macron estime qu'il ne \"faut pas créer de doute et de trouble\" sur l'aide à l'Ukraine",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-emmanuel-macron-en-route-pour-bruxelle-pour-negocier-avec-les-dirigeants-de-l-ue-sur-le-budget-europeen_LN-202611260221.html",
-"d": "2026-11-26T19:57:02Z",
-"qui": [
-"riner"
-]
 },
 {
 "t": "\"À plusieurs reprises, des mots, chez des responsables de La France insoumise, chez Jean-Luc Mélenchon, m'avaient profondément choqué [...] Bien sûr, certains faits peuvent être qualifiés d'antisémitisme\", assure Benoît Payan, maire DVG de Marseille",
@@ -1776,17 +1785,10 @@
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-on-ne-gagne-pas-une-election-sur-la-peur-rappelle-francois-hollande_VN-202611250673.html",
 "d": "2026-11-25T14:25:17Z",
 "qui": []
-},
-{
-"t": "Présidentielle 2027: \"Ce sont les dernières semaines qui comptent, ça va s'éclaircir de plus en plus\", lance François Hollande",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-ce-sont-les-dernieres-semaines-qui-comptent-ca-va-s-eclaircir-de-plus-en-plus-lance-francois-hollande_VN-202611250670.html",
-"d": "2026-11-25T14:21:11Z",
-"qui": []
 }
 ],
 "sources": {
-"Le Monde": 9,
+"Le Monde": 8,
 "franceinfo": 8,
 "Libération": 19,
 "Le Figaro": 7,
@@ -1799,5 +1801,5 @@
 "LCP": 37,
 "RFI": 8
 },
-"maj": "2026-11-26T22:40:11Z"
+"maj": "2026-11-26T23:40:06Z"
 }
