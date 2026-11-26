@@ -9,6 +9,35 @@
 "qui": []
 },
 {
+"t": "Présidentielle: David Lisnard rejette la proposition d'un débat avec Édouard Philippe",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html",
+"d": "2026-11-25T23:02:18Z",
+"qui": [
+"lisnard",
+"philippe"
+]
+},
+{
+"t": "Edouard Philippe",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/edouard-philippe_DN-202108310657.html",
+"d": "2026-11-25T23:01:37Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "\"La démocratie, c’est du vote\": David Lisnard rejette la proposition d'un débat avec Édouard Philippe à la place de la primaire",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/la-democratie-c-est-du-vote-david-lisnard-rejette-la-proposition-d-un-debat-avec-edouard-philippe-a-la-place-de-la-primaire_AN-202611251031.html",
+"d": "2026-11-25T23:01:36Z",
+"qui": [
+"lisnard",
+"philippe"
+]
+},
+{
 "t": "Présidentielle 2027 : \"Il faut une compétition, il faut une sélection\", défend le candidat David Lisnard, partisan d'une primaire",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/elections/presidentielle-2027-il-faut-une-competition-il-faut-une-selection-defend-le-candidat-david-lisnard-partisan-d-une-primaire_8300388.html#xtor=RSS-3-%5Bpolitique%5D",
@@ -156,15 +185,6 @@
 ]
 },
 {
-"t": "Edouard Philippe",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/edouard-philippe_DN-202108310657.html",
-"d": "2026-11-25T20:55:39Z",
-"qui": [
-"philippe"
-]
-},
-{
 "t": "Gabriel Attal",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/gabriel-attal_DN-202108310662.html",
@@ -216,16 +236,6 @@
 "d": "2026-11-25T20:39:56Z",
 "qui": [
 "villepin"
-]
-},
-{
-"t": "DIRECT. Présidentielle: David Lisnard rejette la proposition d'un débat avec Édouard Philippe",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html",
-"d": "2026-11-25T20:39:05Z",
-"qui": [
-"lisnard",
-"philippe"
 ]
 },
 {
@@ -1753,13 +1763,6 @@
 "u": "https://www.liberation.fr/idees-et-debats/opinions/presidentielle-2027-le-bal-des-aventuriers-saison-2-par-denis-pingaud-20261124_LYIBGOIQ4FHBNOSMDGPL3KMTDU/",
 "d": "2026-11-24T15:06:33Z",
 "qui": []
-},
-{
-"t": "Présidentielle 2027. Christophe Béchu compte sur Gérard Larcher pour départager les candidats à droite sans primaire",
-"s": "Ouest-France",
-"u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-christophe-bechu-compte-sur-gerard-larcher-pour-departager-les-candidats-a-droite-sans-primaire-518a4fa2-e7f7-11f1-9b33-2f81462d3339?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
-"d": "2026-11-24T14:59:03Z",
-"qui": []
 }
 ],
 "sources": {
@@ -1776,5 +1779,5 @@
 "LCP": 37,
 "RFI": 8
 },
-"maj": "2026-11-25T23:51:35Z"
+"maj": "2026-11-26T00:38:53Z"
 }
