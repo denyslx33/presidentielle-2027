@@ -2,6 +2,49 @@
 "v": 4,
 "items": [
 {
+"t": "Présidentielle 2027: l'idée d'une primaire à droite divise les électeurs",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/video-presidentielle-2027-l-idee-d-une-primaire-a-droite-divise-les-electeurs_VN-202611260225.html",
+"d": "2026-11-26T06:05:04Z",
+"qui": []
+},
+{
+"t": "L'ÉDITO POLITIQUE DE GUILLAUME DARET - \"Ce n'est pas notre guerre\": les propos de Teddy Riner sur le soutien à l'Ukraine font polémique",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-l-edito-politique-de-guillaume-daret-ce-n-est-pas-notre-guerre-les-propos-de-teddy-riner-sur-le-soutien-a-l-ukraine-font-polemique_VN-202611260217.html",
+"d": "2026-11-26T05:56:58Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "À suivre Loïc de la Mornais : la droite tient-elle son candidat après le sacre de David Lisnard ?",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/replay-magazine/franceinfo/a-suivre-avec-loic-de-la-mornais/a-suivre-loic-de-la-mornais-la-droite-tient-elle-son-candidat-apres-le-sacre-de-david-lisnard_8300811.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-26T05:54:35Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Jean-Luc Mélenchon ironise face aux propos de Gérald Darmanin, selon qui un second tour RN-LFI mènerait la France \"au bord de la guerre civile\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/video-jean-luc-melenchon-ironise-face-aux-propos-de-gerald-darmanin-selon-qui-un-second-tour-rn-lfi-menerait-la-france-au-bord-de-la-guerre-civile_VN-202611260194.html",
+"d": "2026-11-26T05:36:35Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "EN DIRECT Présidentielle 2027 : Lisnard veut convaincre des électeurs de « tous horizons y compris le RN »…",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265846-20261126-direct-presidentielle-2027-lisnard-veut-convaincre-electeurs-tous-horizons-compris-rn?at_medium=display&at_campaign=149",
+"d": "2026-11-26T05:00:03Z",
+"qui": [
+"lisnard"
+]
+},
+{
 "t": "\"C'est la confirmation de mon identité politique\" : comment David Lisnard compte utiliser son image de maire pour la présidentielle",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/elections/c-est-la-confirmation-de-mon-identite-politique-comment-david-lisnard-compte-utiliser-son-image-de-maire-pour-la-presidentielle_8296046.html#xtor=RSS-3-%5Bpolitique%5D",
@@ -1721,65 +1764,21 @@
 "qui": [
 "melenchon"
 ]
-},
-{
-"t": "Présidentielle 2027 : « Le pire scénario possible »… Les dates de l’élection vont-elles être modifiées ?",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/societe/4265440-20261124-presidentielle-2027-pire-scenario-possible-dates-election-vont-elles-etre-modifiees?at_medium=display&at_campaign=149",
-"d": "2026-11-24T15:46:27Z",
-"qui": []
-},
-{
-"t": "Une enquête ouverte après un signalement pour détournement de fonds publics à l'agglomération du Havre présidée par Edouard Philippe",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/politique/edouard-philippe/une-enquete-ouverte-apres-un-signalement-pour-detournement-de-fonds-publics-a-l-agglomeration-du-havre-presidee-par-edouard-philippe_8297676.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-24T15:32:51Z",
-"qui": [
-"philippe"
-]
-},
-{
-"t": "Présidentielle 2027: \"on peut aimer les tronçonneuses, mais pas savoir trancher”, le tacle d'Édouard Philippe à David Lisnard",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-on-peut-aimer-les-tronconneuses-mais-pas-savoir-trancher-le-tacle-d-edouard-philippe-a-david-lisnard_VN-202611240701.html",
-"d": "2026-11-24T15:29:01Z",
-"qui": [
-"lisnard",
-"philippe"
-]
-},
-{
-"t": "\"Il ne faut jamais travailler avec la droite extrême\", déclare Édouard Philippe",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-il-ne-faut-jamais-travailler-avec-la-droite-extreme-declare-edouard-philippe_VN-202611240699.html",
-"d": "2026-11-24T15:26:19Z",
-"qui": [
-"philippe"
-]
-},
-{
-"t": "Enquête ouverte pour détournement de fonds publics à l'agglomération du Havre: Édouard Philippe dénonce \"une vendetta judiciaire\" qu'il prend \"avec sérénité et philosophie\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-enquete-ouverte-pour-detournement-de-fonds-publics-a-l-agglomeration-du-havre-edouard-philippe-denonce-une-vendetta-judiciaire-qu-il-prend-avec-serenite-et-philosophie_VN-202611240692.html",
-"d": "2026-11-24T15:20:46Z",
-"qui": [
-"philippe"
-]
 }
 ],
 "sources": {
 "Le Monde": 5,
-"franceinfo": 8,
+"franceinfo": 9,
 "Libération": 18,
 "Le Figaro": 8,
 "Le Parisien": 53,
 "20 Minutes": 9,
 "Ouest-France": 0,
-"BFMTV": 25,
+"BFMTV": 24,
 "France 24": 9,
 "La Croix": 24,
 "LCP": 36,
 "RFI": 8
 },
-"maj": "2026-11-26T05:09:47Z"
+"maj": "2026-11-26T06:17:09Z"
 }
