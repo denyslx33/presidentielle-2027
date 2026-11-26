@@ -78,6 +78,32 @@
    "url": "https://www.ouest-france.fr/sport/judo/teddy-riner/presidentielle-le-candidat-teddy-riner-fait-etape-pres-de-saint-lo-pour-rencontrer-des-agriculteurs-ce-jeudi-10a808b0-e8b7-11f1-86c1-70195b4d2e52"
   },
   {
+   "date": "2026-11-26",
+   "heure": null,
+   "type": "evenement",
+   "titre": "Déplacement d'Édouard Philippe à l'Institut Curie : présentation de propositions sur la santé",
+   "lieu": "Institut Curie, Paris",
+   "chaine": null,
+   "qui": [
+    "philippe"
+   ],
+   "url": "https://www.bfmtv.com/politique/horizons/video-edouard-philippe-en-visite-a-l-institut-curie-ou-il-va-devoiler-des-propositions-de-mesures-sur-le-theme-de-la-sante_VN-202611260504.html",
+   "commune": "Paris",
+   "dep": "75"
+  },
+  {
+   "date": "2026-11-26",
+   "heure": null,
+   "type": "evenement",
+   "titre": "Déplacement de Raphaël Glucksmann en Mayenne : présentation du « Conseil des territoires »",
+   "lieu": "Mayenne",
+   "chaine": null,
+   "qui": [
+    "glucksmann"
+   ],
+   "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-depuis-la-mayenne-raphael-glucksmann-devoile-son-projet-de-conseil-des-territoires-pour-donner-plus-de-pouvoir-aux-elus-locaux_8300955.html"
+  },
+  {
    "date": "2026-11-27",
    "heure": null,
    "type": "evenement",
