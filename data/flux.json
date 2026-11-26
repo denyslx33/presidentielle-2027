@@ -5,23 +5,24 @@
 "t": "Présidentielle 2027 : Marine Le Pen propose un barème progressif à cinq tranches pour l’impôt sur les sociétés",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-marine-le-pen-propose-un-bareme-progressif-a-cinq-tranches-pour-limpot-sur-les-societes-26-11-2026-6Y7VWED4SZB6PFPUCM37VYVOPA.php",
-"d": "2026-11-26T10:59:01Z",
+"d": "2026-11-26T12:00:00Z",
 "qui": []
 },
 {
-"t": "DIRECT. Présidentielle 2027 : Édouard Philippe à l’Institut Curie pour présenter son programme  « santé », Teddy Rinner attendu dans la Manche",
+"t": "DIRECT. Présidentielle 2027 : Édouard Philippe à l’Institut Curie pour présenter son programme santé, Teddy Riner est arrivé dans la Manche",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-dernier-jour-du-congres-des-maires-premier-deplacement-en-region-de-teddy-riner-26-11-2026-IYAKVLLACJF2XKI27PCGJEG74U.php",
-"d": "2026-11-26T10:59:01Z",
+"d": "2026-11-26T12:00:00Z",
 "qui": [
-"philippe"
+"philippe",
+"riner"
 ]
 },
 {
 "t": "« Il a des relations complexes avec l’Allemagne » : à Berlin, Jean-Luc Mélenchon veut faire entendre ses différences",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/il-a-des-relations-complexes-avec-lallemagne-a-berlin-jean-luc-melenchon-veut-faire-entendre-ses-differences-26-11-2026-LGH2STX47NBWXIVD6FKMCU36DQ.php",
-"d": "2026-11-26T10:59:01Z",
+"d": "2026-11-26T12:00:00Z",
 "qui": [
 "melenchon"
 ]
@@ -30,7 +31,7 @@
 "t": "Présidentielle 2027 : David Lisnard refuse de choisir entre Édouard Phillippe et Marine Le Pen, Gérald Darmanin tacle une « compromission »",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-david-lisnard-refuse-de-choisir-entre-edouard-phillippe-et-marine-le-pen-gerald-darmanin-tacle-une-compromission-26-11-2026-5KIK5P45SVH5ZF5BJLUEJAONCA.php",
-"d": "2026-11-26T10:59:01Z",
+"d": "2026-11-26T12:00:00Z",
 "qui": [
 "lisnard"
 ]
@@ -39,17 +40,60 @@
 "t": "Présidentielle 2027 : « Il nous en manque un peu moins d’une centaine », le RN n’a pas encore ses 500 parrainages",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-il-nous-en-manque-un-peu-moins-dune-centaine-le-rn-na-pas-encore-ses-500-parrainages-26-11-2026-Z2UDOULBLJGNRHSCKQTIIWREWI.php",
-"d": "2026-11-26T10:59:01Z",
+"d": "2026-11-26T12:00:00Z",
 "qui": []
+},
+{
+"t": "Présidentielle 2027 : « C’est dégueulasse de dire ça », le tacle de Robert Ménard à Teddy Riner pour qui l’Ukraine n’est « pas notre guerre »",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-cest-degueulasse-de-dire-ca-le-tacle-de-robert-menard-a-teddy-riner-pour-qui-lukraine-nest-pas-notre-guerre-26-11-2026-CCFSYMBODNBZTD3B7L5OGMFHMI.php",
+"d": "2026-11-26T12:00:00Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Jean-Luc Mélenchon en Allemagne : pour Die Linke, l’allié français qu’on préfère cacher",
+"s": "Libération",
+"u": "https://www.liberation.fr/politique/elections/jean-luc-melenchon-en-allemagne-pour-die-linke-lallie-francais-quon-prefere-cacher-20261126_UDVDINBZPRCRDIN5S6WUHQGERQ/",
+"d": "2026-11-26T11:55:10Z",
+"qui": [
+"melenchon"
+]
 },
 {
 "t": "DIRECT. Présidentielle: Marine Le Pen fustige de \"basses manoeuvres\" pour conclure un accord sur le budget de l'UE avant son éventuelle arrivée à l'Élysée",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-emmanuel-macron-en-route-pour-bruxelle-pour-negocier-avec-les-dirigeants-de-l-ue-sur-le-budget-europeen_LN-202611260221.html",
-"d": "2026-11-26T10:50:49Z",
+"d": "2026-11-26T11:53:03Z",
 "qui": [
 "lepen"
 ]
+},
+{
+"t": "« Ce n’est pas notre guerre »… Quels étaient les liens entre Riner l’athlète et la Russie de Poutine, fan de judo ?",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4265901-20261126-guerre-liens-entre-riner-athlete-russie-poutine-fan-judo?at_medium=display&at_campaign=149",
+"d": "2026-11-26T11:35:15Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Les relations compliquées de Jean-Luc Mélenchon avec l'Allemagne",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/politique/melenchon/les-relations-compliquees-de-jean-luc-melenchon-avec-l-allemagne_8301105.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-26T11:15:58Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Présidentielle 2027 : Les Ecologistes confrontés au risque de leur disparition",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/idees/article/2026/11/26/presidentielle-2027-les-ecologistes-confrontes-au-risque-de-leur-disparition_6815522_3232.html",
+"d": "2026-11-26T11:00:04Z",
+"qui": []
 },
 {
 "t": "Écrits antisémites attribués à Jordan Bardella: \"Il est clair que Jordan Bardella a menti\", déclare Raphaël Glucksmann",
@@ -333,12 +377,14 @@
 ]
 },
 {
-"t": "EN DIRECT Présidentielle 2027 : David Lisnard, Sébastien Lecornu et Gérard Larcher vont débattre ce jeudi…",
+"t": "EN DIRECT Présidentielle 2027 : David Lisnard refuse de choisir entre Marine Le Pen et Edouard Philippe…",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265846-20261126-direct-presidentielle-2027-lisnard-veut-convaincre-electeurs-tous-horizons-compris-rn?at_medium=display&at_campaign=149",
 "d": "2026-11-26T05:00:03Z",
 "qui": [
-"lisnard"
+"lepen",
+"lisnard",
+"philippe"
 ]
 },
 {
@@ -1733,65 +1779,21 @@
 "qui": [
 "zemmour"
 ]
-},
-{
-"t": "Présidentielle 2027 : LFI, force d’attraction à gauche",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/politique/article/2026/11/25/presidentielle-2027-lfi-force-d-attraction-a-gauche_6815035_823448.html",
-"d": "2026-11-25T04:29:28Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027 : au RN, la certitude de la victoire enivre les élus et inquiète Marine Le Pen",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/politique/article/2026/11/25/presidentielle-2027-au-rn-la-certitude-de-la-victoire-enivre-les-elus-et-inquiete-marine-le-pen_6815034_823448.html",
-"d": "2026-11-25T04:15:03Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027: Édouard Philippe marque ses différences avec David Lisnard",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/france/20261125-pr%C3%A9sidentielle-2027-%C3%A9douard-philippe-marque-ses-diff%C3%A9rences-avec-david-lisnard",
-"d": "2026-11-25T03:37:46Z",
-"qui": [
-"lisnard",
-"philippe"
-]
-},
-{
-"t": "Présidentielle: Édouard Philippe se dit ouvert à un débat avec David Lisnard, mais s'oppose toujours à une primaire de la droite et du centre",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-edouard-philippe-se-dit-ouvert-a-un-debat-avec-david-lisnard-mais-s-oppose-toujours-a-une-primaire-de-la-droite-et-du-centre_AD-202611241034.html",
-"d": "2026-11-24T23:00:27Z",
-"qui": [
-"lisnard",
-"philippe"
-]
-},
-{
-"t": "Présidentielle: Fabien Roussel assure qu’il ne “rejoindra pas Jean-Luc Mélenchon” et souhaite “convaincre les abstentionnistes”",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-gabriel-attal-edouard-philippe-de-nombreux-candidats-a-la-rencontre-des-maires-a-l-occasion-du-congres-de-l-amf_LN-202611240163.html",
-"d": "2026-11-24T22:50:06Z",
-"qui": [
-"melenchon",
-"roussel"
-]
 }
 ],
 "sources": {
-"Le Monde": 3,
-"franceinfo": 11,
-"Libération": 20,
+"Le Monde": 4,
+"franceinfo": 10,
+"Libération": 21,
 "Le Figaro": 8,
 "Le Parisien": 51,
 "20 Minutes": 8,
 "Ouest-France": 0,
-"BFMTV": 16,
+"BFMTV": 14,
 "France 24": 9,
 "La Croix": 24,
 "LCP": 36,
 "RFI": 9
 },
-"maj": "2026-11-26T10:59:01Z"
+"maj": "2026-11-26T12:00:21Z"
 }
