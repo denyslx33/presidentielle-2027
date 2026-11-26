@@ -2,6 +2,72 @@
 "v": 4,
 "items": [
 {
+"t": "ÉDITO. David Lisnard contre Édouard Philippe : est-ce la bataille \"du terrain\" contre les élites ?",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/edito-david-lisnard-contre-edouard-philippe-est-ce-la-bataille-du-terrain-contre-les-elites_8301429.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-26T13:10:16Z",
+"qui": [
+"lisnard",
+"philippe"
+]
+},
+{
+"t": "\"C'est nous qui allons battre l'extrême droite\", réplique Romain Marsily, directeur général du parti Nouvelle Énergie de David Lisnard",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/extreme-droite/video-c-est-nous-qui-allons-battre-l-extreme-droite-replique-romain-marsily-directeur-general-du-parti-nouvelle-energie-de-david-lisnard_VN-202611260617.html",
+"d": "2026-11-26T13:06:44Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "\"La porosité qui semble exister entre David Lisnard et l'extrême droite s'avère de plus en plus franche\", lance Charlotte Parmentier-Lecoq, porte-parole d'Édouard Philippe",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/extreme-droite/video-la-porosite-qui-semble-exister-entre-david-lisnard-et-l-extreme-droite-s-avere-de-plus-en-plus-franche-lance-charlotte-parmentier-lecoq-porte-parole-d-edouard-philippe_VN-202611260614.html",
+"d": "2026-11-26T13:02:05Z",
+"qui": [
+"lisnard",
+"philippe"
+]
+},
+{
+"t": "DIRECT. Vaccination obligatoire des soignants, santé mentale, papillomavirus... Édouard Philippe présente ses propositions sur la santé",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-emmanuel-macron-en-route-pour-bruxelle-pour-negocier-avec-les-dirigeants-de-l-ue-sur-le-budget-europeen_LN-202611260221.html",
+"d": "2026-11-26T13:01:01Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "Présidentielle 2027: \"C'est eux l'avenir\", lance Teddy Riner, candidat à l'élection, à la jeunesse",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-c-est-eux-l-avenir-lance-teddy-riner-candidat-a-l-election-a-la-jeunesse_VN-202611260599.html",
+"d": "2026-11-26T12:36:24Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "EN DIRECT, congrès des maires de France : David Lisnard est accusé de « compromission » avec l’extrême droite par Gérald Darmanin",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/live/2026/11/26/en-direct-congres-des-maires-de-france-david-lisnard-est-accuse-de-compromission-avec-l-extreme-droite-par-gerald-darmanin_6815062_823448.html",
+"d": "2026-11-26T12:01:40Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Présidentielle 2027 : Edouard Philippe passe à l’offensive face à David Lisnard",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/26/presidentielle-2027-edouard-philippe-passe-a-l-offensive-face-a-david-lisnard_6815527_823448.html",
+"d": "2026-11-26T12:00:11Z",
+"qui": [
+"lisnard",
+"philippe"
+]
+},
+{
 "t": "Présidentielle 2027 : Marine Le Pen propose un barème progressif à cinq tranches pour l’impôt sur les sociétés",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-marine-le-pen-propose-un-bareme-progressif-a-cinq-tranches-pour-limpot-sur-les-societes-26-11-2026-6Y7VWED4SZB6PFPUCM37VYVOPA.php",
@@ -9,12 +75,12 @@
 "qui": []
 },
 {
-"t": "DIRECT. Présidentielle 2027 : Édouard Philippe à l’Institut Curie pour présenter son programme santé, Teddy Riner est arrivé dans la Manche",
+"t": "DIRECT. Présidentielle 2027 : « La guerre en Ukraine est notre guerre », répond Raphaël Glucksmann à Teddy Riner",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-dernier-jour-du-congres-des-maires-premier-deplacement-en-region-de-teddy-riner-26-11-2026-IYAKVLLACJF2XKI27PCGJEG74U.php",
 "d": "2026-11-26T12:00:00Z",
 "qui": [
-"philippe",
+"glucksmann",
 "riner"
 ]
 },
@@ -53,21 +119,21 @@
 ]
 },
 {
+"t": "\"David Lisnard combat le RN\", affirme Romain Marsily, directeur général de Nouvelle Énergie",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/video-david-lisnard-combat-le-rn-affirme-romain-marsily-directeur-general-de-nouvelle-energie_VN-202611260576.html",
+"d": "2026-11-26T11:58:40Z",
+"qui": [
+"lisnard"
+]
+},
+{
 "t": "Jean-Luc Mélenchon en Allemagne : pour Die Linke, l’allié français qu’on préfère cacher",
 "s": "Libération",
 "u": "https://www.liberation.fr/politique/elections/jean-luc-melenchon-en-allemagne-pour-die-linke-lallie-francais-quon-prefere-cacher-20261126_UDVDINBZPRCRDIN5S6WUHQGERQ/",
 "d": "2026-11-26T11:55:10Z",
 "qui": [
 "melenchon"
-]
-},
-{
-"t": "DIRECT. Présidentielle: Marine Le Pen fustige de \"basses manoeuvres\" pour conclure un accord sur le budget de l'UE avant son éventuelle arrivée à l'Élysée",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-emmanuel-macron-en-route-pour-bruxelle-pour-negocier-avec-les-dirigeants-de-l-ue-sur-le-budget-europeen_LN-202611260221.html",
-"d": "2026-11-26T11:53:03Z",
-"qui": [
-"lepen"
 ]
 },
 {
@@ -80,7 +146,16 @@
 ]
 },
 {
-"t": "Les relations compliquées de Jean-Luc Mélenchon avec l'Allemagne",
+"t": "Présidentielle 2027 : Jean-Luc Mélenchon, en visite vendredi à Berlin, inquiète l’Allemagne avec sa rhétorique anti-allemande",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/international/article/2026/11/26/l-allemagne-s-inquiete-de-la-rhetorique-anti-allemande-de-jean-luc-melenchon_6815524_3210.html",
+"d": "2026-11-26T11:23:09Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Après ses propos hostiles à l'Allemagne et ses projets de renforcement de son armée, Jean-Luc Mélenchon est à Berlin pour présenter son livre",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/politique/melenchon/les-relations-compliquees-de-jean-luc-melenchon-avec-l-allemagne_8301105.html#xtor=RSS-3-%5Bpolitique%5D",
 "d": "2026-11-26T11:15:58Z",
@@ -1707,93 +1782,21 @@
 "qui": [
 "zemmour"
 ]
-},
-{
-"t": "L'ÉDITO POLITIQUE DE GUILLAUME DARET - Édouard Philippe lance son offensive contre David Lisnard",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-l-edito-politique-edouard-philippe-lance-son-offensive-contre-david-lisnard_VN-202611250202.html",
-"d": "2026-11-25T06:03:35Z",
-"qui": [
-"lisnard",
-"philippe"
-]
-},
-{
-"t": "Présidentielle 2027: où en sont les candidats dans leur récolte des 500 parrainages?",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/presidentielle-2027-ou-en-sont-les-candidats-dans-leur-recolte-des-500-parrainages",
-"d": "2026-11-25T05:35:12Z",
-"qui": []
-},
-{
-"t": "Six milliards d’euros d’aide versés chaque année à l’Ukraine, selon Marine Le Pen ? Une affirmation trompeuse",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/monde/ukraine/4265337-20261125-six-milliards-euros-aide-verses-chaque-annee-ukraine-selon-marine-pen-affirmation-trompeuse?at_medium=display&at_campaign=149",
-"d": "2026-11-25T05:32:36Z",
-"qui": [
-"lepen"
-]
-},
-{
-"t": "Présidentielle 2027: Teddy Riner se défend après un début de campagne très difficile",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/video-presidentielle-2027-teddy-riner-se-defend-apres-un-debut-de-campagne-tres-difficile_VN-202611250153.html",
-"d": "2026-11-25T05:14:02Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "« On a beaucoup échangé » : Macron-Lisnard, les coulisses d’un rendez-vous manqué qui a viré à la guerre froide",
-"s": "Le Figaro",
-"u": "https://www.lefigaro.fr/elections/presidentielles/on-a-beaucoup-echange-macron-lisnard-les-coulisses-d-un-rendez-vous-manque-qui-a-vire-a-la-guerre-froide-20261125",
-"d": "2026-11-25T05:05:00Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "EN DIRECT Présidentielle 2027 : Édouard Philippe propose à David Lisnard un débat télévisé…",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4265545-20261125-direct-presidentielle-2027-edouard-philippe-propose-david-lisnard-debat-televise?at_medium=display&at_campaign=149",
-"d": "2026-11-25T04:53:33Z",
-"qui": [
-"lisnard",
-"philippe"
-]
-},
-{
-"t": "Présidentielle 2027 : Hollande pense que Mélenchon « ne veut pas gagner », LFI envoie paître les Insoumis « purgés »",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4265545-20261125-direct-presidentielle-2027-david-lisnard-annonce-reelection-tete-association-maires-france?at_medium=display&at_campaign=149",
-"d": "2026-11-25T04:53:33Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Michaël Zemmour, économiste : « La réforme des retraites proposée par le RN ne rétablit pas un départ à 62 ans et n’en garantit pas le droit à 64 ans »",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/idees/article/2026/11/25/michael-zemmour-economiste-la-reforme-des-retraites-proposee-par-le-rn-ne-retablit-pas-un-depart-a-62-ans-et-n-en-garantit-pas-le-droit-a-64-ans_6815038_3232.html",
-"d": "2026-11-25T04:46:50Z",
-"qui": [
-"zemmour"
-]
 }
 ],
 "sources": {
-"Le Monde": 4,
+"Le Monde": 5,
 "franceinfo": 10,
 "Libération": 21,
 "Le Figaro": 8,
-"Le Parisien": 51,
+"Le Parisien": 50,
 "20 Minutes": 8,
 "Ouest-France": 0,
-"BFMTV": 14,
+"BFMTV": 17,
 "France 24": 9,
 "La Croix": 24,
 "LCP": 36,
 "RFI": 9
 },
-"maj": "2026-11-26T12:00:21Z"
+"maj": "2026-11-26T13:19:47Z"
 }
