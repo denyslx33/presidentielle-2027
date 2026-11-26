@@ -2,10 +2,55 @@
 "v": 4,
 "items": [
 {
-"t": "Emmanuel Macron rabroue Marine Le Pen et sa « drôle d’arrogance »",
+"t": "\"Il faut plus d'humilité quand on fait campagne\" : Emmanuel Macron tacle la \"drôle d'arrogance\" de Marine Le Pen",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/politique/emmanuel-macron/il-faut-plus-d-humilite-quand-on-fait-campagne-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen_8302119.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-26T22:25:56Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "« Arrogance », « basses manœuvres »… Passe d’armes entre Macron et Le Pen sur le budget de l’UE",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4266147-20261126-arrogance-basses-manoeuvres-passe-armes-entre-macron-pen-budget-ue?at_medium=display&at_campaign=149",
+"d": "2026-11-26T22:02:17Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "\"C'est ma dernière campagne\", annonce le candidat de Reconquête à la présidentielle Eric Zemmour",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/politique/eric-zemmour/c-est-ma-derniere-campagne-annonce-le-candidat-de-reconquete-a-la-presidentielle-eric-zemmour_8302101.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-26T21:55:56Z",
+"qui": [
+"zemmour"
+]
+},
+{
+"t": "\"Pas créer de doute et de trouble\": Emmanuel Macron recadre Teddy Riner sur l'aide à l'Ukraine",
+"s": "LCP",
+"u": "https://lcp.fr/actualites/pas-creer-de-doute-et-de-trouble-emmanuel-macron-recadre-teddy-riner-sur-l-aide-a-l",
+"d": "2026-11-26T21:45:47Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Nouveau budget européen : Emmanuel Macron critique la « drôle d’arrogance » de Marine Le Pen",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/politique/emmanuel-macron/nouveau-budget-europeen-emmanuel-macron-critique-la-drole-darrogance-de-marine-le-pen-b24854e0-e9de-11f1-86c1-70195b4d2e52?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-26T21:42:44Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "Depuis Bruxelles, Emmanuel Macron reproche à Marine Le Pen de faire preuve d’une « drôle d’arrogance de penser qu’elle serait déjà en charge du destin de la France »",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/26/emmanuel-macron-rabroue-marine-le-pen-et-sa-drole-d-arrogance_6815601_823448.html",
-"d": "2026-11-26T21:31:28Z",
+"d": "2026-11-26T21:31:24Z",
 "qui": [
 "lepen"
 ]
@@ -55,13 +100,11 @@
 ]
 },
 {
-"t": "EN DIRECT, présidentielle 2027 | Emmanuel Macron à propos de Marine Le Pen : « C’est une drôle d’arrogance de penser qu’elle serait déjà en charge du destin de la France »",
+"t": "Salon des maires et présidentielle 2027 : retrouvez notre direct sur la journée politique",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/live/2026/11/26/en-direct-presidentielle-2027-emmanuel-macron-a-propos-de-marine-le-pen-c-est-une-drole-d-arrogance-de-penser-qu-elle-serait-deja-en-charge-du-destin-de-la-france_6815062_823448.html",
 "d": "2026-11-26T20:08:26Z",
-"qui": [
-"lepen"
-]
+"qui": []
 },
 {
 "t": "DIRECT. Présidentielle: après les propos de Teddy Riner, Emmanuel Macron estime qu'il ne \"faut pas créer de doute et de trouble\" sur l'aide à l'Ukraine",
@@ -1740,62 +1783,21 @@
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-ce-sont-les-dernieres-semaines-qui-comptent-ca-va-s-eclaircir-de-plus-en-plus-lance-francois-hollande_VN-202611250670.html",
 "d": "2026-11-25T14:21:11Z",
 "qui": []
-},
-{
-"t": "ÉDITO. Présidentielle 2027 : à quoi joue François Hollande ?",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/politique/francois-hollande/edito-presidentielle-2027-a-quoi-joue-francois-hollande_8299791.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-25T14:08:38Z",
-"qui": []
-},
-{
-"t": "Congrès des maires : les candidats à la Présidentielle défilent en quête de parrainages",
-"s": "France 24",
-"u": "https://www.france24.com/fr/vid%C3%A9o/20261125-congr%C3%A8s-des-maires-les-candidats-%C3%A0-la-pr%C3%A9sidentielle-d%C3%A9filent-en-qu%C3%AAte-de-parrainages",
-"d": "2026-11-25T14:00:09Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027: Teddy Riner a \"passé la centaine\" de parrainages",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-teddy-riner-a-passe-la-centaine-de-parrainages_VN-202611250658.html",
-"d": "2026-11-25T13:59:04Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "Après sa réélection à la tête des maires de France, David Lisnard y voit \"une responsabilité supplémentaire\" mais pas \"un tremplin\" pour la présidentielle",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/apres-sa-reelection-a-la-tete-des-maires-de-france-david-lisnard-y-voit-une-responsabilite-supplementaire-mais-pas-un-tremplin-pour-la-presidentielle_AD-202611250646.html",
-"d": "2026-11-25T13:51:03Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "David Lisnard, candidat à la présidentielle, réélu à la tête de l'Association des maires de France",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/france/20261125-david-lisnard-candidat-%C3%A0-la-pr%C3%A9sidentielle-r%C3%A9%C3%A9lu-%C3%A0-la-t%C3%AAte-de-l-association-des-maires-de-france",
-"d": "2026-11-25T13:41:27Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
 "Le Monde": 9,
-"franceinfo": 6,
+"franceinfo": 8,
 "Libération": 19,
 "Le Figaro": 7,
 "Le Parisien": 54,
-"20 Minutes": 6,
-"Ouest-France": 0,
+"20 Minutes": 7,
+"Ouest-France": 1,
 "BFMTV": 14,
 "France 24": 8,
 "La Croix": 23,
 "LCP": 37,
 "RFI": 8
 },
-"maj": "2026-11-26T21:38:17Z"
+"maj": "2026-11-26T22:40:11Z"
 }
