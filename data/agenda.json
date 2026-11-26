@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-25",
+ "maj": "2026-11-26",
  "evenements": [
   {
    "date": "2026-08-27",
@@ -39,7 +39,7 @@
    "lieu": "Paris, Porte de Versailles",
    "chaine": null,
    "qui": [],
-   "url": null
+   "url": "https://www.franceinfo.fr/elections/david-lisnard-gabriel-attal-raphael-glucksmann-journee-de-campagne-au-salon-des-maires_8300931.html"
   },
   {
    "date": "2026-11-25",
@@ -64,6 +64,18 @@
     "tondelier"
    ],
    "url": "https://www.publicsenat.fr/actualites/politique/la-main-tendue-de-marine-tondelier-a-melenchon-peut-elle-faire-imploser-les-ecologistes"
+  },
+  {
+   "date": "2026-11-26",
+   "heure": null,
+   "type": "evenement",
+   "titre": "Déplacement de Teddy Riner dans la Manche : rencontre avec des agriculteurs près de Saint-Lô",
+   "lieu": "Près de Saint-Lô (Manche)",
+   "chaine": null,
+   "qui": [
+    "riner"
+   ],
+   "url": "https://www.ouest-france.fr/sport/judo/teddy-riner/presidentielle-le-candidat-teddy-riner-fait-etape-pres-de-saint-lo-pour-rencontrer-des-agriculteurs-ce-jeudi-10a808b0-e8b7-11f1-86c1-70195b4d2e52"
   },
   {
    "date": "2026-11-27",

@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-24",
+ "maj": "2026-11-26",
  "note": "Chaque position vient d'une mesure publiée, affichée sous la question avec un lien vers le programme du candidat. Quand un candidat ne s'est pas clairement prononcé, sa position est inconnue et la question ne compte pas pour lui.",
  "questions": [
   {
@@ -1771,6 +1771,40 @@
     "eco",
     -1
    ]
+  },
+  {
+   "theme": "Institutions",
+   "q": "Le droit de vote doit être ouvert dès 16 ans.",
+   "pos": {
+    "villepin": 1
+   },
+   "src": {
+    "villepin": "Abaisser l'âge du vote à 16 ans"
+   },
+   "id": "q113"
+  },
+  {
+   "theme": "Institutions",
+   "q": "Le vote blanc doit être reconnu dans les résultats des élections.",
+   "pos": {
+    "villepin": 1
+   },
+   "src": {
+    "villepin": "Reconnaître le vote blanc"
+   },
+   "id": "q114",
+   "exp": "Aujourd'hui, les bulletins blancs sont comptés à part mais ne font pas partie des suffrages exprimés : ils n'entrent pas dans le calcul des pourcentages. Les reconnaître pourrait par exemple les intégrer à ce calcul."
+  },
+  {
+   "theme": "Économie",
+   "q": "L'impôt sur les sociétés doit être progressif, avec un taux qui augmente selon les bénéfices.",
+   "pos": {
+    "lepen": 1
+   },
+   "src": {
+    "lepen": "Barème progressif à cinq tranches pour l'impôt sur les sociétés"
+   },
+   "id": "q115"
   }
  ],
  "axes": [

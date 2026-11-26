@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-25",
+ "maj": "2026-11-26",
  "principaux": [
   {
    "id": "arthaud",
@@ -385,10 +385,11 @@
     "Plan d'économies de 142 Md€ d'ici 2032",
     "Blocage temporaire des prix de l'énergie financé par une taxe sur les énergéticiens",
     "TVA à 5,5 % sur carburants, gaz et électricité",
-    "Retraites : 15 à 20 Md€ d'économies à terme"
+    "Retraites : 15 à 20 Md€ d'économies à terme",
+    "Barème progressif à cinq tranches pour l'impôt sur les sociétés"
    ],
    "source_mesures": {
-    "nom": "Rassemblement national, LCP, L'Essentiel de l'éco",
+    "nom": "Rassemblement national, LCP, L'Essentiel de l'éco, Le Parisien",
     "url": "https://rassemblementnational.fr/22-mesures"
    },
    "parrainages": {
@@ -412,7 +413,8 @@
        "TVA ramenée de 20 % à 5,5 % sur l'énergie",
        "Renationaliser les autoroutes pour baisser les péages de 15 %",
        "Exonérer d'impôt sur le revenu les actifs de moins de 30 ans",
-       "Minimum vieillesse à 1 000 € par mois"
+       "Minimum vieillesse à 1 000 € par mois",
+       "Barème progressif à cinq tranches pour l'impôt sur les sociétés"
       ]
      },
      {
@@ -1207,7 +1209,8 @@
        "Basculer plus de 200 Md€ de cotisations vers une CSG universelle (+200 € nets par mois en moyenne)",
        "500 000 logements par an et garantie locative universelle",
        "Supprimer les niches fiscales en cinq ans",
-       "Impôt sur le patrimoine des 1 % les plus aisés"
+       "Impôt sur le patrimoine des 1 % les plus aisés",
+       "Contrat de transition professionnelle de deux ans pour les salariés licenciés à cause de l'IA"
       ]
      },
      {
@@ -1229,7 +1232,8 @@
       "theme": "Sécurité et justice",
       "mesures": [
        "Agence européenne de recherche de défense",
-       "Porte-avions nucléaire de nouvelle génération"
+       "Porte-avions nucléaire de nouvelle génération",
+       "Créer une réserve citoyenne face aux menaces russes"
       ]
      },
      {
@@ -1252,7 +1256,9 @@
       "mesures": [
        "Référendum d'initiative citoyenne préparé par une convention permanente",
        "Diviser les codes juridiques par quatre",
-       "Diviser les codes juridiques par quatre et mettre fin aux surtranspositions"
+       "Diviser les codes juridiques par quatre et mettre fin aux surtranspositions",
+       "Reconnaître le vote blanc",
+       "Abaisser l'âge du vote à 16 ans"
       ]
      },
      {
