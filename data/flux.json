@@ -2,6 +2,50 @@
 "v": 4,
 "items": [
 {
+"t": "Emmanuel Macron rabroue Marine Le Pen et sa « drôle d’arrogance »",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/26/emmanuel-macron-rabroue-marine-le-pen-et-sa-drole-d-arrogance_6815601_823448.html",
+"d": "2026-11-26T21:31:28Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "\"Il ne faut pas créer de doute et de trouble\": Emmanuel Macron réagit aux propos de Teddy Riner sur l'aide à l'Ukraine",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elysee/il-ne-faut-pas-creer-de-doute-et-de-trouble-emmanuel-macron-reagit-aux-propos-de-teddy-riner-sur-l-aide-a-l-ukraine_AD-202611260997.html",
+"d": "2026-11-26T21:03:34Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "\"Madame Le Pen elle fait campagne, et c'est une drôle d'arrogance de penser qu'elle serait déjà en charge du destin de la France\" déclare Emmanuel Macron, président de la République",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-madame-le-pen-elle-fait-campagne-et-c-est-une-drole-d-arrogance-de-penser-qu-elle-serait-deja-en-charge-du-destin-de-la-france-declare-emmanuel-macron-president-de-la-republique_VN-202611260994.html",
+"d": "2026-11-26T20:59:08Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "\"David Lisnard ne sera jamais ministre de Marine Le Pen\", affirme Thomas Elexhauser, porte-parole de Nouvelle Énergie, face au porte-parole du RN Laurent Jacobelli",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/video-david-lisnard-ne-sera-jamais-ministre-de-marine-le-pen-affirme-thomas-elexhauser-porte-parole-de-nouvelle-energie-face-au-porte-parole-du-rn-laurent-jacobelli_VN-202611260980.html",
+"d": "2026-11-26T20:42:13Z",
+"qui": [
+"lepen",
+"lisnard"
+]
+},
+{
+"t": "Le défilé des candidats au Salon des maires, rendez-vous incontournable de la campagne présidentielle",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/26/le-defile-des-candidats-au-salon-des-maires-rendez-vous-incontournable-de-la-campagne-presidentielle_6815600_823448.html",
+"d": "2026-11-26T20:42:09Z",
+"qui": []
+},
+{
 "t": "Présidentielle 2027 : Édouard Philippe veut « dépenser mieux » pour la santé, une « fierté française »",
 "s": "Le Figaro",
 "u": "https://www.lefigaro.fr/politique/presidentielle-2027-edouard-philippe-veut-depenser-mieux-pour-la-sante-une-fierte-francaise-20261126",
@@ -498,7 +542,7 @@
 "qui": []
 },
 {
-"t": "DIRECT. Présidentielle 2027 : après les propos de Riner sur l'Ukraine, Macron appelle à ne « pas créer de doute et de trouble »",
+"t": "Présidentielle 2027 : après les propos de Riner sur l'Ukraine, Macron appelle à ne « pas créer de doute et de trouble »",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-dernier-jour-du-congres-des-maires-premier-deplacement-en-region-de-teddy-riner-26-11-2026-IYAKVLLACJF2XKI27PCGJEG74U.php",
 "d": "2026-11-26T12:00:00Z",
@@ -940,14 +984,11 @@
 ]
 },
 {
-"t": "EN DIRECT Présidentielle 2027 : Huit députés LR lâchent Bruno Retailleau pour David Lisnard...",
+"t": "Présidentielle 2027 : Macron trouve que Marine Le Pen fait preuve « d’une drôle d’arrogance »",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265846-20261126-direct-presidentielle-2027-lisnard-veut-convaincre-electeurs-tous-horizons-compris-rn?at_medium=display&at_campaign=149",
 "d": "2026-11-26T05:00:03Z",
-"qui": [
-"lisnard",
-"retailleau"
-]
+"qui": []
 },
 {
 "t": "\"C'est la confirmation de mon identité politique\" : comment David Lisnard compte utiliser son image de maire pour la présidentielle",
@@ -1740,53 +1781,12 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "Présidentielle 2027 : le gouvernement défend la tenue du deuxième tour le 2 mai, et s’engage à ce que le 1ᵉʳ-Mai se passe « dans les meilleures conditions possibles »",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/politique/article/2026/11/25/presidentielle-2027-le-gouvernement-defend-la-tenue-du-deuxieme-tour-du-scrutin-le-2-mai-et-s-engage-a-ce-que-le-1er-mai-se-passe-dans-les-meilleures-conditions-possibles_6815102_823448.html",
-"d": "2026-11-25T13:40:17Z",
-"qui": []
-},
-{
-"t": "\"C'est le fruit de la mobilisation d'une France de terrain\" : David Lisnard, candidat à la présidentielle, est réélu à la tête de l'Association des maires de France",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/politique/david-lisnard/c-est-le-fruit-de-la-mobilisation-d-une-france-de-terrain-david-lisnard-candidat-a-la-presidentielle-est-reelu-a-la-tete-de-l-association-des-maires-de-france_8299698.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-25T13:39:48Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Présidentielle: Teddy Riner a déjà recueilli une centaine de signatures de maires pour ses parrainages",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-teddy-riner-a-deja-recueilli-une-centaine-de-signatures-de-maires-pour-ses-parrainages_VN-202611250627.html",
-"d": "2026-11-25T13:34:13Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "Présidentielle 2027 : Le 2 mai est bien la meilleure date pour un second tour, selon le gouvernement",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4265662-20261125-presidentielle-2027-2-mai-bien-meilleure-date-second-tour-selon-gouvernement?at_medium=display&at_campaign=149",
-"d": "2026-11-25T13:31:21Z",
-"qui": []
-},
-{
-"t": "Association des maires de France : David Lisnard réélu pour un troisième mandat",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/association-des-maires-de-france-david-lisnard-reelu-pour-un-troisieme-mandat-20261125",
-"d": "2026-11-25T13:28:47Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
-"Le Monde": 7,
+"Le Monde": 9,
 "franceinfo": 6,
-"Libération": 20,
+"Libération": 19,
 "Le Figaro": 7,
 "Le Parisien": 54,
 "20 Minutes": 6,
@@ -1797,5 +1797,5 @@
 "LCP": 37,
 "RFI": 8
 },
-"maj": "2026-11-26T20:38:27Z"
+"maj": "2026-11-26T21:38:17Z"
 }
