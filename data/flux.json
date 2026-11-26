@@ -2,6 +2,31 @@
 "v": 4,
 "items": [
 {
+"t": "Présidentielle 2027: «Une primaire pour éliminer» n'est «pas un accord de gouvernement», affirme Hervé Morin",
+"s": "RFI",
+"u": "https://www.rfi.fr/fr/podcasts/invit%C3%A9-politique/20261126-pr%C3%A9sidentielle-2027-une-primaire-pour-%C3%A9liminer-n-est-pas-un-accord-de-gouvernement-affirme-herv%C3%A9-morin",
+"d": "2026-11-26T14:28:57Z",
+"qui": []
+},
+{
+"t": "Présidentielle 2027 : David Lisnard réclame \"l'anonymat des parrainages\" pour \"enlever la pression sur les maires\"",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/presidentielle-2027-david-lisnard-reclame-l-anonymat-des-parrainages-pour-enlever-la-pression-sur-les-maires_8301468.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-26T14:03:35Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "« On a beaucoup échangé » : Macron-Lisnard, les coulisses d’un rendez-vous manqué qui a viré à la guerre froide",
+"s": "Le Figaro",
+"u": "https://www.lefigaro.fr/elections/presidentielles/on-a-beaucoup-echange-macron-lisnard-les-coulisses-d-un-rendez-vous-manque-qui-a-vire-a-la-guerre-froide-20261125",
+"d": "2026-11-26T13:36:47Z",
+"qui": [
+"lisnard"
+]
+},
+{
 "t": "ÉDITO. David Lisnard contre Édouard Philippe : est-ce la bataille \"du terrain\" contre les élites ?",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/elections/edito-david-lisnard-contre-edouard-philippe-est-ce-la-bataille-du-terrain-contre-les-elites_8301429.html#xtor=RSS-3-%5Bpolitique%5D",
@@ -31,15 +56,6 @@
 ]
 },
 {
-"t": "DIRECT. Vaccination obligatoire des soignants, santé mentale, papillomavirus... Édouard Philippe présente ses propositions sur la santé",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-emmanuel-macron-en-route-pour-bruxelle-pour-negocier-avec-les-dirigeants-de-l-ue-sur-le-budget-europeen_LN-202611260221.html",
-"d": "2026-11-26T13:01:01Z",
-"qui": [
-"philippe"
-]
-},
-{
 "t": "Présidentielle 2027: \"C'est eux l'avenir\", lance Teddy Riner, candidat à l'élection, à la jeunesse",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-c-est-eux-l-avenir-lance-teddy-riner-candidat-a-l-election-a-la-jeunesse_VN-202611260599.html",
@@ -49,7 +65,7 @@
 ]
 },
 {
-"t": "EN DIRECT, congrès des maires de France : David Lisnard est accusé de « compromission » avec l’extrême droite par Gérald Darmanin",
+"t": "EN DIRECT, congrès des maires de France : David Lisnard vante « la nécessité de faire entendre la voix du terrain » avant un débat avec Sébastien Lecornu et Gérard Larcher",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/live/2026/11/26/en-direct-congres-des-maires-de-france-david-lisnard-est-accuse-de-compromission-avec-l-extreme-droite-par-gerald-darmanin_6815062_823448.html",
 "d": "2026-11-26T12:01:40Z",
@@ -61,7 +77,7 @@
 "t": "Présidentielle 2027 : Edouard Philippe passe à l’offensive face à David Lisnard",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/26/presidentielle-2027-edouard-philippe-passe-a-l-offensive-face-a-david-lisnard_6815527_823448.html",
-"d": "2026-11-26T12:00:11Z",
+"d": "2026-11-26T12:00:07Z",
 "qui": [
 "lisnard",
 "philippe"
@@ -75,13 +91,12 @@
 "qui": []
 },
 {
-"t": "DIRECT. Présidentielle 2027 : « La guerre en Ukraine est notre guerre », répond Raphaël Glucksmann à Teddy Riner",
+"t": "DIRECT. Présidentielle 2027 : suivez le débat au congrès des maires de France entre Sébastien Lecornu, David Lisnard et Gérard Larcher",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-dernier-jour-du-congres-des-maires-premier-deplacement-en-region-de-teddy-riner-26-11-2026-IYAKVLLACJF2XKI27PCGJEG74U.php",
 "d": "2026-11-26T12:00:00Z",
 "qui": [
-"glucksmann",
-"riner"
+"lisnard"
 ]
 },
 {
@@ -116,6 +131,24 @@
 "d": "2026-11-26T12:00:00Z",
 "qui": [
 "riner"
+]
+},
+{
+"t": "« Pour nous, c’est Lisnard » : des députés LR appellent à soutenir le maire de Cannes",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/politique/pour-nous-cest-lisnard-des-deputes-lr-appellent-a-soutenir-le-maire-de-cannes-26-11-2026-FJNZBYPAQNFHRAYPACGLVKYEGI.php",
+"d": "2026-11-26T12:00:00Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Présidentielle 2027 : vaccination obligatoire pour les soignants, solidarité, écrans… Les mesures d’Édouard Philippe pour la santé",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-vaccination-obligatoire-pour-les-soignants-solidarite-ecrans-les-mesures-dedouard-philippe-pour-la-sante-26-11-2026-6RGWN43CKNG65BJIBBWWC4BLNQ.php",
+"d": "2026-11-26T12:00:00Z",
+"qui": [
+"philippe"
 ]
 },
 {
@@ -169,6 +202,15 @@
 "u": "https://www.lemonde.fr/idees/article/2026/11/26/presidentielle-2027-les-ecologistes-confrontes-au-risque-de-leur-disparition_6815522_3232.html",
 "d": "2026-11-26T11:00:04Z",
 "qui": []
+},
+{
+"t": "DIRECT. Présidentielle: Marine Le Pen fustige de \"basses manoeuvres\" pour conclure un accord sur le budget de l'UE avant son éventuelle arrivée à l'Élysée",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-emmanuel-macron-en-route-pour-bruxelle-pour-negocier-avec-les-dirigeants-de-l-ue-sur-le-budget-europeen_LN-202611260221.html",
+"d": "2026-11-26T10:50:49Z",
+"qui": [
+"lepen"
+]
 },
 {
 "t": "Écrits antisémites attribués à Jordan Bardella: \"Il est clair que Jordan Bardella a menti\", déclare Raphaël Glucksmann",
@@ -265,7 +307,7 @@
 "t": "Présidentielle 2027 : le désarroi des partis pro-Ukraine et pro-Europe alors que ces sujets ne mobilisent pas les électeurs",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/26/presidentielle-2027-le-desarroi-des-partis-pro-ukraine-et-pro-europe-alors-que-ces-sujets-ne-mobilisent-pas-les-electeurs_6815508_823448.html",
-"d": "2026-11-26T09:30:05Z",
+"d": "2026-11-26T09:30:01Z",
 "qui": []
 },
 {
@@ -452,14 +494,13 @@
 ]
 },
 {
-"t": "EN DIRECT Présidentielle 2027 : David Lisnard refuse de choisir entre Marine Le Pen et Edouard Philippe…",
+"t": "EN DIRECT Présidentielle 2027 : « La guerre en Ukraine est notre guerre », réplique Raphaël Glucksmann à Teddy Riner…",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265846-20261126-direct-presidentielle-2027-lisnard-veut-convaincre-electeurs-tous-horizons-compris-rn?at_medium=display&at_campaign=149",
 "d": "2026-11-26T05:00:03Z",
 "qui": [
-"lepen",
-"lisnard",
-"philippe"
+"glucksmann",
+"riner"
 ]
 },
 {
@@ -1737,66 +1778,21 @@
 "qui": [
 "melenchon"
 ]
-},
-{
-"t": "Marine Le Pen",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/marine-le-pen_DN-201201010011.html",
-"d": "2026-11-25T06:25:53Z",
-"qui": [
-"lepen"
-]
-},
-{
-"t": "Fabien Roussel",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/fabien-roussel_DN-202105090296.html",
-"d": "2026-11-25T06:25:53Z",
-"qui": [
-"roussel"
-]
-},
-{
-"t": "Raphaël Glucksmann",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/raphael-glucksmann_DN-202405270322.html",
-"d": "2026-11-25T06:25:53Z",
-"qui": [
-"glucksmann"
-]
-},
-{
-"t": "Eric Zemmour",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/eric-zemmour_DN-202110270595.html",
-"d": "2026-11-25T06:25:53Z",
-"qui": [
-"zemmour"
-]
-},
-{
-"t": "Eric Zemmour définitivement condamné pour avoir affirmé que le maréchal Pétain \"avait sauvé les juifs français\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-eric-zemmour-definitivement-condamne-pour-avoir-affirme-que-le-marechal-petain-avait-sauve-les-juifs-francais_VN-202611250203.html",
-"d": "2026-11-25T06:06:37Z",
-"qui": [
-"zemmour"
-]
 }
 ],
 "sources": {
 "Le Monde": 5,
-"franceinfo": 10,
+"franceinfo": 11,
 "Libération": 21,
 "Le Figaro": 8,
-"Le Parisien": 50,
-"20 Minutes": 8,
+"Le Parisien": 51,
+"20 Minutes": 7,
 "Ouest-France": 0,
-"BFMTV": 17,
+"BFMTV": 16,
 "France 24": 9,
 "La Croix": 24,
 "LCP": 36,
 "RFI": 9
 },
-"maj": "2026-11-26T13:19:47Z"
+"maj": "2026-11-26T14:33:41Z"
 }
