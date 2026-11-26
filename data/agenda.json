@@ -69,13 +69,15 @@
    "date": "2026-11-26",
    "heure": null,
    "type": "evenement",
-   "titre": "Déplacement de Teddy Riner dans la Manche : rencontre avec des agriculteurs près de Saint-Lô",
-   "lieu": "Près de Saint-Lô (Manche)",
+   "titre": "Déplacement de Teddy Riner dans la Manche : exploitation agricole et centre de formation professionnelle",
+   "lieu": "Coutances (Manche)",
    "chaine": null,
    "qui": [
     "riner"
    ],
-   "url": "https://www.ouest-france.fr/sport/judo/teddy-riner/presidentielle-le-candidat-teddy-riner-fait-etape-pres-de-saint-lo-pour-rencontrer-des-agriculteurs-ce-jeudi-10a808b0-e8b7-11f1-86c1-70195b4d2e52"
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-teddy-riner-attendu-a-coutances-manche-pour-un-deplacement-sur-une-exploitation-agricole-et-un-centre-de-formation-professionnelle_VN-202611260482.html",
+   "commune": "Coutances",
+   "dep": "50"
   },
   {
    "date": "2026-11-26",
@@ -118,6 +120,18 @@
    "dep": "34"
   },
   {
+   "date": "2026-11-27",
+   "heure": null,
+   "type": "evenement",
+   "titre": "Déplacement de Jean-Luc Mélenchon à Berlin",
+   "lieu": "Berlin (Allemagne)",
+   "chaine": null,
+   "qui": [
+    "melenchon"
+   ],
+   "url": "https://www.lemonde.fr/international/article/2026/11/26/l-allemagne-s-inquiete-de-la-rhetorique-anti-allemande-de-jean-luc-melenchon_6815524_3210.html"
+  },
+  {
    "date": "2026-11-28",
    "heure": null,
    "type": "meeting",
@@ -142,6 +156,20 @@
    "url": "https://www.polyvia.fr/fr/evenement/presidentielle-2027-les-candidats-face-lindustrie-le-2-decembre-en-direct"
   },
   {
+   "date": "2026-12-03",
+   "heure": null,
+   "type": "meeting",
+   "titre": "Réunion publique de Bruno Retailleau",
+   "lieu": "Dijon (Côte-d'Or)",
+   "chaine": null,
+   "qui": [
+    "retailleau"
+   ],
+   "url": "https://dijon-actualites.fr/2026/11/24/presidentielle-2027-bruno-retailleau-attendu-a-dijon-le-3-decembre-pour-une-reunion-publique/",
+   "commune": "Dijon",
+   "dep": "21"
+  },
+  {
    "date": "2026-12-05",
    "heure": "15h",
    "type": "meeting",
@@ -156,6 +184,20 @@
    "dep": "76",
    "lat": 49.4958,
    "lon": 0.1312
+  },
+  {
+   "date": "2026-12-06",
+   "heure": null,
+   "type": "meeting",
+   "titre": "Premier grand meeting de Fabien Roussel",
+   "lieu": "Avion (Pas-de-Calais)",
+   "chaine": null,
+   "qui": [
+    "roussel"
+   ],
+   "url": "https://www.horizonactu.fr/actualite-50403-presidentielles-2027-le-candidat-communiste-fabien-roussel-tiendra-son-premier-grand-meeting-a-avion-le-6-decembre",
+   "commune": "Avion",
+   "dep": "62"
   },
   {
    "date": "2026-12-06",

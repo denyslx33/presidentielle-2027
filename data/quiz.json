@@ -1805,6 +1805,17 @@
     "lepen": "Barème progressif à cinq tranches pour l'impôt sur les sociétés"
    },
    "id": "q115"
+  },
+  {
+   "theme": "Social et santé",
+   "q": "Il faut rendre obligatoires de nouveaux vaccins.",
+   "pos": {
+    "philippe": 1
+   },
+   "src": {
+    "philippe": "Nouveaux vaccins obligatoires"
+   },
+   "id": "q116"
   }
  ],
  "axes": [
