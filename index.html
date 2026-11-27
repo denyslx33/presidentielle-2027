@@ -2836,6 +2836,8 @@ function renderAlertes() {
   sh.onclick = (e) => { if (e.target === sh) sh.hidden = true; };
 })();
 // Les favoris changent : on prévient le serveur pour les alertes « favoris »
+// À chaque ouverture : on renvoie au serveur les choix et favoris actuels (au cas où ils auraient changé, ou si le téléphone a renouvelé son abonnement)
+setTimeout(() => { try { const t = lsGet('alTopics') || []; if (PUSH_API && t.length && 'Notification' in window && Notification.permission === 'granted') alSync(t); } catch (e) {} }, 4000);
 function alFavsChanged() { const t = lsGet('alTopics') || []; if (PUSH_API && t.includes('favoris')) alSync(t); }
 
 // Bandeau « version bêta » : masquable, revient au bout de 7 jours
