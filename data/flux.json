@@ -2,6 +2,16 @@
 "v": 4,
 "items": [
 {
+"t": "Ian Boucard, député Droite Républicaine, appelle à \"un candidat unique de la droite et du centre\" pour \"éviter un second tour mortifère entre Marine Le Pen et Jean-Luc Mélenchon\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-ian-boucard-depute-droite-republicaine-appelle-a-un-candidat-unique-de-la-droite-et-du-centre-pour-eviter-un-second-tour-mortifere-entre-marine-le-pen-et-jean-luc-melenchon_VN-202611270647.html",
+"d": "2026-11-27T14:42:04Z",
+"qui": [
+"lepen",
+"melenchon"
+]
+},
+{
 "t": "Éric Zemmour placé sous le statut de témoin assisté dans l’enquête sur des prêts consentis au parti Reconquête",
 "s": "Ouest-France",
 "u": "https://www.ouest-france.fr/politique/eric-zemmour/eric-zemmour-place-sous-le-statut-de-temoin-assiste-dans-lenquete-sur-des-prets-consentis-au-parti-reconquete-569b0752-ea6d-11f1-bb2d-c71dc7920c2a?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
@@ -17,6 +27,15 @@
 "d": "2026-11-27T14:39:39Z",
 "qui": [
 "lepen"
+]
+},
+{
+"t": "Présidentielle 2027 : Éric Zemmour placé sous le statut de témoin assisté dans une affaire de prêts à Reconquête",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4266329-20261127-presidentielle-2027-eric-zemmour-place-sous-statut-temoin-assiste-affaire-prets-reconquete?at_medium=display&at_campaign=149",
+"d": "2026-11-27T14:36:46Z",
+"qui": [
+"zemmour"
 ]
 },
 {
@@ -257,6 +276,15 @@
 "d": "2026-11-27T12:00:00Z",
 "qui": [
 "riner"
+]
+},
+{
+"t": "Reconquête le président du parti Éric Zemmour placé sous le statut de témoin assisté pour des prêts consentis",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/politique/reconquete-le-president-du-parti-eric-zemmour-place-sous-le-statut-de-temoin-assiste-pour-des-prets-consentis-27-11-2026-PFT2R3RAMNF7BKF2PMEYFBWNPQ.php",
+"d": "2026-11-27T12:00:00Z",
+"qui": [
+"zemmour"
 ]
 },
 {
@@ -1761,34 +1789,6 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "\"Marine Le Pen, elle représente le nouveau en-même-tempisme\", estime Alexandra Martin, secrétaire générale de Nouvelle Énergie",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-marine-le-pen-elle-represente-le-nouveau-en-meme-tempisme-estime-alexandra-martin-secretaire-generale-de-nouvelle-energie_VN-202611251026.html",
-"d": "2026-11-25T22:50:10Z",
-"qui": [
-"lepen"
-]
-},
-{
-"t": "David Lisnard, l'outsider qui bouscule la campagne présidentielle",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-david-lisnard-l-outsider-qui-bouscule-la-campagne-presidentielle_VN-202611251013.html",
-"d": "2026-11-25T22:27:42Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Un second tour Le Pen-Mélenchon serait \"une guerre civile\" pour Gérald Darmanin: \"Banaliser quelque chose d'aussi épouvantable est extrêmement grave\", assure Jean-Philippe Tanguy, député RN",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/video-un-second-tour-le-pen-melenchon-serait-une-guerre-civile-pour-gerald-darmanin-banaliser-quelque-chose-d-aussi-epouvantable-est-extremement-grave-assure-jean-philippe-tanguy-depute-rn_VN-202611251000.html",
-"d": "2026-11-25T22:12:30Z",
-"qui": [
-"lepen",
-"melenchon"
-]
 }
 ],
 "sources": {
@@ -1796,14 +1796,14 @@
 "franceinfo": 6,
 "Libération": 23,
 "Le Figaro": 7,
-"Le Parisien": 53,
-"20 Minutes": 6,
+"Le Parisien": 52,
+"20 Minutes": 7,
 "Ouest-France": 2,
-"BFMTV": 24,
+"BFMTV": 25,
 "France 24": 9,
 "La Croix": 23,
 "LCP": 38,
 "RFI": 9
 },
-"maj": "2026-11-27T14:40:35Z"
+"maj": "2026-11-27T14:45:30Z"
 }
