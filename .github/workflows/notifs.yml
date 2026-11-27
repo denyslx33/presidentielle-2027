@@ -15,6 +15,10 @@ on:
         description: "Alerte d'essai (laisser vide pour un passage normal)"
         required: false
         default: ""
+      favori:
+        description: "Forcer l'alerte favoris d'un candidat (identifiant, ex. lepen)"
+        required: false
+        default: ""
 permissions:
   contents: write
 concurrency: notifs
@@ -24,9 +28,9 @@ jobs:
     timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
-      - if: ${{ !inputs.test }}
+      - if: ${{ !inputs.test && !inputs.favori }}
         run: python3 .github/scripts/sondages.py || true
-      - if: ${{ !inputs.test }}
+      - if: ${{ !inputs.test && !inputs.favori }}
         run: python3 .github/scripts/reserve.py || true
         env:
           PUSH_API: ${{ vars.PUSH_API }}
@@ -36,6 +40,7 @@ jobs:
           PUSH_API: ${{ vars.PUSH_API }}
           SEND_TOKEN: ${{ secrets.SEND_TOKEN }}
           TEST_MSG: ${{ inputs.test }}
+          FORCE_FAV: ${{ inputs.favori }}
       - run: |
           for f in data/sondages.csv data/notifs-etat.json data/notifs-stats.json data/candidats.json; do if [ -f "$f" ]; then git add "$f"; fi; done
           git diff --cached --quiet && exit 0

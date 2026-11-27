@@ -16,6 +16,19 @@ PRIO = ['franceinfo', 'Le Monde', 'Ouest-France', 'La Croix', 'Le Figaro', 'Lib�
 MAJ = re.compile(r"(annonce|officialise|confirme) sa candidature|se (declare|lance) candidat|retire sa candidature|renonce a (la presidentielle|se presenter|sa candidature|etre candidat)|jette l.eponge|se retire de la course|conseil constitutionnel|liste (officielle )?des candidats")
 def norm(t):
     t = unicodedata.normalize('NFD', t.lower()); return ''.join(c for c in t if unicodedata.category(c) != 'Mn')
+def mots(t):
+    return {w for w in re.findall(r'[a-z]{5,}', norm(t)) if w not in ('presidentielle', 'candidat', 'candidate') and w not in NOMS}
+def consensus(it, pool):
+    """Combien d'autres médias racontent la même histoire (au moins 2 mots importants en commun)."""
+    m = mots(it['t']); return len({o['s'] for o in pool if o['s'] != it['s'] and len(m & mots(o['t'])) >= 2})
+def rang(it, c=None, pool=()):
+    """Meilleur titre d'abord : candidat cité au début du titre, puis média de référence, puis le plus récent."""
+    avis = 1 if AVIS.search(it['t']) else 0  # édito, question, citation, direct : on préfère une info factuelle
+    cite = 0 if c is None or norm(CANDS.get(c, c)).split(' ', 1)[-1] in norm(it['t']) else 1
+    return (cite, avis, -consensus(it, pool), PRIO.index(it['s']) if it['s'] in PRIO else 99, -int(re.sub(r'\D', '', it.get('d', '0'))[:12] or 0))
+AVIS = re.compile(r'ÉDITO|EDITO|^(CHRONIQUE|TRIBUNE|PODCAST|BILLET|ANALYSE|DÉCRYPTAGE|DIRECT|VIDÉO|VIDEO|LES ÉCLAIREURS)\b|épisode|On/Off|\?|["«»“”]', re.I)
+CANDS = {c['id']: c['nom'] for c in json.load(open('data/candidats.json', encoding='utf-8')).get('principaux', [])} if os.path.exists('data/candidats.json') else {}
+NOMS = {w for n in CANDS.values() for w in re.findall(r'[a-z]{5,}', norm(n))}
 def titre(it):
     t = re.sub(r'^(DIRECT|VIDÉO|VIDEO|INFO [A-Z0-9 ]+)[.:]\s*', '', it['t']).strip()
     return (t if len(t) <= 170 else t[:167].rsplit(' ', 1)[0] + '…') + f" ({it['s']})"
@@ -54,6 +67,19 @@ def send(topic, title, body, url='./', tag=None, cands=None, urgent=False):
     print(f'{topic}: {tot} envoyées, {r.get("skipped", 0)} ignorées, {r.get("dead", 0)} abonnements périmés')
 
 def main():
+    force = os.environ.get('FORCE_FAV', '').strip()
+    if force:  # alerte favoris lancée à la main pour un candidat (meilleur titre des 12 dernières heures)
+        etat = load(ETAT, {'sondages': [], 'actu': [], 'tv': [], 'fav': {}, 'maj': ''})
+        cand = {c['id']: c['nom'] for c in load('data/candidats.json', {}).get('principaux', [])}
+        lo = (now - timedelta(hours=12)).astimezone(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+        its = [i for i in load('data/flux.json', {}).get('items', []) if force in i.get('qui', []) and i.get('d', '') >= lo]
+        if force in cand and its:
+            it = sorted(its, key=lambda i: rang(i, force, its))[0]
+            send('favoris', cand[force], titre(it), f'./#c-{force}', 'fav-' + force, [force])
+            etat.setdefault('fav', {})[force] = today
+            json.dump(etat, open(ETAT, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+        else: print('Rien à envoyer pour', force)
+        return
     test = os.environ.get('TEST_MSG', '').strip()
     if test:  # alerte d'essai lancée à la main depuis GitHub (onglet Actions)
         send('test', 'Test Nous votons', test, './', 'test', urgent=True); return
@@ -83,7 +109,7 @@ def main():
     for c, its in by.items():
         if len({i['s'] for i in its}) < 3 or etat['fav'].get(c) == today or c not in cand: continue
         etat['fav'][c] = today
-        it = sorted(its, key=lambda i: PRIO.index(i['s']) if i['s'] in PRIO else 99)[0]
+        it = sorted(its, key=lambda i: rang(i, c, its))[0]
         out.append(('favoris', cand[c], titre(it), f'./#c-{c}', 'fav-' + c, [c]))
     maj = [i for i in win if MAJ.search(norm(i['t']))]
     if len({i['s'] for i in maj}) >= 3 and etat['maj'] != today:
