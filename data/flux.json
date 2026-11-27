@@ -2,6 +2,24 @@
 "v": 4,
 "items": [
 {
+"t": "Jean-Luc Mélenchon: \"Si les Français m'élisent, je leur donnerai le moyen de me révoquer\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-jean-luc-melenchon-si-les-francais-m-elisent-je-leur-donnerai-le-moyen-de-me-revoquer_VN-202611270888.html",
+"d": "2026-11-27T19:50:36Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Mouvement lycéen: \"C'était nous qui faisions le barrage entre les flics et les jeunes\", affirme Jean-Luc Mélenchon",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-mouvement-lyceen-c-etait-nous-qui-faisions-le-barrage-entre-les-flics-et-les-jeunes-affirme-jean-luc-melenchon_VN-202611270887.html",
+"d": "2026-11-27T19:48:56Z",
+"qui": [
+"melenchon"
+]
+},
+{
 "t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
@@ -1771,24 +1789,6 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "Présidentielle 2027 : « Oui, on aide, mais au détriment de quoi ? », Teddy Riner tente de clarifier ses propos sur l’Ukraine",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-oui-on-aide-mais-au-detriment-de-quoi-teddy-riner-tente-de-clarifier-ses-propos-sur-lukraine-26-11-2026-PKPDMF6P3JAORDG47A3L52BDME.php",
-"d": "2026-11-26T12:00:00Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "Vaccins obligatoires, « loi Évin » des écrans… Édouard Philippe veut incarner « le camp de la science »",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/vaccins-obligatoires-loi-evin-des-ecrans-edouard-philippe-veut-incarner-le-camp-de-la-science-26-11-2026-UWPIBOOXKJFOFJSXT5OQAGZGZY.php",
-"d": "2026-11-26T12:00:00Z",
-"qui": [
-"philippe"
-]
 }
 ],
 "sources": {
@@ -1805,5 +1805,5 @@
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T19:45:22Z"
+"maj": "2026-11-27T20:00:34Z"
 }
