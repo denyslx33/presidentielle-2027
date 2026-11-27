@@ -180,6 +180,51 @@
    "bloc": "c"
   },
   {
+   "id": "bouamrane",
+   "nom": "Karim Bouamrane",
+   "parti": "Parti socialiste",
+   "role": "Maire de Saint-Ouen-sur-Seine depuis 2020, conseiller départemental de Seine-Saint-Denis.",
+   "annonce": "Candidat déclaré depuis le 9 juin 2026, sans passer par la primaire de la gauche.",
+   "mesures": [
+    "Au moins 150 € de plus par mois sur les salaires",
+    "Augmenter la prime d'activité",
+    "Baisser la CSG pour augmenter les salaires jusqu'au salaire médian",
+    "Le chèque énergie pour faire face à la hausse des prix de l'énergie"
+   ],
+   "source_mesures": {
+    "nom": "Sud Radio, 9 nov. 2026",
+    "url": "https://www.sudradio.fr/linvite-politique/karim-bouamrane-il-faut-arreter-de-regarder-melenchon-comme-le-superman-de-la-gauche"
+   },
+   "parrainages": {
+    "texte": "Aucun chiffre revendiqué. Première candidature à la présidentielle.",
+    "source": null,
+    "url": null
+   },
+   "finances": null,
+   "programme": {
+    "url": null,
+    "note": "Programme 2027 pas encore publié : ces mesures viennent de ses déclarations publiques.",
+    "recap": null,
+    "themes": [
+     {
+      "theme": "Économie",
+      "mesures": [
+       "Au moins 150 € de plus par mois sur les salaires",
+       "Baisser la CSG pour augmenter les salaires jusqu'au salaire médian"
+      ]
+     },
+     {
+      "theme": "Social et santé",
+      "mesures": [
+       "Augmenter la prime d'activité",
+       "Le chèque énergie pour faire face à la hausse des prix de l'énergie"
+      ]
+     }
+    ]
+   },
+   "bloc": "g"
+  },
+  {
    "id": "dupont-aignan",
    "nom": "Nicolas Dupont-Aignan",
    "parti": "Debout la France",
