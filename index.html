@@ -1641,7 +1641,7 @@ function renderQuizRes() {
       if (!ids.length) continue;
       p.append(el('div', 'src', lab + ' :'));
       const ul = el('ul'); ul.style.margin = '2px 0 4px'; ul.style.paddingLeft = '18px';
-      for (const k of ids) { const c = byId.get(k); const li = el('li', 'src'); li.append(el('b', null, c.nom), ' : « ' + ((q.src || {})[k] || '') + ' » '); const u = srcUrl(c); if (u) li.append(link('source', u)); ul.append(li); }
+      for (const k of ids) { const c = byId.get(k); const li = el('li', 'src'); li.append(el('b', null, c.nom), ' : « ' + ((q.src || {})[k] || '') + ' » '); const u = (q.srcu || {})[k] || srcUrl(c); if (u) li.append(link('source', u)); ul.append(li); }
       p.append(ul);
     }
     const unk = CAND.principaux.filter((c) => !(c.id in q.pos)).map((c) => nomFamille(c.nom));
