@@ -2812,7 +2812,7 @@ function alErr(code) {
 }
 function alErrTexte() {
   if (AL_ERR === 'refus') return 'Notifications refusées. Autorisez‑les pour ce site dans les réglages du navigateur, puis réessayez.';
-  if (AL_ERR.startsWith('abonnement')) return 'Votre navigateur refuse les alertes (mode privé ou économie d’énergie ?). Essayez avec Chrome à jour, hors navigation privée.' + (AL_DET ? ' (code : ' + AL_DET + ')' : '');
+  if (AL_ERR.startsWith('abonnement')) return 'Le service de notifications ne répond pas. Souvent, c’est le Wi‑Fi qui le bloque : essayez en 4G, Wi‑Fi coupé, hors navigation privée.' + (AL_DET ? ' (code : ' + AL_DET + ')' : '');
   if (AL_ERR.startsWith('serveur')) return 'Le serveur des alertes ne répond pas. Réessayez dans un instant.';
   return 'Impossible pour le moment, réessayez';
 }
