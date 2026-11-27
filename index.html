@@ -561,6 +561,34 @@ details.sec.acc[open] { padding-bottom:12px; }
 #c-partis .pbody .who .av { width:26px; height:26px; font-size:10px; border:0; }
 #c-partis .pbody .who button { display:flex; align-items:center; gap:6px; border:0; background:#E6EAF2; border-radius:100px; font:400 13px 'Asap', sans-serif; color:#012157; padding:4px 10px 4px 4px; }
 #c-partis .pbody .lnk { font-size:14px; margin-top:8px; }
+/* Votes */
+#c-votes .vcap { font:400 12px 'Asap', sans-serif; color:#626161; text-align:right; margin:0 6px 16px auto; max-width:220px; }
+#c-votes .vacc { background:#fff; border-radius:15px; margin-bottom:6px; }
+#c-votes .vacc summary { list-style:none; display:flex; align-items:flex-start; gap:6px; padding:8px; cursor:pointer; }
+#c-votes .vacc summary::-webkit-details-marker { display:none; }
+#c-votes .vacc summary > svg { flex:none; margin-top:1px; transition:transform .15s; }
+#c-votes .vacc[open] summary > svg { transform:rotate(90deg); }
+#c-votes .vacc .vt { flex:1; font:500 18px/22px 'Asap', sans-serif; color:#011944; }
+#c-votes .vbadge { flex:none; display:inline-flex; align-items:center; gap:2px; margin-top:2px; padding:2px 4px 2px 6px; border-radius:100px; font:400 12px/14px 'Capriola', 'Asap', sans-serif; color:#fff; }
+#c-votes .vbadge.ok { background:#06A067; } #c-votes .vbadge.ko { background:#F95969; }
+#c-votes .vacc .vcard { background:none; border:0; border-radius:0; padding:0 12px 12px; margin:0; }
+#c-votes .vacc .vcard > .vtop .vres, #c-votes .vacc .vcard > h3 { display:none; }
+#c-votes .vacc .vcard > .vtop { font:400 12px 'Gidole', 'Asap', sans-serif; color:#626161; }
+#c-votes .vhow { margin-top:18px; }
+/* Retraits */
+#c-retraits .pcap { font:400 12px 'Asap', sans-serif; color:#626161; text-align:right; margin:0 6px 16px auto; max-width:220px; }
+#c-retraits .rcard { display:flex; gap:12px; align-items:flex-start; background:#fff; border:0; border-radius:15px; padding:12px; margin:0 0 6px; }
+#c-retraits .rl { display:flex; align-items:center; gap:8px; width:134px; flex:none; }
+#c-retraits .rav { width:50px; height:50px; border-radius:50%; background:#5573A7; color:#fff; flex:none; display:flex; align-items:center; justify-content:center; font:500 16px 'Asap', sans-serif; overflow:hidden; position:relative; }
+#c-retraits .rav img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+#c-retraits .rn { display:flex; flex-direction:column; min-width:0; }
+#c-retraits .rn b { font:400 16px 'Asap', sans-serif; color:#011334; }
+#c-retraits .rn span { font:400 12px 'Asap', sans-serif; color:#626161; }
+#c-retraits .rr { flex:1; min-width:0; display:flex; flex-direction:column; align-items:flex-end; gap:2px; text-align:right; padding-top:11px; }
+#c-retraits .rd { font:400 13px 'Capriola', 'Asap', sans-serif; color:#011334; }
+#c-retraits .rr p { font:400 12px 'Asap', sans-serif; color:#011334; margin:0; }
+#c-retraits .fsrc { display:inline-flex; align-items:center; font:500 12px 'Asap', sans-serif; color:#5573A7; text-decoration:underline; margin-top:2px; }
+#c-retraits .fsrc svg { width:15px; height:15px; } #c-retraits .fsrc svg path { stroke:#5573A7; }
 </style>
 </head>
 <body>
@@ -1850,7 +1878,10 @@ function renderVotes() {
   const box = $('c-votes'); if (!box) return;
   if (!SCRUT) { box.replaceChildren(el('p', 'muted', 'Chargement des votes…')); return; }
   const how = el('details', 'vhow'); how.append(el('summary', null, 'Comment lire'), el('p', 'muted src', 'Un groupe est classé « pour » ou « contre » quand au moins deux tiers de ses députés présents ont voté ainsi, sinon il est « divisé ». Seuls les votes de l’Assemblée élue en juillet 2024 sont retenus, sur des sujets du test. Un groupe de députés n’est pas un candidat. Chiffres officiels de l’Assemblée nationale.'));
-  box.replaceChildren(el('p', 'vintro', 'Ce que les députés ont voté sur les grands sujets de la campagne.'), how, ...SCRUT.votes.map(voteCard));
+  const OKI = '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.64711 7.71769L5.17271 9.98202L9.35289 5.01794" stroke-width="1.5" stroke-linecap="round" stroke="white"/></svg>', KOI = '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5614 5.07385L8.4386 9.92603M8.4386 5.07385L3.5614 9.92603" stroke-width="1.5" stroke-linecap="round" stroke="white"/></svg>';
+  const rows = SCRUT.votes.map((v) => { const det = el('details', 'vacc'); const sm = el('summary'); const bd = el('span', 'vbadge ' + (v.adopte ? 'ok' : 'ko')); bd.innerHTML = '<span>' + (v.adopte ? 'adopté' : 'rejeté') + '</span>' + (v.adopte ? OKI : KOI);
+    sm.append(fsvg('th'), el('span', 'vt', v.titre), bd); det.append(sm, voteCard(v)); return det; });
+  box.replaceChildren(el('p', 'pcap vcap', 'Ce que les députés ont voté sur les grands sujets de la campagne.'), ...rows, how);
 }
 function renderPartis() {
   const box = $('c-partis'); if (!box || !CAND) return;
@@ -1921,15 +1952,17 @@ function renderPartis() {
 // ---------- Retraits
 function renderRetraits() {
   const box = $('c-retraits'); if (!box || !CAND) return;
-  const out = [el('p', 'muted', 'Personnalités qui étaient candidates à la présidentielle 2027 et ont renoncé.')];
+  const out = [el('p', 'pcap', 'Personnalités qui étaient candidates à la présidentielle 2027 et ont renoncé.')];
   for (const r of CAND.retraits || []) {
     const m = r.nom.match(/^(.*?)\s*\((.*)\)\s*$/); const nom = m ? m[1] : r.nom, parti = m ? m[2] : '';
     const dm = (r.texte || '').match(/le (\d{1,2}(?:er)? \S+ \d{4})/);
-    const d = el('div', 'rcard'); const hd = el('div', 'rhead');
-    if (r.id) { const im = el('img'); im.src = 'data/portraits/' + r.id + '.jpg'; im.alt = ''; im.loading = 'lazy'; im.onerror = () => im.remove(); hd.append(im); }
-    const tt = el('div'); tt.append(el('h3', null, nom)); if (parti) tt.append(el('div', 'muted', parti)); hd.append(tt); d.append(hd);     if (dm) d.append(el('div', 'd', (/^Battu/.test(r.texte) ? 'Hors course le ' : 'Retrait le ') + dm[1]));
-    d.append(el('p', null, r.texte)); const p = el('p', 'muted'); p.append(link('Source', r.url)); d.append(p);
-    out.push(d);
+    const d = el('div', 'rcard'); const l = el('div', 'rl');
+    const ph = el('span', 'rav'); ph.textContent = nom.split(/\s+/).map((w) => w[0]).join('').slice(0, 2);
+    if (r.id) { const im = el('img'); im.src = 'data/portraits/' + r.id + '.jpg'; im.alt = ''; im.loading = 'lazy'; im.onload = () => ph.classList.add('img'); im.onerror = () => im.remove(); ph.append(im); }
+    const tt = el('div', 'rn'); tt.append(el('b', null, nom)); if (parti) tt.append(el('span', null, parti)); l.append(ph, tt);
+    const rr = el('div', 'rr'); if (dm) rr.append(el('div', 'rd', (/^Battu/.test(r.texte) ? 'Hors course le ' : 'Retrait le ') + dm[1]));
+    rr.append(el('p', null, r.texte.replace(/^A retiré sa candidature le \d{1,2}(?:er)? \S+ \d{4}, /, 'A retiré sa candidature, ').replace(/^(Battue?) le \d{1,2}(?:er)? \S+ \d{4} /, '$1 '))); if (r.url) rr.append(fSrc('Source', r.url));
+    d.append(l, rr); out.push(d);
   }
   if (!(CAND.retraits || []).length) out.push(el('p', null, 'Aucun retrait pour le moment.'));
   box.replaceChildren(...out);
@@ -1937,7 +1970,7 @@ function renderRetraits() {
 function setCMode(m) {
   for (const b of document.querySelectorAll('#cseg button')) b.classList.toggle('on', b.dataset.c === m);
   $('c-cands').hidden = m !== 'cands'; $('c-partis').hidden = m !== 'partis'; $('c-retraits').hidden = m !== 'retraits'; $('c-votes').hidden = m !== 'votes';
-  const T = { cands: 'Les candidats<br>par ordre alphabétique', partis: 'Les partis<br>de la gauche vers la droite', votes: 'Les grands votes<br>à l’Assemblée', retraits: 'Ils ont renoncé' }; $('c-title').innerHTML = T[m] || '';
+  const T = { cands: 'Les candidats<br>par ordre alphabétique', partis: 'Les partis<br>de la gauche vers la droite', votes: 'Ce qu’ils ont voté', retraits: 'Ils ont renoncé' }; $('c-title').innerHTML = T[m] || '';
   if (m !== 'cands') gcCount('/candidats-' + m, 'Candidats ' + m);
 }
 
