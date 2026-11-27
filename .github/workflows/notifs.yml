@@ -32,7 +32,7 @@ jobs:
           SEND_TOKEN: ${{ secrets.SEND_TOKEN }}
           TEST_MSG: ${{ inputs.test }}
       - run: |
-          for f in data/sondages.csv data/notifs-etat.json data/notifs-stats.json; do [ -f "$f" ] && git add "$f"; done
+          for f in data/sondages.csv data/notifs-etat.json data/notifs-stats.json; do if [ -f "$f" ]; then git add "$f"; fi; done
           git diff --cached --quiet && exit 0
           git -c user.name="denyslx33" -c user.email="denyslx33@users.noreply.github.com" commit -qm "Sondages et alertes automatiques"
           git pull -q --rebase origin main && git push -q origin main
