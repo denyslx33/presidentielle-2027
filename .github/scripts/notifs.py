@@ -76,7 +76,8 @@ def main():
         if force in cand and its:
             it = sorted(its, key=lambda i: rang(i, force, its))[0]
             send('favoris', cand[force], titre(it), f'./#c-{force}', 'fav-' + force, [force], urgent=True)
-            etat.setdefault('fav', {})[force] = today
+            st = etat.setdefault('fav', {}).get(force); st = st if isinstance(st, dict) and st.get('d') == today else {'d': today, 'n': 0, 't': '', 'w': []}
+            st['n'] += 1; st['t'] = now.isoformat(timespec='minutes'); st['w'].append(sorted(mots(it['t']))); etat['fav'][force] = st
             json.dump(etat, open(ETAT, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
         else: print('Rien à envoyer pour', force)
         return
@@ -84,7 +85,7 @@ def main():
     if test:  # alerte d'essai lancée à la main depuis GitHub (onglet Actions)
         send('test', 'Test Nous votons', test, './', 'test', urgent=True); return
     etat = load(ETAT, None); first = etat is None
-    etat = etat or {'sondages': [], 'actu': [], 'tv': [], 'fav': {}, 'maj': ''}
+    etat = etat or {'sondages': [], 'actu': [], 'tv': [], 'fav': {}}
     cand = {c['id']: c['nom'] for c in load('data/candidats.json', {}).get('principaux', [])}
     out = []
 
@@ -97,43 +98,61 @@ def main():
 
     # 2. Favoris et infos majeures, à partir des titres des médias (data/flux.json, mis à jour sans IA
     #    toutes les 15 minutes). « Grosse actu » = au moins 3 médias différents en parlent en 3 heures.
-    #    Une alerte par candidat et par jour au plus, une info majeure par jour au plus.
+    #    Favoris : jusqu'à 3 alertes par candidat et par jour, espacées d'au moins 3 heures, et seulement
+    #    si c'est une nouvelle histoire. Infos majeures : jusqu'à 2 par jour, espacées de 3 heures.
     flux = load('data/flux.json', {}).get('items', [])
     lo = (now - timedelta(hours=3)).astimezone(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
     win = [i for i in flux if i.get('d', '') >= lo]
-    etat.setdefault('fav', {}); etat.setdefault('maj', '')
+    etat.setdefault('fav', {})
+    def suivi(v):  # état du jour pour un candidat (ou pour les infos majeures)
+        if v == today: return {'d': today, 'n': 1, 't': now.isoformat(timespec='minutes'), 'w': []}  # ancien format : déjà une alerte aujourd'hui
+        return v if isinstance(v, dict) and v.get('d') == today else {'d': today, 'n': 0, 't': '', 'w': []}
+    def libre(st, maxi):
+        if st['n'] >= maxi: return False
+        return not st['t'] or (now - datetime.fromisoformat(st['t'])).total_seconds() >= 3 * 3600
+    def nouvelle(st, it):
+        m = mots(it['t']); return all(len(m & set(w)) < 2 for w in st['w'])
+    def note(st, it):
+        st['n'] += 1; st['t'] = now.isoformat(timespec='minutes'); st['w'].append(sorted(mots(it['t'])))
     by = {}
     for i in win:
         for c in i.get('qui', []):
             by.setdefault(c, []).append(i)
     for c, its in by.items():
-        if len({i['s'] for i in its}) < 3 or etat['fav'].get(c) == today or c not in cand: continue
-        etat['fav'][c] = today
+        if c not in cand or len({i['s'] for i in its}) < 3: continue
+        st = suivi(etat['fav'].get(c))
+        if not libre(st, 3): continue
         it = sorted(its, key=lambda i: rang(i, c, its))[0]
+        if not nouvelle(st, it): continue
+        note(st, it); etat['fav'][c] = st
         out.append(('favoris', cand[c], titre(it), f'./#c-{c}', 'fav-' + c, [c]))
+    stm = suivi(etat.get('maj'))
     maj = [i for i in win if MAJ.search(norm(i['t']))]
-    if len({i['s'] for i in maj}) >= 3 and etat['maj'] != today:
-        etat['maj'] = today
-        it = sorted(maj, key=lambda i: PRIO.index(i['s']) if i['s'] in PRIO else 99)[0]
-        out.append(('majeur', 'Info importante', titre(it), './#flux', 'majeur'))
+    if len({i['s'] for i in maj}) >= 3 and libre(stm, 2):
+        it = sorted(maj, key=lambda i: rang(i, None, maj))[0]
+        if nouvelle(stm, it):
+            note(stm, it); out.append(('majeur', 'Info importante', titre(it), './#flux', 'majeur'))
     # Le robot de mise à jour peut aussi marquer une actu « majeur »: true dans data/actu.json
     for it in load('data/actu.json', {}).get('items', []):
         k = it.get('url') or it.get('texte', '')[:80]
         if not it.get('majeur') or k in etat['actu'] or it.get('date', '') < today: continue
         etat['actu'].append(k)
-        if etat['maj'] != today:
-            etat['maj'] = today
-            out.append(('majeur', 'Info importante', it['texte'], './#actu', 'majeur'))
+        if libre(stm, 2):
+            note(stm, {'t': it['texte']}); out.append(('majeur', 'Info importante', it['texte'], './#actu', 'majeur'))
+    etat['maj'] = stm
 
-    # 3. Grosses émissions TV du jour, envoyées à partir de 9 h
-    if now.hour >= 9:
-        for ev in load('data/agenda.json', {}).get('evenements', []):
-            if ev.get('date') != today or ev.get('type') not in ('debat', 'emission'): continue
-            k = today + '|' + ev['titre'][:60]
-            if k in etat['tv']: continue
-            etat['tv'].append(k)
-            quand = f" à {ev['heure']}" if ev.get('heure') else ' ce soir' if ev.get('type') == 'debat' else " aujourd'hui"
-            out.append(('tv', 'À la télé' + quand, f"{ev['titre']}{' sur ' + ev['chaine'] if ev.get('chaine') else ''}", './#agenda', 'tv'))
+    # 3. Émissions TV du jour : une seule alerte à partir de 9 h, qui regroupe tout le programme
+    if now.hour >= 9 and etat.get('tvj') != today:
+        evs = [ev for ev in load('data/agenda.json', {}).get('evenements', []) if ev.get('date') == today and ev.get('type') in ('debat', 'emission')]
+        if evs:
+            etat['tvj'] = today
+            evs.sort(key=lambda e: e.get('heure') or '99')
+            if len(evs) == 1:
+                ev = evs[0]; quand = f" à {ev['heure']}" if ev.get('heure') else ' ce soir' if ev.get('type') == 'debat' else " aujourd'hui"
+                out.append(('tv', 'À la télé' + quand, f"{ev['titre']}{' sur ' + ev['chaine'] if ev.get('chaine') else ''}", './#agenda', 'tv'))
+            else:
+                corps = ' · '.join(f"{(e['heure'] + ' ') if e.get('heure') else ''}{e['titre']}" for e in evs[:3])
+                out.append(('tv', f"{len(evs)} rendez‑vous télé aujourd'hui", corps, './#agenda', 'tv'))
 
     if not (8 <= now.hour < 22) and out:
         print('Nuit : rien envoyé, ce sera au prochain passage après 8 h'); return

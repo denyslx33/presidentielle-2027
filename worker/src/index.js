@@ -2,8 +2,9 @@
 // Gratuit : Workers (100 000 requêtes/jour) + D1 (base de données).
 import { sendPush } from './webpush.js';
 
-const TOPICS = ['favoris', 'majeur', 'sondages', 'tv', 'test']; // test : réservé aux téléphones en mode test
-const MAX_PAR_JOUR = 3;   // plafond de notifications par personne et par jour
+const TOPICS = ['favoris', 'majeur', 'sondages', 'tv', 'test', 'tout']; // test : téléphones en mode test ; tout : rythme « Tout suivre »
+// Plafond par type d'alerte, par personne et par jour. « Tout suivre » triple les plafonds. Les essais ne comptent pas.
+const PLAFOND = { favoris: 6, majeur: 2, sondages: 2, tv: 1 };
 const LOT = 40;           // envois par appel (limite gratuite : 50 sous-requêtes)
 
 const jourParis = () => new Intl.DateTimeFormat('fr-CA', { timeZone: 'Europe/Paris' }).format(new Date());
@@ -70,11 +71,13 @@ export default {
           const favs = JSON.parse(s.favs || '[]');
           if (!(m.cands || []).some((c) => favs.includes(c))) { skipped++; return; }
         }
-        const n = s.day === day ? s.n : 0;
-        if (n >= MAX_PAR_JOUR && !m.urgent) { skipped++; return; }
+        let cpt = {}; try { const d = JSON.parse(s.day || '{}'); if (d.d === day) cpt = d.c || {}; } catch (e) {}
+        const tout = JSON.parse(s.topics || '[]').includes('tout');
+        const max = (PLAFOND[m.topic] || 2) * (tout ? 3 : 1);
+        if ((cpt[m.topic] || 0) >= max && !m.urgent && m.topic !== 'test') { skipped++; return; }
         const st = await sendPush(s, payload, env).catch(() => 0);
         if (st === 404 || st === 410) { dead++; await env.DB.prepare('DELETE FROM subs WHERE id = ?1').bind(s.id).run(); return; }
-        if (st >= 200 && st < 300) { sent++; if (m.topic !== 'test') await env.DB.prepare('UPDATE subs SET day = ?2, n = ?3 WHERE id = ?1').bind(s.id, day, n + 1).run(); } // les essais ne comptent pas dans le plafond du jour
+        if (st >= 200 && st < 300) { sent++; if (m.topic !== 'test') { cpt[m.topic] = (cpt[m.topic] || 0) + 1; await env.DB.prepare('UPDATE subs SET day = ?2, n = ?3 WHERE id = ?1').bind(s.id, JSON.stringify({ d: day, c: cpt }), Object.values(cpt).reduce((a, b) => a + b, 0)).run(); } }
       }));
       return json({ sent, skipped, dead, next: rows.length === LOT ? rows[rows.length - 1].id : null });
     }

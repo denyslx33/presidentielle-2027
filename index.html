@@ -969,7 +969,7 @@ details.gacc a { color:#022E7B; } details.gacc .muted { font-size:12px; color:#6
   <div class="sheet" id="al-sheet" hidden><div class="sheet-in">
     <button type="button" class="x" id="al-x" aria-label="Fermer">×</button>
     <h2>Mes alertes</h2>
-    <p class="muted alint">Choisissez ce que l’appli peut vous envoyer. Trois notifications par jour au maximum.</p>
+    <p class="muted alint">Choisissez ce que l’appli peut vous envoyer. Quelques alertes par jour au maximum, jamais la nuit.</p>
     <div id="al-body"></div>
   </div></div>
   <p class="muted" id="status">Chargement…</p>
@@ -2775,6 +2775,7 @@ const AL_TOPICS = [
   { k: 'majeur', ic: '📣', t: 'Infos majeures', d: 'Candidature, retrait, décision du Conseil constitutionnel' },
   { k: 'sondages', ic: '📊', t: 'Nouveaux sondages', d: 'Dès qu’un sondage national sort' },
   { k: 'tv', ic: '📺', t: 'Grosses émissions TV', d: 'Débats et grandes interviews, le jour même' },
+  { k: 'tout', ic: '⚡', t: 'Tout suivre', d: 'Plus d’alertes les jours chargés : débats, résultats, grosses actus' },
 ];
 function alSupport() { return 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window; }
 function alStandalone() { return (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone === true; }
