@@ -2,6 +2,16 @@
 "v": 4,
 "items": [
 {
+"t": "David Lisnard, c'est Zemmour 2022 ou Macron 2017 ?",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/david-lisnard-c-est-zemmour-2022-ou-macron-2017_8303160.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-27T19:00:02Z",
+"qui": [
+"lisnard",
+"zemmour"
+]
+},
+{
 "t": "Programme de David Lisnard sur la politique pénale : \"Il y a des similitudes qui prouvent bien que la droite et le centre doivent se rassembler\", lance Jérémie Patrier-Leitus, porte-parole d’Édouard Philippe",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-programme-de-david-lisnard-sur-la-politique-penale-il-y-a-des-similitudes-qui-prouvent-bien-que-la-droite-et-le-centre-doivent-se-rassembler-lance-jeremie-patrier-leitus-porte-parole-d-edouard-philippe_VN-202611270851.html",
@@ -1777,13 +1787,6 @@
 "qui": [
 "melenchon"
 ]
-},
-{
-"t": "Présidentielle 2027 : Emmanuel Macron tacle la « drôle d’arrogance » de Marine Le Pen",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-emmanuel-macron-tacle-la-drole-darrogance-de-marine-le-pen-26-11-2026-TUL24VDTWZF6XP7FMOENF4JKMQ.php",
-"d": "2026-11-26T12:00:00Z",
-"qui": []
 }
 ],
 "sources": {
@@ -1793,12 +1796,12 @@
 "Le Figaro": 7,
 "Le Parisien": 56,
 "20 Minutes": 9,
-"Ouest-France": 2,
-"BFMTV": 20,
-"France 24": "erreur: HTTPError",
+"Ouest-France": 1,
+"BFMTV": 19,
+"France 24": 9,
 "La Croix": 23,
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T19:00:30Z"
+"maj": "2026-11-27T19:15:29Z"
 }
