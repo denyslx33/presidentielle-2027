@@ -1,0 +1,18 @@
+name = "nousvotons-push"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+
+# Base de données des abonnés (gratuite, Cloudflare D1)
+[[d1_databases]]
+binding = "DB"
+database_name = "nousvotons-push"
+database_id = "A_REMPLIR_APRES_CREATION"
+
+[vars]
+# Adresse de l'app autorisée à s'abonner
+ALLOWED_ORIGIN = "https://denyslx33.github.io"
+VAPID_SUBJECT = "mailto:contact@nousvotons.fr"
+VAPID_PUBLIC = "A_REMPLIR"
+# Secrets à créer avec « wrangler secret put » (jamais dans ce fichier) :
+#   VAPID_PRIVATE  : clé privée VAPID (format JWK d, base64url)
+#   SEND_TOKEN     : mot de passe que la GitHub Action utilise pour envoyer

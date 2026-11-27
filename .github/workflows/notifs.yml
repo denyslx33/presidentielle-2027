@@ -1,0 +1,25 @@
+name: Sondages allégés et alertes
+# Tourne sur les serveurs de GitHub (gratuit pour un dépôt public). Aucune IA, rien sur l'iMac.
+on:
+  schedule:
+    - cron: "3,23,43 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: notifs
+jobs:
+  notifs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 .github/scripts/sondages.py || true
+      - run: python3 .github/scripts/notifs.py
+        env:
+          PUSH_API: ${{ vars.PUSH_API }}
+          SEND_TOKEN: ${{ secrets.SEND_TOKEN }}
+      - run: |
+          git add data/sondages.csv data/notifs-etat.json
+          git diff --cached --quiet && exit 0
+          git -c user.name="denyslx33" -c user.email="denyslx33@users.noreply.github.com" commit -qm "Sondages et alertes automatiques"
+          git pull -q --rebase origin main && git push -q origin main

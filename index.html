@@ -324,6 +324,23 @@ details.qexp { margin:4px 0 12px; font-size:14px; } details.qexp summary { color
 .brand small { font:600 13px/1.2 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color:var(--muted); letter-spacing:0; margin-top:3px; }
 .tbtn { display:flex; align-items:flex-start; gap:18px; }
 .tbtn button { background:none; border:0; padding:0; cursor:pointer; color:#022A70; -webkit-tap-highlight-color:transparent; }
+.tbtn .ab { position:relative; }
+.adot { position:absolute; top:7px; right:8px; width:8px; height:8px; border-radius:50%; background:#F95969; box-shadow:0 0 0 2px #F8F8F8; }
+.alint { margin:4px 0 14px; }
+.altog { display:flex; align-items:center; gap:12px; padding:13px 0; border-top:1px solid rgba(2,42,112,.1); }
+.altog:first-child { border-top:0; }
+.altog .ali { width:38px; height:38px; flex:none; border-radius:50%; background:#EEF2F9; display:flex; align-items:center; justify-content:center; font-size:18px; }
+.altog .alt { flex:1; min-width:0; }
+.altog .alt b { display:block; font-size:15px; color:#022A70; }
+.altog .alt small { display:block; font-size:12.5px; color:#5573A7; margin-top:2px; line-height:1.35; }
+.sw { position:relative; width:46px; height:28px; flex:none; border:0; border-radius:14px; background:#D5DCE8; cursor:pointer; transition:background .2s; padding:0; }
+.sw::after { content:""; position:absolute; top:3px; left:3px; width:22px; height:22px; border-radius:50%; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,.2); transition:transform .2s; }
+.sw[aria-checked="true"] { background:#022E7B; }
+.sw[aria-checked="true"]::after { transform:translateX(18px); }
+.sw:disabled { opacity:.45; }
+.alnote { margin-top:14px; font-size:12.5px; color:#5573A7; line-height:1.4; }
+.albox { background:#EEF2F9; border-radius:14px; padding:14px; color:#022A70; font-size:14px; line-height:1.45; }
+.albtn { width:100%; margin-top:14px; }
 .tbtn .ab { width:40px; height:40px; display:flex; align-items:center; justify-content:center; margin-top:0; }
 .tbtn .hshare { display:flex; flex-direction:column; align-items:center; font-family:'Gidole', 'Asap', system-ui, sans-serif; font-size:10px; line-height:1.2; }
 .tbtn .sc { width:40px; height:40px; border-radius:50%; background:#022A70; display:flex; align-items:center; justify-content:center; }
@@ -912,7 +929,7 @@ details.gacc a { color:#022E7B; } details.gacc .muted { font-size:12px; color:#6
 </head>
 <body>
 <main>
-  <div class="topbar"><div class="brandwrap"><h1 class="brand"><img src="logo-header.svg" alt="Nous votons 2027" width="225" height="36"></h1><div class="jm" id="jm"></div></div><div class="tbtn"><button type="button" id="b-about" class="ab" aria-label="À propos"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" aria-hidden="true"><circle cx="12.2603" cy="12.2603" r="11.2603" stroke-width="2" stroke="#022A70"/><path d="M13.0244 19.6668H11.4962V8.64362H13.0244V19.6668ZM12.2603 4.85376C12.5727 4.85376 12.824 4.95564 13.0142 5.15939C13.2111 5.35636 13.3096 5.60766 13.3096 5.91329C13.3096 6.22572 13.2111 6.48041 13.0142 6.67737C12.824 6.86755 12.5727 6.96263 12.2603 6.96263C11.9479 6.96263 11.6932 6.86755 11.4962 6.67737C11.306 6.48041 11.2109 6.22572 11.2109 5.91329C11.2109 5.60766 11.306 5.35636 11.4962 5.15939C11.6932 4.95564 11.9479 4.85376 12.2603 4.85376Z" fill="#022A70"/></svg></button><button type="button" id="tab-share" class="hshare" aria-label="Partager l'appli"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" aria-hidden="true"><circle cx="21" cy="21" r="21" fill="#022A70"/><path d="M11.5295 14.4991V26.4703C11.5295 28.6794 13.3204 30.4703 15.5295 30.4703H27.5007" stroke-width="2" stroke-linecap="round" stroke="#FDFDFD"/><path d="M20.2562 20.3294C19.8657 20.72 19.8657 21.3531 20.2562 21.7436C20.6467 22.1342 21.2799 22.1342 21.6704 21.7436L20.9633 21.0365L20.2562 20.3294ZM20.9633 21.0365L21.6704 21.7436L31.1774 12.2366L30.4703 11.5295L29.7632 10.8224L20.2562 20.3294L20.9633 21.0365ZM31.4703 11.5295C31.4703 10.9772 31.0226 10.5295 30.4703 10.5295L21.4703 10.5295C20.918 10.5295 20.4703 10.9772 20.4703 11.5295C20.4703 12.0818 20.918 12.5295 21.4703 12.5295L29.4703 12.5295L29.4703 20.5295C29.4703 21.0818 29.918 21.5295 30.4703 21.5295C31.0226 21.5295 31.4703 21.0818 31.4703 20.5295L31.4703 11.5295Z" fill="#FDFDFD"/></svg></button></div></div>
+  <div class="topbar"><div class="brandwrap"><h1 class="brand"><img src="logo-header.svg" alt="Nous votons 2027" width="225" height="36"></h1><div class="jm" id="jm"></div></div><div class="tbtn"><button type="button" id="b-alert" class="ab" aria-label="Alertes" hidden><svg width="25" height="25" viewBox="0 0 25 25" fill="none" aria-hidden="true"><path d="M12.5 3.2c-3.4 0-6 2.7-6 6.1v3.6c0 .7-.3 1.4-.8 1.9l-1.1 1.1c-.6.6-.2 1.7.7 1.7h14.4c.9 0 1.3-1.1.7-1.7l-1.1-1.1c-.5-.5-.8-1.2-.8-1.9V9.3c0-3.4-2.6-6.1-6-6.1Z" stroke="#022A70" stroke-width="2" stroke-linejoin="round"/><path d="M10 20.4c.4 1 1.4 1.6 2.5 1.6s2.1-.6 2.5-1.6" stroke="#022A70" stroke-width="2" stroke-linecap="round"/></svg><i class="adot" hidden></i></button><button type="button" id="b-about" class="ab" aria-label="À propos"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" aria-hidden="true"><circle cx="12.2603" cy="12.2603" r="11.2603" stroke-width="2" stroke="#022A70"/><path d="M13.0244 19.6668H11.4962V8.64362H13.0244V19.6668ZM12.2603 4.85376C12.5727 4.85376 12.824 4.95564 13.0142 5.15939C13.2111 5.35636 13.3096 5.60766 13.3096 5.91329C13.3096 6.22572 13.2111 6.48041 13.0142 6.67737C12.824 6.86755 12.5727 6.96263 12.2603 6.96263C11.9479 6.96263 11.6932 6.86755 11.4962 6.67737C11.306 6.48041 11.2109 6.22572 11.2109 5.91329C11.2109 5.60766 11.306 5.35636 11.4962 5.15939C11.6932 4.95564 11.9479 4.85376 12.2603 4.85376Z" fill="#022A70"/></svg></button><button type="button" id="tab-share" class="hshare" aria-label="Partager l'appli"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" aria-hidden="true"><circle cx="21" cy="21" r="21" fill="#022A70"/><path d="M11.5295 14.4991V26.4703C11.5295 28.6794 13.3204 30.4703 15.5295 30.4703H27.5007" stroke-width="2" stroke-linecap="round" stroke="#FDFDFD"/><path d="M20.2562 20.3294C19.8657 20.72 19.8657 21.3531 20.2562 21.7436C20.6467 22.1342 21.2799 22.1342 21.6704 21.7436L20.9633 21.0365L20.2562 20.3294ZM20.9633 21.0365L21.6704 21.7436L31.1774 12.2366L30.4703 11.5295L29.7632 10.8224L20.2562 20.3294L20.9633 21.0365ZM31.4703 11.5295C31.4703 10.9772 31.0226 10.5295 30.4703 10.5295L21.4703 10.5295C20.918 10.5295 20.4703 10.9772 20.4703 11.5295C20.4703 12.0818 20.918 12.5295 21.4703 12.5295L29.4703 12.5295L29.4703 20.5295C29.4703 21.0818 29.918 21.5295 30.4703 21.5295C31.0226 21.5295 31.4703 21.0818 31.4703 20.5295L31.4703 11.5295Z" fill="#FDFDFD"/></svg></button></div></div>
   <div class="inst" id="inst" hidden>
     <span class="ic">📲</span>
     <div class="tx"><b>Ajoutez l'appli à votre téléphone</b><br><span>Gratuite, sans compte, mise à jour chaque jour.</span></div>
@@ -935,6 +952,12 @@ details.gacc a { color:#022E7B; } details.gacc .muted { font-size:12px; color:#6
     <button type="button" class="x" id="sheet-x" aria-label="Fermer">×</button>
     <h2>Ajouter l'appli</h2>
     <div id="sheet-body"></div>
+  </div></div>
+  <div class="sheet" id="al-sheet" hidden><div class="sheet-in">
+    <button type="button" class="x" id="al-x" aria-label="Fermer">×</button>
+    <h2>Mes alertes</h2>
+    <p class="muted alint">Choisissez ce que l’appli peut vous envoyer. Trois notifications par jour au maximum.</p>
+    <div id="al-body"></div>
   </div></div>
   <p class="muted" id="status">Chargement…</p>
   <div class="inscr" id="inscr"><span class="ii"><svg width="38" height="41" viewBox="0 0 38 41" fill="none" aria-hidden="true"><rect width="37.9546" height="40.0757" rx="18.9773" fill="#F8F8F8"/><path d="M11.1019 15.9879H13.4399V17.6798L12.6226 17.6798L11.1019 17.6798C10.3232 17.6798 9.6919 18.3111 9.6919 19.0898V28.9738C9.6919 29.7525 10.3232 30.3838 11.1019 30.3838H26.8527C27.6314 30.3838 28.2626 29.7525 28.2626 28.9738V19.0898C28.2626 18.3111 27.6314 17.6798 26.8527 17.6798L26.3916 17.6798L26.0585 17.6798V15.9879H26.8527C28.5658 15.9879 29.9546 17.3766 29.9546 19.0898V28.9738C29.9546 30.687 28.5658 32.0757 26.8527 32.0757H11.1019C9.38874 32.0757 7.99995 30.6869 7.99995 28.9738V19.0898C7.99995 17.3766 9.38874 15.9879 11.1019 15.9879Z" fill="#F95969"/><path d="M22.2502 10.0152L26.071 13.2801C27.3734 14.393 27.527 16.351 26.4141 17.6534L26.3916 17.6798L24.294 20.1346L23.0851 21.5491L21.7988 20.45L25.1278 16.5542C25.6337 15.9622 25.5639 15.0722 24.9719 14.5664L21.1511 11.3014C20.5591 10.7956 19.6691 10.8654 19.1632 11.4574L14.6524 16.7361C14.1465 17.3281 14.2164 18.2181 14.8084 18.724L16.7185 20.3563L15.6194 21.6426L13.8535 20.1336L13.7092 20.0103C12.9992 19.4036 12.6307 18.5457 12.6226 17.6798C12.6158 16.9574 12.8599 16.2293 13.3661 15.637L17.8769 10.3582C18.9898 9.05583 20.9478 8.90223 22.2502 10.0152Z" fill="#F95969"/><path d="M23.0851 21.5491L24.294 20.1346C24.7417 20.1564 25.0982 20.5263 25.0982 20.9795C25.0982 21.4468 24.7193 21.8255 24.2522 21.8255L13.7022 21.8255C13.2349 21.8255 12.8562 21.4468 12.8562 20.9795C12.8562 20.5124 13.2349 20.1336 13.7022 20.1336L13.8535 20.1336L15.6194 21.6426L16.7185 20.3563L14.8084 18.724C14.2164 18.2181 14.1465 17.3281 14.6524 16.7361L19.1632 11.4574C19.6691 10.8654 20.5591 10.7956 21.1511 11.3014L24.9719 14.5664C25.5639 15.0722 25.6337 15.9622 25.1278 16.5542L21.7988 20.45L23.0851 21.5491Z" fill-rule="evenodd" clip-rule="evenodd" fill="#FDFDFD"/><path d="M24.2521 20.1336C24.2661 20.1336 24.2801 20.134 24.2939 20.1346C24.7417 20.1565 25.0981 20.5264 25.0981 20.9796C25.0981 21.4468 24.7193 21.8256 24.2521 21.8256H13.7022C13.235 21.8256 12.8562 21.4468 12.8562 20.9796C12.8562 20.5124 13.235 20.1336 13.7022 20.1336H13.8535H24.2521Z" fill="#FDFDFD"/><path d="M11.1018 17.6798H12.6226C12.6306 18.5457 12.9993 19.4036 13.7092 20.0103L13.8535 20.1336H13.7021C13.2349 20.1336 12.8562 20.5124 12.8562 20.9796C12.8562 21.4468 13.2349 21.8256 13.7021 21.8256H24.2522C24.7192 21.8256 25.0981 21.4468 25.0981 20.9796C25.0981 20.5264 24.7417 20.1564 24.2939 20.1346L26.3916 17.6798H26.8528C27.6313 17.6798 28.2627 18.3111 28.2627 19.0898V28.9738C28.2627 29.7525 27.6313 30.3838 26.8528 30.3838H11.1018C10.3232 30.3838 9.69189 29.7525 9.69189 28.9738V19.0898C9.69189 18.3111 10.3232 17.6798 11.1018 17.6798Z" fill-rule="evenodd" clip-rule="evenodd" fill="#F95969"/></svg></span><div class="it">Inscrivez‑vous sur les listes électorales avant le vendredi 12 mars 2027. <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/R51788" target="_blank" rel="noopener">Vérifier mon inscription</a> · <a href="#guide" id="inscr-guide">Guide du vote</a><button id="inscr-x" aria-label="Masquer">×</button></div></div>
@@ -1253,6 +1276,7 @@ details.gacc a { color:#022E7B; } details.gacc .muted { font-size:12px; color:#6
 </nav>
 
 <script>
+const AL_PREVIEW = location.search.includes('alertes'); // aperçu interne des alertes
 const DEJA_VENU = (() => { try { return ['visite', 'iconNV', 'iconV2', 'quizSeen', 'quizRun', 'mv', 'ca'].some((k) => localStorage.getItem(k) !== null); } catch (e) { return false; } })();
 // iPhone installé avant le nouveau logo : prévenir une seule fois pour réinstaller (icône figée par iOS)
 (() => { try {
@@ -1792,7 +1816,7 @@ function getFavs() { const f = lsGet('favs'); return Array.isArray(f) ? f : []; 
 function favBtn(c) {
   const b = el('button', 'favb'); b.type = 'button';
   const upd = () => { const on = getFavs().includes(c.id); b.textContent = on ? '★ Dans mes favoris' : '☆ Ajouter à mes favoris'; b.classList.toggle('on', on); };
-  b.onclick = () => { let f = getFavs(); if (f.includes(c.id)) f = f.filter((i) => i !== c.id); else { if (f.length >= 2) { toast('Deux favoris au maximum : retirez-en un d’abord'); return; } f.push(c.id); gcCount('favori-ajoute', 'Favori ajouté', true); toast('Ses actus s’affichent en haut de l’accueil'); } lsSet('favs', f); upd(); renderFavs(); renderActu(); };
+  b.onclick = () => { let f = getFavs(); if (f.includes(c.id)) f = f.filter((i) => i !== c.id); else { if (f.length >= 2) { toast('Deux favoris au maximum : retirez-en un d’abord'); return; } f.push(c.id); gcCount('favori-ajoute', 'Favori ajouté', true); toast('Ses actus s’affichent en haut de l’accueil'); } lsSet('favs', f); upd(); renderFavs(); renderActu(); alFavsChanged(); };
   upd(); return b;
 }
 function renderFavs() {
@@ -2129,7 +2153,7 @@ function renderFiche() {
   const acts = el('div', 'facts');
   const fb = el('button', 'fic'); fb.type = 'button'; fb.append(fsvg('fav'));
   const upd = () => { const on = getFavs().includes(c.id); fb.classList.toggle('on', on); fb.setAttribute('aria-label', on ? 'Retirer de mes favoris' : 'Ajouter à mes favoris'); fb.setAttribute('aria-pressed', on); };
-  fb.onclick = () => { let f = getFavs(); if (f.includes(c.id)) { f = f.filter((x) => x !== c.id); toast('Retiré de vos favoris'); } else { if (f.length >= 2) { toast('Deux favoris au maximum : retirez-en un d’abord'); return; } f.push(c.id); gcCount('favori-ajoute', 'Favori ajouté', true); toast('Ses actus s’affichent en haut de l’accueil'); } lsSet('favs', f); upd(); renderFavs(); renderActu(); };
+  fb.onclick = () => { let f = getFavs(); if (f.includes(c.id)) { f = f.filter((x) => x !== c.id); toast('Retiré de vos favoris'); } else { if (f.length >= 2) { toast('Deux favoris au maximum : retirez-en un d’abord'); return; } f.push(c.id); gcCount('favori-ajoute', 'Favori ajouté', true); toast('Ses actus s’affichent en haut de l’accueil'); } lsSet('favs', f); upd(); renderFavs(); renderActu(); alFavsChanged(); };
   upd();
   const sb = el('button', 'fic'); sb.type = 'button'; sb.setAttribute('aria-label', 'Partager cette fiche'); sb.append(fsvg('share'));
   sb.onclick = async () => { const url = APP_URL + '#c-' + c.id; gcCount('partage-fiche', 'Partage fiche', true); if (navigator.share) { try { await navigator.share({ title: c.nom + ' · Nous votons', url }); return; } catch (e) { if (e && e.name === 'AbortError') return; } } try { await navigator.clipboard.writeText(url); toast('Lien copié'); } catch (e) { shareApp(); } };
@@ -2550,8 +2574,15 @@ async function getText(url, key) {
   } catch (e) { let t = null; try { t = localStorage.getItem(key); } catch (er) {} return { t, live: false }; }
 }
 
+// Sondages : fichier allégé préparé par GitHub (2026 seulement), et la source complète en secours
+async function getPolls() {
+  const r = await getText('data/sondages.csv', 'mv');
+  if (r.live && r.t && r.t.length > 1000) return r;
+  const full = await getText(URL_MV, 'mv');
+  return full.t ? full : r;
+}
 async function load() {
-  const [mv, aj, ca, ac, ag, qz, tp, fx] = await Promise.all([getText(URL_MV, 'mv'), getText('data/ajouts.csv', 'aj'), getText('data/candidats.json', 'ca'), getText('data/actu.json', 'ac'), getText('data/agenda.json', 'ag'), getText('data/quiz.json', 'qz'), getText('data/temps_parole.json', 'tp'), getText('data/flux.json', 'fx')]);
+  const [mv, aj, ca, ac, ag, qz, tp, fx] = await Promise.all([getPolls(), getText('data/ajouts.csv', 'aj'), getText('data/candidats.json', 'ca'), getText('data/actu.json', 'ac'), getText('data/agenda.json', 'ag'), getText('data/quiz.json', 'qz'), getText('data/temps_parole.json', 'tp'), getText('data/flux.json', 'fx')]);
   if (tp.t) TP = JSON.parse(tp.t);
   if (qz.t) QUIZ = JSON.parse(qz.t);
   if (ag.t) { AGENDA = JSON.parse(ag.t); geoAgenda(); }
@@ -2684,6 +2715,71 @@ load();
 (function () { const b = $('totop'); if (!b) return; const upd = () => { const on = $('v-actu').classList.contains('on') && scrollY > 600; b.hidden = !on; };
   addEventListener('scroll', upd, { passive: true }); new MutationObserver(upd).observe($('v-actu'), { attributes: true, attributeFilter: ['class'] });
   b.onclick = () => { scrollTo({ top: 0, behavior: 'smooth' }); }; })();
+
+// ===== Alertes (notifications). Masqué tant que PUSH_API est vide. =====
+const PUSH_API = '';      // adresse du serveur Cloudflare, à remplir au lancement
+const VAPID_PUBLIC = '';  // clé publique, à remplir au lancement
+const AL_TOPICS = [
+  { k: 'favoris', ic: '★', t: 'Mes favoris', d: 'Une grosse actu de vos candidats favoris' },
+  { k: 'majeur', ic: '📣', t: 'Infos majeures', d: 'Candidature, retrait, décision du Conseil constitutionnel' },
+  { k: 'sondages', ic: '📊', t: 'Nouveaux sondages', d: 'Dès qu’un sondage national sort' },
+  { k: 'tv', ic: '📺', t: 'Grosses émissions TV', d: 'Débats et grandes interviews, le jour même' },
+];
+function alSupport() { return 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window; }
+function alStandalone() { return (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone === true; }
+function alIOS() { return /iPhone|iPad|iPod/.test(navigator.userAgent); }
+function b64uToU8(b) { const s = atob(b.replace(/-/g, '+').replace(/_/g, '/') + '==='.slice((b.length + 3) % 4)); return Uint8Array.from(s, (c) => c.charCodeAt(0)); }
+async function alSub(create) {
+  const reg = await navigator.serviceWorker.ready;
+  let sub = await reg.pushManager.getSubscription();
+  if (!sub && create) sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64uToU8(VAPID_PUBLIC) });
+  return sub;
+}
+async function alSync(topics) {
+  lsSet('alTopics', topics);
+  if (!PUSH_API) return true;
+  try {
+    if (!topics.length) { const sub = await alSub(false); if (sub) { await fetch(PUSH_API + '/unsubscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ endpoint: sub.endpoint }) }); await sub.unsubscribe(); } return true; }
+    if (Notification.permission !== 'granted' && (await Notification.requestPermission()) !== 'granted') return false;
+    const sub = await alSub(true);
+    const r = await fetch(PUSH_API + '/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ subscription: sub.toJSON(), topics, favs: getFavs() }) });
+    if (r.ok) gcCount('alertes-' + topics.length, 'Alertes activées', true);
+    return r.ok;
+  } catch (e) { return false; }
+}
+function renderAlertes() {
+  const body = document.getElementById('al-body'); body.replaceChildren();
+  if (alIOS() && !alStandalone()) {
+    const b = el('div', 'albox'); b.innerHTML = 'Sur iPhone, les alertes marchent seulement depuis l’appli ajoutée à l’écran d’accueil.<br><br>Touchez <b>Partager</b> puis <b>Sur l’écran d’accueil</b>, et rouvrez l’appli depuis son icône.';
+    body.append(b); return;
+  }
+  if (!alSupport()) { body.append(el('div', 'albox', 'Votre navigateur ne permet pas les alertes. Essayez avec Chrome ou Safari à jour.')); return; }
+  if (Notification.permission === 'denied') { body.append(el('div', 'albox', 'Les notifications sont bloquées pour l’appli. Vous pouvez les réautoriser dans les réglages de votre téléphone.')); return; }
+  let on = lsGet('alTopics') || [];
+  AL_TOPICS.forEach((tp) => {
+    const r = el('div', 'altog'); const i = el('span', 'ali', tp.ic); const t = el('span', 'alt'); t.append(el('b', '', tp.t), el('small', '', tp.k === 'favoris' && !getFavs().length ? 'Ajoutez d’abord un candidat en favori' : tp.d));
+    const sw = el('button', 'sw'); sw.type = 'button'; sw.setAttribute('role', 'switch'); sw.setAttribute('aria-label', tp.t); sw.setAttribute('aria-checked', on.includes(tp.k));
+    sw.onclick = async () => {
+      const want = !on.includes(tp.k); const next = want ? [...on, tp.k] : on.filter((x) => x !== tp.k);
+      sw.disabled = true; sw.setAttribute('aria-checked', want);
+      const ok = await alSync(next); sw.disabled = false;
+      if (ok) { on = next; toast(want ? 'Alerte activée' : 'Alerte coupée'); } else { sw.setAttribute('aria-checked', !want); toast('Impossible pour le moment, réessayez'); }
+      document.querySelector('#b-alert .adot').hidden = on.length > 0;
+    };
+    r.append(i, t, sw); body.append(r);
+  });
+  body.append(el('p', 'alnote', 'Aucun compte, aucune donnée personnelle. Vous pouvez tout couper ici à tout moment.'));
+}
+(function initAlertes() {
+  const btn = document.getElementById('b-alert'), sh = document.getElementById('al-sheet');
+  if (!btn || (!PUSH_API && !AL_PREVIEW)) return; // ?alertes : aperçu interne
+  btn.hidden = false; btn.querySelector('.adot').hidden = (lsGet('alTopics') || []).length > 0;
+  btn.onclick = () => { renderAlertes(); sh.hidden = false; };
+  document.getElementById('al-x').onclick = () => { sh.hidden = true; };
+  sh.onclick = (e) => { if (e.target === sh) sh.hidden = true; };
+})();
+// Les favoris changent : on prévient le serveur pour les alertes « favoris »
+function alFavsChanged() { const t = lsGet('alTopics') || []; if (PUSH_API && t.includes('favoris')) alSync(t); }
 </script>
 </body>
 </html>

@@ -18,3 +18,17 @@ self.addEventListener('fetch', (e) => {
   }
   e.respondWith(fetch(e.request.url, { cache: 'no-cache' }).then((r) => { const cp = r.clone(); caches.open(CACHE).then((c) => c.put(e.request, cp)); return r; }).catch(() => caches.match(e.request, { ignoreSearch: true })));
 });
+// Alertes : affichage d'une notification reçue, et ouverture de l'appli au toucher
+self.addEventListener('push', (e) => {
+  let d = {}; try { d = e.data ? e.data.json() : {}; } catch (er) { d = { title: 'Nous votons', body: e.data ? e.data.text() : '' }; }
+  e.waitUntil(self.registration.showNotification(d.title || 'Nous votons', { body: d.body || '', tag: d.tag || 'nv', icon: 'icon-192.png', badge: 'icon-192.png', data: { url: d.url || './' } }));
+});
+self.addEventListener('notificationclick', (e) => {
+  e.notification.close();
+  const url = new URL((e.notification.data && e.notification.data.url) || './', self.registration.scope).href;
+  e.waitUntil(self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then((cs) => {
+    const c = cs.find((x) => x.url.startsWith(self.registration.scope));
+    if (c) { c.focus(); return c.navigate ? c.navigate(url) : null; }
+    return self.clients.openWindow(url);
+  }));
+});
