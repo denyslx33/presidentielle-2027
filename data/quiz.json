@@ -489,15 +489,23 @@
    "pos": {
     "glucksmann": 1,
     "tondelier": 1,
-    "dupont-aignan": -1
+    "dupont-aignan": -1,
+    "lepen": -1,
+    "riner": -1
    },
    "src": {
     "glucksmann": "Aide militaire renforcée à l'Ukraine",
     "tondelier": "Soutien politique et militaire à l'Ukraine",
-    "dupont-aignan": "Paix en Ukraine et partenariat avec la Russie"
+    "dupont-aignan": "Paix en Ukraine et partenariat avec la Russie",
+    "lepen": "Pas d'engagement financier pour l'Ukraine au-delà de ceux déjà pris",
+    "riner": "Cesser de donner à l'Ukraine « de l'argent que nous n'avons pas »"
    },
    "id": "q23",
-   "exp": "Depuis l'invasion russe de février 2022, la France fournit à l'Ukraine des armes, des munitions et de la formation militaire."
+   "exp": "Depuis l'invasion russe de février 2022, la France fournit à l'Ukraine des armes, des munitions et de la formation militaire.",
+   "srcu": {
+    "lepen": "https://www.bfmtv.com/politique/elections/presidentielle/video-propos-de-teddy-riner-sur-l-ukraine-nous-n-avons-plus-les-moyens-de-nous-engager-financierement-au-dela-des-engagements-deja-a-l-uvre-explique-marine-le-pen_VN-202611270488.html",
+    "riner": "https://www.ouest-france.fr/elections/presidentielle/aide-a-lukraine-teddy-riner-veut-cesser-de-donner-de-largent-que-nous-navons-pas-comment-se-positionnent-les-autres-candidats-b9cd0b86-e9a0-11f1-9b33-2f81462d3339"
+   }
   },
   {
    "theme": "Économie",

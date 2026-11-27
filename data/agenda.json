@@ -98,12 +98,14 @@
    "heure": null,
    "type": "evenement",
    "titre": "Déplacement de Raphaël Glucksmann en Mayenne : présentation du « Conseil des territoires »",
-   "lieu": "Mayenne",
+   "lieu": "Montsûrs (Mayenne)",
    "chaine": null,
    "qui": [
     "glucksmann"
    ],
-   "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-depuis-la-mayenne-raphael-glucksmann-devoile-son-projet-de-conseil-des-territoires-pour-donner-plus-de-pouvoir-aux-elus-locaux_8300955.html"
+   "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-depuis-la-mayenne-raphael-glucksmann-devoile-son-projet-de-conseil-des-territoires-pour-donner-plus-de-pouvoir-aux-elus-locaux_8300955.html",
+   "commune": "Montsûrs",
+   "dep": "53"
   },
   {
    "date": "2026-11-27",
@@ -252,6 +254,19 @@
    "url": "https://lcp.fr/actualites/presidentielle-2027-marine-tondelier-prete-a-une-coalition-autour-de-jean-luc-melenchon"
   },
   {
+   "date": "2026-12-12",
+   "fin": "2026-12-13",
+   "heure": null,
+   "type": "evenement",
+   "titre": "Déplacement de Marine Le Pen à Mayotte",
+   "lieu": "Mayotte",
+   "chaine": null,
+   "qui": [
+    "lepen"
+   ],
+   "url": "https://lejournaldemayotte.yt/articles/marine-le-pen-annoncee-a-mayotte-les-12-et-13-decembre"
+  },
+  {
    "date": "2026-12-13",
    "heure": "15h",
    "type": "meeting",
@@ -266,6 +281,19 @@
    "dep": "69",
    "lat": 45.7366,
    "lon": 4.9638
+  },
+  {
+   "date": "2026-12-14",
+   "fin": "2026-12-16",
+   "heure": null,
+   "type": "evenement",
+   "titre": "Déplacement de Marine Le Pen à La Réunion",
+   "lieu": "La Réunion",
+   "chaine": null,
+   "qui": [
+    "lepen"
+   ],
+   "url": "https://la1ere.franceinfo.fr/reunion/marine-le-pen-en-visite-a-la-reunion-du-14-au-16-decembre-1758990.html"
   },
   {
    "date": "2027-01-09",

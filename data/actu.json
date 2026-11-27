@@ -2,6 +2,136 @@
  "maj": "2026-11-27",
  "items": [
   {
+   "date": "2026-11-27",
+   "qui": [
+    "lepen"
+   ],
+   "texte": "Marine Le Pen présente son programme pour les outre-mer : si elle est élue, elle « fera voter » une « grande loi programme » sur 12 ans.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-outre-mer-si-elle-est-elue-marine-le-pen-fera-voter-une-grande-loi-programme-sur-12-ans_VN-202611270470.html"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "lepen",
+    "riner"
+   ],
+   "texte": "Marine Le Pen juge « raisonnable » la position de Teddy Riner sur l'Ukraine et estime que la France n'a « plus les moyens » de s'engager financièrement au-delà des engagements déjà pris.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-propos-de-teddy-riner-sur-l-ukraine-nous-n-avons-plus-les-moyens-de-nous-engager-financierement-au-dela-des-engagements-deja-a-l-uvre-explique-marine-le-pen_VN-202611270488.html"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "lepen"
+   ],
+   "texte": "Marine Le Pen qualifie de « scandaleux et antidémocratique » le projet de signer le budget européen avant la présidentielle, en réponse à Emmanuel Macron.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-scandaleux-et-antidemocratique-marine-le-pen-repond-a-emmanuel-macron-sur-la-signature-du-budget-europeen_VN-202611270486.html"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "lepen"
+   ],
+   "texte": "Marine Le Pen réitère sa confiance à Jordan Bardella, après de nouveaux éléments sur des écrits antisémites attribués au président du RN, qui les conteste.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-marine-le-pen-reitere-sa-confiance-a-jordan-bardella-apres-de-nouveaux-elements-sur-des-ecrits-antisemites-attribues-au-president-du-rn_VN-202611270503.html",
+   "parti": true
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "lepen"
+   ],
+   "texte": "Interrogée sur les enquêtes visant le Rassemblement national, Marine Le Pen affirme être « cernée par rien du tout ».",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-enquetes-visant-le-rn-marine-le-pen-affirme-qu-elle-est-cernee-par-rien-du-tout_VN-202611270489.html",
+   "parti": true
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "riner"
+   ],
+   "texte": "Teddy Riner est accueilli à Béziers par le maire Robert Ménard.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-teddy-riner-accueilli-a-beziers-par-le-maire-robert-menard_VN-202611270476.html"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "dupont-aignan"
+   ],
+   "texte": "Nicolas Dupont-Aignan veut arrêter l'aide française à l'Ukraine, qu'il accuse d'« alimenter le conflit ».",
+   "source": "Le Monde",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/27/presidentielle-2027-nicolas-dupont-aignan-veut-arreter-l-aide-francaise-a-l-ukraine-accusee-d-alimenter-le-conflit_6815835_823448.html"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "melenchon",
+    "lepen"
+   ],
+   "texte": "Le maire de Marseille, Benoît Payan, annonce qu'il votera « sans problème » pour Jean-Luc Mélenchon en cas de second tour face à Marine Le Pen.",
+   "source": "Le Parisien",
+   "url": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-en-cas-de-second-tour-entre-melenchon-et-le-pen-benoit-payan-annonce-quil-votera-sans-probleme-pour-linsoumis-27-11-2026-XUMI2DOVNVBGNEIQENV3IVV6P4.php"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "philippe"
+   ],
+   "texte": "Gérald Darmanin appelle Édouard Philippe à présenter « un projet, une vision ».",
+   "source": "Le Monde",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/27/presidentielle-2027-gerald-darmanin-appelle-edouard-philippe-a-presenter-un-projet-une-vision_6815820_823448.html"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "lepen",
+    "melenchon"
+   ],
+   "texte": "Bruno Le Maire déclare qu'il ne mettra « jamais un bulletin pour un parti extrême » en cas de second tour entre Marine Le Pen et Jean-Luc Mélenchon.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-je-ne-mettrai-jamais-un-bulletin-pour-un-parti-extreme-declare-bruno-le-maire-en-cas-de-duel-le-pen-melenchon-au-second-tour_VN-202611270362.html"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "riner"
+   ],
+   "texte": "Bruno Le Maire juge que Teddy Riner « a tort » sur l'aide à l'Ukraine.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-bruno-le-maire-juge-que-teddy-riner-a-tort-sur-l-aide-a-l-ukraine_VN-202611270341.html"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "glucksmann"
+   ],
+   "texte": "Raphaël Glucksmann cherche à constituer un réseau d'élus locaux pour sa campagne.",
+   "source": "Le Monde",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/27/presidentielle-2027-raphael-glucksmann-cherche-a-tisser-un-reseau-d-elus-locaux_6815814_823448.html"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [],
+   "texte": "Le secteur du jeu vidéo, en crise, interpelle les candidats à la présidentielle.",
+   "source": "Ouest-France",
+   "url": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-en-crise-le-secteur-du-jeu-video-interpelle-les-candidats-712af0e4-ea38-11f1-8e4e-f44a9b15a834"
+  },
+  {
+   "date": "2026-11-26",
+   "qui": [
+    "lisnard",
+    "lepen"
+   ],
+   "texte": "Face au porte-parole du RN Laurent Jacobelli, Thomas Elexhauser, porte-parole de Nouvelle Énergie, affirme que David Lisnard « ne sera jamais ministre de Marine Le Pen ».",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/video-david-lisnard-ne-sera-jamais-ministre-de-marine-le-pen-affirme-thomas-elexhauser-porte-parole-de-nouvelle-energie-face-au-porte-parole-du-rn-laurent-jacobelli_VN-202611260980.html"
+  },
+  {
    "date": "2026-11-26",
    "qui": [
     "zemmour"
@@ -422,132 +552,6 @@
    "texte": "Teddy Riner, Raphaël Glucksmann, Gabriel Attal et Fabien Roussel sont attendus au Congrès des maires, tout comme François Hollande.",
    "source": "Le Parisien",
    "url": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-deuxieme-jour-du-congres-des-maires-de-france-de-nombreux-candidats-attendus-sur-place-25-11-2026-EL5DLN7IZNHUBPHP32WEMDQEM4.php"
-  },
-  {
-   "date": "2026-11-25",
-   "qui": [
-    "lepen"
-   ],
-   "texte": "Boris Vallaud, président du groupe socialiste à l'Assemblée, indique qu'il fera « toujours le front républicain » en votant pour le candidat opposé à Marine Le Pen au second tour.",
-   "source": "BFMTV",
-   "url": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html"
-  },
-  {
-   "date": "2026-11-25",
-   "qui": [
-    "melenchon",
-    "lepen"
-   ],
-   "texte": "Gérald Darmanin estime qu'un second tour entre Jean-Luc Mélenchon et Marine Le Pen mettrait la France « au bord de la guerre civile ».",
-   "source": "franceinfo",
-   "url": "https://www.franceinfo.fr/elections/un-second-tour-melenchon-le-pen-a-la-presidentielle-2027-mettrait-la-france-au-bord-de-la-guerre-civile-affirme-gerald-darmanin_8298966.html"
-  },
-  {
-   "date": "2026-11-25",
-   "qui": [
-    "philippe",
-    "melenchon",
-    "lepen"
-   ],
-   "texte": "Édouard Philippe annonce qu'il votera blanc en cas de second tour entre Jean-Luc Mélenchon et Marine Le Pen.",
-   "source": "Le Parisien",
-   "url": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-en-cas-de-second-tour-melenchon-le-pen-edouard-philippe-annonce-quil-votera-blanc-25-11-2026-4E6INSGPNFDP7HIPB7GUSFGVSY.php"
-  },
-  {
-   "date": "2026-11-25",
-   "qui": [],
-   "texte": "Comme François Bayrou, Jean-Noël Barrot indique qu'il ne votera ni pour Marine Le Pen ni pour Jean-Luc Mélenchon en cas de second tour entre eux, et qualifie l'extrême droite et l'extrême gauche de « deux poisons mortels ».",
-   "source": "Le Parisien",
-   "url": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-lextreme-droite-et-lextreme-gauche-sont-deux-poisons-mortels-estime-jean-noel-barrot-25-11-2026-HIAJ32PPXVDTHE3WPTR4INGQLU.php"
-  },
-  {
-   "date": "2026-11-25",
-   "qui": [
-    "lisnard",
-    "philippe"
-   ],
-   "texte": "David Lisnard refuse le débat télévisé proposé par Édouard Philippe à la place d'une primaire : « La démocratie, c'est du vote ».",
-   "source": "BFMTV",
-   "url": "https://www.bfmtv.com/politique/elections/presidentielle/la-democratie-c-est-du-vote-david-lisnard-rejette-la-proposition-d-un-debat-avec-edouard-philippe-a-la-place-de-la-primaire_AN-202611251031.html"
-  },
-  {
-   "date": "2026-11-25",
-   "qui": [
-    "philippe"
-   ],
-   "texte": "Maël de Calan, porte-parole d'Édouard Philippe, assure qu'« il n'y aura qu'un seul candidat de la droite et du centre sur la ligne de départ ».",
-   "source": "franceinfo",
-   "url": "https://www.franceinfo.fr/replay-magazine/franceinfo/avant-le-20h/il-n-y-aura-qu-un-seul-candidat-de-la-droite-et-du-centre-sur-la-ligne-de-depart-promet-mael-de-calan-le-porte-parole-d-edouard-philippe_8300205.html"
-  },
-  {
-   "date": "2026-11-25",
-   "qui": [
-    "villepin"
-   ],
-   "texte": "Sur BFMTV, Dominique de Villepin propose de reconnaître le vote blanc, d'abaisser l'âge du vote à 16 ans, de créer une réserve citoyenne face aux menaces russes et un contrat de transition professionnelle de deux ans pour les salariés licenciés à cause de l'intelligence artificielle.",
-   "source": "BFMTV",
-   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-dominique-de-villepin-veut-reconnaitre-le-vote-blanc-et-abaisser-l-age-du-vote-a-16-ans_VN-202611250957.html"
-  },
-  {
-   "date": "2026-11-25",
-   "qui": [
-    "villepin"
-   ],
-   "texte": "Dominique de Villepin affirme que son mouvement, La France humaniste, compte « un peu plus de 80 000 adhérents ».",
-   "source": "BFMTV",
-   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-dominique-de-villepin-assure-avoir-un-peu-plus-de-80-000-adherents-a-son-mouvement-la-france-humaniste_VN-202611250971.html"
-  },
-  {
-   "date": "2026-11-25",
-   "qui": [
-    "villepin"
-   ],
-   "texte": "Dominique de Villepin « assume » de parler de « génocide » à Gaza.",
-   "source": "BFMTV",
-   "url": "https://www.bfmtv.com/politique/video-guerre-a-gaza-dominique-de-villepin-candidat-la-france-humaniste-a-la-presidentielle-assume-de-parler-de-genocide_VN-202611250983.html"
-  },
-  {
-   "date": "2026-11-25",
-   "qui": [
-    "melenchon"
-   ],
-   "texte": "Jean-Luc Mélenchon présente ses propositions pour la mer, sur les yachts, l'éolien en mer et les navires-usines.",
-   "source": "Le Parisien",
-   "url": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-yachts-eolien-navires-usines-comment-jean-luc-melenchon-veut-en-finir-avec-le-saccage-de-la-mer-25-11-2026-2TBIQT7ZDRBILJTBAJCQCDJEVY.php"
-  },
-  {
-   "date": "2026-11-25",
-   "qui": [
-    "glucksmann"
-   ],
-   "texte": "Alexandre Ouizille, directeur de campagne de Raphaël Glucksmann, estime que « le bloc central est en train de mourir ».",
-   "source": "BFMTV",
-   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-le-bloc-central-est-en-train-de-mourir-remarque-alexandre-ouizille-directeur-de-campagne-de-raphael-glucksmann_VN-202611250874.html"
-  },
-  {
-   "date": "2026-11-25",
-   "qui": [],
-   "texte": "Des maires se disent de plus en plus réticents à parrainer un candidat à la présidentielle.",
-   "source": "BFMTV",
-   "url": "https://www.bfmtv.com/politique/elections/presidentielle/apres-vos-electeurs-vous-classent-politiquement-les-maires-de-plus-en-plus-frileux-a-parrainer-des-candidats-a-la-presidentielle_AN-202611250799.html"
-  },
-  {
-   "date": "2026-11-24",
-   "qui": [
-    "lepen"
-   ],
-   "texte": "Le député Pouria Amirshahi veut provoquer un débat à l'Assemblée contre les référendums promis par Marine Le Pen.",
-   "source": "LCP",
-   "url": "https://lcp.fr/actualites/constitution-comment-le-depute-pouria-amirshahi-veut-provoquer-le-debat-contre-les"
-  },
-  {
-   "date": "2026-11-24",
-   "qui": [
-    "philippe"
-   ],
-   "texte": "Édouard Philippe propose de rendre obligatoire la vaccination contre les papillomavirus pour éradiquer le cancer du col de l'utérus.",
-   "source": "LCP",
-   "url": "https://lcp.fr/actualites/eradiquer-le-cancer-du-col-de-l-uterus-edouard-philippe-veut-rendre-obligatoire-la"
   }
  ]
 }
