@@ -779,6 +779,31 @@ body.qfocus .topbar, body.qfocus #status, body.qfocus #inscr { display:none !imp
 .fback { display:inline-flex; align-items:center; gap:2px; font:500 14px 'Asap', sans-serif !important; color:#5573A7 !important; padding:2px 0 10px; background:none; border:0; cursor:pointer; }
 #v-guide > h2.sect, #v-apropos > h2.sect { margin:4px 0 8px; }
 #v-guide > p.muted { font:400 12px/16px 'Asap', sans-serif; color:#626161; margin:0 0 20px; }
+.sinto { display:flex; gap:8px; align-items:flex-start; margin-top:16px !important; }
+.sinto svg { flex:none; margin-top:1px; }
+.sinto p { margin:0; font:500 18px/22px 'Asap', sans-serif; color:#011944; }
+.snote { background:#F8F8F8; color:#F8394C; border-radius:15px; padding:16px 28px; font:400 16px/1.2 'Asap', sans-serif; margin-top:24px; }
+.snote b { font-weight:700; }
+.slist { display:flex; flex-direction:column; gap:8px; max-height:290px; overflow-y:auto; margin-top:24px; padding-right:6px; }
+.slist::-webkit-scrollbar { width:8px; } .slist::-webkit-scrollbar-thumb { background:#D4D2D3; border-radius:100px; }
+.srow { display:flex; gap:16px; align-items:center; }
+.swho { display:flex; gap:8px; align-items:center; flex:none; }
+.swho .av { width:50px; height:50px; flex:none; }
+.snm { width:85px; } .sn { font:400 16px/1.15 'Asap', sans-serif; color:#000; } .sp { font:400 12px/1.2 'Asap', sans-serif; color:#626161; margin-top:2px; }
+.sv { flex:1; min-width:0; text-align:right; }
+.sh { font:500 16px/1.2 'Asap', sans-serif; color:#011944; }
+.sr { font:400 12px/1.25 'Asap', sans-serif; color:#626161; margin-top:2px; }
+.sr a, .ssrc a { color:#626161; text-decoration:underline; }
+h3.scal { font:500 24px/1.2 'Asap', sans-serif; color:#011944; margin-top:32px !important; margin-bottom:16px; }
+.stl { position:relative; display:flex; flex-direction:column; gap:12px; margin-top:24px; }
+h3.scal + .stl { margin-top:0; }
+.stl::before { content:""; position:absolute; left:11.5px; top:12px; bottom:12px; border-left:1px dashed #022E7B; }
+.str { display:flex; gap:16px; align-items:center; position:relative; }
+.sic { flex:none; width:24px; height:24px; border-radius:100px; background:#022E7B; display:flex; align-items:center; justify-content:center; }
+.str.vote .sic { background:#F95969; } .str.vote .sic svg { margin-bottom:3px; }
+.stx { flex:1; min-width:0; } .stt { font:400 16px/1.15 'Asap', sans-serif; color:#000; } .sts { font:400 12px/1.2 'Asap', sans-serif; color:#626161; margin-top:2px; }
+.sdt { flex:none; background:#E9E7E8; border-radius:10px; padding:4px 8px; font:400 16px/16px 'Capriola', sans-serif; color:#022A70; text-align:right; }
+.ssrc { font:400 12px/1.25 'Asap', sans-serif; color:#626161; margin-top:16px; }
 details.sec.acc.gacc > summary { font:500 18px/22px 'Asap', sans-serif; color:#011944; }
 details.sec.acc.gacc > summary svg { margin-top:1px; }
 details.gacc[open] > summary svg { transform:rotate(90deg); }
@@ -978,27 +1003,20 @@ details.gacc a { color:#022E7B; } details.gacc .muted { font-size:12px; color:#6
     <div id="candlist" class="trombi"></div>
     <details class="sec acc"><summary><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6.24878 2.81482L13.7513 9.72119M13.732 9.70194L6.24878 17.1852" stroke-width="3" stroke-linecap="round" stroke="currentColor"/></svg><span>Les 500 signatures</span></summary>
 
-    <p>Pour être candidat, il faut 500 parrainages d'élus venant d'au moins 30 départements. Le Conseil constitutionnel les publie au fur et à mesure, au moins deux fois par semaine, pendant la collecte.</p>
-    <div class="note">La collecte officielle n'a pas encore commencé. Les chiffres ci-dessous sont des <b>promesses revendiquées</b> par les candidats ou leur entourage, rapportées par la presse. Ils seront remplacés par les chiffres officiels dès leur publication.</div>
-    <div id="sig-list"></div>
-    <h3>Calendrier</h3>
-    <div class="timeline">
-      <div><b>Au plus tard le 7 février 2027</b><br><span class="muted">Décret de convocation : début officiel de la collecte</span></div>
-      <div><b>12 mars 2027</b><br><span class="muted">Fin de la collecte des parrainages</span></div>
-      <div><b>26 mars 2027 au plus tard</b><br><span class="muted">Liste officielle des candidats</span></div>
-      <div><b>18 avril 2027</b><br><span class="muted">Premier tour</span></div>
-      <div><b>2 mai 2027</b><br><span class="muted">Second tour</span></div>
-    </div>
-
+    <div class="sinto"><svg class="sinfo" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9.89" cy="9.89" r="8.89" stroke-width="2" stroke="#011944"/><path d="M10.505 15.8627H9.27247V6.97171H10.505V15.8627ZM9.88875 3.91492C10.1407 3.91492 10.3434 3.99709 10.4968 4.16143C10.6557 4.3203 10.7351 4.52299 10.7351 4.7695C10.7351 5.0215 10.6557 5.22693 10.4968 5.38579C10.3434 5.53918 10.1407 5.61587 9.88875 5.61587C9.63676 5.61587 9.43133 5.53918 9.27247 5.38579C9.11908 5.22693 9.04239 5.0215 9.04239 4.7695C9.04239 4.52299 9.11908 4.3203 9.27247 4.16143C9.43133 3.99709 9.63676 3.91492 9.88875 3.91492Z" fill="#011944"/></svg><p>Pour être candidat, il faut 500 parrainages d'élus venant d'au moins 30 départements. Le Conseil constitutionnel les publie au fur et à mesure, au moins deux fois par semaine, pendant la collecte.</p></div>
+    <div class="snote">La collecte officielle n'a pas encore commencé. Les chiffres ci-dessous sont des <b>promesses revendiquées</b> par les candidats ou leur entourage, rapportées par la presse. Ils seront remplacés par les chiffres officiels dès leur publication.</div>
+    <div id="sig-list" class="slist"></div>
+    <h3 class="scal">Calendrier</h3>
+    <div class="stl" id="sig-tl"></div>
     </details>
     <details class="sec acc"><summary><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6.24878 2.81482L13.7513 9.72119M13.732 9.70194L6.24878 17.1852" stroke-width="3" stroke-linecap="round" stroke="currentColor"/></svg><span>Temps de parole à la télé et à la radio</span></summary>
       <div id="tp"></div>
     </details>
     <details class="sec acc"><summary><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6.24878 2.81482L13.7513 9.72119M13.732 9.70194L6.24878 17.1852" stroke-width="3" stroke-linecap="round" stroke="currentColor"/></svg><span>Budget et financement</span></summary>
-    <p>Chaque candidat peut dépenser au maximum <b>16,851 M€</b> au premier tour, et <b>22,509 M€</b> s'il est au second. Les dépenses comptent depuis le 1er avril 2026. L'argent vient surtout de prêts bancaires, des partis et des dons de particuliers (4 600 € maximum par personne). L'État rembourse une partie des dépenses aux candidats qui dépassent 5 % des voix.</p>
-    <div class="note">Les comptes de campagne officiels ne sont publiés qu'après l'élection. Avant, on ne connaît que ce que les candidats et leurs partis annoncent.</div>
-    <div id="fin-list"></div>
-    <p class="muted" style="margin-top:10px">Sources des règles : <a href="https://www.info.gouv.fr/actualite/presidentielle-2027-date-a-retenir-et-informations-cles" target="_blank" rel="noopener">info.gouv.fr</a>, <a href="https://www.amf.asso.fr/documents-parrainage-candidats-election-presidentielle-amf-demande-anonymat/43305" target="_blank" rel="noopener">AMF</a>, <a href="https://www.publicsenat.fr/actualites/politique/ouverture-des-comptes-de-campagne-au-1er-avril-ce-que-ca-change-pour-les-candidats-potentiels" target="_blank" rel="noopener">Public Sénat</a>.</p>
+    <div class="sinto"><svg class="sinfo" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9.89" cy="9.89" r="8.89" stroke-width="2" stroke="#011944"/><path d="M10.505 15.8627H9.27247V6.97171H10.505V15.8627ZM9.88875 3.91492C10.1407 3.91492 10.3434 3.99709 10.4968 4.16143C10.6557 4.3203 10.7351 4.52299 10.7351 4.7695C10.7351 5.0215 10.6557 5.22693 10.4968 5.38579C10.3434 5.53918 10.1407 5.61587 9.88875 5.61587C9.63676 5.61587 9.43133 5.53918 9.27247 5.38579C9.11908 5.22693 9.04239 5.0215 9.04239 4.7695C9.04239 4.52299 9.11908 4.3203 9.27247 4.16143C9.43133 3.99709 9.63676 3.91492 9.88875 3.91492Z" fill="#011944"/></svg><p>Chaque candidat peut dépenser au maximum <b>16,851 M€</b> au premier tour, et <b>22,509 M€</b> s'il est au second. Les dépenses comptent depuis le 1er avril 2026. L'argent vient surtout de prêts bancaires, des partis et des dons de particuliers (4 600 € maximum par personne). L'État rembourse une partie des dépenses aux candidats qui dépassent 5 % des voix.</p></div>
+    <div class="snote">Les comptes de campagne officiels ne sont publiés qu'après l'élection. Avant, on ne connaît que ce que les candidats et leurs partis annoncent.</div>
+    <div id="fin-list" class="slist"></div>
+    <p class="ssrc">Sources des règles : <a href="https://www.info.gouv.fr/actualite/presidentielle-2027-date-a-retenir-et-informations-cles" target="_blank" rel="noopener">info.gouv.fr</a>, <a href="https://www.amf.asso.fr/documents-parrainage-candidats-election-presidentielle-amf-demande-anonymat/43305" target="_blank" rel="noopener">AMF</a>, <a href="https://www.publicsenat.fr/actualites/politique/ouverture-des-comptes-de-campagne-au-1er-avril-ce-que-ca-change-pour-les-candidats-potentiels" target="_blank" rel="noopener">Public Sénat</a>.</p>
       </details>
     <div class="cautres">
       <h3>Autres candidatures déclarées</h3>
@@ -1874,19 +1892,40 @@ function openGuide() {
   scrollTo(0, 0);
   try { history.pushState(null, '', '#guide'); PUSHED = true; } catch (e) {}
 }
+const SINFO = '<svg class="sinfo" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9.89" cy="9.89" r="8.89" stroke-width="2" stroke="#011944"/><path d="M10.505 15.8627H9.27247V6.97171H10.505V15.8627ZM9.88875 3.91492C10.1407 3.91492 10.3434 3.99709 10.4968 4.16143C10.6557 4.3203 10.7351 4.52299 10.7351 4.7695C10.7351 5.0215 10.6557 5.22693 10.4968 5.38579C10.3434 5.53918 10.1407 5.61587 9.88875 5.61587C9.63676 5.61587 9.43133 5.53918 9.27247 5.38579C9.11908 5.22693 9.04239 5.0215 9.04239 4.7695C9.04239 4.52299 9.11908 4.3203 9.27247 4.16143C9.43133 3.99709 9.63676 3.91492 9.88875 3.91492Z" fill="#011944"/></svg>';
+const STL_IC = { clock: '<svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><circle cx="7.27" cy="7.27" r="6.77" stroke="#FDFDFD"/><path d="M7.27 3.23V7.52" stroke-linecap="round" stroke="#FDFDFD"/></svg>', vote: '<svg width="16" height="17" viewBox="0 0 16 17" fill="none" aria-hidden="true"><path d="M2.16831 5.58374H3.80263V6.76645H2.16831C1.62399 6.76647 1.18272 7.20773 1.18272 7.75205V14.6612C1.18272 15.2056 1.62399 15.6468 2.16831 15.6468H13.1785C13.7228 15.6468 14.1641 15.2056 14.1641 14.6612V7.75205C14.1641 7.20772 13.7228 6.76645 13.1785 6.76645H12.6233V5.58374H13.1785C14.376 5.58374 15.3468 6.55453 15.3468 7.75205V14.6612C15.3468 15.8588 14.376 16.8295 13.1785 16.8295H2.16831C0.970795 16.8295 0 15.8587 0 14.6612V7.75205C0 6.55453 0.970798 5.58375 2.16831 5.58374Z" fill="#FDFDFD"/><path d="M9.96135 1.40873L12.6322 3.69099C13.5426 4.46895 13.6499 5.83764 12.872 6.74805L10.5449 9.47125L9.6458 8.70291L11.9728 5.97971C12.3264 5.56589 12.2776 4.94375 11.8638 4.59014L9.19301 2.30788C8.77919 1.95426 8.15705 2.00306 7.80343 2.41689L4.65029 6.10685C4.29667 6.52067 4.34548 7.1428 4.7593 7.49642L6.09456 8.63743L5.32622 9.53658L3.99096 8.39557C3.08055 7.61761 2.97318 6.24892 3.75114 5.33851L6.90429 1.64855C7.68225 0.738137 9.05094 0.630768 9.96135 1.40873Z" fill="#FDFDFD"/><path d="M11.3607 8.48169C11.6873 8.48169 11.952 8.74645 11.952 9.07305C11.952 9.39964 11.6873 9.6644 11.3607 9.6644H3.98603C3.65943 9.6644 3.39467 9.39964 3.39467 9.07305C3.39467 8.74645 3.65943 8.48169 3.98603 8.48169H11.3607Z" fill="#FDFDFD"/></svg>' };
+function sTimeline(items) {
+  const w = el('div', 'stl');
+  for (const [ic, t, sub, d] of items) {
+    const r = el('div', 'str' + (ic === 'vote' ? ' vote' : ''));
+    const b = el('span', 'sic'); b.innerHTML = STL_IC[ic];
+    const tx = el('div', 'stx'); tx.append(el('div', 'stt', t)); if (sub) tx.append(el('div', 'sts', sub));
+    const dt = el('div', 'sdt'); d.split('\n').forEach((l, i) => { if (i) dt.append(el('br')); dt.append(l); });
+    r.append(b, tx, dt); w.append(r);
+  }
+  return w;
+}
+function sRow(c, head, rest, url) {
+  const r = el('div', 'srow');
+  const who = el('div', 'swho'); const nm = el('div', 'snm');
+  nm.append(el('div', 'sn', c.nom), el('div', 'sp', (c.parti || '').replace(/\s*\(.*\)/, '')));
+  who.append(avatar(c), nm);
+  const v = el('div', 'sv'); if (head) v.append(el('div', 'sh', head));
+  if (rest || url) { const g = el('div', 'sr'); if (rest) g.append(rest + ' '); if (url) g.append(link('source', url)); v.append(g); }
+  r.append(who, v); return r;
+}
+function sSplit(t) { const m = (t || '').match(/^(.+?\.)\s+(\S.*)$/); return m ? [m[1], m[2]] : [t, '']; }
 function fmtDur(min) { const h = Math.floor(min / 60), m = Math.round(min % 60); return h ? h + ' h ' + String(m).padStart(2, '0') : m + ' min'; }
 function renderTP() {
   const box = $('tp'); if (!box || !CAND) return;
   const out = [];
-  out.push(el('p', null, "Les télés et radios doivent respecter un équilibre entre candidats. L'Arcom, le régulateur, contrôle leur temps de parole et publie les relevés."));
-  const per = el('div', 'timeline');
-  [['Du 4 janvier au 15 mars 2027', 'Équité : temps de parole selon le poids de chaque candidat (résultats passés, sondages, activité de campagne).'],
-   ['Du 16 mars au 4 avril 2027', 'Équité renforcée : temps de parole et temps d’antenne, dans des horaires comparables.'],
-   ['Campagne officielle, les 15 jours avant chaque tour', 'Égalité stricte : le même temps pour chaque candidat.']].forEach(([a, b]) => { const d = el('div'); d.append(el('b', null, a), el('br'), el('span', 'muted', b)); per.append(d); });
-  out.push(per);
+  const it = el('div', 'sinto'); it.innerHTML = SINFO; it.append(el('p', null, "Les télés et radios doivent respecter un équilibre entre candidats. L'Arcom, le régulateur, contrôle leur temps de parole et publie les relevés.")); out.push(it);
+  out.push(sTimeline([['clock', 'Équité', 'Temps de parole selon le poids de chaque candidat (résultats passés, sondages, activité de campagne).', 'Du 4 janvier au\n15 mars 2027'],
+    ['clock', 'Équité renforcée', 'Temps de parole et temps d’antenne, dans des horaires comparables.', 'Du 16 mars au\n4 avril 2027'],
+    ['clock', 'Campagne officielle', 'Égalité stricte : le même temps pour chaque candidat.', '15 jours avant\nchaque tour']]));
   const data = TP && TP.candidats ? Object.entries(TP.candidats) : [];
   if (!data.length) {
-    out.push(el('div', 'note', 'Les relevés par candidat commencent le 4 janvier 2027. Les premiers chiffres arriveront ici dès que l’Arcom les publiera.'));
+    out.push(el('div', 'snote', 'Les relevés par candidat commencent le 4 janvier 2027. Les premiers chiffres arriveront ici dès que l’Arcom les publiera.'));
   } else {
     const byId = new Map(CAND.principaux.map((c) => [c.id, c]));
     const rows = data.filter(([id]) => byId.has(id)).map(([id, v]) => ({ c: byId.get(id), v: v.parole || 0 })).sort((a, b) => b.v - a.v);
@@ -1894,7 +1933,7 @@ function renderTP() {
     out.push(el('p', 'muted', 'Temps de parole cumulé, toutes chaînes de télé et radios suivies' + (TP.periode ? ', ' + TP.periode : '') + '.'));
     for (const r of rows) { const d = el('div', 'tpr'); const h = el('div', 'h'); h.append(el('b', null, r.c.nom), el('span', null, fmtDur(r.v))); const b = el('div', 'b'); const i = el('i'); i.style.width = (r.v / max * 100) + '%'; i.style.background = avColor(r.c.id); b.append(i); d.append(h, b); out.push(d); }
   }
-  const src = el('p', 'muted'); src.append('Source : '); src.append(link(TP && TP.source ? TP.source : 'Arcom', TP && TP.url ? TP.url : 'https://www.arcom.fr')); src.append('. Règles 2027 publiées le 19 novembre 2026.'); out.push(src);
+  const src = el('p', 'ssrc'); src.append('Source : '); src.append(link(TP && TP.source ? TP.source : 'Arcom', TP && TP.url ? TP.url : 'https://www.arcom.fr')); src.append('. Règles 2027 publiées le 19 novembre 2026.'); out.push(src);
   box.replaceChildren(...out); renderHomeTP();
 }
 
@@ -2297,8 +2336,9 @@ function renderCandidats() {
   const m = $('cand-maj'); m.replaceChildren('Fiches mises à jour le ' + fdateLong(CAND.maj) + '. Liste : '); m.append(link(CAND.source_liste.nom, CAND.source_liste.url));
 
   const sig = list;
-  $('sig-list').replaceChildren(...sig.map((c) => { const r = el('div', 'row'); const rr = el('div', 'r'); rr.append(c.parrainages.texte + ' '); if (c.parrainages.url) rr.append(link('source', c.parrainages.url)); r.append(el('div', 'l', c.nom), rr); return r; }));
-  $('fin-list').replaceChildren(...sig.map((c) => { const r = el('div', 'row'); const rr = el('div', 'r'); if (c.finances) { rr.append(c.finances.texte + ' '); rr.append(link('source', c.finances.url)); } else rr.append('Pas d’information publique fiable'); r.append(el('div', 'l', c.nom), rr); return r; }));
+  $('sig-list').replaceChildren(...sig.map((c) => { const [h, r] = sSplit(c.parrainages.texte); return sRow(c, h, r, c.parrainages.url); }));
+  $('sig-tl').replaceWith(Object.assign(sTimeline([['clock', 'Décret de convocation', 'Début officiel de la collecte', '7 février 2027'], ['clock', 'Fin de la collecte des parrainages', '', '12 mars 2027'], ['clock', 'Liste officielle des candidats', '', '26 mars 2027'], ['vote', 'Premier tour', '', '18 avril 2027'], ['vote', 'Second tour', '', '2 mai 2027']]), { id: 'sig-tl' }));
+  $('fin-list').replaceChildren(...sig.map((c) => c.finances ? sRow(c, '', c.finances.texte, c.finances.url) : sRow(c, '', 'Pas d’information publique fiable', null)));
 }
 
 async function renderCredits() {
