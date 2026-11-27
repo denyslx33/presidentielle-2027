@@ -2,6 +2,25 @@
 "v": 4,
 "items": [
 {
+"t": "Programme de David Lisnard sur la politique pénale : \"Il y a des similitudes qui prouvent bien que la droite et le centre doivent se rassembler\", lance Jérémie Patrier-Leitus, porte-parole d’Édouard Philippe",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-programme-de-david-lisnard-sur-la-politique-penale-il-y-a-des-similitudes-qui-prouvent-bien-que-la-droite-et-le-centre-doivent-se-rassembler-lance-jeremie-patrier-leitus-porte-parole-d-edouard-philippe_VN-202611270851.html",
+"d": "2026-11-27T18:50:10Z",
+"qui": [
+"lisnard",
+"philippe"
+]
+},
+{
+"t": "\"On le décidera collectivement\" : Ségolène Royal n'exclut pas de soutenir Jean-Luc Mélenchon",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-on-le-decidera-collectivement-segolene-royal-n-exclut-pas-de-soutenir-jean-luc-melenchon_VN-202611270845.html",
+"d": "2026-11-27T18:47:13Z",
+"qui": [
+"melenchon"
+]
+},
+{
 "t": "Bruno Retailleau",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/gouvernement/bruno-retailleau_DN-202410030418.html",
@@ -656,6 +675,13 @@
 "qui": [
 "melenchon"
 ]
+},
+{
+"t": "Présidentielle 2027 : Bruno Le Maire tacle le RN, « pire arnaque de la vie politique française depuis 30 ou 40 ans »",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-bruno-le-maire-tacle-le-rn-pire-arnaque-de-la-vie-politique-francaise-depuis-30-ou-40-ans-27-11-2026-FNANKHJ2AFBLHDA5EYRKBJLTBE.php",
+"d": "2026-11-27T12:00:00Z",
+"qui": []
 },
 {
 "t": "MIDI ÉCO - Fiscalité, allocation, logement, emploi, garde...les propositions d'Édouard Philippe pour la natalité",
@@ -1758,33 +1784,6 @@
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-emmanuel-macron-tacle-la-drole-darrogance-de-marine-le-pen-26-11-2026-TUL24VDTWZF6XP7FMOENF4JKMQ.php",
 "d": "2026-11-26T12:00:00Z",
 "qui": []
-},
-{
-"t": "\"David Lisnard combat le RN\", affirme Romain Marsily, directeur général de Nouvelle Énergie",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-david-lisnard-combat-le-rn-affirme-romain-marsily-directeur-general-de-nouvelle-energie_VN-202611260576.html",
-"d": "2026-11-26T11:58:40Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "« Ce n’est pas notre guerre »… Quels étaient les liens entre Riner l’athlète et la Russie de Poutine, fan de judo ?",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4265901-20261126-guerre-liens-entre-riner-athlete-russie-poutine-fan-judo?at_medium=display&at_campaign=149",
-"d": "2026-11-26T11:35:15Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "Présidentielle 2027 : Jean-Luc Mélenchon, en visite vendredi à Berlin, inquiète l’Allemagne avec sa rhétorique anti-allemande",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/international/article/2026/11/26/l-allemagne-s-inquiete-de-la-rhetorique-anti-allemande-de-jean-luc-melenchon_6815524_3210.html",
-"d": "2026-11-26T11:23:09Z",
-"qui": [
-"melenchon"
-]
 }
 ],
 "sources": {
@@ -1792,14 +1791,14 @@
 "franceinfo": 7,
 "Libération": 22,
 "Le Figaro": 7,
-"Le Parisien": 55,
+"Le Parisien": 56,
 "20 Minutes": 9,
 "Ouest-France": 2,
-"BFMTV": 23,
-"France 24": 9,
+"BFMTV": 20,
+"France 24": "erreur: HTTPError",
 "La Croix": 23,
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T18:45:30Z"
+"maj": "2026-11-27T19:00:30Z"
 }
