@@ -3,6 +3,12 @@ name: Sondages allégés et alertes
 on:
   schedule:
     - cron: "3,23,43 * * * *"
+  workflow_run:
+    workflows: ["Fil d'actu"]
+    types: [completed]
+  push:
+    branches: [main]
+    paths: ["data/actu.json", "data/agenda.json", "data/ajouts.csv"]
   workflow_dispatch:
     inputs:
       test:

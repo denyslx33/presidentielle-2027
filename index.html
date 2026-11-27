@@ -2708,7 +2708,10 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.addEventListener('controllerchange', () => { if (hadCtrl && !reloaded) { reloaded = true; location.reload(); } });
   navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then((reg) => { reg.update(); document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') reg.update(); }); }).catch(() => {});
 }
-const start = (location.hash || '').slice(1); if (start.startsWith('c-')) openFiche(start.slice(2), true); else { try { history.replaceState(null, '', location.pathname); } catch (e) {} }
+const start = (location.hash || '').slice(1); if (start.startsWith('c-')) openFiche(start.slice(2), true); else { try { history.replaceState(null, '', location.pathname); } catch (e) {}
+  // Liens des alertes : #sondages, #actu, #flux, #agenda
+  const dl = { sondages: ['sondages'], actu: ['actu', 'infos'], flux: ['actu', 'flux'], agenda: ['actu', 'agenda'] }[start];
+  if (dl) { showView(dl[0]); if (dl[1]) { const b = document.querySelector('#aseg [data-a="' + dl[1] + '"]'); if (b) b.click(); } } }
 load();
 
 // Bouton « remonter » sur l'onglet Actualités
