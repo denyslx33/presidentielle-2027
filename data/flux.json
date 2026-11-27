@@ -2,6 +2,24 @@
 "v": 4,
 "items": [
 {
+"t": "Ecrits antisémites : la défense de Jordan Bardella patine, Marine Le Pen maintient timidement sa confiance",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/27/ecrits-antisemites-la-defense-de-jordan-bardella-patine-marine-le-pen-maintient-timidement-sa-confiance_6815931_823448.html",
+"d": "2026-11-27T20:14:22Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "A Béziers, Teddy Riner, toujours en panne d’idées, fait du lèche-vitrine",
+"s": "Libération",
+"u": "https://www.liberation.fr/politique/elections/a-beziers-teddy-riner-toujours-en-panne-didees-fait-du-leche-vitrine-20261127_3UT4HCLVPFDLPPTZL24OKI4XMU/",
+"d": "2026-11-27T20:14:04Z",
+"qui": [
+"riner"
+]
+},
+{
 "t": "Jean-Luc Mélenchon: \"Si les Français m'élisent, je leur donnerai le moyen de me révoquer\"",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-jean-luc-melenchon-si-les-francais-m-elisent-je-leur-donnerai-le-moyen-de-me-revoquer_VN-202611270888.html",
@@ -17,6 +35,18 @@
 "d": "2026-11-27T19:48:56Z",
 "qui": [
 "melenchon"
+]
+},
+{
+"t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T19:29:34Z",
+"qui": [
+"attal",
+"lisnard",
+"philippe",
+"retailleau"
 ]
 },
 {
@@ -125,18 +155,6 @@
 "d": "2026-11-27T18:26:53Z",
 "qui": [
 "attal"
-]
-},
-{
-"t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T18:25:19Z",
-"qui": [
-"attal",
-"lisnard",
-"philippe",
-"retailleau"
 ]
 },
 {
@@ -755,6 +773,15 @@
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-bruno-le-maire-tacle-le-rn-pire-arnaque-de-la-vie-politique-francaise-depuis-30-ou-40-ans-27-11-2026-FNANKHJ2AFBLHDA5EYRKBJLTBE.php",
 "d": "2026-11-27T12:00:00Z",
 "qui": []
+},
+{
+"t": "« Il n’est pas câblé comme nous » : à Béziers, la curieuse campagne de Teddy Riner chez Robert Ménard",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/il-nest-pas-cable-comme-nous-a-beziers-la-curieuse-campagne-de-teddy-riner-chez-robert-menard-27-11-2026-XUCPLIL5PNEETJYHLVR56KOGJU.php",
+"d": "2026-11-27T12:00:00Z",
+"qui": [
+"riner"
+]
 },
 {
 "t": "MIDI ÉCO - Fiscalité, allocation, logement, emploi, garde...les propositions d'Édouard Philippe pour la natalité",
@@ -1762,41 +1789,14 @@
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-il-nous-en-manque-un-peu-moins-dune-centaine-le-rn-na-pas-encore-ses-500-parrainages-26-11-2026-Z2UDOULBLJGNRHSCKQTIIWREWI.php",
 "d": "2026-11-26T12:00:00Z",
 "qui": []
-},
-{
-"t": "Présidentielle 2027 : « C’est dégueulasse de dire ça », le tacle de Robert Ménard à Teddy Riner pour qui l’Ukraine n’est « pas notre guerre »",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-cest-degueulasse-de-dire-ca-le-tacle-de-robert-menard-a-teddy-riner-pour-qui-lukraine-nest-pas-notre-guerre-26-11-2026-CCFSYMBODNBZTD3B7L5OGMFHMI.php",
-"d": "2026-11-26T12:00:00Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "« Pour nous, c’est Lisnard » : des députés LR appellent à soutenir le maire de Cannes",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/politique/pour-nous-cest-lisnard-des-deputes-lr-appellent-a-soutenir-le-maire-de-cannes-26-11-2026-FJNZBYPAQNFHRAYPACGLVKYEGI.php",
-"d": "2026-11-26T12:00:00Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Présidentielle 2027 : vaccination obligatoire pour les soignants, solidarité, écrans… Les mesures d’Édouard Philippe pour la santé",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-vaccination-obligatoire-pour-les-soignants-solidarite-ecrans-les-mesures-dedouard-philippe-pour-la-sante-26-11-2026-6RGWN43CKNG65BJIBBWWC4BLNQ.php",
-"d": "2026-11-26T12:00:00Z",
-"qui": [
-"philippe"
-]
 }
 ],
 "sources": {
-"Le Monde": 8,
+"Le Monde": 9,
 "franceinfo": 7,
 "Libération": 21,
 "Le Figaro": 7,
-"Le Parisien": 56,
+"Le Parisien": 57,
 "20 Minutes": 9,
 "Ouest-France": 0,
 "BFMTV": 20,
@@ -1805,5 +1805,5 @@
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T20:15:30Z"
+"maj": "2026-11-27T20:30:29Z"
 }
