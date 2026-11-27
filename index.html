@@ -532,6 +532,35 @@ details.sec.acc[open] { padding-bottom:12px; }
 #v-fiche .ncard.noav .bd, #v-fiche .ncard.noav .avs:has(.av + .av) + .bd { padding:8px; border-radius:10px; }
 #v-fiche .fsec p.muted { font:400 12px/16px 'Asap', sans-serif; color:#626161; margin:10px 0 0; }
 #v-fiche .lnk { display:flex; width:fit-content; margin-left:auto; }
+/* Partis */
+#c-partis .pcap { font:400 12px 'Asap', sans-serif; color:#626161; text-align:right; margin:0 6px 16px auto; max-width:200px; }
+#c-partis .phw { display:flex; justify-content:center; }
+#c-partis .phemi { position:relative; width:324px; background:radial-gradient(circle at 50% 100%, #F8F8F8 0 20px, transparent 21px), #E7E9F1; border-radius:162px 162px 0 0; height:162px !important; }
+#c-partis .pbub { position:absolute; padding:0; border:0; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center; overflow:hidden; cursor:pointer; box-shadow:0 1px 3px rgba(1,25,68,.08); }
+#c-partis .pbub img { max-width:74%; max-height:74%; object-fit:contain; }
+#c-partis .pbub .av { width:100%; height:100%; border:0; font-size:14px; }
+#c-partis .pbub .pin { font:600 13px 'Asap', sans-serif; color:#022A70; }
+#c-partis .pout { margin:20px auto 0; width:331px; max-width:100%; }
+#c-partis .pout .prow { display:flex; gap:4px; justify-content:flex-end; flex-wrap:wrap; }
+#c-partis .pout .pbub { position:static; }
+#c-partis .pout .pcap { margin:6px 0 0 auto; max-width:none; }
+#c-partis .psub { font:600 28px/28px 'Asap', sans-serif; color:#011944; margin:36px 0 4px; }
+#c-partis .pbloc { font:400 12px 'Gidole', 'Asap', sans-serif; color:#5573A7; text-transform:none; letter-spacing:0; margin:18px 0 6px; }
+#c-partis .pacc { background:#fff; border-radius:15px; margin-bottom:8px; }
+#c-partis .pacc summary { list-style:none; display:flex; align-items:center; gap:8px; padding:8px; font:500 18px 'Asap', sans-serif; color:#011944; cursor:pointer; }
+#c-partis .pacc summary::-webkit-details-marker { display:none; }
+#c-partis .pacc summary > svg { flex:none; transition:transform .15s; }
+#c-partis .pacc[open] summary > svg { transform:rotate(90deg); }
+#c-partis .pacc .plg { width:32px; height:32px; border-radius:50%; background:#F8F8F8; display:flex; align-items:center; justify-content:center; flex:none; overflow:hidden; }
+#c-partis .pacc .plg img { max-width:24px; max-height:24px; object-fit:contain; }
+#c-partis .pbody { padding:0 16px 14px; font:400 14px/19px 'Asap', sans-serif; color:#011334; }
+#c-partis .pbody b { display:block; margin-top:10px; font-weight:600; }
+#c-partis .pbody ul { margin:6px 0 0; padding-left:18px; } #c-partis .pbody li { margin:4px 0; font-size:13px; }
+#c-partis .pbody .muted { font-size:12px; color:#626161; }
+#c-partis .pbody .who { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; }
+#c-partis .pbody .who .av { width:26px; height:26px; font-size:10px; border:0; }
+#c-partis .pbody .who button { display:flex; align-items:center; gap:6px; border:0; background:#E6EAF2; border-radius:100px; font:400 13px 'Asap', sans-serif; color:#012157; padding:4px 10px 4px 4px; }
+#c-partis .pbody .lnk { font-size:14px; margin-top:8px; }
 </style>
 </head>
 <body>
@@ -1839,28 +1868,52 @@ function renderPartis() {
   const votesOf = (P) => (AGENDA ? AGENDA.evenements : []).filter((e) => e.type === 'vote' && /adhérent|militant|congrès|conseil (national|fédéral)|investiture|primaire|bureau national/i.test(e.titre || '') && (e.fin || e.date) >= today && P.cands.some((c) => (e.qui || []).includes(c.id))).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 2);
   loadScrut();
   renderVotes();
-  const out = [el('p', 'muted', "Les partis des candidats, rangés selon la grille officielle des nuances politiques du ministère de l'Intérieur, puis par ordre alphabétique. Pour chacun : son ou ses candidats, sa vie interne et ses prochains votes.")];
+  const out = [el('p', 'pcap', 'Les partis des candidats, rangés selon la grille officielle des nuances politiques du ministère de l’Intérieur.')];
+  const all = [...map.values()];
+  const inHemi = BLOCS.flatMap(([k]) => all.filter((P) => P.bloc === k).sort((a, b) => a.nom.localeCompare(b.nom, 'fr')));
+  const outside = all.filter((P) => P.bloc === 'sans' || P.bloc == null).sort((a, b) => a.nom.localeCompare(b.nom, 'fr'));
+  const accs = new Map();
+  const bubble = (P, size) => { const b = el('button', 'pbub'); b.type = 'button'; b.setAttribute('aria-label', P.nom); b.style.width = b.style.height = size + 'px'; const lg = PLOGOS[P.nom];
+    if (lg) { const im = el('img'); im.src = 'data/partis/' + lg; im.alt = ''; im.loading = 'lazy'; im.onerror = () => { im.remove(); b.append(el('span', 'pin', P.nom.split(/\s+/).filter((w) => w.length > 2).map((w) => w[0]).join('').slice(0, 3))); }; b.append(im); }
+    else if (P.cands.length === 1) b.append(avatar(P.cands[0]));
+    else b.append(el('span', 'pin', P.nom.split(/\s+/).filter((w) => w.length > 2).map((w) => w[0]).join('').slice(0, 3)));
+    b.onclick = () => { const d = accs.get(P.nom); if (!d) return; d.open = true; d.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+    return b; };
+  if (inHemi.length) {
+    const W = 324, R = 162, B = 41, hemi = el('div', 'phemi'); hemi.style.height = (R + 6) + 'px';
+    const N = inHemi.length, e0 = R - B / 2 - 6, rows = [e0, e0 - 46, e0 - 92].filter((r) => r > B);
+    const pads = rows.map((r) => Math.asin(Math.min(1, (B / 2 + 3) / r))), caps = rows.map((r, i) => Math.max(1, Math.floor(r * (Math.PI - 2 * pads[i]) / (B + 4)) + 1));
+    const ct = caps.reduce((x, y) => x + y, 0); const per = caps.map((c) => Math.min(c, Math.round(N * c / ct))); let left = N - per.reduce((x, y) => x + y, 0);
+    for (let i = 0; left !== 0 && i < 20; i++) { const j = i % rows.length; if (left > 0 && per[j] < caps[j]) { per[j]++; left--; } else if (left < 0 && per[j] > 0) { per[j]--; left++; } }
+    const seats = []; rows.forEach((r, i) => { const n = per[i], pad = pads[i]; for (let k = 0; k < n; k++) { const a = n === 1 ? Math.PI / 2 : Math.PI - pad - (Math.PI - 2 * pad) * k / (n - 1); seats.push({ a, x: W / 2 + r * Math.cos(a), y: R - r * Math.sin(a) }); } });
+    seats.sort((p, q) => q.a - p.a);
+    inHemi.forEach((P, i) => { const st = seats[i]; const bb = bubble(P, B); bb.style.left = (st.x - B / 2) + 'px'; bb.style.top = (st.y - B / 2) + 'px'; hemi.append(bb); });
+    const wrap = el('div', 'phw'); wrap.append(hemi); out.push(wrap);
+  }
+  if (outside.length) { const o = el('div', 'pout'); const row = el('div', 'prow'); outside.forEach((P) => { if (P.bloc === 'sans') P.cands.forEach((c) => { const b = el('button', 'pbub'); b.type = 'button'; b.setAttribute('aria-label', c.nom + ', sans étiquette'); b.style.width = b.style.height = '52px'; b.append(avatar(c)); b.onclick = () => openFiche(c.id); row.append(b); }); else row.append(bubble(P, 52)); }); o.append(row, el('p', 'pcap', 'Sans étiquettes ou non classés')); out.push(o); }
   const groups = BLOCS.map(([k, l]) => [k, l]).concat([['sans', 'Sans étiquette'], [null, 'Non classés'], ['autre', 'Autres partis cités dans l’actu']]);
+  out.push(el('h3', 'psub', 'Le détail parti par parti'));
   for (const [k, l] of groups) {
-    const ps = [...map.values()].filter((P) => (P.bloc ?? null) === k).sort((a, b) => a.nom.localeCompare(b.nom, 'fr'));
+    const ps = all.filter((P) => (P.bloc ?? null) === k).sort((a, b) => a.nom.localeCompare(b.nom, 'fr'));
     if (!ps.length) continue;
     out.push(el('div', 'pbloc', l));
     for (const P of ps) {
-      const d = el('div', 'pcard'); const lg = PLOGOS[P.nom];
-      if (lg) { const im = el('img', 'plogo'); im.src = 'data/partis/' + lg; im.alt = 'Logo ' + P.nom; im.loading = 'lazy'; im.onerror = () => im.remove(); d.append(im); }
-      d.append(el('h3', null, P.nom));
+      const det = el('details', 'pacc'); accs.set(P.nom, det); const sm = el('summary'); sm.append(fsvg('th'));
+      const lg = PLOGOS[P.nom]; if (lg) { const lw = el('span', 'plg'); const im = el('img'); im.src = 'data/partis/' + lg; im.alt = ''; im.loading = 'lazy'; im.onerror = () => lw.remove(); lw.append(im); sm.append(lw); }
+      sm.append(el('span', 'pn', P.nom)); det.append(sm);
+      const d = el('div', 'pbody');
       if (P.note) d.append(el('div', 'muted', P.note));
       if (P.cands.length) { const w = el('div', 'who'); for (const c of P.cands) { const b = el('button'); b.type = 'button'; b.append(avatar(c), c.nom); b.onclick = () => openFiche(c.id); w.append(b); } d.append(w); }
       const gk = SCRUT && SCRUT.partis[P.nom];
       if (gk) { d.append(el('b', null, 'À l’Assemblée, groupe ' + SCRUT.groupes[gk].nom)); const ul = el('ul');
         for (const sv of SCRUT.votes) { const g = sv.groupes.find((x) => x.g === gk); if (!g) continue; const parts = []; if (g.pour) parts.push(g.pour + ' pour'); if (g.contre) parts.push(g.contre + ' contre'); if (g.abst) parts.push(g.abst + ' abst.');
           const li = el('li'); li.append(sv.titre + ' : ' + (parts.join(', ') || 'aucun vote') + ' (sur ' + g.membres + ') '); li.append(link('scrutin', sv.url)); ul.append(li); }
-        d.append(ul); const vb = el('button', 'more', 'Voir ces votes en détail ›'); vb.type = 'button'; vb.onclick = () => { setCMode('votes'); window.scrollTo(0, 0); }; d.append(vb); }
+        d.append(ul); const vb = el('button', 'lnk'); vb.type = 'button'; vb.append(el('span', null, 'Voir ces votes en détail'), svgI('chev')); vb.onclick = () => { setCMode('votes'); window.scrollTo(0, 0); }; d.append(vb); }
       const a = actuOf(P), v = votesOf(P);
       if (v.length) { d.append(el('b', null, 'Prochains votes')); const ul = el('ul'); for (const e of v) { const li = el('li'); li.append(fdateLong(e.date) + ' : ' + e.titre + ' '); if (e.url) li.append(link('source', e.url)); ul.append(li); } d.append(ul); }
       if (a.length) { d.append(el('b', null, 'Dans l’actu')); const ul = el('ul'); for (const n of a) { const li = el('li'); li.append(fdateLong(n.date) + ' : ' + n.texte + ' '); li.append(link(n.source || 'source', n.url)); ul.append(li); } d.append(ul); }
       if (!a.length && !v.length && P.cands.length) d.append(el('p', 'muted', 'Pas d’actualité récente sur la vie du parti.'));
-      out.push(d);
+      det.append(d); out.push(det);
     }
   }
   box.replaceChildren(...out);
@@ -1884,7 +1937,7 @@ function renderRetraits() {
 function setCMode(m) {
   for (const b of document.querySelectorAll('#cseg button')) b.classList.toggle('on', b.dataset.c === m);
   $('c-cands').hidden = m !== 'cands'; $('c-partis').hidden = m !== 'partis'; $('c-retraits').hidden = m !== 'retraits'; $('c-votes').hidden = m !== 'votes';
-  const T = { cands: 'Les candidats<br>par ordre alphabétique', partis: 'Les partis<br>des candidats', votes: 'Les grands votes<br>à l’Assemblée', retraits: 'Ils ont renoncé' }; $('c-title').innerHTML = T[m] || '';
+  const T = { cands: 'Les candidats<br>par ordre alphabétique', partis: 'Les partis<br>de la gauche vers la droite', votes: 'Les grands votes<br>à l’Assemblée', retraits: 'Ils ont renoncé' }; $('c-title').innerHTML = T[m] || '';
   if (m !== 'cands') gcCount('/candidats-' + m, 'Candidats ' + m);
 }
 
