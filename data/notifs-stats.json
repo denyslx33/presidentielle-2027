@@ -1,6 +1,13 @@
 {
 "2026-11-27": {
 "abonnes": 5,
-"envois": 2
+"envois": 2,
+"par_sujet": {
+"majeur": 4,
+"test": 3,
+"sondages": 3,
+"tv": 3,
+"favoris": 3
+}
 }
 }
