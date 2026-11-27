@@ -5,7 +5,34 @@
 "t": "« C’est ma dernière campagne » : Éric Zemmour annonce qu’il ne briguera plus l’Élysée après la Présidentielle 2027",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/cest-ma-derniere-campagne-eric-zemmour-annonce-quil-ne-briguera-plus-lelysee-apres-la-presidentielle-2027-27-11-2026-IH6CFANF7FGSNGZZ47MCRJSVGM.php",
-"d": "2026-11-26T23:40:06Z",
+"d": "2026-11-27T00:43:17Z",
+"qui": [
+"zemmour"
+]
+},
+{
+"t": "Présidentielle 2027 : Eric Zemmour annonce sa « dernière campagne »",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/27/presidentielle-2027-eric-zemmour-annonce-sa-derniere-campagne_6815659_823448.html",
+"d": "2026-11-26T23:54:55Z",
+"qui": [
+"zemmour"
+]
+},
+{
+"t": "Éric Zemmour annonce que 2027 sera sa “dernière campagne” à l’élection présidentielle",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/reconquete/eric-zemmour-annonce-que-2027-sera-sa-derniere-campagne-a-l-election-presidentielle_AD-202611261033.html",
+"d": "2026-11-26T22:32:28Z",
+"qui": [
+"zemmour"
+]
+},
+{
+"t": "Eric Zemmour",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/eric-zemmour_DN-202110270595.html",
+"d": "2026-11-26T22:32:28Z",
 "qui": [
 "zemmour"
 ]
@@ -1762,44 +1789,21 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "Présidentielle 2027: \"Il y a suffisamment de candidats\", juge François Hollande",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-il-y-a-suffisamment-de-candidats-juge-francois-hollande_VN-202611250685.html",
-"d": "2026-11-25T14:40:32Z",
-"qui": []
-},
-{
-"t": "François Hollande pense que Jean-Luc Mélenchon \"ne veut pas gagner\" l'élection présidentielle",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-francois-hollande-pense-que-jean-luc-melenchon-ne-veut-pas-gagner-l-election-presidentielle_VN-202611250675.html",
-"d": "2026-11-25T14:26:56Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Présidentielle 2027: \"On ne gagne pas une élection sur la peur\", rappelle François Hollande",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-on-ne-gagne-pas-une-election-sur-la-peur-rappelle-francois-hollande_VN-202611250673.html",
-"d": "2026-11-25T14:25:17Z",
-"qui": []
 }
 ],
 "sources": {
-"Le Monde": 8,
+"Le Monde": 9,
 "franceinfo": 8,
 "Libération": 19,
 "Le Figaro": 7,
 "Le Parisien": 54,
 "20 Minutes": 7,
 "Ouest-France": 1,
-"BFMTV": 14,
+"BFMTV": 15,
 "France 24": 8,
 "La Croix": 23,
 "LCP": 37,
 "RFI": 8
 },
-"maj": "2026-11-26T23:40:06Z"
+"maj": "2026-11-27T00:43:17Z"
 }
