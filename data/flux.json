@@ -2,23 +2,38 @@
 "v": 4,
 "items": [
 {
+"t": "Défense, UE, rigueur budgétaire: comment Jean-Luc Mélenchon est-il perçu en Allemagne?",
+"s": "RFI",
+"u": "https://www.rfi.fr/fr/france/20261127-d%C3%A9fense-ue-rigueur-budg%C3%A9taire-comment-jean-luc-m%C3%A9lenchon-est-il-per%C3%A7u-en-allemagne",
+"d": "2026-11-27T17:28:01Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Présidentielle 2027 : A Berlin, Mélenchon loue Marx ou Beethoven et se défend de toute germanophobie",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4266400-20261127-presidentielle-2027-berlin-melenchon-loue-marx-beethoven-defend-toute-germanophobie?at_medium=display&at_campaign=149",
+"d": "2026-11-27T17:20:01Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "«L’Ukraine, c’est pas notre guerre» : Teddy Riner et les faux-monnayeurs, par Daniel Schneidermann",
+"s": "Libération",
+"u": "https://www.liberation.fr/idees-et-debats/opinions/lukraine-cest-pas-notre-guerre-teddy-riner-et-les-faux-monnayeurs-par-daniel-schneidermann-20261127_JVFRUTAQUVGUTMGYJLSM3MKE64/",
+"d": "2026-11-27T17:12:15Z",
+"qui": [
+"riner"
+]
+},
+{
 "t": "Les aéroports français plaident contre une éventuelle politique de « décroissance » après l’élection présidentielle de 2027",
 "s": "Ouest-France",
 "u": "https://www.ouest-france.fr/economie/aeronautique/les-aeroports-francais-plaident-contre-une-eventuelle-politique-de-decroissance-apres-lelection-presidentielle-de-2027-c97754b0-ea7c-11f1-8e4e-f44a9b15a834?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
 "d": "2026-11-27T17:10:40Z",
 "qui": []
-},
-{
-"t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T17:08:41Z",
-"qui": [
-"attal",
-"lisnard",
-"philippe",
-"retailleau"
-]
 },
 {
 "t": "Présidentielle: Ségolène Royal juge qu'il y a \"un certain mépris\" à l'encontre de Teddy Riner",
@@ -54,6 +69,15 @@
 "d": "2026-11-27T16:48:40Z",
 "qui": [
 "melenchon"
+]
+},
+{
+"t": "DIRECT. Présidentielle: Teddy Riner appelle l'État à \"prendre ses responsabilités\" pour que les peines de prison \"soient réellement\" exécutées",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T16:34:07Z",
+"qui": [
+"riner"
 ]
 },
 {
@@ -1759,48 +1783,21 @@
 "lisnard",
 "philippe"
 ]
-},
-{
-"t": "Présidentielle 2027 : depuis la Mayenne, Raphaël Glucksmann dévoile son projet de \"Conseil des territoires\" pour donner plus de pouvoir aux élus locaux",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-depuis-la-mayenne-raphael-glucksmann-devoile-son-projet-de-conseil-des-territoires-pour-donner-plus-de-pouvoir-aux-elus-locaux_8300955.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-26T08:31:17Z",
-"qui": [
-"glucksmann"
-]
-},
-{
-"t": "\"Comment tu peux dire ça?\": Robert Ménard, \"choqué\" par les propos de Teddy Riner sur la guerre en Ukraine, l'invite à aller \"sur la ligne de front\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/comment-tu-peux-dire-ca-robert-menard-choque-par-les-propos-de-teddy-riner-sur-la-guerre-en-ukraine-l-invite-a-aller-sur-la-ligne-de-front_AV-202611260398.html",
-"d": "2026-11-26T08:25:17Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "David Lisnard réélu à la tête de l'AMF : \"Il faut le féliciter de manière républicaine, mais ce n'est pas la campagne présidentielle et encore moins le bloc central\", réagit Clément Beaune",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/le-7-40-franceinfo-du-jeudi-26-novembre-2026_8291411.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-26T08:18:05Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
 "Le Monde": 7,
 "franceinfo": 5,
-"Libération": 21,
+"Libération": 22,
 "Le Figaro": 7,
 "Le Parisien": 52,
-"20 Minutes": 8,
+"20 Minutes": 9,
 "Ouest-France": 1,
 "BFMTV": 23,
 "France 24": "erreur: HTTPError",
 "La Croix": 23,
 "LCP": 39,
-"RFI": 9
+"RFI": 10
 },
-"maj": "2026-11-27T17:15:29Z"
+"maj": "2026-11-27T17:30:35Z"
 }
