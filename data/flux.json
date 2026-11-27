@@ -2,10 +2,19 @@
 "v": 4,
 "items": [
 {
+"t": "\"Disciple de Marx\" et \"amateur\" de Beethoven : à Berlin, Mélenchon se défend d'être germanophobe",
+"s": "France 24",
+"u": "https://www.france24.com/fr/france/20261127-allemagne-disciple-marx-amateur-beethoven-visite-berlin-m%C3%A9lenchon-livre-se-d%C3%A9fend-germanophobe",
+"d": "2026-11-27T16:48:40Z",
+"qui": [
+"melenchon"
+]
+},
+{
 "t": "DIRECT. Présidentielle: Teddy Riner appelle l'État à \"prendre ses responsabilités\" pour que les peines de prison \"soient réellement\" exécutées",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T16:34:07Z",
+"d": "2026-11-27T16:45:26Z",
 "qui": [
 "riner"
 ]
@@ -1776,15 +1785,6 @@
 "qui": [
 "lepen"
 ]
-},
-{
-"t": "Présidentielle 2027 : \"Je compte continuer à déranger ce petit théâtre\", déclare David Lisnard",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/politique/david-lisnard/presidentielle-2027-je-compte-continuer-a-deranger-ce-petit-theatre-declare-david-lisnard_8300889.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-26T07:51:49Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
@@ -1801,5 +1801,5 @@
 "LCP": 39,
 "RFI": 9
 },
-"maj": "2026-11-27T16:45:30Z"
+"maj": "2026-11-27T16:51:28Z"
 }
