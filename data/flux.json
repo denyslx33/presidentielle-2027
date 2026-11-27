@@ -2,6 +2,15 @@
 "v": 4,
 "items": [
 {
+"t": "Jean-Luc Mélenchon écarte une sortie de la France de l'UE: \"Jamais de la vie, vous allez devoir nous supporter de l'intérieur avec nos règles\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-jean-luc-melenchon-ecarte-une-sortie-de-la-france-de-l-ue-jamais-de-la-vie-vous-allez-devoir-nous-supporter-de-l-interieur-avec-nos-regles_VN-202611270899.html",
+"d": "2026-11-27T20:17:59Z",
+"qui": [
+"melenchon"
+]
+},
+{
 "t": "Ecrits antisémites : la défense de Jordan Bardella patine, Marine Le Pen maintient timidement sa confiance",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/27/ecrits-antisemites-la-defense-de-jordan-bardella-patine-marine-le-pen-maintient-timidement-sa-confiance_6815931_823448.html",
@@ -1782,13 +1791,6 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "Présidentielle 2027 : « Il nous en manque un peu moins d’une centaine », le RN n’a pas encore ses 500 parrainages",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-il-nous-en-manque-un-peu-moins-dune-centaine-le-rn-na-pas-encore-ses-500-parrainages-26-11-2026-Z2UDOULBLJGNRHSCKQTIIWREWI.php",
-"d": "2026-11-26T12:00:00Z",
-"qui": []
 }
 ],
 "sources": {
@@ -1799,11 +1801,11 @@
 "Le Parisien": 57,
 "20 Minutes": 9,
 "Ouest-France": 0,
-"BFMTV": 20,
+"BFMTV": 19,
 "France 24": 9,
 "La Croix": 23,
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T20:30:29Z"
+"maj": "2026-11-27T20:45:29Z"
 }
