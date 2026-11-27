@@ -2,15 +2,6 @@
 "v": 4,
 "items": [
 {
-"t": "Jean-Luc Mélenchon",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
-"d": "2026-11-27T22:28:11Z",
-"qui": [
-"melenchon"
-]
-},
-{
 "t": "En déplacement en Allemagne, Jean-Luc Mélenchon affirme vouloir refuser \"d'aider les Américains à faire la guerre aux Chinois\"",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/la-france-insoumise/en-deplacement-en-allemagne-jean-luc-melenchon-affirme-vouloir-refuser-d-aider-les-americains-a-faire-la-guerre-aux-chinois_AD-202611270940.html",
@@ -35,16 +26,6 @@
 "d": "2026-11-27T22:23:35Z",
 "qui": [
 "melenchon"
-]
-},
-{
-"t": "DIRECT. Présidentielle: François-Xavier Bellamy assure qu'\"il n'y a pas de divergence de ligne\" entre Bruno Retailleau et David Lisnard",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T21:59:19Z",
-"qui": [
-"lisnard",
-"retailleau"
 ]
 },
 {
@@ -115,6 +96,27 @@
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-mouvement-lyceen-c-etait-nous-qui-faisions-le-barrage-entre-les-flics-et-les-jeunes-affirme-jean-luc-melenchon_VN-202611270887.html",
 "d": "2026-11-27T19:48:56Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T19:29:34Z",
+"qui": [
+"attal",
+"lisnard",
+"philippe",
+"retailleau"
+]
+},
+{
+"t": "Jean-Luc Mélenchon",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
+"d": "2026-11-27T19:18:46Z",
 "qui": [
 "melenchon"
 ]
@@ -1794,18 +1796,18 @@
 }
 ],
 "sources": {
-"Le Monde": 9,
+"Le Monde": "erreur: URLError",
 "franceinfo": 7,
 "Libération": 21,
 "Le Figaro": 7,
 "Le Parisien": 56,
 "20 Minutes": 8,
 "Ouest-France": 1,
-"BFMTV": 19,
+"BFMTV": 20,
 "France 24": 9,
 "La Croix": 23,
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T22:30:29Z"
+"maj": "2026-11-27T23:00:30Z"
 }
