@@ -75,7 +75,7 @@ def main():
         its = [i for i in load('data/flux.json', {}).get('items', []) if force in i.get('qui', []) and i.get('d', '') >= lo]
         if force in cand and its:
             it = sorted(its, key=lambda i: rang(i, force, its))[0]
-            send('favoris', cand[force], titre(it), f'./#c-{force}', 'fav-' + force, [force])
+            send('favoris', cand[force], titre(it), f'./#c-{force}', 'fav-' + force, [force], urgent=True)
             etat.setdefault('fav', {})[force] = today
             json.dump(etat, open(ETAT, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
         else: print('Rien à envoyer pour', force)
