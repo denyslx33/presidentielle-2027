@@ -2,10 +2,35 @@
 "v": 4,
 "items": [
 {
+"t": "DIRECT. Présidentielle 2027 : Marine Le Pen renouvelle sa confiance à Jordan Bardella et veut obliger les journalistes à respecter le secret de l'instruction",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-marine-le-pen-va-presenter-son-programme-pour-les-outre-mer-en-pleine-tourmente-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8302521.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-27T14:30:31Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "Paul Larrouturou, ancien journaliste de « Quotidien » et de TF1, va lancer son propre média en vue de la présidentielle de 2027",
+"s": "Ouest-France",
+"u": "https://programmetv.ouest-france.fr/actualites/paul-larrouturou-ancien-journaliste-de-quotidien-et-de-tf1-va-lancer-son-propre-media-en-vue-de-la-presidentielle-de-2027-bd2debee-ea57-11f1-8e4e-f44a9b15a834?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-27T14:30:05Z",
+"qui": []
+},
+{
+"t": "Eric Zemmour placé sous le statut de témoin assisté dans l'affaire des prêts accordés au parti Reconquête",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/politique/eric-zemmour/eric-zemmour-place-sous-le-statut-de-temoin-assiste-dans-l-affaire-des-prets-accordes-au-parti-reconquete_8303232.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-27T14:27:08Z",
+"qui": [
+"zemmour"
+]
+},
+{
 "t": "DIRECT. Présidentielle: Teddy Riner appelle l'État à \"prendre ses responsabilités\" pour que les peines de prison \"soient réellement\" exécutées",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T14:13:14Z",
+"d": "2026-11-27T14:19:23Z",
 "qui": [
 "riner"
 ]
@@ -15,15 +40,6 @@
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/politique/jordan-bardella/propos-antisemites-attribues-a-jordan-bardella/edito-marine-le-pen-peut-elle-finir-par-lacher-jordan-bardella_8303214.html#xtor=RSS-3-%5Bpolitique%5D",
 "d": "2026-11-27T14:09:09Z",
-"qui": [
-"lepen"
-]
-},
-{
-"t": "DIRECT. Présidentielle 2027 : Marine Le Pen renouvelle sa confiance à Jordan Bardella et veut obliger les journalistes à respecter le secret de l'instruction",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-marine-le-pen-va-presenter-son-programme-pour-les-outre-mer-en-pleine-tourmente-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8302521.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-27T14:02:43Z",
 "qui": [
 "lepen"
 ]
@@ -180,7 +196,7 @@
 "qui": []
 },
 {
-"t": "Ecrits antisémites de Jordan Bardella : Marine Le Pen renouvelle sa confiance au président du Rassemblement national",
+"t": "Ecrits antisémites de Jordan Bardella : Marine Le Pen renouvelle sa confiance au président du RN",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/27/ecrits-antisemites-de-jordan-bardella-marine-le-pen-renouvelle-sa-confiance-au-president-du-rassemblement-national_6815858_823448.html",
 "d": "2026-11-27T12:25:05Z",
@@ -1773,24 +1789,6 @@
 "qui": [
 "villepin"
 ]
-},
-{
-"t": "Guerre à Gaza: Dominique de Villepin, candidat La France Humaniste à la présidentielle, \"assume\" de parler de \"génocide\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-guerre-a-gaza-dominique-de-villepin-candidat-la-france-humaniste-a-la-presidentielle-assume-de-parler-de-genocide_VN-202611250983.html",
-"d": "2026-11-25T21:29:43Z",
-"qui": [
-"villepin"
-]
-},
-{
-"t": "\"Ce n'est pas notre guerre\" : Teddy Riner exhorte à arrêter de donner de l'argent à l'Ukraine",
-"s": "France 24",
-"u": "https://www.france24.com/fr/france/20261125-notre-guerre-teddy-riner-exhorte-arr%C3%AAter-donner-argent-ukraine-%C3%A9lection-fran%C3%A7aise-pr%C3%A9sidentielle",
-"d": "2026-11-25T21:26:17Z",
-"qui": [
-"riner"
-]
 }
 ],
 "sources": {
@@ -1800,12 +1798,12 @@
 "Le Figaro": 7,
 "Le Parisien": 53,
 "20 Minutes": 6,
-"Ouest-France": 0,
+"Ouest-France": 1,
 "BFMTV": 24,
 "France 24": 9,
 "La Croix": 23,
 "LCP": 38,
 "RFI": 9
 },
-"maj": "2026-11-27T14:15:32Z"
+"maj": "2026-11-27T14:30:31Z"
 }
