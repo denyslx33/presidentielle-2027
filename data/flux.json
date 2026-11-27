@@ -5,9 +5,18 @@
 "t": "« C’est ma dernière campagne » : Éric Zemmour annonce qu’il ne briguera plus l’Élysée après la Présidentielle 2027",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/cest-ma-derniere-campagne-eric-zemmour-annonce-quil-ne-briguera-plus-lelysee-apres-la-presidentielle-2027-27-11-2026-IH6CFANF7FGSNGZZ47MCRJSVGM.php",
-"d": "2026-11-27T03:21:31Z",
+"d": "2026-11-27T04:31:45Z",
 "qui": [
 "zemmour"
+]
+},
+{
+"t": "France: Jean-Luc Mélenchon en visite à Berlin, malgré sa méfiance envers l'Allemagne",
+"s": "RFI",
+"u": "https://www.rfi.fr/fr/france/20261127-france-jean-luc-m%C3%A9lenchon-en-visite-%C3%A0-berlin-malgr%C3%A9-sa-m%C3%A9fiance-envers-l-allemagne",
+"d": "2026-11-27T03:24:29Z",
+"qui": [
+"melenchon"
 ]
 },
 {
@@ -1780,15 +1789,6 @@
 "melenchon",
 "tondelier"
 ]
-},
-{
-"t": "En campagne pour l’Elysée, David Lisnard réélu à la tête des maires de France",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/elections/en-campagne-pour-lelysee-david-lisnard-reelu-a-la-tete-des-maires-de-france-20261125_SGKQEG6H3FHHPMAGJUG2OU2I2Q/",
-"d": "2026-11-25T14:43:21Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
@@ -1798,12 +1798,12 @@
 "Le Figaro": 7,
 "Le Parisien": 54,
 "20 Minutes": 7,
-"Ouest-France": 1,
+"Ouest-France": 0,
 "BFMTV": 15,
 "France 24": 8,
 "La Croix": 23,
 "LCP": 37,
-"RFI": 8
+"RFI": 9
 },
-"maj": "2026-11-27T03:21:31Z"
+"maj": "2026-11-27T04:31:45Z"
 }
