@@ -2,16 +2,6 @@
 "v": 4,
 "items": [
 {
-"t": "DIRECT. Présidentielle: François-Xavier Bellamy assure qu'\"il n'y a pas de divergence de ligne\" entre Bruno Retailleau et David Lisnard",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T21:59:19Z",
-"qui": [
-"lisnard",
-"retailleau"
-]
-},
-{
 "t": "Présidentielle 2027 : Marine Le Pen veut geler toutes les discussions institutionnelles en outre-mer",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/27/presidentielle-2027-marine-le-pen-veut-geler-toutes-les-discussions-institutionnelles-en-outre-mer_6815933_823448.html",
@@ -81,6 +71,18 @@
 "d": "2026-11-27T19:48:56Z",
 "qui": [
 "melenchon"
+]
+},
+{
+"t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T19:29:34Z",
+"qui": [
+"attal",
+"lisnard",
+"philippe",
+"retailleau"
 ]
 },
 {
@@ -1806,5 +1808,5 @@
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T22:00:30Z"
+"maj": "2026-11-27T22:15:33Z"
 }
