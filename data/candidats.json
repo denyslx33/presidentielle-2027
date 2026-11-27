@@ -1573,5 +1573,285 @@
   "Écologie et énergie",
   "Institutions",
   "Europe et international"
+ ],
+ "reserve": [
+  {
+   "id": "asselineau",
+   "nom": "François Asselineau",
+   "parti": "Union populaire républicaine (UPR)",
+   "role": "Fondateur et président de l'UPR, candidat en 2017.",
+   "annonce": "Candidat déclaré.",
+   "mesures": [
+    "Sortir de l'Union européenne, de l'euro et de l'OTAN"
+   ],
+   "source_mesures": {
+    "nom": "Public Sénat",
+    "url": "https://www.publicsenat.fr/article/politique/asselineau-partisan-du-frexit-et-candidat-inattendu-a-l-election-56898"
+   },
+   "parrainages": {
+    "texte": "Aucun chiffre revendiqué. 524 parrainages en 2017, écarté en 2022 avec 293.",
+    "source": null,
+    "url": null
+   },
+   "finances": null,
+   "programme": {
+    "url": null,
+    "note": "Programme 2027 pas encore publié : ces positions viennent de ses déclarations publiques.",
+    "recap": null,
+    "themes": [
+     {
+      "theme": "Europe et international",
+      "mesures": [
+       "Sortir de l'Union européenne, de l'euro et de l'OTAN"
+      ]
+     }
+    ]
+   },
+   "bloc": "d",
+   "a_verifier": "Mesures tirées de sa campagne 2017 : vérifier qu'elles sont reprises en 2027."
+  },
+  {
+   "id": "philippot",
+   "nom": "Florian Philippot",
+   "parti": "Les Patriotes",
+   "role": "Président des Patriotes, ancien vice-président du FN.",
+   "annonce": "Candidat déclaré le 9 mai 2026 sur France 2.",
+   "mesures": [
+    "Sortir de l'Union européenne et de l'OTAN"
+   ],
+   "source_mesures": {
+    "nom": "Sud Radio",
+    "url": "https://www.sudradio.fr/politique/je-suis-candidat-florian-philippot-se-lance-pour-la-presidentielle-de-2027"
+   },
+   "parrainages": {
+    "texte": "Aucun chiffre revendiqué.",
+    "source": null,
+    "url": null
+   },
+   "finances": null,
+   "programme": {
+    "url": null,
+    "note": "Programme 2027 pas encore publié : ces positions viennent de ses déclarations publiques.",
+    "recap": null,
+    "themes": [
+     {
+      "theme": "Europe et international",
+      "mesures": [
+       "Sortir de l'Union européenne et de l'OTAN"
+      ]
+     }
+    ]
+   },
+   "bloc": "d",
+   "a_verifier": "Dit qu'il se retirerait si Philippe de Villiers se présentait."
+  },
+  {
+   "id": "lassalle",
+   "nom": "Jean Lassalle",
+   "parti": "Résistons !",
+   "role": "Ancien député des Pyrénées-Atlantiques, candidat en 2017 (1,2 %) et 2022 (3,1 %).",
+   "annonce": "Candidature pas encore officialisée : cagnotte lancée en juillet 2026, objectif de 100 000 € avant de se déclarer.",
+   "mesures": [],
+   "source_mesures": {
+    "nom": "Europe 1 et Pleinchamp",
+    "url": "https://www.pleinchamp.com/actualite/jean-lassalle-agriculteurs-reprenez-vos-reves.-parce-que-les-reves-ca-permet-de-sortir-du-cauchemar"
+   },
+   "parrainages": {
+    "texte": "Aucun chiffre revendiqué.",
+    "source": null,
+    "url": null
+   },
+   "finances": null,
+   "programme": {
+    "url": null,
+    "note": "Programme 2027 pas encore publié : ces positions viennent de ses déclarations publiques.",
+    "recap": null,
+    "themes": []
+   },
+   "bloc": null,
+   "a_verifier": "À passer en fiche seulement s'il officialise sa candidature."
+  },
+  {
+   "id": "kazib",
+   "nom": "Anasse Kazib",
+   "parti": "Révolution permanente",
+   "role": "Cheminot, délégué SUD Rail, porte-parole de Révolution permanente.",
+   "annonce": "Candidat déclaré depuis juin 2026.",
+   "mesures": [],
+   "source_mesures": {
+    "nom": "Le Courrier de l'Atlas",
+    "url": "https://www.lecourrierdelatlas.com/?p=214211"
+   },
+   "parrainages": {
+    "texte": "Aucun chiffre revendiqué.",
+    "source": null,
+    "url": null
+   },
+   "finances": null,
+   "programme": {
+    "url": null,
+    "note": "Programme 2027 pas encore publié : ces positions viennent de ses déclarations publiques.",
+    "recap": null,
+    "themes": []
+   },
+   "bloc": "g",
+   "a_verifier": "Pas encore de mesures sourcées par un média fiable."
+  },
+  {
+   "id": "branco",
+   "nom": "Juan Branco",
+   "parti": "Les Ruches",
+   "role": "Avocat et essayiste.",
+   "annonce": "Candidat déclaré.",
+   "mesures": [
+    "Rendre à la France sa souveraineté et au peuple la possibilité de décider (plus de 300 propositions annoncées)"
+   ],
+   "source_mesures": {
+    "nom": "Sud Radio",
+    "url": "https://www.sudradio.fr/sud-radio/lavocat-juan-branco-candidat-a-la-presidentielle"
+   },
+   "parrainages": {
+    "texte": "Aucun chiffre revendiqué.",
+    "source": null,
+    "url": null
+   },
+   "finances": null,
+   "programme": {
+    "url": null,
+    "note": "Programme 2027 pas encore publié : ces positions viennent de ses déclarations publiques.",
+    "recap": null,
+    "themes": [
+     {
+      "theme": "Institutions",
+      "mesures": [
+       "Rendre à la France sa souveraineté et au peuple la possibilité de décider"
+      ]
+     }
+    ]
+   },
+   "bloc": null,
+   "a_verifier": "Détailler ses mesures depuis son programme officiel (ruches.org) le moment venu."
+  },
+  {
+   "id": "labib",
+   "nom": "Selma Labib",
+   "parti": "NPA-Révolutionnaires",
+   "role": "Conductrice de bus, militante syndicale CGT.",
+   "annonce": "Candidate déclarée depuis juin 2026.",
+   "mesures": [],
+   "source_mesures": {
+    "nom": "LCP",
+    "url": "https://lcp.fr/actualites/presidentielle-2027-philippe-poutou-renonce-a-se-presenter-et-se-range-derriere-jean-luc"
+   },
+   "parrainages": {
+    "texte": "Aucun chiffre revendiqué.",
+    "source": null,
+    "url": null
+   },
+   "finances": null,
+   "programme": {
+    "url": null,
+    "note": "Programme 2027 pas encore publié : ces positions viennent de ses déclarations publiques.",
+    "recap": null,
+    "themes": []
+   },
+   "bloc": "g",
+   "a_verifier": "Pas encore de mesures sourcées par un média fiable."
+  },
+  {
+   "id": "lalanne",
+   "nom": "Francis Lalanne",
+   "parti": "France Libre",
+   "role": "Chanteur, soutenu par Dieudonné.",
+   "annonce": "Candidat déclaré le 19 août 2026.",
+   "mesures": [],
+   "source_mesures": {
+    "nom": "La Libre et Sud Radio",
+    "url": "https://www.lalibre.be/international/europe/2026/08/19/francis-lalanne-officiellement-candidat-a-la-presidentielle-2027-IYHINYS4IJG43AHUFIS2XZVX54/"
+   },
+   "parrainages": {
+    "texte": "Aucun chiffre revendiqué.",
+    "source": null,
+    "url": null
+   },
+   "finances": null,
+   "programme": {
+    "url": null,
+    "note": "Programme 2027 pas encore publié : ces positions viennent de ses déclarations publiques.",
+    "recap": null,
+    "themes": []
+   },
+   "bloc": null,
+   "a_verifier": "Pas encore de mesures sourcées par un média fiable."
+  },
+  {
+   "id": "egger",
+   "nom": "Clara Egger",
+   "parti": "Solution démocratique",
+   "role": "Porte-parole de Solution démocratique.",
+   "annonce": "Candidate déclarée.",
+   "mesures": [],
+   "source_mesures": null,
+   "parrainages": {
+    "texte": "Aucun chiffre revendiqué.",
+    "source": null,
+    "url": null
+   },
+   "finances": null,
+   "programme": {
+    "url": null,
+    "note": "Programme 2027 pas encore publié : ces positions viennent de ses déclarations publiques.",
+    "recap": null,
+    "themes": []
+   },
+   "bloc": null,
+   "a_verifier": "Seule source : le site de son parti. Trouver un média fiable avant toute mise en ligne."
+  },
+  {
+   "id": "markovic",
+   "nom": "Mira Douchka Markovic",
+   "parti": "Parti animaliste",
+   "role": "Coprésidente fondatrice du Parti animaliste.",
+   "annonce": "À confirmer.",
+   "mesures": [],
+   "source_mesures": null,
+   "parrainages": {
+    "texte": "Aucun chiffre revendiqué.",
+    "source": null,
+    "url": null
+   },
+   "finances": null,
+   "programme": {
+    "url": null,
+    "note": "Programme 2027 pas encore publié : ces positions viennent de ses déclarations publiques.",
+    "recap": null,
+    "themes": []
+   },
+   "bloc": null,
+   "a_verifier": "Aucune source fiable ne confirme encore sa candidature."
+  },
+  {
+   "id": "mikolajczak",
+   "nom": "Antoine Mikolajczak",
+   "parti": "Équinoxe",
+   "role": "À compléter.",
+   "annonce": "À confirmer.",
+   "mesures": [],
+   "source_mesures": null,
+   "parrainages": {
+    "texte": "Aucun chiffre revendiqué.",
+    "source": null,
+    "url": null
+   },
+   "finances": null,
+   "programme": {
+    "url": null,
+    "note": "Programme 2027 pas encore publié : ces positions viennent de ses déclarations publiques.",
+    "recap": null,
+    "themes": []
+   },
+   "bloc": null,
+   "a_verifier": "Aucune source fiable ne confirme encore sa candidature."
+  }
  ]
 }
