@@ -2,6 +2,16 @@
 "v": 4,
 "items": [
 {
+"t": "Présidentielle: François-Xavier Bellamy assure qu'\"il n'y a pas de divergence de ligne\" entre Bruno Retailleau et David Lisnard",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T23:20:03Z",
+"qui": [
+"lisnard",
+"retailleau"
+]
+},
+{
 "t": "\"La pauvreté du choix politique à droite fait que David Lisnard occupe l'espace\", analyse Carlos Martens Bilongo, député LFI",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-la-pauvrete-du-choix-politique-a-droite-fait-que-david-lisnard-occupe-l-espace-analyse-carlos-martens-bilongo-depute-lfi_VN-202611270951.html",
@@ -62,16 +72,6 @@
 "d": "2026-11-27T22:23:35Z",
 "qui": [
 "melenchon"
-]
-},
-{
-"t": "DIRECT. Présidentielle: François-Xavier Bellamy assure qu'\"il n'y a pas de divergence de ligne\" entre Bruno Retailleau et David Lisnard",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T21:59:19Z",
-"qui": [
-"lisnard",
-"retailleau"
 ]
 },
 {
@@ -1804,7 +1804,7 @@
 "France 24": 9,
 "La Croix": 23,
 "LCP": 39,
-"RFI": 10
+"RFI": 9
 },
-"maj": "2026-11-27T23:15:30Z"
+"maj": "2026-11-27T23:30:29Z"
 }
