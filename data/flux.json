@@ -5,7 +5,7 @@
 "t": "« C’est ma dernière campagne » : Éric Zemmour annonce qu’il ne briguera plus l’Élysée après la Présidentielle 2027",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/cest-ma-derniere-campagne-eric-zemmour-annonce-quil-ne-briguera-plus-lelysee-apres-la-presidentielle-2027-27-11-2026-IH6CFANF7FGSNGZZ47MCRJSVGM.php",
-"d": "2026-11-27T00:43:17Z",
+"d": "2026-11-27T01:00:29Z",
 "qui": [
 "zemmour"
 ]
@@ -17,6 +17,15 @@
 "d": "2026-11-26T23:54:55Z",
 "qui": [
 "zemmour"
+]
+},
+{
+"t": "Présidentielle: après les propos de Teddy Riner, Emmanuel Macron estime qu'il ne \"faut pas créer de doute et de trouble\" sur l'aide à l'Ukraine",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-emmanuel-macron-en-route-pour-bruxelle-pour-negocier-avec-les-dirigeants-de-l-ue-sur-le-budget-europeen_LN-202611260221.html",
+"d": "2026-11-26T23:17:46Z",
+"qui": [
+"riner"
 ]
 },
 {
@@ -53,15 +62,6 @@
 "d": "2026-11-26T22:02:17Z",
 "qui": [
 "lepen"
-]
-},
-{
-"t": "DIRECT. Présidentielle: après les propos de Teddy Riner, Emmanuel Macron estime qu'il ne \"faut pas créer de doute et de trouble\" sur l'aide à l'Ukraine",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-emmanuel-macron-en-route-pour-bruxelle-pour-negocier-avec-les-dirigeants-de-l-ue-sur-le-budget-europeen_LN-202611260221.html",
-"d": "2026-11-26T21:58:23Z",
-"qui": [
-"riner"
 ]
 },
 {
@@ -1805,5 +1805,5 @@
 "LCP": 37,
 "RFI": 8
 },
-"maj": "2026-11-27T00:43:17Z"
+"maj": "2026-11-27T01:00:29Z"
 }
