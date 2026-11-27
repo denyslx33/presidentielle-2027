@@ -16,3 +16,7 @@ VAPID_PUBLIC = "BJEbVp5yTeOJzm_kVrmUVwPSL5dKHQF3Ufd8Qf57o1LJRcnqjW-bNTX_Gm9qxdSC
 # Secrets à créer avec « wrangler secret put » (jamais dans ce fichier) :
 #   VAPID_PRIVATE  : clé privée VAPID (format JWK d, base64url)
 #   SEND_TOKEN     : mot de passe que la GitHub Action utilise pour envoyer
+
+[triggers]
+crons = ["*/15 * * * *"]  # réveil de GitHub toutes les 15 minutes
+# secret supplémentaire : GH_TOKEN (wrangler secret put GH_TOKEN)

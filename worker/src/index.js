@@ -81,4 +81,15 @@ export default {
 
     return json({ ok: false }, 404);
   },
+  // Réveil toutes les 15 minutes (déclencheur cron de Cloudflare) : relance le fil d'actu sur GitHub,
+  // qui enchaîne ensuite les sondages et les alertes. GH_TOKEN : clé GitHub limitée aux Actions de ce dépôt.
+  async scheduled(event, envIn, ctx) {
+    if (!envIn.GH_TOKEN) return;
+    const r = await fetch('https://api.github.com/repos/denyslx33/presidentielle-2027/actions/workflows/flux.yml/dispatches', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${envIn.GH_TOKEN}`, Accept: 'application/vnd.github+json', 'User-Agent': 'nousvotons-push', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ref: 'main' }),
+    });
+    console.log('Réveil GitHub :', r.status);
+  },
 };
