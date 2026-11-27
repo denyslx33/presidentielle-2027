@@ -2,6 +2,31 @@
 "v": 4,
 "items": [
 {
+"t": "Election présidentielle de 2027 : «Si la gauche fait campagne contre la gauche, elle sera coupable»",
+"s": "Libération",
+"u": "https://www.liberation.fr/politique/election-presidentielle-de-2027-si-la-gauche-fait-campagne-contre-la-gauche-elle-sera-coupable-20261127_6ZUJYLYC5RHARIFBEZE5SAJLWI/",
+"d": "2026-11-27T15:50:08Z",
+"qui": []
+},
+{
+"t": "Présidentielle 2027 : Capitalisation obligatoire, moins de normes… On vous résume le programme de David Lisnard",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4266335-20261127-presidentielle-2027-capitalisation-obligatoire-moins-normes-resume-programme-david-lisnard?at_medium=display&at_campaign=149",
+"d": "2026-11-27T15:44:50Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "\"Si vous attendez de moi que je sache tout, ça n'arrivera jamais\": Teddy Riner, candidat à l'élection présidentielle, veut rassembler \"une équipe de France pour remettre le bateau à flot\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-si-vous-attendez-de-moi-que-je-sache-tout-ca-n-arrivera-jamais-teddy-riner-candidat-a-l-election-presidentielle-veut-rassembler-une-equipe-de-france-pour-remettre-le-bateau-a-flot_VN-202611270699.html",
+"d": "2026-11-27T15:44:28Z",
+"qui": [
+"riner"
+]
+},
+{
 "t": "Pouvoir d'achat, sécurité, aller-retour dans l'Hexagone: Ce que promet Marine Le Pen aux outre-mer pour 2027",
 "s": "LCP",
 "u": "https://lcp.fr/actualites/pouvoir-d-achat-securite-aller-retour-dans-l-hexagone-ce-que-promet-marine-le-pen-aux",
@@ -334,7 +359,7 @@
 ]
 },
 {
-"t": "Reconquête le président du parti Éric Zemmour placé sous le statut de témoin assisté pour des prêts consentis",
+"t": "Reconquête : le président du parti Éric Zemmour placé sous le statut de témoin assisté pour des prêts consentis",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/politique/reconquete-le-president-du-parti-eric-zemmour-place-sous-le-statut-de-temoin-assiste-pour-des-prets-consentis-27-11-2026-PFT2R3RAMNF7BKF2PMEYFBWNPQ.php",
 "d": "2026-11-27T12:00:00Z",
@@ -346,6 +371,22 @@
 "t": "Présidentielle 2027 : Manon Aubry considère qu’« il y a une aspiration dans le pays » à une union « derrière un programme de rupture »",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-manon-aubry-considere-qu-il-y-a-une-aspiration-dans-le-pays-a-une-union-derriere-un-programme-de-rupture-27-11-2026-J3B6FYXOOVHY5P7Q7XRB4CMSHE.php",
+"d": "2026-11-27T12:00:00Z",
+"qui": []
+},
+{
+"t": "Présidentielle 2027 : « Il pourrait même embarquer avec nous », Sébastien Chenu tend la main à David Lisnard",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-il-pourrait-meme-embarquer-avec-nous-sebastien-chenu-tend-la-main-a-david-lisnard-27-11-2026-TNIIP3FCBZEUTNMRSLG7T4PRDI.php",
+"d": "2026-11-27T12:00:00Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Présidentielle 2027 : « On a vraiment les moyens d’être le leader européen », le secteur du jeu vidéo interpelle les candidats",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-on-a-vraiment-les-moyens-detre-le-leader-europeen-le-secteur-du-jeu-video-interpelle-les-candidats-27-11-2026-6WQ2AW5BMZCOXH5VPKCT7DSSOY.php",
 "d": "2026-11-27T12:00:00Z",
 "qui": []
 },
@@ -1747,47 +1788,6 @@
 "qui": [
 "riner"
 ]
-},
-{
-"t": "Présidentielle 2027: l'idée d'une primaire à droite divise les électeurs",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/video-presidentielle-2027-l-idee-d-une-primaire-a-droite-divise-les-electeurs_VN-202611260225.html",
-"d": "2026-11-26T06:05:04Z",
-"qui": []
-},
-{
-"t": "L'ÉDITO POLITIQUE DE GUILLAUME DARET - \"Ce n'est pas notre guerre\": les propos de Teddy Riner sur le soutien à l'Ukraine font polémique",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-l-edito-politique-de-guillaume-daret-ce-n-est-pas-notre-guerre-les-propos-de-teddy-riner-sur-le-soutien-a-l-ukraine-font-polemique_VN-202611260217.html",
-"d": "2026-11-26T05:56:58Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "À suivre Loïc de la Mornais : la droite tient-elle son candidat après le sacre de David Lisnard ?",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/replay-magazine/franceinfo/a-suivre-avec-loic-de-la-mornais/a-suivre-loic-de-la-mornais-la-droite-tient-elle-son-candidat-apres-le-sacre-de-david-lisnard_8300811.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-26T05:54:35Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Jean-Luc Mélenchon ironise face aux propos de Gérald Darmanin, selon qui un second tour RN-LFI mènerait la France \"au bord de la guerre civile\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/video-jean-luc-melenchon-ironise-face-aux-propos-de-gerald-darmanin-selon-qui-un-second-tour-rn-lfi-menerait-la-france-au-bord-de-la-guerre-civile_VN-202611260194.html",
-"d": "2026-11-26T05:36:35Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Présidentielle 2027 : Macron trouve que Marine Le Pen fait preuve « d’une drôle d’arrogance »",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4265846-20261126-direct-presidentielle-2027-lisnard-veut-convaincre-electeurs-tous-horizons-compris-rn?at_medium=display&at_campaign=149",
-"d": "2026-11-26T05:00:03Z",
-"qui": []
 }
 ],
 "sources": {
@@ -1795,14 +1795,14 @@
 "franceinfo": 5,
 "Libération": 23,
 "Le Figaro": 7,
-"Le Parisien": 53,
-"20 Minutes": 7,
+"Le Parisien": 52,
+"20 Minutes": 8,
 "Ouest-France": 0,
-"BFMTV": 24,
+"BFMTV": 25,
 "France 24": 8,
 "La Croix": 23,
 "LCP": 39,
 "RFI": 9
 },
-"maj": "2026-11-27T15:44:47Z"
+"maj": "2026-11-27T16:00:34Z"
 }
