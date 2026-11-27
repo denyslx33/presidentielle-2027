@@ -2,10 +2,46 @@
 "v": 4,
 "items": [
 {
+"t": "Présidentielle 2027: \"Je pense que Raphaël Glucksmann va aller jusqu'au bout\", estime Ségolène Royal",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-je-pense-que-raphael-glucksmann-va-aller-jusqu-au-bout-estime-segolene-royal_VN-202611270786.html",
+"d": "2026-11-27T17:36:45Z",
+"qui": [
+"glucksmann"
+]
+},
+{
+"t": "\"Quand vous critiquez davantage LFI que le bilan d'Emmanuel Macron qui est catastrophique, ça pose un problème\": Ségolène Royal charge Raphaël Glucksmann",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-quand-vous-critiquez-davantage-lfi-que-le-bilan-d-emmanuel-macron-qui-est-catastrophique-ca-pose-un-probleme-segolene-royal-charge-raphael-glucksmann_VN-202611270784.html",
+"d": "2026-11-27T17:35:00Z",
+"qui": [
+"glucksmann"
+]
+},
+{
+"t": "DIRECT. \"David Lisnard, les secrets d'une percée éclair\" : regardez le documentaire de franceinfo consacré aux coulisses de l'entrée en campagne présidentielle du maire de Cannes",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/politique/david-lisnard/direct-david-lisnard-les-secrets-d-une-percee-eclair-regardez-le-documentaire-de-franceinfo-consacre-aux-coulisses-de-l-entree-en-campagne-presidentielle-du-maire-de-cannes_8301420.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-27T17:30:02Z",
+"qui": [
+"lisnard"
+]
+},
+{
 "t": "Défense, UE, rigueur budgétaire: comment Jean-Luc Mélenchon est-il perçu en Allemagne?",
 "s": "RFI",
 "u": "https://www.rfi.fr/fr/france/20261127-d%C3%A9fense-ue-rigueur-budg%C3%A9taire-comment-jean-luc-m%C3%A9lenchon-est-il-per%C3%A7u-en-allemagne",
 "d": "2026-11-27T17:28:01Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "\"La porte n'est pas fermée\": Ségolène Royal n'exclut pas de soutenir Jean-Luc Mélenchon à l'élection présidentielle",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-la-porte-n-est-pas-fermee-segolene-royal-n-exclut-pas-de-soutenir-jean-luc-melenchon-a-l-election-presidentielle_VN-202611270779.html",
+"d": "2026-11-27T17:27:05Z",
 "qui": [
 "melenchon"
 ]
@@ -17,6 +53,27 @@
 "d": "2026-11-27T17:20:01Z",
 "qui": [
 "melenchon"
+]
+},
+{
+"t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T17:19:34Z",
+"qui": [
+"attal",
+"lisnard",
+"philippe",
+"retailleau"
+]
+},
+{
+"t": "\"Une surenchère et une course vers l'extrême droite\": Ségolène Royal charge David Lisnard et ses propositions sur l'immigration",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-une-surenchere-et-une-course-vers-l-extreme-droite-segolene-royal-charge-david-lisnard-et-ses-propositions-sur-l-immigration_VN-202611270762.html",
+"d": "2026-11-27T17:12:37Z",
+"qui": [
+"lisnard"
 ]
 },
 {
@@ -69,15 +126,6 @@
 "d": "2026-11-27T16:48:40Z",
 "qui": [
 "melenchon"
-]
-},
-{
-"t": "DIRECT. Présidentielle: Teddy Riner appelle l'État à \"prendre ses responsabilités\" pour que les peines de prison \"soient réellement\" exécutées",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T16:34:07Z",
-"qui": [
-"riner"
 ]
 },
 {
@@ -1738,66 +1786,21 @@
 "qui": [
 "glucksmann"
 ]
-},
-{
-"t": "David Lisnard : sa candidature va-t-elle faire pschitt ? Nos journalistes répondent dans «Chez Pol, l’émission»",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/elections/david-lisnard-sa-candidature-va-t-elle-faire-pschitt-nos-journalistes-repondent-dans-chez-pol-lemission-20261126_J7SZR5TAZNG43BSZ3BXQ5MGEEE/",
-"d": "2026-11-26T09:35:22Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Présidentielle 2027 : le désarroi des partis pro-Ukraine et pro-Europe alors que ces sujets ne mobilisent pas les électeurs",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/politique/article/2026/11/26/presidentielle-2027-le-desarroi-des-partis-pro-ukraine-et-pro-europe-alors-que-ces-sujets-ne-mobilisent-pas-les-electeurs_6815508_823448.html",
-"d": "2026-11-26T09:30:01Z",
-"qui": []
-},
-{
-"t": "Jean-Luc Mélenchon à Berlin: quelle image ont les Allemands du candidat insoumis à la présidentielle?",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-jean-luc-melenchon-a-berlin-quelle-image-ont-les-allemands-du-candidat-insoumis-a-la-presidentielle_VN-202611260422.html",
-"d": "2026-11-26T08:44:50Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Présidentielle 2027 : David Lisnard veut attirer des électeurs de « tous horizons y compris le RN »",
-"s": "Ouest-France",
-"u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-david-lisnard-veut-attirer-des-electeurs-de-tous-horizons-y-compris-le-rn-dc250d74-e972-11f1-86c1-70195b4d2e52?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
-"d": "2026-11-26T08:44:22Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "\"Ce n'est pas ça la droite\": Gérald Darmanin accuse David Lisnard de \"compromission\" après son refus de choisir entre Édouard Philippe et Marine Le Pen au second tour de la présidentielle",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/ce-n-est-pas-ca-la-droite-gerald-darmanin-accuse-david-lisnard-de-compromission-apres-son-refus-de-choisir-entre-edouard-philippe-et-marine-le-pen-au-second-tour-de-la-presidentielle_AV-202611260414.html",
-"d": "2026-11-26T08:40:57Z",
-"qui": [
-"lepen",
-"lisnard",
-"philippe"
-]
 }
 ],
 "sources": {
 "Le Monde": 7,
-"franceinfo": 5,
+"franceinfo": 6,
 "Libération": 22,
 "Le Figaro": 7,
 "Le Parisien": 52,
 "20 Minutes": 9,
 "Ouest-France": 1,
-"BFMTV": 23,
-"France 24": "erreur: HTTPError",
+"BFMTV": 24,
+"France 24": 9,
 "La Croix": 23,
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T17:30:35Z"
+"maj": "2026-11-27T17:42:59Z"
 }
