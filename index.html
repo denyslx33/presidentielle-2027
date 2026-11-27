@@ -754,14 +754,15 @@ body.qfocus .topbar, body.qfocus #status, body.qfocus #inscr { display:none !imp
 #v-test .qres { background:none; border:0; padding:0; margin-top:8px; }
 #v-test .qres > h2.sect { margin:0 0 8px; }
 #v-test .qres > p.muted { font:400 12px/16px 'Asap', sans-serif; color:#626161; margin:0 0 16px; }
-#v-test .qth .tr { background:#fff; border-radius:15px; padding:10px 12px; margin:0 0 6px; }
-#v-test .qth .tt { font-weight:700; font-size:14px; color:#022A70; margin-bottom:6px; }
-#v-test .qth .tw { display:flex; flex-direction:column; gap:6px; }
-#v-test .qth .tc { display:flex; align-items:center; gap:10px; background:none; border:0; padding:0; font:inherit; color:inherit; text-align:left; cursor:pointer; }
-#v-test .qth .tc .av { width:36px; height:36px; flex:none; border:0; }
-#v-test .qth .tc span { flex:1; font-size:14px; }
-#v-test .qth .tc small { color:#5573A7; font-size:13px; white-space:nowrap; }
-#v-test .qth .tn { font-size:13px; }
+#v-test .qthm { margin:18px 0 8px; } #v-test .qthm > p.muted { font:400 12px/16px 'Asap', sans-serif; color:#626161; margin:0 0 12px; }
+#v-test .qthm .tr { background:#fff; border-radius:15px; padding:10px 12px; margin:0 0 6px; }
+#v-test .qthm .tt { font-weight:700; font-size:14px; color:#022A70; margin-bottom:6px; }
+#v-test .qthm .tw { display:flex; flex-direction:column; gap:6px; }
+#v-test .qthm .tc { display:flex; align-items:center; gap:10px; background:none; border:0; padding:0; font:inherit; color:inherit; text-align:left; cursor:pointer; }
+#v-test .qthm .tc .av { width:36px; height:36px; flex:none; border:0; }
+#v-test .qthm .tc span { flex:1; font-size:14px; }
+#v-test .qthm .tc small { color:#5573A7; font-size:13px; white-space:nowrap; }
+#v-test .qthm .tn { font-size:13px; }
 #v-test .qres .res { display:flex; align-items:center; gap:10px; background:#fff; border:0; border-radius:15px; padding:8px 10px 8px 8px; margin:0 0 6px; }
 #v-test .qres .res .av { width:50px; height:50px; border:0; flex:none; }
 #v-test .qres .res .info { flex:1; min-width:0; }
@@ -1763,7 +1764,7 @@ function renderQuizRes() {
 
 // Thème par thème : le candidat le plus proche sur chaque thème du test (au moins 2 positions connues)
 function themeBlock(Q) {
-  const sb = el('div', 'qth'); const themes = [...new Set(Q.map((q) => q.theme))];
+  const sb = el('div', 'qthm'); const themes = [...new Set(Q.map((q) => q.theme))];
   const lines = [];
   for (const t of themes) {
     const idx = Q.map((q, i) => i).filter((i) => Q[i].theme === t && (QANS[i] === 1 || QANS[i] === -1));
