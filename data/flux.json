@@ -2,6 +2,51 @@
 "v": 4,
 "items": [
 {
+"t": "Présidentielle française : cinq ans après, la guerre en Ukraine ne fait pas recette dans la campagne",
+"s": "France 24",
+"u": "https://www.france24.com/fr/france/20261127-presidentielle-fran%C3%A7aise-cinq-ans-apr%C3%A8s-la-guerre-en-ukraine-ne-fait-pas-recette-dans-la-campagne",
+"d": "2026-11-27T16:15:25Z",
+"qui": []
+},
+{
+"t": "Présidentielle 2027: \"Sur le terrain, on me parle de David Lisnard chaque jour, sa dynamique est très forte\", admet Corentin Le Fur, député LR et soutien de Bruno Retailleau",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-sur-le-terrain-on-me-parle-de-david-lisnard-chaque-jour-sa-dynamique-est-tres-forte-admet-corentin-le-fur-depute-lr-et-soutien-de-bruno-retailleau_VN-202611270712.html",
+"d": "2026-11-27T16:13:16Z",
+"qui": [
+"lisnard",
+"retailleau"
+]
+},
+{
+"t": "Eric Zemmour",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/eric-zemmour_DN-202110270595.html",
+"d": "2026-11-27T16:11:01Z",
+"qui": [
+"zemmour"
+]
+},
+{
+"t": "DIRECT. Présidentielle: Teddy Riner appelle l'État à \"prendre ses responsabilités\" pour que les peines de prison \"soient réellement\" exécutées",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T16:08:36Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Campagne de Teddy Riner: \"C'est un exercice qu'il ne maîtrise pas, il apprend les codes\", pointe Céline Géraud, porte-parole de campagne de Gabriel Attal",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-campagne-de-teddy-riner-c-est-un-exercice-qu-il-ne-maitrise-pas-il-apprend-les-codes-pointe-celine-geraud-porte-parole-de-campagne-de-gabriel-attal_VN-202611270708.html",
+"d": "2026-11-27T16:04:51Z",
+"qui": [
+"attal",
+"riner"
+]
+},
+{
 "t": "Election présidentielle de 2027 : «Si la gauche fait campagne contre la gauche, elle sera coupable»",
 "s": "Libération",
 "u": "https://www.liberation.fr/politique/election-presidentielle-de-2027-si-la-gauche-fait-campagne-contre-la-gauche-elle-sera-coupable-20261127_6ZUJYLYC5RHARIFBEZE5SAJLWI/",
@@ -39,7 +84,7 @@
 "t": "Présidentielle 2027 : Bruno Retailleau dévoile son programme pour l’enseignement supérieur, en souhaitant la suppression de Parcoursup",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/27/presidentielle-2027-bruno-retailleau-devoile-son-programme-pour-l-enseignement-superieur-en-souhaitant-la-suppression-de-parcoursup_6815889_6205049.html",
-"d": "2026-11-27T15:39:16Z",
+"d": "2026-11-27T15:39:14Z",
 "qui": [
 "retailleau"
 ]
@@ -125,15 +170,6 @@
 "d": "2026-11-27T14:36:46Z",
 "qui": [
 "zemmour"
-]
-},
-{
-"t": "DIRECT. Présidentielle: Teddy Riner appelle l'État à \"prendre ses responsabilités\" pour que les peines de prison \"soient réellement\" exécutées",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T14:36:39Z",
-"qui": [
-"riner"
 ]
 },
 {
@@ -801,15 +837,6 @@
 "t": "Éric Zemmour annonce que 2027 sera sa “dernière campagne” à l’élection présidentielle",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/reconquete/eric-zemmour-annonce-que-2027-sera-sa-derniere-campagne-a-l-election-presidentielle_AD-202611261033.html",
-"d": "2026-11-26T22:32:28Z",
-"qui": [
-"zemmour"
-]
-},
-{
-"t": "Eric Zemmour",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/eric-zemmour_DN-202110270595.html",
 "d": "2026-11-26T22:32:28Z",
 "qui": [
 "zemmour"
@@ -1760,34 +1787,6 @@
 "qui": [
 "riner"
 ]
-},
-{
-"t": "EDITO. À droite, le duel Lisnard-Philippe pour la présidentielle s'intensifie",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/replay-radio/l-edito-politique/edito-a-droite-le-duel-lisnard-philippe-pour-la-presidentielle-s-intensifie_8278496.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-26T07:03:36Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "À suivre Loïc de la Mornais : la guerre des droites est-elle déclarée entre Édouard Philippe et David Lisnard ?",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/replay-magazine/franceinfo/a-suivre-avec-loic-de-la-mornais/a-suivre-loic-de-la-mornais-la-guerre-des-droites-est-elle-declaree-entre-edouard-philippe-et-david-lisnard_8300895.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-26T06:48:42Z",
-"qui": [
-"lisnard",
-"philippe"
-]
-},
-{
-"t": "Présidentielle 2027: au salon des maires de France, Teddy Riner s'emmêle les pinceaux sur la guerre en Ukraine",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/france/20261126-pr%C3%A9sidentielle-2027-au-salon-des-maires-de-france-teddy-riner-s-emm%C3%AAle-les-pinceaux-sur-la-guerre-en-ukraine",
-"d": "2026-11-26T06:34:50Z",
-"qui": [
-"riner"
-]
 }
 ],
 "sources": {
@@ -1798,11 +1797,11 @@
 "Le Parisien": 52,
 "20 Minutes": 8,
 "Ouest-France": 0,
-"BFMTV": 25,
-"France 24": 8,
+"BFMTV": 24,
+"France 24": 9,
 "La Croix": 23,
 "LCP": 39,
 "RFI": 9
 },
-"maj": "2026-11-27T16:00:34Z"
+"maj": "2026-11-27T16:15:29Z"
 }
