@@ -2,7 +2,7 @@
 """Repère ce qui mérite une alerte et l'envoie au serveur Cloudflare.
 Tourne sur GitHub (gratuit). Sans IA : il lit seulement les fichiers déjà publiés.
 Sans PUSH_API ni SEND_TOKEN, il affiche ce qu'il aurait envoyé (essai à blanc)."""
-import csv, json, os, sys, urllib.request
+import csv, json, os, sys, urllib.request, urllib.error
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
@@ -32,11 +32,15 @@ def send(topic, title, body, url='./', tag=None, cands=None, urgent=False):
     after, tot = '', 0
     for _ in range(500):  # 500 lots de 40, soit 20 000 abonnés par alerte
         req = urllib.request.Request(API + '/send', data=json.dumps({**msg, 'after': after}).encode(),
-                                     headers={'Content-Type': 'application/json', 'Authorization': 'Bearer ' + TOKEN})
-        r = json.load(urllib.request.urlopen(req, timeout=60)); tot += r['sent']
+                                     headers={'Content-Type': 'application/json', 'Authorization': 'Bearer ' + TOKEN, 'User-Agent': 'NousVotons-Alertes/1.0'})
+        try:
+            r = json.load(urllib.request.urlopen(req, timeout=60))
+        except urllib.error.HTTPError as e:
+            sys.exit(f"Serveur des alertes : erreur {e.code} {e.read()[:300]!r}")
+        tot += r['sent']
         if not r['next']: break
         after = r['next']
-    print(f'{topic}: {tot} envoyées')
+    print(f'{topic}: {tot} envoyées, {r.get("skipped", 0)} ignorées, {r.get("dead", 0)} abonnements périmés')
 
 def main():
     test = os.environ.get('TEST_MSG', '').strip()
