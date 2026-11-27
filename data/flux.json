@@ -11,7 +11,7 @@
 ]
 },
 {
-"t": "DIRECT. \"David Lisnard, les secrets d'une percée éclair\" : regardez le documentaire de franceinfo consacré aux coulisses de l'entrée en campagne présidentielle du maire de Cannes",
+"t": "REPLAY. \"David Lisnard, les secrets d'une percée éclair\" : regardez le documentaire de franceinfo consacré aux coulisses de l'entrée en campagne présidentielle du maire de Cannes",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/politique/david-lisnard/direct-david-lisnard-les-secrets-d-une-percee-eclair-regardez-le-documentaire-de-franceinfo-consacre-aux-coulisses-de-l-entree-en-campagne-presidentielle-du-maire-de-cannes_8301420.html#xtor=RSS-3-%5Bpolitique%5D",
 "d": "2026-11-27T20:45:15Z",
@@ -1164,12 +1164,13 @@
 ]
 },
 {
-"t": "EN DIRECT Présidentielle 2027 : Le Pen réitère sa confiance à Bardella, après de nouvelles révélations sur des écrits antisémites de jeunesse…",
+"t": "Présidentielle 2027 : Le Pen dévoile son plan pour l'Outre-mer, Lisnard répond à l'équipe de Philippe",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4266172-20261127-direct-presidentielle-2027-zemmour-fait-savoir-derniere-campagne?at_medium=display&at_campaign=149",
 "d": "2026-11-27T04:45:00Z",
 "qui": [
-"lepen"
+"lepen",
+"lisnard"
 ]
 },
 {
@@ -1799,7 +1800,7 @@
 "Libération": 21,
 "Le Figaro": 7,
 "Le Parisien": 56,
-"20 Minutes": 9,
+"20 Minutes": 8,
 "Ouest-France": 0,
 "BFMTV": 20,
 "France 24": 9,
@@ -1807,5 +1808,5 @@
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T21:00:29Z"
+"maj": "2026-11-27T21:15:34Z"
 }
