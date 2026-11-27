@@ -2,6 +2,45 @@
 "v": 4,
 "items": [
 {
+"t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T19:29:34Z",
+"qui": [
+"attal",
+"lisnard",
+"philippe",
+"retailleau"
+]
+},
+{
+"t": "Jean-Luc Mélenchon",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
+"d": "2026-11-27T19:18:46Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "\"La porte n'est pas fermée\": Ségolène Royal n'exclut pas un ralliement de son mouvement à Jean-Luc Mélenchon",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/la-porte-n-est-pas-fermee-segolene-royal-n-exclut-pas-un-ralliement-de-son-mouvement-a-jean-luc-melenchon_AV-202611270874.html",
+"d": "2026-11-27T19:18:46Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Raphaël Glucksmann",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/raphael-glucksmann_DN-202405270322.html",
+"d": "2026-11-27T19:18:46Z",
+"qui": [
+"glucksmann"
+]
+},
+{
 "t": "Journalistes et secret de l’instruction : comprendre ce que dit le droit après les déclarations de Marine Le Pen",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/societe/article/2026/11/27/journalistes-et-secret-de-l-instruction-comprendre-ce-que-dit-le-droit-apres-les-declarations-de-marine-le-pen_6815927_3224.html",
@@ -71,18 +110,6 @@
 "d": "2026-11-27T18:26:53Z",
 "qui": [
 "attal"
-]
-},
-{
-"t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T18:25:19Z",
-"qui": [
-"attal",
-"lisnard",
-"philippe",
-"retailleau"
 ]
 },
 {
@@ -746,15 +773,6 @@
 "d": "2026-11-27T11:36:07Z",
 "qui": [
 "lepen"
-]
-},
-{
-"t": "Jean-Luc Mélenchon",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
-"d": "2026-11-27T11:27:16Z",
-"qui": [
-"melenchon"
 ]
 },
 {
@@ -1771,37 +1789,21 @@
 "qui": [
 "philippe"
 ]
-},
-{
-"t": "Présidentielle 2027 : Terra Nova juge le programme énergétique de LFI « ambitieux » mais dépourvu de moyens",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-terra-nova-juge-le-programme-energetique-de-lfi-ambitieux-mais-depourvu-de-moyens-26-11-2026-43NMGCW6VBGNVAMYSXGMAUBVKE.php",
-"d": "2026-11-26T12:00:00Z",
-"qui": []
-},
-{
-"t": "Édouard Philippe : la campagne bousculée d’un candidat mal en point",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/podcasts/code-source/edouard-philippe-la-campagne-bousculee-dun-candidat-mal-en-point-26-11-2026-C2QE7FXWWZF2FKWPFQQGHXDRD4.php",
-"d": "2026-11-26T12:00:00Z",
-"qui": [
-"philippe"
-]
 }
 ],
 "sources": {
 "Le Monde": 7,
 "franceinfo": 7,
-"Libération": 22,
+"Libération": 21,
 "Le Figaro": 7,
 "Le Parisien": 56,
 "20 Minutes": 9,
 "Ouest-France": 0,
-"BFMTV": 23,
+"BFMTV": 20,
 "France 24": 9,
 "La Croix": 23,
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T19:30:30Z"
+"maj": "2026-11-27T19:45:22Z"
 }
