@@ -2555,7 +2555,8 @@ function dayLabel(d) {
 function renderActu() {
   if (!ACTU || !CAND) return;
   const byId = new Map(CAND.principaux.map((c) => [c.id, c]));
-  const ids = [...new Set(ACTU.items.flatMap((n) => n.qui).concat(AGENDA ? AGENDA.evenements.flatMap((e) => e.qui || []) : []).concat(FLUX ? FLUX.items.flatMap((n) => n.qui || []) : []))].filter((i) => byId.has(i)).sort((a, b) => nomFamille(byId.get(a).nom).localeCompare(nomFamille(byId.get(b).nom), 'fr'));
+  // Tous les candidats de l'appli ont leur pastille, même sans actu récente (un nouveau venu apparaît tout de suite)
+  const ids = CAND.principaux.map((c) => c.id).sort((a, b) => nomFamille(byId.get(a).nom).localeCompare(nomFamille(byId.get(b).nom), 'fr'));
   const fb = (id) => {
     const b = el('button', 'fbtn' + (FILTRE === id ? ' on' : '')); b.type = 'button';
     if (!id) { const al = el('span', 'all'); al.innerHTML = '<svg width="50" height="50" viewBox="0 0 50 50" fill="none" aria-hidden="true"><circle cx="25" cy="25" r="25" fill="#022E7B"/><g stroke-width="2" stroke="#FDFDFD"><rect x="14.375" y="14.375" width="8.75" height="8.75" rx="2.5"/><rect x="14.375" y="26.875" width="8.75" height="8.75" rx="2.5"/><rect x="26.875" y="14.375" width="8.75" height="8.75" rx="2.5"/><rect x="26.875" y="26.875" width="8.75" height="8.75" rx="2.5"/></g></svg>'; b.append(al, el('span', 'l', 'Tout')); }

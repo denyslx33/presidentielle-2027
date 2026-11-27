@@ -26,13 +26,18 @@ jobs:
       - uses: actions/checkout@v4
       - if: ${{ !inputs.test }}
         run: python3 .github/scripts/sondages.py || true
+      - if: ${{ !inputs.test }}
+        run: python3 .github/scripts/reserve.py || true
+        env:
+          PUSH_API: ${{ vars.PUSH_API }}
+          SEND_TOKEN: ${{ secrets.SEND_TOKEN }}
       - run: python3 .github/scripts/notifs.py
         env:
           PUSH_API: ${{ vars.PUSH_API }}
           SEND_TOKEN: ${{ secrets.SEND_TOKEN }}
           TEST_MSG: ${{ inputs.test }}
       - run: |
-          for f in data/sondages.csv data/notifs-etat.json data/notifs-stats.json; do if [ -f "$f" ]; then git add "$f"; fi; done
+          for f in data/sondages.csv data/notifs-etat.json data/notifs-stats.json data/candidats.json; do if [ -f "$f" ]; then git add "$f"; fi; done
           git diff --cached --quiet && exit 0
           git -c user.name="denyslx33" -c user.email="denyslx33@users.noreply.github.com" commit -qm "Sondages et alertes automatiques"
           for i in 1 2 3 4; do git pull -q --rebase origin main && git push -q origin main && exit 0; sleep $((i*5)); done; exit 1
