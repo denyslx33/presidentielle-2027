@@ -2637,10 +2637,12 @@ function showView(v) {
   const tab = v === 'sondages' ? 'accueil' : v;
   for (const b of document.querySelectorAll('#tabs button')) b.classList.toggle('on', b.dataset.v === tab);
   for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-' + v);
-  if (v === 'sondages') renderSondages();
-  if (v === 'accueil') renderAccueil();
+  // Au retour arrière, la page est déjà prête : on ne la reconstruit pas (évite l'écran blanc)
+  const back = RESTY !== null;
+  if (v === 'sondages' && !back) renderSondages();
+  if (v === 'accueil' && !(back && $('h-top') && $('h-top').firstChild)) renderAccueil();
   gcCount('/' + v, v);
-  scrollTo(0, 0);
+  scrollTo(0, RESTY || 0); RESTY = null;
   try { history.replaceState(null, '', v === 'accueil' ? location.pathname : '#' + v); } catch (e) {}
 }
 let PUSHED = false;
@@ -2650,8 +2652,9 @@ let LASTY = 0; addEventListener('scroll', () => { LASTY = scrollY; }, { passive:
 (function () { const push = history.pushState.bind(history);
   history.pushState = function (st, t, u) { try { history.replaceState(Object.assign({}, history.state || {}, { y: LASTY }), '', location.href); } catch (e) {} return push(st, t, u); }; })();
 $('back').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView('candidats'); });
+var RESTY = null; addEventListener('popstate', (e) => { RESTY = e.state && typeof e.state.y === 'number' ? e.state.y : null; });
 addEventListener('popstate', () => { PUSHED = false; const h = location.hash.slice(1); if (h === 'apropos') { for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-apropos'); } else if (h === 'guide') { for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-guide'); } else if (h.startsWith('c-')) openFiche(h.slice(2), true); else if (h === 'agenda') openAgenda(); else showView(['candidats', 'programmes', 'actu', 'test', 'sondages'].includes(h) ? h : 'accueil'); });
-addEventListener('popstate', (e) => { const y = e.state && e.state.y; if (typeof y !== 'number' || !y) return; const go = () => scrollTo(0, y); requestAnimationFrame(go); setTimeout(go, 80); setTimeout(go, 300); });
+addEventListener('popstate', (e) => { const y = e.state && e.state.y; if (typeof y !== 'number' || !y) return; const go = () => { if (Math.abs(scrollY - y) > 4) scrollTo(0, y); }; requestAnimationFrame(go); setTimeout(go, 120); });
 for (const b of document.querySelectorAll('#tabs button')) if (b.dataset.v !== 'partager') b.addEventListener('click', () => showView(b.dataset.v));
 $('go-cmp').addEventListener('click', () => { setPMode('cmp'); scrollTo(0, 0); });
 $('cmp-back').addEventListener('click', () => { setPMode('theme'); scrollTo(0, 0); });
