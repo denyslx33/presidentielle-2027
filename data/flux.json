@@ -2,28 +2,37 @@
 "v": 4,
 "items": [
 {
-"t": "Présidentielle 2027. Si elle est élue, Marine Le Pen veut obliger les journalistes à respecter le secret des enquêtes",
-"s": "Ouest-France",
-"u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-si-elle-est-elue-marine-le-pen-veut-obliger-les-journalistes-a-respecter-le-secret-des-enquetes-0871f7f8-ea67-11f1-8e4e-f44a9b15a834?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
-"d": "2026-11-27T13:51:15Z",
-"qui": [
-"lepen"
-]
-},
-{
 "t": "DIRECT. Présidentielle: Teddy Riner appelle l'État à \"prendre ses responsabilités\" pour que les peines de prison \"soient réellement\" exécutées",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T13:48:12Z",
+"d": "2026-11-27T14:13:14Z",
 "qui": [
 "riner"
+]
+},
+{
+"t": "ÉDITO. Marine Le Pen peut-elle finir par lâcher Jordan Bardella ?",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/politique/jordan-bardella/propos-antisemites-attribues-a-jordan-bardella/edito-marine-le-pen-peut-elle-finir-par-lacher-jordan-bardella_8303214.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-27T14:09:09Z",
+"qui": [
+"lepen"
 ]
 },
 {
 "t": "DIRECT. Présidentielle 2027 : Marine Le Pen renouvelle sa confiance à Jordan Bardella et veut obliger les journalistes à respecter le secret de l'instruction",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-marine-le-pen-va-presenter-son-programme-pour-les-outre-mer-en-pleine-tourmente-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8302521.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-27T13:47:51Z",
+"d": "2026-11-27T14:02:43Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "Présidentielle 2027. Si elle est élue, Marine Le Pen veut obliger les journalistes à respecter le secret des enquêtes",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-si-elle-est-elue-marine-le-pen-veut-obliger-les-journalistes-a-respecter-le-secret-des-enquetes-0871f7f8-ea67-11f1-8e4e-f44a9b15a834?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-27T13:51:15Z",
 "qui": [
 "lepen"
 ]
@@ -1782,15 +1791,6 @@
 "qui": [
 "riner"
 ]
-},
-{
-"t": "\"La dérision, ça m'atteint, ça me désole\", reconnaît Dominique de Villepin, candidat à l'élection présidentielle",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-la-derision-ca-m-atteint-ca-me-desole-reconnait-dominique-de-villepin-candidat-a-l-election-presidentielle_VN-202611250980.html",
-"d": "2026-11-25T21:25:48Z",
-"qui": [
-"villepin"
-]
 }
 ],
 "sources": {
@@ -1799,13 +1799,13 @@
 "Libération": 22,
 "Le Figaro": 7,
 "Le Parisien": 53,
-"20 Minutes": 7,
-"Ouest-France": 1,
+"20 Minutes": 6,
+"Ouest-France": 0,
 "BFMTV": 24,
 "France 24": 9,
 "La Croix": 23,
 "LCP": 38,
 "RFI": 9
 },
-"maj": "2026-11-27T14:01:10Z"
+"maj": "2026-11-27T14:15:32Z"
 }
