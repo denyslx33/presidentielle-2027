@@ -2784,7 +2784,11 @@ function b64uToU8(b) { const s = atob(b.replace(/-/g, '+').replace(/_/g, '/') + 
 async function alSub(create) {
   const reg = await navigator.serviceWorker.ready;
   let sub = await reg.pushManager.getSubscription();
-  if (!sub && create) sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64uToU8(VAPID_PUBLIC) });
+  if (!sub && create) {
+    const opts = { userVisibleOnly: true, applicationServerKey: b64uToU8(VAPID_PUBLIC) };
+    // Certains Android (Xiaomi…) échouent au tout premier essai, juste après l'autorisation : on réessaie une fois
+    try { sub = await reg.pushManager.subscribe(opts); } catch (e) { await new Promise((r) => setTimeout(r, 1500)); sub = await reg.pushManager.subscribe(opts); }
+  }
   return sub;
 }
 async function alSync(topics) {
