@@ -1,6 +1,42 @@
 {
- "maj": "2026-11-26",
+ "maj": "2026-11-27",
  "items": [
+  {
+   "date": "2026-11-26",
+   "qui": [
+    "zemmour"
+   ],
+   "texte": "Éric Zemmour annonce que la présidentielle de 2027 sera sa « dernière campagne ».",
+   "source": "franceinfo",
+   "url": "https://www.franceinfo.fr/politique/eric-zemmour/c-est-ma-derniere-campagne-annonce-le-candidat-de-reconquete-a-la-presidentielle-eric-zemmour_8302101.html"
+  },
+  {
+   "date": "2026-11-26",
+   "qui": [
+    "lepen"
+   ],
+   "texte": "Depuis Bruxelles, Emmanuel Macron reproche à Marine Le Pen une « drôle d'arrogance » de penser « qu'elle serait déjà en charge du destin de la France », après ses critiques sur le budget de l'Union européenne.",
+   "source": "Le Monde",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/26/emmanuel-macron-rabroue-marine-le-pen-et-sa-drole-d-arrogance_6815601_823448.html"
+  },
+  {
+   "date": "2026-11-26",
+   "qui": [
+    "riner"
+   ],
+   "texte": "Après les propos de Teddy Riner sur l'Ukraine, Emmanuel Macron estime qu'il ne « faut pas créer de doute et de trouble » sur l'aide française.",
+   "source": "LCP",
+   "url": "https://lcp.fr/actualites/pas-creer-de-doute-et-de-trouble-emmanuel-macron-recadre-teddy-riner-sur-l-aide-a-l"
+  },
+  {
+   "date": "2026-11-26",
+   "qui": [
+    "dupont-aignan"
+   ],
+   "texte": "Nicolas Dupont-Aignan se dit opposé à l'entrée de l'Ukraine dans l'Union européenne et à l'avancée de l'Otan en Ukraine.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/video-guerre-en-ukraine-je-ne-veux-pas-que-l-otan-avance-en-ukraine-je-ne-veux-pas-que-l-ukraine-rentre-dans-l-union-europeenne-declare-nicolas-dupont-aignan-candidat-debout-la-france-a-l-election-presidentielle_VN-202611260935.html"
+  },
   {
    "date": "2026-11-26",
    "qui": [
@@ -512,45 +548,6 @@
    "texte": "Édouard Philippe propose de rendre obligatoire la vaccination contre les papillomavirus pour éradiquer le cancer du col de l'utérus.",
    "source": "LCP",
    "url": "https://lcp.fr/actualites/eradiquer-le-cancer-du-col-de-l-uterus-edouard-philippe-veut-rendre-obligatoire-la"
-  },
-  {
-   "date": "2026-11-24",
-   "qui": [
-    "philippe",
-    "lisnard"
-   ],
-   "texte": "Édouard Philippe indique avoir voté pour David Lisnard à la présidence de l'Association des maires de France, et lui reproche son silence sur un éventuel second tour face à Marine Le Pen : « On peut aimer les tronçonneuses, mais pas savoir trancher ».",
-   "source": "Le Monde",
-   "url": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/24/edouard-philippe-a-vote-pour-david-lisnard-a-la-presidence-de-l-amf-mais-fustige-sa-posture-dans-la-course-a-l-elysee_6814832_6205049.html"
-  },
-  {
-   "date": "2026-11-24",
-   "qui": [
-    "riner"
-   ],
-   "texte": "Le président de la région Guadeloupe, Ary Chalus, donnera son parrainage à Teddy Riner.",
-   "source": "Ouest-France",
-   "url": "https://www.ouest-france.fr/elections/presidentielle/info-ouest-france-presidentielle-2027-pourquoi-le-guadeloupeen-ary-chalus-donnera-son-parrainage-a-teddy-riner-3fd0a0cc-e7f7-11f1-86c1-70195b4d2e52"
-  },
-  {
-   "date": "2026-11-24",
-   "qui": [
-    "lepen"
-   ],
-   "texte": "Marine Le Pen est reçue à son tour par les patrons de la grande distribution, après plusieurs autres candidats.",
-   "source": "20 Minutes",
-   "url": "https://www.20minutes.fr/politique/4265355-20261124-presidentielle-2027-plusieurs-candidats-entendus-patrons-grande-distribution-pen-derniere-date"
-  },
-  {
-   "date": "2026-11-24",
-   "qui": [
-    "lisnard",
-    "zemmour",
-    "dupont-aignan"
-   ],
-   "texte": "François Bayrou juge « contraire aux principes » la proposition d'inclure Éric Zemmour et Nicolas Dupont-Aignan dans une primaire de la droite et du centre, souhaitée par David Lisnard.",
-   "source": "Le Parisien",
-   "url": "https://www.leparisien.fr/elections/presidentielle/contraire-aux-principes-francois-bayrou-fustige-la-proposition-dinclure-eric-zemmour-et-nicolas-dupont-aignan-dans-la-primaire-24-11-2026-U5DYDDXUNRAHPCW2LQPP7KB7NQ.php"
   }
  ]
 }
