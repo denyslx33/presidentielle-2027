@@ -2,6 +2,33 @@
 "v": 4,
 "items": [
 {
+"t": "Pouvoir d'achat, sécurité, aller-retour dans l'Hexagone: Ce que promet Marine Le Pen aux outre-mer pour 2027",
+"s": "LCP",
+"u": "https://lcp.fr/actualites/pouvoir-d-achat-securite-aller-retour-dans-l-hexagone-ce-que-promet-marine-le-pen-aux",
+"d": "2026-11-27T15:42:23Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "Présidentielle 2027 : Bruno Retailleau dévoile son programme pour l’enseignement supérieur, en souhaitant la suppression de Parcoursup",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/27/presidentielle-2027-bruno-retailleau-devoile-son-programme-pour-l-enseignement-superieur-en-souhaitant-la-suppression-de-parcoursup_6815889_6205049.html",
+"d": "2026-11-27T15:39:16Z",
+"qui": [
+"retailleau"
+]
+},
+{
+"t": "Prêts consentis au parti Reconquête : Eric Zemmour placé sous le statut de témoin assisté",
+"s": "Libération",
+"u": "https://www.liberation.fr/politique/prets-consentis-au-parti-reconquete-eric-zemmour-place-sous-le-statut-de-temoin-assiste-20261127_QLJIEHRDZFEU3CPDABPUOLK25Y/",
+"d": "2026-11-27T15:28:10Z",
+"qui": [
+"zemmour"
+]
+},
+{
 "t": "Présidentielle 2027 : Marine Le Pen prône une « autonomie économique » pour les territoires d’outre-mer et insiste sur leur importance stratégique",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/27/presidentielle-2027-marine-le-pen-prone-une-autonomie-economique-pour-les-territoires-d-outre-mer-et-insiste-sur-leur-importance-strategique_6815880_6205049.html",
@@ -42,7 +69,7 @@
 "t": "Jordan Bardella et Marine Le Pen réagissent aux nouvelles révélations dans l’affaire des écrits antisémites",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/video/2026/11/27/ecrits-antisemites-jordan-bardella-et-marine-le-pen-reagissent-en-images-aux-nouvelles-revelations_6815877_823448.html",
-"d": "2026-11-27T14:45:50Z",
+"d": "2026-11-27T14:45:47Z",
 "qui": [
 "lepen"
 ]
@@ -82,15 +109,6 @@
 "d": "2026-11-27T14:36:39Z",
 "qui": [
 "riner"
-]
-},
-{
-"t": "Prêts consentis au parti Reconquête : Eric Zemmour placé sous le statut de témoin assisté",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/prets-consentis-au-parti-reconquete-eric-zemmour-place-sous-le-statut-de-temoin-assiste-20261127_QLJIEHRDZFEU3CPDABPUOLK25Y/",
-"d": "2026-11-27T14:34:48Z",
-"qui": [
-"zemmour"
 ]
 },
 {
@@ -307,7 +325,7 @@
 ]
 },
 {
-"t": "DIRECT. Présidentielle 2027 : Teddy Riner en déplacement à Béziers sur le thème de la sécurité",
+"t": "DIRECT. Présidentielle 2027 : Teddy Riner assure que son programme proposera «plus de sport à l'école»",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-presente-son-programme-outre-mer-teddy-riner-en-deplacement-a-beziers-27-11-2026-EBTMQ2B3ZRCJVGQH37E24B5G5Y.php",
 "d": "2026-11-27T12:00:00Z",
@@ -1770,22 +1788,6 @@
 "u": "https://www.20minutes.fr/politique/4265846-20261126-direct-presidentielle-2027-lisnard-veut-convaincre-electeurs-tous-horizons-compris-rn?at_medium=display&at_campaign=149",
 "d": "2026-11-26T05:00:03Z",
 "qui": []
-},
-{
-"t": "\"C'est la confirmation de mon identité politique\" : comment David Lisnard compte utiliser son image de maire pour la présidentielle",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/c-est-la-confirmation-de-mon-identite-politique-comment-david-lisnard-compte-utiliser-son-image-de-maire-pour-la-presidentielle_8296046.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-26T04:56:53Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Présidentielle 2027: pour les candidats comme pour les maires, la galère des parrainages",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/podcasts/reportage-france/20261125-pr%C3%A9sidentielle-2027-pour-les-candidats-comme-pour-les-maires-la-gal%C3%A8re-des-parrainages",
-"d": "2026-11-25T23:06:58Z",
-"qui": []
 }
 ],
 "sources": {
@@ -1797,10 +1799,10 @@
 "20 Minutes": 7,
 "Ouest-France": 0,
 "BFMTV": 24,
-"France 24": 9,
+"France 24": 8,
 "La Croix": 23,
-"LCP": 38,
+"LCP": 39,
 "RFI": 9
 },
-"maj": "2026-11-27T15:30:35Z"
+"maj": "2026-11-27T15:44:47Z"
 }
