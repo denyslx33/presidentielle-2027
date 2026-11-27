@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "3,23,43 * * * *"
   workflow_dispatch:
+    inputs:
+      test:
+        description: "Alerte d'essai (laisser vide pour un passage normal)"
+        required: false
+        default: ""
 permissions:
   contents: write
 concurrency: notifs
@@ -13,13 +18,15 @@ jobs:
     timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
-      - run: python3 .github/scripts/sondages.py || true
+      - if: ${{ !inputs.test }}
+        run: python3 .github/scripts/sondages.py || true
       - run: python3 .github/scripts/notifs.py
         env:
           PUSH_API: ${{ vars.PUSH_API }}
           SEND_TOKEN: ${{ secrets.SEND_TOKEN }}
+          TEST_MSG: ${{ inputs.test }}
       - run: |
-          git add data/sondages.csv data/notifs-etat.json
+          for f in data/sondages.csv data/notifs-etat.json; do [ -f "$f" ] && git add "$f"; done
           git diff --cached --quiet && exit 0
           git -c user.name="denyslx33" -c user.email="denyslx33@users.noreply.github.com" commit -qm "Sondages et alertes automatiques"
           git pull -q --rebase origin main && git push -q origin main

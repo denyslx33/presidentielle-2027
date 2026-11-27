@@ -25,8 +25,8 @@ def polls():
             seen.setdefault(k, r)
     return seen
 
-def send(topic, title, body, url='./', tag=None, cands=None):
-    msg = {'topic': topic, 'title': title, 'body': body, 'url': url, 'tag': tag or topic, 'cands': cands or []}
+def send(topic, title, body, url='./', tag=None, cands=None, urgent=False):
+    msg = {'topic': topic, 'title': title, 'body': body, 'url': url, 'tag': tag or topic, 'cands': cands or [], 'urgent': urgent}
     if not (API and TOKEN):
         print('[essai]', json.dumps(msg, ensure_ascii=False)); return
     after, tot = '', 0
@@ -39,6 +39,9 @@ def send(topic, title, body, url='./', tag=None, cands=None):
     print(f'{topic}: {tot} envoyées')
 
 def main():
+    test = os.environ.get('TEST_MSG', '').strip()
+    if test:  # alerte d'essai lancée à la main depuis GitHub (onglet Actions)
+        send('majeur', 'Test Nous votons', test, './', 'test', urgent=True); return
     etat = load(ETAT, None); first = etat is None
     etat = etat or {'sondages': [], 'actu': [], 'tv': []}
     cand = {c['id']: c['nom'] for c in load('data/candidats.json', {}).get('principaux', [])}

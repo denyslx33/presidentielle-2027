@@ -2717,7 +2717,8 @@ load();
   b.onclick = () => { scrollTo({ top: 0, behavior: 'smooth' }); }; })();
 
 // ===== Alertes (notifications). Masqué tant que PUSH_API est vide. =====
-const PUSH_API = '';      // adresse du serveur Cloudflare, à remplir au lancement
+const PUSH_API = 'https://nousvotons-push.denyslx.workers.dev';
+const ALERTES_POUR_TOUS = false; // false : cloche visible seulement en mode test (5 touches rapides sur le logo)
 const VAPID_PUBLIC = 'BJEbVp5yTeOJzm_kVrmUVwPSL5dKHQF3Ufd8Qf57o1LJRcnqjW-bNTX_Gm9qxdSCTGcaOb7FQ0TbLGw-09a_m1g'; // clé publique (pas secrète)
 const AL_TOPICS = [
   { k: 'favoris', ic: '★', t: 'Mes favoris', d: 'Une grosse actu de vos candidats favoris' },
@@ -2772,8 +2773,13 @@ function renderAlertes() {
 }
 (function initAlertes() {
   const btn = document.getElementById('b-alert'), sh = document.getElementById('al-sheet');
-  if (!btn || (!PUSH_API && !AL_PREVIEW)) return; // ?alertes : aperçu interne
-  btn.hidden = false; btn.querySelector('.adot').hidden = (lsGet('alTopics') || []).length > 0;
+  if (!btn) return;
+  // Mode test secret : 5 touches rapides sur le logo
+  let taps = []; const logo = document.querySelector('.brand');
+  if (logo) logo.addEventListener('click', () => { const n = Date.now(); taps = taps.filter((t) => n - t < 2500); taps.push(n); if (taps.length >= 5) { taps = []; const on = !lsGet('alTest'); lsSet('alTest', on); toast(on ? 'Mode test des alertes activé' : 'Mode test désactivé'); showBell(); } });
+  function showBell() { const vis = PUSH_API && (ALERTES_POUR_TOUS || lsGet('alTest') || AL_PREVIEW); btn.hidden = !vis; btn.querySelector('.adot').hidden = (lsGet('alTopics') || []).length > 0; }
+  showBell();
+  if (!PUSH_API) return;
   btn.onclick = () => { renderAlertes(); sh.hidden = false; };
   document.getElementById('al-x').onclick = () => { sh.hidden = true; };
   sh.onclick = (e) => { if (e.target === sh) sh.hidden = true; };
