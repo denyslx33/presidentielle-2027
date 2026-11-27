@@ -4,7 +4,7 @@ on:
     - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
   push:
-    paths: [".github/scripts/flux.py", ".github/workflows/flux.yml"]
+    paths: [".github/scripts/flux.py", ".github/scripts/visuels.py", ".github/workflows/flux.yml"]
 permissions:
   contents: write
 concurrency: flux
@@ -15,8 +15,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 .github/scripts/flux.py
+      - run: python3 .github/scripts/visuels.py || true
       - run: |
-          git add data/flux.json
+          git add data/flux.json data/agenda.json
           git diff --cached --quiet && exit 0
           git -c user.name="denyslx33" -c user.email="denyslx33@users.noreply.github.com" commit -qm "Fil d'actu automatique"
           git pull -q --rebase origin main && git push -q origin main
