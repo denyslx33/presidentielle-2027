@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26",
+ "maj": "2026-11-27",
  "note": "Chaque position vient d'une mesure publiée, affichée sous la question avec un lien vers le programme du candidat. Quand un candidat ne s'est pas clairement prononcé, sa position est inconnue et la question ne compte pas pour lui.",
  "questions": [
   {
@@ -41,7 +41,8 @@
    "axe": [
     "eco",
     -1
-   ]
+   ],
+   "exp": "Le SMIC est le salaire minimum légal. Il est revalorisé au moins une fois par an selon l'inflation et tourne autour de 1 400 € net par mois pour un temps plein."
   },
   {
    "theme": "Économie",
@@ -62,7 +63,8 @@
    "axe": [
     "eco",
     1
-   ]
+   ],
+   "exp": "La durée légale du travail est de 35 heures par semaine depuis 2000. Au-delà, les heures sont des heures supplémentaires, payées plus cher."
   },
   {
    "theme": "Économie",
@@ -87,7 +89,8 @@
    "axe": [
     "eco",
     1
-   ]
+   ],
+   "exp": "La dépense publique regroupe ce que dépensent l'État, les collectivités et la Sécurité sociale. En France, elle dépasse 55 % de la richesse produite chaque année, l'un des niveaux les plus élevés d'Europe."
   },
   {
    "theme": "Économie",
@@ -146,7 +149,8 @@
    "axe": [
     "eco",
     -1
-   ]
+   ],
+   "exp": "Il s'agit de nationaliser, c'est-à-dire que l'État devienne propriétaire. EDF est déjà entièrement publique depuis 2023. Les autoroutes sont gérées par des sociétés privées sous contrat avec l'État jusqu'au début des années 2030."
   },
   {
    "theme": "Économie",
@@ -163,7 +167,8 @@
     "polony": "Taxe flottante sur les carburants",
     "zemmour": "Baisser les taxes sur l'énergie pour réduire les factures d'électricité"
    },
-   "id": "q8"
+   "id": "q8",
+   "exp": "Les taxes (accise sur l'énergie et TVA) représentent environ la moitié du prix d'un litre de carburant à la pompe."
   },
   {
    "theme": "Institutions",
@@ -182,7 +187,8 @@
    "axe": [
     "eco",
     1
-   ]
+   ],
+   "exp": "La France compte environ 5,7 millions d'agents publics, répartis entre l'État, les collectivités locales et les hôpitaux."
   },
   {
    "theme": "Institutions",
@@ -195,7 +201,8 @@
     "attal": "350 députés et 200 sénateurs",
     "dupont-aignan": "Passer de 577 à 500 députés"
    },
-   "id": "q10"
+   "id": "q10",
+   "exp": "Le Parlement compte 577 députés et 348 sénateurs. Les réduire demande de changer la loi, et en partie la Constitution."
   },
   {
    "theme": "Institutions",
@@ -266,7 +273,8 @@
    "axe": [
     "soc",
     1
-   ]
+   ],
+   "exp": "Le titre de séjour autorise un étranger à vivre en France. Le regroupement familial permet à un étranger installé légalement de faire venir son conjoint et ses enfants mineurs, sous conditions de ressources et de logement."
   },
   {
    "theme": "Immigration",
@@ -309,7 +317,8 @@
    "axe": [
     "soc",
     1
-   ]
+   ],
+   "exp": "C'est ce qu'on appelle souvent la préférence nationale. Aujourd'hui, la plupart des aides sont ouvertes aux étrangers en situation régulière, parfois après une durée de résidence. Le Conseil constitutionnel a censuré en 2024 des mesures allant dans ce sens."
   },
   {
    "theme": "Social et santé",
@@ -394,7 +403,8 @@
     "zemmour": "Plan européen de 500 Md€ pour le nucléaire",
     "melenchon": "Fermeture progressive du nucléaire, arrêt de l'EPR2"
    },
-   "id": "q19"
+   "id": "q19",
+   "exp": "Le nucléaire produit environ deux tiers de l'électricité en France. Un programme de six nouveaux réacteurs (EPR2) a été lancé en 2022."
   },
   {
    "theme": "Écologie et énergie",
@@ -417,7 +427,8 @@
    "axe": [
     "eco2",
     1
-   ]
+   ],
+   "exp": "Les éoliennes, sur terre et en mer, bénéficient d'un soutien public : l'État leur garantit un prix de vente de l'électricité sur une longue durée."
   },
   {
    "theme": "Écologie et énergie",
@@ -434,7 +445,8 @@
    "axe": [
     "eco2",
     -1
-   ]
+   ],
+   "exp": "Le glyphosate est un désherbant très utilisé en agriculture. Son autorisation a été renouvelée par l'Union européenne jusqu'en 2033."
   },
   {
    "theme": "Europe et international",
@@ -463,7 +475,8 @@
    "axe": [
     "eur",
     -1
-   ]
+   ],
+   "exp": "Aujourd'hui, le budget de l'Union européenne représente environ 1 % de la richesse des pays membres. Dans certains domaines, comme les impôts ou la défense, les décisions se prennent à l'unanimité des pays."
   },
   {
    "theme": "Europe et international",
@@ -478,7 +491,8 @@
     "tondelier": "Soutien politique et militaire à l'Ukraine",
     "dupont-aignan": "Paix en Ukraine et partenariat avec la Russie"
    },
-   "id": "q23"
+   "id": "q23",
+   "exp": "Depuis l'invasion russe de février 2022, la France fournit à l'Ukraine des armes, des munitions et de la formation militaire."
   },
   {
    "theme": "Économie",
@@ -493,7 +507,8 @@
    "axe": [
     "eco",
     -1
-   ]
+   ],
+   "exp": "Une entreprise peut aujourd'hui licencier pour motif économique, en respectant des règles et des indemnités. Interdire les licenciements l'en empêcherait, au moins quand elle fait des bénéfices."
   },
   {
    "theme": "Économie",
@@ -508,7 +523,8 @@
    "axe": [
     "eco",
     -1
-   ]
+   ],
+   "exp": "L'encadrement des loyers fixe un plafond que le loyer ne peut pas dépasser. Il s'applique aujourd'hui dans certaines villes volontaires, comme Paris, Lille, Lyon ou Bordeaux."
   },
   {
    "theme": "Économie",
@@ -525,7 +541,8 @@
    "axe": [
     "eco",
     -1
-   ]
+   ],
+   "exp": "Le nombre de logements construits a nettement baissé ces dernières années. La proposition vise un effort public massif, notamment pour le logement social."
   },
   {
    "theme": "Économie",
@@ -558,7 +575,8 @@
    "axe": [
     "eco",
     1
-   ]
+   ],
+   "exp": "Aujourd'hui, il existe surtout des CDI (durée indéterminée) et des CDD (durée limitée). Un contrat unique remplacerait les deux, avec des droits qui augmentent avec l'ancienneté."
   },
   {
    "theme": "Économie",
@@ -585,7 +603,8 @@
     "zemmour": "Droits de douane de 50 % sur les voitures électriques chinoises",
     "philippe": "Protéger le marché face à la concurrence chinoise"
    },
-   "id": "q30"
+   "id": "q30",
+   "exp": "Les droits de douane sont décidés par l'Union européenne pour tous ses membres. La France ne peut pas les fixer seule."
   },
   {
    "theme": "Économie",
@@ -598,7 +617,8 @@
     "dupont-aignan": "75 % de la commande publique en produits français",
     "polony": "Priorité française dans la commande publique"
    },
-   "id": "q31"
+   "id": "q31",
+   "exp": "Les marchés publics sont les achats des administrations : cantines, travaux, matériel. Les règles européennes interdisent en principe de favoriser les entreprises d'un pays, avec quelques exceptions."
   },
   {
    "theme": "Économie",
@@ -609,7 +629,8 @@
    "src": {
     "glucksmann": "Prix planchers pour les agriculteurs"
    },
-   "id": "q32"
+   "id": "q32",
+   "exp": "Les lois Egalim cherchent déjà à mieux payer les agriculteurs en tenant compte de leurs coûts de production. Un prix minimum garanti irait plus loin en fixant un prix plancher."
   },
   {
    "theme": "Économie",
@@ -638,7 +659,8 @@
     "lepen": "Minimum vieillesse à 1 000 € par mois",
     "lisnard": "Pension minimale dès 65 ans et minimum vieillesse à 1 000 €"
    },
-   "id": "q34"
+   "id": "q34",
+   "exp": "Le minimum vieillesse (ASPA) est une aide pour les retraités aux faibles ressources. Pour une personne seule, il tourne autour de 1 000 € par mois."
   },
   {
    "theme": "Économie",
@@ -649,7 +671,8 @@
    "src": {
     "lepen": "Exonérer d'impôt sur le revenu les actifs de moins de 30 ans"
    },
-   "id": "q35"
+   "id": "q35",
+   "exp": "L'impôt sur le revenu est progressif : plus on gagne, plus le taux est élevé. Il s'agirait d'en dispenser les jeunes actifs, quels que soient leurs revenus."
   },
   {
    "theme": "Économie",
@@ -660,7 +683,8 @@
    "src": {
     "philippe": "Allocation familiale de 350 € dès le premier enfant, dégressive"
    },
-   "id": "q36"
+   "id": "q36",
+   "exp": "Aujourd'hui, les allocations familiales ne sont versées qu'à partir du deuxième enfant, et leur montant dépend des revenus du foyer."
   },
   {
    "theme": "Économie",
@@ -675,7 +699,8 @@
    "axe": [
     "eco",
     1
-   ]
+   ],
+   "exp": "Il s'agit de s'engager à n'augmenter aucun impôt ni aucune taxe pendant les cinq ans du mandat."
   },
   {
    "theme": "Économie",
@@ -696,7 +721,8 @@
    "axe": [
     "eco",
     1
-   ]
+   ],
+   "exp": "Les entreprises, les agriculteurs et les collectivités doivent respecter de nombreuses règles. Simplifier veut dire en supprimer ou en alléger une partie."
   },
   {
    "theme": "Social et santé",
@@ -707,7 +733,8 @@
    "src": {
     "melenchon": "Remboursement à 100 % des soins prescrits"
    },
-   "id": "q39"
+   "id": "q39",
+   "exp": "Aujourd'hui, l'Assurance maladie rembourse une partie des soins. Le reste est payé par la mutuelle ou par le patient, avec en plus des franchises sur les médicaments et les consultations."
   },
   {
    "theme": "Social et santé",
@@ -736,7 +763,8 @@
     "tondelier": "2 000 centres de santé d'ici 2030",
     "lisnard": "Une maison de santé par canton"
    },
-   "id": "q41"
+   "id": "q41",
+   "exp": "On parle de déserts médicaux là où il manque des médecins. Les centres et maisons de santé regroupent plusieurs soignants, parfois salariés par une collectivité."
   },
   {
    "theme": "Social et santé",
@@ -751,7 +779,8 @@
     "lepen": "Arrêter les fermetures de lits et de maternités",
     "dupont-aignan": "Arrêt des fermetures de maternités"
    },
-   "id": "q42"
+   "id": "q42",
+   "exp": "Plusieurs dizaines de maternités ont fermé ces dernières années, souvent par manque de personnel ou pour des raisons de sécurité. Les hôpitaux ont aussi réduit le nombre de lits."
   },
   {
    "theme": "Social et santé",
@@ -762,7 +791,8 @@
    "src": {
     "arthaud": "Aide à mourir encadrée"
    },
-   "id": "q43"
+   "id": "q43",
+   "exp": "L'aide à mourir permettrait à une personne atteinte d'une maladie grave et incurable de demander un produit mortel, sous conditions strictes. Aujourd'hui, la loi autorise seulement une sédation profonde en toute fin de vie. Le Parlement en débat depuis 2024."
   },
   {
    "theme": "Social et santé",
@@ -815,7 +845,8 @@
     "attal": "Un assistant médical IA pour chaque Français",
     "retailleau": "IA médicales françaises entraînées sur les données de santé nationales"
    },
-   "id": "q47"
+   "id": "q47",
+   "exp": "L'intelligence artificielle peut aider à lire des radios, repérer des maladies ou répondre à des patients. Elle pose des questions de fiabilité et de protection des données."
   },
   {
    "theme": "Éducation",
@@ -834,7 +865,8 @@
     "glucksmann": "Moins d'élèves par enseignant en primaire",
     "philippe": "Moins d'élèves par classe en maternelle et primaire"
    },
-   "id": "q48"
+   "id": "q48",
+   "exp": "Une classe compte en moyenne entre 22 et 25 élèves. Depuis 2017, les classes de CP et CE1 sont dédoublées dans les quartiers prioritaires."
   },
   {
    "theme": "Éducation",
@@ -851,7 +883,8 @@
    "axe": [
     "soc",
     1
-   ]
+   ],
+   "exp": "L'uniforme n'est pas obligatoire dans les écoles publiques. Une expérimentation a lieu depuis 2024 dans des établissements volontaires."
   },
   {
    "theme": "Éducation",
@@ -882,7 +915,8 @@
     "lisnard": "Certificat de fin de primaire pour entrer au collège",
     "retailleau": "Examen d'entrée en sixième et groupes de niveau évolutifs"
    },
-   "id": "q51"
+   "id": "q51",
+   "exp": "Aujourd'hui, le passage en sixième se fait sans examen. Un examen d'entrée en sixième a existé jusqu'en 1959."
   },
   {
    "theme": "Éducation",
@@ -893,7 +927,8 @@
    "src": {
     "lisnard": "Libre choix de l'école avec chèque éducation"
    },
-   "id": "q52"
+   "id": "q52",
+   "exp": "Aujourd'hui, l'école publique de l'enfant dépend de son adresse (la carte scolaire). Le chèque éducation donnerait aux familles une somme à utiliser dans l'école de leur choix, publique ou privée."
   },
   {
    "theme": "Éducation",
@@ -906,7 +941,8 @@
     "philippe": "Larges pouvoirs aux chefs d'établissement",
     "lisnard": "Autonomie des chefs d'établissement"
    },
-   "id": "q53"
+   "id": "q53",
+   "exp": "Les principaux et proviseurs ont aujourd'hui peu de marge pour recruter les enseignants ou organiser l'établissement. Leur donner plus de pouvoir, c'est leur confier ces décisions."
   },
   {
    "theme": "Éducation",
@@ -931,7 +967,8 @@
    "src": {
     "melenchon": "Scolarité obligatoire jusqu'à 18 ans"
    },
-   "id": "q55"
+   "id": "q55",
+   "exp": "L'instruction est obligatoire de 3 à 16 ans. Depuis 2020, les jeunes de 16 à 18 ans doivent en plus être en études, en formation ou en emploi."
   },
   {
    "theme": "Éducation",
@@ -942,7 +979,8 @@
    "src": {
     "melenchon": "Gratuité réelle de l'école publique (cantine, transport, fournitures)"
    },
-   "id": "q56"
+   "id": "q56",
+   "exp": "L'enseignement est gratuit à l'école publique, mais les familles paient souvent une partie de la cantine, du transport et des fournitures, selon les communes."
   },
   {
    "theme": "Éducation",
@@ -955,7 +993,8 @@
     "dupont-aignan": "+30 % d'heures de français et de maths",
     "retailleau": "Plus de temps pour lire, écrire, compter"
    },
-   "id": "q57"
+   "id": "q57",
+   "exp": "Il s'agit d'augmenter le temps consacré au français et aux mathématiques dans l'emploi du temps des élèves, au détriment ou en plus des autres matières."
   },
   {
    "theme": "Sécurité et justice",
@@ -1022,7 +1061,8 @@
    "axe": [
     "soc",
     1
-   ]
+   ],
+   "exp": "La France compte environ 150 000 policiers et 100 000 gendarmes."
   },
   {
    "theme": "Sécurité et justice",
@@ -1037,7 +1077,8 @@
    "axe": [
     "soc",
     1
-   ]
+   ],
+   "exp": "Les prisons françaises comptent environ 80 000 détenus pour un peu plus de 60 000 places, l'un des taux de surpopulation les plus élevés d'Europe."
   },
   {
    "theme": "Sécurité et justice",
@@ -1072,7 +1113,8 @@
     "tondelier": "Police nationale de proximité",
     "roussel": "60 000 policiers, gendarmes et douaniers de proximité contre le narcotrafic"
    },
-   "id": "q64"
+   "id": "q64",
+   "exp": "La police de proximité, créée en 1998, plaçait des policiers dans les quartiers pour le contact avec les habitants. Elle a été supprimée en 2003."
   },
   {
    "theme": "Sécurité et justice",
@@ -1087,7 +1129,8 @@
    "axe": [
     "soc",
     -1
-   ]
+   ],
+   "exp": "La police peut aujourd'hui contrôler l'identité d'une personne dans certains cas prévus par la loi, parfois sans soupçon précis. Ces contrôles sont critiqués quand ils visent toujours les mêmes personnes."
   },
   {
    "theme": "Sécurité et justice",
@@ -1102,7 +1145,8 @@
    "axe": [
     "soc",
     1
-   ]
+   ],
+   "exp": "Les policiers municipaux dépendent du maire. C'est aujourd'hui le maire qui décide s'ils portent une arme à feu."
   },
   {
    "theme": "Sécurité et justice",
@@ -1113,7 +1157,8 @@
    "src": {
     "tondelier": "9 000 magistrats de plus en dix ans"
    },
-   "id": "q67"
+   "id": "q67",
+   "exp": "La France compte environ 9 000 magistrats (juges et procureurs), moins que la moyenne européenne par habitant. Les délais de justice sont souvent longs."
   },
   {
    "theme": "Sécurité et justice",
@@ -1144,7 +1189,8 @@
    "axe": [
     "soc",
     1
-   ]
+   ],
+   "exp": "Un détenu peut voir sa peine réduite selon son comportement et ses efforts en prison. Il s'agirait de supprimer cette possibilité pour les auteurs de violences."
   },
   {
    "theme": "Immigration",
@@ -1177,7 +1223,8 @@
    "axe": [
     "soc",
     -1
-   ]
+   ],
+   "exp": "Des étrangers sans titre de séjour travaillent en France, souvent dans le bâtiment, la restauration ou l'aide à domicile. Ils peuvent aujourd'hui être régularisés au cas par cas."
   },
   {
    "theme": "Immigration",
@@ -1212,7 +1259,8 @@
    "axe": [
     "soc",
     1
-   ]
+   ],
+   "exp": "Aujourd'hui, on demande l'asile une fois arrivé en France. La proposition imposerait de le demander depuis l'étranger, par exemple dans une ambassade ou un centre hors d'Europe."
   },
   {
    "theme": "Immigration",
@@ -1245,7 +1293,8 @@
    "axe": [
     "soc",
     1
-   ]
+   ],
+   "exp": "Des quotas fixeraient chaque année un nombre maximal d'entrées d'étrangers, par exemple par métier ou par pays."
   },
   {
    "theme": "Immigration",
@@ -1260,7 +1309,8 @@
    "axe": [
     "soc",
     -1
-   ]
+   ],
+   "exp": "En Méditerranée, les migrants en détresse sont secourus par les garde-côtes et par des bateaux d'associations. Une force européenne serait organisée et financée par l'Union."
   },
   {
    "theme": "Immigration",
@@ -1275,7 +1325,8 @@
    "axe": [
     "soc",
     -1
-   ]
+   ],
+   "exp": "Aujourd'hui, seuls les Français votent à toutes les élections. Les citoyens européens peuvent voter aux municipales et aux européennes. Les autres étrangers ne votent pas."
   },
   {
    "theme": "Écologie et énergie",
@@ -1290,7 +1341,8 @@
    "axe": [
     "eco2",
     -1
-   ]
+   ],
+   "exp": "La vitesse maximale sur autoroute est de 130 km/h, et de 110 km/h par temps de pluie."
   },
   {
    "theme": "Écologie et énergie",
@@ -1305,7 +1357,8 @@
    "axe": [
     "eco2",
     1
-   ]
+   ],
+   "exp": "L'Union européenne a décidé d'interdire la vente de voitures neuves à essence ou diesel à partir de 2035. Les voitures déjà en circulation resteraient autorisées."
   },
   {
    "theme": "Écologie et énergie",
@@ -1334,7 +1387,8 @@
    "src": {
     "arthaud": "Gratuité des transports en commun"
    },
-   "id": "q81"
+   "id": "q81",
+   "exp": "Les bus et tramways sont déjà gratuits dans une quarantaine de villes, comme Dunkerque ou Montpellier. Le reste est payé par les usagers et les collectivités."
   },
   {
    "theme": "Écologie et énergie",
@@ -1365,7 +1419,8 @@
    "axe": [
     "eco2",
     -1
-   ]
+   ],
+   "exp": "Le kérosène des avions de ligne n'est pas taxé comme l'essence des voitures, en raison d'accords internationaux. Les billets d'avion, eux, supportent une taxe."
   },
   {
    "theme": "Écologie et énergie",
@@ -1396,7 +1451,8 @@
    "axe": [
     "eco2",
     -1
-   ]
+   ],
+   "exp": "La Constitution contient déjà une Charte de l'environnement depuis 2005. Il s'agirait d'y ajouter l'idée d'une urgence écologique qui guiderait les lois."
   },
   {
    "theme": "Écologie et énergie",
@@ -1443,7 +1499,8 @@
    "axe": [
     "eco2",
     -1
-   ]
+   ],
+   "exp": "Il s'agit d'augmenter fortement l'argent public consacré à la rénovation des bâtiments, aux transports, aux énergies renouvelables et à l'adaptation au climat."
   },
   {
    "theme": "Institutions",
@@ -1478,7 +1535,8 @@
    "src": {
     "lisnard": "Gouvernement de douze ministres"
    },
-   "id": "q91"
+   "id": "q91",
+   "exp": "Les derniers gouvernements comptaient en général entre 30 et 40 ministres et secrétaires d'État."
   },
   {
    "theme": "Institutions",
@@ -1489,7 +1547,8 @@
    "src": {
     "attal": "Supprimer un échelon de collectivité"
    },
-   "id": "q92"
+   "id": "q92",
+   "exp": "Entre la commune et l'État, il existe plusieurs niveaux : intercommunalités, départements et régions. On parle souvent de millefeuille administratif."
   },
   {
    "theme": "Institutions",
@@ -1500,7 +1559,8 @@
    "src": {
     "glucksmann": "Interdire les réseaux sociaux aux moins de 15 ans"
    },
-   "id": "q93"
+   "id": "q93",
+   "exp": "Une loi de 2023 a fixé la majorité numérique à 15 ans, mais elle n'est pas appliquée faute d'accord européen. Une interdiction empêcherait les moins de 15 ans d'ouvrir un compte."
   },
   {
    "theme": "Institutions",
@@ -1511,7 +1571,8 @@
    "src": {
     "lisnard": "Supprimer la moitié des agences de l'État"
    },
-   "id": "q94"
+   "id": "q94",
+   "exp": "L'État s'appuie sur plusieurs centaines d'agences et d'opérateurs, comme France Travail ou l'Ademe. Certaines sont critiquées pour leur coût ou leurs doublons."
   },
   {
    "theme": "Institutions",
@@ -1522,7 +1583,8 @@
    "src": {
     "dupont-aignan": "Retour au septennat avec référendum révocatoire"
    },
-   "id": "q95"
+   "id": "q95",
+   "exp": "Le mandat du président est de cinq ans depuis le référendum de 2000. Il était de sept ans auparavant (le septennat)."
   },
   {
    "theme": "Institutions",
@@ -1533,7 +1595,8 @@
    "src": {
     "zemmour": "Garder espèces et chèques"
    },
-   "id": "q96"
+   "id": "q96",
+   "exp": "Un commerçant ne peut en principe pas refuser les espèces, mais le paiement par carte progresse et certains services ne les acceptent plus. Le chèque, lui, peut déjà être refusé."
   },
   {
    "theme": "Institutions",
@@ -1544,7 +1607,8 @@
    "src": {
     "philippe": "Le garde des Sceaux peut donner des instructions aux procureurs"
    },
-   "id": "q97"
+   "id": "q97",
+   "exp": "Depuis 2013, le ministre de la Justice ne peut plus donner d'instructions dans une affaire précise. Il fixe seulement les grandes orientations de la politique pénale."
   },
   {
    "theme": "Institutions",
@@ -1555,7 +1619,8 @@
    "src": {
     "polony": "Plan contre la corruption et les conflits d'intérêts"
    },
-   "id": "q98"
+   "id": "q98",
+   "exp": "La France dispose depuis 2013 d'une autorité qui contrôle le patrimoine et les intérêts des élus, et depuis 2016 d'une agence contre la corruption."
   },
   {
    "theme": "Europe et international",
@@ -1566,7 +1631,8 @@
    "src": {
     "melenchon": "Sortie du commandement intégré de l'OTAN puis de l'organisation"
    },
-   "id": "q99"
+   "id": "q99",
+   "exp": "L'OTAN est une alliance militaire créée en 1949, dont les membres se défendent mutuellement. La France avait quitté son commandement militaire en 1966 et l'a réintégré en 2009."
   },
   {
    "theme": "Europe et international",
@@ -1587,7 +1653,8 @@
    "axe": [
     "eur",
     1
-   ]
+   ],
+   "exp": "Un pays peut quitter l'Union européenne en suivant une procédure de négociation prévue par les traités, comme l'a fait le Royaume-Uni en 2020."
   },
   {
    "theme": "Europe et international",
@@ -1622,7 +1689,8 @@
     "lepen": "Budget de la défense à 55 Md€",
     "arthaud": "Arrêter la course aux armements : l'argent pour la santé, pas pour l'armée"
    },
-   "id": "q102"
+   "id": "q102",
+   "exp": "Le budget de la défense représente environ 2 % de la richesse produite chaque année. Une loi prévoit de l'augmenter jusqu'en 2030."
   },
   {
    "theme": "Europe et international",
@@ -1637,7 +1705,8 @@
    "axe": [
     "eur",
     -1
-   ]
+   ],
+   "exp": "Il s'agirait que l'Union européenne emprunte au nom de tous ses membres, comme elle l'a fait pour le plan de relance après le Covid."
   },
   {
    "theme": "Europe et international",
@@ -1648,7 +1717,8 @@
    "src": {
     "melenchon": "Suspendre l'accord d'association UE-Israël"
    },
-   "id": "q104"
+   "id": "q104",
+   "exp": "L'accord d'association, en vigueur depuis 2000, organise le commerce et le dialogue politique entre l'Union européenne et Israël. Il contient une clause sur le respect des droits humains."
   },
   {
    "theme": "Europe et international",
@@ -1659,7 +1729,8 @@
    "src": {
     "arthaud": "Retirer les troupes françaises d'Afrique"
    },
-   "id": "q105"
+   "id": "q105",
+   "exp": "La France a retiré ses soldats du Mali, du Burkina Faso et du Niger entre 2022 et 2023, et réduit ses autres bases sur le continent. Il s'agirait de partir complètement."
   },
   {
    "theme": "Europe et international",
@@ -1674,7 +1745,8 @@
    "axe": [
     "eur",
     1
-   ]
+   ],
+   "exp": "Plusieurs pays sont candidats pour entrer dans l'Union européenne, dont l'Ukraine, la Moldavie et des pays des Balkans. Chaque entrée demande l'accord unanime des pays membres."
   },
   {
    "theme": "Europe et international",
@@ -1687,7 +1759,8 @@
     "lisnard": "Clauses miroirs sur les produits importés",
     "retailleau": "Clauses de réciprocité dans tous les accords commerciaux"
    },
-   "id": "q107"
+   "id": "q107",
+   "exp": "Il s'agit d'exiger que les produits importés respectent les mêmes règles que les produits européens, par exemple sur les pesticides ou le bien-être animal. On parle de clauses miroirs."
   },
   {
    "theme": "Europe et international",
@@ -1698,7 +1771,8 @@
    "src": {
     "tondelier": "Arrêt des importations de gaz, uranium et engrais russes"
    },
-   "id": "q108"
+   "id": "q108",
+   "exp": "Depuis la guerre en Ukraine, l'Europe a réduit ses achats d'énergie russe, mais elle importe encore du gaz liquéfié, de l'uranium et des engrais russes."
   },
   {
    "theme": "Europe et international",
@@ -1713,7 +1787,8 @@
    "axe": [
     "eur",
     -1
-   ]
+   ],
+   "exp": "L'impôt sur les sociétés taxe les bénéfices des entreprises. Son taux est de 25 % en France et un peu plus élevé en Allemagne. Harmoniser, c'est adopter les mêmes règles des deux côtés."
   },
   {
    "id": "q110",
@@ -1738,7 +1813,8 @@
     "tondelier": "+15 % pour les enseignants en 5 ans",
     "glucksmann": "Hausse planifiée des salaires enseignants sur 5 ans",
     "villepin": "Au moins +10 % pour les personnels scolaires"
-   }
+   },
+   "exp": "Les enseignants français sont moins payés que dans beaucoup de pays comparables, surtout en début de carrière. Leurs salaires ont été revalorisés en 2023."
   },
   {
    "id": "q111",
@@ -1747,13 +1823,16 @@
    "pos": {
     "villepin": 1,
     "attal": 1,
-    "lepen": 1
+    "lepen": 1,
+    "zemmour": 1
    },
    "src": {
     "villepin": "Électricité au coût de production, facture -15 %",
     "attal": "Électricité autour de 75 €/MWh",
-    "lepen": "Blocage temporaire des prix de l'énergie financé par une taxe sur les énergéticiens"
-   }
+    "lepen": "Blocage temporaire des prix de l'énergie financé par une taxe sur les énergéticiens",
+    "zemmour": "Baisser les taxes sur l'énergie pour réduire les factures d'électricité"
+   },
+   "exp": "Le prix de l'électricité a fortement augmenté depuis 2022. Une partie du prix dépend des marchés européens, une autre des taxes et du tarif fixé par l'État."
   },
   {
    "id": "q112",
@@ -1770,7 +1849,8 @@
    "axe": [
     "eco",
     -1
-   ]
+   ],
+   "exp": "Planifier, c'est fixer des objectifs et des investissements à long terme au niveau de l'État. La France a eu un Commissariat au Plan après la guerre et a créé un secrétariat à la planification écologique en 2022."
   },
   {
    "theme": "Institutions",
@@ -1781,7 +1861,8 @@
    "src": {
     "villepin": "Abaisser l'âge du vote à 16 ans"
    },
-   "id": "q113"
+   "id": "q113",
+   "exp": "Le droit de vote est fixé à 18 ans depuis 1974. Il s'agirait de l'ouvrir dès 16 ans, comme en Autriche."
   },
   {
    "theme": "Institutions",
@@ -1804,7 +1885,8 @@
    "src": {
     "lepen": "Barème progressif à cinq tranches pour l'impôt sur les sociétés"
    },
-   "id": "q115"
+   "id": "q115",
+   "exp": "Aujourd'hui, l'impôt sur les sociétés a un taux de 25 %, avec un taux réduit pour les petits bénéfices des PME. Un barème progressif ferait payer un taux plus élevé aux entreprises les plus rentables."
   },
   {
    "theme": "Social et santé",
@@ -1815,7 +1897,140 @@
    "src": {
     "philippe": "Nouveaux vaccins obligatoires"
    },
-   "id": "q116"
+   "id": "q116",
+   "exp": "Onze vaccins sont obligatoires pour les enfants nés depuis 2018. Il s'agirait d'en ajouter d'autres, par exemple pour certains adultes ou professions."
+  },
+  {
+   "theme": "Europe et international",
+   "q": "La France doit verser moins d'argent au budget de l'Union européenne.",
+   "pos": {
+    "lepen": 1,
+    "zemmour": 1,
+    "tondelier": -1
+   },
+   "src": {
+    "lepen": "Baisser la contribution française à l'UE",
+    "zemmour": "Baisser de 20 % la contribution française au budget de l'UE",
+    "tondelier": "Budget européen porté à 2 % du PIB en 2035"
+   },
+   "exp": "Chaque pays verse une contribution au budget de l'Union européenne. La France donne plus qu'elle ne reçoit, de l'ordre de 10 milliards d'euros par an de différence.",
+   "axe": [
+    "eur",
+    1
+   ],
+   "id": "q117"
+  },
+  {
+   "theme": "Social et santé",
+   "q": "Les médecins doivent avoir des obligations, comme des gardes ou des jours dans les zones qui en manquent.",
+   "pos": {
+    "philippe": 1,
+    "zemmour": 1
+   },
+   "src": {
+    "philippe": "« Obligation de solidarité » pour les médecins",
+    "zemmour": "Rétablir la garde obligatoire des médecins"
+   },
+   "exp": "Les médecins libéraux choisissent librement où ils s'installent et ne sont plus obligés de participer aux gardes depuis 2002. Certaines régions manquent fortement de médecins.",
+   "id": "q118"
+  },
+  {
+   "theme": "Sécurité et justice",
+   "q": "Il faut fortement développer la réserve militaire et le service volontaire.",
+   "pos": {
+    "philippe": 1,
+    "villepin": 1
+   },
+   "src": {
+    "philippe": "250 000 réservistes, service militaire volontaire de 50 000 places",
+    "villepin": "Créer une réserve citoyenne face aux menaces russes"
+   },
+   "exp": "Les réservistes sont des civils formés qui peuvent renforcer l'armée ou les secours en cas de besoin. Le service militaire obligatoire a été suspendu en 1997.",
+   "id": "q119"
+  },
+  {
+   "theme": "Économie",
+   "q": "Il faut augmenter le salaire net en baissant les cotisations sociales prélevées sur la fiche de paie.",
+   "pos": {
+    "riner": 1,
+    "villepin": 1
+   },
+   "src": {
+    "riner": "Augmenter le salaire net en allégeant les charges",
+    "villepin": "Basculer plus de 200 Md€ de cotisations vers une CSG universelle (+200 € nets par mois en moyenne)"
+   },
+   "exp": "Entre le salaire brut et le salaire net, des cotisations financent la retraite, le chômage et la santé. Les baisser augmente le net, mais il faut trouver un autre financement pour ces dépenses.",
+   "axe": [
+    "eco",
+    1
+   ],
+   "id": "q120"
+  },
+  {
+   "theme": "Économie",
+   "q": "L'État doit fortement encourager la natalité.",
+   "pos": {
+    "zemmour": 1,
+    "dupont-aignan": 1,
+    "philippe": 1
+   },
+   "src": {
+    "zemmour": "Campagnes de soutien à la natalité",
+    "dupont-aignan": "10 000 € bloqués jusqu'à la retraite pour chaque nouveau-né",
+    "philippe": "Allocation familiale de 350 € dès le premier enfant, dégressive"
+   },
+   "exp": "Le nombre de naissances baisse en France depuis une dizaine d'années, autour de 1,6 enfant par femme. Les aides possibles vont des allocations aux places en crèche.",
+   "id": "q121"
+  },
+  {
+   "theme": "Europe et international",
+   "q": "L'Europe doit sortir de sa dépendance aux géants américains du numérique.",
+   "pos": {
+    "glucksmann": 1,
+    "philippe": 1
+   },
+   "src": {
+    "glucksmann": "Sortir de la dépendance aux GAFAM en 5 ans",
+    "philippe": "Infrastructure européenne d'IA souveraine"
+   },
+   "exp": "Les services numériques du quotidien (moteurs de recherche, réseaux sociaux, stockage des données, intelligence artificielle) sont surtout fournis par de grandes entreprises américaines.",
+   "id": "q122"
+  },
+  {
+   "theme": "Immigration",
+   "q": "Il faut limiter les visas pour les pays qui refusent de reprendre leurs ressortissants expulsés.",
+   "pos": {
+    "polony": 1,
+    "villepin": 1
+   },
+   "src": {
+    "polony": "Conditionner les visas à l'acceptation des laissez-passer consulaires",
+    "villepin": "Politique de réciprocité : accueil conditionné à l'acceptation des retours"
+   },
+   "exp": "Pour expulser un étranger, la France a souvent besoin d'un document du pays d'origine (un laissez-passer consulaire). Certains pays tardent ou refusent de le délivrer.",
+   "axe": [
+    "soc",
+    1
+   ],
+   "id": "q123"
+  },
+  {
+   "theme": "Immigration",
+   "q": "Les étrangers condamnés pour des délits ou des crimes doivent être renvoyés dans leur pays.",
+   "pos": {
+    "lepen": 1,
+    "zemmour": 1
+   },
+   "src": {
+    "lepen": "Expulsion des étrangers en situation irrégulière, délinquants et criminels",
+    "zemmour": "Renvoyer les détenus étrangers"
+   },
+   "exp": "Un étranger condamné peut déjà être expulsé, mais la décision dépend de sa situation (liens familiaux, durée de séjour) et de l'accord de son pays pour le reprendre.",
+   "axe": [
+    "soc",
+    1
+   ],
+   "id": "q124"
   }
  ],
  "axes": [
