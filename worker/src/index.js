@@ -23,7 +23,8 @@ async function idOf(endpoint) {
 const clean = (arr, ok) => (Array.isArray(arr) ? arr.filter((x) => typeof x === 'string' && (!ok || ok.includes(x))).slice(0, 20) : []);
 
 export default {
-  async fetch(req, env) {
+  async fetch(req, envIn) {
+    const env = { ALLOWED_ORIGIN: 'https://denyslx33.github.io', VAPID_SUBJECT: 'mailto:denyslx.pro@gmail.com', ...envIn };
     const url = new URL(req.url);
     if (req.method === 'OPTIONS') return cors(env, new Response(null, { status: 204 }));
 
