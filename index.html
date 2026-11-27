@@ -2757,7 +2757,8 @@ function renderAlertes() {
   if (!alSupport()) { body.append(el('div', 'albox', 'Votre navigateur ne permet pas les alertes. Essayez avec Chrome ou Safari à jour.')); return; }
   if (Notification.permission === 'denied') { body.append(el('div', 'albox', 'Les notifications sont bloquées pour l’appli. Vous pouvez les réautoriser dans les réglages de votre téléphone.')); return; }
   let on = lsGet('alTopics') || [];
-  AL_TOPICS.forEach((tp) => {
+  const list = lsGet('alTest') ? [...AL_TOPICS, { k: 'test', ic: '🧪', t: 'Alertes de test', d: 'Mode test : seuls les téléphones qui l’activent reçoivent les essais' }] : AL_TOPICS;
+  list.forEach((tp) => {
     const r = el('div', 'altog'); const i = el('span', 'ali', tp.ic); const t = el('span', 'alt'); t.append(el('b', '', tp.t), el('small', '', tp.k === 'favoris' && !getFavs().length ? 'Ajoutez d’abord un candidat en favori' : tp.d));
     const sw = el('button', 'sw'); sw.type = 'button'; sw.setAttribute('role', 'switch'); sw.setAttribute('aria-label', tp.t); sw.setAttribute('aria-checked', on.includes(tp.k));
     sw.onclick = async () => {
@@ -2776,7 +2777,7 @@ function renderAlertes() {
   if (!btn) return;
   // Mode test secret : 5 touches rapides sur le logo
   let taps = []; const logo = document.querySelector('.brand');
-  if (logo) logo.addEventListener('click', () => { const n = Date.now(); taps = taps.filter((t) => n - t < 2500); taps.push(n); if (taps.length >= 5) { taps = []; const on = !lsGet('alTest'); lsSet('alTest', on); toast(on ? 'Mode test des alertes activé' : 'Mode test désactivé'); showBell(); } });
+  if (logo) logo.addEventListener('click', () => { const n = Date.now(); taps = taps.filter((t) => n - t < 2500); taps.push(n); if (taps.length >= 5) { taps = []; const on = !lsGet('alTest'); lsSet('alTest', on); toast(on ? 'Mode test des alertes activé' : 'Mode test désactivé'); if (!on) { const t = lsGet('alTopics') || []; if (t.includes('test')) alSync(t.filter((x) => x !== 'test')); } showBell(); } });
   function showBell() { const vis = PUSH_API && (ALERTES_POUR_TOUS || lsGet('alTest') || AL_PREVIEW); btn.hidden = !vis; btn.querySelector('.adot').hidden = (lsGet('alTopics') || []).length > 0; }
   showBell();
   if (!PUSH_API) return;

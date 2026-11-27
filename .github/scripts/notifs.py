@@ -45,7 +45,7 @@ def send(topic, title, body, url='./', tag=None, cands=None, urgent=False):
 def main():
     test = os.environ.get('TEST_MSG', '').strip()
     if test:  # alerte d'essai lancée à la main depuis GitHub (onglet Actions)
-        send('majeur', 'Test Nous votons', test, './', 'test', urgent=True); return
+        send('test', 'Test Nous votons', test, './', 'test', urgent=True); return
     etat = load(ETAT, None); first = etat is None
     etat = etat or {'sondages': [], 'actu': [], 'tv': []}
     cand = {c['id']: c['nom'] for c in load('data/candidats.json', {}).get('principaux', [])}

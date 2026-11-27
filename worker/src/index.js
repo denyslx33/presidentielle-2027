@@ -2,7 +2,7 @@
 // Gratuit : Workers (100 000 requêtes/jour) + D1 (base de données).
 import { sendPush } from './webpush.js';
 
-const TOPICS = ['favoris', 'majeur', 'sondages', 'tv'];
+const TOPICS = ['favoris', 'majeur', 'sondages', 'tv', 'test']; // test : réservé aux téléphones en mode test
 const MAX_PAR_JOUR = 3;   // plafond de notifications par personne et par jour
 const LOT = 40;           // envois par appel (limite gratuite : 50 sous-requêtes)
 
