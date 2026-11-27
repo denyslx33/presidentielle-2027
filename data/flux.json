@@ -2,21 +2,28 @@
 "v": 4,
 "items": [
 {
+"t": "DIRECT. Présidentielle: Teddy Riner appelle l'État à \"prendre ses responsabilités\" pour que les peines de prison \"soient réellement\" exécutées",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T16:34:07Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Présidentielle 2027 : « L’automne est une période cruciale et trompeuse, durant laquelle les candidats se jaugent dans le miroir de l’opinion »",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/27/presidentielle-2027-l-automne-est-une-periode-cruciale-et-trompeuse-durant-laquelle-les-candidats-se-jaugent-dans-le-miroir-de-l-opinion_6815901_823448.html",
+"d": "2026-11-27T16:30:03Z",
+"qui": []
+},
+{
 "t": "Présidentielle 2027 : la tribune de députés LR en soutien à David Lisnard sonne-t-elle le début d’un mouvement plus large en sa faveur ?",
 "s": "Ouest-France",
 "u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-la-tribune-de-deputes-lr-en-soutien-a-david-lisnard-sonne-t-elle-le-debut-dun-mouvement-plus-large-en-sa-faveur-c330a704-ea4b-11f1-bb2d-c71dc7920c2a?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
 "d": "2026-11-27T16:24:15Z",
 "qui": [
 "lisnard"
-]
-},
-{
-"t": "DIRECT. Présidentielle: Teddy Riner appelle l'État à \"prendre ses responsabilités\" pour que les peines de prison \"soient réellement\" exécutées",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T16:17:04Z",
-"qui": [
-"riner"
 ]
 },
 {
@@ -1778,15 +1785,6 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "« La France n’a plus les moyens » : Teddy Riner veut arrêter de financer la guerre en Ukraine",
-"s": "La Croix",
-"u": "https://www.la-croix.com/au-salon-des-maires-teddy-riner-retrouve-la-foule-et-la-polemique-20261125",
-"d": "2026-11-26T07:10:51Z",
-"qui": [
-"riner"
-]
 }
 ],
 "sources": {
@@ -1798,10 +1796,10 @@
 "20 Minutes": 8,
 "Ouest-France": 1,
 "BFMTV": 23,
-"France 24": "erreur: HTTPError",
+"France 24": 9,
 "La Croix": 23,
 "LCP": 39,
 "RFI": 9
 },
-"maj": "2026-11-27T16:30:29Z"
+"maj": "2026-11-27T16:45:30Z"
 }
