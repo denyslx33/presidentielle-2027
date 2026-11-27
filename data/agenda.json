@@ -160,6 +160,23 @@
    "lon": 7.1798
   },
   {
+   "date": "2026-11-30",
+   "heure": "en soirée",
+   "type": "evenement",
+   "titre": "Une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
+   "lieu": null,
+   "chaine": null,
+   "qui": [
+    "attal",
+    "lisnard",
+    "philippe",
+    "retailleau"
+   ],
+   "url": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+   "source": "BFMTV",
+   "auto": true
+  },
+  {
    "date": "2026-12-02",
    "heure": "8h45",
    "type": "evenement",

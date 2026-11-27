@@ -2521,7 +2521,7 @@ function evRow(e) {
   const dt = el('div', 'dt'); if (e.date_texte) { dt.append(el('b', null, '~'), el('span', null, MOIS[+m - 1])); } else { dt.append(el('b', null, String(+d)), el('span', null, MOIS[+m - 1])); }
   const body = el('div', 'evb'); body.append(el('div', 'kind k-' + e.type, TYPES[e.type] || e.type), el('div', 'evt', e.titre));
   const info = []; if (e.date_texte) info.push(e.date_texte); else if (e.fin) info.push('du ' + fdateLong(e.date) + ' au ' + fdateLong(e.fin)); if (e.heure) info.push(e.heure); if (e.chaine) info.push(e.chaine); if (e.lieu) info.push(e.lieu);
-  const p = el('div', 'evm'); if (info.length) p.append(el('span', null, info.join(' · '))); if (e.url) { const l = link('Source', e.url); l.className = 'src2'; l.append(svgI('chev')); p.append(l); } body.append(p);
+  const p = el('div', 'evm'); if (info.length) p.append(el('span', null, info.join(' · '))); if (e.url) { const l = link(e.source ? 'Annoncé par ' + e.source : 'Source', e.url); l.className = 'src2'; l.append(svgI('chev')); p.append(l); } body.append(p);
   const km = distKm(e); if (km != null) { const dd = el('div', 'dist'); dd.insertAdjacentHTML('afterbegin', PIN_SVG); dd.append('à ' + (km < 1 ? 'moins de 1' : Math.round(km)) + ' km de ' + LOC.nom); body.append(dd); }
   r.append(dt, body); return r;
 }

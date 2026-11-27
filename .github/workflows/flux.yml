@@ -4,7 +4,7 @@ on:
     - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
   push:
-    paths: [".github/scripts/flux.py", ".github/scripts/visuels.py", ".github/workflows/flux.yml"]
+    paths: [".github/scripts/flux.py", ".github/scripts/visuels.py", ".github/scripts/agenda_auto.py", ".github/workflows/flux.yml"]
 permissions:
   contents: write
 concurrency: flux
@@ -15,6 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 .github/scripts/flux.py
+      - run: python3 .github/scripts/agenda_auto.py || true
       - run: python3 .github/scripts/visuels.py || true
       - run: |
           git add data/flux.json data/agenda.json
