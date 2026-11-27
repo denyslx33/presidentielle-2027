@@ -754,6 +754,14 @@ body.qfocus .topbar, body.qfocus #status, body.qfocus #inscr { display:none !imp
 #v-test .qres { background:none; border:0; padding:0; margin-top:8px; }
 #v-test .qres > h2.sect { margin:0 0 8px; }
 #v-test .qres > p.muted { font:400 12px/16px 'Asap', sans-serif; color:#626161; margin:0 0 16px; }
+#v-test .qth .tr { background:#fff; border-radius:15px; padding:10px 12px; margin:0 0 6px; }
+#v-test .qth .tt { font-weight:700; font-size:14px; color:#022A70; margin-bottom:6px; }
+#v-test .qth .tw { display:flex; flex-direction:column; gap:6px; }
+#v-test .qth .tc { display:flex; align-items:center; gap:10px; background:none; border:0; padding:0; font:inherit; color:inherit; text-align:left; cursor:pointer; }
+#v-test .qth .tc .av { width:36px; height:36px; flex:none; border:0; }
+#v-test .qth .tc span { flex:1; font-size:14px; }
+#v-test .qth .tc small { color:#5573A7; font-size:13px; white-space:nowrap; }
+#v-test .qth .tn { font-size:13px; }
 #v-test .qres .res { display:flex; align-items:center; gap:10px; background:#fff; border:0; border-radius:15px; padding:8px 10px 8px 8px; margin:0 0 6px; }
 #v-test .qres .res .av { width:50px; height:50px; border:0; flex:none; }
 #v-test .qres .res .info { flex:1; min-width:0; }
@@ -1717,7 +1725,7 @@ function renderQuizRes() {
   if (main.some((r) => r.n < 5)) d.append(el('p', 'muted', '« Peu fiable » : moins de 5 positions connues dans ce test. Un 100 % sur 3 questions dit beaucoup moins qu’un 80 % sur 10.'));
   if (few.length) d.append(el('p', 'muted', 'Pas assez de positions connues pour : ' + few.map((r) => r.c.nom).join(', ') + '.'));
   if (main.length) { const sr = el('button', 'sharecard'); sr.type = 'button'; sr.innerHTML = '<span class="ic">' + FICS.share + '</span><span class="tx"><b>Partager mon résultat en image</b><small>Seulement si vous le souhaitez</small></span>' + FICS.th.replace('#011944', '#fff'); sr.onclick = () => shareResult(main.slice(0, 3)); d.append(sr); }
-  d.append(sensBlock(Q));
+  d.append(themeBlock(Q), sensBlock(Q));
   const byId = new Map(CAND.principaux.map((c) => [c.id, c]));
   const srcUrl = (c) => (c.programme && (c.programme.url || c.programme.recap)) || (c.source_mesures && c.source_mesures.url) || '';
   const det = el('details', 'qsrc'); const dsm = el('summary'); dsm.append(fsvg('th'), el('span', null, 'Les sources, question par question')); det.append(dsm);
@@ -1752,6 +1760,28 @@ function renderQuizRes() {
   box.replaceChildren(d);
 }
 
+
+// Thème par thème : le candidat le plus proche sur chaque thème du test (au moins 2 positions connues)
+function themeBlock(Q) {
+  const sb = el('div', 'qth'); const themes = [...new Set(Q.map((q) => q.theme))];
+  const lines = [];
+  for (const t of themes) {
+    const idx = Q.map((q, i) => i).filter((i) => Q[i].theme === t && (QANS[i] === 1 || QANS[i] === -1));
+    if (!idx.length) continue;
+    const rs = CAND.principaux.map((c) => { let n = 0, ok = 0; idx.forEach((i) => { const p = Q[i].pos[c.id]; if (p) { n++; if (p === QANS[i]) ok++; } }); return { c, n, ok, adj: (ok + 1) / (n + 2) }; })
+      .filter((r) => r.n >= 2).sort((a, b) => b.adj - a.adj || b.n - a.n);
+    const row = el('div', 'tr'); row.append(el('div', 'tt', t));
+    if (!rs.length) { row.append(el('div', 'muted tn', 'Pas assez de positions connues')); lines.push(row); continue; }
+    if (rs[0].ok / rs[0].n < 0.6) { row.append(el('div', 'muted tn', 'Aucun candidat ne vous ressemble nettement sur ce thème')); lines.push(row); continue; }
+    const top = rs.filter((r) => r.adj === rs[0].adj && r.n === rs[0].n).slice(0, 2);
+    const who = el('div', 'tw');
+    for (const r of top) { const b = el('button', 'tc'); b.type = 'button'; b.append(avatar(r.c), el('span', null, r.c.nom), el('small', null, r.ok + '/' + r.n)); b.onclick = () => openFiche(r.c.id); who.append(b); }
+    row.append(who); lines.push(row);
+  }
+  if (!lines.length) return sb;
+  sb.append(el('h2', 'sect qsub', 'Thème par thème'), el('p', 'muted', 'Le candidat le plus proche de vous sur chaque thème de ce test, parmi ceux qui ont au moins 2 positions connues sur ce thème.'), ...lines);
+  return sb;
+}
 
 function sensBlock(Q) {
   const sb = el('div', 'sens'); const AX = QUIZ.axes || []; if (!AX.length) return sb;
