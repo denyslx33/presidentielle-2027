@@ -31,10 +31,10 @@ main { max-width:760px; margin:0 auto; padding: calc(env(safe-area-inset-top) + 
 .fbw { position:relative; }
 .fbo { position:absolute; left:0; right:0; bottom:0; height:45%; pointer-events:none; -webkit-backdrop-filter:blur(var(--fb, 2px)); backdrop-filter:blur(var(--fb, 2px)); -webkit-mask-image:linear-gradient(to bottom, transparent, #000 85%); mask-image:linear-gradient(to bottom, transparent, #000 85%); transition:opacity .2s; }
 .fbw.end .fbo { opacity:0; }
+.fbo, #pgblur { display:none !important; } #h-pod::after { content:none !important; }
 #h-pod { position:relative; }
 #h-pod::after { content:""; position:absolute; left:0; right:0; bottom:0; height:18%; pointer-events:none; -webkit-backdrop-filter:blur(4px); backdrop-filter:blur(4px); -webkit-mask-image:linear-gradient(to bottom, transparent, #000); mask-image:linear-gradient(to bottom, transparent, #000); }
 #pgblur { position:fixed; left:0; right:0; bottom:0; height:calc(env(safe-area-inset-bottom) + 150px); z-index:9; pointer-events:none; display:none; -webkit-backdrop-filter:blur(4px); backdrop-filter:blur(4px); -webkit-mask-image:linear-gradient(to bottom, transparent, #000 75%); mask-image:linear-gradient(to bottom, transparent, #000 75%); }
-body[data-v="actualites"] #pgblur, body[data-v="candidats"] #pgblur { display:block; }
 body.qfocus #pgblur { display:none !important; }
 .tvscroll { max-height:220px; overflow-y:auto; scrollbar-width:none; }
 .tvscroll::-webkit-scrollbar { display:none; }
