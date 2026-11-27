@@ -2,15 +2,58 @@
 "v": 4,
 "items": [
 {
+"t": "Bruno Retailleau",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/gouvernement/bruno-retailleau_DN-202410030418.html",
+"d": "2026-11-27T18:26:53Z",
+"qui": [
+"retailleau"
+]
+},
+{
+"t": "Edouard Philippe",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/edouard-philippe_DN-202108310657.html",
+"d": "2026-11-27T18:26:53Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "Présidentielle 2027: les quatre candidats de la droite et du centre se réuniront lundi autour de Gérard Larcher pour trouver un mode de départage",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-les-quatre-candidats-de-la-droite-et-du-centre-se-reuniront-lundi-autour-de-gerard-larcher-pour-trouver-un-mode-de-departage_AN-202611270837.html",
+"d": "2026-11-27T18:26:53Z",
+"qui": []
+},
+{
+"t": "Gabriel Attal",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/gabriel-attal_DN-202108310662.html",
+"d": "2026-11-27T18:26:53Z",
+"qui": [
+"attal"
+]
+},
+{
 "t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T18:11:45Z",
+"d": "2026-11-27T18:25:19Z",
 "qui": [
 "attal",
 "lisnard",
 "philippe",
 "retailleau"
+]
+},
+{
+"t": "Programme de David Lisnard sur la politique pénale: \"Nous promettons la création de 30.000 places de prison et 5.000 postes de greffiers et juges\", détaille Thomas Elexhauser, son porte-parole",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-programme-de-david-lisnard-sur-la-politique-penale-nous-promettons-la-creation-de-30-000-places-de-prison-et-5-000-postes-de-greffiers-et-juges-detaille-thomas-elexhauser-son-porte-parole_VN-202611270827.html",
+"d": "2026-11-27T18:12:46Z",
+"qui": [
+"lisnard"
 ]
 },
 {
@@ -442,15 +485,6 @@
 ]
 },
 {
-"t": "Bruno Retailleau",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/gouvernement/bruno-retailleau_DN-202410030418.html",
-"d": "2026-11-27T13:08:04Z",
-"qui": [
-"retailleau"
-]
-},
-{
 "t": "INFO BFMTV. Présidentielle: LR ne sanctionnera pas les huit députés signataires d'une tribune en soutien à David Lisnard",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/info-bfmtv-presidentielle-lr-ne-sanctionnera-pas-les-huit-deputes-signataires-d-une-tribune-en-soutien-a-david-lisnard_AN-202611270580.html",
@@ -740,15 +774,6 @@
 "d": "2026-11-27T10:36:13Z",
 "qui": [
 "riner"
-]
-},
-{
-"t": "Edouard Philippe",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/edouard-philippe_DN-202108310657.html",
-"d": "2026-11-27T10:35:33Z",
-"qui": [
-"philippe"
 ]
 },
 {
@@ -1760,31 +1785,6 @@
 "qui": [
 "melenchon"
 ]
-},
-{
-"t": "Présidentielle 2027 : Les Ecologistes confrontés au risque de leur disparition",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/idees/article/2026/11/26/presidentielle-2027-les-ecologistes-confrontes-au-risque-de-leur-disparition_6815522_3232.html",
-"d": "2026-11-26T11:00:04Z",
-"qui": []
-},
-{
-"t": "Écrits antisémites attribués à Jordan Bardella: \"Il est clair que Jordan Bardella a menti\", déclare Raphaël Glucksmann",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-ecrits-antisemites-attribues-a-jordan-bardella-il-est-clair-que-jordan-bardella-a-menti-declare-raphael-glucksmann_VN-202611260524.html",
-"d": "2026-11-26T10:38:18Z",
-"qui": [
-"glucksmann"
-]
-},
-{
-"t": "Le baiser de la mort de Jean-Philippe Tanguy à David Lisnard",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/le-baiser-de-la-mort-de-jean-philippe-tanguy-a-david-lisnard-20261126_P7H33BM7AFDERHQLOKX6DZR76A/",
-"d": "2026-11-26T10:34:36Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
@@ -1801,5 +1801,5 @@
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T18:15:29Z"
+"maj": "2026-11-27T18:30:33Z"
 }
