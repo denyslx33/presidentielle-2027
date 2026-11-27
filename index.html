@@ -1602,7 +1602,8 @@ function renderQuiz() {
   const box = $('quiz'); if (!QUIZ || !CAND) { box.textContent = 'Chargement…'; return; }
   if (!RUNQ) {
     const r = lsGet('quizRun'); const byId = new Map(QUIZ.questions.map((q) => [q.id, q]));
-    if (r && Array.isArray(r.ids) && r.ids.every((i) => byId.has(i)) && Array.isArray(r.ans) && r.ans.length === r.ids.length) {
+    // Un test laissé en cours n'est pas repris à la réouverture : seul un test terminé garde son résultat
+    if (r && Array.isArray(r.ids) && r.ids.every((i) => byId.has(i)) && Array.isArray(r.ans) && r.ans.length === r.ids.length && r.ans.every((a) => a !== null && a !== undefined)) {
       RUNQ = r.ids.map((i) => byId.get(i)); QANS = r.ans; QI = QANS.every((a) => a !== null && a !== undefined) ? RUNQ.length : Math.max(0, QANS.findIndex((a) => a === null));
     } else drawRun();
   }
