@@ -649,6 +649,15 @@
 "qui": []
 },
 {
+"t": "Présidentielle 2027 : Jean-Luc Mélenchon se défend d’être germanophobe et loue Karl Marx et Ludwig van Beethoven",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-jean-luc-melenchon-se-defend-detre-germanophobe-et-loue-karl-marx-et-ludwig-van-beethoven-27-11-2026-TYNQD2HDAFAPLLQ7KSCVHHI2BY.php",
+"d": "2026-11-27T12:00:00Z",
+"qui": [
+"melenchon"
+]
+},
+{
 "t": "MIDI ÉCO - Fiscalité, allocation, logement, emploi, garde...les propositions d'Édouard Philippe pour la natalité",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-midi-eco-fiscalite-allocation-logement-emploi-garde-les-propositions-d-edouard-philippe-pour-la-natalite_VN-202611270539.html",
@@ -1776,15 +1785,6 @@
 "qui": [
 "melenchon"
 ]
-},
-{
-"t": "Après ses propos hostiles à l'Allemagne et ses projets de renforcement de son armée, Jean-Luc Mélenchon est à Berlin pour présenter son livre",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/politique/melenchon/les-relations-compliquees-de-jean-luc-melenchon-avec-l-allemagne_8301105.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-26T11:15:58Z",
-"qui": [
-"melenchon"
-]
 }
 ],
 "sources": {
@@ -1792,7 +1792,7 @@
 "franceinfo": 7,
 "Libération": 22,
 "Le Figaro": 7,
-"Le Parisien": 54,
+"Le Parisien": 55,
 "20 Minutes": 9,
 "Ouest-France": 2,
 "BFMTV": 23,
@@ -1801,5 +1801,5 @@
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T18:38:03Z"
+"maj": "2026-11-27T18:45:30Z"
 }
