@@ -2792,17 +2792,16 @@ async function alSub(create) {
   return sub;
 }
 async function alSync(topics) {
-  lsSet('alTopics', topics);
-  if (!PUSH_API) return true;
+  if (!PUSH_API) { lsSet('alTopics', topics); return true; }
   let etape = 'debut';
   try {
-    if (!topics.length) { const sub = await alSub(false); if (sub) { await fetch(PUSH_API + '/unsubscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ endpoint: sub.endpoint }) }); await sub.unsubscribe(); } return true; }
+    if (!topics.length) { lsSet('alTopics', topics); const sub = await alSub(false); if (sub) { await fetch(PUSH_API + '/unsubscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ endpoint: sub.endpoint }) }); await sub.unsubscribe(); } return true; }
     etape = 'permission';
     if (Notification.permission !== 'granted' && (await Notification.requestPermission()) !== 'granted') { alErr('refus'); return false; }
     etape = 'abonnement'; const sub = await alSub(true);
     etape = 'serveur';
     const r = await fetch(PUSH_API + '/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ subscription: sub.toJSON(), topics, favs: getFavs() }) });
-    if (r.ok) { gcCount('alertes-' + topics.length, 'Alertes activées', true); return true; }
+    if (r.ok) { lsSet('alTopics', topics); gcCount('alertes-' + topics.length, 'Alertes activées', true); return true; }
     alErr('serveur-' + r.status); return false;
   } catch (e) { alErr(etape + '-' + ((e && e.name) || 'erreur')); return false; }
 }
