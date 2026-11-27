@@ -20,18 +20,6 @@
 ]
 },
 {
-"t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T19:29:34Z",
-"qui": [
-"attal",
-"lisnard",
-"philippe",
-"retailleau"
-]
-},
-{
 "t": "Jean-Luc Mélenchon",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
@@ -97,6 +85,15 @@
 ]
 },
 {
+"t": "Fuite d’informations confidentielles vers le RN : Ambroise de Rancourt, le responsable du programme présidentiel de Marine Le Pen, soupçonné d’être le principal destinataire",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/societe/article/2026/11/27/ambroise-de-rancourt-le-responsable-du-programme-presidentiel-de-marine-le-pen-soupconne-d-etre-le-principal-destinataire-de-la-fuite-de-documents-de-beauvau-vers-le-rn_6815924_3224.html",
+"d": "2026-11-27T18:35:49Z",
+"qui": [
+"lepen"
+]
+},
+{
 "t": "Bruno Retailleau",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/gouvernement/bruno-retailleau_DN-202410030418.html",
@@ -128,6 +125,18 @@
 "d": "2026-11-27T18:26:53Z",
 "qui": [
 "attal"
+]
+},
+{
+"t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T18:25:19Z",
+"qui": [
+"attal",
+"lisnard",
+"philippe",
+"retailleau"
 ]
 },
 {
@@ -1780,19 +1789,10 @@
 "qui": [
 "philippe"
 ]
-},
-{
-"t": "« Le tremplin d’une ambition présidentielle » : Bally Bagayoko demande à David Lisnard de renoncer à son mandat à la tête de l’AMF",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/politique/le-tremplin-dune-ambition-presidentielle-bally-bagayoko-demande-a-david-lisnard-de-renoncer-a-son-mandat-a-la-tete-de-lamf-26-11-2026-44CCG7WVARADFMYPWQUD35KL3M.php",
-"d": "2026-11-26T12:00:00Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
-"Le Monde": 7,
+"Le Monde": 8,
 "franceinfo": 7,
 "Libération": 21,
 "Le Figaro": 7,
@@ -1805,5 +1805,5 @@
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T20:00:34Z"
+"maj": "2026-11-27T20:15:30Z"
 }
