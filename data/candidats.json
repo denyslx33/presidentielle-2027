@@ -75,7 +75,12 @@
      }
     ]
    },
-   "bloc": "eg"
+   "bloc": "eg",
+   "liens": {
+    "site": "https://www.nathalie-arthaud.info/",
+    "x": "https://x.com/n_arthaud",
+    "instagram": "https://www.instagram.com/nathalie_arthaud_lo/"
+   }
   },
   {
    "id": "attal",
@@ -177,7 +182,10 @@
      }
     ]
    },
-   "bloc": "c"
+   "bloc": "c",
+   "liens": {
+    "site": "https://attalpresident.fr/"
+   }
   },
   {
    "id": "bouamrane",
@@ -222,7 +230,12 @@
      }
     ]
    },
-   "bloc": "g"
+   "bloc": "g",
+   "liens": {
+    "site": "https://karimbouamrane2027.org/",
+    "x": "https://x.com/karim_bouamrane",
+    "instagram": "https://www.instagram.com/karimbouamrane/"
+   }
   },
   {
    "id": "dupont-aignan",
@@ -317,7 +330,12 @@
      }
     ]
    },
-   "bloc": "d"
+   "bloc": "d",
+   "liens": {
+    "site": "https://www.dupontaignan.fr/",
+    "x": "https://x.com/dupontaignan",
+    "instagram": "https://www.instagram.com/dupontaignan/"
+   }
   },
   {
    "id": "glucksmann",
@@ -420,7 +438,11 @@
      }
     ]
    },
-   "bloc": "g"
+   "bloc": "g",
+   "liens": {
+    "site": "https://glucks2027.fr/",
+    "instagram": "https://www.instagram.com/raphaelglucksmann/"
+   }
   },
   {
    "id": "lepen",
@@ -524,7 +546,12 @@
      }
     ]
    },
-   "bloc": "ed"
+   "bloc": "ed",
+   "liens": {
+    "site": "https://marinelepen.com/",
+    "x": "https://x.com/MLP_officiel",
+    "instagram": "https://www.instagram.com/marine_lepen/"
+   }
   },
   {
    "id": "lisnard",
@@ -626,7 +653,11 @@
      }
     ]
    },
-   "bloc": "d"
+   "bloc": "d",
+   "liens": {
+    "site": "https://www.unenouvelleenergie.fr/",
+    "x": "https://x.com/davidlisnard"
+   }
   },
   {
    "id": "melenchon",
@@ -732,7 +763,12 @@
      }
     ]
    },
-   "bloc": "eg"
+   "bloc": "eg",
+   "liens": {
+    "site": "https://melenchon2027.fr/",
+    "x": "https://x.com/jlmelenchon",
+    "instagram": "https://www.instagram.com/jlmelenchon/"
+   }
   },
   {
    "id": "philippe",
@@ -840,7 +876,12 @@
      }
     ]
    },
-   "bloc": "c"
+   "bloc": "c",
+   "liens": {
+    "site": "https://www.edouardphilippe.fr/",
+    "x": "https://x.com/EPhilippe_LH",
+    "instagram": "https://www.instagram.com/edouardphilippelh/"
+   }
   },
   {
    "id": "polony",
@@ -920,7 +961,12 @@
      }
     ]
    },
-   "bloc": null
+   "bloc": null,
+   "liens": {
+    "site": "https://natachapolony2027.fr/",
+    "x": "https://x.com/NPolony",
+    "instagram": "https://www.instagram.com/natachapolony2027/"
+   }
   },
   {
    "id": "retailleau",
@@ -1024,7 +1070,10 @@
      }
     ]
    },
-   "bloc": "d"
+   "bloc": "d",
+   "liens": {
+    "x": "https://x.com/brunoretailleau"
+   }
   },
   {
    "id": "riner",
@@ -1067,7 +1116,10 @@
      }
     ]
    },
-   "bloc": null
+   "bloc": null,
+   "liens": {
+    "x": "https://x.com/teddyriner"
+   }
   },
   {
    "id": "roussel",
@@ -1332,7 +1384,12 @@
      }
     ]
    },
-   "bloc": null
+   "bloc": null,
+   "liens": {
+    "site": "https://lafrancehumaniste.fr/",
+    "x": "https://x.com/LFHumaniste",
+    "instagram": "https://www.instagram.com/lafrancehumaniste/"
+   }
   },
   {
    "id": "zemmour",
@@ -1428,7 +1485,12 @@
      }
     ]
    },
-   "bloc": "ed"
+   "bloc": "ed",
+   "liens": {
+    "site": "https://www.ericzemmour.fr/",
+    "x": "https://x.com/ZemmourEric",
+    "instagram": "https://www.instagram.com/ericzemmour_/"
+   }
   }
  ],
  "autres": [
