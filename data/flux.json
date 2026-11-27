@@ -2,24 +2,58 @@
 "v": 4,
 "items": [
 {
+"t": "Les aéroports français plaident contre une éventuelle politique de « décroissance » après l’élection présidentielle de 2027",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/economie/aeronautique/les-aeroports-francais-plaident-contre-une-eventuelle-politique-de-decroissance-apres-lelection-presidentielle-de-2027-c97754b0-ea7c-11f1-8e4e-f44a9b15a834?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-27T17:10:40Z",
+"qui": []
+},
+{
+"t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T17:08:41Z",
+"qui": [
+"attal",
+"lisnard",
+"philippe",
+"retailleau"
+]
+},
+{
+"t": "Présidentielle: Ségolène Royal juge qu'il y a \"un certain mépris\" à l'encontre de Teddy Riner",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-segolene-royal-juge-qu-il-y-a-un-certain-mepris-a-l-encontre-de-teddy-riner_VN-202611270751.html",
+"d": "2026-11-27T17:03:50Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Position de Teddy Riner sur l'Ukraine: \"Sur des sujets complexes, il faut accepter la diversité des points de vue\", estime Ségolène Royal, ancienne ministre socialiste",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-position-de-teddy-riner-sur-l-ukraine-sur-des-sujets-complexes-il-faut-accepter-la-diversite-des-points-de-vue-estime-segolene-royal-ancienne-ministre-socialiste_VN-202611270744.html",
+"d": "2026-11-27T17:00:12Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Présidentielle 2027: \"On est sur un candidat neuf\", explique Christophe Naegelen, président du groupe LIOT à l’Assemblée, soutien de David Lisnard",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-on-est-sur-un-candidat-neuf-explique-christophe-naegelen-president-du-groupe-liot-a-l-assemblee-soutien-de-david-lisnard_VN-202611270742.html",
+"d": "2026-11-27T16:57:55Z",
+"qui": [
+"lisnard"
+]
+},
+{
 "t": "\"Disciple de Marx\" et \"amateur\" de Beethoven : à Berlin, Mélenchon se défend d'être germanophobe",
 "s": "France 24",
 "u": "https://www.france24.com/fr/france/20261127-allemagne-disciple-marx-amateur-beethoven-visite-berlin-m%C3%A9lenchon-livre-se-d%C3%A9fend-germanophobe",
 "d": "2026-11-27T16:48:40Z",
 "qui": [
 "melenchon"
-]
-},
-{
-"t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T16:45:26Z",
-"qui": [
-"attal",
-"lisnard",
-"philippe",
-"retailleau"
 ]
 },
 {
@@ -1752,57 +1786,21 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "Propos de Teddy Riner sur l'Ukraine: \"Comment tu peux dire ça?\", questionne Robert Ménard, maire DVD de Béziers",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-propos-de-teddy-riner-sur-l-ukraine-comment-tu-peux-dire-ca-questionne-robert-menard-maire-dvd-de-beziers_VN-202611260385.html",
-"d": "2026-11-26T08:12:51Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "\"Si je suis venu ce matin ici, c'est pour dire: ça suffit\": Bruno Retailleau devant le campus Nation de la Sorbonne Nouvelle bloqué par des étudiants",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-si-je-suis-venu-ce-matin-ici-c-est-pour-dire-ca-suffit-bruno-retailleau-devant-le-campus-nation-de-la-sorbonne-nouvelle-bloque-par-des-etudiants_VN-202611260375.html",
-"d": "2026-11-26T07:59:19Z",
-"qui": [
-"retailleau"
-]
-},
-{
-"t": "Candidature de David Lisnard: \"Je l'ai sous-estimé\", explique Robert Ménard, maire de Béziers",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-candidature-de-david-lisnard-je-l-ai-sous-estime-explique-robert-menard-maire-de-beziers_VN-202611260364.html",
-"d": "2026-11-26T07:52:27Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Nouvelles révélations sur des écrits antisémites attribués à Jordan Bardella : \"Une polémique parmi mille autres\", réagit Charles Alloncle, porte-parole UDR de Marine Le Pen",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/politique/nouvelles-revelations-sur-des-ecrits-antisemites-attribues-a-jordan-bardella-une-polemique-parmi-mille-autres-reagit-charles-alloncle-porte-parole-udr-de-marine-le-pen_8300934.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-26T07:52:14Z",
-"qui": [
-"lepen"
-]
 }
 ],
 "sources": {
-"Le Monde": 8,
+"Le Monde": 7,
 "franceinfo": 5,
-"Libération": 22,
+"Libération": 21,
 "Le Figaro": 7,
 "Le Parisien": 52,
 "20 Minutes": 8,
-"Ouest-France": 0,
+"Ouest-France": 1,
 "BFMTV": 23,
-"France 24": 9,
+"France 24": "erreur: HTTPError",
 "La Croix": 23,
 "LCP": 39,
 "RFI": 9
 },
-"maj": "2026-11-27T17:00:29Z"
+"maj": "2026-11-27T17:15:29Z"
 }
