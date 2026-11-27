@@ -2,12 +2,39 @@
 "v": 4,
 "items": [
 {
+"t": "Éric Zemmour placé sous le statut de témoin assisté dans l’enquête sur des prêts consentis au parti Reconquête",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/politique/eric-zemmour/eric-zemmour-place-sous-le-statut-de-temoin-assiste-dans-lenquete-sur-des-prets-consentis-au-parti-reconquete-569b0752-ea6d-11f1-bb2d-c71dc7920c2a?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-27T14:39:46Z",
+"qui": [
+"zemmour"
+]
+},
+{
 "t": "DIRECT. Présidentielle 2027 : Marine Le Pen renouvelle sa confiance à Jordan Bardella et veut obliger les journalistes à respecter le secret de l'instruction",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-marine-le-pen-va-presenter-son-programme-pour-les-outre-mer-en-pleine-tourmente-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8302521.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-27T14:30:31Z",
+"d": "2026-11-27T14:39:39Z",
 "qui": [
 "lepen"
+]
+},
+{
+"t": "DIRECT. Présidentielle: Teddy Riner appelle l'État à \"prendre ses responsabilités\" pour que les peines de prison \"soient réellement\" exécutées",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T14:36:39Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Prêts consentis au parti Reconquête : Eric Zemmour placé sous le statut de témoin assisté",
+"s": "Libération",
+"u": "https://www.liberation.fr/politique/prets-consentis-au-parti-reconquete-eric-zemmour-place-sous-le-statut-de-temoin-assiste-20261127_QLJIEHRDZFEU3CPDABPUOLK25Y/",
+"d": "2026-11-27T14:34:48Z",
+"qui": [
+"zemmour"
 ]
 },
 {
@@ -24,15 +51,6 @@
 "d": "2026-11-27T14:27:08Z",
 "qui": [
 "zemmour"
-]
-},
-{
-"t": "DIRECT. Présidentielle: Teddy Riner appelle l'État à \"prendre ses responsabilités\" pour que les peines de prison \"soient réellement\" exécutées",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T14:19:23Z",
-"qui": [
-"riner"
 ]
 },
 {
@@ -1771,39 +1789,21 @@
 "lepen",
 "melenchon"
 ]
-},
-{
-"t": "Présidentielle 2027 : « La démocratie, c’est le vote »… Lisnard refuse le débat proposé par Philippe",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4265806-20261125-presidentielle-2027-democratie-vote-lisnard-refuse-debat-propose-philippe?at_medium=display&at_campaign=149",
-"d": "2026-11-25T22:06:30Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "\"Ne votez pas par colère\", demande Dominique de Villepin, candidat à la présidentielle",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-ne-votez-pas-par-colere-demande-dominique-de-villepin-candidat-a-la-presidentielle_VN-202611250986.html",
-"d": "2026-11-25T21:34:07Z",
-"qui": [
-"villepin"
-]
 }
 ],
 "sources": {
 "Le Monde": 7,
 "franceinfo": 6,
-"Libération": 22,
+"Libération": 23,
 "Le Figaro": 7,
 "Le Parisien": 53,
 "20 Minutes": 6,
-"Ouest-France": 1,
+"Ouest-France": 2,
 "BFMTV": 24,
 "France 24": 9,
 "La Croix": 23,
 "LCP": 38,
 "RFI": 9
 },
-"maj": "2026-11-27T14:30:31Z"
+"maj": "2026-11-27T14:40:35Z"
 }
