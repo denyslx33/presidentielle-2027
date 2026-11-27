@@ -1608,7 +1608,8 @@
     ]
    },
    "bloc": "d",
-   "a_verifier": "Mesures tirées de sa campagne 2017 : vérifier qu'elles sont reprises en 2027."
+   "a_verifier": "Mesures tirées de sa campagne 2017 : vérifier qu'elles sont reprises en 2027.",
+   "vu_sondage": "2026-11-10"
   },
   {
    "id": "philippot",
@@ -1669,7 +1670,8 @@
     "themes": []
    },
    "bloc": null,
-   "a_verifier": "À passer en fiche seulement s'il officialise sa candidature."
+   "a_verifier": "À passer en fiche seulement s'il officialise sa candidature.",
+   "vu_sondage": "2024-12-09"
   },
   {
    "id": "kazib",
