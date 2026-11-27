@@ -575,18 +575,23 @@
    "q": "Il faut ajouter une part de retraite par capitalisation.",
    "pos": {
     "attal": 1,
-    "retailleau": 1
+    "retailleau": 1,
+    "lisnard": 1
    },
    "src": {
     "attal": "Un pilier de capitalisation pour les retraites",
-    "retailleau": "Une part de retraite par capitalisation pour les nouveaux entrants (25 à 30 %)"
+    "retailleau": "Une part de retraite par capitalisation pour les nouveaux entrants (25 à 30 %)",
+    "lisnard": "Retraite par capitalisation obligatoire"
    },
    "id": "q27",
    "exp": "Aujourd'hui, les pensions sont payées par les cotisations des actifs : c'est la répartition. Avec la capitalisation, chacun épargne et place de l'argent pour financer sa propre retraite.",
    "axe": [
     "eco",
     1
-   ]
+   ],
+   "srcu": {
+    "lisnard": "https://www.20minutes.fr/politique/4266335-20261127-presidentielle-2027-capitalisation-obligatoire-moins-normes-resume-programme-david-lisnard?at_medium=display&at_campaign=149"
+   }
   },
   {
    "theme": "Économie",
@@ -933,15 +938,20 @@
    "pos": {
     "melenchon": 1,
     "tondelier": 1,
-    "glucksmann": 1
+    "glucksmann": 1,
+    "retailleau": 1
    },
    "src": {
     "melenchon": "Fin de Parcoursup",
     "tondelier": "Remplacer Parcoursup et MonMaster",
-    "glucksmann": "Refonte de Parcoursup"
+    "glucksmann": "Refonte de Parcoursup",
+    "retailleau": "Supprimer Parcoursup"
    },
    "id": "q50",
-   "exp": "La plateforme nationale qui gère depuis 2018 les candidatures des lycéens dans l'enseignement supérieur."
+   "exp": "La plateforme nationale qui gère depuis 2018 les candidatures des lycéens dans l'enseignement supérieur.",
+   "srcu": {
+    "retailleau": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/27/presidentielle-2027-bruno-retailleau-devoile-son-programme-pour-l-enseignement-superieur-en-souhaitant-la-suppression-de-parcoursup_6815889_6205049.html"
+   }
   },
   {
    "theme": "Éducation",

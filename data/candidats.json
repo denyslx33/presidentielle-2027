@@ -513,7 +513,8 @@
        "Rétablir les peines planchers",
        "Supprimer réductions et aménagements de peine pour les violences",
        "Présomption de légitime défense pour les forces de l'ordre",
-       "85 000 places de prison"
+       "85 000 places de prison",
+       "Obliger les journalistes à respecter le secret de l'instruction"
       ]
      },
      {
@@ -593,7 +594,8 @@
        "Supprimer la C3S et la CVAE (11,5 Md€)",
        "Contrat de travail unique fusionnant CDI et CDD",
        "Pension minimale dès 65 ans, minimum vieillesse à 1 000 €",
-       "Charges négatives pour embaucher des bénéficiaires du RSA de longue durée"
+       "Charges négatives pour embaucher des bénéficiaires du RSA de longue durée",
+       "Retraite par capitalisation obligatoire"
       ]
      },
      {
@@ -1033,7 +1035,8 @@
        "Une École normale du professorat par académie",
        "Plus de temps pour lire, écrire, compter",
        "1 000 établissements publics innovants d'ici 2032",
-       "Examen d'entrée en sixième et groupes de niveau évolutifs"
+       "Examen d'entrée en sixième et groupes de niveau évolutifs",
+       "Supprimer Parcoursup"
       ]
      },
      {
@@ -1123,6 +1126,12 @@
        "Pouvoir travailler plus sans remettre en cause les 35 heures",
        "Réformer les retraites",
        "Dépenser moins et mieux réinvestir pour réduire la dette"
+      ]
+     },
+     {
+      "theme": "Éducation",
+      "mesures": [
+       "Plus de sport à l'école"
       ]
      },
      {
