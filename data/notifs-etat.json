@@ -64,7 +64,21 @@
 "tv": [],
 "fav": {
 "lepen": "2026-11-27",
-"lisnard": "2026-11-27",
+"lisnard": {
+"d": "2026-11-27",
+"n": 1,
+"t": "2026-11-27T16:59+01:00",
+"w": [
+[
+"bfmtv",
+"deputes",
+"sanctionnera",
+"signataires",
+"soutien",
+"tribune"
+]
+]
+},
 "melenchon": "2026-11-27",
 "zemmour": "2026-11-27",
 "retailleau": "2026-11-27"
