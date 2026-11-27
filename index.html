@@ -2117,7 +2117,7 @@ const ICS = { chev: '<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
 function svgI(k) { const t = document.createElement('template'); t.innerHTML = ICS[k]; return t.content.firstChild; }
 const APP_URL = 'https://denyslx33.github.io/presidentielle-2027/';
 const SHARE_TXT = "Nous votons : toute la présidentielle 2027 dans une appli. Sondages, candidats, programmes, actu et le test « Quel candidat me représente le mieux ? ». Gratuite, neutre, sans pub et sans compte.";
-function toast(t) { const d = el('div', 'toast', t); document.body.append(d); setTimeout(() => d.remove(), 2200); }
+function toast(t) { const d = el('div', 'toast', t); document.body.append(d); setTimeout(() => d.remove(), Math.max(2200, String(t).length * 55)); }
 async function copyLink() { try { await navigator.clipboard.writeText(APP_URL); toast('Lien copié'); } catch (e) { prompt('Copiez le lien :', APP_URL); } }
 function shareSheet() {
   const body = $('sheet-body'); const enc = encodeURIComponent; const msg = SHARE_TXT + ' ' + APP_URL;
@@ -2790,14 +2790,28 @@ async function alSub(create) {
 async function alSync(topics) {
   lsSet('alTopics', topics);
   if (!PUSH_API) return true;
+  let etape = 'debut';
   try {
     if (!topics.length) { const sub = await alSub(false); if (sub) { await fetch(PUSH_API + '/unsubscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ endpoint: sub.endpoint }) }); await sub.unsubscribe(); } return true; }
-    if (Notification.permission !== 'granted' && (await Notification.requestPermission()) !== 'granted') return false;
-    const sub = await alSub(true);
+    etape = 'permission';
+    if (Notification.permission !== 'granted' && (await Notification.requestPermission()) !== 'granted') { alErr('refus'); return false; }
+    etape = 'abonnement'; const sub = await alSub(true);
+    etape = 'serveur';
     const r = await fetch(PUSH_API + '/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ subscription: sub.toJSON(), topics, favs: getFavs() }) });
-    if (r.ok) gcCount('alertes-' + topics.length, 'Alertes activées', true);
-    return r.ok;
-  } catch (e) { return false; }
+    if (r.ok) { gcCount('alertes-' + topics.length, 'Alertes activées', true); return true; }
+    alErr('serveur-' + r.status); return false;
+  } catch (e) { alErr(etape + '-' + ((e && e.name) || 'erreur')); return false; }
+}
+// Message clair selon la cause, et compteur anonyme pour repérer les téléphones qui coincent
+let AL_ERR = '';
+function alErr(code) {
+  AL_ERR = code; try { gcCount('alerte-erreur-' + code, 'Alerte impossible : ' + code, true); } catch (e) {}
+}
+function alErrTexte() {
+  if (AL_ERR === 'refus') return 'Notifications refusées. Autorisez‑les pour ce site dans les réglages du navigateur, puis réessayez.';
+  if (AL_ERR.startsWith('abonnement')) return 'Votre navigateur refuse les alertes (mode privé ou économie d’énergie ?). Essayez avec Chrome à jour, hors navigation privée.';
+  if (AL_ERR.startsWith('serveur')) return 'Le serveur des alertes ne répond pas. Réessayez dans un instant.';
+  return 'Impossible pour le moment, réessayez';
 }
 function renderAlertes() {
   const body = document.getElementById('al-body'); body.replaceChildren();
@@ -2816,7 +2830,7 @@ function renderAlertes() {
       const want = !on.includes(tp.k); const next = want ? [...on, tp.k] : on.filter((x) => x !== tp.k);
       sw.disabled = true; sw.setAttribute('aria-checked', want);
       const ok = await alSync(next); sw.disabled = false;
-      if (ok) { on = next; toast(want ? 'Alerte activée' : 'Alerte coupée'); } else { sw.setAttribute('aria-checked', !want); toast('Impossible pour le moment, réessayez'); }
+      if (ok) { on = next; toast(want ? 'Alerte activée' : 'Alerte coupée'); } else { sw.setAttribute('aria-checked', !want); toast(alErrTexte()); }
       document.querySelector('#b-alert .adot').hidden = on.length > 0;
     };
     r.append(i, t, sw); body.append(r);
