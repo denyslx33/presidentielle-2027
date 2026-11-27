@@ -2,6 +2,15 @@
 "v": 4,
 "items": [
 {
+"t": "Journalistes et secret de l’instruction : comprendre ce que dit le droit après les déclarations de Marine Le Pen",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/societe/article/2026/11/27/journalistes-et-secret-de-l-instruction-comprendre-ce-que-dit-le-droit-apres-les-declarations-de-marine-le-pen_6815927_3224.html",
+"d": "2026-11-27T19:14:46Z",
+"qui": [
+"lepen"
+]
+},
+{
 "t": "David Lisnard, c'est Zemmour 2022 ou Macron 2017 ?",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/elections/david-lisnard-c-est-zemmour-2022-ou-macron-2017_8303160.html#xtor=RSS-3-%5Bpolitique%5D",
@@ -1778,30 +1787,21 @@
 "qui": [
 "philippe"
 ]
-},
-{
-"t": "Messages antisémites : en 2013, Jordan Bardella aurait reproché à Jean-Luc Mélenchon de soutenir Israël",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/politique/messages-antisemites-en-2013-jordan-bardella-aurait-reproche-a-jean-luc-melenchon-de-soutenir-israel-26-11-2026-K2HVVRR3VBCY7BUUZWE43RBLFU.php",
-"d": "2026-11-26T12:00:00Z",
-"qui": [
-"melenchon"
-]
 }
 ],
 "sources": {
-"Le Monde": 6,
+"Le Monde": 7,
 "franceinfo": 7,
 "Libération": 22,
 "Le Figaro": 7,
 "Le Parisien": 56,
 "20 Minutes": 9,
-"Ouest-France": 1,
-"BFMTV": 19,
+"Ouest-France": 0,
+"BFMTV": 23,
 "France 24": 9,
 "La Croix": 23,
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T19:15:29Z"
+"maj": "2026-11-27T19:30:30Z"
 }
