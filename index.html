@@ -1905,11 +1905,12 @@ function renderPres() {
   $('h-pres-sub').textContent = 'à moins de ' + LOC.r + ' km';
   $('h-pres-in').replaceChildren(...evs.map(evRow));
 }
+const NEWS_BANNER = false; // bandeau « Nouveau dans l’appli » masqué pour l’instant
 function renderNewsBanner() {
   const box = $('h-new'); if (!box) return;
   let vu = null; try { vu = localStorage.getItem('newsBan'); } catch (e) {}
   const age = (Date.now() - new Date(NEWS.date + 'T00:00:00')) / 864e5;
-  box.hidden = vu === NEWS.v || age > 14;
+  box.hidden = !NEWS_BANNER || vu === NEWS.v || age > 14;
   $('h-new-go').onclick = () => { openNews(); gcCount('nouveautes-ouvert', 'Nouveautés ouvertes', true); };
   $('h-new-x').onclick = () => { try { localStorage.setItem('newsBan', NEWS.v); } catch (e) {} box.hidden = true; };
 }
