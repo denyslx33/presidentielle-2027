@@ -2,6 +2,52 @@
 "v": 4,
 "items": [
 {
+"t": "Jean-Luc Mélenchon",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
+"d": "2026-11-27T22:28:11Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "En déplacement en Allemagne, Jean-Luc Mélenchon affirme vouloir refuser \"d'aider les Américains à faire la guerre aux Chinois\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/la-france-insoumise/en-deplacement-en-allemagne-jean-luc-melenchon-affirme-vouloir-refuser-d-aider-les-americains-a-faire-la-guerre-aux-chinois_AD-202611270940.html",
+"d": "2026-11-27T22:28:11Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "\"Un projet exigeant, solide et ambitieux\": l'analyse du programme de Bruno Retailleau par François-Xavier Bellamy, vice-président des Républicains",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-un-projet-exigeant-solide-et-ambitieux-l-analyse-du-programme-de-bruno-retailleau-par-francois-xavier-bellamy-vice-president-des-republicains_VN-202611270939.html",
+"d": "2026-11-27T22:25:08Z",
+"qui": [
+"retailleau"
+]
+},
+{
+"t": "En cas de victoire à la présidentielle, Jean-Luc Mélenchon entamera « immédiatement » des discussions avec la Chine, qualifiée « d’alliée »",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/politique/jean-luc-melenchon/en-cas-de-victoire-a-la-presidentielle-jean-luc-melenchon-entamera-immediatement-des-discussions-avec-la-chine-qualifiee-dalliee-634e9192-eaab-11f1-bb2d-c71dc7920c2a?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-27T22:23:35Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "DIRECT. Présidentielle: François-Xavier Bellamy assure qu'\"il n'y a pas de divergence de ligne\" entre Bruno Retailleau et David Lisnard",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T21:59:19Z",
+"qui": [
+"lisnard",
+"retailleau"
+]
+},
+{
 "t": "Présidentielle 2027 : Marine Le Pen veut geler toutes les discussions institutionnelles en outre-mer",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/27/presidentielle-2027-marine-le-pen-veut-geler-toutes-les-discussions-institutionnelles-en-outre-mer_6815933_823448.html",
@@ -69,27 +115,6 @@
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-mouvement-lyceen-c-etait-nous-qui-faisions-le-barrage-entre-les-flics-et-les-jeunes-affirme-jean-luc-melenchon_VN-202611270887.html",
 "d": "2026-11-27T19:48:56Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T19:29:34Z",
-"qui": [
-"attal",
-"lisnard",
-"philippe",
-"retailleau"
-]
-},
-{
-"t": "Jean-Luc Mélenchon",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
-"d": "2026-11-27T19:18:46Z",
 "qui": [
 "melenchon"
 ]
@@ -1766,32 +1791,6 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "Présidentielle 2027 : Edouard Philippe passe à l’offensive face à David Lisnard",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/politique/article/2026/11/26/presidentielle-2027-edouard-philippe-passe-a-l-offensive-face-a-david-lisnard_6815527_823448.html",
-"d": "2026-11-26T12:00:07Z",
-"qui": [
-"lisnard",
-"philippe"
-]
-},
-{
-"t": "Présidentielle 2027 : Marine Le Pen propose un barème progressif à cinq tranches pour l’impôt sur les sociétés",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-marine-le-pen-propose-un-bareme-progressif-a-cinq-tranches-pour-limpot-sur-les-societes-26-11-2026-6Y7VWED4SZB6PFPUCM37VYVOPA.php",
-"d": "2026-11-26T12:00:00Z",
-"qui": []
-},
-{
-"t": "Présidentielle 2027 : après les propos de Riner sur l'Ukraine, Macron appelle à ne « pas créer de doute et de trouble »",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-dernier-jour-du-congres-des-maires-premier-deplacement-en-region-de-teddy-riner-26-11-2026-IYAKVLLACJF2XKI27PCGJEG74U.php",
-"d": "2026-11-26T12:00:00Z",
-"qui": [
-"riner"
-]
 }
 ],
 "sources": {
@@ -1801,12 +1800,12 @@
 "Le Figaro": 7,
 "Le Parisien": 56,
 "20 Minutes": 8,
-"Ouest-France": 0,
-"BFMTV": 20,
+"Ouest-France": 1,
+"BFMTV": 19,
 "France 24": 9,
 "La Croix": 23,
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T22:15:33Z"
+"maj": "2026-11-27T22:30:29Z"
 }
