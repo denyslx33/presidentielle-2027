@@ -2803,16 +2803,16 @@ async function alSync(topics) {
     const r = await fetch(PUSH_API + '/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ subscription: sub.toJSON(), topics, favs: getFavs() }) });
     if (r.ok) { lsSet('alTopics', topics); gcCount('alertes-' + topics.length, 'Alertes activées', true); return true; }
     alErr('serveur-' + r.status); return false;
-  } catch (e) { alErr(etape + '-' + ((e && e.name) || 'erreur')); return false; }
+  } catch (e) { alErr(etape + '-' + ((e && e.name) || 'erreur')); AL_DET = ((e && e.name) || '') + ((e && e.message) ? ' : ' + String(e.message).slice(0, 80) : ''); return false; }
 }
 // Message clair selon la cause, et compteur anonyme pour repérer les téléphones qui coincent
-let AL_ERR = '';
+let AL_ERR = '', AL_DET = '';
 function alErr(code) {
   AL_ERR = code; try { gcCount('alerte-erreur-' + code, 'Alerte impossible : ' + code, true); } catch (e) {}
 }
 function alErrTexte() {
   if (AL_ERR === 'refus') return 'Notifications refusées. Autorisez‑les pour ce site dans les réglages du navigateur, puis réessayez.';
-  if (AL_ERR.startsWith('abonnement')) return 'Votre navigateur refuse les alertes (mode privé ou économie d’énergie ?). Essayez avec Chrome à jour, hors navigation privée.';
+  if (AL_ERR.startsWith('abonnement')) return 'Votre navigateur refuse les alertes (mode privé ou économie d’énergie ?). Essayez avec Chrome à jour, hors navigation privée.' + (AL_DET ? ' (code : ' + AL_DET + ')' : '');
   if (AL_ERR.startsWith('serveur')) return 'Le serveur des alertes ne répond pas. Réessayez dans un instant.';
   return 'Impossible pour le moment, réessayez';
 }
