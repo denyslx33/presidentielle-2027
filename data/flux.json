@@ -5,9 +5,43 @@
 "t": "« C’est ma dernière campagne » : Éric Zemmour annonce qu’il ne briguera plus l’Élysée après la Présidentielle 2027",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/cest-ma-derniere-campagne-eric-zemmour-annonce-quil-ne-briguera-plus-lelysee-apres-la-presidentielle-2027-27-11-2026-IH6CFANF7FGSNGZZ47MCRJSVGM.php",
-"d": "2026-11-27T09:05:39Z",
+"d": "2026-11-27T10:12:07Z",
 "qui": [
 "zemmour"
+]
+},
+{
+"t": "Présidentielle 2027 : en cas de second tour entre Mélenchon et Le Pen, Benoît Payan annonce qu’il votera « sans problème » pour l’Insoumis",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-en-cas-de-second-tour-entre-melenchon-et-le-pen-benoit-payan-annonce-quil-votera-sans-probleme-pour-linsoumis-27-11-2026-XUMI2DOVNVBGNEIQENV3IVV6P4.php",
+"d": "2026-11-27T10:12:07Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "DIRECT. Présidentielle 2027 : Gérald Darmanin appelle Edouard Philippe à présenter \"un projet, une vision\"",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-marine-le-pen-va-presenter-son-programme-pour-les-outre-mer-en-pleine-tourmente-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8302521.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-27T10:03:36Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "DIRECT. Présidentielle 2027: pour la députée Danielle Simonnet, la volonté de LFI est de \"poursuivre l'esprit des purges\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T10:03:19Z",
+"qui": []
+},
+{
+"t": "Présidentielle 2027 : Nicolas Dupont-Aignan veut arrêter l’aide française à l’Ukraine, accusée d’« alimenter le conflit »",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/27/presidentielle-2027-nicolas-dupont-aignan-veut-arreter-l-aide-francaise-a-l-ukraine-accusee-d-alimenter-le-conflit_6815835_823448.html",
+"d": "2026-11-27T10:00:33Z",
+"qui": [
+"dupont-aignan"
 ]
 },
 {
@@ -17,15 +51,6 @@
 "d": "2026-11-27T09:05:39Z",
 "qui": [
 "lepen",
-"philippe"
-]
-},
-{
-"t": "DIRECT. Présidentielle 2027 : Gérald Darmanin appelle Edouard Philippe à présenter \"un projet, une vision\"",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-marine-le-pen-va-presenter-son-programme-pour-les-outre-mer-en-pleine-tourmente-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8302521.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-27T09:03:14Z",
-"qui": [
 "philippe"
 ]
 },
@@ -73,11 +98,14 @@
 ]
 },
 {
-"t": "DIRECT. Présidentielle 2027: Bruno Le Maire estime que le RN est \"la pire arnaque de la vie politique française\"",
+"t": "\"Je ne mettrai jamais un bulletin pour un parti extrême\", déclare Bruno Le Maire, en cas de duel Le Pen/Mélenchon au second tour",
 "s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T07:57:05Z",
-"qui": []
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-je-ne-mettrai-jamais-un-bulletin-pour-un-parti-extreme-declare-bruno-le-maire-en-cas-de-duel-le-pen-melenchon-au-second-tour_VN-202611270362.html",
+"d": "2026-11-27T08:01:56Z",
+"qui": [
+"lepen",
+"melenchon"
+]
 },
 {
 "t": "Bruno Le Maire juge que Teddy Riner \"a tort\" sur l'aide à l'Ukraine",
@@ -104,6 +132,15 @@
 "d": "2026-11-27T07:43:17Z",
 "qui": [
 "glucksmann"
+]
+},
+{
+"t": "\"David Lisnard pourrait embarquer avec nous, s'il veut se débarrasser du macronisme\", estime Sébastien Chenu, le vice-président RN de l'Assemblée",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/le-7-40-franceinfo-du-vendredi-27-novembre-2026_8291366.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-27T07:42:12Z",
+"qui": [
+"lisnard"
 ]
 },
 {
@@ -1755,42 +1792,6 @@
 "qui": [
 "lepen"
 ]
-},
-{
-"t": "Présidentielle: \"Il faut une primaire\", souligne Frédéric Masquelier, maire de Saint-Raphaël et soutien de David Lisnard",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-il-faut-une-primaire-souligne-frederic-masquelier-maire-de-saint-raphael-et-soutien-de-david-lisnard_VN-202611250784.html",
-"d": "2026-11-25T16:56:25Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Présidentielle 2027 : le large succès de David Lisnard auprès des maires l’installe dans la course à l’Élysée",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/presidentielle-2027-le-large-succes-de-david-lisnard-aupres-des-maires-l-installe-dans-la-course-a-lelysee-20261125",
-"d": "2026-11-25T16:45:48Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "L'EFFET GRABLY - Présidentielle 2027: David Lisnard poursuit son ascension",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-l-effet-grably-presidentielle-2027-david-lisnard-poursuit-son-ascension_VN-202611250768.html",
-"d": "2026-11-25T16:33:24Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "\"Ce n’est pas notre guerre\": Teddy Riner \"ne comprend pas qu’on envoie des troupes en Ukraine\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/ce-n-est-pas-notre-guerre-teddy-riner-ne-comprend-pas-qu-on-envoie-des-troupes-en-ukraine_AV-202611250763.html",
-"d": "2026-11-25T16:29:53Z",
-"qui": [
-"riner"
-]
 }
 ],
 "sources": {
@@ -1798,14 +1799,14 @@
 "franceinfo": 6,
 "Libération": 19,
 "Le Figaro": 7,
-"Le Parisien": 55,
-"20 Minutes": 8,
-"Ouest-France": 3,
-"BFMTV": 17,
+"Le Parisien": 53,
+"20 Minutes": 7,
+"Ouest-France": 0,
+"BFMTV": 14,
 "France 24": 8,
 "La Croix": 23,
 "LCP": 38,
 "RFI": 9
 },
-"maj": "2026-11-27T09:05:39Z"
+"maj": "2026-11-27T10:12:07Z"
 }
