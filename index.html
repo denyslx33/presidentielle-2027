@@ -473,6 +473,65 @@ details.sec.acc[open] { padding-bottom:12px; }
 .cautres { margin-top:32px; }
 .cautres h3 { font:400 16px 'Asap', sans-serif; color:var(--ink); margin:16px 0 6px; } .cautres h3:first-child { margin-top:0; }
 .cautres .foot p { margin:0 0 4px; } .cautres .foot a { color:inherit; }
+/* Fiche candidat */
+#v-fiche .fback { display:inline-flex; align-items:center; gap:2px; font:500 12px 'Asap', sans-serif; color:#5573A7; padding:2px 0 8px; }
+#v-fiche .fnav { display:flex; justify-content:space-between; gap:8px; margin:0 0 14px; }
+#v-fiche .fnav:last-child { margin:24px 0 8px; }
+#v-fiche .fpill { display:inline-flex; align-items:center; gap:5px; background:#fff; border:0; border-radius:100px; padding:6px 10px 6px 6px; font:400 12px 'Asap', sans-serif; color:#012157; cursor:pointer; max-width:48%; }
+#v-fiche .fpill.n { padding:6px 6px 6px 10px; }
+#v-fiche .fpill.n svg { transform:scaleX(-1); }
+#v-fiche .fpill span { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+#v-fiche .fpill .av { width:18px; height:18px; font-size:7px; flex:none; border:0; }
+#v-fiche .fhead { text-align:center; margin:0 0 8px; }
+#v-fiche .ftop { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+#v-fiche .since { font:500 12px 'Asap', sans-serif; color:#5573A7; text-align:left; }
+#v-fiche .facts { display:flex; gap:6px; }
+#v-fiche .fic { width:31px; height:31px; padding:0; border:0; background:none; cursor:pointer; border-radius:50%; }
+#v-fiche .fic svg { display:block; }
+#v-fiche .fic.on .bm { fill:#022E7B; }
+#v-fiche .favw { position:relative; display:inline-block; width:100px; height:100px; }
+#v-fiche .favw > .av { width:100px; height:100px; font-size:32px; border:0; }
+#v-fiche .flogo { position:absolute; right:-26px; bottom:-4px; width:52px; height:52px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center; overflow:hidden; box-shadow:0 0 0 2px #F8F8F8; margin:0; }
+#v-fiche .flogo img { max-width:38px; max-height:38px; object-fit:contain; }
+#v-fiche .fhead h2 { font:600 28px/32px 'Asap', sans-serif; color:#011334; margin:10px 0 2px; }
+#v-fiche .fhead .party { font:400 12px 'Asap', sans-serif; color:#626161; }
+#v-fiche .fhead .big { font:400 20px 'Capriola', 'Asap', sans-serif; color:#022A70; font-style:normal; margin-top:10px; }
+#v-fiche .fmeta { font:400 12px 'Asap', sans-serif; color:#626161; margin:2px 0 0; }
+#v-fiche .fbul { list-style:none; padding:0; margin:14px 0 0; text-align:left; }
+#v-fiche .fbul li { position:relative; padding-left:14px; font:400 12px/16px 'Asap', sans-serif; color:#011334; margin-bottom:6px; }
+#v-fiche .fbul li::before { content:''; position:absolute; left:0; top:5px; width:6px; height:6px; border-radius:50%; background:#022A70; }
+#v-fiche .fbul.big { background:#fff; border-radius:15px; padding:16px; }
+#v-fiche .fbul.big li { padding-left:16px; margin-bottom:10px; }
+#v-fiche .fbul.big li:last-child { margin-bottom:0; }
+#v-fiche .fbul.big li::before { width:8px; height:8px; top:4px; }
+#v-fiche .fsec { margin-top:30px; }
+#v-fiche .fsec > h2.sect, #v-fiche .fsh h2.sect { margin:0 0 12px; }
+#v-fiche .fsh { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; }
+#v-fiche .flire { display:flex; flex-direction:column; align-items:center; gap:3px; text-decoration:none; font:400 10px 'Gidole', 'Asap', sans-serif; color:#022A70; flex:none; }
+#v-fiche .flire .ic { width:42px; height:42px; border-radius:50%; background:#E6EAF2; display:flex; align-items:center; justify-content:center; }
+#v-fiche .flire .ic svg { width:34px; height:32px; }
+#v-fiche .fgauge svg { display:block; width:100%; max-width:345px; margin:0 auto; }
+#v-fiche .fgauge .gt { font:600 16px 'Asap', sans-serif; fill:#011334; }
+#v-fiche .gl { display:flex; justify-content:space-between; max-width:345px; margin:4px auto 0; font:500 12px 'Asap', sans-serif; color:#8B9FC2; }
+#v-fiche .fnote { font:400 12px/16px 'Asap', sans-serif; color:#626161; margin:12px 0 0; }
+#v-fiche .fnote a { color:#5573A7; }
+#v-fiche .ftxt { font:500 18px/22px 'Asap', sans-serif; color:#011944; margin:0 0 8px; }
+#v-fiche .fsrc { display:inline-flex; align-items:center; gap:1px; font:400 12px 'Asap', sans-serif; color:#5573A7; text-decoration:underline; margin-top:8px; }
+#v-fiche .fsrc svg { width:15px; height:15px; }
+#v-fiche .fsrc svg path { stroke:#5573A7; }
+#v-fiche .fsrcs { display:flex; gap:16px; flex-wrap:wrap; }
+#v-fiche .fth { background:#fff; border-radius:15px; margin-bottom:8px; }
+#v-fiche .fth summary { list-style:none; display:flex; align-items:center; gap:6px; padding:8px; font:500 18px 'Asap', sans-serif; color:#011944; cursor:pointer; }
+#v-fiche .fth summary::-webkit-details-marker { display:none; }
+#v-fiche .fth summary svg { flex:none; transition:transform .15s; }
+#v-fiche .fth[open] summary svg { transform:rotate(90deg); }
+#v-fiche .fth summary span { flex:1; }
+#v-fiche .fth summary em { font:400 12px 'Capriola', 'Asap', sans-serif; font-style:normal; color:#5573A7; }
+#v-fiche .fth .fbul { margin:0; padding:4px 16px 14px; }
+#v-fiche .ncard.noav .avs { display:none; }
+#v-fiche .ncard.noav .bd, #v-fiche .ncard.noav .avs:has(.av + .av) + .bd { padding:8px; border-radius:10px; }
+#v-fiche .fsec p.muted { font:400 12px/16px 'Asap', sans-serif; color:#626161; margin:10px 0 0; }
+#v-fiche .lnk { display:flex; width:fit-content; margin-left:auto; }
 </style>
 </head>
 <body>
@@ -644,7 +703,7 @@ details.sec.acc[open] { padding-bottom:12px; }
 
   <!-- FICHE CANDIDAT -->
   <section class="view" id="v-fiche">
-    <button class="back" id="back">‹ Candidats</button>
+    <button class="back fback" id="back"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10.0594 3.89185L5.9407 8.01053M5.95126 7.99997L10.0594 12.1081" stroke-width="1.5" stroke-linecap="round" stroke="#5573A7"/></svg>Candidats</button>
     <div id="fiche"></div>
   </section>
 
@@ -1579,68 +1638,98 @@ function openAgenda() { setAMode('agenda'); showView('actu'); }
 function sortedCands() { return CAND.principaux.slice().sort((a, b) => nomFamille(a.nom).localeCompare(nomFamille(b.nom), 'fr')); }
 let CUR = null;
 const BLOCS = [['eg', 'Extrême gauche'], ['g', 'Gauche'], ['c', 'Centre'], ['d', 'Droite'], ['ed', 'Extrême droite']];
+const FICS = {
+  fav: '<svg width="31" height="31" viewBox="0 0 31 31" fill="none" aria-hidden="true"><circle cx="15.5" cy="15.5" r="15.5" fill="#fff"/><path class="bm" d="M18.7163 8.83624H12.2896C10.8696 8.83624 9.71631 9.99624 9.71631 11.4096V20.8029C9.71631 22.0029 10.5763 22.5096 11.6296 21.9296L14.883 20.1229C15.2296 19.9296 15.7896 19.9296 16.1296 20.1229L19.383 21.9296C20.4363 22.5162 21.2963 22.0096 21.2963 20.8029V11.4096C21.2896 9.99624 20.1363 8.83624 18.7163 8.83624Z" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke="#022E7B"/></svg>',
+  share: '<svg width="31" height="31" viewBox="0 0 31 31" fill="none" aria-hidden="true"><circle cx="15.5" cy="15.5" r="15.5" fill="#fff"/><path d="M9.20503 11.1799V17.8008C9.20503 20.0099 10.9959 21.8008 13.205 21.8008H19.8259" stroke-width="1.2" stroke-linecap="round" stroke="#022A70"/><path d="M15.0543 15.103C14.82 15.3373 14.82 15.7172 15.0543 15.9515C15.2886 16.1859 15.6685 16.1859 15.9029 15.9515L15.4786 15.5273L15.0543 15.103ZM15.4786 15.5273L15.9029 15.9515L22.225 9.62935L21.8008 9.20508L21.3765 8.78082L15.0543 15.103L15.4786 15.5273ZM22.4008 9.20508C22.4008 8.87371 22.1321 8.60508 21.8008 8.60508L16.4008 8.60508C16.0694 8.60508 15.8008 8.87371 15.8008 9.20508C15.8008 9.53646 16.0694 9.80508 16.4008 9.80508L21.2008 9.80508L21.2008 14.6051C21.2008 14.9365 21.4694 15.2051 21.8008 15.2051C22.1321 15.2051 22.4008 14.9365 22.4008 14.6051L22.4008 9.20508Z" fill="#022A70"/></svg>',
+  prog: '<svg width="44" height="41" viewBox="0 0 44 41" fill="none" aria-hidden="true"><path d="M12.9296 18.7142L14.8573 20.4426L18.048 16.6536" stroke-width="1.5" stroke-linecap="round" stroke="#022A70"/><path d="M12.9294 27.4701L14.8572 29.1984L18.0479 25.4094" stroke-width="1.5" stroke-linecap="round" stroke="#022A70"/><path d="M22.6495 16.6536L27.0696 21.051M27.0696 16.6536L22.6495 21.051" stroke-width="1.5" stroke-linecap="round" stroke="#022A70"/><path d="M22.6495 25.4094L27.0696 29.8069M27.0696 25.4094L22.6495 29.8069" stroke-width="1.5" stroke-linecap="round" stroke="#022A70"/><path d="M8.84106 13.8407C8.84106 12.0391 10.3015 10.5786 12.1031 10.5786H27.897C29.6985 10.5786 31.159 12.0391 31.159 13.8407" stroke-width="1.5" stroke-linecap="round" stroke="#022A70"/><rect x="13.3619" y="8.94336" width="13.2759" height="3.27065" rx="1.63532" fill="#E6EAF2" stroke-width="1.5" stroke="#022A70"/><path d="M35.2376 35.2219L36.0626 34.397C37.0088 33.4508 37.0087 31.9167 36.0626 30.9705C35.1164 30.0243 33.5823 30.0243 32.6361 30.9705L27.7427 35.8639C26.7965 36.8101 26.7965 38.3442 27.7427 39.2904C28.6889 40.2365 30.223 40.2365 31.1692 39.2904L32.3468 38.1127M34.4409 33.0821L33.6159 33.907C32.6697 34.8532 32.6697 36.3873 33.6159 37.3334C34.5621 38.2796 36.0962 38.2796 37.0424 37.3334L41.9358 32.44C42.8819 31.4939 42.8819 29.9598 41.9358 29.0136C40.9896 28.0674 39.4555 28.0674 38.5093 29.0136L37.3317 30.1912" stroke-width="1.5" stroke="#022E7B"/></svg>',
+  th: '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7.21576 5.66699L12.7842 10.793M12.7699 10.7787L7.21576 16.3329" stroke-width="2" stroke-linecap="round" stroke="#011944"/></svg>',
+  back: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10.0594 3.89185L5.9407 8.01053M5.95126 7.99997L10.0594 12.1081" stroke-width="1.5" stroke-linecap="round" stroke="#5573A7"/></svg>',
+  nav: '<svg width="11" height="20" viewBox="0 0 11 20" fill="none" aria-hidden="true"><path d="M7.79779 5.59882L3.20225 9.82922M3.21404 9.81743L7.79779 14.4012" stroke-width="1.2" stroke-linecap="round" stroke="#022A70"/></svg>',
+};
+const fsvg = (k) => { const t = document.createElement('template'); t.innerHTML = FICS[k]; return t.content.firstChild; };
+const GAUGE = ['M40.0927 79.5272C21.0159 106.69 10.7815 139.06 10.7815 172.235H64.6877C64.6877 150.118 71.5106 128.538 84.2285 110.43L40.0927 79.5272Z', 'M120.597 19.3068C89.1289 29.9542 61.7087 50.0213 42.0663 76.7789L85.5442 108.598C98.6391 90.7593 116.919 77.3812 137.898 70.2829L120.597 19.3068Z', 'M221.184 18.255C189.498 8.26788 155.502 8.26788 123.816 18.255L140.044 69.5817C161.168 62.9237 183.832 62.9237 204.956 69.5817L221.184 18.255Z', 'M302.934 76.7789C283.291 50.0213 255.871 29.9542 224.403 19.3068L207.102 70.2829C228.081 77.3812 246.361 90.7593 259.456 108.598L302.934 76.7789Z', 'M334.218 172.235C334.218 139.06 323.984 106.69 304.907 79.5272L260.771 110.43C273.489 128.538 280.312 150.118 280.312 172.235H334.218Z'];
 function hemicycle(c) {
-  const box = el('div', 'hemi'); const ns = 'http://www.w3.org/2000/svg';
-  const svg = document.createElementNS(ns, 'svg'); svg.setAttribute('viewBox', '0 0 300 165'); svg.setAttribute('role', 'img');
-  const cx = 150, cy = 150, r = 118, w = 34, gap = 2.2;
-  const pt = (a, rr) => [cx - rr * Math.cos(a * Math.PI / 180), cy - rr * Math.sin(a * Math.PI / 180)];
-  BLOCS.forEach(([k, lab], i) => {
-    const a0 = i * 36 + gap, a1 = (i + 1) * 36 - gap; const [x0, y0] = pt(a0, r), [x1, y1] = pt(a1, r), [x2, y2] = pt(a1, r - w), [x3, y3] = pt(a0, r - w);
-    const p = document.createElementNS(ns, 'path');
-    p.setAttribute('d', `M${x0},${y0} A${r},${r} 0 0 1 ${x1},${y1} L${x2},${y2} A${r - w},${r - w} 0 0 0 ${x3},${y3} Z`);
-    p.setAttribute('fill', c.bloc === k ? avColor(c.id) : 'var(--line)'); svg.append(p);
-    if (c.bloc === k) { const [tx, ty] = pt((a0 + a1) / 2, r - w / 2); const d = document.createElementNS(ns, 'circle'); d.setAttribute('cx', tx); d.setAttribute('cy', ty); d.setAttribute('r', 7); d.setAttribute('fill', 'var(--white)'); svg.append(d); }
-  });
-  const t = document.createElementNS(ns, 'text'); t.setAttribute('x', cx); t.setAttribute('y', cy - 8); t.setAttribute('text-anchor', 'middle'); t.setAttribute('class', 'hemi-t');
+  const box = el('div', 'fgauge'); const ns = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(ns, 'svg'); svg.setAttribute('viewBox', '0 0 345 183'); svg.setAttribute('role', 'img');
+  BLOCS.forEach(([k], i) => { const p = document.createElementNS(ns, 'path'); p.setAttribute('d', GAUGE[i]); p.setAttribute('fill', c.bloc === k ? '#355895' : '#E7E9F1'); svg.append(p); });
+  const t = document.createElementNS(ns, 'text'); t.setAttribute('x', '172.5'); t.setAttribute('y', '172'); t.setAttribute('text-anchor', 'middle'); t.setAttribute('class', 'gt');
   t.textContent = c.bloc ? BLOCS.find((b) => b[0] === c.bloc)[1] : 'Non classé'; svg.append(t);
   svg.setAttribute('aria-label', 'Position : ' + t.textContent); box.append(svg);
-  const lg = el('div', 'hemi-l'); lg.append(el('span', null, 'Extrême gauche'), el('span', null, 'Extrême droite')); box.append(lg);
-  const n = el('p', 'muted');
+  const lg = el('div', 'gl'); lg.append(el('span', null, 'Extrême gauche'), el('span', null, 'Extrême droite')); box.append(lg);
+  const n = el('p', 'fnote');
   n.append(c.bloc ? 'Position de son parti selon la grille officielle du ministère de l’Intérieur, qui range les partis en grands blocs pour publier les résultats des élections. Ce classement est administratif et peut être contesté par les partis. ' : 'Sans parti classé dans la grille officielle du ministère de l’Intérieur, qui range les partis en grands blocs pour publier les résultats des élections. ', link('Grille des nuances', 'https://www.conseil-etat.fr/fr/arianeweb/CE/analyse/2026-02-27/512694'));
   box.append(n); return box;
 }
+function fSrc(txt, url) { const a = link(txt, url); a.className = 'fsrc'; a.append(fsvg('th')); return a; }
+function fNav(list, i) {
+  const nav = el('div', 'fnav');
+  const prev = list[(i - 1 + list.length) % list.length], next = list[(i + 1) % list.length];
+  const mk = (c, dir) => { const b = el('button', 'fpill ' + dir); b.type = 'button'; b.setAttribute('aria-label', (dir === 'p' ? 'Précédent : ' : 'Suivant : ') + c.nom); const ic = fsvg('nav'); const av = avatar(c); if (dir === 'p') b.append(ic, av, el('span', null, c.nom)); else b.append(el('span', null, c.nom), av, ic); b.onclick = () => openFiche(c.id); return b; };
+  nav.append(mk(prev, 'p'), mk(next, 'n')); return nav;
+}
+function fSec(title) { const s = el('section', 'fsec'); const h = el('h2', 'sect'); h.innerHTML = title; s.append(h); return s; }
 function renderFiche() {
   if (!CAND || !CUR) return;
   const c = CAND.principaux.find((x) => x.id === CUR);
   if (!c) { showView('candidats'); return; }
+  const list = sortedCands(); const i = list.indexOf(c);
   const d = el('div');
-  const h = el('div', 'fhead'); h.append(avatar(c), el('h2', null, c.nom), el('div', 'party', c.parti));
-  const plg = PLOGOS[nomParti(c.parti)]; if (plg) { const im = el('img', 'plogo flogo'); im.src = 'data/partis/' + plg; im.alt = 'Logo ' + nomParti(c.parti); im.onerror = () => im.remove(); h.append(im); }
-  h.append(el('br'), favBtn(c));
+  d.append(fNav(list, i));
+  // En-tête
+  const h = el('div', 'fhead');
+  const top = el('div', 'ftop'); top.append(el('span', 'since', (c.annonce || '').replace(/\.$/, '')));
+  const acts = el('div', 'facts');
+  const fb = el('button', 'fic'); fb.type = 'button'; fb.append(fsvg('fav'));
+  const upd = () => { const on = getFavs().includes(c.id); fb.classList.toggle('on', on); fb.setAttribute('aria-label', on ? 'Retirer de mes favoris' : 'Ajouter à mes favoris'); fb.setAttribute('aria-pressed', on); };
+  fb.onclick = () => { let f = getFavs(); if (f.includes(c.id)) { f = f.filter((x) => x !== c.id); toast('Retiré de vos favoris'); } else { if (f.length >= 2) { toast('Deux favoris au maximum : retirez-en un d’abord'); return; } f.push(c.id); gcCount('favori-ajoute', 'Favori ajouté', true); toast('Ses actus s’affichent en haut de l’accueil'); } lsSet('favs', f); upd(); renderFavs(); };
+  upd();
+  const sb = el('button', 'fic'); sb.type = 'button'; sb.setAttribute('aria-label', 'Partager cette fiche'); sb.append(fsvg('share'));
+  sb.onclick = async () => { const url = APP_URL + '#c-' + c.id; gcCount('partage-fiche', 'Partage fiche', true); if (navigator.share) { try { await navigator.share({ title: c.nom + ' · Nous votons', url }); return; } catch (e) { if (e && e.name === 'AbortError') return; } } try { await navigator.clipboard.writeText(url); toast('Lien copié'); } catch (e) { shareApp(); } };
+  acts.append(fb, sb); top.append(acts); h.append(top);
+  const avw = el('div', 'favw'); avw.append(avatar(c));
+  const plg = PLOGOS[nomParti(c.parti)]; if (plg) { const lw = el('span', 'flogo'); const im = el('img'); im.src = 'data/partis/' + plg; im.alt = 'Logo ' + nomParti(c.parti); im.onerror = () => lw.remove(); lw.append(im); avw.append(lw); }
+  h.append(avw, el('h2', null, c.nom), el('div', 'party', c.parti));
   const ls = latestScore(c.nom);
-  if (ls && !silence()) { const se = ls.p.scores.find((x) => x.nom === c.nom); h.append(el('div', 'big', fmt(ls.v) + ' %'), el('div', 'muted', `Dernier sondage : ${pollMeta(ls.p)}${se && se.e != null ? ', marge d’erreur ±' + fmt(se.e) + ' pt' : ''}.`)); }
+  if (ls && !silence()) { const se = ls.p.scores.find((x) => x.nom === c.nom); h.append(el('div', 'big', fmt(ls.v) + ' %'), el('p', 'fmeta', `Dernier sondage : ${pollMeta(ls.p)}${se && se.e != null ? ', marge d’erreur ±' + fmt(se.e) + ' pt' : ''}.`)); }
+  const ul0 = el('ul', 'fbul'); (c.role || '').split(/(?<=\.)\s+/).filter(Boolean).forEach((s) => ul0.append(el('li', null, s)));
+  const tpv = TP && TP.candidats && TP.candidats[c.id]; if (tpv && tpv.parole) { const li = el('li'); li.append('Temps de parole télé et radio' + (TP.periode ? ' (' + TP.periode + ')' : '') + ' : ', el('b', null, fmtDur(tpv.parole)), ', selon l’Arcom.'); ul0.append(li); }
+  if (ul0.children.length) h.append(ul0);
   d.append(h);
-  d.append(el('h3', null, 'Sur l’échiquier politique'), hemicycle(c));
-  const tpv = TP && TP.candidats && TP.candidats[c.id]; if (tpv && tpv.parole) { const p = el('p', 'muted'); p.append('Temps de parole télé et radio' + (TP.periode ? ' (' + TP.periode + ')' : '') + ' : ', el('b', null, fmtDur(tpv.parole)), ', selon l’Arcom.'); h.append(p); }
-  const spk = silence() ? null : sparkChart(c.nom, avColor(c.id)); if (spk) { d.append(el('h3', null, 'Dans les sondages')); d.append(spk); }
-    d.append(el('p', null, c.role), el('p', 'muted', c.annonce));
-    d.append(el('h3', null, 'Mesures phares'));
-    if (c.mesures.length) { const ul = el('ul'); c.mesures.forEach((m) => ul.append(el('li', null, m))); d.append(ul); const p = el('p', 'muted'); p.append('Source : ', link(c.source_mesures.nom, c.source_mesures.url)); d.append(p); }
-    else d.append(el('p', 'muted', 'Programme 2027 pas encore publié.'));
-    const pr = c.programme;
-    if (pr && pr.themes.length) {
-      d.append(el('h3', null, 'Programme par thème'));
-      if (pr.note) d.append(el('p', 'note', pr.note));
-      pr.themes.forEach((t) => { const td = el('details', 'th'); td.append(el('summary', null, t.theme + ' (' + t.mesures.length + ')')); const ul = el('ul'); t.mesures.forEach((m) => ul.append(el('li', null, m))); td.append(ul); d.append(td); });
-      const p = el('p', 'muted'); if (pr.url) { p.append(link('Programme officiel', pr.url)); } if (pr.recap) { if (pr.url) p.append(' · '); p.append(link('Synthèse des mesures', pr.recap)); } d.append(p);
-    } else if (pr && pr.note) d.append(el('p', 'muted', pr.note));
-    d.append(el('h3', null, 'Signatures'));
-    const sp = el('p'); sp.append(c.parrainages.texte); const t1 = el('span', 'tag', 'non officiel'); sp.append(' ', t1); d.append(sp);
-    if (c.parrainages.url) { const p = el('p', 'muted'); p.append('Source : ', link(c.parrainages.source || 'voir', c.parrainages.url)); d.append(p); }
-    d.append(el('h3', null, 'Financement'));
-    if (c.finances) { d.append(el('p', null, c.finances.texte)); const p = el('p', 'muted'); p.append('Source : ', link(c.finances.source, c.finances.url)); d.append(p); }
-    else d.append(el('p', 'muted', "Pas d'information publique fiable à ce jour."));
-    const news = (ACTU ? ACTU.items : []).filter((n) => n.qui.includes(c.id)).slice(0, 3);
-    if (news.length) { d.append(el('h3', null, 'Actus')); news.forEach((n) => { const p = el('p'); p.append(el('span', 'muted', fdateLong(n.date) + ' · '), n.texte, ' '); p.append(link(n.source, n.url)); d.append(p); }); }
-    const evs = (AGENDA ? AGENDA.evenements : []).filter((e) => (e.qui || []).includes(c.id) && (e.fin || e.date) >= new Date().toISOString().slice(0, 10));
-    if (evs.length) { d.append(el('h3', null, 'Agenda')); evs.forEach((e) => d.append(evRow(e))); }
-    const list = sortedCands(); const i = list.indexOf(c);
-    const nav = el('div', 'fnav');
-    const prev = list[(i - 1 + list.length) % list.length], next = list[(i + 1) % list.length];
-    const bp = el('button', null, '‹ ' + prev.nom); bp.onclick = () => openFiche(prev.id);
-    const bn = el('button', null, next.nom + ' ›'); bn.onclick = () => openFiche(next.id);
-    nav.append(bp, bn); d.append(nav);
-    $('fiche').replaceChildren(d);
+  // Échiquier
+  const s1 = fSec('Sur l’échiquier<br>politique'); s1.append(hemicycle(c)); d.append(s1);
+  // Sondages
+  const spk = silence() ? null : sparkChart(c.nom, avColor(c.id)); if (spk) { const s2 = fSec('Dans les sondages'); s2.append(spk); d.append(s2); }
+  // Mesures phares
+  const pr = c.programme;
+  const s3 = fSec('Mesures phares'); const purl = (pr && pr.url) || (c.source_mesures && c.source_mesures.url);
+  if (purl) { const lp = link('', purl); lp.className = 'flire'; const ic = el('span', 'ic'); ic.append(fsvg('prog')); lp.append(ic, el('span', null, 'Lire le programme')); const hd = el('div', 'fsh'); hd.append(s3.firstChild, lp); s3.replaceChildren(hd); }
+  if (c.mesures.length) { const ul = el('ul', 'fbul big'); c.mesures.forEach((m) => ul.append(el('li', null, m))); s3.append(ul); if (c.source_mesures) s3.append(fSrc('Source', c.source_mesures.url)); }
+  else s3.append(el('p', 'fnote', 'Programme 2027 pas encore publié.'));
+  d.append(s3);
+  // Programme par thème
+  if (pr && pr.themes.length) {
+    const s4 = fSec('Programmes<br>par thème');
+    if (pr.note) s4.append(el('p', 'fnote', pr.note));
+    pr.themes.forEach((t) => { const td = el('details', 'fth'); const sm = el('summary'); sm.append(fsvg('th'), el('span', null, t.theme), el('em', null, String(t.mesures.length))); td.append(sm); const ul = el('ul', 'fbul'); t.mesures.forEach((m) => ul.append(el('li', null, m))); td.append(ul); s4.append(td); });
+    const p = el('div', 'fsrcs'); if (pr.url) p.append(fSrc('Programme officiel', pr.url)); if (pr.recap) p.append(fSrc('Synthèse des mesures', pr.recap)); if (p.children.length) s4.append(p);
+    d.append(s4);
+  } else if (pr && pr.note) d.append(el('p', 'fnote', pr.note));
+  // Signatures
+  const s5 = fSec('Signatures'); const sp = el('p', 'ftxt'); sp.append(c.parrainages.texte, ' ', el('span', 'tag', 'non officiel')); s5.append(sp);
+  if (c.parrainages.url) s5.append(fSrc(c.parrainages.source ? 'Source : ' + c.parrainages.source : 'Source', c.parrainages.url)); d.append(s5);
+  // Financement
+  const s6 = fSec('Financement');
+  if (c.finances) { s6.append(el('p', 'ftxt', c.finances.texte), fSrc(c.finances.source ? 'Source : ' + c.finances.source : 'Source', c.finances.url)); }
+  else s6.append(el('p', 'ftxt', "Pas d'information publique fiable à ce jour."));
+  d.append(s6);
+  // Actus
+  const byId = new Map(CAND.principaux.map((x) => [x.id, x]));
+  const news = (ACTU ? ACTU.items : []).filter((n) => n.qui.includes(c.id)).slice(0, 3);
+  if (news.length) { const s7 = fSec('Dernières actus'); news.forEach((n) => { const k = newsCard(n, byId); k.classList.add('noav'); s7.append(k); }); const lk = el('button', 'lnk'); lk.type = 'button'; lk.append(el('span', null, 'Toute l’actu'), svgI('chev')); lk.onclick = () => { setAMode('infos'); showView('actu'); }; s7.append(lk); d.append(s7); }
+  const evs = (AGENDA ? AGENDA.evenements : []).filter((e) => (e.qui || []).includes(c.id) && (e.fin || e.date) >= new Date().toISOString().slice(0, 10));
+  if (evs.length) { const s8 = fSec('Agenda'); evs.forEach((e) => s8.append(evRow(e))); d.append(s8); }
+  d.append(fNav(list, i));
+  $('fiche').replaceChildren(d);
 }
 function openFiche(id, noPush) {
   CUR = id; renderFiche(); gcCount('/candidat/' + id, 'Fiche ' + id);
