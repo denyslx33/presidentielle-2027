@@ -538,6 +538,7 @@ details.sec.acc[open] { padding-bottom:12px; }
 #c-partis .phemi { position:relative; width:324px; background:radial-gradient(circle at 50% 100%, #F8F8F8 0 20px, transparent 21px), #E7E9F1; border-radius:162px 162px 0 0; height:162px !important; }
 #c-partis .pbub { position:absolute; padding:0; border:0; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center; overflow:hidden; cursor:pointer; box-shadow:0 1px 3px rgba(1,25,68,.08); }
 #c-partis .pbub img { max-width:74%; max-height:74%; object-fit:contain; }
+#c-partis .pbub.pst { background:none; box-shadow:none; } #c-partis .pbub.pst img { max-width:100%; max-height:100%; width:100%; height:100%; }
 #c-partis .pbub .av { width:100%; height:100%; border:0; font-size:14px; }
 #c-partis .pbub .pin { font:600 13px 'Asap', sans-serif; color:#022A70; }
 #c-partis .pout { margin:20px auto 0; width:331px; max-width:100%; }
@@ -589,6 +590,23 @@ details.sec.acc[open] { padding-bottom:12px; }
 #c-retraits .rr p { font:400 12px 'Asap', sans-serif; color:#011334; margin:0; }
 #c-retraits .fsrc { display:inline-flex; align-items:center; font:500 12px 'Asap', sans-serif; color:#5573A7; text-decoration:underline; margin-top:2px; }
 #c-retraits .fsrc svg { width:15px; height:15px; } #c-retraits .fsrc svg path { stroke:#5573A7; }
+/* Actualités */
+#v-actu .frow { gap:12px; padding:4px 0 14px; }
+#v-actu .fbtn { flex:none; width:50px; display:flex; flex-direction:column; align-items:center; gap:2px; background:none; border:0; padding:0; cursor:pointer; }
+#v-actu .fbtn .av, #v-actu .fbtn .all { width:50px; height:50px; border-radius:50%; border:0; box-shadow:none; display:block; font-size:16px; }
+#v-actu .fbtn .all svg { display:block; }
+#v-actu .fbtn .l { font:400 10px 'Gidole', 'Asap', sans-serif; color:#626161; width:56px; text-align:center; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+#v-actu .fbtn.on .l { color:#022A70; }
+#v-actu .fbtn.on .av { box-shadow:0 0 0 2px #F8F8F8, 0 0 0 4px #022E7B; }
+#v-actu .fbtn:not(.on) .all circle { fill:#5573A7; }
+#v-actu .cseg-wrap { margin:0 0 20px; }
+#v-actu .acap { font:400 12px 'Asap', sans-serif; color:#626161; text-align:right; margin:0 6px 8px auto; max-width:240px; }
+#v-actu .dayh { font:600 12px 'Asap', sans-serif; color:#5573A7; text-transform:uppercase; letter-spacing:0; margin:24px 0 12px; }
+#v-actu .dayh:first-child { margin-top:4px; }
+#v-actu .ncard { margin-bottom:8px; }
+#v-actu .ncard .gen { background:#5573A7; }
+#v-actu .ncard .s .ago { color:#626161; font-size:12px; }
+#v-actu #actu-maj, #v-actu #flux-maj, #v-actu #ag-maj { font:400 12px/16px 'Asap', sans-serif; color:#626161; }
 </style>
 </head>
 <body>
@@ -902,13 +920,13 @@ details.sec.acc[open] { padding-bottom:12px; }
   <!-- ACTU -->
   <section class="view" id="v-actu">
     <div class="frow" id="chips"></div>
-    <div class="aseg" id="aseg"><button type="button" data-a="infos" class="on">📰 L'essentiel</button><button type="button" data-a="flux">⚡ En direct</button><button type="button" data-a="agenda">📅 Agenda</button></div>
+    <div class="cseg-wrap"><div class="aseg" id="aseg"><button type="button" data-a="infos" class="on"><span class="si"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.89" y="6.29" width="16.21" height="11.42" rx="2.4" stroke-width="1.2" stroke="currentColor"/><path d="M7.41 13.67H16.59M7.41 10.33H16.59" stroke-width="1.2" stroke-linecap="round" stroke="currentColor"/></svg></span>L'essentiel</button><button type="button" data-a="flux"><span class="si"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7.37517 13.5682H10.5255C10.8533 13.5682 11.0924 13.8784 11.009 14.1955L10.0332 17.9035C9.90061 18.4074 10.5307 18.7527 10.8841 18.3699L16.6766 12.0947C16.9722 11.7745 16.7451 11.2556 16.3092 11.2556H13.5243C13.1071 11.2556 12.8734 10.7748 13.1311 10.4467L15.4941 7.43928C15.7519 7.11122 15.5182 6.63037 15.1009 6.63037H10.4855C10.2995 6.63037 10.1289 6.73361 10.0426 6.89837L6.93226 12.8362C6.75787 13.1691 6.99935 13.5682 7.37517 13.5682Z" stroke-width="1.2" stroke-linejoin="round" stroke="currentColor"/></svg></span>En direct</button><button type="button" data-a="agenda"><span class="si"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><g fill="currentColor"><rect x="14.96" y="9.89" width="2.26" height="2.33" rx="1.13"/><rect x="14.96" y="14.04" width="2.26" height="2.33" rx="1.13"/><rect x="10.87" y="9.89" width="2.26" height="2.33" rx="1.13"/><rect x="10.87" y="14.04" width="2.26" height="2.33" rx="1.13"/><rect x="6.78" y="9.89" width="2.26" height="2.33" rx="1.13"/><rect x="6.78" y="14.04" width="2.26" height="2.33" rx="1.13"/><rect x="14.96" y="4" width="1.11" height="4.04" rx="0.55"/><rect x="7.93" y="4" width="1.11" height="4.04" rx="0.55"/></g><rect x="3.43" y="6.02" width="17.14" height="13.37" rx="2.4" stroke-width="1.2" stroke="currentColor"/></svg></span>Agenda</button></div></div>
     <div id="actu-infos">
     <div id="newslist"></div>
     <p class="muted" id="actu-maj" style="margin-top:12px"></p>
     </div>
     <div id="actu-flux" hidden>
-    <p class="muted" style="margin:0 0 8px">Tous les titres des médias sur la présidentielle, mis à jour automatiquement toutes les 30 minutes.</p>
+    <p class="acap">Tous les titres des médias sur la présidentielle, mis à jour automatiquement toutes les 30 minutes.</p>
     <div id="fluxlist"></div>
     <p class="muted" id="flux-maj" style="margin-top:12px"></p>
     </div>
@@ -1817,6 +1835,7 @@ function renderKeyDates() {
 }
 // ---------- Partis
 const PLOGOS = { 'La France insoumise': 'la-france-insoumise.png', 'Lutte ouvrière': 'lutte-ouvriere.svg', 'Les Écologistes': 'les-ecologistes.svg', 'Parti communiste français': 'parti-communiste-francais.svg', 'Place publique': 'place-publique.svg', 'Horizons': 'horizons.svg', 'Renaissance': 'renaissance.svg', 'Debout la France': 'debout-la-france.png', 'Les Républicains': 'les-republicains.svg', 'Rassemblement national': 'rassemblement-national.svg', 'Reconquête': 'reconquete.svg', 'La France humaniste': 'la-france-humaniste.jpg', 'Nouvelle Énergie': 'nouvelle-energie.png', 'Parti socialiste': 'parti-socialiste.svg' };
+const PASTILLES = { 'La France insoumise': 'la-france-insoumise', 'Lutte ouvrière': 'lutte-ouvriere', 'Les Écologistes': 'les-ecologistes', 'Parti communiste français': 'parti-communiste-francais', 'Place publique': 'place-publique', 'Horizons': 'horizons', 'Renaissance': 'renaissance', 'Debout la France': 'debout-la-france', 'Les Républicains': 'les-republicains', 'Rassemblement national': 'rassemblement-national', 'Reconquête': 'reconquete', 'Nouvelle Énergie': 'nouvelle-energie', 'La France humaniste': 'la-france-humaniste', polony: 'polony', riner: 'riner' };
 const nomParti = (p) => (p || '').split(' (')[0].trim();
 let SCRUT = null, SCRUT_LOAD = false;
 function loadScrut() { if (SCRUT_LOAD) return; SCRUT_LOAD = true; fetch('data/votes.json', { cache: 'no-cache' }).then((r) => r.json()).then((j) => { SCRUT = j; renderPartis(); }).catch(() => {}); }
@@ -1904,8 +1923,9 @@ function renderPartis() {
   const inHemi = BLOCS.flatMap(([k]) => all.filter((P) => P.bloc === k).sort((a, b) => a.nom.localeCompare(b.nom, 'fr')));
   const outside = all.filter((P) => P.bloc === 'sans' || P.bloc == null).sort((a, b) => a.nom.localeCompare(b.nom, 'fr'));
   const accs = new Map();
-  const bubble = (P, size) => { const b = el('button', 'pbub'); b.type = 'button'; b.setAttribute('aria-label', P.nom); b.style.width = b.style.height = size + 'px'; const lg = PLOGOS[P.nom];
-    if (lg) { const im = el('img'); im.src = 'data/partis/' + lg; im.alt = ''; im.loading = 'lazy'; im.onerror = () => { im.remove(); b.append(el('span', 'pin', P.nom.split(/\s+/).filter((w) => w.length > 2).map((w) => w[0]).join('').slice(0, 3))); }; b.append(im); }
+  const bubble = (P, size) => { const b = el('button', 'pbub'); b.type = 'button'; b.setAttribute('aria-label', P.nom); b.style.width = b.style.height = size + 'px'; const lg = PLOGOS[P.nom], pst = PASTILLES[P.nom];
+    if (pst) { b.classList.add('pst'); const im = el('img'); im.src = 'data/pastilles/' + pst + '.png'; im.alt = ''; b.append(im); }
+    else if (lg) { const im = el('img'); im.src = 'data/partis/' + lg; im.alt = ''; im.loading = 'lazy'; im.onerror = () => { im.remove(); b.append(el('span', 'pin', P.nom.split(/\s+/).filter((w) => w.length > 2).map((w) => w[0]).join('').slice(0, 3))); }; b.append(im); }
     else if (P.cands.length === 1) b.append(avatar(P.cands[0]));
     else b.append(el('span', 'pin', P.nom.split(/\s+/).filter((w) => w.length > 2).map((w) => w[0]).join('').slice(0, 3)));
     b.onclick = () => { const d = accs.get(P.nom); if (!d) return; d.open = true; d.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
@@ -1921,7 +1941,7 @@ function renderPartis() {
     inHemi.forEach((P, i) => { const st = seats[i]; const bb = bubble(P, B); bb.style.left = (st.x - B / 2) + 'px'; bb.style.top = (st.y - B / 2) + 'px'; hemi.append(bb); });
     const wrap = el('div', 'phw'); wrap.append(hemi); out.push(wrap);
   }
-  if (outside.length) { const o = el('div', 'pout'); const row = el('div', 'prow'); outside.forEach((P) => { if (P.bloc === 'sans') P.cands.forEach((c) => { const b = el('button', 'pbub'); b.type = 'button'; b.setAttribute('aria-label', c.nom + ', sans étiquette'); b.style.width = b.style.height = '52px'; b.append(avatar(c)); b.onclick = () => openFiche(c.id); row.append(b); }); else row.append(bubble(P, 52)); }); o.append(row, el('p', 'pcap', 'Sans étiquettes ou non classés')); out.push(o); }
+  if (outside.length) { const o = el('div', 'pout'); const row = el('div', 'prow'); outside.forEach((P) => { if (P.bloc === 'sans') P.cands.forEach((c) => { const b = el('button', 'pbub'); b.type = 'button'; b.setAttribute('aria-label', c.nom + ', sans étiquette'); b.style.width = b.style.height = '52px'; if (PASTILLES[c.id]) { b.classList.add('pst'); const im = el('img'); im.src = 'data/pastilles/' + PASTILLES[c.id] + '.png'; im.alt = ''; b.append(im); } else b.append(avatar(c)); b.onclick = () => openFiche(c.id); row.append(b); }); else row.append(bubble(P, 52)); }); o.append(row, el('p', 'pcap', 'Sans étiquettes ou non classés')); out.push(o); }
   const groups = BLOCS.map(([k, l]) => [k, l]).concat([['sans', 'Sans étiquette'], [null, 'Non classés'], ['autre', 'Autres partis cités dans l’actu']]);
   out.push(el('h3', 'psub', 'Le détail parti par parti'));
   for (const [k, l] of groups) {
@@ -2070,7 +2090,7 @@ function renderActu() {
   const ids = [...new Set(ACTU.items.flatMap((n) => n.qui).concat(AGENDA ? AGENDA.evenements.flatMap((e) => e.qui || []) : []).concat(FLUX ? FLUX.items.flatMap((n) => n.qui || []) : []))].filter((i) => byId.has(i)).sort((a, b) => nomFamille(byId.get(a).nom).localeCompare(nomFamille(byId.get(b).nom), 'fr'));
   const fb = (id) => {
     const b = el('button', 'fbtn' + (FILTRE === id ? ' on' : '')); b.type = 'button';
-    if (!id) { const al = el('div', 'all', '🗳️'); al.style.fontSize = '22px'; b.append(al, el('span', 'l', 'Tout')); }
+    if (!id) { const al = el('span', 'all'); al.innerHTML = '<svg width="50" height="50" viewBox="0 0 50 50" fill="none" aria-hidden="true"><circle cx="25" cy="25" r="25" fill="#022E7B"/><g stroke-width="2" stroke="#FDFDFD"><rect x="14.375" y="14.375" width="8.75" height="8.75" rx="2.5"/><rect x="14.375" y="26.875" width="8.75" height="8.75" rx="2.5"/><rect x="26.875" y="14.375" width="8.75" height="8.75" rx="2.5"/><rect x="26.875" y="26.875" width="8.75" height="8.75" rx="2.5"/></g></svg>'; b.append(al, el('span', 'l', 'Tout')); }
     else { const c = byId.get(id); b.append(avatar(c), el('span', 'l', nomFamille(c.nom))); }
     b.onclick = () => { FILTRE = id; renderActu(); renderAgenda(); };
     return b;
@@ -2104,9 +2124,9 @@ function renderFlux(byId) {
     const day = iso(new Date(n.d)); if (day !== last) { last = day; out.push(el('div', 'dayh', dayLabel(day))); }
     const a = el('a', 'ncard'); if (/^https?:\/\//.test(n.u)) { a.href = n.u; a.target = '_blank'; a.rel = 'noopener'; }
     const avs = el('div', 'avs'); const who = (n.qui || []).filter((i) => byId.has(i)).slice(0, 3);
-    if (who.length) who.forEach((i) => avs.append(avatar(byId.get(i)))); else avs.append(el('div', 'gen', '🗳️'));
-    const body = el('div'); body.append(el('div', 't', n.t));
-    const src = el('div', 's'); src.append(n.s + ' · ' + ago(n.d) + ' · ', el('b', null, 'Lire ›')); body.append(src);
+    if (who.length) who.forEach((i) => avs.append(avatar(byId.get(i)))); else avs.append(el('div', 'gen'));
+    const body = el('div', 'bd'); body.append(el('div', 't', n.t));
+    const src = el('div', 's'); const go = el('span', 'go'); go.append(el('span', null, 'Lire l’article'), svgI('chev')); src.append(el('span', null, n.s), el('span', 'ago', ago(n.d)), go); body.append(src);
     a.append(avs, body); out.push(a);
   }
   if (!items.length) out.push(el('p', 'muted', FILTRE ? 'Pas de titre récent pour ce candidat.' : 'Pas de titre récent.'));
