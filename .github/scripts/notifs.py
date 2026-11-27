@@ -179,12 +179,14 @@ def stats():
     if not (API and TOKEN): return
     try:
         req = urllib.request.Request(API + '/stats', headers={'Authorization': 'Bearer ' + TOKEN, 'User-Agent': 'NousVotons-Alertes/1.0'})
-        n = json.load(urllib.request.urlopen(req, timeout=30))['abonnes']
+        rep = json.load(urllib.request.urlopen(req, timeout=30)); n = rep['abonnes']
     except Exception as e:
         print('stats indisponibles', e); return
     st = load(STATS_F, {})
     j = st.setdefault(today, {'abonnes': 0, 'envois': 0})
     j['abonnes'] = n; j['envois'] += STATS['envois']
+    if rep.get('sujets'): j['par_sujet'] = rep['sujets']
+    if rep.get('favoris'): j['favoris_les_plus_suivis'] = dict(sorted(rep['favoris'].items(), key=lambda x: -x[1])[:5])
     json.dump(dict(sorted(st.items())[-120:]), open(STATS_F, 'w', encoding='utf-8'), indent=0)
     print(f"Abonnés : {n}, alertes reçues aujourd'hui : {j['envois']}")
 

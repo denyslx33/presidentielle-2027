@@ -52,8 +52,14 @@ export default {
     if (req.headers.get('Authorization') !== `Bearer ${env.SEND_TOKEN}`) return json({ ok: false }, 401);
 
     if (url.pathname === '/stats') {
-      const r = await env.DB.prepare('SELECT COUNT(*) AS n FROM subs').first();
-      return json({ abonnes: r.n });
+      const rows = (await env.DB.prepare('SELECT topics, favs FROM subs').all()).results;
+      const sujets = {}; let fav = {}, nfav = 0;
+      for (const x of rows) {
+        const t = JSON.parse(x.topics || '[]'); t.forEach((k) => { sujets[k] = (sujets[k] || 0) + 1; });
+        if (t.includes('favoris')) { nfav++; JSON.parse(x.favs || '[]').forEach((c) => { fav[c] = (fav[c] || 0) + 1; }); }
+      }
+      // Classement des favoris : anonyme, et seulement à partir de 50 abonnés pour que personne ne soit reconnaissable
+      return json({ abonnes: rows.length, sujets, favoris: nfav >= 50 ? fav : null });
     }
 
     // Envoi d'une notification à un sujet, par lots. Corps :
