@@ -141,18 +141,28 @@ def main():
             note(stm, {'t': it['texte']}); out.append(('majeur', 'Info importante', it['texte'], './#actu', 'majeur'))
     etat['maj'] = stm
 
-    # 3. Émissions TV du jour : une seule alerte à partir de 9 h, qui regroupe tout le programme
-    if now.hour >= 9 and etat.get('tvj') != today:
-        evs = [ev for ev in load('data/agenda.json', {}).get('evenements', []) if ev.get('date') == today and ev.get('type') in ('debat', 'emission')]
-        if evs:
-            etat['tvj'] = today
-            evs.sort(key=lambda e: e.get('heure') or '99')
-            if len(evs) == 1:
-                ev = evs[0]; quand = f" à {ev['heure']}" if ev.get('heure') else ' ce soir' if ev.get('type') == 'debat' else " aujourd'hui"
-                out.append(('tv', 'À la télé' + quand, f"{ev['titre']}{' sur ' + ev['chaine'] if ev.get('chaine') else ''}", './#agenda', 'tv'))
-            else:
-                corps = ' · '.join(f"{(e['heure'] + ' ') if e.get('heure') else ''}{e['titre']}" for e in evs[:3])
-                out.append(('tv', f"{len(evs)} rendez‑vous télé aujourd'hui", corps, './#agenda', 'tv'))
+    # 3. Émissions TV : une alerte environ 30 minutes avant chaque émission dont l'heure est connue
+    #    (3 par jour au plus). Celles sans heure sont regroupées dans une alerte unique à partir de 9 h.
+    evs = [ev for ev in load('data/agenda.json', {}).get('evenements', []) if ev.get('date') == today and ev.get('type') in ('debat', 'emission')]
+    etat.setdefault('tvh', {})
+    if etat['tvh'].get('d') != today: etat['tvh'] = {'d': today, 'k': []}
+    for ev in evs:
+        m = re.match(r'^(\d{1,2})h(\d{2})?$', str(ev.get('heure') or ''))
+        if not m: continue
+        debut = now.replace(hour=int(m[1]), minute=int(m[2] or 0), second=0, microsecond=0)
+        avant = (debut - now).total_seconds() / 60
+        k = ev['titre'][:60]
+        if 10 <= avant <= 50 and k not in etat['tvh']['k'] and len(etat['tvh']['k']) < 3:
+            etat['tvh']['k'].append(k)
+            out.append(('tv', f"À {ev['heure']}{' sur ' + ev['chaine'] if ev.get('chaine') else ''}", ev['titre'], './#agenda', 'tv-' + str(len(etat['tvh']['k'])), None, True))
+    sansh = [ev for ev in evs if not re.match(r'^\d{1,2}h', str(ev.get('heure') or ''))]
+    if now.hour >= 9 and etat.get('tvj') != today and sansh:
+        etat['tvj'] = today
+        if len(sansh) == 1:
+            ev = sansh[0]; quand = ' ce soir' if ev.get('type') == 'debat' else " aujourd'hui"
+            out.append(('tv', 'À la télé' + quand, f"{ev['titre']}{' sur ' + ev['chaine'] if ev.get('chaine') else ''}", './#agenda', 'tv'))
+        else:
+            out.append(('tv', f"{len(sansh)} rendez‑vous télé aujourd'hui", ' · '.join(e['titre'] for e in sansh[:3]), './#agenda', 'tv'))
 
     if not (8 <= now.hour < 22) and out:
         print('Nuit : rien envoyé, ce sera au prochain passage après 8 h'); return
