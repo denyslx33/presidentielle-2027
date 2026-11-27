@@ -12,7 +12,7 @@ database_id = "b4559664-329c-4267-8358-bb0834a95317"
 # Adresse de l'app autorisée à s'abonner
 ALLOWED_ORIGIN = "https://denyslx33.github.io"
 VAPID_SUBJECT = "mailto:denyslx.pro@gmail.com"
-VAPID_PUBLIC = "A_REMPLIR"
+VAPID_PUBLIC = "BJEbVp5yTeOJzm_kVrmUVwPSL5dKHQF3Ufd8Qf57o1LJRcnqjW-bNTX_Gm9qxdSCTGcaOb7FQ0TbLGw-09a_m1g"
 # Secrets à créer avec « wrangler secret put » (jamais dans ce fichier) :
 #   VAPID_PRIVATE  : clé privée VAPID (format JWK d, base64url)
 #   SEND_TOKEN     : mot de passe que la GitHub Action utilise pour envoyer
