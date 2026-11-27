@@ -2,6 +2,24 @@
 "v": 4,
 "items": [
 {
+"t": "Présidentielle 2027 : la tribune de députés LR en soutien à David Lisnard sonne-t-elle le début d’un mouvement plus large en sa faveur ?",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-la-tribune-de-deputes-lr-en-soutien-a-david-lisnard-sonne-t-elle-le-debut-dun-mouvement-plus-large-en-sa-faveur-c330a704-ea4b-11f1-bb2d-c71dc7920c2a?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-27T16:24:15Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "DIRECT. Présidentielle: Teddy Riner appelle l'État à \"prendre ses responsabilités\" pour que les peines de prison \"soient réellement\" exécutées",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T16:17:04Z",
+"qui": [
+"riner"
+]
+},
+{
 "t": "Présidentielle française : cinq ans après, la guerre en Ukraine ne fait pas recette dans la campagne",
 "s": "France 24",
 "u": "https://www.france24.com/fr/france/20261127-presidentielle-fran%C3%A7aise-cinq-ans-apr%C3%A8s-la-guerre-en-ukraine-ne-fait-pas-recette-dans-la-campagne",
@@ -25,15 +43,6 @@
 "d": "2026-11-27T16:11:01Z",
 "qui": [
 "zemmour"
-]
-},
-{
-"t": "DIRECT. Présidentielle: Teddy Riner appelle l'État à \"prendre ses responsabilités\" pour que les peines de prison \"soient réellement\" exécutées",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T16:08:36Z",
-"qui": [
-"riner"
 ]
 },
 {
@@ -124,15 +133,6 @@
 "qui": [
 "lisnard",
 "retailleau"
-]
-},
-{
-"t": "Présidentielle 2027 : la tribune de députés LR en soutien à David Lisnard sonne-t-elle le début d’un mouvement plus large en sa faveur ?",
-"s": "Ouest-France",
-"u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-la-tribune-de-deputes-lr-en-soutien-a-david-lisnard-sonne-t-elle-le-debut-dun-mouvement-plus-large-en-sa-faveur-c330a704-ea4b-11f1-bb2d-c71dc7920c2a?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
-"d": "2026-11-27T14:49:48Z",
-"qui": [
-"lisnard"
 ]
 },
 {
@@ -1796,12 +1796,12 @@
 "Le Figaro": 7,
 "Le Parisien": 52,
 "20 Minutes": 8,
-"Ouest-France": 0,
-"BFMTV": 24,
-"France 24": 9,
+"Ouest-France": 1,
+"BFMTV": 23,
+"France 24": "erreur: HTTPError",
 "La Croix": 23,
 "LCP": 39,
 "RFI": 9
 },
-"maj": "2026-11-27T16:15:29Z"
+"maj": "2026-11-27T16:30:29Z"
 }
