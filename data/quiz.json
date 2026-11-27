@@ -176,19 +176,24 @@
    "pos": {
     "philippe": 1,
     "attal": 1,
-    "roussel": -1
+    "roussel": -1,
+    "zemmour": 1
    },
    "src": {
     "philippe": "250 000 postes de fonctionnaires en moins sur le quinquennat",
     "attal": "100 000 postes publics en moins, sans licenciement",
-    "roussel": "Créer 500 000 postes de fonctionnaires"
+    "roussel": "Créer 500 000 postes de fonctionnaires",
+    "zemmour": "800 000 postes de fonctionnaires en moins en cinq ans, hors enseignants, policiers, militaires et soignants"
    },
    "id": "q9",
    "axe": [
     "eco",
     1
    ],
-   "exp": "La France compte environ 5,7 millions d'agents publics, répartis entre l'État, les collectivités locales et les hôpitaux."
+   "exp": "La France compte environ 5,7 millions d'agents publics, répartis entre l'État, les collectivités locales et les hôpitaux.",
+   "srcu": {
+    "zemmour": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+   }
   },
   {
    "theme": "Institutions",
@@ -364,19 +369,24 @@
    "pos": {
     "lepen": 1,
     "lisnard": 1,
-    "philippe": 1
+    "philippe": 1,
+    "zemmour": 1
    },
    "src": {
     "lepen": "Rétablir les peines planchers",
     "lisnard": "Peines planchers pour les récidivistes",
-    "philippe": "Peines planchers pour les violences contre policiers et professeurs"
+    "philippe": "Peines planchers pour les violences contre policiers et professeurs",
+    "zemmour": "Rétablir les peines planchers"
    },
    "id": "q18",
    "exp": "Des peines minimales que le juge doit prononcer, sauf décision motivée, notamment en cas de récidive. Elles ont existé en France de 2007 à 2014.",
    "axe": [
     "soc",
     1
-   ]
+   ],
+   "srcu": {
+    "zemmour": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+   }
   },
   {
    "theme": "Écologie et énergie",
@@ -391,7 +401,8 @@
     "dupont-aignan": 1,
     "zemmour": 1,
     "melenchon": -1,
-    "roussel": 1
+    "roussel": 1,
+    "polony": 1
    },
    "src": {
     "glucksmann": "Nucléaire conforté avec de nouvelles unités",
@@ -403,12 +414,14 @@
     "dupont-aignan": "Au moins 70 % de nucléaire",
     "zemmour": "Plan européen de 500 Md€ pour le nucléaire",
     "melenchon": "Fermeture progressive du nucléaire, arrêt de l'EPR2",
-    "roussel": "Augmenter la production d'électricité : nucléaire, renouvelable et hydraulique"
+    "roussel": "Augmenter la production d'électricité : nucléaire, renouvelable et hydraulique",
+    "polony": "Redonner à EDF les moyens d'investir et de financer les futurs réacteurs EPR2"
    },
    "id": "q19",
    "exp": "Le nucléaire produit environ deux tiers de l'électricité en France. Un programme de six nouveaux réacteurs (EPR2) a été lancé en 2022.",
    "srcu": {
-    "roussel": "https://www.lobservateur.fr/saint-amand-fabien-roussel-presidentielle-2027"
+    "roussel": "https://www.lobservateur.fr/saint-amand-fabien-roussel-presidentielle-2027",
+    "polony": "https://www.npolony.fr/partage/article-347555"
    }
   },
   {
@@ -896,18 +909,23 @@
    "q": "L'uniforme doit être obligatoire à l'école.",
    "pos": {
     "dupont-aignan": 1,
-    "lepen": 1
+    "lepen": 1,
+    "philippe": 1
    },
    "src": {
     "dupont-aignan": "Uniforme obligatoire",
-    "lepen": "Uniforme au primaire et au collège"
+    "lepen": "Uniforme au primaire et au collège",
+    "philippe": "Favorable à l'uniforme à l'école"
    },
    "id": "q49",
    "axe": [
     "soc",
     1
    ],
-   "exp": "L'uniforme n'est pas obligatoire dans les écoles publiques. Une expérimentation a lieu depuis 2024 dans des établissements volontaires."
+   "exp": "L'uniforme n'est pas obligatoire dans les écoles publiques. Une expérimentation a lieu depuis 2024 dans des établissements volontaires.",
+   "srcu": {
+    "philippe": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+   }
   },
   {
    "theme": "Éducation",
@@ -958,14 +976,19 @@
    "q": "Les chefs d'établissement doivent avoir plus de pouvoir.",
    "pos": {
     "philippe": 1,
-    "lisnard": 1
+    "lisnard": 1,
+    "retailleau": 1
    },
    "src": {
     "philippe": "Larges pouvoirs aux chefs d'établissement",
-    "lisnard": "Autonomie des chefs d'établissement"
+    "lisnard": "Autonomie des chefs d'établissement",
+    "retailleau": "Une centaine d'établissements autonomes dont les chefs choisissent les équipes et le projet"
    },
    "id": "q53",
-   "exp": "Les principaux et proviseurs ont aujourd'hui peu de marge pour recruter les enseignants ou organiser l'établissement. Leur donner plus de pouvoir, c'est leur confier ces décisions."
+   "exp": "Les principaux et proviseurs ont aujourd'hui peu de marge pour recruter les enseignants ou organiser l'établissement. Leur donner plus de pouvoir, c'est leur confier ces décisions.",
+   "srcu": {
+    "retailleau": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+   }
   },
   {
    "theme": "Éducation",
@@ -1057,17 +1080,22 @@
    "theme": "Sécurité et justice",
    "q": "Il faut interdire les LBD et les grenades lors des manifestations.",
    "pos": {
-    "melenchon": 1
+    "melenchon": 1,
+    "roussel": 1
    },
    "src": {
-    "melenchon": "Interdire LBD, tasers et grenades de désencerclement en maintien de l'ordre"
+    "melenchon": "Interdire LBD, tasers et grenades de désencerclement en maintien de l'ordre",
+    "roussel": "Interdire les lanceurs de balle de défense (LBD)"
    },
    "id": "q60",
    "exp": "Le lanceur de balles de défense (LBD) tire des projectiles en caoutchouc. Les forces de l'ordre l'utilisent notamment pendant certaines manifestations, comme les grenades de désencerclement.",
    "axe": [
     "soc",
     -1
-   ]
+   ],
+   "srcu": {
+    "roussel": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+   }
   },
   {
    "theme": "Sécurité et justice",
@@ -1091,17 +1119,22 @@
    "theme": "Sécurité et justice",
    "q": "Il faut construire beaucoup plus de places de prison.",
    "pos": {
-    "lepen": 1
+    "lepen": 1,
+    "philippe": 1
    },
    "src": {
-    "lepen": "85 000 places de prison"
+    "lepen": "85 000 places de prison",
+    "philippe": "Construire de nouvelles places de prison"
    },
    "id": "q62",
    "axe": [
     "soc",
     1
    ],
-   "exp": "Les prisons françaises comptent environ 80 000 détenus pour un peu plus de 60 000 places, l'un des taux de surpopulation les plus élevés d'Europe."
+   "exp": "Les prisons françaises comptent environ 80 000 détenus pour un peu plus de 60 000 places, l'un des taux de surpopulation les plus élevés d'Europe.",
+   "srcu": {
+    "philippe": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+   }
   },
   {
    "theme": "Sécurité et justice",
@@ -1203,17 +1236,22 @@
    "theme": "Sécurité et justice",
    "q": "Il faut supprimer les réductions de peine pour les violences.",
    "pos": {
-    "lepen": 1
+    "lepen": 1,
+    "attal": 1
    },
    "src": {
-    "lepen": "Supprimer réductions et aménagements de peine pour les violences"
+    "lepen": "Supprimer réductions et aménagements de peine pour les violences",
+    "attal": "Supprimer les réductions de peine automatiques"
    },
    "id": "q69",
    "axe": [
     "soc",
     1
    ],
-   "exp": "Un détenu peut voir sa peine réduite selon son comportement et ses efforts en prison. Il s'agirait de supprimer cette possibilité pour les auteurs de violences."
+   "exp": "Un détenu peut voir sa peine réduite selon son comportement et ses efforts en prison. Il s'agirait de supprimer cette possibilité pour les auteurs de violences.",
+   "srcu": {
+    "attal": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+   }
   },
   {
    "theme": "Immigration",
@@ -1591,13 +1629,18 @@
    "theme": "Institutions",
    "q": "Il faut supprimer une grande partie des agences de l'État.",
    "pos": {
-    "lisnard": 1
+    "lisnard": 1,
+    "retailleau": 1
    },
    "src": {
-    "lisnard": "Supprimer la moitié des agences de l'État"
+    "lisnard": "Supprimer la moitié des agences de l'État",
+    "retailleau": "Réduire le nombre d'agences de l'État, à commencer par l'Ademe"
    },
    "id": "q94",
-   "exp": "L'État s'appuie sur plusieurs centaines d'agences et d'opérateurs, comme France Travail ou l'Ademe. Certaines sont critiquées pour leur coût ou leurs doublons."
+   "exp": "L'État s'appuie sur plusieurs centaines d'agences et d'opérateurs, comme France Travail ou l'Ademe. Certaines sont critiquées pour leur coût ou leurs doublons.",
+   "srcu": {
+    "retailleau": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+   }
   },
   {
    "theme": "Institutions",
@@ -1835,7 +1878,8 @@
     "tondelier": 1,
     "glucksmann": 1,
     "villepin": 1,
-    "attal": 1
+    "attal": 1,
+    "roussel": 1
    },
    "src": {
     "lepen": "Revaloriser les salaires des enseignants",
@@ -1846,9 +1890,13 @@
     "tondelier": "+15 % pour les enseignants en 5 ans",
     "glucksmann": "Hausse planifiée des salaires enseignants sur 5 ans",
     "villepin": "Au moins +10 % pour les personnels scolaires",
-    "attal": "Mieux payer les enseignants"
+    "attal": "Mieux payer les enseignants",
+    "roussel": "Point d'indice des fonctionnaires +10 % tout de suite, puis +20 à 30 % sur le quinquennat"
    },
-   "exp": "Les enseignants français sont moins payés que dans beaucoup de pays comparables, surtout en début de carrière. Leurs salaires ont été revalorisés en 2023."
+   "exp": "Les enseignants français sont moins payés que dans beaucoup de pays comparables, surtout en début de carrière. Leurs salaires ont été revalorisés en 2023.",
+   "srcu": {
+    "roussel": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+   }
   },
   {
    "id": "q111",
@@ -1858,15 +1906,20 @@
     "villepin": 1,
     "attal": 1,
     "lepen": 1,
-    "zemmour": 1
+    "zemmour": 1,
+    "polony": 1
    },
    "src": {
     "villepin": "Électricité au coût de production, facture -15 %",
     "attal": "Électricité autour de 75 €/MWh",
     "lepen": "Blocage temporaire des prix de l'énergie financé par une taxe sur les énergéticiens",
-    "zemmour": "Baisser les taxes sur l'énergie pour réduire les factures d'électricité"
+    "zemmour": "Baisser les taxes sur l'énergie pour réduire les factures d'électricité",
+    "polony": "Une électricité abondante, décarbonée, à prix stable et bas"
    },
-   "exp": "Le prix de l'électricité a fortement augmenté depuis 2022. Une partie du prix dépend des marchés européens, une autre des taxes et du tarif fixé par l'État."
+   "exp": "Le prix de l'électricité a fortement augmenté depuis 2022. Une partie du prix dépend des marchés européens, une autre des taxes et du tarif fixé par l'État.",
+   "srcu": {
+    "polony": "https://www.npolony.fr/partage/article-347555"
+   }
   },
   {
    "id": "q112",
@@ -1959,14 +2012,19 @@
    "q": "Les médecins doivent avoir des obligations, comme des gardes ou des jours dans les zones qui en manquent.",
    "pos": {
     "philippe": 1,
-    "zemmour": 1
+    "zemmour": 1,
+    "tondelier": 1
    },
    "src": {
     "philippe": "« Obligation de solidarité » pour les médecins",
-    "zemmour": "Rétablir la garde obligatoire des médecins"
+    "zemmour": "Rétablir la garde obligatoire des médecins",
+    "tondelier": "Réguler l'installation des médecins dans les zones déjà bien dotées"
    },
    "exp": "Les médecins libéraux choisissent librement où ils s'installent et ne sont plus obligés de participer aux gardes depuis 2002. Certaines régions manquent fortement de médecins.",
-   "id": "q118"
+   "id": "q118",
+   "srcu": {
+    "tondelier": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+   }
   },
   {
    "theme": "Sécurité et justice",
