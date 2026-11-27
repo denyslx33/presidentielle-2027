@@ -2,6 +2,47 @@
 "v": 4,
 "items": [
 {
+"t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T18:11:45Z",
+"qui": [
+"attal",
+"lisnard",
+"philippe",
+"retailleau"
+]
+},
+{
+"t": "\"Quand il s'agit de l'Ukraine, il parle comme Jean-Luc Mélenchon et Marine Le Pen\", pointe Jérémie Patrier-Leitus, porte-parole d’Édouard Philippe",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-quand-il-s-agit-de-l-ukraine-il-parle-comme-jean-luc-melenchon-et-marine-le-pen-pointe-jeremie-patrier-leitus-porte-parole-d-edouard-philippe_VN-202611270825.html",
+"d": "2026-11-27T18:08:35Z",
+"qui": [
+"lepen",
+"melenchon",
+"philippe"
+]
+},
+{
+"t": "« Le metal nous a rapprochés » : quand le candidat à la présidentielle David Lisnard était au conseil d’administration du Hellfest",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/festivals/hellfest/le-metal-nous-a-rapproches-quand-le-candidat-a-la-presidentielle-david-lisnard-etait-au-conseil-dadministration-du-hellfest-51e38bc0-e979-11f1-86c1-70195b4d2e52?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-27T18:02:49Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Ségolène Royal n'exclut pas de soutenir Jean-Luc Mélenchon à l'élection présidentielle",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-segolene-royal-n-exclut-pas-de-soutenir-jean-luc-melenchon-a-l-election-presidentielle_VN-202611270819.html",
+"d": "2026-11-27T17:55:31Z",
+"qui": [
+"melenchon"
+]
+},
+{
 "t": "Marine Le Pen promet une \"grande loi-programme\" pour l'outre-mer",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/france/outremer/marine-le-pen-promet-une-grande-loi-programme-pour-l-outre-mer_8303604.html#xtor=RSS-3-%5Bpolitique%5D",
@@ -71,18 +112,6 @@
 "d": "2026-11-27T17:20:01Z",
 "qui": [
 "melenchon"
-]
-},
-{
-"t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T17:19:34Z",
-"qui": [
-"attal",
-"lisnard",
-"philippe",
-"retailleau"
 ]
 },
 {
@@ -529,7 +558,7 @@
 ]
 },
 {
-"t": "DIRECT. Présidentielle 2027 : Teddy Riner assure que son programme proposera «plus de sport à l'école»",
+"t": "Présidentielle 2027 : Teddy Riner assure que son programme proposera «plus de sport à l'école»",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-marine-le-pen-presente-son-programme-outre-mer-teddy-riner-en-deplacement-a-beziers-27-11-2026-EBTMQ2B3ZRCJVGQH37E24B5G5Y.php",
 "d": "2026-11-27T12:00:00Z",
@@ -1756,34 +1785,6 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "Une tribune pro-Lisnard en préparation du côté du groupe LR de l’Assemblée",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/une-tribune-pro-lisnard-en-preparation-du-cote-du-groupe-lr-de-lassemblee-20261126_KXFXZMWLNFD5BD5UEVPYPS44WE/",
-"d": "2026-11-26T10:31:39Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Présidentielle 2027: Marine Le Pen fustige de \"basses manœuvres\" pour conclure un accord sur le budget de l'UE avant son éventuelle arrivée à l'Élysée",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/front-national/presidentielle-2027-marine-le-pen-fustige-de-basses-manoeuvres-pour-conclure-un-accord-sur-le-budget-de-l-ue-avant-son-eventuelle-arrivee-a-l-elysee_AD-202611260513.html",
-"d": "2026-11-26T10:31:06Z",
-"qui": [
-"lepen"
-]
-},
-{
-"t": "Propos de Teddy Riner sur l'Ukraine: c'est \"notre guerre parce que nous sommes les cibles de Vladimir Poutine\", juge Raphaël Glucksmann",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-propos-de-teddy-riner-sur-l-ukraine-c-est-notre-guerre-parce-que-nous-sommes-les-cibles-de-vladimir-poutine-juge-raphael-glucksmann_VN-202611260512.html",
-"d": "2026-11-26T10:29:36Z",
-"qui": [
-"glucksmann",
-"riner"
-]
 }
 ],
 "sources": {
@@ -1800,5 +1801,5 @@
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T18:00:35Z"
+"maj": "2026-11-27T18:15:29Z"
 }
