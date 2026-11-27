@@ -2,6 +2,33 @@
 "v": 4,
 "items": [
 {
+"t": "Présidentielle 2027 : Marine Le Pen veut geler toutes les discussions institutionnelles en outre-mer",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/27/presidentielle-2027-marine-le-pen-veut-geler-toutes-les-discussions-institutionnelles-en-outre-mer_6815933_823448.html",
+"d": "2026-11-27T20:49:09Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "DIRECT. \"David Lisnard, les secrets d'une percée éclair\" : regardez le documentaire de franceinfo consacré aux coulisses de l'entrée en campagne présidentielle du maire de Cannes",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/politique/david-lisnard/direct-david-lisnard-les-secrets-d-une-percee-eclair-regardez-le-documentaire-de-franceinfo-consacre-aux-coulisses-de-l-entree-en-campagne-presidentielle-du-maire-de-cannes_8301420.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-27T20:45:15Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "LIGNE ROUGE - David Lisnard: les coulisses d'une percée éclair",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-ligne-rouge-david-lisnard-les-coulisses-d-une-percee-eclair_VN-202611270909.html",
+"d": "2026-11-27T20:37:38Z",
+"qui": [
+"lisnard"
+]
+},
+{
 "t": "Jean-Luc Mélenchon écarte une sortie de la France de l'UE: \"Jamais de la vie, vous allez devoir nous supporter de l'intérieur avec nos règles\"",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-jean-luc-melenchon-ecarte-une-sortie-de-la-france-de-l-ue-jamais-de-la-vie-vous-allez-devoir-nous-supporter-de-l-interieur-avec-nos-regles_VN-202611270899.html",
@@ -238,15 +265,6 @@
 "d": "2026-11-27T17:35:00Z",
 "qui": [
 "glucksmann"
-]
-},
-{
-"t": "DIRECT. \"David Lisnard, les secrets d'une percée éclair\" : regardez le documentaire de franceinfo consacré aux coulisses de l'entrée en campagne présidentielle du maire de Cannes",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/politique/david-lisnard/direct-david-lisnard-les-secrets-d-une-percee-eclair-regardez-le-documentaire-de-franceinfo-consacre-aux-coulisses-de-l-entree-en-campagne-presidentielle-du-maire-de-cannes_8301420.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-27T17:30:02Z",
-"qui": [
-"lisnard"
 ]
 },
 {
@@ -1773,24 +1791,6 @@
 "qui": [
 "riner"
 ]
-},
-{
-"t": "« Il a des relations complexes avec l’Allemagne » : à Berlin, Jean-Luc Mélenchon veut faire entendre ses différences",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/il-a-des-relations-complexes-avec-lallemagne-a-berlin-jean-luc-melenchon-veut-faire-entendre-ses-differences-26-11-2026-LGH2STX47NBWXIVD6FKMCU36DQ.php",
-"d": "2026-11-26T12:00:00Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Présidentielle 2027 : David Lisnard refuse de choisir entre Édouard Phillippe et Marine Le Pen, Gérald Darmanin tacle une « compromission »",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-david-lisnard-refuse-de-choisir-entre-edouard-phillippe-et-marine-le-pen-gerald-darmanin-tacle-une-compromission-26-11-2026-5KIK5P45SVH5ZF5BJLUEJAONCA.php",
-"d": "2026-11-26T12:00:00Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
@@ -1798,14 +1798,14 @@
 "franceinfo": 7,
 "Libération": 21,
 "Le Figaro": 7,
-"Le Parisien": 57,
+"Le Parisien": 56,
 "20 Minutes": 9,
 "Ouest-France": 0,
-"BFMTV": 19,
+"BFMTV": 20,
 "France 24": 9,
 "La Croix": 23,
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T20:45:29Z"
+"maj": "2026-11-27T21:00:29Z"
 }
