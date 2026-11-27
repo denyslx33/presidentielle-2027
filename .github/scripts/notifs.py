@@ -9,6 +9,8 @@ from zoneinfo import ZoneInfo
 
 API, TOKEN = os.environ.get('PUSH_API', '').rstrip('/'), os.environ.get('SEND_TOKEN', '')
 ETAT = 'data/notifs-etat.json'
+STATS_F = 'data/notifs-stats.json'  # nombres seulement : abonnés et alertes envoyées par jour
+STATS = {'envois': 0}
 now = datetime.now(ZoneInfo('Europe/Paris')); today = now.strftime('%Y-%m-%d')
 PRIO = ['franceinfo', 'Le Monde', 'Ouest-France', 'La Croix', 'Le Figaro', 'Libération', 'Le Parisien', '20 Minutes', 'France 24', 'RFI', 'LCP', 'BFMTV']
 MAJ = re.compile(r"(annonce|officialise|confirme) sa candidature|se (declare|lance) candidat|retire sa candidature|renonce a (la presidentielle|se presenter|sa candidature|etre candidat)|jette l.eponge|se retire de la course|conseil constitutionnel|liste (officielle )?des candidats")
@@ -48,6 +50,7 @@ def send(topic, title, body, url='./', tag=None, cands=None, urgent=False):
         tot += r['sent']
         if not r['next']: break
         after = r['next']
+    STATS['envois'] += tot
     print(f'{topic}: {tot} envoyées, {r.get("skipped", 0)} ignorées, {r.get("dead", 0)} abonnements périmés')
 
 def main():
@@ -116,5 +119,22 @@ def main():
         if isinstance(etat[k], list): etat[k] = etat[k][-400:]
     json.dump(etat, open(ETAT, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
 
+def stats():
+    """Note chaque jour le nombre de téléphones abonnés et d'alertes reçues (aucune donnée personnelle)."""
+    if not (API and TOKEN): return
+    try:
+        req = urllib.request.Request(API + '/stats', headers={'Authorization': 'Bearer ' + TOKEN, 'User-Agent': 'NousVotons-Alertes/1.0'})
+        n = json.load(urllib.request.urlopen(req, timeout=30))['abonnes']
+    except Exception as e:
+        print('stats indisponibles', e); return
+    st = load(STATS_F, {})
+    j = st.setdefault(today, {'abonnes': 0, 'envois': 0})
+    j['abonnes'] = n; j['envois'] += STATS['envois']
+    json.dump(dict(sorted(st.items())[-120:]), open(STATS_F, 'w', encoding='utf-8'), indent=0)
+    print(f"Abonnés : {n}, alertes reçues aujourd'hui : {j['envois']}")
+
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    finally:
+        stats()
