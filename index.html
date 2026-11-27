@@ -656,6 +656,60 @@ details.sec.acc[open] { padding-bottom:12px; }
 #pm-cmp .cbox li { position:relative; padding:0 0 0 19px; margin:0; border:0; font:400 12px 'Asap', sans-serif; color:#011334; }
 #pm-cmp .cbox li::before { content:''; position:absolute; left:0; top:5px; width:6px; height:6px; border-radius:50%; background:#022E7B; }
 #pm-cmp .cbox.none span { font:400 12px 'Asap', sans-serif; color:#626161; }
+/* Se tester */
+#v-test .qintro { background:#fff; border-radius:30px; padding:32px; margin:16px 16px 0; display:flex; flex-direction:column; gap:32px; align-items:center; text-align:center; }
+#v-test .qintro h2 { font:600 28px/28px 'Asap', sans-serif; color:#012157; margin:0; }
+#v-test .qitx { display:flex; flex-direction:column; gap:12px; padding:0 8px; font:400 12px 'Asap', sans-serif; color:#000; }
+#v-test .qitx b { font-weight:600; }
+#v-test .qgo { width:100%; background:#022E7B; color:#fff; border:0; border-radius:8px; padding:8px; font:400 16px 'Asap', sans-serif; cursor:pointer; }
+#v-test .qdisc { font:400 12px/15px 'Gidole', 'Asap', sans-serif; color:#626161; margin:32px 26px 0; }
+body.qfocus .topbar, body.qfocus #status, body.qfocus #inscr { display:none !important; }
+#v-test .qz2 { padding:0 0 24px; }
+#v-test .qtop { display:flex; justify-content:space-between; align-items:flex-start; }
+#v-test .qic { width:42px; height:42px; padding:0; border:0; background:none; border-radius:50%; cursor:pointer; flex:none; }
+#v-test .qic svg { display:block; }
+#v-test .qth { width:152px; display:flex; flex-direction:column; align-items:center; gap:12px; padding-top:14px; }
+#v-test .qtn { font:600 12px 'Asap', sans-serif; color:#022E7B; text-transform:uppercase; text-align:center; }
+#v-test .qti { width:60px; height:60px; border-radius:100px; background:#E6EAF2; color:#022E7B; display:flex; align-items:center; justify-content:center; }
+#v-test .qti .eu { stroke:#E6EAF2; }
+#v-test .qdots { display:flex; gap:2px; justify-content:center; align-items:center; margin:47px 0 16px; }
+#v-test .qdots i { width:10.7px; height:11px; border-radius:100px; background:#E6EAF2; flex:none; }
+#v-test .qdots i.done { background:#8B9FC2; }
+#v-test .qdots i.cur { width:42px; background:#5573A7; }
+#v-test .qcount { font:500 12px 'Asap', sans-serif; color:#5573A7; text-transform:uppercase; text-align:center; }
+#v-test .qbody { margin:47px auto 48px; max-width:300px; display:flex; flex-direction:column; align-items:center; gap:8px; text-align:center; }
+#v-test .qbody .qq { font:500 24px 'Capriola', 'Asap', sans-serif; color:#022A70; margin:0; line-height:1.25; }
+#v-test .qexp summary { list-style:none; display:inline-flex; align-items:center; font:500 12px 'Asap', sans-serif; color:#022A70; text-decoration:underline; cursor:pointer; }
+#v-test .qexp summary::-webkit-details-marker { display:none; }
+#v-test .qexp summary svg { width:15px; height:15px; } #v-test .qexp summary svg path { stroke:#022A70; }
+#v-test .qexp[open] summary svg { transform:rotate(90deg); }
+#v-test .qexp p { font:400 13px/17px 'Asap', sans-serif; color:#011334; text-align:left; background:#fff; border-radius:10px; padding:10px; margin:8px 0 0; }
+#v-test .qexp p.src { background:none; padding:0 10px; font-size:12px; color:#626161; }
+#v-test .ans2 { display:flex; justify-content:center; gap:8px; }
+#v-test .ans2 button { width:100px; height:100px; flex:none; background:#fff; border:0; border-radius:15px; padding:8px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; font:600 12px 'Asap', sans-serif; color:#022A70; cursor:pointer; }
+#v-test .ans2 button .ai { width:19px; height:19px; display:flex; }
+#v-test .ans2 button.on { background:#022E7B; color:#fff; }
+#v-test .qprev { display:inline-flex; align-items:center; gap:0; background:none; border:0; padding:0; margin-top:48px; font:500 12px 'Asap', sans-serif; color:#5573A7; cursor:pointer; }
+#v-test .qprev svg { width:15px; height:15px; transform:scaleX(-1); } #v-test .qprev svg path { stroke:#5573A7; }
+/* Résultats du test */
+#v-test .qres { background:none; border:0; padding:0; margin-top:8px; }
+#v-test .qres > h2.sect { margin:0 0 8px; }
+#v-test .qres > p.muted { font:400 12px/16px 'Asap', sans-serif; color:#626161; margin:0 0 16px; }
+#v-test .qres .res { display:flex; align-items:center; gap:10px; background:#fff; border:0; border-radius:15px; padding:8px 10px 8px 8px; margin:0 0 6px; }
+#v-test .qres .res .av { width:50px; height:50px; border:0; flex:none; }
+#v-test .qres .res .info { flex:1; min-width:0; }
+#v-test .qres .res .who { font:500 16px 'Asap', sans-serif; color:#011334; }
+#v-test .qres .res .info .muted { font:400 12px 'Asap', sans-serif; color:#626161; margin:1px 0 5px; }
+#v-test .qres .res .tag { font:400 10px 'Gidole', 'Asap', sans-serif; color:#fff; background:#F95969; border-radius:100px; padding:1px 6px; }
+#v-test .qres .bar1 { height:6px; border-radius:100px; background:#E6EAF2; overflow:hidden; } #v-test .qres .bar1 i { display:block; height:100%; border-radius:100px; background:#022E7B; }
+#v-test .qres .res .pc { font:400 20px 'Capriola', 'Asap', sans-serif; color:#022A70; flex:none; }
+#v-test .qres .res .chev { color:#011944; font-size:22px; transition:transform .15s; }
+#v-test .qres .res.open { border-radius:15px 15px 0 0; margin-bottom:0; } #v-test .qres .res.open .chev { transform:rotate(90deg); }
+#v-test .qres .resdet { background:#fff; border-radius:0 0 15px 15px; padding:4px 14px 12px; margin:0 0 6px; border:0; }
+#v-test .qres .sharecard { width:100%; display:flex; align-items:center; gap:12px; background:#022A70; color:#FDFDFD; border:0; border-radius:15px; padding:20px 24px; margin:20px 0; text-align:left; cursor:pointer; }
+#v-test .qres .sharecard .ic { width:45px; height:45px; border-radius:50%; background:#FDFDFD; display:flex; align-items:center; justify-content:center; flex:none; }
+#v-test .qres .sharecard .ic svg { width:40px; height:40px; }
+#v-test .qres .sharecard .tx { flex:1; display:flex; flex-direction:column; gap:2px; } #v-test .qres .sharecard .tx b { font:500 18px/22px 'Asap', sans-serif; } #v-test .qres .sharecard .tx small { font:400 12px 'Asap', sans-serif; }
 </style>
 </head>
 <body>
@@ -1330,34 +1384,44 @@ function renderQuiz() {
     } else drawRun();
   }
   const Q = RUNQ;
+  document.body.classList.remove('qfocus');
   if (QI === 0 && QANS.every((a) => a === null)) {
-    const d = el('div', 'qz');
-    d.append(el('div', 'qq', 'Quel candidat pense comme moi ?'), el('p', null, `${Q.length} affirmations tirées au hasard parmi ${QUIZ.questions.length}, tous thèmes confondus. Pour chacune, dites si vous êtes d'accord. À la fin, les candidats sont classés selon le nombre de réponses communes. Refaites le test : vous aurez d'autres questions.`), el('p', 'muted', "Ce n'est pas une consigne de vote. Chaque position de candidat vient d'une mesure de son programme ou de ses déclarations publiques, et à la fin vous verrez, question par question, la mesure et le lien vers sa source. Beaucoup de candidats n'ont pas encore de programme complet. Vos réponses restent sur votre téléphone."));
-    const b = el('button', 'qbtn', 'Commencer'); b.style.cssText = 'width:100%;background:var(--accent);color:var(--white);border-color:var(--accent)'; b.onclick = () => { QI = 0; gcCount('test-commence', 'Test commencé', true); renderQuizQ(); }; d.append(b);
-    box.replaceChildren(d); return;
+    const card = el('div', 'qintro');
+    const tx = el('div', 'qitx'); tx.append(el('b', null, `${Q.length} affirmations tirées au hasard parmi ${QUIZ.questions.length}, tous thèmes confondus.`), el('span', null, "Pour chacune, dites si vous êtes d'accord. À la fin, les candidats sont classés selon le nombre de réponses communes."), el('span', null, "Refaites le test : vous aurez d'autres questions."));
+    const b = el('button', 'qgo', 'Se tester'); b.type = 'button'; b.onclick = () => { QI = 0; gcCount('test-commence', 'Test commencé', true); renderQuizQ(); };
+    card.append(el('h2', null, 'Quel candidat me représente le mieux ?'), tx, b);
+    box.replaceChildren(card, el('p', 'qdisc', "Ce test n'est pas une consigne de vote. Chaque position de candidat vient d'une mesure de son programme ou de ses déclarations publiques, et à la fin vous verrez, question par question, la mesure et le lien vers sa source. Beaucoup de candidats n'ont pas encore de programme complet. Vos réponses restent sur votre téléphone."));
+    return;
   }
   if (QI >= Q.length) return renderQuizRes();
   renderQuizQ();
 }
+const QIC = {"back": "<svg width=\"42\" height=\"42\" viewBox=\"0 0 42 42\" fill=\"none\" aria-hidden=\"true\"><circle cx=\"21\" cy=\"21\" r=\"21\" fill=\"#E6EAF2\"/><path d=\"M22.7624 14.209L16.2376 20.7339M16.2543 20.7171L22.7624 27.2253\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"#5573A7\"/></svg>", "redo": "<svg width=\"42\" height=\"42\" viewBox=\"0 0 42 42\" fill=\"none\" aria-hidden=\"true\"><circle cx=\"21\" cy=\"21\" r=\"21\" fill=\"#E6EAF2\"/><path d=\"M27.4452 14.6645V18.7171C26.5845 15.9768 24.0244 13.989 21 13.989C17.9756 13.989 15.4155 15.9768 14.5548 18.7171M27.4452 22.717C26.5845 25.4574 24.0244 27.4451 21 27.4451C17.9756 27.4451 15.4155 25.4574 14.5548 22.717V26.7697\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"#5573A7\"/></svg>", "up": "<svg width=\"19\" height=\"19\" viewBox=\"0 0 19 19\" fill=\"none\" aria-hidden=\"true\"><path d=\"M10.9251 7.36251V4.51251C10.9251 3.33199 9.96811 2.375 8.78758 2.375L5.93758 8.78751V16.625H14.2168C14.9274 16.633 15.5353 16.1163 15.6418 15.4138L16.6251 9.00126C16.6878 8.58789 16.5659 8.16783 16.2915 7.85236C16.0172 7.53688 15.6182 7.35776 15.2001 7.36251H10.9251Z\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke=\"currentColor\"/><path d=\"M5.9375 8.70824H4.03513C3.20044 8.69348 2.4869 9.38488 2.375 10.2121V15.1996C2.4869 16.0269 3.20044 16.6394 4.03513 16.6246H5.9375V8.70824Z\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke=\"currentColor\"/></svg>", "mid": "<svg width=\"19\" height=\"19\" viewBox=\"0 0 19 19\" fill=\"currentColor\" aria-hidden=\"true\"><circle cx=\"4.07\" cy=\"9.5\" r=\"1.22\"/><circle cx=\"9.5\" cy=\"9.5\" r=\"1.22\"/><circle cx=\"14.93\" cy=\"9.5\" r=\"1.22\"/></svg>", "down": "<svg width=\"19\" height=\"19\" viewBox=\"0 0 19 19\" fill=\"none\" aria-hidden=\"true\"><path d=\"M8.06681 11.6376V14.4876C8.06681 15.6681 9.02377 16.6251 10.2043 16.6251L13.0543 10.2126V2.37509H4.77506C4.0645 2.36706 3.45659 2.88377 3.35004 3.58634L2.36679 9.99883C2.30405 10.4122 2.426 10.8323 2.70034 11.1477C2.97468 11.4632 3.37373 11.6423 3.79179 11.6376H8.06681Z\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke=\"currentColor\"/><path d=\"M13.0544 2.37526H14.9568C15.7915 2.3605 16.505 2.97298 16.6169 3.80026V8.78777C16.505 9.61503 15.7915 10.3067 14.9568 10.2919H13.0544V2.37526Z\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke=\"currentColor\"/></svg>"};
 function renderQuizQ() {
-  const Q = RUNQ, q = Q[QI], box = $('quiz');
-  const d = el('div', 'qz');
-  d.append(el('div', 'qt', `Question ${QI + 1} sur ${Q.length} · ${q.theme}`), el('div', 'qq', q.q));
-  if (q.exp) { const ex = el('details', 'qexp'); ex.append(el('summary', null, 'C’est quoi ?'), el('p', null, q.exp)); const pl = el('p', 'muted src'); pl.append('Pour aller plus loin : ', link('vie-publique.fr', 'https://www.vie-publique.fr')); ex.append(pl); d.append(ex); }
-  const ans = el('div', 'ans');
-  for (const [v, t] of [[1, "D'accord"], [-1, "Pas d'accord"], [0, 'Sans avis']]) {
-    const b = el('button', QANS[QI] === v ? 'on' : '', t);
+  const Q = RUNQ, q = Q[QI], box = $('quiz'); document.body.classList.add('qfocus');
+  const d = el('div', 'qz2');
+  const top = el('div', 'qtop');
+  const bk = el('button', 'qic'); bk.type = 'button'; bk.innerHTML = QIC.back; bk.setAttribute('aria-label', QI ? 'Question précédente' : 'Retour'); bk.onclick = () => { if (QI) { QI--; renderQuizQ(); } else { QANS.fill(null); QI = 0; renderQuiz(); } };
+  const mid = el('div', 'qth'); const ti = el('span', 'qti'); ti.innerHTML = (TH_IC[q.theme] || [''])[0]; mid.append(el('span', 'qtn', q.theme), ti);
+  const rs = el('button', 'qic'); rs.type = 'button'; rs.innerHTML = QIC.redo; rs.setAttribute('aria-label', 'Nouveau test'); rs.onclick = resetQuiz;
+  top.append(bk, mid, rs); d.append(top);
+  const pr = el('div', 'qdots'); for (let i = 0; i < Q.length; i++) pr.append(el('i', i === QI ? 'cur' : i < QI ? 'done' : '')); d.append(pr, el("div", "qcount", `Question ${QI + 1} sur ${Q.length}`));
+  const qb = el('div', 'qbody'); qb.append(el('div', 'qq', q.q));
+  if (q.exp) { const ex = el('details', 'qexp'); const sm = el('summary'); sm.append(el('span', null, 'C’est quoi ?'), fsvg('th')); ex.append(sm, el('p', null, q.exp)); const pl = el('p', 'src'); pl.append('Pour aller plus loin : ', link('vie-publique.fr', 'https://www.vie-publique.fr')); ex.append(pl); qb.append(ex); }
+  d.append(qb);
+  const ans = el('div', 'ans2');
+  for (const [v, t, ic] of [[1, "D'accord", 'up'], [0, 'Sans avis', 'mid'], [-1, "Pas d'accord", 'down']]) {
+    const b = el('button', QANS[QI] === v ? 'on' : ''); b.type = 'button'; const i = el('span', 'ai'); i.innerHTML = QIC[ic]; b.append(i, el('span', null, t));
     b.onclick = () => { QANS[QI] = v; saveAns(); QI++; if (QI >= Q.length) { if (!RUNQ.done) { RUNQ.done = true; gcCount('test-termine', 'Test terminé', true); } renderQuizRes(); } else renderQuizQ(); };
     ans.append(b);
   }
   d.append(ans);
-  const pr = el('div', 'prog'); const pi = el('i'); pi.style.width = (QI / Q.length * 100) + '%'; pr.append(pi); d.append(pr);
-  const nav = el('div', 'qnav'); const bk = el('button', null, '‹ Précédente'); bk.disabled = QI === 0; bk.style.visibility = QI ? 'visible' : 'hidden'; bk.onclick = () => { QI--; renderQuizQ(); };
-  const rs = el('button', null, 'Nouveau test'); rs.onclick = resetQuiz; nav.append(bk, rs); d.append(nav);
-  box.replaceChildren(d);
+  if (QI) { const pv = el('button', 'qprev'); pv.type = 'button'; const ic = fsvg('th'); pv.append(ic, el('span', null, 'Question précédente')); pv.onclick = () => { QI--; renderQuizQ(); }; d.append(pv); }
+  box.replaceChildren(d); scrollTo(0, 0);
 }
 function resetQuiz() { drawRun(); renderQuiz(); }
 function renderQuizRes() {
+  document.body.classList.remove('qfocus');
   const Q = RUNQ, box = $('quiz');
   const rows = CAND.principaux.map((c) => {
     let n = 0, ok = 0;
@@ -1369,7 +1433,7 @@ function renderQuizRes() {
   const few = rows.filter((r) => r.n < MIN).sort((a, b) => nomFamille(a.c.nom).localeCompare(nomFamille(b.c.nom), 'fr'));
   const d = el('div', 'qz');
   const answered = QANS.filter((a) => a === 1 || a === -1).length;
-  d.append(el('div', 'qq', 'Vos résultats'), el('p', 'muted', `Pourcentage de réponses identiques, calculé seulement sur les questions où le candidat a une position publiée. À score égal, celui qui a le plus de questions comparables passe devant. Vous avez donné un avis sur ${answered} affirmations sur ${Q.length}.`));
+  d.classList.add('qres'); d.append(el('h2', 'sect', 'Vos résultats'), el('p', 'muted', `Pourcentage de réponses identiques, calculé seulement sur les questions où le candidat a une position publiée. À score égal, celui qui a le plus de questions comparables passe devant. Vous avez donné un avis sur ${answered} affirmations sur ${Q.length}.`));
   if (!main.length) d.append(el('p', null, "Pas assez de réponses pour comparer. Répondez « d'accord » ou « pas d'accord » à plus d'affirmations."));
   for (const r of main) {
     const row = el('div', 'res'); const info = el('div', 'info');
@@ -1399,7 +1463,7 @@ function renderQuizRes() {
   }
   if (main.some((r) => r.n < 5)) d.append(el('p', 'muted', '« Peu fiable » : moins de 5 positions connues dans ce test. Un 100 % sur 3 questions dit beaucoup moins qu’un 80 % sur 10.'));
   if (few.length) d.append(el('p', 'muted', 'Pas assez de positions connues pour : ' + few.map((r) => r.c.nom).join(', ') + '.'));
-  if (main.length) { const sr = el('button', 'sharecard'); sr.type = 'button'; sr.innerHTML = '<span class="ic">🖼️</span><span><b>Partager mon résultat en image</b><br><small>Seulement si vous le souhaitez</small></span><span class="chev">›</span>'; sr.onclick = () => shareResult(main.slice(0, 3)); d.append(sr); }
+  if (main.length) { const sr = el('button', 'sharecard'); sr.type = 'button'; sr.innerHTML = '<span class="ic">' + FICS.share + '</span><span class="tx"><b>Partager mon résultat en image</b><small>Seulement si vous le souhaitez</small></span>' + FICS.th.replace('#011944', '#fff'); sr.onclick = () => shareResult(main.slice(0, 3)); d.append(sr); }
   d.append(sensBlock(Q));
   const byId = new Map(CAND.principaux.map((c) => [c.id, c]));
   const srcUrl = (c) => (c.programme && (c.programme.url || c.programme.recap)) || (c.source_mesures && c.source_mesures.url) || '';
@@ -2216,6 +2280,7 @@ async function load() {
 }
 
 function showView(v) {
+  if (v !== 'test') document.body.classList.remove('qfocus'); else if ($('quiz').querySelector('.qz2')) document.body.classList.add('qfocus');
   const tab = v === 'sondages' ? 'accueil' : v;
   for (const b of document.querySelectorAll('#tabs button')) b.classList.toggle('on', b.dataset.v === tab);
   for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-' + v);
