@@ -2,6 +2,24 @@
 "v": 4,
 "items": [
 {
+"t": "Présidentielle 2027 : Marine Le Pen prône une « autonomie économique » pour les territoires d’outre-mer et insiste sur leur importance stratégique",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/27/presidentielle-2027-marine-le-pen-prone-une-autonomie-economique-pour-les-territoires-d-outre-mer-et-insiste-sur-leur-importance-strategique_6815880_6205049.html",
+"d": "2026-11-27T15:04:58Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "Jean-Luc Mélenchon en Allemagne : pour Die Linke, l’allié français qu’on préfère cacher",
+"s": "Libération",
+"u": "https://www.liberation.fr/politique/elections/jean-luc-melenchon-en-allemagne-pour-die-linke-lallie-francais-quon-prefere-cacher-20261126_UDVDINBZPRCRDIN5S6WUHQGERQ/",
+"d": "2026-11-27T15:03:38Z",
+"qui": [
+"melenchon"
+]
+},
+{
 "t": "DIRECT. Présidentielle 2027 : \"Les débauchages, ça ne m'émeut pas\", réagit Bruno Retailleau, après le ralliement de huit députés LR à David Lisnard",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-marine-le-pen-va-presenter-son-programme-pour-les-outre-mer-en-pleine-tourmente-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8302521.html#xtor=RSS-3-%5Bpolitique%5D",
@@ -307,6 +325,13 @@
 ]
 },
 {
+"t": "Présidentielle 2027 : Manon Aubry considère qu’« il y a une aspiration dans le pays » à une union « derrière un programme de rupture »",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-manon-aubry-considere-qu-il-y-a-une-aspiration-dans-le-pays-a-une-union-derriere-un-programme-de-rupture-27-11-2026-J3B6FYXOOVHY5P7Q7XRB4CMSHE.php",
+"d": "2026-11-27T12:00:00Z",
+"qui": []
+},
+{
 "t": "MIDI ÉCO - Fiscalité, allocation, logement, emploi, garde...les propositions d'Édouard Philippe pour la natalité",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-midi-eco-fiscalite-allocation-logement-emploi-garde-les-propositions-d-edouard-philippe-pour-la-natalite_VN-202611270539.html",
@@ -456,7 +481,7 @@
 "t": "Les subtiles oscillations de David Lisnard, du vote Macron à la main tendue au RN",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/les-decodeurs/article/2026/11/27/les-subtiles-oscillations-de-david-lisnard-du-vote-macron-a-la-main-tendue-au-rn_6815839_4355770.html",
-"d": "2026-11-27T10:30:12Z",
+"d": "2026-11-27T10:30:09Z",
 "qui": [
 "lisnard"
 ]
@@ -1436,15 +1461,6 @@
 ]
 },
 {
-"t": "Jean-Luc Mélenchon en Allemagne : pour Die Linke, l’allié français qu’on préfère cacher",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/elections/jean-luc-melenchon-en-allemagne-pour-die-linke-lallie-francais-quon-prefere-cacher-20261126_UDVDINBZPRCRDIN5S6WUHQGERQ/",
-"d": "2026-11-26T11:55:10Z",
-"qui": [
-"melenchon"
-]
-},
-{
 "t": "« Ce n’est pas notre guerre »… Quels étaient les liens entre Riner l’athlète et la Russie de Poutine, fan de judo ?",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4265901-20261126-guerre-liens-entre-riner-athlete-russie-poutine-fan-judo?at_medium=display&at_campaign=149",
@@ -1770,41 +1786,21 @@
 "u": "https://www.rfi.fr/fr/podcasts/reportage-france/20261125-pr%C3%A9sidentielle-2027-pour-les-candidats-comme-pour-les-maires-la-gal%C3%A8re-des-parrainages",
 "d": "2026-11-25T23:06:58Z",
 "qui": []
-},
-{
-"t": "Présidentielle: David Lisnard rejette la proposition d'un débat avec Édouard Philippe",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-2027-les-candidats-se-relaient-au-congres-des-maires-de-france-david-lisnard-fixe-sur-sa-reelection-a-la-tete-de-l-amf-ce-mercredi_LN-202611250225.html",
-"d": "2026-11-25T23:02:18Z",
-"qui": [
-"lisnard",
-"philippe"
-]
-},
-{
-"t": "\"La démocratie, c’est du vote\": David Lisnard rejette la proposition d'un débat avec Édouard Philippe à la place de la primaire",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/la-democratie-c-est-du-vote-david-lisnard-rejette-la-proposition-d-un-debat-avec-edouard-philippe-a-la-place-de-la-primaire_AN-202611251031.html",
-"d": "2026-11-25T23:01:36Z",
-"qui": [
-"lisnard",
-"philippe"
-]
 }
 ],
 "sources": {
-"Le Monde": 7,
-"franceinfo": 6,
+"Le Monde": 8,
+"franceinfo": 5,
 "Libération": 23,
 "Le Figaro": 7,
-"Le Parisien": 52,
+"Le Parisien": 53,
 "20 Minutes": 7,
-"Ouest-France": 3,
-"BFMTV": 25,
+"Ouest-France": 0,
+"BFMTV": 24,
 "France 24": 9,
 "La Croix": 23,
 "LCP": 38,
 "RFI": 9
 },
-"maj": "2026-11-27T15:00:34Z"
+"maj": "2026-11-27T15:30:35Z"
 }
