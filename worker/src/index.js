@@ -74,7 +74,7 @@ export default {
         if (n >= MAX_PAR_JOUR && !m.urgent) { skipped++; return; }
         const st = await sendPush(s, payload, env).catch(() => 0);
         if (st === 404 || st === 410) { dead++; await env.DB.prepare('DELETE FROM subs WHERE id = ?1').bind(s.id).run(); return; }
-        if (st >= 200 && st < 300) { sent++; await env.DB.prepare('UPDATE subs SET day = ?2, n = ?3 WHERE id = ?1').bind(s.id, day, n + 1).run(); }
+        if (st >= 200 && st < 300) { sent++; if (m.topic !== 'test') await env.DB.prepare('UPDATE subs SET day = ?2, n = ?3 WHERE id = ?1').bind(s.id, day, n + 1).run(); } // les essais ne comptent pas dans le plafond du jour
       }));
       return json({ sent, skipped, dead, next: rows.length === LOT ? rows[rows.length - 1].id : null });
     }
