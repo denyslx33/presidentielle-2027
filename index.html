@@ -403,6 +403,7 @@ body { background:var(--bg); color:var(--ink); }
 .inscr .ii { flex:none; position:relative; z-index:2; margin-right:-20px; line-height:0; }
 .inscr .it { flex:1; background:#FDFDFD; border-radius:8px; padding:8px 26px 8px 27px; line-height:1.25; min-height:40px; }
 .inscr .it a { color:inherit; font-weight:400; text-decoration:underline; }
+.beta .it b { font-weight:700; }
 .inscr .it button { position:absolute; right:6px; top:4px; font-size:18px; color:var(--g9); }
 .hsec { margin-top:36px; }
 h2.sect, .hsec h2.sect { font:600 28px/28px 'Asap', sans-serif; color:var(--ink); margin:0 0 20px; }
@@ -960,6 +961,7 @@ details.gacc a { color:#022E7B; } details.gacc .muted { font-size:12px; color:#6
     <div id="al-body"></div>
   </div></div>
   <p class="muted" id="status">Chargement…</p>
+  <div class="inscr beta" id="beta" hidden><span class="ii"><svg width="38" height="41" viewBox="0 0 38 41" fill="none" aria-hidden="true"><rect width="37.9546" height="40.0757" rx="18.9773" fill="#022E7B"/><text x="19" y="26" text-anchor="middle" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#FDFDFD">β</text></svg></span><div class="it">Vous utilisez la <b>version bêta</b> de Nous votons. L’appli arrive bientôt sur l’App Store et Google Play.<span id="beta-al"> Nouveau : activez les alertes avec la cloche 🔔</span><button id="beta-x" aria-label="Masquer">×</button></div></div>
   <div class="inscr" id="inscr"><span class="ii"><svg width="38" height="41" viewBox="0 0 38 41" fill="none" aria-hidden="true"><rect width="37.9546" height="40.0757" rx="18.9773" fill="#F8F8F8"/><path d="M11.1019 15.9879H13.4399V17.6798L12.6226 17.6798L11.1019 17.6798C10.3232 17.6798 9.6919 18.3111 9.6919 19.0898V28.9738C9.6919 29.7525 10.3232 30.3838 11.1019 30.3838H26.8527C27.6314 30.3838 28.2626 29.7525 28.2626 28.9738V19.0898C28.2626 18.3111 27.6314 17.6798 26.8527 17.6798L26.3916 17.6798L26.0585 17.6798V15.9879H26.8527C28.5658 15.9879 29.9546 17.3766 29.9546 19.0898V28.9738C29.9546 30.687 28.5658 32.0757 26.8527 32.0757H11.1019C9.38874 32.0757 7.99995 30.6869 7.99995 28.9738V19.0898C7.99995 17.3766 9.38874 15.9879 11.1019 15.9879Z" fill="#F95969"/><path d="M22.2502 10.0152L26.071 13.2801C27.3734 14.393 27.527 16.351 26.4141 17.6534L26.3916 17.6798L24.294 20.1346L23.0851 21.5491L21.7988 20.45L25.1278 16.5542C25.6337 15.9622 25.5639 15.0722 24.9719 14.5664L21.1511 11.3014C20.5591 10.7956 19.6691 10.8654 19.1632 11.4574L14.6524 16.7361C14.1465 17.3281 14.2164 18.2181 14.8084 18.724L16.7185 20.3563L15.6194 21.6426L13.8535 20.1336L13.7092 20.0103C12.9992 19.4036 12.6307 18.5457 12.6226 17.6798C12.6158 16.9574 12.8599 16.2293 13.3661 15.637L17.8769 10.3582C18.9898 9.05583 20.9478 8.90223 22.2502 10.0152Z" fill="#F95969"/><path d="M23.0851 21.5491L24.294 20.1346C24.7417 20.1564 25.0982 20.5263 25.0982 20.9795C25.0982 21.4468 24.7193 21.8255 24.2522 21.8255L13.7022 21.8255C13.2349 21.8255 12.8562 21.4468 12.8562 20.9795C12.8562 20.5124 13.2349 20.1336 13.7022 20.1336L13.8535 20.1336L15.6194 21.6426L16.7185 20.3563L14.8084 18.724C14.2164 18.2181 14.1465 17.3281 14.6524 16.7361L19.1632 11.4574C19.6691 10.8654 20.5591 10.7956 21.1511 11.3014L24.9719 14.5664C25.5639 15.0722 25.6337 15.9622 25.1278 16.5542L21.7988 20.45L23.0851 21.5491Z" fill-rule="evenodd" clip-rule="evenodd" fill="#FDFDFD"/><path d="M24.2521 20.1336C24.2661 20.1336 24.2801 20.134 24.2939 20.1346C24.7417 20.1565 25.0981 20.5264 25.0981 20.9796C25.0981 21.4468 24.7193 21.8256 24.2521 21.8256H13.7022C13.235 21.8256 12.8562 21.4468 12.8562 20.9796C12.8562 20.5124 13.235 20.1336 13.7022 20.1336H13.8535H24.2521Z" fill="#FDFDFD"/><path d="M11.1018 17.6798H12.6226C12.6306 18.5457 12.9993 19.4036 13.7092 20.0103L13.8535 20.1336H13.7021C13.2349 20.1336 12.8562 20.5124 12.8562 20.9796C12.8562 21.4468 13.2349 21.8256 13.7021 21.8256H24.2522C24.7192 21.8256 25.0981 21.4468 25.0981 20.9796C25.0981 20.5264 24.7417 20.1564 24.2939 20.1346L26.3916 17.6798H26.8528C27.6313 17.6798 28.2627 18.3111 28.2627 19.0898V28.9738C28.2627 29.7525 27.6313 30.3838 26.8528 30.3838H11.1018C10.3232 30.3838 9.69189 29.7525 9.69189 28.9738V19.0898C9.69189 18.3111 10.3232 17.6798 11.1018 17.6798Z" fill-rule="evenodd" clip-rule="evenodd" fill="#F95969"/></svg></span><div class="it">Inscrivez‑vous sur les listes électorales avant le vendredi 12 mars 2027. <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/R51788" target="_blank" rel="noopener">Vérifier mon inscription</a> · <a href="#guide" id="inscr-guide">Guide du vote</a><button id="inscr-x" aria-label="Masquer">×</button></div></div>
 
   <!-- SONDAGES -->
@@ -2721,7 +2723,7 @@ load();
 
 // ===== Alertes (notifications). Masqué tant que PUSH_API est vide. =====
 const PUSH_API = 'https://nousvotons-push.denyslx.workers.dev';
-const ALERTES_POUR_TOUS = false; // false : cloche visible seulement en mode test (5 touches rapides sur le logo)
+const ALERTES_POUR_TOUS = true; // false : cloche visible seulement en mode test (5 touches rapides sur le logo)
 const VAPID_PUBLIC = 'BJEbVp5yTeOJzm_kVrmUVwPSL5dKHQF3Ufd8Qf57o1LJRcnqjW-bNTX_Gm9qxdSCTGcaOb7FQ0TbLGw-09a_m1g'; // clé publique (pas secrète)
 const AL_TOPICS = [
   { k: 'favoris', ic: '★', t: 'Mes favoris', d: 'Une grosse actu de vos candidats favoris' },
@@ -2790,6 +2792,11 @@ function renderAlertes() {
 })();
 // Les favoris changent : on prévient le serveur pour les alertes « favoris »
 function alFavsChanged() { const t = lsGet('alTopics') || []; if (PUSH_API && t.includes('favoris')) alSync(t); }
+
+// Bandeau « version bêta » : masquable, revient au bout de 7 jours
+(function () { const b = document.getElementById('beta'); if (!b) return; const x = lsGet('betaX') || 0;
+  b.hidden = Date.now() - x < 7 * 864e5; document.getElementById('beta-al').hidden = !ALERTES_POUR_TOUS;
+  document.getElementById('beta-x').addEventListener('click', () => { b.hidden = true; lsSet('betaX', Date.now()); }); })();
 </script>
 </body>
 </html>
