@@ -20,4 +20,4 @@ jobs:
           git add data/flux.json data/agenda.json
           git diff --cached --quiet && exit 0
           git -c user.name="denyslx33" -c user.email="denyslx33@users.noreply.github.com" commit -qm "Fil d'actu automatique"
-          git pull -q --rebase origin main && git push -q origin main
+          for i in 1 2 3 4; do git pull -q --rebase origin main && git push -q origin main && exit 0; sleep $((i*5)); done; exit 1
