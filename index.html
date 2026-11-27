@@ -747,6 +747,34 @@ body.qfocus .topbar, body.qfocus #status, body.qfocus #inscr { display:none !imp
 .vsheet .vok { width:100%; height:34px; border:0; border-radius:8px; background:#022E7B; color:#fff; font:400 16px 'Asap', sans-serif; cursor:pointer; }
 .vsheet .vnote { font:400 12px 'Gidole', 'Asap', sans-serif; color:#626161; margin:16px 0 0; }
 .vsheet .vres button { display:block; width:100%; text-align:left; background:none; border:0; border-bottom:1px solid #E6EAF2; padding:8px 4px; font:400 16px 'Asap', sans-serif; color:#011334; }
+/* Résultats du test, suite */
+#v-test h2, #v-test .qq, .sect { text-wrap:balance; }
+#v-test .qpod { margin:24px 0 8px; gap:12px; }
+#v-test .qpod .pcol { width:96px; }
+#v-test .qpod .socle .pts { font-size:12px; }
+#v-test .qsub { margin:32px 0 12px; }
+#v-test .qres .sens { background:none; border:0; padding:0; }
+#v-test .qres .sens > p.muted, #v-test .qres > p.muted, #v-test .qother p.muted { font:400 12px/16px 'Asap', sans-serif; color:#626161; }
+#v-test .qres .axe { background:#fff; border-radius:15px; padding:12px; margin:0 0 8px; }
+#v-test .qres .axe b { font:500 16px 'Asap', sans-serif; color:#011944; }
+#v-test .qres .radar { background:#fff; border-radius:15px; }
+#v-test .qother > p { font:400 14px/19px 'Asap', sans-serif; color:#011334; }
+#v-test .qother .other { background:#fff; border-radius:15px; padding:10px 12px; margin:0 0 8px; border:0; }
+#v-test .qother .other a { font:500 16px 'Asap', sans-serif; color:#022E7B; }
+#v-test .qres .qsrc { background:#fff; border-radius:15px; margin:24px 0 8px; }
+#v-test .qres .qsrc > summary { list-style:none; display:flex; align-items:center; gap:6px; padding:8px; font:500 18px 'Asap', sans-serif; color:#011944; cursor:pointer; }
+#v-test .qres .qsrc > summary::-webkit-details-marker { display:none; }
+#v-test .qres .qsrc[open] > summary svg { transform:rotate(90deg); }
+#v-test .qres .qsrc .news { padding:10px 14px; border-top:1px solid #E6EAF2; font-size:13px; }
+#v-test .qres .resdet .rdh { font:600 12px 'Asap', sans-serif; text-transform:uppercase; margin:10px 0 6px; }
+#v-test .qres .resdet .rdh.ok { color:#06A067; } #v-test .qres .resdet .rdh.ko { color:#F8394C; }
+#v-test .qres .resdet .rdi { padding:6px 0; border-bottom:1px solid #E6EAF2; } #v-test .qres .resdet .rdi .t { font:500 14px 'Asap', sans-serif; color:#011944; }
+#v-test .qres .resdet .src, #v-test .qres .resdet .muted { font:400 12px 'Asap', sans-serif; color:#626161; }
+#v-test .qres .resdet .more { font:500 14px 'Asap', sans-serif; color:#5573A7; background:none; border:0; padding:8px 0 0; }
+#v-test .qend { margin-top:16px; } #v-test .qend button { font:500 14px 'Asap', sans-serif; color:#5573A7; }
+#v-test .qres .muted, #v-test .qres .sens p, #v-test .qres .axe .src { font:400 12px/16px 'Asap', sans-serif !important; color:#626161 !important; }
+#v-test .qother .other .muted { font:400 13px/17px 'Asap', sans-serif !important; }
+#v-test .qres .res .info .muted { margin:1px 0 5px; }
 </style>
 </head>
 <body>
@@ -1115,7 +1143,8 @@ const URL_MV = 'https://raw.githubusercontent.com/MieuxVoter/presidentielle2027/
 const EXCLUS = new Set(['Parti du vote blanc', 'Sébastien Bonnal']);
 const COLORS = ['#204A94','#4D87F4','#7DC3FB','#06A067','#74C566','#C7E7A4','#DBE64C','#AB8AE8'];
 const $ = (id) => document.getElementById(id);
-const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+const frTypo = (t) => String(t).replace(/ ([?!:;»%])/g, '\u00A0$1').replace(/« /g, '«\u00A0');
+const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = frTypo(txt); return e; };
 const link = (txt, url) => { const a = el('a', null, txt); if (/^https?:\/\//.test(url)) { a.href = url; a.target = '_blank'; a.rel = 'noopener'; } return a; };
 const fmt = (v) => v == null ? '–' : v.toFixed(1).replace('.', ',');
 const fdate = (s) => { const [y, m, d] = s.split('-'); return d + '/' + m + '/' + y; };
@@ -1472,6 +1501,13 @@ function renderQuizRes() {
   const d = el('div', 'qz');
   const answered = QANS.filter((a) => a === 1 || a === -1).length;
   d.classList.add('qres'); d.append(el('h2', 'sect', 'Vos résultats'), el('p', 'muted', `Pourcentage de réponses identiques, calculé seulement sur les questions où le candidat a une position publiée. À score égal, celui qui a le plus de questions comparables passe devant. Vous avez donné un avis sur ${answered} affirmations sur ${Q.length}.`));
+  if (main.length >= 3) {
+    const pod = el('div', 'podium qpod'); const H = [180, 130, 90];
+    pod.append(...[1, 0, 2].map((i) => { const r = main[i]; const col = el('div', 'pcol'); const id = el('div', 'pid'); id.append(avatar(r.c), el('b', null, r.c.nom), el('small', null, nomParti(r.c.parti)));
+      const so = el('div', 'socle'); so.style.height = H[i] + 'px'; so.append(el('span', 'pv', Math.round(r.pc) + ' %'), el('span', 'pts eq', r.ok + '/' + r.n));
+      col.append(id, so); col.onclick = () => openFiche(r.c.id); return col; }));
+    d.append(pod, el('h2', 'sect qsub', 'Le classement complet'));
+  }
   if (!main.length) d.append(el('p', null, "Pas assez de réponses pour comparer. Répondez « d'accord » ou « pas d'accord » à plus d'affirmations."));
   for (const r of main) {
     const row = el('div', 'res'); const info = el('div', 'info');
@@ -1505,7 +1541,7 @@ function renderQuizRes() {
   d.append(sensBlock(Q));
   const byId = new Map(CAND.principaux.map((c) => [c.id, c]));
   const srcUrl = (c) => (c.programme && (c.programme.url || c.programme.recap)) || (c.source_mesures && c.source_mesures.url) || '';
-  const det = el('details'); det.append(el('summary', null, 'Les sources : la mesure de chaque candidat, question par question'));
+  const det = el('details', 'qsrc'); const dsm = el('summary'); dsm.append(fsvg('th'), el('span', null, 'Les sources, question par question')); det.append(dsm);
   Q.forEach((q, i) => {
     const p = el('div', 'news'); const you = QANS[i] === 1 ? "d'accord" : QANS[i] === -1 ? "pas d'accord" : 'sans avis';
     p.append(el('b', null, (i + 1) + '. ' + q.q), el('div', 'muted', 'Vous : ' + you));
@@ -1524,7 +1560,7 @@ function renderQuizRes() {
   });
   d.append(det, el('p', 'muted', QUIZ.note));
   const ot = el('div'); ot.style.marginTop = '18px';
-  ot.append(el('div', 'qq', 'Vérifiez avec un autre test'), el('p', null, "Faites un ou deux autres tests, faits par d'autres équipes avec d'autres questions. Si les mêmes noms reviennent en tête, votre résultat est solide. S'ils changent, c'est que vos idées se partagent entre plusieurs candidats."));
+  ot.className = 'qother'; ot.append(el('h2', 'sect qsub', 'Vérifiez avec un autre test'), el('p', null, "Faites un ou deux autres tests, faits par d'autres équipes avec d'autres questions. Si les mêmes noms reviennent en tête, votre résultat est solide. S'ils changent, c'est que vos idées se partagent entre plusieurs candidats."));
   for (const [nom, url, txt] of [
     ['Votons 2027', 'https://votons-2027.fr/composer', 'Test d\'affinité gratuit et sans compte, chaque thème pèse autant.'],
     ['Swipe Your President', 'https://swipeyourpresident.com/quiz', 'Chaque position de candidat est liée à une citation datée. Le résultat complet est payant (1,99 €).'],
@@ -1532,15 +1568,15 @@ function renderQuizRes() {
   ]) { const o = el('div', 'other'); o.append(link(nom, url), el('div', 'muted', txt)); ot.append(o); }
   ot.append(el('p', 'muted', "Ces sites ne sont pas liés à cette appli. Aucun test ne remplace la lecture des programmes."));
   d.insertBefore(ot, det);
-  const shq = el('button', 'sharecard'); shq.type = 'button'; shq.innerHTML = '<span class="ic">💬</span><span><b>Proposez le test à vos proches</b><br><small>Comparez vos résultats</small></span><span class="chev">›</span>'; shq.onclick = shareApp; d.append(shq);
-  const nav = el('div', 'qnav'); const mod = el('button', null, '‹ Modifier mes réponses'); mod.onclick = () => { QI = 0; renderQuizQ(); }; const rs = el('button', null, 'Nouveau test'); rs.onclick = resetQuiz; nav.append(mod, rs); d.append(nav);
+  const shq = el('button', 'sharecard'); shq.type = 'button'; shq.innerHTML = '<span class="ic">' + FICS.share + '</span><span class="tx"><b>Proposez le test à vos proches</b><small>Comparez vos résultats</small></span>' + FICS.th.replace('#011944', '#fff'); shq.onclick = shareApp; d.append(shq);
+  const nav = el('div', 'qnav qend'); const mod = el('button', null, '‹ Modifier mes réponses'); mod.onclick = () => { QI = 0; renderQuizQ(); }; const rs = el('button', null, 'Nouveau test'); rs.onclick = resetQuiz; nav.append(mod, rs); d.append(nav);
   box.replaceChildren(d);
 }
 
 
 function sensBlock(Q) {
   const sb = el('div', 'sens'); const AX = QUIZ.axes || []; if (!AX.length) return sb;
-  sb.append(el('div', 'qq', 'Votre sensibilité'), el('p', 'muted', "Où vos réponses vous placent sur quatre grands thèmes. Chaque thème ne tient compte que des questions de ce test qui s'y rattachent. Aucun parti n'est associé à ces axes et aucun côté n'est meilleur que l'autre."));
+  sb.append(el('h2', 'sect qsub', 'Votre sensibilité'), el('p', 'muted', "Où vos réponses vous placent sur quatre grands thèmes. Chaque thème ne tient compte que des questions de ce test qui s'y rattachent. Aucun parti n'est associé à ces axes et aucun côté n'est meilleur que l'autre."));
   sb.append(radar(Q, AX));
   for (const a of AX) {
     let s = 0, n = 0; Q.forEach((q, i) => { const v = QANS[i]; if (q.axe && q.axe[0] === a.id && (v === 1 || v === -1)) { s += v * q.axe[1]; n++; } });
