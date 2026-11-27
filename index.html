@@ -350,11 +350,108 @@ h3 { font-size:20px; font-weight:600; }
 .hrow .sc { font-family:'Asap', sans-serif; font-size:28px; font-weight:500; font-style:italic; }
 .fhead .big { font-family:'Asap', sans-serif; font-size:30px; font-weight:500; font-style:italic; }
 .tcard .sc { font-family:'Asap', sans-serif; font-weight:500; }
+
+/* ===== Refonte design system Inès (nov. 2026) ===== */
+@font-face { font-family:'Capriola'; font-style:normal; font-weight:400; font-display:swap; src:url('fonts/capriola-latin-400-normal.woff2') format('woff2'); }
+:root { --bg:#F8F8F8; --ink:#011944; --ink2:#012157; --navy:#022A70; --b500:#022E7B; --b300:#5573A7; --b50:#E6EAF2; --g9:#626161; --g6:#D4D2D3; --r300:#F95969; --up:#06A067; --down:#F8394C; }
+body { background:var(--bg); color:var(--ink); }
+.num, .pv, .pts, .rk, .kd .dd, .tvune .dt { font-family:'Capriola', 'Asap', sans-serif; font-weight:400; font-style:normal; }
+.topbar { align-items:flex-start; padding-top:0; }
+.brandwrap { display:flex; flex-direction:column; gap:2px; min-width:0; }
+.brandwrap .brand img { height:29px; margin:0; }
+.brandwrap .jm { align-self:flex-start; margin:0 0 0 26px; background:var(--navy); color:#FDFDFD; font:400 12px/1.2 'Asap', sans-serif; padding:2px 8px; border-radius:100px; }
+.jm:empty { display:none; }
+.tbtn { align-items:center; gap:12px; }
+.tbtn .ab { width:auto; height:auto; padding:2px; }
+.tbtn .hshare { display:block; } .tbtn .hshare svg { display:block; }
+#status { font-family:'Gidole', 'Asap', sans-serif; font-size:12px; font-weight:400; color:var(--g9); margin:14px 0 0 42px; }
+.inscr { position:relative; display:flex; align-items:flex-start; background:none; padding:0; margin:16px 0 0; color:#000; font-size:12px; font-weight:400; border-radius:15px; }
+.inscr .ii { flex:none; position:relative; z-index:2; margin-right:-20px; line-height:0; }
+.inscr .it { flex:1; background:#FDFDFD; border-radius:8px; padding:8px 26px 8px 27px; line-height:1.25; min-height:40px; }
+.inscr .it a { color:inherit; font-weight:400; text-decoration:underline; }
+.inscr .it button { position:absolute; right:6px; top:4px; font-size:18px; color:var(--g9); }
+.hsec { margin-top:36px; }
+h2.sect, .hsec h2.sect { font:600 28px/28px 'Asap', sans-serif; color:var(--ink); margin:0 0 20px; }
+.hsec .sub { font-size:16px; font-weight:400; color:var(--g9); margin:-12px 0 12px; }
+.lnk { display:inline-flex; align-items:center; gap:0; background:none; border:0; padding:0; margin-top:16px; font:500 16px 'Asap', sans-serif; color:var(--b500); cursor:pointer; text-align:left; }
+.lnk span { text-decoration:underline; text-decoration-thickness:7.5%; text-underline-offset:3px; }
+.lnk svg { flex:none; margin-left:-2px; color:var(--b500); }
+.foot { font-family:'Gidole', 'Asap', sans-serif; font-size:12px; font-weight:400; color:var(--g9); line-height:1.25; margin:8px 0 0; }
+.foot a { color:inherit; }
+/* Podium */
+.podium { display:flex; justify-content:center; align-items:flex-end; gap:16px; margin-top:-4px; }
+.pcol { width:88px; display:flex; flex-direction:column; align-items:center; gap:6px; cursor:pointer; }
+.pid { display:flex; flex-direction:column; align-items:center; text-align:center; width:100%; }
+.pid .av { width:70px; height:70px; font-size:20px; margin-bottom:6px; }
+.pid b { font:400 16px/1.15 'Asap', sans-serif; color:#000; }
+.pid small { font:400 12px 'Asap', sans-serif; color:var(--g9); }
+.socle { width:100%; background:var(--b50); border-radius:20px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; }
+.socle .pv { font-size:20px; color:var(--navy); white-space:nowrap; }
+.pts { font-size:12px; white-space:nowrap; } .pts.up { color:var(--up); } .pts.down { color:var(--down); } .pts.eq { color:var(--g9); }
+.rklist { display:flex; flex-direction:column; gap:4px; margin-top:8px; max-height:276px; overflow-y:auto; padding-right:4px; scrollbar-width:thin; scrollbar-color:var(--g6) transparent; }
+.rklist::-webkit-scrollbar { width:8px; } .rklist::-webkit-scrollbar-thumb { background:var(--g6); border-radius:100px; }
+.rkrow { display:flex; align-items:center; gap:8px; background:#fff; border-radius:10px; padding:8px 12px; cursor:pointer; flex:none; }
+.rkrow .rk { width:9px; font-size:16px; color:var(--navy); text-align:center; margin-right:8px; }
+.rkrow .av { width:50px; height:50px; font-size:16px; }
+.rkrow .nm { flex:1; min-width:0; display:flex; flex-direction:column; } .rkrow .nm b { font:400 16px 'Asap', sans-serif; color:#000; } .rkrow .nm small { font-size:12px; color:var(--g9); }
+.rkrow .rres { display:flex; align-items:center; gap:12px; } .rkrow .rres .pv { font-size:20px; color:var(--navy); white-space:nowrap; } .rkrow .rres .pts { min-width:46px; }
+/* Télé */
+.tvune { display:flex; gap:8px; align-items:center; color:inherit; text-decoration:none; }
+.tvune .vis { width:133px; flex:none; display:flex; flex-direction:column; gap:2px; }
+.tvune .pic { height:91px; background:var(--b300); border-radius:6px; display:flex; align-items:center; justify-content:center; }
+.tvune .pic svg { width:44px; height:auto; } .tvune .pic svg * { stroke:#FDFDFD; } .tvune .pic svg path:last-child { fill:#FDFDFD; stroke:none; }
+.tvune .inf { background:#fff; border-radius:8px; padding:8px; display:flex; flex-direction:column; gap:2px; }
+.tvune .dt { font-size:16px; line-height:14px; color:var(--navy); }
+.tvune .ch { font:400 14px 'Asap', sans-serif; color:var(--b500); padding-left:13px; }
+.tvune .tx { flex:1; min-width:0; display:flex; flex-direction:column; gap:2px; }
+.tvune .kind { font:600 12px 'Asap', sans-serif; color:var(--b500); }
+.tvune .tx b { font:500 18px/22px 'Asap', sans-serif; color:var(--ink); }
+.hr { display:flex; align-items:flex-start; font:400 16px 'Asap', sans-serif; color:var(--ink); white-space:pre-line; } .hr svg { flex:none; color:var(--ink); }
+.tvrow { display:flex; align-items:flex-start; margin-top:4px; color:inherit; text-decoration:none; }
+#h-next .tvune + .tvrow { margin-top:24px; }
+.bub { flex:none; width:52px; height:52px; border-radius:100px; background:var(--b50); display:flex; align-items:center; justify-content:center; margin-right:-27px; position:relative; z-index:2; }
+.tvrow .bd { flex:1; min-width:0; background:#fff; border-radius:0 10px 10px 10px; padding:8px 8px 8px 35px; display:flex; flex-direction:column; gap:2px; }
+.tvrow .bd b { font:500 18px/22px 'Asap', sans-serif; color:var(--ink); }
+/* Actus */
+.ncard { display:flex; align-items:flex-start; gap:0; background:none; border:0; border-radius:0; padding:0; margin:0 0 6px; color:var(--ink); }
+.ncard .avs { position:relative; z-index:2; margin-right:-26px; }
+.ncard .avs .av, .ncard .gen { width:50px; height:50px; border:0; font-size:16px; }
+.ncard .avs .av + .av { margin-left:-20px; border:2px solid var(--bg); }
+.ncard .gen { background:var(--b50); }
+.ncard .bd { flex:1; min-width:0; background:#fff; border-radius:0 10px 10px 10px; padding:8px 8px 8px 35px; display:flex; flex-direction:column; gap:6px; }
+.ncard .avs:has(.av + .av) + .bd { padding-left:45px; }
+.ncard .t { font:500 18px/22px 'Asap', sans-serif; color:var(--ink); }
+.ncard .s { display:flex; align-items:center; gap:8px; margin:0; font:400 16px 'Asap', sans-serif; color:var(--ink); }
+.ncard .s .go { display:inline-flex; align-items:center; color:var(--b300); font-weight:500; }
+.ncard .s .go span { text-decoration:underline; text-decoration-thickness:7.5%; text-underline-offset:3px; } .ncard .s .go svg { color:var(--b300); margin-left:-2px; }
+.hcard .ncard { border:0; padding:0; margin:0 0 6px; }
+/* Dates clés */
+.kdbox { background:#fff; border-radius:15px; padding:16px; display:flex; flex-direction:column; gap:24px; }
+.kdbox .kd { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; padding:0; border:0; }
+.kd .l { display:flex; flex-direction:column; gap:2px; color:var(--ink2); } .kd .l b { font:500 18px/22px 'Asap', sans-serif; } .kd .l span { font:400 16px 'Asap', sans-serif; }
+.kd .w { display:flex; flex-direction:column; align-items:flex-end; gap:4px; white-space:nowrap; text-align:right; }
+.kd .dd { font-size:16px; line-height:14px; color:var(--navy); }
+.kd .jj { background:var(--navy); color:#FDFDFD; font:400 12px 'Asap', sans-serif; padding:2px 8px; border-radius:100px; }
+.kd.next b, .kd.next .w { color:inherit; } .kd.next .dd { color:var(--navy); } .kd.past { opacity:.45; } .kd.past .jj { background:var(--g9); }
+/* Raccourcis, partage, engagement */
+.hduo { margin-top:40px; background:var(--navy); border-radius:15px; padding:32px 16px; display:flex; justify-content:center; gap:24px; }
+.hduo button { width:131px; display:flex; flex-direction:column; align-items:center; gap:8px; background:none; border:0; color:#FDFDFD; text-align:center; cursor:pointer; padding:0; }
+.hduo .ci { width:50px; height:50px; border-radius:100px; background:#FDFDFD; display:flex; align-items:center; justify-content:center; }
+.hduo b { font:500 18px/22px 'Asap', sans-serif; margin-top:0; } .hduo small { font:400 12px/1.15 'Asap', sans-serif; margin-top:-4px; }
+.hsharec { margin-top:12px; width:100%; display:flex; align-items:center; justify-content:space-between; gap:16px; background:#fff; border:0; border-radius:15px; padding:16px; text-align:left; cursor:pointer; color:var(--ink); }
+.hsharec .tx { display:flex; flex-direction:column; } .hsharec b { font:500 18px/22px 'Asap', sans-serif; } .hsharec small { font:400 14px 'Asap', sans-serif; } .hsharec svg { flex:none; }
+.engage2 { margin-top:31px; color:var(--ink); }
+.engage2 h2.sect { margin-bottom:12px; }
+.engage2 .big { font:500 18px/22px 'Asap', sans-serif; margin:0 0 24px; } .engage2 .mid { font:400 16px 'Asap', sans-serif; margin:0 0 12px; } .engage2 .sm { font:400 12px/1.2 'Asap', sans-serif; margin:0; }
+.engage2 .lnk { margin-top:24px; }
+#gc-note { margin:44px 4px 0; }
+#h-favs h2.sect, #h-pres h2.sect, #h-tp h2.sect { margin-bottom:14px; }
+.hnew { margin-top:16px; }
 </style>
 </head>
 <body>
 <main>
-  <div class="topbar"><h1 class="brand"><img src="logo-header.svg" alt="Nous votons 2027" width="225" height="36"></h1><div class="tbtn"><button type="button" id="b-about" class="ab" aria-label="À propos"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" aria-hidden="true"><circle cx="14.5" cy="14.5" r="13.5" stroke-width="2" stroke="#022A70"/><path d="M15.4036 23.2595H13.5963V10.2227H15.4036V23.2595ZM14.4999 5.74048C14.8694 5.74048 15.1666 5.86097 15.3916 6.10194C15.6245 6.33489 15.741 6.63209 15.741 6.99356C15.741 7.36306 15.6245 7.66428 15.3916 7.89722C15.1666 8.12214 14.8694 8.23459 14.4999 8.23459C14.1304 8.23459 13.8292 8.12214 13.5963 7.89722C13.3714 7.66428 13.2589 7.36306 13.2589 6.99356C13.2589 6.63209 13.3714 6.33489 13.5963 6.10194C13.8292 5.86097 14.1304 5.74048 14.4999 5.74048Z" fill="#022A70"/></svg></button><button type="button" id="tab-share" class="hshare" aria-label="Partager l'appli"><span class="sc"><svg width="28" height="25" viewBox="0 0 28 25" fill="none" aria-hidden="true"><path d="M1 15.8957V19.092C1 21.3011 2.79087 23.092 5.00001 23.092H22.1088C24.3179 23.092 26.1088 21.3011 26.1088 19.092V15.8957" stroke-width="2" stroke-linecap="round" stroke="#FDFDFD"/><path d="M12.5545 17.3256C12.5545 17.8779 13.0022 18.3256 13.5545 18.3256C14.1068 18.3256 14.5545 17.8779 14.5545 17.3256H13.5545H12.5545ZM13.5545 17.3256H14.5545V1H13.5545H12.5545V17.3256H13.5545ZM14.2616 0.292893C13.8711 -0.0976311 13.2379 -0.0976311 12.8474 0.292893L6.48344 6.65685C6.09291 7.04738 6.09291 7.68054 6.48344 8.07107C6.87396 8.46159 7.50713 8.46159 7.89765 8.07107L13.5545 2.41421L19.2114 8.07107C19.6019 8.46159 20.235 8.46159 20.6256 8.07107C21.0161 7.68054 21.0161 7.04738 20.6256 6.65685L14.2616 0.292893Z" fill="#FDFDFD"/></svg></span><span class="tl">Partager</span></button></div></div>
+  <div class="topbar"><div class="brandwrap"><h1 class="brand"><img src="logo-header.svg" alt="Nous votons 2027" width="225" height="36"></h1><div class="jm" id="jm"></div></div><div class="tbtn"><button type="button" id="b-about" class="ab" aria-label="À propos"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" aria-hidden="true"><circle cx="12.2603" cy="12.2603" r="11.2603" stroke-width="2" stroke="#022A70"/><path d="M13.0244 19.6668H11.4962V8.64362H13.0244V19.6668ZM12.2603 4.85376C12.5727 4.85376 12.824 4.95564 13.0142 5.15939C13.2111 5.35636 13.3096 5.60766 13.3096 5.91329C13.3096 6.22572 13.2111 6.48041 13.0142 6.67737C12.824 6.86755 12.5727 6.96263 12.2603 6.96263C11.9479 6.96263 11.6932 6.86755 11.4962 6.67737C11.306 6.48041 11.2109 6.22572 11.2109 5.91329C11.2109 5.60766 11.306 5.35636 11.4962 5.15939C11.6932 4.95564 11.9479 4.85376 12.2603 4.85376Z" fill="#022A70"/></svg></button><button type="button" id="tab-share" class="hshare" aria-label="Partager l'appli"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" aria-hidden="true"><circle cx="21" cy="21" r="21" fill="#022A70"/><path d="M11.5295 14.4991V26.4703C11.5295 28.6794 13.3204 30.4703 15.5295 30.4703H27.5007" stroke-width="2" stroke-linecap="round" stroke="#FDFDFD"/><path d="M20.2562 20.3294C19.8657 20.72 19.8657 21.3531 20.2562 21.7436C20.6467 22.1342 21.2799 22.1342 21.6704 21.7436L20.9633 21.0365L20.2562 20.3294ZM20.9633 21.0365L21.6704 21.7436L31.1774 12.2366L30.4703 11.5295L29.7632 10.8224L20.2562 20.3294L20.9633 21.0365ZM31.4703 11.5295C31.4703 10.9772 31.0226 10.5295 30.4703 10.5295L21.4703 10.5295C20.918 10.5295 20.4703 10.9772 20.4703 11.5295C20.4703 12.0818 20.918 12.5295 21.4703 12.5295L29.4703 12.5295L29.4703 20.5295C29.4703 21.0818 29.918 21.5295 30.4703 21.5295C31.0226 21.5295 31.4703 21.0818 31.4703 20.5295L31.4703 11.5295Z" fill="#FDFDFD"/></svg></button></div></div>
   <div class="inst" id="inst" hidden>
     <span class="ic">📲</span>
     <div class="tx"><b>Ajoutez l'appli à votre téléphone</b><br><span>Gratuite, sans compte, mise à jour chaque jour.</span></div>
@@ -378,80 +475,63 @@ h3 { font-size:20px; font-weight:600; }
     <h2>Ajouter l'appli</h2>
     <div id="sheet-body"></div>
   </div></div>
-  <div class="jm" id="jm"></div>
   <p class="muted" id="status">Chargement…</p>
-  <div class="inscr" id="inscr"><span>🗳️</span><div>Inscrivez‑vous sur les listes électorales avant le <b>vendredi 12 mars 2027</b>. <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/R51788" target="_blank" rel="noopener">Vérifier mon inscription</a> · <a href="#guide" id="inscr-guide">Guide du vote</a></div><button id="inscr-x" aria-label="Masquer">×</button></div>
+  <div class="inscr" id="inscr"><span class="ii"><svg width="38" height="41" viewBox="0 0 38 41" fill="none" aria-hidden="true"><rect width="37.9546" height="40.0757" rx="18.9773" fill="#F8F8F8"/><path d="M11.1019 15.9879H13.4399V17.6798L12.6226 17.6798L11.1019 17.6798C10.3232 17.6798 9.6919 18.3111 9.6919 19.0898V28.9738C9.6919 29.7525 10.3232 30.3838 11.1019 30.3838H26.8527C27.6314 30.3838 28.2626 29.7525 28.2626 28.9738V19.0898C28.2626 18.3111 27.6314 17.6798 26.8527 17.6798L26.3916 17.6798L26.0585 17.6798V15.9879H26.8527C28.5658 15.9879 29.9546 17.3766 29.9546 19.0898V28.9738C29.9546 30.687 28.5658 32.0757 26.8527 32.0757H11.1019C9.38874 32.0757 7.99995 30.6869 7.99995 28.9738V19.0898C7.99995 17.3766 9.38874 15.9879 11.1019 15.9879Z" fill="#F95969"/><path d="M22.2502 10.0152L26.071 13.2801C27.3734 14.393 27.527 16.351 26.4141 17.6534L26.3916 17.6798L24.294 20.1346L23.0851 21.5491L21.7988 20.45L25.1278 16.5542C25.6337 15.9622 25.5639 15.0722 24.9719 14.5664L21.1511 11.3014C20.5591 10.7956 19.6691 10.8654 19.1632 11.4574L14.6524 16.7361C14.1465 17.3281 14.2164 18.2181 14.8084 18.724L16.7185 20.3563L15.6194 21.6426L13.8535 20.1336L13.7092 20.0103C12.9992 19.4036 12.6307 18.5457 12.6226 17.6798C12.6158 16.9574 12.8599 16.2293 13.3661 15.637L17.8769 10.3582C18.9898 9.05583 20.9478 8.90223 22.2502 10.0152Z" fill="#F95969"/><path d="M23.0851 21.5491L24.294 20.1346C24.7417 20.1564 25.0982 20.5263 25.0982 20.9795C25.0982 21.4468 24.7193 21.8255 24.2522 21.8255L13.7022 21.8255C13.2349 21.8255 12.8562 21.4468 12.8562 20.9795C12.8562 20.5124 13.2349 20.1336 13.7022 20.1336L13.8535 20.1336L15.6194 21.6426L16.7185 20.3563L14.8084 18.724C14.2164 18.2181 14.1465 17.3281 14.6524 16.7361L19.1632 11.4574C19.6691 10.8654 20.5591 10.7956 21.1511 11.3014L24.9719 14.5664C25.5639 15.0722 25.6337 15.9622 25.1278 16.5542L21.7988 20.45L23.0851 21.5491Z" fill-rule="evenodd" clip-rule="evenodd" fill="#FDFDFD"/><path d="M24.2521 20.1336C24.2661 20.1336 24.2801 20.134 24.2939 20.1346C24.7417 20.1565 25.0981 20.5264 25.0981 20.9796C25.0981 21.4468 24.7193 21.8256 24.2521 21.8256H13.7022C13.235 21.8256 12.8562 21.4468 12.8562 20.9796C12.8562 20.5124 13.235 20.1336 13.7022 20.1336H13.8535H24.2521Z" fill="#FDFDFD"/><path d="M11.1018 17.6798H12.6226C12.6306 18.5457 12.9993 19.4036 13.7092 20.0103L13.8535 20.1336H13.7021C13.2349 20.1336 12.8562 20.5124 12.8562 20.9796C12.8562 21.4468 13.2349 21.8256 13.7021 21.8256H24.2522C24.7192 21.8256 25.0981 21.4468 25.0981 20.9796C25.0981 20.5264 24.7417 20.1564 24.2939 20.1346L26.3916 17.6798H26.8528C27.6313 17.6798 28.2627 18.3111 28.2627 19.0898V28.9738C28.2627 29.7525 27.6313 30.3838 26.8528 30.3838H11.1018C10.3232 30.3838 9.69189 29.7525 9.69189 28.9738V19.0898C9.69189 18.3111 10.3232 17.6798 11.1018 17.6798Z" fill-rule="evenodd" clip-rule="evenodd" fill="#F95969"/></svg></span><div class="it">Inscrivez‑vous sur les listes électorales avant le vendredi 12 mars 2027. <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/R51788" target="_blank" rel="noopener">Vérifier mon inscription</a> · <a href="#guide" id="inscr-guide">Guide du vote</a><button id="inscr-x" aria-label="Masquer">×</button></div></div>
 
   <!-- SONDAGES -->
   <!-- ACCUEIL -->
   <section class="view on" id="v-accueil">
     <div id="h-silence"></div>
     <div class="hnew" id="h-new" hidden><button type="button" class="go" id="h-new-go"><span class="ic">✨</span><span><b>Nouveau dans l’appli</b><br><small>Meetings près de chez vous, favoris, test enrichi…</small></span><span class="chev">›</span></button><button type="button" class="x" id="h-new-x" aria-label="Masquer">×</button></div>
-    <div class="h3b">
-      <button type="button" id="h-test"><span>🧭</span>Le test<small>Quel candidat pense comme moi ?</small></button>
-      <button type="button" id="h-prog"><span>📄</span>Programmes<small>Comparer les idées</small></button>
-      <button type="button" id="h-sond"><span>📊</span>Sondages<small>Courbe et 2nd tour</small></button>
-    </div>
-    <div class="hcard" id="h-favs" hidden>
-      <div class="hh"><h2>Mes favoris</h2><span class="muted">Sur ce téléphone</span></div>
+    <div class="hsec" id="h-favs" hidden>
+      <h2 class="sect">Mes favoris</h2>
       <div id="h-favs-in"></div>
     </div>
-    <div class="hcard" id="h-poll">
-      <div class="hh"><h2>Dernier sondage</h2><span class="muted" id="h-src"></span></div>
-      <div id="h-top"></div>
-      <p class="muted legal" id="h-meta"></p>
-      <button class="more" id="h-sond2" type="button">Tous les sondages, la courbe et le 2nd tour ›</button>
+    <div class="hsec" id="h-poll">
+      <h2 class="sect">Sur le podium<br>des sondages*</h2>
+      <div class="podium" id="h-pod"></div>
+      <div class="rklist" id="h-top"></div>
+      <p class="foot" id="h-meta"></p>
+      <button type="button" class="lnk" id="h-sond2"><span>Courbes et sondages</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7.45435 4.92175L12.5456 10.013M12.5326 9.99997L7.45435 15.0782" stroke-width="1.5" stroke-linecap="round" stroke="currentColor"/></svg></button>
     </div>
-    <div class="hcard" id="h-dates">
-      <div class="hh"><h2>Les dates clés</h2><span class="muted">Sources officielles</span></div>
-      <div id="h-kd"></div>
-      <button class="more" id="h-guide2" type="button">Inscription, procuration : le guide du vote ›</button>
-    </div>
-    <div class="hcard" id="h-pres" hidden>
-      <div class="hh"><h2>Près de chez vous</h2><span class="muted" id="h-pres-sub"></span></div>
-      <div id="h-pres-in"></div>
-      <button class="more" id="h-pres-more" type="button">Tous les rendez-vous près de chez moi ›</button>
-    </div>
-    <div class="hcard" id="h-tp" hidden>
-      <div class="hh"><h2>Temps de parole</h2><span class="muted">Arcom</span></div>
-      <div id="h-tp-in"></div>
-      <button class="more" id="h-tp-more" type="button">Le détail et les règles ›</button>
-    </div>
-    <div class="hcard">
-      <div class="hh"><h2>Dernières actus</h2></div>
-      <div id="h-actu"></div>
-      <button class="more" id="h-actus" type="button">Toute l'actu ›</button>
-    </div>
-    <div class="hcard">
-      <div class="hh"><h2>À la télé</h2></div>
+    <div class="hsec">
+      <h2 class="sect">Rendez-vous télé</h2>
       <div id="h-next"></div>
-      <button class="more" id="h-agenda" type="button">Tout l'agenda ›</button>
+      <button type="button" class="lnk" id="h-agenda"><span>Tout l’agenda</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7.45435 4.92175L12.5456 10.013M12.5326 9.99997L7.45435 15.0782" stroke-width="1.5" stroke-linecap="round" stroke="currentColor"/></svg></button>
     </div>
-    <div class="hbtns hb1">
-      <button type="button" id="h-guide"><span>🗳️</span>Guide du vote<small>Inscription, procuration…</small></button>
+    <div class="hsec" id="h-pres" hidden>
+      <h2 class="sect">Près de chez vous</h2><p class="sub" id="h-pres-sub"></p>
+      <div id="h-pres-in"></div>
+      <button type="button" class="lnk" id="h-pres-more"><span>Tous les rendez-vous près de chez moi</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7.45435 4.92175L12.5456 10.013M12.5326 9.99997L7.45435 15.0782" stroke-width="1.5" stroke-linecap="round" stroke="currentColor"/></svg></button>
     </div>
-    <div class="hcard engage">
-      <h2>Notre engagement</h2>
-      <p class="big">Neutres et indépendants.<br><span>Aucun parti, aucun média derrière l'appli.</span></p>
-      <p class="muted">Tous les candidats sont présentés de la même façon, par ordre alphabétique, et chaque info renvoie à sa source.</p>
-      <button class="more" id="h-method" type="button">Notre méthode ›</button>
+    <div class="hsec">
+      <h2 class="sect">Dernières actus</h2>
+      <div id="h-actu"></div>
+      <button type="button" class="lnk" id="h-actus"><span>Toute l’actu</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7.45435 4.92175L12.5456 10.013M12.5326 9.99997L7.45435 15.0782" stroke-width="1.5" stroke-linecap="round" stroke="currentColor"/></svg></button>
     </div>
-    <div class="hcard">
-      <div class="hh"><h2>Des infos vérifiables</h2></div>
-      <p class="muted" style="margin:2px 0 8px">Les données viennent de sources officielles, citées sur chaque page :</p>
-      <div class="srcchips">
-        <a href="https://www.conseil-constitutionnel.fr/" target="_blank" rel="noopener">Conseil constitutionnel</a>
-        <a href="https://www.commission-des-sondages.fr/" target="_blank" rel="noopener">Commission des sondages</a>
-        <a href="https://www.arcom.fr/" target="_blank" rel="noopener">Arcom</a>
-        <a href="https://www.cnccfp.fr/" target="_blank" rel="noopener">CNCCFP</a>
-        <a href="https://www.interieur.gouv.fr/" target="_blank" rel="noopener">Ministère de l'Intérieur</a>
-        <a href="https://www.service-public.gouv.fr/" target="_blank" rel="noopener">Service-public</a>
-      </div>
-      <button class="more" id="h-sources" type="button">Toutes nos sources ›</button>
+    <div class="hsec" id="h-dates">
+      <h2 class="sect">Les dates clés</h2>
+      <div class="kdbox" id="h-kd"></div>
+      <button type="button" class="lnk" id="h-guide2"><span>Inscription, procuration, voir le guide du vote</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7.45435 4.92175L12.5456 10.013M12.5326 9.99997L7.45435 15.0782" stroke-width="1.5" stroke-linecap="round" stroke="currentColor"/></svg></button>
     </div>
-    <button type="button" class="sharecard" id="h-share"><span class="ic">💬</span><span><b>Faites connaître l'appli</b><br><small>Envoyez‑la à vos proches en un geste</small></span><span class="chev">›</span></button>
-    <button type="button" class="more" id="h-about" style="text-align:center">Qui sommes‑nous ? D'où viennent les infos ? ›</button>
-    <p class="muted" id="gc-note" style="font-size:12px;margin-top:16px" hidden>Mesure d'audience anonyme, sans cookies ni données personnelles (GoatCounter).</p>
+    <div class="hsec" id="h-tp" hidden>
+      <h2 class="sect">Temps de parole</h2><p class="sub">Relevés de l’Arcom</p>
+      <div id="h-tp-in"></div>
+      <button type="button" class="lnk" id="h-tp-more"><span>Le détail et les règles</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7.45435 4.92175L12.5456 10.013M12.5326 9.99997L7.45435 15.0782" stroke-width="1.5" stroke-linecap="round" stroke="currentColor"/></svg></button>
+    </div>
+    <div class="hduo">
+      <button type="button" id="h-test"><span class="ci"><svg width="26" height="27" viewBox="0 0 26 27" fill="none" aria-hidden="true"><path d="M24.4183 6.11792V13.3926C24.4183 16.154 22.1798 18.3926 19.4184 18.3926L6.00001 18.3926C3.23858 18.3926 1 16.154 1 13.3926V6.76441C1 4.00298 3.23858 1.7644 6 1.7644H19.3966" stroke-width="2" stroke="#022A70"/><path d="M24.4287 8.81787V17.1174C24.4287 19.8788 22.1901 22.1174 19.4287 22.1174H6C3.23858 22.1174 1 19.8788 1 17.1174V8.86904" stroke-width="2" stroke="#022A70"/><path d="M24.4287 12.3479V20.6474C24.4287 23.4088 22.1901 25.6474 19.4287 25.6474H6C3.23858 25.6474 1 23.4088 1 20.6474V12.3991" stroke-width="2" stroke="#022A70"/><path d="M9.69995 10.8953L11.9706 12.9311L23.9017 0.999944" stroke-width="2" stroke-linecap="round" stroke="#022A70"/></svg></span><b>Faire le test</b><small>Quel candidat me représente le mieux ?</small></button>
+      <button type="button" id="h-guide"><span class="ci"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" aria-hidden="true"><path d="M7.18838 10.293H5C2.79086 10.293 1 12.0838 1 14.293V25.6849C1 27.8941 2.79086 29.6849 5 29.6849H24.2944C26.5036 29.6849 28.2944 27.8941 28.2944 25.6849V14.293C28.2944 12.0838 26.5036 10.293 24.2944 10.293H24.1858" stroke-width="2" stroke="#022A70"/><path d="M10.8644 15.9046L9.02163 14.3299C7.34215 12.8948 7.14408 10.3699 8.57923 8.69041L13.4068 3.04099C14.8419 1.36151 17.3668 1.16344 19.0463 2.59859L22.7317 5.74788C24.4112 7.18302 24.6093 9.70792 23.1741 11.3874L19.3141 15.9046" stroke-width="2" stroke="#022A70"/><path d="M7.54138 15.8774H21.7527" stroke-width="2" stroke-linecap="round" stroke="#022A70"/></svg></span><b>Guide du vote</b><small>Inscription, procuration…</small></button>
+    </div>
+    <button type="button" class="hsharec" id="h-share"><span class="tx"><b>Faire connaître l’appli</b><small>Envoyez‑la à vos proches en un geste</small></span><svg width="42" height="42" viewBox="0 0 42 42" fill="none" aria-hidden="true"><circle cx="21" cy="21" r="21" fill="#F95969"/><path d="M11.5295 14.4991V26.4703C11.5295 28.6794 13.3204 30.4703 15.5295 30.4703H27.5007" stroke-width="2" stroke-linecap="round" stroke="#FDFDFD"/><path d="M20.2562 20.3294C19.8657 20.72 19.8657 21.3531 20.2562 21.7436C20.6467 22.1342 21.2799 22.1342 21.6704 21.7436L20.9633 21.0365L20.2562 20.3294ZM20.9633 21.0365L21.6704 21.7436L31.1774 12.2366L30.4703 11.5295L29.7632 10.8224L20.2562 20.3294L20.9633 21.0365ZM31.4703 11.5295C31.4703 10.9772 31.0226 10.5295 30.4703 10.5295L21.4703 10.5295C20.918 10.5295 20.4703 10.9772 20.4703 11.5295C20.4703 12.0818 20.918 12.5295 21.4703 12.5295L29.4703 12.5295L29.4703 20.5295C29.4703 21.0818 29.918 21.5295 30.4703 21.5295C31.0226 21.5295 31.4703 21.0818 31.4703 20.5295L31.4703 11.5295Z" fill="#FDFDFD"/></svg></button>
+    <div class="hsec engage2">
+      <h2 class="sect">Notre engagement</h2>
+      <p class="big">Neutres et indépendants.</p>
+      <p class="mid">Aucun parti, aucun média derrière l’appli.</p>
+      <p class="sm">Tous les candidats sont présentés de la même façon, par ordre alphabétique, et chaque info renvoie à sa source.</p>
+      <button type="button" class="lnk" id="h-about"><span>Qui sommes-nous ? Notre méthode ?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7.45435 4.92175L12.5456 10.013M12.5326 9.99997L7.45435 15.0782" stroke-width="1.5" stroke-linecap="round" stroke="currentColor"/></svg></button>
+    </div>
+    <p class="foot" id="gc-note" hidden>Mesure d’audience anonyme, sans cookies ni données personnelles (GoatCounter).</p>
   </section>
 
   <section class="view" id="v-sondages">
@@ -709,7 +789,7 @@ h3 { font-size:20px; font-weight:600; }
   <button data-v="accueil" class="on" aria-label="Accueil"><span class="ic"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" aria-hidden="true"><path d="M18.6489 26.6083V25.618C18.6489 23.2504 16.7296 21.331 14.362 21.331C11.9943 21.331 10.075 23.2504 10.075 25.618V26.6026" stroke-width="2" stroke="#022A70"/><path d="M3.20004 27.1042C1.98499 27.1042 1 26.1192 1 24.9042V10.8282C1 9.81684 1.50963 8.87351 2.35555 8.31911L12.7743 1.49086C13.7769 0.833725 15.0746 0.83661 16.0743 1.4982L26.3797 8.31784C27.2192 8.87339 27.7241 9.81296 27.7241 10.8196V24.7429C27.7241 26.047 26.6669 27.1042 25.3628 27.1042" stroke-width="2" stroke-linecap="round" stroke="#022A70"/></svg></span><span class="tl">Accueil</span></button>
   <button data-v="candidats" aria-label="Candidats"><span class="ic"><svg width="36" height="27" viewBox="0 0 36 27" fill="none" aria-hidden="true"><path d="M10.0698 26.6967V22.5044C10.0698 19.9998 8.03945 17.9695 5.5349 17.9695C3.03034 17.9695 1 19.9998 1 22.5044V26.6967" stroke-width="2" stroke="#022A70"/><circle cx="5.53478" cy="11.9415" r="2.82384" stroke-width="2" stroke="#022A70"/><path d="M13.0698 26.6966V14.4075C13.0698 11.9029 15.1002 9.87256 17.6047 9.87256C20.1093 9.87256 22.1396 11.9029 22.1396 14.4075V26.6966" stroke-width="2" stroke="#022A70"/><circle cx="17.6048" cy="3.82384" r="2.82384" stroke-width="2" stroke="#022A70"/><path d="M34.2094 26.6967V26.1968C34.2094 23.6922 32.1791 21.6619 29.6745 21.6619C27.17 21.6619 25.1396 23.6922 25.1396 26.1968V26.6967" stroke-width="2" stroke="#022A70"/><circle cx="29.6747" cy="15.7655" r="2.82384" stroke-width="2" stroke="#022A70"/></svg></span><span class="tl">Candidats</span></button>
   <button data-v="programmes" aria-label="Programmes"><span class="ic"><svg width="29" height="27" viewBox="0 0 29 27" fill="none" aria-hidden="true"><path d="M5.84462 12.4663L8.12884 14.5143L11.9095 10.0246" stroke-width="2" stroke-linecap="round" stroke="#022A70"/><path d="M5.84448 22.8413L8.1287 24.8892L11.9094 20.3996" stroke-width="2" stroke-linecap="round" stroke="#022A70"/><path d="M17.3619 10.0246L22.5994 15.2351M22.5994 10.0246L17.3619 15.2351" stroke-width="2" stroke-linecap="round" stroke="#022A70"/><path d="M17.3619 20.3996L22.5994 25.6102M22.5994 20.3996L17.3619 25.6102" stroke-width="2" stroke-linecap="round" stroke="#022A70"/><path d="M1 6.69167C1 4.55695 2.73053 2.82642 4.86525 2.82642H23.5796C25.7143 2.82642 27.4448 4.55695 27.4448 6.69167" stroke-width="2" stroke-linecap="round" stroke="#022A70"/><rect class="cache" x="6.4682" y="1.00002" width="15.5082" height="3.65281" rx="1.8264" fill="#FDFDFD" stroke-width="2" stroke="#022A70"/></svg></span><span class="tl">Programmes</span></button>
-  <button data-v="test" aria-label="Quiz"><span class="ic"><svg width="26" height="27" viewBox="0 0 26 27" fill="none" aria-hidden="true"><path d="M24.4183 6.11808V13.3927C24.4183 16.1542 22.1798 18.3927 19.4184 18.3927L6.00001 18.3927C3.23858 18.3927 1 16.1542 1 13.3927V6.76456C1 4.00314 3.23858 1.76456 6 1.76456H19.3966" stroke-width="2" stroke="#022A70"/><path d="M24.4287 8.81796V17.1175C24.4287 19.8789 22.1901 22.1175 19.4287 22.1175H6C3.23858 22.1175 1 19.8789 1 17.1175V8.86912" stroke-width="2" stroke="#022A70"/><path d="M24.4287 12.3479V20.6474C24.4287 23.4089 22.1901 25.6474 19.4287 25.6474H6C3.23858 25.6474 1 23.4089 1 20.6474V12.3991" stroke-width="2" stroke="#022A70"/><path d="M9.69997 10.8954L11.9706 12.9311L23.9017 1" stroke-width="2" stroke-linecap="round" stroke="#022A70"/></svg></span><span class="tl">Quiz</span></button>
+  <button data-v="test" aria-label="Se tester"><span class="ic"><svg width="26" height="27" viewBox="0 0 26 27" fill="none" aria-hidden="true"><path d="M24.4183 6.11808V13.3927C24.4183 16.1542 22.1798 18.3927 19.4184 18.3927L6.00001 18.3927C3.23858 18.3927 1 16.1542 1 13.3927V6.76456C1 4.00314 3.23858 1.76456 6 1.76456H19.3966" stroke-width="2" stroke="#022A70"/><path d="M24.4287 8.81796V17.1175C24.4287 19.8789 22.1901 22.1175 19.4287 22.1175H6C3.23858 22.1175 1 19.8789 1 17.1175V8.86912" stroke-width="2" stroke="#022A70"/><path d="M24.4287 12.3479V20.6474C24.4287 23.4089 22.1901 25.6474 19.4287 25.6474H6C3.23858 25.6474 1 23.4089 1 20.6474V12.3991" stroke-width="2" stroke="#022A70"/><path d="M9.69997 10.8954L11.9706 12.9311L23.9017 1" stroke-width="2" stroke-linecap="round" stroke="#022A70"/></svg></span><span class="tl">Se tester</span></button>
   <button data-v="actu" aria-label="Actualités"><span class="ic"><svg width="33" height="28" viewBox="0 0 33 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26.0068" height="20.4326" rx="4" stroke-width="2" stroke="#022A70"/><mask id="navActuMask" fill="white"><path d="M32.7624 22.654V5.22148H9.75562C6.99419 5.22148 4.75562 7.46006 4.75562 10.2215V22.654C4.75562 25.4155 6.99419 27.654 9.75561 27.654H27.7624C30.5239 27.654 32.7624 25.4155 32.7624 22.654Z"/></mask><path d="M32.7624 5.22148V22.654C32.7624 25.4155 30.5239 27.654 27.7624 27.654H9.75561C6.99419 27.654 4.75562 25.4155 4.75562 22.654V10.2215C4.75562 7.46006 6.99419 5.22148 9.75562 5.22148H32.7624Z" stroke-width="4" stroke="#022A70" mask="url(#navActuMask)"/><path d="M11.2507 11.2162H22.0988" stroke-width="2" stroke-linecap="round" stroke="#022A70"/><path d="M11.2507 16.2371H22.0988" stroke-width="2" stroke-linecap="round" stroke="#022A70"/></svg></span><span class="tl">Actualités</span></button>
 </nav>
 
@@ -1374,10 +1454,10 @@ function newsCard(n, byId) {
   const a = el('a', 'ncard'); if (/^https?:\/\//.test(n.url)) { a.href = n.url; a.target = '_blank'; a.rel = 'noopener'; }
   const avs = el('div', 'avs'); const who = n.qui.filter((i) => byId.has(i)).slice(0, 3);
   if (who.length) who.forEach((i) => avs.append(avatar(byId.get(i)))); else avs.append(el('div', 'gen', '🗳️'));
-  const body = el('div');
+  const body = el('div', 'bd');
   if (n.parti && who.length) { const c0 = byId.get(who[0]); body.append(el('div', 'ptag2', 'Parti · ' + (n.parti === true ? c0.parti : n.parti))); }
   body.append(el('div', 't', n.texte));
-  const src = el('div', 's'); src.append(n.source + ' · ', el('b', null, "Lire l'article ›")); body.append(src);
+  const src = el('div', 's'); const go = el('span', 'go'); go.append(el('span', null, 'Lire l’article'), svgI('chev')); src.append(el('span', null, n.source), go); body.append(src);
   a.append(avs, body); return a;
 }
 function goView(v) { try { history.pushState(null, '', '#' + v); PUSHED = true; } catch (e) {} showViewNoHist(v); }
@@ -1389,25 +1469,45 @@ function renderAccueil() {
   if (POLLS && POLLS.length && !silence()) {
     const last = POLLS[0]; const prev = POLLS.slice(1).find((p) => p.institut === last.institut);
     const pm = new Map(prev ? prev.scores.map((x) => [x.nom, x.v]) : []);
-    $('h-src').textContent = last.institut + ', ' + fdate(last.date); $('h-meta').replaceChildren(pollMeta(last) + ', ' + margTxt(last.scores) + '. ', link('Notice', 'https://www.commission-des-sondages.fr/notices/'));
-    $('h-top').replaceChildren(...last.scores.slice().sort((a, b) => b.v - a.v).slice(0, 5).map((x, i) => {
-      const r = el('div', 'hrow'); const c = byNom.get(x.nom);
-      const av = c ? avatar(c) : el('span', 'av', x.nom.split(' ').map((w) => w[0]).slice(0, 2).join('')); if (!c) av.style.background = '#8B9FC2';
-      const nm = el('div', 'nm'); nm.append(x.nom, el('small', null, x.parti || ''));
-      const ev = el('div', 'dv');
-      if (pm.has(x.nom)) { const dv = Math.round((x.v - pm.get(x.nom)) * 10) / 10; ev.className = 'dv ' + (dv > 0 ? 'up' : dv < 0 ? 'down' : 'muted'); ev.textContent = (dv > 0 ? '+' : '') + fmt(dv) + ' pt'; }
-      r.append(el('span', 'rk', String(i + 1)), av, nm, el('div', 'sc', fmt(x.v) + ' %'), ev);
-      r.onclick = () => c ? openFiche(c.id) : goView('sondages');
-      return r;
+    $('h-meta').replaceChildren('*' + pollMeta(last) + ', ' + margTxt(last.scores) + '. ', link('Notice', 'https://www.commission-des-sondages.fr/notices/'));
+    const sorted = last.scores.slice().sort((a, b) => b.v - a.v);
+    const who = (x) => { const c = byNom.get(x.nom); const av = c ? avatar(c) : el('span', 'av', x.nom.split(' ').map((w) => w[0]).slice(0, 2).join('')); if (!c) av.style.background = '#8B9FC2'; return [c, av]; };
+    const evo = (x) => { const ev = el('span', 'pts'); if (pm.has(x.nom)) { const dv = Math.round((x.v - pm.get(x.nom)) * 10) / 10; ev.classList.add(dv > 0 ? 'up' : dv < 0 ? 'down' : 'eq'); ev.textContent = (dv > 0 ? '+' : dv < 0 ? '−' : '') + fmt(Math.abs(dv)) + ' pt' + (Math.abs(dv) >= 2 ? 's' : ''); } return ev; };
+    const H = [228, 164, 93];
+    $('h-pod').replaceChildren(...[2, 1, 0].filter((i) => sorted[i]).map((i) => {
+      const x = sorted[i]; const [c, av] = who(x); const col = el('div', 'pcol');
+      const id = el('div', 'pid'); id.append(av, el('b', null, x.nom), el('small', null, x.parti || ''));
+      const so = el('div', 'socle'); so.style.height = H[i] + 'px'; so.append(el('span', 'pv', fmt(x.v) + ' %'), evo(x));
+      col.append(id, so); col.onclick = () => c ? openFiche(c.id) : goView('sondages'); return col;
+    }));
+    $('h-top').replaceChildren(...sorted.slice(3).map((x, i) => {
+      const [c, av] = who(x); const r = el('div', 'rkrow');
+      const nm = el('div', 'nm'); nm.append(el('b', null, x.nom), el('small', null, x.parti || ''));
+      const res = el('div', 'rres'); res.append(el('span', 'pv', fmt(x.v) + ' %'), evo(x));
+      r.append(el('span', 'rk', String(i + 4)), av, nm, res);
+      r.onclick = () => c ? openFiche(c.id) : goView('sondages'); return r;
     }));
   }
   if (AGENDA) {
     const today = new Date().toISOString().slice(0, 10);
-    const up = AGENDA.evenements.filter((e) => ['debat', 'emission'].includes(e.type) && (e.fin || e.date) >= today).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 2);
-    const rows = up.map(evRow);
-    for (const r of (AGENDA.rendezvous || []).slice(0, 3 - rows.length)) {
-      const d = el('div', 'hrow'); d.style.cursor = 'default';
-      const nm = el('div', 'nm'); nm.append(r.titre, el('small', null, r.quand + ' · ' + r.chaine)); d.append(el('span', null, '📺'), nm); rows.push(d);
+    const up = AGENDA.evenements.filter((e) => ['debat', 'emission'].includes(e.type) && (e.fin || e.date) >= today).sort((a, b) => a.date.localeCompare(b.date));
+    const rows = [];
+    const f = up[0];
+    if (f) {
+      const [y, m, d] = f.date.split('-'); const card = el(f.url ? 'a' : 'div', 'tvune'); if (f.url) { card.href = f.url; card.target = '_blank'; card.rel = 'noopener'; }
+      const vis = el('div', 'vis'); const pic = el('div', 'pic'); pic.append(svgI('tv'));
+      const inf = el('div', 'inf'); inf.append(el('span', 'dt', (+d) + ' ' + MOIS[+m - 1] + (f.heure ? ' ' + f.heure : '')), el('span', 'ch', f.chaine || ''));
+      vis.append(pic, inf);
+      const tx = el('div', 'tx'); tx.append(el('span', 'kind', (TYPES[f.type] || f.type).toUpperCase()), el('b', null, f.titre));
+      if (f.lieu) { const l = el('span', 'hr'); l.append(svgI('chev'), f.lieu); tx.append(l); }
+      card.append(vis, tx); rows.push(card);
+    }
+    const others = up.slice(1, 3).map((e) => ({ titre: e.titre, quand: fdateLong(e.date) + (e.heure ? ' · ' + e.heure : ''), chaine: e.chaine, url: e.url }));
+    for (const r of others.concat(AGENDA.rendezvous || []).slice(0, 4)) {
+      const d = el(r.url ? 'a' : 'div', 'tvrow'); if (r.url) { d.href = r.url; d.target = '_blank'; d.rel = 'noopener'; }
+      const ic = el('span', 'bub'); ic.append(svgI('tv'));
+      const b = el('div', 'bd'); const hr = el('span', 'hr'); hr.append(svgI('chev'), el('span', null, r.quand + (r.chaine ? '\n' + r.chaine : '')));
+      b.append(el('b', null, r.titre), hr); d.append(ic, b); rows.push(d);
     }
     $('h-next').replaceChildren(...(rows.length ? rows : [el('p', 'muted', 'Aucune émission annoncée pour le moment.')]));
   }
@@ -1416,6 +1516,8 @@ function renderAccueil() {
 }
 
 
+const ICS = { chev: '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7.45435 4.92175L12.5456 10.013M12.5326 9.99997L7.45435 15.0782" stroke-width="1.5" stroke-linecap="round" stroke="currentColor"/></svg>', tv: '<svg width="30" height="25" viewBox="0 0 30 25" fill="none" aria-hidden="true"><rect x="1.00001" y="1" width="27.9437" height="18.7614" rx="3" stroke-width="2" stroke="#022E7B"/><path d="M5.78552 23.8878H25.3077" stroke-width="2" stroke-linecap="round" stroke="#022E7B"/><path d="M17.6026 11.2949L14.1602 12.9734C13.4959 13.2973 12.7219 12.8136 12.7219 12.0745V8.6959C12.7219 7.95466 13.5001 7.47105 14.1647 7.79928L17.6072 9.49942C18.3522 9.86736 18.3495 10.9307 17.6026 11.2949Z" fill="#022E7B"/></svg>' };
+function svgI(k) { const t = document.createElement('template'); t.innerHTML = ICS[k]; return t.content.firstChild; }
 const APP_URL = 'https://denyslx33.github.io/presidentielle-2027/';
 const SHARE_TXT = "Nous votons : toute la présidentielle 2027 dans une appli. Sondages, candidats, programmes, actu et le test « Quel candidat pense comme moi ? ». Gratuite, neutre, sans pub et sans compte.";
 function toast(t) { const d = el('div', 'toast', t); document.body.append(d); setTimeout(() => d.remove(), 2200); }
@@ -1532,8 +1634,8 @@ function renderKeyDates() {
   const t0 = new Date(); t0.setHours(0, 0, 0, 0); let nextDone = false;
   box.replaceChildren(...KEYDATES.map(([d, t, sub]) => {
     const dt = new Date(d + 'T00:00:00'); const n = Math.round((dt - t0) / 864e5);
-    const r = el('div', 'kd'); const l = el('div'); l.append(el('b', null, t)); l.append(el('div', 'muted', sub));
-    const w = el('div', 'w', fdateLong(d)); w.append(el('small', null, n > 1 ? 'dans ' + n + ' jours' : n === 1 ? 'demain' : n === 0 ? "aujourd'hui" : 'passé'));
+    const r = el('div', 'kd'); const l = el('div', 'l'); l.append(el('b', null, t), el('span', null, sub));
+    const w = el('div', 'w'); w.append(el('span', 'dd', fdateLong(d)), el('span', 'jj', n > 0 ? 'J-' + n : n === 0 ? 'Jour J' : 'passé'));
     if (n < 0) r.classList.add('past'); else if (!nextDone) { r.classList.add('next'); nextDone = true; }
     r.append(l, w); return r;
   }));
@@ -1850,16 +1952,13 @@ $('cmp-a').addEventListener('change', (e) => { CMPA = e.target.value; renderCmp(
 $('cmp-b').addEventListener('change', (e) => { CMPB = e.target.value; renderCmp(); });
 countdown();
 $('sback').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView('accueil'); });
-$('h-sond').addEventListener('click', () => goView('sondages'));
 $('h-agenda').addEventListener('click', openAgenda);
 for (const b of document.querySelectorAll('#aseg button')) b.addEventListener('click', () => setAMode(b.dataset.a));
 $('h-actus').addEventListener('click', () => { setAMode('infos'); showView('actu'); });
 $('h-test').addEventListener('click', () => showView('test'));
-$('h-prog').addEventListener('click', () => showView('programmes'));
 $('h-sond2').addEventListener('click', () => goView('sondages'));
 $('h-guide').addEventListener('click', openGuide);
 $('h-guide2').addEventListener('click', openGuide);
-for (const id of ['h-method', 'h-sources']) $(id).addEventListener('click', openAbout);
 for (const b of document.querySelectorAll('#cseg button')) b.addEventListener('click', () => setCMode(b.dataset.c));
 $('inscr-guide').addEventListener('click', (e) => { e.preventDefault(); openGuide(); });
 $('agenda-guide').addEventListener('click', openGuide);
