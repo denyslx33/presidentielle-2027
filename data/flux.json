@@ -2,6 +2,24 @@
 "v": 4,
 "items": [
 {
+"t": "Marine Le Pen promet une \"grande loi-programme\" pour l'Outre-mer",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/france/outremer/marine-le-pen-promet-une-grande-loi-programme-pour-l-outre-mer_8303604.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-27T17:49:35Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "« On m’a fait une réputation absurde de germanophobe » : pourquoi Jean-Luc Mélenchon est accusé d’avoir une obsession contre l’Allemagne",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/elections/presidentielle/on-ma-fait-une-reputation-absurde-de-germanophobe-pourquoi-jean-luc-melenchon-est-accuse-davoir-une-obsession-contre-lallemagne-5528adb0-ea6e-11f1-bb2d-c71dc7920c2a?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-27T17:47:09Z",
+"qui": [
+"melenchon"
+]
+},
+{
 "t": "Présidentielle 2027: \"Je pense que Raphaël Glucksmann va aller jusqu'au bout\", estime Ségolène Royal",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-je-pense-que-raphael-glucksmann-va-aller-jusqu-au-bout-estime-segolene-royal_VN-202611270786.html",
@@ -548,6 +566,22 @@
 "t": "Présidentielle 2027 : « On a vraiment les moyens d’être le leader européen », le secteur du jeu vidéo interpelle les candidats",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-on-a-vraiment-les-moyens-detre-le-leader-europeen-le-secteur-du-jeu-video-interpelle-les-candidats-27-11-2026-6WQ2AW5BMZCOXH5VPKCT7DSSOY.php",
+"d": "2026-11-27T12:00:00Z",
+"qui": []
+},
+{
+"t": "Présidentielle 2027 : meeting, tracts par millions, porte-à-porte géant… Fabien Roussel à la relance",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-meeting-tracts-par-millions-porte-a-porte-geant-fabien-roussel-a-la-relance-27-11-2026-5Z75OVDU5RDC3IPDU26DBRE4ZA.php",
+"d": "2026-11-27T12:00:00Z",
+"qui": [
+"roussel"
+]
+},
+{
+"t": "Présidentielle 2027 : ni « cohésion » ni « confiance mutuelle », le climat est tendu entre LFI et ses ex de « L’Après »",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-ni-cohesion-ni-confiance-mutuelle-le-climat-est-tendu-entre-lfi-et-ses-ex-de-lapres-27-11-2026-3QRZXODDVFDP3ESV6Z2MCYD53A.php",
 "d": "2026-11-27T12:00:00Z",
 "qui": []
 },
@@ -1750,57 +1784,21 @@
 "glucksmann",
 "riner"
 ]
-},
-{
-"t": "Édouard Philippe en visite à l'Institut Curie où il va dévoiler des propositions de mesures sur le thème de la santé",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/horizons/video-edouard-philippe-en-visite-a-l-institut-curie-ou-il-va-devoiler-des-propositions-de-mesures-sur-le-theme-de-la-sante_VN-202611260504.html",
-"d": "2026-11-26T10:22:50Z",
-"qui": [
-"philippe"
-]
-},
-{
-"t": "Teddy Riner attendu à Coutances (Manche) pour un déplacement sur une exploitation agricole et un centre de formation professionnelle",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-teddy-riner-attendu-a-coutances-manche-pour-un-deplacement-sur-une-exploitation-agricole-et-un-centre-de-formation-professionnelle_VN-202611260482.html",
-"d": "2026-11-26T09:50:01Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "Sébastien Lecornu, David Lisnard et Gérard Larcher réunis pour un débat à l’occasion de la clôture du Congrès des maires et des présidents d’intercommunalité de France",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-sebastien-lecornu-david-lisnard-et-gerard-larcher-reunis-pour-un-debat-a-l-occasion-de-la-cloture-du-congres-des-maires-et-des-presidents-d-intercommunalite-de-france_VN-202611260477.html",
-"d": "2026-11-26T09:48:39Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Benoît Payan appelle Raphaël Glucksmann \"à se dépasser\" et \"à rassembler le plus largement possible\"",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/benoit-payan-appelle-raphael-glucksmann-a-se-depasser-et-a-rassembler-le-plus-largement-possible_8301006.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-26T09:38:40Z",
-"qui": [
-"glucksmann"
-]
 }
 ],
 "sources": {
 "Le Monde": 7,
-"franceinfo": 6,
+"franceinfo": 7,
 "Libération": 22,
 "Le Figaro": 7,
-"Le Parisien": 52,
+"Le Parisien": 54,
 "20 Minutes": 9,
-"Ouest-France": 1,
+"Ouest-France": 2,
 "BFMTV": 23,
 "France 24": 9,
 "La Croix": 23,
 "LCP": 39,
 "RFI": 10
 },
-"maj": "2026-11-27T17:45:29Z"
+"maj": "2026-11-27T17:59:23Z"
 }
