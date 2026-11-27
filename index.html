@@ -328,7 +328,7 @@ body.silence #v-sondages .block, body.silence #v-sondages #lede, body.silence #v
 .aseg button { font:inherit; font-size:13.5px; font-weight:600; border:0; border-radius:10px; padding:9px 2px; white-space:nowrap; letter-spacing:-.2px; background:none; color:var(--muted); cursor:pointer; }
 .aseg button.on { background:var(--accent); color:var(--white); }
 .ptag2 { display:inline-block; font-size:11px; font-weight:600; color:var(--muted); border:1px solid var(--line); border-radius:20px; padding:1px 8px; margin-bottom:4px; }
-@font-face { font-family:'Gidole'; font-style:normal; font-weight:400; font-display:swap; src:url('fonts/gidole-regular.woff2') format('woff2'); }
+@font-face { font-family:'Gidole'; font-style:normal; font-weight:400; font-display:swap; src:url('fonts/gidole-regular.woff2') format('woff2'); unicode-range:U+0000-2018, U+201A-FFFF; }
 @font-face { font-family:'Asap'; font-style:normal; font-weight:300; font-display:swap; src:url('fonts/asap-latin-300-normal.woff2') format('woff2'); }
 @font-face { font-family:'Asap'; font-style:normal; font-weight:400; font-display:swap; src:url('fonts/asap-latin-400-normal.woff2') format('woff2'); }
 @font-face { font-family:'Asap'; font-style:normal; font-weight:500; font-display:swap; src:url('fonts/asap-latin-500-normal.woff2') format('woff2'); }
@@ -824,6 +824,20 @@ details.gacc a { color:#022E7B; } details.gacc .muted { font-size:12px; color:#6
 #v-sondages tr:last-child td { border-bottom:0; }
 #v-sondages th, #v-sondages td { white-space:nowrap; }
 #v-apropos .sharecard .tx small { color:#FDFDFD !important; opacity:.85 !important; }
+#v-test .qfoot { display:flex; justify-content:space-between; align-items:center; margin-top:48px; gap:10px; }
+#v-test .qfoot .qprev { margin-top:0; }
+#v-test .qstop { background:#022E7B; color:#fff; border:0; border-radius:100px; padding:6px 12px; font:500 12px 'Asap', sans-serif; cursor:pointer; }
+#v-test .qhint { font:400 12px/16px 'Gidole', 'Asap', sans-serif; color:#626161; text-align:right; margin:10px 0 0; }
+#v-test .qacts { display:flex; flex-direction:column; gap:8px; margin:4px 0 8px; }
+#v-test .qgo2 { display:flex; align-items:center; justify-content:center; gap:6px; width:100%; background:#022E7B; color:#fff; border:0; border-radius:8px; padding:6px 8px; font:400 16px 'Asap', sans-serif; cursor:pointer; }
+#v-test .qgo2 svg circle { fill:transparent; } #v-test .qgo2 svg path { stroke:#fff; }
+#v-test .qgo2.alt { background:#E6EAF2; color:#022E7B; }
+#v-test .qdots.many { gap:2px; padding:0 2px; }
+#v-test .qdots.many i { flex:1 1 0; width:auto; max-width:8px; height:6px; }
+#v-test .qdots.many i.cur { flex:0 0 20px; width:20px; max-width:none; }
+#v-test .qpodn { font:400 11px 'Gidole', 'Asap', sans-serif !important; color:#626161; text-align:center; margin:6px 0 0; }
+#v-test .qwarn { background:#fff; border-radius:15px; padding:12px; font:400 13px/18px 'Asap', sans-serif !important; color:#011334 !important; margin:16px 0 0; }
+#v-test .qwarn b { color:#F95969; }
 </style>
 </head>
 <body>
@@ -1215,7 +1229,7 @@ const avatar = (c) => {
 let AMODE = 'infos';
 let TP = null, GUIDE_FROM = 'accueil';
 let THEME = null, AGENDA = null, AGF = '', RAW = null, EXTRA = [], DUELS = null, QUIZ = null, PMODE = 'theme', CMPA = null, CMPB = null, QI = 0, QANS = null, RUNQ = null;
-const QN = 25;
+const QN = 50;
 let PERIOD = 0, POLLS = null, CAND = null, ACTU = null, FLUX = null, FILTRE = '';
 
 function parseCSV(text) {
@@ -1468,12 +1482,14 @@ function renderCmp() {
 function lsGet(k) { try { return JSON.parse(localStorage.getItem(k) || 'null'); } catch (e) { return null; } }
 function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 function saveAns() { lsSet('quizRun', { ids: RUNQ.map((q) => q.id), ans: QANS }); }
+// Poids d'une question : plus elle a de positions connues, et plus les candidats y sont partagés, plus elle départage.
+const qW = (q) => { const v = Object.values(q.pos); const a = v.filter((x) => x === 1).length, d = v.length - a; return 1 + v.length + 2 * Math.min(a, d); };
 function drawRun() {
   const all = QUIZ.questions; const seen = new Set(lsGet('quizSeen') || []);
   let fresh = all.filter((q) => !seen.has(q.id));
   if (fresh.length < QN) { seen.clear(); fresh = all.slice(); }
   const themes = [...new Set(all.map((q) => q.theme))];
-  const pickW = (arr) => { let t = arr.reduce((a, q) => a + 1 + Object.keys(q.pos).length, 0), r = Math.random() * t; for (const q of arr) { r -= 1 + Object.keys(q.pos).length; if (r <= 0) return q; } return arr[arr.length - 1]; };
+  const pickW = (arr) => { let t = arr.reduce((a, q) => a + qW(q), 0), r = Math.random() * t; for (const q of arr) { r -= qW(q); if (r <= 0) return q; } return arr[arr.length - 1]; };
   const out = []; const pool = new Map(themes.map((t) => [t, fresh.filter((q) => q.theme === t)]));
   for (const ax of (QUIZ.axes || [])) {
     for (let k = 0; k < 3; k++) {
@@ -1503,7 +1519,7 @@ function renderQuiz() {
   document.body.classList.remove('qfocus');
   if (QI === 0 && QANS.every((a) => a === null)) {
     const card = el('div', 'qintro');
-    const tx = el('div', 'qitx'); tx.append(el('b', null, `${Q.length} affirmations tirées au hasard parmi ${QUIZ.questions.length}, tous thèmes confondus.`), el('span', null, "Pour chacune, dites si vous êtes d'accord. À la fin, les candidats sont classés selon le nombre de réponses communes."), el('span', null, "Refaites le test : vous aurez d'autres questions."));
+    const tx = el('div', 'qitx'); tx.append(el('b', null, `${Q.length} affirmations tirées au hasard parmi ${QUIZ.questions.length}, tous thèmes confondus.`), el('span', null, "Pour chacune, dites si vous êtes d'accord. À la fin, les candidats sont classés selon le nombre de réponses communes."), el('span', null, "Vous pouvez voir votre résultat à tout moment, mais plus vous répondez, plus il est précis. Refaites le test : vous aurez d'autres questions."));
     const b = el('button', 'qgo', 'Se tester'); b.type = 'button'; b.onclick = () => { QI = 0; gcCount('test-commence', 'Test commencé', true); renderQuizQ(); };
     card.append(el('h2', null, 'Quel candidat me représente le mieux ?'), tx, b);
     box.replaceChildren(card, el('p', 'qdisc', "Ce test n'est pas une consigne de vote. Chaque position de candidat vient d'une mesure de son programme ou de ses déclarations publiques, et à la fin vous verrez, question par question, la mesure et le lien vers sa source. Beaucoup de candidats n'ont pas encore de programme complet. Vos réponses restent sur votre téléphone."));
@@ -1521,7 +1537,7 @@ function renderQuizQ() {
   const mid = el('div', 'qth'); const ti = el('span', 'qti'); ti.innerHTML = (TH_IC[q.theme] || [''])[0]; mid.append(el('span', 'qtn', q.theme), ti);
   const rs = el('button', 'qic'); rs.type = 'button'; rs.innerHTML = QIC.redo; rs.setAttribute('aria-label', 'Nouveau test'); rs.onclick = resetQuiz;
   top.append(bk, mid, rs); d.append(top);
-  const pr = el('div', 'qdots'); for (let i = 0; i < Q.length; i++) pr.append(el('i', i === QI ? 'cur' : i < QI ? 'done' : '')); d.append(pr, el("div", "qcount", `Question ${QI + 1} sur ${Q.length}`));
+  const pr = el('div', 'qdots' + (Q.length > 25 ? ' many' : '')); for (let i = 0; i < Q.length; i++) pr.append(el('i', i === QI ? 'cur' : i < QI ? 'done' : '')); d.append(pr, el("div", "qcount", `Question ${QI + 1} sur ${Q.length}`));
   const qb = el('div', 'qbody'); qb.append(el('div', 'qq', q.q));
   if (q.exp) { const ex = el('details', 'qexp'); const sm = el('summary'); sm.append(el('span', null, 'C’est quoi ?'), fsvg('th')); ex.append(sm, el('p', null, q.exp)); const pl = el('p', 'src'); pl.append('Pour aller plus loin : ', link('vie-publique.fr', 'https://www.vie-publique.fr')); ex.append(pl); qb.append(ex); }
   d.append(qb);
@@ -1532,10 +1548,22 @@ function renderQuizQ() {
     ans.append(b);
   }
   d.append(ans);
-  if (QI) { const pv = el('button', 'qprev'); pv.type = 'button'; const ic = fsvg('th'); pv.append(ic, el('span', null, 'Question précédente')); pv.onclick = () => { QI--; renderQuizQ(); }; d.append(pv); }
+  const foot = el('div', 'qfoot');
+  if (QI) { const pv = el('button', 'qprev'); pv.type = 'button'; const ic = fsvg('th'); pv.append(ic, el('span', null, 'Question précédente')); pv.onclick = () => { QI--; renderQuizQ(); }; foot.append(pv); } else foot.append(el('span'));
+  const answered = QANS.slice(0, QI).filter((a) => a === 1 || a === -1).length;
+  if (QI >= 5) { const st = el('button', 'qstop'); st.type = 'button'; st.append(el('span', null, 'Voir mon résultat maintenant')); st.onclick = stopQuiz; foot.append(st); }
+  d.append(foot);
+  if (QI >= 5) d.append(el('p', 'qhint', answered < 20 ? `Plus vous répondez, plus le résultat est précis. Vous avez donné ${answered} avis pour l'instant.` : `${answered} avis donnés : votre résultat commence à être solide.`));
   box.replaceChildren(d); scrollTo(0, 0);
 }
 function resetQuiz() { drawRun(); renderQuiz(); }
+function stopQuiz() { RUNQ = RUNQ.slice(0, QI); QANS = QANS.slice(0, QI); RUNQ.done = true; saveAns(); QI = RUNQ.length; gcCount('test-arrete', 'Test arrêté avant la fin', true); renderQuizRes(); }
+function extendQuiz(n) {
+  const have = new Set(RUNQ.map((q) => q.id)); let pool = QUIZ.questions.filter((q) => !have.has(q.id)); const add = [];
+  while (add.length < n && pool.length) { let t = pool.reduce((a, q) => a + qW(q), 0), r = Math.random() * t, pick = pool[pool.length - 1]; for (const q of pool) { r -= qW(q); if (r <= 0) { pick = q; break; } } add.push(pick); pool = pool.filter((q) => q !== pick); }
+  if (!add.length) return; const seen = new Set(lsGet('quizSeen') || []); add.forEach((q) => seen.add(q.id)); lsSet('quizSeen', [...seen]);
+  const start = RUNQ.length; const wasDone = RUNQ.done; RUNQ = RUNQ.concat(add); RUNQ.done = wasDone; QANS = QANS.concat(Array(add.length).fill(null)); QI = start; saveAns(); gcCount('test-prolonge', 'Test prolongé', true); renderQuizQ();
+}
 function renderQuizRes() {
   document.body.classList.remove('qfocus');
   const Q = RUNQ, box = $('quiz');
@@ -1545,17 +1573,27 @@ function renderQuizRes() {
     return { c, n, ok, pc: n ? ok / n * 100 : 0 };
   });
   const MIN = 3;
-  const main = rows.filter((r) => r.n >= MIN).sort((a, b) => b.pc - a.pc || b.n - a.n || nomFamille(a.c.nom).localeCompare(nomFamille(b.c.nom), 'fr'));
+  rows.forEach((r) => { r.adj = (r.ok + 1) / (r.n + 2); });
+  const main = rows.filter((r) => r.n >= MIN).sort((a, b) => b.adj - a.adj || b.n - a.n || nomFamille(a.c.nom).localeCompare(nomFamille(b.c.nom), 'fr'));
   const few = rows.filter((r) => r.n < MIN).sort((a, b) => nomFamille(a.c.nom).localeCompare(nomFamille(b.c.nom), 'fr'));
   const d = el('div', 'qz');
   const answered = QANS.filter((a) => a === 1 || a === -1).length;
-  d.classList.add('qres'); d.append(el('h2', 'sect', 'Vos résultats'), el('p', 'muted', `Pourcentage de réponses identiques, calculé seulement sur les questions où le candidat a une position publiée. À score égal, celui qui a le plus de questions comparables passe devant. Vous avez donné un avis sur ${answered} affirmations sur ${Q.length}.`));
-  if (main.length >= 3) {
+  d.classList.add('qres'); d.append(el('h2', 'sect', 'Vos résultats'), el('p', 'muted', `Pourcentage de réponses identiques, calculé seulement sur les questions où le candidat a une position publiée. Le classement tient compte du nombre de questions comparables : 9 sur 10 passe devant 2 sur 2. Vous avez donné un avis sur ${answered} affirmations sur ${Q.length}.`));
+  const acts = el('div', 'qacts');
+  const rb = el('button', 'qgo2'); rb.type = 'button'; rb.append(el('span', null, 'Refaire le test')); rb.insertAdjacentHTML('afterbegin', QIC.redo.replace('width="42" height="42"', 'width="30" height="30"')); rb.onclick = () => { resetQuiz(); scrollTo(0, 0); };
+  acts.append(rb);
+  const left = QUIZ.questions.length - Q.length;
+  if (left > 0) { const xb = el('button', 'qgo2 alt'); xb.type = 'button'; xb.append(el('span', null, `Affiner avec ${Math.min(20, left)} questions de plus`)); xb.onclick = () => { extendQuiz(20); scrollTo(0, 0); }; acts.append(xb); }
+  d.append(acts);
+  const solid = main.filter((r) => r.n >= 5);
+  if (solid.length >= 3) {
     const pod = el('div', 'podium qpod'); const H = [180, 130, 90];
-    pod.append(...[1, 0, 2].map((i) => { const r = main[i]; const col = el('div', 'pcol'); const id = el('div', 'pid'); id.append(avatar(r.c), el('b', null, r.c.nom), el('small', null, nomParti(r.c.parti)));
+    pod.append(...[1, 0, 2].map((i) => { const r = solid[i]; const col = el('div', 'pcol'); const id = el('div', 'pid'); id.append(avatar(r.c), el('b', null, r.c.nom), el('small', null, nomParti(r.c.parti)));
       const so = el('div', 'socle'); so.style.height = H[i] + 'px'; so.append(el('span', 'pv', Math.round(r.pc) + ' %'), el('span', 'pts eq', r.ok + '/' + r.n));
       col.append(id, so); col.onclick = () => openFiche(r.c.id); return col; }));
-    d.append(pod, el('h2', 'sect qsub', 'Le classement complet'));
+    d.append(pod, el('p', 'qpodn', 'Podium calculé sur les candidats avec au moins 5 questions comparables.'), el('h2', 'sect qsub', 'Le classement complet'));
+  } else if (main.length) {
+    const n = el('p', 'qwarn'); n.append(el('b', null, 'Résultat encore peu précis. '), 'Trop peu de questions comparables pour classer les candidats avec confiance. Répondez à plus de questions pour l’affiner.'); d.append(n, el('h2', 'sect qsub', 'Le classement provisoire'));
   }
   if (!main.length) d.append(el('p', null, "Pas assez de réponses pour comparer. Répondez « d'accord » ou « pas d'accord » à plus d'affirmations."));
   for (const r of main) {
