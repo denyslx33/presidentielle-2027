@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26",
+ "maj": "2026-11-27",
  "evenements": [
   {
    "date": "2026-08-27",
@@ -130,6 +130,18 @@
     "melenchon"
    ],
    "url": "https://www.lemonde.fr/international/article/2026/11/26/l-allemagne-s-inquiete-de-la-rhetorique-anti-allemande-de-jean-luc-melenchon_6815524_3210.html"
+  },
+  {
+   "date": "2026-11-27",
+   "heure": null,
+   "type": "evenement",
+   "titre": "Marine Le Pen présente son programme pour les outre-mer",
+   "lieu": null,
+   "chaine": null,
+   "qui": [
+    "lepen"
+   ],
+   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-marine-le-pen-va-presenter-son-programme-pour-les-outre-mer-en-pleine-tourmente-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8302521.html"
   },
   {
    "date": "2026-11-28",
