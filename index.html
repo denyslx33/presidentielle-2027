@@ -448,6 +448,31 @@ h2.sect, .hsec h2.sect { font:600 28px/28px 'Asap', sans-serif; color:var(--ink)
 #gc-note { margin:44px 4px 0; }
 #h-favs h2.sect, #h-pres h2.sect, #h-tp h2.sect { margin-bottom:14px; }
 .hnew { margin-top:16px; }
+
+/* Candidats */
+.ctitle { margin:24px 0 24px; }
+.cseg-wrap { display:flex; justify-content:flex-end; margin-bottom:12px; }
+.aseg { display:flex; gap:16px; background:#fff; border:0; border-radius:100px; padding:4px; margin:0; }
+.aseg button { width:52px; height:52px; flex:none; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; border:0; border-radius:100px; padding:0; background:#fff; color:var(--b500); font:400 8px 'Gidole', 'Asap', sans-serif; letter-spacing:0; cursor:pointer; }
+.aseg button .si { width:24px; height:24px; display:flex; align-items:center; justify-content:center; }
+.aseg button.on { background:var(--b500); color:#fff; }
+.trombi { grid-template-columns:repeat(3, 1fr); gap:4px; margin-top:0; }
+@media (min-width:560px) { .trombi { grid-template-columns:repeat(auto-fill, minmax(123px, 1fr)); } }
+.tcard { background:var(--b50); border:0; border-radius:20px; padding:16px 8px; gap:8px; }
+.tcard .av { width:70px; height:70px; font-size:22px; margin:0; }
+.tcard .who { font:400 16px/1.15 'Asap', sans-serif; color:#011334; }
+.tcard .party { font:400 12px 'Asap', sans-serif; color:var(--g9); }
+details.sec.acc { background:#fff; border:0; border-radius:15px; padding:0; margin:6px 0 0; }
+#c-cands details.sec.acc:first-of-type { margin-top:32px; }
+details.sec.acc > summary { list-style:none; display:flex; align-items:center; gap:8px; padding:8px; font:600 28px/28px 'Asap', sans-serif; color:var(--ink); cursor:pointer; }
+details.sec.acc > summary::-webkit-details-marker { display:none; }
+details.sec.acc > summary svg { flex:none; align-self:flex-start; margin-top:5px; transition:transform .2s; }
+details.sec.acc[open] > summary svg { transform:rotate(90deg); }
+details.sec.acc > :not(summary) { margin-left:12px; margin-right:12px; }
+details.sec.acc[open] { padding-bottom:12px; }
+.cautres { margin-top:32px; }
+.cautres h3 { font:400 16px 'Asap', sans-serif; color:var(--ink); margin:16px 0 6px; } .cautres h3:first-child { margin-top:0; }
+.cautres .foot p { margin:0 0 4px; } .cautres .foot a { color:inherit; }
 </style>
 </head>
 <body>
@@ -575,14 +600,14 @@ h2.sect, .hsec h2.sect { font:600 28px/28px 'Asap', sans-serif; color:var(--ink)
 
   <!-- CANDIDATS -->
   <section class="view" id="v-candidats">
-    <div class="aseg" id="cseg"><button type="button" data-c="cands" class="on">👤 Candidats</button><button type="button" data-c="partis">🏛️ Partis</button><button type="button" data-c="votes">🗳️ Votes</button><button type="button" data-c="retraits">↩️ Retraits</button></div>
+    <h2 class="sect ctitle" id="c-title">Les candidats<br>par ordre alphabétique</h2>
+    <div class="cseg-wrap"><div class="aseg" id="cseg"><button type="button" data-c="cands" class="on"><span class="si"><svg width="24" height="18" viewBox="0 0 24 18" fill="none" aria-hidden="true"><path d="M6.61275 17.6984V14.9191C6.61275 13.2587 5.26674 11.9127 3.60636 11.9127C1.94598 11.9127 0.599976 13.2587 0.599976 14.9191V17.6984" stroke-width="1.2" stroke="currentColor"/><circle cx="3.60628" cy="7.91653" r="1.935" stroke-width="1.2" stroke="currentColor"/><path d="M8.60156 17.6983V9.55131C8.60156 7.89093 9.94757 6.54492 11.6079 6.54492C13.2683 6.54492 14.6143 7.89093 14.6143 9.55131V17.6983" stroke-width="1.2" stroke="currentColor"/><circle cx="11.608" cy="2.535" r="1.935" stroke-width="1.2" stroke="currentColor"/><path d="M22.616 17.6984V17.367C22.616 15.7066 21.27 14.3606 19.6097 14.3606C17.9493 14.3606 16.6033 15.7066 16.6033 17.367V17.6984" stroke-width="1.2" stroke="currentColor"/><circle cx="19.6097" cy="10.4516" r="1.935" stroke-width="1.2" stroke="currentColor"/></svg></span><span>Candidats</span></button><button type="button" data-c="partis"><span class="si"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M1.90613 9.94255V4.42956C1.90613 4.05061 2.21333 3.74341 2.59228 3.74341C2.97123 3.74341 3.27843 4.05061 3.27843 4.42956V9.94255C3.27841 10.3215 2.97122 10.6287 2.59228 10.6287C2.21334 10.6287 1.90615 10.3215 1.90613 9.94255Z" fill="currentColor"/><path d="M0.686352 11.406L11.9549 11.406C12.3339 11.406 12.6411 11.7132 12.6411 12.0922C12.6411 12.4711 12.3339 12.7783 11.9549 12.7783L0.686352 12.7783C0.307402 12.7783 0.000201225 12.4711 0.000201225 12.0922C0.000201225 11.7132 0.307402 11.406 0.686352 11.406Z" fill="currentColor"/><path d="M12.1917 2.15997C12.5474 2.29081 12.7296 2.68513 12.5988 3.04077C12.4679 3.39635 12.0736 3.57863 11.718 3.44784L6.32059 1.46209L0.923182 3.44784C0.567571 3.57863 0.173234 3.39635 0.0423756 3.04077C-0.08846 2.68513 0.0938005 2.29081 0.449443 2.15997L6.32059 0L12.1917 2.15997Z" fill="currentColor"/><path d="M5.63446 9.94255V4.42956C5.63446 4.05061 5.94166 3.74341 6.32061 3.74341C6.69956 3.74341 7.00676 4.05061 7.00676 4.42956V9.94255C7.00674 10.3215 6.69955 10.6287 6.32061 10.6287C5.94167 10.6287 5.63448 10.3215 5.63446 9.94255Z" fill="currentColor"/><path d="M9.36279 9.91289V4.3999C9.36279 4.02095 9.66999 3.71375 10.0489 3.71375C10.4279 3.71375 10.7351 4.02095 10.7351 4.3999V9.91289C10.7351 10.2918 10.4279 10.599 10.0489 10.599C9.67 10.599 9.36281 10.2918 9.36279 9.91289Z" fill="currentColor"/></svg></span><span>Partis</span></button><button type="button" data-c="votes"><span class="si"><svg width="17" height="18" viewBox="0 0 17 18" fill="none" aria-hidden="true"><path d="M2.2995 5.92151H4.03271V7.17579H2.2995C1.72225 7.1758 1.25427 7.64376 1.25427 8.22102V15.5483C1.25427 16.1255 1.72225 16.5935 2.2995 16.5935H13.9759C14.5531 16.5935 15.0211 16.1255 15.0211 15.5483V8.22102C15.0211 7.64375 14.5531 7.17579 13.9759 7.17579H13.3871V5.92151H13.9759C15.2459 5.92151 16.2754 6.95103 16.2754 8.22102V15.5483C16.2754 16.8182 15.2459 17.8478 13.9759 17.8478H2.2995C1.02953 17.8478 -5.72205e-06 16.8182 -5.72205e-06 15.5483V8.22102C-5.72205e-06 6.95104 1.02953 5.92152 2.2995 5.92151Z" fill="currentColor"/><path d="M10.5638 1.49373L13.3963 3.91417C14.3619 4.73923 14.4757 6.1908 13.6507 7.15633L11.1828 10.0444L10.2292 9.22955L12.6971 6.34147C13.0721 5.90259 13.0204 5.24279 12.5815 4.86776L9.74896 2.44732C9.31009 2.07229 8.65028 2.12405 8.27526 2.56293L4.9312 6.47631C4.55617 6.91518 4.60793 7.57499 5.04681 7.95001L6.46291 9.1601L5.64805 10.1137L4.23195 8.9036C3.26642 8.07854 3.15254 6.62698 3.97761 5.66145L7.32167 1.74807C8.14673 0.782535 9.59829 0.668665 10.5638 1.49373Z" fill="currentColor"/><path d="M12.0484 8.99487C12.3947 8.99487 12.6755 9.27566 12.6755 9.62204C12.6755 9.96841 12.3947 10.2492 12.0484 10.2492H4.2272C3.88083 10.2492 3.60004 9.96841 3.60004 9.62204C3.60004 9.27566 3.88083 8.99487 4.2272 8.99487H12.0484Z" fill="currentColor"/></svg></span><span>Votes</span></button><button type="button" data-c="retraits"><span class="si"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17.5697 18.1148V19.7505H5.74576V18.1148H17.5697ZM18.1149 17.5696V5.7457C18.1149 5.44458 17.8708 5.20048 17.5697 5.20048H5.74576C5.44464 5.20048 5.20054 5.44458 5.20054 5.7457V17.5696C5.20054 17.8707 5.44464 18.1148 5.74576 18.1148V19.7505C4.54129 19.7505 3.56488 18.7741 3.56488 17.5696V5.7457C3.56488 4.57891 4.48115 3.62595 5.63341 3.56748L5.74576 3.56482H17.5697C18.7741 3.56482 19.7506 4.54123 19.7506 5.7457V17.5696C19.7506 18.7741 18.7741 19.7505 17.5697 19.7505V18.1148C17.8708 18.1148 18.1149 17.8707 18.1149 17.5696Z" fill="currentColor"/><path d="M17.5697 18.1149L5.74577 18.1149C5.44465 18.1149 5.20054 17.8708 5.20054 17.5696L5.20055 5.74572C5.20055 5.4446 5.44465 5.2005 5.74576 5.2005L17.5697 5.2005C17.8708 5.2005 18.1149 5.4446 18.1149 5.74572L18.1149 17.5696C18.1149 17.8707 17.8708 18.1149 17.5697 18.1149ZM16.6169 15.716C17.0453 15.573 17.2766 15.1099 17.1337 14.6815C16.9907 14.2531 16.5276 14.0218 16.0992 14.1647L15.0996 14.4981C16.0904 12.1258 15.8796 9.99671 14.5402 8.55399C13.0216 6.91858 10.3546 6.51377 7.46725 7.36293C7.03396 7.49037 6.78558 7.94499 6.91299 8.37829C7.04042 8.81155 7.49508 9.05935 7.92834 8.93202C10.4988 8.176 12.4118 8.66533 13.3416 9.66679C14.1164 10.5013 14.4364 11.9556 13.5378 13.9945L13.1008 12.4802C12.9757 12.0463 12.5225 11.7959 12.0886 11.921C11.6547 12.0462 11.4043 12.4993 11.5293 12.9333L12.44 16.091C12.4469 16.1395 12.4573 16.1883 12.4734 16.2365C12.6112 16.6494 13.0462 16.8784 13.4611 16.7664C13.4578 16.7671 13.4643 16.7655 13.4611 16.7664C13.4655 16.7654 13.4799 16.7621 13.4842 16.7609C13.4875 16.7599 13.4934 16.758 13.4988 16.7562C13.4988 16.7562 13.5024 16.755 13.4988 16.7562L16.6169 15.716Z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"/></svg></span><span>Retraits</span></button></div></div>
     <div id="c-partis" hidden></div>
     <div id="c-votes" hidden></div>
     <div id="c-retraits" hidden></div>
     <div id="c-cands">
-    <p>Les candidats testés dans les sondages, par ordre alphabétique. Touchez un portrait pour ouvrir sa fiche.</p>
     <div id="candlist" class="trombi"></div>
-    <details class="sec"><summary>Les 500 signatures</summary>
+    <details class="sec acc"><summary><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6.24878 2.81482L13.7513 9.72119M13.732 9.70194L6.24878 17.1852" stroke-width="3" stroke-linecap="round" stroke="currentColor"/></svg><span>Les 500 signatures</span></summary>
 
     <p>Pour être candidat, il faut 500 parrainages d'élus venant d'au moins 30 départements. Le Conseil constitutionnel les publie au fur et à mesure, au moins deux fois par semaine, pendant la collecte.</p>
     <div class="note">La collecte officielle n'a pas encore commencé. Les chiffres ci-dessous sont des <b>promesses revendiquées</b> par les candidats ou leur entourage, rapportées par la presse. Ils seront remplacés par les chiffres officiels dès leur publication.</div>
@@ -597,18 +622,20 @@ h2.sect, .hsec h2.sect { font:600 28px/28px 'Asap', sans-serif; color:var(--ink)
     </div>
 
     </details>
-    <details class="sec"><summary>Temps de parole à la télé et à la radio</summary>
+    <details class="sec acc"><summary><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6.24878 2.81482L13.7513 9.72119M13.732 9.70194L6.24878 17.1852" stroke-width="3" stroke-linecap="round" stroke="currentColor"/></svg><span>Temps de parole à la télé et à la radio</span></summary>
       <div id="tp"></div>
     </details>
-    <details class="sec"><summary>Budgets et financement</summary>
+    <details class="sec acc"><summary><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6.24878 2.81482L13.7513 9.72119M13.732 9.70194L6.24878 17.1852" stroke-width="3" stroke-linecap="round" stroke="currentColor"/></svg><span>Budget et financement</span></summary>
     <p>Chaque candidat peut dépenser au maximum <b>16,851 M€</b> au premier tour, et <b>22,509 M€</b> s'il est au second. Les dépenses comptent depuis le 1er avril 2026. L'argent vient surtout de prêts bancaires, des partis et des dons de particuliers (4 600 € maximum par personne). L'État rembourse une partie des dépenses aux candidats qui dépassent 5 % des voix.</p>
     <div class="note">Les comptes de campagne officiels ne sont publiés qu'après l'élection. Avant, on ne connaît que ce que les candidats et leurs partis annoncent.</div>
     <div id="fin-list"></div>
     <p class="muted" style="margin-top:10px">Sources des règles : <a href="https://www.info.gouv.fr/actualite/presidentielle-2027-date-a-retenir-et-informations-cles" target="_blank" rel="noopener">info.gouv.fr</a>, <a href="https://www.amf.asso.fr/documents-parrainage-candidats-election-presidentielle-amf-demande-anonymat/43305" target="_blank" rel="noopener">AMF</a>, <a href="https://www.publicsenat.fr/actualites/politique/ouverture-des-comptes-de-campagne-au-1er-avril-ce-que-ca-change-pour-les-candidats-potentiels" target="_blank" rel="noopener">Public Sénat</a>.</p>
       </details>
-    <div class="block">
+    <div class="cautres">
       <h3>Autres candidatures déclarées</h3>
-      <p class="muted" id="autres"></p>
+      <p class="foot" id="autres"></p>
+      <h3>Retraits</h3>
+      <div class="foot" id="retraits-mini"></div>
       <p class="muted" id="cand-maj" style="margin-top:12px"></p>
       <details class="muted"><summary>Crédits photos</summary><div id="credits"></div></details>
     </div>
@@ -1768,6 +1795,7 @@ function renderRetraits() {
 function setCMode(m) {
   for (const b of document.querySelectorAll('#cseg button')) b.classList.toggle('on', b.dataset.c === m);
   $('c-cands').hidden = m !== 'cands'; $('c-partis').hidden = m !== 'partis'; $('c-retraits').hidden = m !== 'retraits'; $('c-votes').hidden = m !== 'votes';
+  const T = { cands: 'Les candidats<br>par ordre alphabétique', partis: 'Les partis<br>des candidats', votes: 'Les grands votes<br>à l’Assemblée', retraits: 'Ils ont renoncé' }; $('c-title').innerHTML = T[m] || '';
   if (m !== 'cands') gcCount('/candidats-' + m, 'Candidats ' + m);
 }
 
@@ -1782,6 +1810,7 @@ function renderCandidats() {
     return b;
   }));
   $('autres').textContent = CAND.autres.join(', ') + '.';
+  $('retraits-mini').replaceChildren(...(CAND.retraits || []).map((r) => { const p = el('p'); p.append(r.nom + ' : ' + r.texte + ' '); if (r.url) p.append(link('source', r.url)); return p; }));
   renderPartis(); renderRetraits();
   const m = $('cand-maj'); m.replaceChildren('Fiches mises à jour le ' + fdateLong(CAND.maj) + '. Liste : '); m.append(link(CAND.source_liste.nom, CAND.source_liste.url));
 
