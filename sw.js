@@ -1,4 +1,4 @@
-const CACHE = 'presidentielle-2027-v89';
+const CACHE = 'presidentielle-2027-v90';
 const IMG = 'nous-votons-images';
 const FILES = ['./', 'index.html', 'manifest.json', 'icon-180.png', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'logo-header.svg', 'logo-appli.svg', 'favicon-32.png'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES.map((f) => new Request(f, { cache: 'reload' }))))); self.skipWaiting(); });
