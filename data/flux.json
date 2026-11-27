@@ -2,6 +2,34 @@
 "v": 4,
 "items": [
 {
+"t": "DIRECT. Présidentielle 2027 : \"Les débauchages, ça ne m'émeut pas\", réagit Bruno Retailleau, après le ralliement de huit députés LR à David Lisnard",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-marine-le-pen-va-presenter-son-programme-pour-les-outre-mer-en-pleine-tourmente-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8302521.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-27T14:54:51Z",
+"qui": [
+"lisnard",
+"retailleau"
+]
+},
+{
+"t": "Présidentielle 2027 : la tribune de députés LR en soutien à David Lisnard sonne-t-elle le début d’un mouvement plus large en sa faveur ?",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-la-tribune-de-deputes-lr-en-soutien-a-david-lisnard-sonne-t-elle-le-debut-dun-mouvement-plus-large-en-sa-faveur-c330a704-ea4b-11f1-bb2d-c71dc7920c2a?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-27T14:49:48Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Jordan Bardella et Marine Le Pen réagissent aux nouvelles révélations dans l’affaire des écrits antisémites",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/video/2026/11/27/ecrits-antisemites-jordan-bardella-et-marine-le-pen-reagissent-en-images-aux-nouvelles-revelations_6815877_823448.html",
+"d": "2026-11-27T14:45:50Z",
+"qui": [
+"lepen"
+]
+},
+{
 "t": "Ian Boucard, député Droite Républicaine, appelle à \"un candidat unique de la droite et du centre\" pour \"éviter un second tour mortifère entre Marine Le Pen et Jean-Luc Mélenchon\"",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-ian-boucard-depute-droite-republicaine-appelle-a-un-candidat-unique-de-la-droite-et-du-centre-pour-eviter-un-second-tour-mortifere-entre-marine-le-pen-et-jean-luc-melenchon_VN-202611270647.html",
@@ -18,15 +46,6 @@
 "d": "2026-11-27T14:39:46Z",
 "qui": [
 "zemmour"
-]
-},
-{
-"t": "DIRECT. Présidentielle 2027 : Marine Le Pen renouvelle sa confiance à Jordan Bardella et veut obliger les journalistes à respecter le secret de l'instruction",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-marine-le-pen-va-presenter-son-programme-pour-les-outre-mer-en-pleine-tourmente-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8302521.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-27T14:39:39Z",
-"qui": [
-"lepen"
 ]
 },
 {
@@ -1771,24 +1790,6 @@
 "lisnard",
 "philippe"
 ]
-},
-{
-"t": "Présidentielle 2027 : \"Il faut une compétition, il faut une sélection\", défend le candidat David Lisnard, partisan d'une primaire",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/presidentielle-2027-il-faut-une-competition-il-faut-une-selection-defend-le-candidat-david-lisnard-partisan-d-une-primaire_8300388.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-25T22:53:33Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Présidentielle 2027 : l'ascension de David Lisnard, réélu président de l'Association des maires de France",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/presidentielle-2027-l-ascension-de-david-lisnard-reelu-president-de-l-association-des-maires-de-france_8300370.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-25T22:51:49Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
@@ -1798,12 +1799,12 @@
 "Le Figaro": 7,
 "Le Parisien": 52,
 "20 Minutes": 7,
-"Ouest-France": 2,
+"Ouest-France": 3,
 "BFMTV": 25,
 "France 24": 9,
 "La Croix": 23,
 "LCP": 38,
 "RFI": 9
 },
-"maj": "2026-11-27T14:45:30Z"
+"maj": "2026-11-27T15:00:34Z"
 }
