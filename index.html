@@ -2644,8 +2644,14 @@ function showView(v) {
   try { history.replaceState(null, '', v === 'accueil' ? location.pathname : '#' + v); } catch (e) {}
 }
 let PUSHED = false;
+// Retour arrière (bouton ou geste) : revenir exactement là où on était sur la page précédente
+try { history.scrollRestoration = 'manual'; } catch (e) {}
+let LASTY = 0; addEventListener('scroll', () => { LASTY = scrollY; }, { passive: true });
+(function () { const push = history.pushState.bind(history);
+  history.pushState = function (st, t, u) { try { history.replaceState(Object.assign({}, history.state || {}, { y: LASTY }), '', location.href); } catch (e) {} return push(st, t, u); }; })();
 $('back').addEventListener('click', () => { if (PUSHED) { PUSHED = false; history.back(); } else showView('candidats'); });
 addEventListener('popstate', () => { PUSHED = false; const h = location.hash.slice(1); if (h === 'apropos') { for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-apropos'); } else if (h === 'guide') { for (const s of document.querySelectorAll('section.view')) s.classList.toggle('on', s.id === 'v-guide'); } else if (h.startsWith('c-')) openFiche(h.slice(2), true); else if (h === 'agenda') openAgenda(); else showView(['candidats', 'programmes', 'actu', 'test', 'sondages'].includes(h) ? h : 'accueil'); });
+addEventListener('popstate', (e) => { const y = e.state && e.state.y; if (typeof y !== 'number' || !y) return; const go = () => scrollTo(0, y); requestAnimationFrame(go); setTimeout(go, 80); setTimeout(go, 300); });
 for (const b of document.querySelectorAll('#tabs button')) if (b.dataset.v !== 'partager') b.addEventListener('click', () => showView(b.dataset.v));
 $('go-cmp').addEventListener('click', () => { setPMode('cmp'); scrollTo(0, 0); });
 $('cmp-back').addEventListener('click', () => { setPMode('theme'); scrollTo(0, 0); });
