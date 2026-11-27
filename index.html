@@ -838,6 +838,8 @@ details.gacc a { color:#022E7B; } details.gacc .muted { font-size:12px; color:#6
 #v-test .qpodn { font:400 11px 'Gidole', 'Asap', sans-serif !important; color:#626161; text-align:center; margin:6px 0 0; }
 #v-test .qwarn { background:#fff; border-radius:15px; padding:12px; font:400 13px/18px 'Asap', sans-serif !important; color:#011334 !important; margin:16px 0 0; }
 #v-test .qwarn b { color:#F95969; }
+.totop { position:fixed; right:16px; bottom:calc(env(safe-area-inset-bottom) + 84px); width:46px; height:46px; border-radius:50%; border:0; background:#022E7B; box-shadow:0 4px 12px rgba(1,25,68,.25); display:flex; align-items:center; justify-content:center; z-index:50; cursor:pointer; }
+.totop[hidden] { display:none; }
 </style>
 </head>
 <body>
@@ -1149,6 +1151,7 @@ details.gacc a { color:#022E7B; } details.gacc .muted { font-size:12px; color:#6
   <!-- AGENDA -->
 
   <!-- ACTU -->
+  <button type="button" id="totop" class="totop" aria-label="Remonter en haut de la page" hidden><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5.667 12.784L10.793 7.216M10.779 7.230L16.333 12.784" stroke-width="2" stroke-linecap="round" stroke="#FDFDFD"/></svg></button>
   <section class="view" id="v-actu">
     <div class="frow" id="chips"></div>
     <div class="cseg-wrap"><div class="aseg" id="aseg"><button type="button" data-a="infos" class="on"><span class="si"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.89" y="6.29" width="16.21" height="11.42" rx="2.4" stroke-width="1.2" stroke="currentColor"/><path d="M7.41 13.67H16.59M7.41 10.33H16.59" stroke-width="1.2" stroke-linecap="round" stroke="currentColor"/></svg></span>L'essentiel</button><button type="button" data-a="flux"><span class="si"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7.37517 13.5682H10.5255C10.8533 13.5682 11.0924 13.8784 11.009 14.1955L10.0332 17.9035C9.90061 18.4074 10.5307 18.7527 10.8841 18.3699L16.6766 12.0947C16.9722 11.7745 16.7451 11.2556 16.3092 11.2556H13.5243C13.1071 11.2556 12.8734 10.7748 13.1311 10.4467L15.4941 7.43928C15.7519 7.11122 15.5182 6.63037 15.1009 6.63037H10.4855C10.2995 6.63037 10.1289 6.73361 10.0426 6.89837L6.93226 12.8362C6.75787 13.1691 6.99935 13.5682 7.37517 13.5682Z" stroke-width="1.2" stroke-linejoin="round" stroke="currentColor"/></svg></span>En direct</button><button type="button" data-a="agenda"><span class="si"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><g fill="currentColor"><rect x="14.96" y="9.89" width="2.26" height="2.33" rx="1.13"/><rect x="14.96" y="14.04" width="2.26" height="2.33" rx="1.13"/><rect x="10.87" y="9.89" width="2.26" height="2.33" rx="1.13"/><rect x="10.87" y="14.04" width="2.26" height="2.33" rx="1.13"/><rect x="6.78" y="9.89" width="2.26" height="2.33" rx="1.13"/><rect x="6.78" y="14.04" width="2.26" height="2.33" rx="1.13"/><rect x="14.96" y="4" width="1.11" height="4.04" rx="0.55"/><rect x="7.93" y="4" width="1.11" height="4.04" rx="0.55"/></g><rect x="3.43" y="6.02" width="17.14" height="13.37" rx="2.4" stroke-width="1.2" stroke="currentColor"/></svg></span>Agenda</button></div></div>
@@ -2551,6 +2554,11 @@ if ('serviceWorker' in navigator) {
 }
 const start = (location.hash || '').slice(1); if (start.startsWith('c-')) openFiche(start.slice(2), true); else { try { history.replaceState(null, '', location.pathname); } catch (e) {} }
 load();
+
+// Bouton « remonter » sur l'onglet Actualités
+(function () { const b = $('totop'); if (!b) return; const upd = () => { const on = $('v-actu').classList.contains('on') && scrollY > 600; b.hidden = !on; };
+  addEventListener('scroll', upd, { passive: true }); new MutationObserver(upd).observe($('v-actu'), { attributes: true, attributeFilter: ['class'] });
+  b.onclick = () => { scrollTo({ top: 0, behavior: 'smooth' }); }; })();
 </script>
 </body>
 </html>
