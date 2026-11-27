@@ -840,6 +840,8 @@ details.gacc a { color:#022E7B; } details.gacc .muted { font-size:12px; color:#6
 #v-test .qwarn b { color:#F95969; }
 .totop { position:fixed; right:16px; bottom:calc(env(safe-area-inset-bottom) + 84px); width:46px; height:46px; border-radius:50%; border:0; background:#022E7B; box-shadow:0 4px 12px rgba(1,25,68,.25); display:flex; align-items:center; justify-content:center; z-index:50; cursor:pointer; }
 .totop[hidden] { display:none; }
+#v-actu .fbtn.fav .av { box-shadow:0 0 0 2px #F8F8F8, 0 0 0 4px #D4A72C; }
+#v-actu .fbtn.fav.on .av { box-shadow:0 0 0 2px #F8F8F8, 0 0 0 4px #022E7B, 0 0 0 6px #D4A72C; }
 </style>
 </head>
 <body>
@@ -1730,7 +1732,7 @@ function getFavs() { const f = lsGet('favs'); return Array.isArray(f) ? f : []; 
 function favBtn(c) {
   const b = el('button', 'favb'); b.type = 'button';
   const upd = () => { const on = getFavs().includes(c.id); b.textContent = on ? '★ Dans mes favoris' : '☆ Ajouter à mes favoris'; b.classList.toggle('on', on); };
-  b.onclick = () => { let f = getFavs(); if (f.includes(c.id)) f = f.filter((i) => i !== c.id); else { if (f.length >= 2) { toast('Deux favoris au maximum : retirez-en un d’abord'); return; } f.push(c.id); gcCount('favori-ajoute', 'Favori ajouté', true); toast('Ses actus s’affichent en haut de l’accueil'); } lsSet('favs', f); upd(); renderFavs(); };
+  b.onclick = () => { let f = getFavs(); if (f.includes(c.id)) f = f.filter((i) => i !== c.id); else { if (f.length >= 2) { toast('Deux favoris au maximum : retirez-en un d’abord'); return; } f.push(c.id); gcCount('favori-ajoute', 'Favori ajouté', true); toast('Ses actus s’affichent en haut de l’accueil'); } lsSet('favs', f); upd(); renderFavs(); renderActu(); };
   upd(); return b;
 }
 function renderFavs() {
@@ -2041,7 +2043,7 @@ function renderFiche() {
   const acts = el('div', 'facts');
   const fb = el('button', 'fic'); fb.type = 'button'; fb.append(fsvg('fav'));
   const upd = () => { const on = getFavs().includes(c.id); fb.classList.toggle('on', on); fb.setAttribute('aria-label', on ? 'Retirer de mes favoris' : 'Ajouter à mes favoris'); fb.setAttribute('aria-pressed', on); };
-  fb.onclick = () => { let f = getFavs(); if (f.includes(c.id)) { f = f.filter((x) => x !== c.id); toast('Retiré de vos favoris'); } else { if (f.length >= 2) { toast('Deux favoris au maximum : retirez-en un d’abord'); return; } f.push(c.id); gcCount('favori-ajoute', 'Favori ajouté', true); toast('Ses actus s’affichent en haut de l’accueil'); } lsSet('favs', f); upd(); renderFavs(); };
+  fb.onclick = () => { let f = getFavs(); if (f.includes(c.id)) { f = f.filter((x) => x !== c.id); toast('Retiré de vos favoris'); } else { if (f.length >= 2) { toast('Deux favoris au maximum : retirez-en un d’abord'); return; } f.push(c.id); gcCount('favori-ajoute', 'Favori ajouté', true); toast('Ses actus s’affichent en haut de l’accueil'); } lsSet('favs', f); upd(); renderFavs(); renderActu(); };
   upd();
   const sb = el('button', 'fic'); sb.type = 'button'; sb.setAttribute('aria-label', 'Partager cette fiche'); sb.append(fsvg('share'));
   sb.onclick = async () => { const url = APP_URL + '#c-' + c.id; gcCount('partage-fiche', 'Partage fiche', true); if (navigator.share) { try { await navigator.share({ title: c.nom + ' · Nous votons', url }); return; } catch (e) { if (e && e.name === 'AbortError') return; } } try { await navigator.clipboard.writeText(url); toast('Lien copié'); } catch (e) { shareApp(); } };
@@ -2382,7 +2384,8 @@ function renderActu() {
     return b;
   };
   const row = $('chips'); const sx = row.scrollLeft;
-  row.replaceChildren(fb(''), ...ids.map(fb)); row.scrollLeft = sx;
+  const favs = getFavs().filter((i) => byId.has(i)); const ordered = favs.concat(ids.filter((i) => !favs.includes(i)));
+  row.replaceChildren(fb(''), ...ordered.map((id) => { const b = fb(id); if (favs.includes(id)) { b.classList.add('fav'); b.setAttribute('aria-label', byId.get(id).nom + ', favori'); } return b; })); row.scrollLeft = sx;
   const items = ACTU.items.filter((n) => (!FILTRE || n.qui.includes(FILTRE)) && !(silence() && /sondage/i.test(n.texte)));
   const out = []; let last = '';
   for (const n of items) {
