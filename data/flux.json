@@ -2,12 +2,15 @@
 "v": 4,
 "items": [
 {
-"t": "DIRECT. Election présidentielle : Raphaël Glucksmann \"soutiendra\" François Hollande s'il se \"présente en recours\"",
+"t": "DIRECT. Présidentielle 2027 : Raphaël Glucksmann \"soutiendra\" François Hollande s'il se \"présente en recours\", assure le porte-parole des députés socialistes",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/elections/direct-election-presidentielle-raphael-glucksmann-soutiendra-francois-hollande-s-il-se-presente-en-recours_8304636.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-28T12:46:53Z",
+"d": "2026-11-28T13:11:20Z",
 "qui": [
 "glucksmann"
+],
+"camp": [
+"bouamrane"
 ]
 },
 {
@@ -1840,5 +1843,5 @@
 "LCP": 54,
 "RFI": 10
 },
-"maj": "2026-11-28T13:00:29Z"
+"maj": "2026-11-28T13:15:32Z"
 }
