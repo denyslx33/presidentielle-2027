@@ -5,14 +5,23 @@
 "t": "Présidentielle 2027 : le Rassemblement national met le cap sur l’outre-mer, des territoires stratégiques pour lui",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-rassemblement-national-met-le-cap-sur-loutre-mer-des-territoires-strategiques-pour-lui-28-11-2026-IYLD2IPSSFF2HN7BIE2VJ6O2SE.php",
-"d": "2026-11-28T08:45:28Z",
+"d": "2026-11-28T09:00:29Z",
 "qui": []
 },
 {
 "t": "Présidentielle 2027 : depuis Berlin, Jean-Luc Mélenchon promet de « ne pas aider les Américains à faire la guerre aux Chinois » s’il est élu",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-depuis-berlin-jean-luc-melenchon-promet-de-ne-pas-aider-les-americains-a-faire-la-guerre-aux-chinois-sil-est-elu-28-11-2026-JVPGRR354ZATZGCLZN2D4457F4.php",
-"d": "2026-11-28T08:45:28Z",
+"d": "2026-11-28T09:00:29Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "L'ÉDITO POLITIQUE - Jean-Luc Mélenchon: l'international, son talon d’Achille?",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/la-france-insoumise/video-l-edito-politique-jean-luc-melenchon-l-international-son-talon-d-achille_VN-202611280221.html",
+"d": "2026-11-28T08:53:51Z",
 "qui": [
 "melenchon"
 ]
@@ -95,7 +104,7 @@
 "t": "Convention citoyenne sur les finances publiques : le CESE entend peser sur les débats à l’approche de la présidentielle",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/28/convention-citoyenne-sur-les-finances-publiques-le-cese-entend-peser-sur-les-debats-a-l-approche-de-la-presidentielle_6816088_823448.html",
-"d": "2026-11-28T08:22:27Z",
+"d": "2026-11-28T08:22:26Z",
 "qui": []
 },
 {
@@ -1766,15 +1775,6 @@
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-il-y-a-un-niveau-de-violence-dans-le-pays-qui-va-etre-un-enjeu-de-la-securisation-de-l-election-peu-importent-les-dates-constate-sebastien-lecornu_VN-202611260753.html",
 "d": "2026-11-26T15:57:05Z",
 "qui": []
-},
-{
-"t": "Parrainages des candidats à la présidentielle: \"le système des parrainages, aujourd'hui, il fait reposer une pression excessive sur les maires\", assure David Lisnard, président de l’AMF et candidat à la présidentielle",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-parrainages-des-candidats-a-la-presidentielle-le-systeme-des-parrainages-aujourd-hui-il-fait-reposer-une-pression-excessive-sur-les-maires-assure-david-lisnard-president-de-l-amf-et-candidat-a-la-presidentielle_VN-202611260751.html",
-"d": "2026-11-26T15:54:24Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
@@ -1785,11 +1785,11 @@
 "Le Parisien": 57,
 "20 Minutes": 9,
 "Ouest-France": 0,
-"BFMTV": 23,
+"BFMTV": 24,
 "France 24": 8,
 "La Croix": 24,
 "LCP": 38,
 "RFI": 8
 },
-"maj": "2026-11-28T08:45:28Z"
+"maj": "2026-11-28T09:00:29Z"
 }
