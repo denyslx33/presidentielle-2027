@@ -5,7 +5,7 @@
 "t": "Présidentielle 2027 : le Rassemblement national met le cap sur l’outre-mer, des territoires stratégiques pour lui",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-rassemblement-national-met-le-cap-sur-loutre-mer-des-territoires-strategiques-pour-lui-28-11-2026-IYLD2IPSSFF2HN7BIE2VJ6O2SE.php",
-"d": "2026-11-28T11:30:29Z",
+"d": "2026-11-28T11:45:29Z",
 "qui": [],
 "camp": [
 "lepen"
@@ -15,7 +15,7 @@
 "t": "Présidentielle 2027 : depuis Berlin, Jean-Luc Mélenchon promet de « ne pas aider les Américains à faire la guerre aux Chinois » s’il est élu",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-depuis-berlin-jean-luc-melenchon-promet-de-ne-pas-aider-les-americains-a-faire-la-guerre-aux-chinois-sil-est-elu-28-11-2026-JVPGRR354ZATZGCLZN2D4457F4.php",
-"d": "2026-11-28T11:30:29Z",
+"d": "2026-11-28T11:45:29Z",
 "qui": [
 "melenchon"
 ]
@@ -24,14 +24,14 @@
 "t": "Présidentielle 2027 : pourquoi le système des 500 parrainages nécessaires pour se présenter est-il autant critiqué ?",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-pourquoi-le-systeme-des-500-parrainages-necessaires-pour-se-presenter-est-il-autant-critique-28-11-2026-G37SHMECQJERHKIFUAVOENUVLU.php",
-"d": "2026-11-28T11:30:29Z",
+"d": "2026-11-28T11:45:29Z",
 "qui": []
 },
 {
 "t": "Troubles menstruels après avoir manifesté : des députées LFI demandent la publication de la composition du gaz lacrymogène",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/societe/sante/troubles-menstruels-apres-avoir-manifeste-des-deputees-lfi-demandent-la-publication-de-la-composition-du-gaz-lacrymogene-28-11-2026-CPDKFXO3WRGIHAVKTQBQYLG47Q.php",
-"d": "2026-11-28T11:30:29Z",
+"d": "2026-11-28T11:45:29Z",
 "qui": [],
 "camp": [
 "melenchon"
@@ -41,7 +41,56 @@
 "t": "« Fuites » au profit du RN : le bureau et le domicile de l’ex-directeur de cabinet de Marine Le Pen perquisitionnés",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/politique/fuites-au-profit-du-rn-le-bureau-et-le-domicile-de-lex-directeur-de-cabinet-de-marine-le-pen-perquisitionnes-28-11-2026-TJX3LT64LZHTPBNXXWK3MM6M5M.php",
-"d": "2026-11-28T11:30:29Z",
+"d": "2026-11-28T11:45:29Z",
+"qui": [],
+"camp": [
+"lepen"
+]
+},
+{
+"t": "Présidentielle 2027 : le chanteur Renaud annonce qu’il votera Fabien Roussel, le candidat du Parti communiste français",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-chanteur-renaud-annonce-quil-votera-fabien-roussel-le-candidat-du-parti-communiste-francais-28-11-2026-FPKMMYBAONHYNDDOMTGUYHGLJQ.php",
+"d": "2026-11-28T11:45:29Z",
+"qui": [
+"roussel"
+]
+},
+{
+"t": "Présidentielle 2027 : Raphaël Glucksmann soutiendra François Hollande s’il « se présente en recours », affirme le porte-parole des députés PS",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-raphael-glucksmann-soutiendra-francois-hollande-sil-se-presente-en-recours-affirme-le-porte-parole-des-deputes-ps-28-11-2026-DHJYKCHY2ZEVHGTESHG3XZG5RI.php",
+"d": "2026-11-28T11:45:29Z",
+"qui": [
+"glucksmann"
+],
+"camp": [
+"bouamrane"
+]
+},
+{
+"t": "Présidentielle 2027: \"Si François Hollande avait envie d’être candidat, il n’avait qu’à venir à cette primaire\", lance Arthur Delaporte, député PS",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-si-francois-hollande-avait-envie-d-etre-candidat-il-n-avait-qu-a-venir-a-cette-primaire-lance-arthur-delaporte-depute-ps_VN-202611280264.html",
+"d": "2026-11-28T11:41:29Z",
+"qui": [],
+"camp": [
+"bouamrane",
+"glucksmann"
+]
+},
+{
+"t": "Présidentielle 2027 : Comment le référencement IA est devenu incontournable pour les candidats",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/high-tech/by-the-web/4266465-20261128-presidentielle-2027-comment-referencement-ia-devenu-incontournable-candidats?at_medium=display&at_campaign=149",
+"d": "2026-11-28T11:34:45Z",
+"qui": []
+},
+{
+"t": "« Une restriction de la liberté des associations » : cet expert analyse la politique de la mairie RN de La Flèche",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/associations/une-restriction-de-la-liberte-des-associations-cet-expert-analyse-la-politique-de-la-mairie-rn-de-la-fleche-5d355e88-ea80-11f1-bb2d-c71dc7920c2a?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-28T11:32:02Z",
 "qui": [],
 "camp": [
 "lepen"
@@ -302,14 +351,11 @@
 ]
 },
 {
-"t": "EN DIRECT Présidentielle 2027 : Le plan de Le Pen pour l’outre-mer, Mélenchon veut une nouvelle relation franco-allemande…",
+"t": "EN DIRECT Présidentielle 2027 : François Hollande prendra sa décision « au mois de janvier ou février »...",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4266444-20261128-direct-presidentielle-2027-plan-pen-outre-mer-melenchon-veut-nouvelle-relation-franco-allemande?at_medium=display&at_campaign=149",
 "d": "2026-11-28T07:17:05Z",
-"qui": [
-"lepen",
-"melenchon"
-]
+"qui": []
 },
 {
 "t": "Est-il possible d'obliger les journalistes à \"respecter le secret de l'instruction\", comme le souhaite Marine Le Pen ?",
@@ -1778,66 +1824,21 @@
 "qui": [
 "zemmour"
 ]
-},
-{
-"t": "\"Il faut plus d'humilité quand on fait campagne\" : Emmanuel Macron tacle la \"drôle d'arrogance\" de Marine Le Pen",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/politique/emmanuel-macron/il-faut-plus-d-humilite-quand-on-fait-campagne-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen_8302119.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-26T22:25:56Z",
-"qui": [
-"lepen"
-]
-},
-{
-"t": "« Arrogance », « basses manœuvres »… Passe d’armes entre Macron et Le Pen sur le budget de l’UE",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4266147-20261126-arrogance-basses-manoeuvres-passe-armes-entre-macron-pen-budget-ue?at_medium=display&at_campaign=149",
-"d": "2026-11-26T22:02:17Z",
-"qui": [
-"lepen"
-]
-},
-{
-"t": "\"C'est ma dernière campagne\", annonce le candidat de Reconquête à la présidentielle Eric Zemmour",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/politique/eric-zemmour/c-est-ma-derniere-campagne-annonce-le-candidat-de-reconquete-a-la-presidentielle-eric-zemmour_8302101.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-26T21:55:56Z",
-"qui": [
-"zemmour"
-]
-},
-{
-"t": "\"Pas créer de doute et de trouble\": Emmanuel Macron recadre Teddy Riner sur l'aide à l'Ukraine",
-"s": "LCP",
-"u": "https://lcp.fr/actualites/pas-creer-de-doute-et-de-trouble-emmanuel-macron-recadre-teddy-riner-sur-l-aide-a-l",
-"d": "2026-11-26T21:45:47Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "Nouveau budget européen : Emmanuel Macron critique la « drôle d’arrogance » de Marine Le Pen",
-"s": "Ouest-France",
-"u": "https://www.ouest-france.fr/politique/emmanuel-macron/nouveau-budget-europeen-emmanuel-macron-critique-la-drole-darrogance-de-marine-le-pen-b24854e0-e9de-11f1-86c1-70195b4d2e52?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
-"d": "2026-11-26T21:42:44Z",
-"qui": [
-"lepen"
-]
 }
 ],
 "sources": {
 "Le Monde": 10,
 "franceinfo": 13,
-"Libération": 32,
+"Libération": 31,
 "Le Figaro": 9,
 "Le Parisien": 73,
 "20 Minutes": 14,
-"Ouest-France": 0,
+"Ouest-France": 1,
 "BFMTV": 26,
-"France 24": "erreur: HTTPError",
+"France 24": 14,
 "La Croix": 33,
 "LCP": 54,
-"RFI": 11
+"RFI": 10
 },
-"maj": "2026-11-28T11:30:29Z"
+"maj": "2026-11-28T11:45:29Z"
 }
