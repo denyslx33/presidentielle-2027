@@ -2,6 +2,33 @@
 "v": 4,
 "items": [
 {
+"t": "\"Il va falloir changer Parcoursup\", soutient Marine Le Pen",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-il-va-falloir-changer-parcoursup-soutient-marine-le-pen_VN-202611280352.html",
+"d": "2026-11-28T16:54:03Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "\"Il y a un vrai désespoir chez beaucoup de jeunes\", reconnaît Marine Le Pen",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-il-y-a-un-vrai-desespoir-chez-beaucoup-de-jeunes-reconnait-marine-le-pen_VN-202611280350.html",
+"d": "2026-11-28T16:50:33Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "École catholique de Vendée : Bruno Retailleau recrute-t-il ses collaborateurs à l’ICES de Philippe de Villiers ?",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/vrai-ou-fake/ecole-catholique-de-vendee-bruno-retailleau-recrute-t-il-ses-collaborateurs-a-l-ices-de-philippe-de-villiers_8304780.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-28T16:44:21Z",
+"qui": [
+"retailleau"
+]
+},
+{
 "t": "DIRECT. Présidentielle: Gabriel Attal n’envisage “pas du tout” de retirer sa candidature",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-marine-le-pen-lance-le-mouvement-des-jeunes-de-sa-campagne-gabriel-attal-a-verdun-jean-luc-melenchon-poursuit-son-deplacement-en-allemagne_LN-202611280216.html",
@@ -1782,46 +1809,21 @@
 "u": "https://www.rfi.fr/fr/podcasts/invit%C3%A9-politique/20261126-pr%C3%A9sidentielle-2027-une-primaire-pour-%C3%A9liminer-n-est-pas-un-accord-de-gouvernement-affirme-herv%C3%A9-morin",
 "d": "2026-11-26T14:28:57Z",
 "qui": []
-},
-{
-"t": "« On a beaucoup échangé » : Macron-Lisnard, les coulisses d’un rendez-vous manqué qui a viré à la guerre froide",
-"s": "Le Figaro",
-"u": "https://www.lefigaro.fr/elections/presidentielles/on-a-beaucoup-echange-macron-lisnard-les-coulisses-d-un-rendez-vous-manque-qui-a-vire-a-la-guerre-froide-20261125",
-"d": "2026-11-26T13:36:47Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Très critique de l'Allemagne, Jean-Luc Mélenchon se rend à Berlin pour présenter son livre",
-"s": "France 24",
-"u": "https://www.france24.com/fr/france/20261126-malgr%C3%A9-sa-m%C3%A9fiance-envers-l-allemagne-m%C3%A9lenchon-se-rend-%C3%A0-berlin-pour-pr%C3%A9senter-son-livre",
-"d": "2026-11-26T13:07:26Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Présidentielle 2027 : Emmanuel Macron tacle la « drôle d’arrogance » de Marine Le Pen",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-emmanuel-macron-tacle-la-drole-darrogance-de-marine-le-pen-26-11-2026-TUL24VDTWZF6XP7FMOENF4JKMQ.php",
-"d": "2026-11-26T12:00:00Z",
-"qui": []
 }
 ],
 "sources": {
 "Le Monde": 10,
-"franceinfo": 9,
+"franceinfo": 10,
 "Libération": 21,
 "Le Figaro": 6,
 "Le Parisien": 56,
 "20 Minutes": 9,
-"Ouest-France": 1,
+"Ouest-France": 0,
 "BFMTV": 25,
 "France 24": 10,
 "La Croix": 26,
 "LCP": 48,
 "RFI": 8
 },
-"maj": "2026-11-28T16:45:29Z"
+"maj": "2026-11-28T17:00:29Z"
 }
