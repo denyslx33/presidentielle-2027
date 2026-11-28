@@ -5,8 +5,17 @@
 "t": "Présidentielle 2027 : le Rassemblement national met le cap sur l’outre-mer, des territoires stratégiques pour lui",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-rassemblement-national-met-le-cap-sur-loutre-mer-des-territoires-strategiques-pour-lui-28-11-2026-IYLD2IPSSFF2HN7BIE2VJ6O2SE.php",
-"d": "2026-11-28T07:45:33Z",
+"d": "2026-11-28T08:00:30Z",
 "qui": []
+},
+{
+"t": "Présidentielle 2027 : depuis Berlin, Jean-Luc Mélenchon promet de « ne pas aider les Américains à faire la guerre aux Chinois » s’il est élu",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-depuis-berlin-jean-luc-melenchon-promet-de-ne-pas-aider-les-americains-a-faire-la-guerre-aux-chinois-sil-est-elu-28-11-2026-JVPGRR354ZATZGCLZN2D4457F4.php",
+"d": "2026-11-28T08:00:30Z",
+"qui": [
+"melenchon"
+]
 },
 {
 "t": "Les Français appelés à voter le 18 avril et le 2 mai 2027: les dates de l'élection présidentielle peuvent-elles encore être changées?",
@@ -1769,23 +1778,14 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "Budget des communes: \"On nous a mis sous perfusion\", dénonce David Lisnard, président de l'AMF et candidat à la présidentielle",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-budget-des-communes-on-nous-a-mis-sous-perfusion-denonce-david-lisnard-president-de-l-amf-et-candidat-a-la-presidentielle_VN-202611260702.html",
-"d": "2026-11-26T14:45:17Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
-"Le Monde": 9,
-"franceinfo": 8,
+"Le Monde": 8,
+"franceinfo": 7,
 "Libération": 20,
 "Le Figaro": 6,
-"Le Parisien": 56,
+"Le Parisien": 57,
 "20 Minutes": 8,
 "Ouest-France": 0,
 "BFMTV": 19,
@@ -1794,5 +1794,5 @@
 "LCP": 38,
 "RFI": 8
 },
-"maj": "2026-11-28T07:45:33Z"
+"maj": "2026-11-28T08:00:30Z"
 }
