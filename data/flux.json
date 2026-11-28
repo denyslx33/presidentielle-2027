@@ -5,14 +5,14 @@
 "t": "Présidentielle 2027 : le Rassemblement national met le cap sur l’outre-mer, des territoires stratégiques pour lui",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-rassemblement-national-met-le-cap-sur-loutre-mer-des-territoires-strategiques-pour-lui-28-11-2026-IYLD2IPSSFF2HN7BIE2VJ6O2SE.php",
-"d": "2026-11-28T09:15:30Z",
+"d": "2026-11-28T09:23:46Z",
 "qui": []
 },
 {
 "t": "Présidentielle 2027 : depuis Berlin, Jean-Luc Mélenchon promet de « ne pas aider les Américains à faire la guerre aux Chinois » s’il est élu",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-depuis-berlin-jean-luc-melenchon-promet-de-ne-pas-aider-les-americains-a-faire-la-guerre-aux-chinois-sil-est-elu-28-11-2026-JVPGRR354ZATZGCLZN2D4457F4.php",
-"d": "2026-11-28T09:15:30Z",
+"d": "2026-11-28T09:23:46Z",
 "qui": [
 "melenchon"
 ]
@@ -21,14 +21,25 @@
 "t": "Présidentielle 2027 : pourquoi le système des 500 parrainages nécessaires pour se présenter est-il autant critiqué ?",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-pourquoi-le-systeme-des-500-parrainages-necessaires-pour-se-presenter-est-il-autant-critique-28-11-2026-G37SHMECQJERHKIFUAVOENUVLU.php",
-"d": "2026-11-28T09:15:30Z",
+"d": "2026-11-28T09:23:46Z",
 "qui": []
+},
+{
+"t": "DIRECT. Présidentielle: Marine Le Pen lance le mouvement des jeunes de sa campagne, Gabriel Attal à Verdun, Jean-Luc Mélenchon poursuit son déplacement en Allemagne",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-marine-le-pen-lance-le-mouvement-des-jeunes-de-sa-campagne-gabriel-attal-a-verdun-jean-luc-melenchon-poursuit-son-deplacement-en-allemagne_LN-202611280216.html",
+"d": "2026-11-28T09:15:15Z",
+"qui": [
+"attal",
+"lepen",
+"melenchon"
+]
 },
 {
 "t": "Les militants des quartiers populaires veulent compter dans le jeu politique face à LFI et préparer « l’après-Mélenchon »",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/28/les-militants-des-quartiers-populaires-veulent-compter-dans-le-jeu-politique-face-a-lfi-et-preparer-l-apres-melenchon_6816089_823448.html",
-"d": "2026-11-28T09:00:05Z",
+"d": "2026-11-28T09:00:02Z",
 "qui": [
 "melenchon"
 ]
@@ -103,17 +114,6 @@
 "d": "2026-11-28T08:32:19Z",
 "qui": [
 "lepen"
-]
-},
-{
-"t": "DIRECT. Présidentielle: Marine Le Pen lance le mouvement des jeunes de sa campagne, Gabriel Attal à Verdun, Jean-Luc Mélenchon poursuit son déplacement en Allemagne",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-marine-le-pen-lance-le-mouvement-des-jeunes-de-sa-campagne-gabriel-attal-a-verdun-jean-luc-melenchon-poursuit-son-deplacement-en-allemagne_LN-202611280216.html",
-"d": "2026-11-28T08:32:00Z",
-"qui": [
-"attal",
-"lepen",
-"melenchon"
 ]
 },
 {
@@ -1782,8 +1782,8 @@
 "franceinfo": 7,
 "Libération": 20,
 "Le Figaro": 6,
-"Le Parisien": 58,
-"20 Minutes": 9,
+"Le Parisien": 56,
+"20 Minutes": 8,
 "Ouest-France": 0,
 "BFMTV": 24,
 "France 24": 8,
@@ -1791,5 +1791,5 @@
 "LCP": 38,
 "RFI": 8
 },
-"maj": "2026-11-28T09:15:30Z"
+"maj": "2026-11-28T09:23:46Z"
 }
