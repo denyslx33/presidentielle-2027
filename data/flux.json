@@ -2,6 +2,15 @@
 "v": 4,
 "items": [
 {
+"t": "DIRECT. “Il faut être conquérant”: Marine Le Pen ne veut “pas entendre” les jeunes s’engageant dans sa campagne “se plaindre”",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-marine-le-pen-lance-le-mouvement-des-jeunes-de-sa-campagne-gabriel-attal-a-verdun-jean-luc-melenchon-poursuit-son-deplacement-en-allemagne_LN-202611280216.html",
+"d": "2026-11-28T17:04:06Z",
+"qui": [
+"lepen"
+]
+},
+{
 "t": "\"Il va falloir changer Parcoursup\", soutient Marine Le Pen",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-il-va-falloir-changer-parcoursup-soutient-marine-le-pen_VN-202611280352.html",
@@ -26,15 +35,6 @@
 "d": "2026-11-28T16:44:21Z",
 "qui": [
 "retailleau"
-]
-},
-{
-"t": "DIRECT. Présidentielle: Gabriel Attal n’envisage “pas du tout” de retirer sa candidature",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-marine-le-pen-lance-le-mouvement-des-jeunes-de-sa-campagne-gabriel-attal-a-verdun-jean-luc-melenchon-poursuit-son-deplacement-en-allemagne_LN-202611280216.html",
-"d": "2026-11-28T16:42:52Z",
-"qui": [
-"attal"
 ]
 },
 {
@@ -1825,5 +1825,5 @@
 "LCP": 48,
 "RFI": 8
 },
-"maj": "2026-11-28T17:00:29Z"
+"maj": "2026-11-28T17:09:08Z"
 }
