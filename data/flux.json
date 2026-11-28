@@ -5,7 +5,7 @@
 "t": "Présidentielle 2027 : le Rassemblement national met le cap sur l’outre-mer, des territoires stratégiques pour lui",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-rassemblement-national-met-le-cap-sur-loutre-mer-des-territoires-strategiques-pour-lui-28-11-2026-IYLD2IPSSFF2HN7BIE2VJ6O2SE.php",
-"d": "2026-11-28T11:17:07Z",
+"d": "2026-11-28T11:23:21Z",
 "qui": [],
 "camp": [
 "lepen"
@@ -15,7 +15,7 @@
 "t": "Présidentielle 2027 : depuis Berlin, Jean-Luc Mélenchon promet de « ne pas aider les Américains à faire la guerre aux Chinois » s’il est élu",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-depuis-berlin-jean-luc-melenchon-promet-de-ne-pas-aider-les-americains-a-faire-la-guerre-aux-chinois-sil-est-elu-28-11-2026-JVPGRR354ZATZGCLZN2D4457F4.php",
-"d": "2026-11-28T11:17:07Z",
+"d": "2026-11-28T11:23:21Z",
 "qui": [
 "melenchon"
 ]
@@ -24,14 +24,14 @@
 "t": "Présidentielle 2027 : pourquoi le système des 500 parrainages nécessaires pour se présenter est-il autant critiqué ?",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-pourquoi-le-systeme-des-500-parrainages-necessaires-pour-se-presenter-est-il-autant-critique-28-11-2026-G37SHMECQJERHKIFUAVOENUVLU.php",
-"d": "2026-11-28T11:17:07Z",
+"d": "2026-11-28T11:23:21Z",
 "qui": []
 },
 {
 "t": "Troubles menstruels après avoir manifesté : des députées LFI demandent la publication de la composition du gaz lacrymogène",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/societe/sante/troubles-menstruels-apres-avoir-manifeste-des-deputees-lfi-demandent-la-publication-de-la-composition-du-gaz-lacrymogene-28-11-2026-CPDKFXO3WRGIHAVKTQBQYLG47Q.php",
-"d": "2026-11-28T11:17:07Z",
+"d": "2026-11-28T11:23:21Z",
 "qui": [],
 "camp": [
 "melenchon"
@@ -41,10 +41,26 @@
 "t": "« Fuites » au profit du RN : le bureau et le domicile de l’ex-directeur de cabinet de Marine Le Pen perquisitionnés",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/politique/fuites-au-profit-du-rn-le-bureau-et-le-domicile-de-lex-directeur-de-cabinet-de-marine-le-pen-perquisitionnes-28-11-2026-TJX3LT64LZHTPBNXXWK3MM6M5M.php",
-"d": "2026-11-28T11:17:07Z",
+"d": "2026-11-28T11:23:21Z",
 "qui": [],
 "camp": [
 "lepen"
+]
+},
+{
+"t": "Présidentielle 2027: François Hollande assure qu'\"au mois de janvier ou février, il y aura une prise de décision\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-francois-hollande-assure-qu-au-mois-de-janvier-ou-fevrier-il-y-aura-une-prise-de-decision_VN-202611280260.html",
+"d": "2026-11-28T11:19:29Z",
+"qui": []
+},
+{
+"t": "Campagne présidentielle: \"Ça a été une semaine compliquée pour Teddy Riner\", affirme Paul Larrouturou, journaliste indépendant qui suit le candidat à l’élection présidentielle",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-campagne-presidentielle-ca-a-ete-une-semaine-compliquee-pour-teddy-riner-affirme-paul-larrouturou-journaliste-independant-qui-suit-le-candidat-a-l-election-presidentielle_VN-202611280259.html",
+"d": "2026-11-28T11:16:24Z",
+"qui": [
+"riner"
 ]
 },
 {
@@ -1807,40 +1823,21 @@
 "qui": [
 "lepen"
 ]
-},
-{
-"t": "A Bruxelles, Emmanuel Macron reproche à Marine Le Pen de faire preuve d’une « drôle d’arrogance » en pensant qu’« elle serait déjà en charge du destin de la France »",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/politique/article/2026/11/26/emmanuel-macron-rabroue-marine-le-pen-et-sa-drole-d-arrogance_6815601_823448.html",
-"d": "2026-11-26T21:31:24Z",
-"qui": [
-"lepen"
-]
-},
-{
-"t": "Soupçons de fuites au profit du RN : Le magistrat surpris au siège du parti a admis qu’il connaissait le dossier",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4266146-20261126-soupcons-fuites-profit-rn-magistrat-surpris-siege-parti-admis-connaissait-dossier?at_medium=display&at_campaign=149",
-"d": "2026-11-26T21:16:28Z",
-"qui": [],
-"camp": [
-"lepen"
-]
 }
 ],
 "sources": {
 "Le Monde": 10,
-"franceinfo": 14,
+"franceinfo": 13,
 "Libération": 32,
 "Le Figaro": 9,
 "Le Parisien": 73,
 "20 Minutes": 14,
 "Ouest-France": 0,
-"BFMTV": 25,
+"BFMTV": 26,
 "France 24": 14,
 "La Croix": 33,
 "LCP": 54,
 "RFI": 10
 },
-"maj": "2026-11-28T11:17:07Z"
+"maj": "2026-11-28T11:23:21Z"
 }
