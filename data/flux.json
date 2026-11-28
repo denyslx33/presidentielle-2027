@@ -2,6 +2,26 @@
 "v": 4,
 "items": [
 {
+"t": "DIRECT. Présidentielle 2027 : Marine Le Pen s'apprête à lancer le mouvement jeune de sa campagne",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/direct-election-presidentielle-raphael-glucksmann-soutiendra-francois-hollande-s-il-se-presente-en-recours_8304636.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-28T16:07:41Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "Interdire les banquets du Canon français ? Pour Arthur Delaporte, député PS du Calvados, \"ça pose des sujets de troubles à l'ordre public\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/video-interdire-les-banquets-du-canon-francais-pour-arthur-delaporte-depute-ps-du-calvados-ca-pose-des-sujets-de-troubles-a-l-ordre-public_VN-202611280338.html",
+"d": "2026-11-28T16:05:36Z",
+"qui": [],
+"camp": [
+"bouamrane",
+"glucksmann"
+]
+},
+{
 "t": "Présidentielle 2027 : un porte-parole du PS affirme que Raphaël Glucksmann « soutiendra » François Hollande s’il se présente en recours",
 "s": "Ouest-France",
 "u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-romain-eskenazi-ps-affirme-que-raphael-glucksmann-soutiendra-francois-hollande-sil-se-presente-en-recours-415774e6-eb3c-11f1-bb2d-c71dc7920c2a?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
@@ -11,15 +31,6 @@
 ],
 "camp": [
 "bouamrane"
-]
-},
-{
-"t": "DIRECT. Présidentielle 2027 : Marine Le Pen s'apprête à lancer le mouvement jeune de sa campagne",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/direct-election-presidentielle-raphael-glucksmann-soutiendra-francois-hollande-s-il-se-presente-en-recours_8304636.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-28T15:54:31Z",
-"qui": [
-"lepen"
 ]
 },
 {
@@ -41,7 +52,7 @@
 ]
 },
 {
-"t": "Fuites de Beauvau vers le RN : Ambroise de Rancourt, le missus dominicus de Marine Le Pen auprès des grands patrons et de la haute fonction publique",
+"t": "Fuites de Beauvau vers le RN : Ambroise de Rancourt, l’émissaire de Marine Le Pen auprès des grands patrons et de la haute fonction publique",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/28/fuites-de-beauvau-vers-le-rn-ambroise-de-rancourt-le-missi-dominici-de-marine-le-pen-aupres-des-grands-patrons-et-de-la-haute-fonction-publique_6816116_823448.html",
 "d": "2026-11-28T14:52:22Z",
@@ -1815,15 +1826,6 @@
 "u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-il-faut-chercher-a-gauche-la-solution-demande-le-socialiste-francois-bonneau-6e0f05b6-df71-11f1-9a29-f4bab172af08?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
 "d": "2026-11-27T06:30:28Z",
 "qui": []
-},
-{
-"t": "\"Drôle d'arrogance\" contre \"basses manœuvres politiciennes\": passe d'armes entre Emmanuel Macron et Marine Le Pen en plein débat sur le budget européen",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elysee/drole-d-arrogance-contre-basses-man-uvres-politiciennes-passe-d-armes-entre-emmanuel-macron-et-marine-le-pen-en-plein-debat-sur-le-budget-europeen_AD-202611270229.html",
-"d": "2026-11-27T06:28:42Z",
-"qui": [
-"lepen"
-]
 }
 ],
 "sources": {
@@ -1840,5 +1842,5 @@
 "LCP": 54,
 "RFI": 10
 },
-"maj": "2026-11-28T16:00:29Z"
+"maj": "2026-11-28T16:12:10Z"
 }
