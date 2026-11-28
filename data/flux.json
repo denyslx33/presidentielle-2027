@@ -5,8 +5,26 @@
 "t": "Présidentielle 2027 : le Rassemblement national met le cap sur l’outre-mer, des territoires stratégiques pour lui",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-rassemblement-national-met-le-cap-sur-loutre-mer-des-territoires-strategiques-pour-lui-28-11-2026-IYLD2IPSSFF2HN7BIE2VJ6O2SE.php",
-"d": "2026-11-28T06:30:29Z",
+"d": "2026-11-28T06:45:29Z",
 "qui": []
+},
+{
+"t": "Est-il possible d'obliger les journalistes à \"respecter le secret de l'instruction\", comme le souhaite Marine Le Pen ?",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/politique/marine-le-pen/est-il-possible-d-obliger-les-journalistes-a-respecter-le-secret-de-l-instruction-comme-le-souhaite-marine-le-pen_8303805.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-28T06:38:37Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "Présidentielle 2027 : soutien d’Édouard Philippe, Christelle Morançais « porte sur cette campagne un regard amer »",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-soutien-dedouard-philippe-christelle-morancais-porte-sur-cette-campagne-un-regard-amer-0d03e192-e3fe-11f1-a3b1-0c6de532ce7d?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-28T06:30:18Z",
+"qui": [
+"philippe"
+]
 },
 {
 "t": "Présidentielle 2027: David Lisnard toujours aussi populaire à Cannes, malgré les critiques de son opposition sur un bilan jugé contrasté",
@@ -1762,39 +1780,21 @@
 "u": "https://www.rfi.fr/fr/podcasts/invit%C3%A9-politique/20261126-pr%C3%A9sidentielle-2027-une-primaire-pour-%C3%A9liminer-n-est-pas-un-accord-de-gouvernement-affirme-herv%C3%A9-morin",
 "d": "2026-11-26T14:28:57Z",
 "qui": []
-},
-{
-"t": "Présidentielle 2027: Teddy Riner assume ses propos sur l’aide à l’Ukraine mais dit que la France \"restera toujours avec les pays opprimés\" s’il est élu",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-teddy-riner-assume-ses-propos-sur-l-aide-a-l-ukraine-mais-dit-que-la-france-restera-toujours-avec-les-pays-opprimes-s-il-est-elu_AV-202611260685.html",
-"d": "2026-11-26T14:23:56Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "Présidentielle: \"Si l'association des maires de France est une instance politique, elle n'a jamais été un organe partisan\", prévient Emmanuel Grégoire après la réélection de David Lisnard",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-si-l-association-des-maires-de-france-elle-n-a-jamais-ete-un-organe-partisan-previent-emmanuel-gregoire-apres-la-reelection-de-david-lisnard_VN-202611260675.html",
-"d": "2026-11-26T14:05:13Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
 "Le Monde": 9,
-"franceinfo": 7,
-"Libération": 21,
+"franceinfo": 8,
+"Libération": 20,
 "Le Figaro": 7,
 "Le Parisien": 56,
 "20 Minutes": 8,
-"Ouest-France": 0,
-"BFMTV": 19,
+"Ouest-France": 1,
+"BFMTV": 21,
 "France 24": 9,
 "La Croix": 23,
-"LCP": 39,
+"LCP": 38,
 "RFI": 8
 },
-"maj": "2026-11-28T06:30:29Z"
+"maj": "2026-11-28T06:45:29Z"
 }
