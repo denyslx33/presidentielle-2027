@@ -5,17 +5,33 @@
 "t": "Présidentielle 2027 : le Rassemblement national met le cap sur l’outre-mer, des territoires stratégiques pour lui",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-rassemblement-national-met-le-cap-sur-loutre-mer-des-territoires-strategiques-pour-lui-28-11-2026-IYLD2IPSSFF2HN7BIE2VJ6O2SE.php",
-"d": "2026-11-28T08:24:42Z",
+"d": "2026-11-28T08:30:30Z",
 "qui": []
 },
 {
 "t": "Présidentielle 2027 : depuis Berlin, Jean-Luc Mélenchon promet de « ne pas aider les Américains à faire la guerre aux Chinois » s’il est élu",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-depuis-berlin-jean-luc-melenchon-promet-de-ne-pas-aider-les-americains-a-faire-la-guerre-aux-chinois-sil-est-elu-28-11-2026-JVPGRR354ZATZGCLZN2D4457F4.php",
-"d": "2026-11-28T08:24:42Z",
+"d": "2026-11-28T08:30:30Z",
 "qui": [
 "melenchon"
 ]
+},
+{
+"t": "Soupçons de fuite vers le RN: le bureau et le domicile de l'ex-directeur de cabinet de Marine Le Pen perquisitionnés",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/front-national/video-soupcons-de-fuite-vers-le-rn-le-bureau-et-le-domicile-de-l-ex-directeur-de-cabinet-de-marine-le-pen-perquisitionnes_VN-202611280211.html",
+"d": "2026-11-28T08:26:20Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "Convention citoyenne sur les finances publiques : le CESE entend peser sur les débats à l’approche de la présidentielle",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/28/convention-citoyenne-sur-les-finances-publiques-le-cese-entend-peser-sur-les-debats-a-l-approche-de-la-presidentielle_6816088_823448.html",
+"d": "2026-11-28T08:22:27Z",
+"qui": []
 },
 {
 "t": "Les outre-mer, passage obligé à quelques mois du premier tour de la présidentielle",
@@ -1756,28 +1772,10 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "Comptes publics: \"On assiste à une lente agonie\", dénonce David Lisnard, président de l'AMF et candidat à la présidentielle",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-comptes-publics-on-assiste-a-une-lente-agonie-denonce-david-lisnard-president-de-l-amf-et-candidat-a-la-presidentielle_VN-202611260724.html",
-"d": "2026-11-26T15:11:35Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "France : le candidat à la Présidentielle Teddy Riner fait polémique sur l'Ukraine",
-"s": "France 24",
-"u": "https://www.france24.com/fr/vid%C3%A9o/20261126-congr%C3%A8s-des-maires-de-france-le-candidat-teddy-riner-fait-pol%C3%A9mique-sur-l-ukraine",
-"d": "2026-11-26T15:10:16Z",
-"qui": [
-"riner"
-]
 }
 ],
 "sources": {
-"Le Monde": 8,
+"Le Monde": 9,
 "franceinfo": 7,
 "Libération": 20,
 "Le Figaro": 6,
@@ -1790,5 +1788,5 @@
 "LCP": 38,
 "RFI": 8
 },
-"maj": "2026-11-28T08:24:42Z"
+"maj": "2026-11-28T08:30:30Z"
 }
