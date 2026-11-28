@@ -63,7 +63,21 @@
 "actu": [],
 "tv": [],
 "fav": {
-"lepen": "2026-11-27",
+"lepen": {
+"d": "2026-11-28",
+"n": 1,
+"t": "2026-11-28T09:45+01:00",
+"w": [
+[
+"allemande",
+"direct",
+"franco",
+"nouvelle",
+"outre",
+"relation"
+]
+]
+},
 "lisnard": {
 "d": "2026-11-27",
 "n": 2,
@@ -94,7 +108,21 @@
 ]
 ]
 },
-"melenchon": "2026-11-27",
+"melenchon": {
+"d": "2026-11-28",
+"n": 1,
+"t": "2026-11-28T09:45+01:00",
+"w": [
+[
+"allemande",
+"direct",
+"franco",
+"nouvelle",
+"outre",
+"relation"
+]
+]
+},
 "zemmour": "2026-11-27",
 "retailleau": "2026-11-27"
 },
