@@ -2,15 +2,33 @@
 "v": 4,
 "items": [
 {
-"t": "DIRECT. Présidentielle 2027 : Raphaël Glucksmann \"soutiendra\" François Hollande s'il se \"présente en recours\", assure le porte-parole des députés socialistes",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/direct-election-presidentielle-raphael-glucksmann-soutiendra-francois-hollande-s-il-se-presente-en-recours_8304636.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-28T15:38:16Z",
+"t": "Présidentielle 2027 : un porte-parole du PS affirme que Raphaël Glucksmann « soutiendra » François Hollande s’il se présente en recours",
+"s": "Ouest-France",
+"u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-romain-eskenazi-ps-affirme-que-raphael-glucksmann-soutiendra-francois-hollande-sil-se-presente-en-recours-415774e6-eb3c-11f1-bb2d-c71dc7920c2a?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+"d": "2026-11-28T15:57:30Z",
 "qui": [
 "glucksmann"
 ],
 "camp": [
 "bouamrane"
+]
+},
+{
+"t": "DIRECT. Présidentielle 2027 : Marine Le Pen s'apprête à lancer le mouvement jeune de sa campagne",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/direct-election-presidentielle-raphael-glucksmann-soutiendra-francois-hollande-s-il-se-presente-en-recours_8304636.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-28T15:54:31Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "Présidentielle: Marine Le Pen lance le mouvement des jeunes de sa campagne ce samedi 28 novembre",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-marine-le-pen-lance-le-mouvement-des-jeunes-de-sa-campagne-ce-samedi-28-novembre_VN-202611280334.html",
+"d": "2026-11-28T15:44:19Z",
+"qui": [
+"lepen"
 ]
 },
 {
@@ -23,7 +41,7 @@
 ]
 },
 {
-"t": "Fuites de Beauvau vers le RN : Ambroise de Rancourt, le missi dominici de Marine Le Pen auprès des grands patrons et de la haute fonction publique",
+"t": "Fuites de Beauvau vers le RN : Ambroise de Rancourt, le missus dominicus de Marine Le Pen auprès des grands patrons et de la haute fonction publique",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/28/fuites-de-beauvau-vers-le-rn-ambroise-de-rancourt-le-missi-dominici-de-marine-le-pen-aupres-des-grands-patrons-et-de-la-haute-fonction-publique_6816116_823448.html",
 "d": "2026-11-28T14:52:22Z",
@@ -1806,26 +1824,6 @@
 "qui": [
 "lepen"
 ]
-},
-{
-"t": "L'ÉDITO POLITIQUE - Jean-Luc Mélenchon, François Hollande, Raphaël Glucksmann...la campagne bat son plein à gauche",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-l-edito-politique-jean-luc-melenchon-francois-hollande-raphael-glucksmann-la-campagne-bat-son-plein-a-gauche_VN-202611270223.html",
-"d": "2026-11-27T06:22:14Z",
-"qui": [
-"glucksmann",
-"melenchon"
-]
-},
-{
-"t": "Présidentielle 2027 : David Lisnard utilise-t-il des bots sur les réseaux pour ne pas être associé à Marine Le Pen ?",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4265767-20261127-presidentielle-2027-david-lisnard-accuse-utiliser-bots-reseaux-sociaux-etre-associe-pen?at_medium=display&at_campaign=149",
-"d": "2026-11-27T05:32:36Z",
-"qui": [
-"lepen",
-"lisnard"
-]
 }
 ],
 "sources": {
@@ -1835,12 +1833,12 @@
 "Le Figaro": 9,
 "Le Parisien": 72,
 "20 Minutes": 14,
-"Ouest-France": 0,
+"Ouest-France": 1,
 "BFMTV": 26,
 "France 24": 15,
 "La Croix": 33,
 "LCP": 54,
 "RFI": 10
 },
-"maj": "2026-11-28T15:45:29Z"
+"maj": "2026-11-28T16:00:29Z"
 }
