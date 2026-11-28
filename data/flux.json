@@ -5,7 +5,7 @@
 "t": "Présidentielle 2027 : le Rassemblement national met le cap sur l’outre-mer, des territoires stratégiques pour lui",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-rassemblement-national-met-le-cap-sur-loutre-mer-des-territoires-strategiques-pour-lui-28-11-2026-IYLD2IPSSFF2HN7BIE2VJ6O2SE.php",
-"d": "2026-11-28T11:23:21Z",
+"d": "2026-11-28T11:30:29Z",
 "qui": [],
 "camp": [
 "lepen"
@@ -15,7 +15,7 @@
 "t": "Présidentielle 2027 : depuis Berlin, Jean-Luc Mélenchon promet de « ne pas aider les Américains à faire la guerre aux Chinois » s’il est élu",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-depuis-berlin-jean-luc-melenchon-promet-de-ne-pas-aider-les-americains-a-faire-la-guerre-aux-chinois-sil-est-elu-28-11-2026-JVPGRR354ZATZGCLZN2D4457F4.php",
-"d": "2026-11-28T11:23:21Z",
+"d": "2026-11-28T11:30:29Z",
 "qui": [
 "melenchon"
 ]
@@ -24,14 +24,14 @@
 "t": "Présidentielle 2027 : pourquoi le système des 500 parrainages nécessaires pour se présenter est-il autant critiqué ?",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-pourquoi-le-systeme-des-500-parrainages-necessaires-pour-se-presenter-est-il-autant-critique-28-11-2026-G37SHMECQJERHKIFUAVOENUVLU.php",
-"d": "2026-11-28T11:23:21Z",
+"d": "2026-11-28T11:30:29Z",
 "qui": []
 },
 {
 "t": "Troubles menstruels après avoir manifesté : des députées LFI demandent la publication de la composition du gaz lacrymogène",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/societe/sante/troubles-menstruels-apres-avoir-manifeste-des-deputees-lfi-demandent-la-publication-de-la-composition-du-gaz-lacrymogene-28-11-2026-CPDKFXO3WRGIHAVKTQBQYLG47Q.php",
-"d": "2026-11-28T11:23:21Z",
+"d": "2026-11-28T11:30:29Z",
 "qui": [],
 "camp": [
 "melenchon"
@@ -41,7 +41,7 @@
 "t": "« Fuites » au profit du RN : le bureau et le domicile de l’ex-directeur de cabinet de Marine Le Pen perquisitionnés",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/politique/fuites-au-profit-du-rn-le-bureau-et-le-domicile-de-lex-directeur-de-cabinet-de-marine-le-pen-perquisitionnes-28-11-2026-TJX3LT64LZHTPBNXXWK3MM6M5M.php",
-"d": "2026-11-28T11:23:21Z",
+"d": "2026-11-28T11:30:29Z",
 "qui": [],
 "camp": [
 "lepen"
@@ -1834,10 +1834,10 @@
 "20 Minutes": 14,
 "Ouest-France": 0,
 "BFMTV": 26,
-"France 24": 14,
+"France 24": "erreur: HTTPError",
 "La Croix": 33,
 "LCP": 54,
-"RFI": 10
+"RFI": 11
 },
-"maj": "2026-11-28T11:23:21Z"
+"maj": "2026-11-28T11:30:29Z"
 }
