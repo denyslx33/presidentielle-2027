@@ -65,8 +65,8 @@
 "fav": {
 "lepen": {
 "d": "2026-11-28",
-"n": 1,
-"t": "2026-11-28T09:45+01:00",
+"n": 2,
+"t": "2026-11-28T12:45+01:00",
 "w": [
 [
 "allemande",
@@ -75,6 +75,17 @@
 "nouvelle",
 "outre",
 "relation"
+],
+[
+"allemagne",
+"campagne",
+"deplacement",
+"direct",
+"jeunes",
+"lance",
+"mouvement",
+"poursuit",
+"verdun"
 ]
 ]
 },
