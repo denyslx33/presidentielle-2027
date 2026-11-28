@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-27",
+ "maj": "2026-11-28",
  "evenements": [
   {
    "date": "2026-08-27",
@@ -256,6 +256,20 @@
    "qui": [],
    "url": "https://lcp.fr/presse/communiques-de-presse/emission-speciale-presidentielle-2027-les-candidats-face-aux-etudiants",
    "image": "https://lcp.fr/sites/lcp.fr/files/styles/max_650x650/public/2026-11/GOJ.png?itok=mMoemj58"
+  },
+  {
+   "date": "2026-12-08",
+   "heure": null,
+   "type": "meeting",
+   "titre": "Réunion publique de Nouvelle Énergie avec Hervé Morin, pour présenter le projet de David Lisnard",
+   "lieu": "Agneaux (Manche)",
+   "chaine": null,
+   "qui": [
+    "lisnard"
+   ],
+   "url": "https://www.ouest-france.fr/normandie/agneaux-50180/presidentielle-2027-herve-morin-vient-a-agneaux-presenter-le-projet-du-candidat-nouvel-energie-david-lisnard-bc15bec4-e978-11f1-9b33-2f81462d3339",
+   "commune": "Agneaux",
+   "dep": "50"
   },
   {
    "date": "2026-12-10",

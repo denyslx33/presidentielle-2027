@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-27",
+ "maj": "2026-11-28",
  "note": "Chaque position vient d'une mesure publiée, affichée sous la question avec un lien vers le programme du candidat. Quand un candidat ne s'est pas clairement prononcé, sa position est inconnue et la question ne compte pas pour lui.",
  "questions": [
   {
@@ -1130,11 +1130,13 @@
    "q": "Il faut construire beaucoup plus de places de prison.",
    "pos": {
     "lepen": 1,
-    "philippe": 1
+    "philippe": 1,
+    "lisnard": 1
    },
    "src": {
     "lepen": "85 000 places de prison",
-    "philippe": "Construire de nouvelles places de prison"
+    "philippe": "Construire de nouvelles places de prison",
+    "lisnard": "30 000 places de prison et 5 000 postes de greffiers et de juges"
    },
    "id": "q62",
    "axe": [
@@ -1143,7 +1145,8 @@
    ],
    "exp": "Les prisons françaises comptent environ 80 000 détenus pour un peu plus de 60 000 places, l'un des taux de surpopulation les plus élevés d'Europe.",
    "srcu": {
-    "philippe": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics"
+    "philippe": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-sante-justice-education-cultureque-retenir-du-grand-oral-des-candidats-sur-les-services-publics",
+    "lisnard": "https://www.bfmtv.com/politique/elections/presidentielle/video-programme-de-david-lisnard-sur-la-politique-penale-nous-promettons-la-creation-de-30-000-places-de-prison-et-5-000-postes-de-greffiers-et-juges-detaille-thomas-elexhauser-son-porte-parole_VN-202611270827.html"
    }
   },
   {
@@ -1719,20 +1722,25 @@
     "dupont-aignan": 1,
     "attal": -1,
     "glucksmann": -1,
-    "tondelier": -1
+    "tondelier": -1,
+    "melenchon": -1
    },
    "src": {
     "dupont-aignan": "Sortie de l'Union européenne",
     "attal": "Référendum européen pour des « États-Unis d'Europe »",
     "glucksmann": "Vote à la majorité qualifiée au Conseil européen",
-    "tondelier": "Budget européen porté à 2 % du PIB en 2035"
+    "tondelier": "Budget européen porté à 2 % du PIB en 2035",
+    "melenchon": "Pas de sortie de l'Union européenne"
    },
    "id": "q100",
    "axe": [
     "eur",
     1
    ],
-   "exp": "Un pays peut quitter l'Union européenne en suivant une procédure de négociation prévue par les traités, comme l'a fait le Royaume-Uni en 2020."
+   "exp": "Un pays peut quitter l'Union européenne en suivant une procédure de négociation prévue par les traités, comme l'a fait le Royaume-Uni en 2020.",
+   "srcu": {
+    "melenchon": "https://www.bfmtv.com/politique/elections/presidentielle/video-jean-luc-melenchon-ecarte-une-sortie-de-la-france-de-l-ue-jamais-de-la-vie-vous-allez-devoir-nous-supporter-de-l-interieur-avec-nos-regles_VN-202611270899.html"
+   }
   },
   {
    "theme": "Europe et international",

@@ -1,6 +1,87 @@
 {
- "maj": "2026-11-27",
+ "maj": "2026-11-28",
  "items": [
+  {
+   "date": "2026-11-28",
+   "qui": [
+    "philippe"
+   ],
+   "texte": "Christelle Morançais, soutien d'Édouard Philippe, déclare porter « un regard amer » sur la campagne.",
+   "source": "Ouest-France",
+   "url": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-soutien-dedouard-philippe-christelle-morancais-porte-sur-cette-campagne-un-regard-amer-0d03e192-e3fe-11f1-a3b1-0c6de532ce7d"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "lepen"
+   ],
+   "texte": "Le bureau et le domicile de l'ancien directeur de cabinet de Marine Le Pen sont perquisitionnés dans l'enquête sur des soupçons de fuites d'informations vers le RN.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-soupcons-de-fuite-vers-le-rn-le-bureau-et-le-domicile-de-l-ex-directeur-de-marine-le-pen-ont-ete-perquisitionnes_VN-202611270949.html"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "lepen"
+   ],
+   "texte": "Selon Le Monde, Ambroise de Rancourt, responsable du programme présidentiel de Marine Le Pen, est soupçonné d'être le principal destinataire de documents confidentiels du ministère de l'Intérieur.",
+   "source": "Le Monde",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/27/ambroise-de-rancourt-le-responsable-du-programme-presidentiel-de-marine-le-pen-soupconne-d-etre-le-principal-destinataire-de-la-fuite-de-documents-de-beauvau-vers-le-rn_6815924_3224.html"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "melenchon"
+   ],
+   "texte": "À Berlin, Jean-Luc Mélenchon affirme qu'il refusera, s'il est élu, d'« aider les Américains à faire la guerre aux Chinois » et qu'il ouvrira « immédiatement » des discussions avec la Chine, qu'il qualifie d'« alliée ».",
+   "source": "Ouest-France",
+   "url": "https://www.ouest-france.fr/politique/jean-luc-melenchon/en-cas-de-victoire-a-la-presidentielle-jean-luc-melenchon-entamera-immediatement-des-discussions-avec-la-chine-qualifiee-dalliee-634e9192-eaab-11f1-bb2d-c71dc7920c2a"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "melenchon"
+   ],
+   "texte": "Jean-Luc Mélenchon écarte une sortie de la France de l'Union européenne : « Jamais de la vie ».",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-jean-luc-melenchon-ecarte-une-sortie-de-la-france-de-l-ue-jamais-de-la-vie-vous-allez-devoir-nous-supporter-de-l-interieur-avec-nos-regles_VN-202611270899.html"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "melenchon"
+   ],
+   "texte": "Jean-Luc Mélenchon déclare : « Si les Français m'élisent, je leur donnerai le moyen de me révoquer ».",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-jean-luc-melenchon-si-les-francais-m-elisent-je-leur-donnerai-le-moyen-de-me-revoquer_VN-202611270888.html"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "lepen"
+   ],
+   "texte": "Marine Le Pen veut geler toutes les discussions institutionnelles en outre-mer.",
+   "source": "Le Monde",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/27/presidentielle-2027-marine-le-pen-veut-geler-toutes-les-discussions-institutionnelles-en-outre-mer_6815933_823448.html"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "lisnard"
+   ],
+   "texte": "Le porte-parole de David Lisnard, Thomas Elexhauser, détaille son programme pénal : 30 000 places de prison et 5 000 postes de greffiers et de juges.",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-programme-de-david-lisnard-sur-la-politique-penale-nous-promettons-la-creation-de-30-000-places-de-prison-et-5-000-postes-de-greffiers-et-juges-detaille-thomas-elexhauser-son-porte-parole_VN-202611270827.html"
+  },
+  {
+   "date": "2026-11-27",
+   "qui": [
+    "glucksmann"
+   ],
+   "texte": "Ségolène Royal reproche à Raphaël Glucksmann de critiquer « davantage LFI que le bilan d'Emmanuel Macron » et estime qu'il « va aller jusqu'au bout ».",
+   "source": "BFMTV",
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-quand-vous-critiquez-davantage-lfi-que-le-bilan-d-emmanuel-macron-qui-est-catastrophique-ca-pose-un-probleme-segolene-royal-charge-raphael-glucksmann_VN-202611270784.html"
+  },
   {
    "date": "2026-11-27",
    "qui": [
@@ -468,91 +549,6 @@
    "texte": "Robert Ménard, maire de Béziers, se dit « choqué » par les propos de Teddy Riner sur l'Ukraine, qu'il doit accueillir le 27 novembre.",
    "source": "BFMTV",
    "url": "https://www.bfmtv.com/politique/elections/presidentielle/comment-tu-peux-dire-ca-robert-menard-choque-par-les-propos-de-teddy-riner-sur-la-guerre-en-ukraine-l-invite-a-aller-sur-la-ligne-de-front_AV-202611260398.html"
-  },
-  {
-   "date": "2026-11-26",
-   "qui": [
-    "lisnard",
-    "philippe",
-    "lepen"
-   ],
-   "texte": "David Lisnard refuse de dire qui il choisirait entre Édouard Philippe et Marine Le Pen au second tour. Gérald Darmanin dénonce une « compromission ».",
-   "source": "BFMTV",
-   "url": "https://www.bfmtv.com/politique/elections/presidentielle/ce-n-est-pas-ca-la-droite-gerald-darmanin-accuse-david-lisnard-de-compromission-apres-son-refus-de-choisir-entre-edouard-philippe-et-marine-le-pen-au-second-tour-de-la-presidentielle_AV-202611260414.html"
-  },
-  {
-   "date": "2026-11-26",
-   "qui": [
-    "lisnard"
-   ],
-   "texte": "À la clôture du Congrès des maires, David Lisnard débat avec le Premier ministre Sébastien Lecornu et le président du Sénat Gérard Larcher.",
-   "source": "BFMTV",
-   "url": "https://www.bfmtv.com/politique/video-sebastien-lecornu-david-lisnard-et-gerard-larcher-reunis-pour-un-debat-a-l-occasion-de-la-cloture-du-congres-des-maires-et-des-presidents-d-intercommunalite-de-france_VN-202611260477.html"
-  },
-  {
-   "date": "2026-11-26",
-   "qui": [
-    "glucksmann"
-   ],
-   "texte": "Le maire de Marseille, Benoît Payan, appelle Raphaël Glucksmann « à se dépasser » et « à rassembler le plus largement possible ».",
-   "source": "franceinfo",
-   "url": "https://www.franceinfo.fr/elections/benoit-payan-appelle-raphael-glucksmann-a-se-depasser-et-a-rassembler-le-plus-largement-possible_8301006.html"
-  },
-  {
-   "date": "2026-11-26",
-   "qui": [
-    "lepen"
-   ],
-   "texte": "Marine Le Pen propose un barème progressif à cinq tranches pour l'impôt sur les sociétés.",
-   "source": "Le Parisien",
-   "url": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-marine-le-pen-propose-un-bareme-progressif-a-cinq-tranches-pour-limpot-sur-les-societes-26-11-2026-6Y7VWED4SZB6PFPUCM37VYVOPA.php"
-  },
-  {
-   "date": "2026-11-26",
-   "qui": [
-    "retailleau"
-   ],
-   "texte": "Bruno Retailleau qualifie les étudiants qui bloquent la Sorbonne de « petits commissaires de l'extrême gauche ».",
-   "source": "Le Parisien",
-   "url": "https://www.leparisien.fr/elections/presidentielle/direct-presidentielle-2027-dernier-jour-du-congres-des-maires-premier-deplacement-en-region-de-teddy-riner-26-11-2026-IYAKVLLACJF2XKI27PCGJEG74U.php"
-  },
-  {
-   "date": "2026-11-26",
-   "qui": [
-    "riner"
-   ],
-   "texte": "Teddy Riner se rend dans la Manche, près de Saint-Lô, pour rencontrer des agriculteurs. C'est son premier déplacement de campagne en région.",
-   "source": "Ouest-France",
-   "url": "https://www.ouest-france.fr/sport/judo/teddy-riner/presidentielle-le-candidat-teddy-riner-fait-etape-pres-de-saint-lo-pour-rencontrer-des-agriculteurs-ce-jeudi-10a808b0-e8b7-11f1-86c1-70195b4d2e52"
-  },
-  {
-   "date": "2026-11-26",
-   "qui": [
-    "lisnard"
-   ],
-   "texte": "David Lisnard dit vouloir convaincre les électeurs « de tous horizons, y compris le RN ».",
-   "source": "20 Minutes",
-   "url": "https://www.20minutes.fr/politique/4265846-20261126-direct-presidentielle-2027-lisnard-veut-convaincre-electeurs-tous-horizons-compris-rn"
-  },
-  {
-   "date": "2026-11-26",
-   "qui": [
-    "attal",
-    "glucksmann",
-    "lisnard"
-   ],
-   "texte": "Dernier jour du Congrès des maires : David Lisnard, Gabriel Attal et Raphaël Glucksmann font campagne au Salon des maires.",
-   "source": "franceinfo",
-   "url": "https://www.franceinfo.fr/elections/david-lisnard-gabriel-attal-raphael-glucksmann-journee-de-campagne-au-salon-des-maires_8300931.html"
-  },
-  {
-   "date": "2026-11-26",
-   "qui": [
-    "melenchon"
-   ],
-   "texte": "Jean-Luc Mélenchon répond avec ironie à Gérald Darmanin, selon qui un second tour RN-LFI mènerait la France « au bord de la guerre civile ».",
-   "source": "BFMTV",
-   "url": "https://www.bfmtv.com/politique/elections/video-jean-luc-melenchon-ironise-face-aux-propos-de-gerald-darmanin-selon-qui-un-second-tour-rn-lfi-menerait-la-france-au-bord-de-la-guerre-civile_VN-202611260194.html"
   }
  ]
 }
