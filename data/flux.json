@@ -2,6 +2,15 @@
 "v": 4,
 "items": [
 {
+"t": "A Berlin, Jean-Luc Mélenchon se défend de germanophobie : « Souvent nous sommes jaloux, mais nous ne le disons pas »",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/international/article/2026/11/28/a-berlin-jean-luc-melenchon-se-defend-de-germanophobie-souvent-nous-sommes-jaloux-mais-nous-ne-le-disons-pas_6816060_3210.html",
+"d": "2026-11-28T04:30:11Z",
+"qui": [
+"melenchon"
+]
+},
+{
 "t": "Partir ou rester en cas de victoire du RN à la présidentielle 2027, le dilemme des hauts fonctionnaires",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/28/partir-ou-rester-en-cas-de-victoire-du-rn-a-la-presidentielle-2027-le-dilemme-des-hauts-fonctionnaires_6816058_823448.html",
@@ -1775,16 +1784,6 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "\"Nous sommes les cibles de Vladimir Poutine\": Raphaël Glucksmann affirme en réponse à Teddy Riner que \"la guerre en Ukraine est notre guerre\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/nous-sommes-les-cibles-de-vladimir-poutine-raphael-glucksmann-affirme-en-reponse-a-teddy-riner-que-la-guerre-en-ukraine-est-notre-guerre_AD-202611260629.html",
-"d": "2026-11-26T13:31:46Z",
-"qui": [
-"glucksmann",
-"riner"
-]
 }
 ],
 "sources": {
@@ -1801,5 +1800,5 @@
 "LCP": 39,
 "RFI": 9
 },
-"maj": "2026-11-28T04:15:29Z"
+"maj": "2026-11-28T04:45:29Z"
 }
