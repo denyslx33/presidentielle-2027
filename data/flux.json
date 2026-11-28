@@ -5,14 +5,14 @@
 "t": "Présidentielle 2027 : le Rassemblement national met le cap sur l’outre-mer, des territoires stratégiques pour lui",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-rassemblement-national-met-le-cap-sur-loutre-mer-des-territoires-strategiques-pour-lui-28-11-2026-IYLD2IPSSFF2HN7BIE2VJ6O2SE.php",
-"d": "2026-11-28T09:30:28Z",
+"d": "2026-11-28T09:45:34Z",
 "qui": []
 },
 {
 "t": "Présidentielle 2027 : depuis Berlin, Jean-Luc Mélenchon promet de « ne pas aider les Américains à faire la guerre aux Chinois » s’il est élu",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-depuis-berlin-jean-luc-melenchon-promet-de-ne-pas-aider-les-americains-a-faire-la-guerre-aux-chinois-sil-est-elu-28-11-2026-JVPGRR354ZATZGCLZN2D4457F4.php",
-"d": "2026-11-28T09:30:28Z",
+"d": "2026-11-28T09:45:34Z",
 "qui": [
 "melenchon"
 ]
@@ -21,8 +21,27 @@
 "t": "Présidentielle 2027 : pourquoi le système des 500 parrainages nécessaires pour se présenter est-il autant critiqué ?",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-pourquoi-le-systeme-des-500-parrainages-necessaires-pour-se-presenter-est-il-autant-critique-28-11-2026-G37SHMECQJERHKIFUAVOENUVLU.php",
-"d": "2026-11-28T09:30:28Z",
+"d": "2026-11-28T09:45:34Z",
 "qui": []
+},
+{
+"t": "Pianiste, ex-partisan de Mélenchon… Qui est Ambroise de Rancourt, cadre du RN qui a été perquisitionné ?",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4266458-20261128-pianiste-ex-partisan-melenchon-ambroise-rancourt-cadre-rn-perquisitionne?at_medium=display&at_campaign=149",
+"d": "2026-11-28T09:35:10Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Présidentielle 2027: \"Cette primaire est morte-née\", réagit Julie Boillot, porte-parole d'Édouard Philippe, à la proposition d'élargir la primaire de la droite à Éric Zemmour",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-cette-primaire-est-morte-nee-reagit-julie-boillot-porte-parole-d-edouard-philippe-a-la-proposition-d-elargir-la-primaire-de-la-droite-a-eric-zemmour_VN-202611280230.html",
+"d": "2026-11-28T09:31:43Z",
+"qui": [
+"philippe",
+"zemmour"
+]
 },
 {
 "t": "DIRECT. Présidentielle: Marine Le Pen lance le mouvement des jeunes de sa campagne, Gabriel Attal à Verdun, Jean-Luc Mélenchon poursuit son déplacement en Allemagne",
@@ -1756,25 +1775,6 @@
 "qui": [
 "riner"
 ]
-},
-{
-"t": "Aide à l’Ukraine : Teddy Riner veut cesser « de donner de l’argent que nous n’avons pas », comment se positionnent les autres candidats ?",
-"s": "Ouest-France",
-"u": "https://www.ouest-france.fr/elections/presidentielle/aide-a-lukraine-teddy-riner-veut-cesser-de-donner-de-largent-que-nous-navons-pas-comment-se-positionnent-les-autres-candidats-b9cd0b86-e9a0-11f1-9b33-2f81462d3339?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
-"d": "2026-11-26T16:20:46Z",
-"qui": [
-"riner"
-]
-},
-{
-"t": "Huit députés des Républicains annoncent leur soutien à David Lisnard plutôt que Bruno Retailleau pour la présidentielle 2027",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/huit-deputes-des-republicains-annoncent-leur-soutien-a-david-lisnard-plutot-que-bruno-retailleau-pour-la-presidentielle-2027_8301579.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-26T16:19:00Z",
-"qui": [
-"lisnard",
-"retailleau"
-]
 }
 ],
 "sources": {
@@ -1783,7 +1783,7 @@
 "Libération": 20,
 "Le Figaro": 6,
 "Le Parisien": 56,
-"20 Minutes": 8,
+"20 Minutes": 9,
 "Ouest-France": 0,
 "BFMTV": 24,
 "France 24": 8,
@@ -1791,5 +1791,5 @@
 "LCP": 38,
 "RFI": 8
 },
-"maj": "2026-11-28T09:30:28Z"
+"maj": "2026-11-28T09:45:34Z"
 }
