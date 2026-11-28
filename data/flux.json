@@ -2,21 +2,40 @@
 "v": 4,
 "items": [
 {
+"t": "DIRECT. Présidentielle 2027 : Marine Le Pen s'apprête à lancer le mouvement jeune de sa campagne",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/direct-election-presidentielle-raphael-glucksmann-soutiendra-francois-hollande-s-il-se-presente-en-recours_8304636.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-28T17:28:30Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "Des riches veulent payer plus d'impôts: \"Ce sont surtout des spécimens assez rares\", ironise Nathalie Arthaud, candidate à l'élection présidentielle (Lutte ouvrière)",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-des-riches-veulent-payer-plus-d-impots-ce-sont-surtout-des-specimens-assez-rares-ironise-nathalie-arthaud-candidate-a-l-election-presidentielle-lutte-ouvriere_VN-202611280370.html",
+"d": "2026-11-28T17:24:02Z",
+"qui": [
+"arthaud"
+]
+},
+{
+"t": "Présidentielle: \"Aujourd'hui le moyen le plus démocratique, ça reste une primaire\" entre les candidats, détaille Nour Durand-Raucher, conseiller EELV de Paris",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-aujourd-hui-le-moyen-le-plus-democratique-ca-reste-une-primaire-entre-les-candidats-detaille-nour-durand-raucher-conseiller-eelv-de-paris_VN-202611280364.html",
+"d": "2026-11-28T17:14:56Z",
+"qui": [],
+"camp": [
+"tondelier"
+]
+},
+{
 "t": "Présidentielle 2027: \"La question qui se pose pour l'ensemble des candidats de la droite et du centre c'est de savoir s'ils auront un esprit de responsabilité\", pointe Grégoire de Lasteyrie, maire de Palaiseau et porte-parole d’Édouard Philippe",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-la-question-qui-se-pose-pour-l-ensemble-des-candidats-de-la-droite-et-du-centre-c-est-de-savoir-s-ils-auront-un-esprit-de-responsabilite-pointe-gregoire-de-lasteyrie-maire-de-palaiseau-et-porte-parole-d-edouard-philippe_VN-202611280363.html",
 "d": "2026-11-28T17:13:14Z",
 "qui": [
 "philippe"
-]
-},
-{
-"t": "DIRECT. Présidentielle 2027 : Marine Le Pen s'apprête à lancer le mouvement jeune de sa campagne",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/direct-election-presidentielle-raphael-glucksmann-soutiendra-francois-hollande-s-il-se-presente-en-recours_8304636.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-28T17:12:42Z",
-"qui": [
-"lepen"
 ]
 },
 {
@@ -1796,25 +1815,6 @@
 "qui": [
 "villepin"
 ]
-},
-{
-"t": "Propos antisémites de Bardella : la candidat qualifie l'enquête de \"chasse à l'homme\"",
-"s": "France 24",
-"u": "https://www.france24.com/fr/vid%C3%A9o/20261126-propos-antis%C3%A9mites-de-bardella-la-candidat-qualifie-l-enqu%C3%AAte-de-chasse-%C3%A0-l-homme",
-"d": "2026-11-26T16:37:54Z",
-"qui": [],
-"camp": [
-"lepen"
-]
-},
-{
-"t": "Présidentielle 2027 : après ses propos sur l’Ukraine, comment Teddy Riner s’est retrouvé au cœur de la polémique",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/presidentielle-2027-apres-ses-propos-sur-l-ukraine-comment-teddy-riner-sest-retrouve-au-cour-de-la-polemique-20261126",
-"d": "2026-11-26T16:27:08Z",
-"qui": [
-"riner"
-]
 }
 ],
 "sources": {
@@ -1831,5 +1831,5 @@
 "LCP": 48,
 "RFI": 8
 },
-"maj": "2026-11-28T17:15:29Z"
+"maj": "2026-11-28T17:30:30Z"
 }
