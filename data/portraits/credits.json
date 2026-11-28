@@ -102,5 +102,33 @@
  "labib": {
   "texte": "Loupe politique",
   "url": "https://www.loupepolitique.fr/"
+ },
+ "asselineau": {
+  "texte": "Wikimedia Commons, via sa page Wikipédia (auteur et licence sur la page de la photo)",
+  "url": "https://fr.wikipedia.org/wiki/François_Asselineau"
+ },
+ "branco": {
+  "texte": "Wikimedia Commons, via sa page Wikipédia (auteur et licence sur la page de la photo)",
+  "url": "https://fr.wikipedia.org/wiki/Juan_Branco"
+ },
+ "egger": {
+  "texte": "Wikimedia Commons, via sa page Wikipédia (auteur et licence sur la page de la photo)",
+  "url": "https://fr.wikipedia.org/wiki/Clara_Egger"
+ },
+ "kazib": {
+  "texte": "Wikimedia Commons, via sa page Wikipédia (auteur et licence sur la page de la photo)",
+  "url": "https://fr.wikipedia.org/wiki/Anasse_Kazib"
+ },
+ "lalanne": {
+  "texte": "Wikimedia Commons, via sa page Wikipédia (auteur et licence sur la page de la photo)",
+  "url": "https://fr.wikipedia.org/wiki/Francis_Lalanne"
+ },
+ "lassalle": {
+  "texte": "Wikimedia Commons, via sa page Wikipédia (auteur et licence sur la page de la photo)",
+  "url": "https://fr.wikipedia.org/wiki/Jean_Lassalle"
+ },
+ "philippot": {
+  "texte": "Wikimedia Commons, via sa page Wikipédia (auteur et licence sur la page de la photo)",
+  "url": "https://fr.wikipedia.org/wiki/Florian_Philippot"
  }
 }
