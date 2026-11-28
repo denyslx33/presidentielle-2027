@@ -5,7 +5,7 @@
 "t": "DIRECT. Présidentielle 2027 : Marine Le Pen s'apprête à lancer le mouvement jeune de sa campagne",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/elections/direct-election-presidentielle-raphael-glucksmann-soutiendra-francois-hollande-s-il-se-presente-en-recours_8304636.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-28T17:28:30Z",
+"d": "2026-11-28T17:40:59Z",
 "qui": [
 "lepen"
 ]
@@ -52,15 +52,6 @@
 ]
 },
 {
-"t": "DIRECT. “Il faut être conquérant”: Marine Le Pen ne veut “pas entendre” les jeunes s’engageant dans sa campagne “se plaindre”",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-marine-le-pen-lance-le-mouvement-des-jeunes-de-sa-campagne-gabriel-attal-a-verdun-jean-luc-melenchon-poursuit-son-deplacement-en-allemagne_LN-202611280216.html",
-"d": "2026-11-28T17:04:06Z",
-"qui": [
-"lepen"
-]
-},
-{
 "t": "\"Il va falloir changer Parcoursup\", soutient Marine Le Pen",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-il-va-falloir-changer-parcoursup-soutient-marine-le-pen_VN-202611280352.html",
@@ -94,6 +85,15 @@
 "d": "2026-11-28T16:37:32Z",
 "qui": [
 "lepen"
+]
+},
+{
+"t": "DIRECT. Présidentielle: Gabriel Attal n’envisage “pas du tout” de retirer sa candidature",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-marine-le-pen-lance-le-mouvement-des-jeunes-de-sa-campagne-gabriel-attal-a-verdun-jean-luc-melenchon-poursuit-son-deplacement-en-allemagne_LN-202611280216.html",
+"d": "2026-11-28T16:35:25Z",
+"qui": [
+"attal"
 ]
 },
 {
@@ -540,6 +540,16 @@
 "d": "2026-11-28T06:18:51Z",
 "qui": [
 "lisnard"
+]
+},
+{
+"t": "\"On ne peut pas toujours avoir le vent dans le dos\": pris entre les accusations d’antisémitisme et l’affaire Moutouh, la mauvaise passe du Rassemblement national",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/front-national/on-ne-peut-pas-toujours-avoir-le-vent-dans-le-dos-pris-entre-les-accusations-d-antisemitisme-et-l-affaire-moutouh-la-mauvaise-passe-du-rassemblement-national_AN-202611280089.html",
+"d": "2026-11-28T06:03:00Z",
+"qui": [],
+"camp": [
+"lepen"
 ]
 },
 {
@@ -1806,19 +1816,10 @@
 "camp": [
 "lepen"
 ]
-},
-{
-"t": "Dominique de Villepin, l’apôtre de l’amour, par Julie Neveux",
-"s": "Libération",
-"u": "https://www.liberation.fr/idees-et-debats/opinions/dominique-de-villepin-lapotre-de-lamour-par-julie-neveux-20261126_W7SRJD6MRZFZFJFKXK7IDQ552A/",
-"d": "2026-11-26T17:33:04Z",
-"qui": [
-"villepin"
-]
 }
 ],
 "sources": {
-"Le Monde": 10,
+"Le Monde": 9,
 "franceinfo": 10,
 "Libération": 21,
 "Le Figaro": 6,
@@ -1831,5 +1832,5 @@
 "LCP": 48,
 "RFI": 8
 },
-"maj": "2026-11-28T17:30:30Z"
+"maj": "2026-11-28T17:45:29Z"
 }
