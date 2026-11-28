@@ -1632,7 +1632,8 @@
    },
    "bloc": "d",
    "a_verifier": "Mesures tirées de sa campagne 2017 : vérifier qu'elles sont reprises en 2027.",
-   "vu_sondage": "2026-11-10"
+   "vu_sondage": "2026-11-10",
+   "officiel": true
   },
   {
    "id": "philippot",
@@ -1667,7 +1668,8 @@
     ]
    },
    "bloc": "d",
-   "a_verifier": "Dit qu'il se retirerait si Philippe de Villiers se présentait."
+   "a_verifier": "Dit qu'il se retirerait si Philippe de Villiers se présentait.",
+   "officiel": true
   },
   {
    "id": "lassalle",
@@ -1694,7 +1696,8 @@
    },
    "bloc": null,
    "a_verifier": "À passer en fiche seulement s'il officialise sa candidature.",
-   "vu_sondage": "2024-12-09"
+   "vu_sondage": "2024-12-09",
+   "officiel": false
   },
   {
    "id": "kazib",
@@ -1720,7 +1723,8 @@
     "themes": []
    },
    "bloc": "g",
-   "a_verifier": "Pas encore de mesures sourcées par un média fiable."
+   "a_verifier": "Pas encore de mesures sourcées par un média fiable.",
+   "officiel": true
   },
   {
    "id": "branco",
@@ -1755,7 +1759,8 @@
     ]
    },
    "bloc": null,
-   "a_verifier": "Détailler ses mesures depuis son programme officiel (ruches.org) le moment venu."
+   "a_verifier": "Détailler ses mesures depuis son programme officiel (ruches.org) le moment venu.",
+   "officiel": true
   },
   {
    "id": "labib",
@@ -1781,7 +1786,8 @@
     "themes": []
    },
    "bloc": "g",
-   "a_verifier": "Pas encore de mesures sourcées par un média fiable."
+   "a_verifier": "Pas encore de mesures sourcées par un média fiable.",
+   "officiel": true
   },
   {
    "id": "lalanne",
@@ -1807,7 +1813,8 @@
     "themes": []
    },
    "bloc": null,
-   "a_verifier": "Pas encore de mesures sourcées par un média fiable."
+   "a_verifier": "Pas encore de mesures sourcées par un média fiable.",
+   "officiel": true
   },
   {
    "id": "egger",
@@ -1830,7 +1837,8 @@
     "themes": []
    },
    "bloc": null,
-   "a_verifier": "Seule source : le site de son parti. Trouver un média fiable avant toute mise en ligne."
+   "a_verifier": "Seule source : le site de son parti. Trouver un média fiable avant toute mise en ligne.",
+   "officiel": false
   },
   {
    "id": "markovic",
@@ -1853,7 +1861,8 @@
     "themes": []
    },
    "bloc": null,
-   "a_verifier": "Aucune source fiable ne confirme encore sa candidature."
+   "a_verifier": "Aucune source fiable ne confirme encore sa candidature.",
+   "officiel": false
   },
   {
    "id": "mikolajczak",
@@ -1876,7 +1885,8 @@
     "themes": []
    },
    "bloc": null,
-   "a_verifier": "Aucune source fiable ne confirme encore sa candidature."
+   "a_verifier": "Aucune source fiable ne confirme encore sa candidature.",
+   "officiel": false
   }
  ]
 }
