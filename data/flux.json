@@ -2,23 +2,39 @@
 "v": 4,
 "items": [
 {
+"t": "DIRECT. Présidentielle: Gabriel Attal n’envisage “pas du tout” de retirer sa candidature",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-marine-le-pen-lance-le-mouvement-des-jeunes-de-sa-campagne-gabriel-attal-a-verdun-jean-luc-melenchon-poursuit-son-deplacement-en-allemagne_LN-202611280216.html",
+"d": "2026-11-28T16:35:25Z",
+"qui": [
+"attal"
+]
+},
+{
+"t": "Présidentielle 2027: \"Le combat n'a pas démarré hier mais il y a des décennies\", déclare Marine Le Pen",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-le-combat-n-a-pas-demarre-hier-mais-il-y-a-des-decennies-declare-marine-le-pen_VN-202611280347.html",
+"d": "2026-11-28T16:31:57Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "Mohammed VI, partenaire embarrassant de Teddy Riner",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/replay-magazine/franceinfo/vrai-ou-fake-l-emission/mohammed-vi-partenaire-embarrassant-de-teddy-riner_8304792.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-28T16:30:47Z",
+"qui": [
+"riner"
+]
+},
+{
 "t": "DIRECT. Présidentielle 2027 : Marine Le Pen s'apprête à lancer le mouvement jeune de sa campagne",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/elections/direct-election-presidentielle-raphael-glucksmann-soutiendra-francois-hollande-s-il-se-presente-en-recours_8304636.html#xtor=RSS-3-%5Bpolitique%5D",
 "d": "2026-11-28T16:14:08Z",
 "qui": [
 "lepen"
-]
-},
-{
-"t": "Interdire les banquets du Canon français ? Pour Arthur Delaporte, député PS du Calvados, \"ça pose des sujets de troubles à l'ordre public\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-interdire-les-banquets-du-canon-francais-pour-arthur-delaporte-depute-ps-du-calvados-ca-pose-des-sujets-de-troubles-a-l-ordre-public_VN-202611280338.html",
-"d": "2026-11-28T16:05:36Z",
-"qui": [],
-"camp": [
-"bouamrane",
-"glucksmann"
 ]
 },
 {
@@ -68,15 +84,6 @@
 "qui": [],
 "camp": [
 "lepen"
-]
-},
-{
-"t": "DIRECT. Présidentielle: Gabriel Attal n’envisage “pas du tout” de retirer sa candidature",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-marine-le-pen-lance-le-mouvement-des-jeunes-de-sa-campagne-gabriel-attal-a-verdun-jean-luc-melenchon-poursuit-son-deplacement-en-allemagne_LN-202611280216.html",
-"d": "2026-11-28T13:51:55Z",
-"qui": [
-"attal"
 ]
 },
 {
@@ -134,26 +141,6 @@
 "qui": []
 },
 {
-"t": "Troubles menstruels après avoir manifesté : des députées LFI demandent la publication de la composition du gaz lacrymogène",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/societe/sante/troubles-menstruels-apres-avoir-manifeste-des-deputees-lfi-demandent-la-publication-de-la-composition-du-gaz-lacrymogene-28-11-2026-CPDKFXO3WRGIHAVKTQBQYLG47Q.php",
-"d": "2026-11-28T12:00:00Z",
-"qui": [],
-"camp": [
-"melenchon"
-]
-},
-{
-"t": "« Fuites » au profit du RN : le bureau et le domicile de l’ex-directeur de cabinet de Marine Le Pen perquisitionnés",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/politique/fuites-au-profit-du-rn-le-bureau-et-le-domicile-de-lex-directeur-de-cabinet-de-marine-le-pen-perquisitionnes-28-11-2026-TJX3LT64LZHTPBNXXWK3MM6M5M.php",
-"d": "2026-11-28T12:00:00Z",
-"qui": [],
-"camp": [
-"lepen"
-]
-},
-{
 "t": "Présidentielle 2027 : le chanteur Renaud annonce qu’il votera Fabien Roussel, le candidat du Parti communiste français",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-chanteur-renaud-annonce-quil-votera-fabien-roussel-le-candidat-du-parti-communiste-francais-28-11-2026-FPKMMYBAONHYNDDOMTGUYHGLJQ.php",
@@ -202,16 +189,6 @@
 "qui": []
 },
 {
-"t": "« Une restriction de la liberté des associations » : cet expert analyse la politique de la mairie RN de La Flèche",
-"s": "Ouest-France",
-"u": "https://www.ouest-france.fr/associations/une-restriction-de-la-liberte-des-associations-cet-expert-analyse-la-politique-de-la-mairie-rn-de-la-fleche-5d355e88-ea80-11f1-bb2d-c71dc7920c2a?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
-"d": "2026-11-28T11:32:02Z",
-"qui": [],
-"camp": [
-"lepen"
-]
-},
-{
 "t": "Présidentielle 2027: François Hollande assure qu'\"au mois de janvier ou février, il y aura une prise de décision\"",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-francois-hollande-assure-qu-au-mois-de-janvier-ou-fevrier-il-y-aura-une-prise-de-decision_VN-202611280260.html",
@@ -225,16 +202,6 @@
 "d": "2026-11-28T11:16:24Z",
 "qui": [
 "riner"
-]
-},
-{
-"t": "\"Fuites\" au profit du RN : Aleksandar Nikolic redoute \"un moyen de pression pour empêcher des préfets et des hauts fonctionnaires d'échanger\" avec le parti",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/politique/front-national/fuites-au-profit-du-rn-aleksandar-nikolic-redoute-un-moyen-de-pression-pour-empecher-des-prefets-et-des-hauts-fonctionnaires-d-echanger-avec-le-parti_8304543.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-28T11:00:50Z",
-"qui": [],
-"camp": [
-"lepen"
 ]
 },
 {
@@ -311,16 +278,6 @@
 "qui": [
 "philippe",
 "zemmour"
-]
-},
-{
-"t": "Soupçons de fuites au profit du RN, respect du secret de l'instruction, propos antisémites attribués à Jordan Bardella... Le \"8h30 franceinfo\" d'Aleksandar Nikolic",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/soupcons-de-fuites-au-profit-du-rn-respect-du-secret-de-l-instruction-propos-antisemites-attribues-a-jordan-bardella-le-8h30-franceinfo-d-aleksandar-nikolic_8281907.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-28T09:11:46Z",
-"qui": [],
-"camp": [
-"lepen"
 ]
 },
 {
@@ -509,16 +466,6 @@
 ]
 },
 {
-"t": "Ecrits antisémites : est-il vrai que Jordan Bardella a choisi «la procédure la plus lente» pour attaquer «Mediapart» ?",
-"s": "Libération",
-"u": "https://www.liberation.fr/checknews/ecrits-antisemites-est-il-vrai-que-jordan-bardella-a-choisi-la-procedure-la-plus-lente-pour-attaquer-mediapart-20261128_ZMXB2IPCX5CDHDLQ2UQERF2H2E/",
-"d": "2026-11-28T06:08:00Z",
-"qui": [],
-"camp": [
-"lepen"
-]
-},
-{
 "t": "\"On ne peut pas toujours avoir le vent dans le dos\": pris entre les accusations d’antisémitisme et l’affaire Moutouh, la mauvaise passe du Rassemblement national",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/front-national/on-ne-peut-pas-toujours-avoir-le-vent-dans-le-dos-pris-entre-les-accusations-d-antisemitisme-et-l-affaire-moutouh-la-mauvaise-passe-du-rassemblement-national_AN-202611280089.html",
@@ -533,16 +480,6 @@
 "s": "RFI",
 "u": "https://www.rfi.fr/fr/podcasts/l-atelier-politique/20261128-st%C3%A9phane-peu-tous-les-%C3%A9lecteurs-du-rn-sont-racistes",
 "d": "2026-11-28T06:00:49Z",
-"qui": [],
-"camp": [
-"lepen"
-]
-},
-{
-"t": "\"Ça fait pschitt !\" : pourquoi les accusations d'antisémitisme visant Jordan Bardella n'entament pas (encore) la popularité du RN",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/politique/jordan-bardella/propos-antisemites-attribues-a-jordan-bardella/ca-fait-pschitt-pourquoi-les-accusations-d-antisemitisme-visant-jordan-bardella-n-entament-pas-encore-la-popularite-du-rn_8303220.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-28T05:58:24Z",
 "qui": [],
 "camp": [
 "lepen"
@@ -580,16 +517,6 @@
 "u": "https://www.lemonde.fr/podcasts/article/2026/11/28/presidentielle-2027-l-extreme-droite-francaise-a-t-elle-vraiment-change_6816057_5463015.html",
 "d": "2026-11-28T04:00:13Z",
 "qui": []
-},
-{
-"t": "Fuites présumées vers le RN : Le bureau et le domicile de l’ex-directeur de cabinet de Marine Le Pen perquisitionnés",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4266426-20261128-fuites-presumees-vers-rn-bureau-domicile-ex-directeur-cabinet-marine-pen-perquisitionnes?at_medium=display&at_campaign=149",
-"d": "2026-11-28T00:02:44Z",
-"qui": [],
-"camp": [
-"lepen"
-]
 },
 {
 "t": "Présidentielle: François-Xavier Bellamy assure qu'\"il n'y a pas de divergence de ligne\" entre Bruno Retailleau et David Lisnard",
@@ -659,36 +586,6 @@
 ]
 },
 {
-"t": "Mathilde Panot saisit la justice après des menaces de mort contre plusieurs députés de la France insoumise",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/politique/la-france-insoumise/mathilde-panot-saisit-la-justice-apres-des-menaces-de-mort-contre-plusieurs-deputes-de-la-france-insoumise_8303808.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-27T21:36:10Z",
-"qui": [],
-"camp": [
-"melenchon"
-]
-},
-{
-"t": "Attentat raciste à Trappes : Quatre députés LFI menacés de mort depuis un mail au nom du suspect",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4266423-20261127-attentat-raciste-trappes-quatre-deputes-lfi-menaces-mort-depuis-mail-nom-suspect?at_medium=display&at_campaign=149",
-"d": "2026-11-27T21:09:44Z",
-"qui": [],
-"camp": [
-"melenchon"
-]
-},
-{
-"t": "LFI : Mathilde Panot saisit la justice après des menaces de mort envoyées à des députés avec une adresse au nom de l’assaillant de Trappes",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/lfi-mathilde-panot-saisit-la-justice-apres-des-menaces-de-mort-envoyees-a-des-deputes-avec-une-adresse-au-nom-de-lassaillant-de-trappes-20261127_OUKDM3ITY5BRDHIYR77OUH4KXI/",
-"d": "2026-11-27T20:56:27Z",
-"qui": [],
-"camp": [
-"melenchon"
-]
-},
-{
 "t": "Présidentielle 2027 : Marine Le Pen veut geler toutes les discussions institutionnelles en outre-mer",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/27/presidentielle-2027-marine-le-pen-veut-geler-toutes-les-discussions-institutionnelles-en-outre-mer_6815933_823448.html",
@@ -704,26 +601,6 @@
 "d": "2026-11-27T20:45:15Z",
 "qui": [
 "lisnard"
-]
-},
-{
-"t": "Mathilde Panot saisit la justice après des menaces de mort contre des députés LFI provenant d’une adresse mail \"portant le nom de Kevin Tessier\"",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/la-france-insoumise/mathilde-panot-saisit-la-justice-apres-des-menaces-de-mort-contre-des-deputes-lfi-provenant-d-une-adresse-mail-portant-le-nom-de-kevin-tessier_AD-202611270905.html",
-"d": "2026-11-27T20:42:00Z",
-"qui": [],
-"camp": [
-"melenchon"
-]
-},
-{
-"t": "Mathilde Panot et trois autres députés « insoumis » visés par des menaces de mort provenant d’une adresse e-mail reprenant le nom de l’auteur de l’attentat raciste de Trappes",
-"s": "Le Monde",
-"u": "https://www.lemonde.fr/societe/article/2026/11/27/mathilde-panot-et-trois-autres-deputes-insoumis-vises-par-des-menaces-de-mort-provenant-d-une-adresse-e-mail-reprenant-le-nom-de-l-auteur-de-l-attentat-raciste-de-trappes_6815932_3224.html",
-"d": "2026-11-27T20:40:43Z",
-"qui": [],
-"camp": [
-"melenchon"
 ]
 },
 {
@@ -1128,16 +1005,6 @@
 ]
 },
 {
-"t": "\"L’étau se resserre pour Jordan Bardella\", estime Stéphane Zumsteeg",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/politique/jordan-bardella/l-etau-se-resserre-pour-jordan-bardella-estime-stephane-zumsteeg_8302980.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-27T15:00:02Z",
-"qui": [],
-"camp": [
-"lepen"
-]
-},
-{
 "t": "DIRECT. Présidentielle 2027 : \"Les débauchages, ça ne m'émeut pas\", réagit Bruno Retailleau, après le ralliement de huit députés LR à David Lisnard",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-marine-le-pen-va-presenter-son-programme-pour-les-outre-mer-en-pleine-tourmente-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8302521.html#xtor=RSS-3-%5Bpolitique%5D",
@@ -1487,26 +1354,6 @@
 ]
 },
 {
-"t": "Insultes racistes et menaces de mort par mail : Mathilde Panot porte plainte au nom de plusieurs députés LFI",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/politique/insultes-racistes-et-menaces-de-mort-par-mail-mathilde-panot-porte-plainte-au-nom-de-plusieurs-deputes-lfi-27-11-2026-KA3QBFO6MVHDFM6OBOIWD4WOEA.php",
-"d": "2026-11-27T12:00:00Z",
-"qui": [],
-"camp": [
-"melenchon"
-]
-},
-{
-"t": "Écrits antisémites : Marine Le Pen soutient Jordan Bardella et souhaite obliger les journalistes à respecter le secret de l’instruction",
-"s": "Le Parisien",
-"u": "https://www.leparisien.fr/politique/ecrits-antisemites-marine-le-pen-soutient-jordan-bardella-et-souhaite-obliger-journalistes-a-respecter-le-secret-de-linstruction-27-11-2026-HL3ATZNNGRGEPL3OR5WZODSTAE.php",
-"d": "2026-11-27T12:00:00Z",
-"qui": [],
-"camp": [
-"lepen"
-]
-},
-{
 "t": "MIDI ÉCO - Fiscalité, allocation, logement, emploi, garde...les propositions d'Édouard Philippe pour la natalité",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-midi-eco-fiscalite-allocation-logement-emploi-garde-les-propositions-d-edouard-philippe-pour-la-natalite_VN-202611270539.html",
@@ -1577,16 +1424,6 @@
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-enquetes-visant-le-rn-marine-le-pen-affirme-qu-elle-est-cernee-par-rien-du-tout_VN-202611270489.html",
 "d": "2026-11-27T10:55:13Z",
 "qui": [
-"lepen"
-]
-},
-{
-"t": "Quand les journalistes montrent l’antisémitisme de Bardella, le RN regarde le doigt",
-"s": "Libération",
-"u": "https://www.liberation.fr/politique/quand-les-journalistes-montrent-lantisemitisme-de-bardella-le-rn-regarde-le-doigt-20261127_EOUTLOMC6BAHNCKPANCZAL5QBU/",
-"d": "2026-11-27T10:54:40Z",
-"qui": [],
-"camp": [
 "lepen"
 ]
 },
@@ -1753,16 +1590,6 @@
 ]
 },
 {
-"t": "Perpignan : « Ca fait parler…» La mairie RN installe des statues XXL de la Nativité et suscite des réactions contrastée",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4266190-20261127-perpignan-ca-fait-parler-mairie-rn-installe-statues-xxl-nativite-suscite-diverses-reactions?at_medium=display&at_campaign=149",
-"d": "2026-11-27T08:26:24Z",
-"qui": [],
-"camp": [
-"lepen"
-]
-},
-{
 "t": "\"Je ne mettrai jamais un bulletin pour un parti extrême\", déclare Bruno Le Maire, en cas de duel Le Pen/Mélenchon au second tour",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-je-ne-mettrai-jamais-un-bulletin-pour-un-parti-extreme-declare-bruno-le-maire-en-cas-de-duel-le-pen-melenchon-au-second-tour_VN-202611270362.html",
@@ -1826,21 +1653,176 @@
 "u": "https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-il-faut-chercher-a-gauche-la-solution-demande-le-socialiste-francois-bonneau-6e0f05b6-df71-11f1-9a29-f4bab172af08?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
 "d": "2026-11-27T06:30:28Z",
 "qui": []
+},
+{
+"t": "L’obsession antiallemande de Jean-Luc Mélenchon, en visite ce vendredi à Berlin",
+"s": "Le Figaro",
+"u": "https://www.lefigaro.fr/politique/l-obsession-antiallemande-de-jean-luc-melenchon-en-visite-ce-vendredi-a-berlin-20261127",
+"d": "2026-11-27T05:30:00Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Présidentielle 2027 : Le Pen dévoile son plan pour l'Outre-mer, Lisnard répond à l'équipe de Philippe",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4266172-20261127-direct-presidentielle-2027-zemmour-fait-savoir-derniere-campagne?at_medium=display&at_campaign=149",
+"d": "2026-11-27T04:45:00Z",
+"qui": [
+"lepen",
+"lisnard"
+]
+},
+{
+"t": "France: Jean-Luc Mélenchon en visite à Berlin, malgré sa méfiance envers l'Allemagne",
+"s": "RFI",
+"u": "https://www.rfi.fr/fr/france/20261127-france-jean-luc-m%C3%A9lenchon-en-visite-%C3%A0-berlin-malgr%C3%A9-sa-m%C3%A9fiance-envers-l-allemagne",
+"d": "2026-11-27T03:24:29Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "« Arrogance », « basses manœuvres »… Passe d’armes entre Macron et Le Pen sur le budget de l’UE",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4266147-20261126-arrogance-basses-manoeuvres-passe-armes-entre-macron-pen-budget-ue?at_medium=display&at_campaign=149",
+"d": "2026-11-26T22:02:17Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "\"Pas créer de doute et de trouble\": Emmanuel Macron recadre Teddy Riner sur l'aide à l'Ukraine",
+"s": "LCP",
+"u": "https://lcp.fr/actualites/pas-creer-de-doute-et-de-trouble-emmanuel-macron-recadre-teddy-riner-sur-l-aide-a-l",
+"d": "2026-11-26T21:45:47Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Présidentielle 2027 : Édouard Philippe veut « dépenser mieux » pour la santé, une « fierté française »",
+"s": "Le Figaro",
+"u": "https://www.lefigaro.fr/politique/presidentielle-2027-edouard-philippe-veut-depenser-mieux-pour-la-sante-une-fierte-francaise-20261126",
+"d": "2026-11-26T20:15:00Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "Europe, Ukraine… Les questions internationales qui pourraient empêcher le ralliement des Ecologistes à Mélenchon",
+"s": "Libération",
+"u": "https://www.liberation.fr/politique/europe-ukraine-les-questions-internationales-qui-pourraient-empecher-le-ralliement-des-ecologistes-a-melenchon-20261126_OAHVPOB3YNHHBIGD6TZH7QK5CI/",
+"d": "2026-11-26T19:21:03Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Présidentielle 2027: David Lisnard, candidat de l'automne ou ascension durable?",
+"s": "LCP",
+"u": "https://lcp.fr/actualites/presidentielle-2027-david-lisnard-candidat-de-l-automne-ou-ascension-durable-445996",
+"d": "2026-11-26T19:17:17Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "David Lisnard et sa position face au RN, propos de Teddy Riner sur l'Ukraine",
+"s": "France 24",
+"u": "https://www.france24.com/fr/%C3%A9missions/politique/20261126-david-lisnard-et-sa-position-face-au-rn-propos-de-teddy-riner-sur-l-ukraine",
+"d": "2026-11-26T18:36:31Z",
+"qui": [
+"lisnard",
+"riner"
+],
+"camp": [
+"lepen"
+]
+},
+{
+"t": "Dominique de Villepin, l’apôtre de l’amour, par Julie Neveux",
+"s": "Libération",
+"u": "https://www.liberation.fr/idees-et-debats/opinions/dominique-de-villepin-lapotre-de-lamour-par-julie-neveux-20261126_W7SRJD6MRZFZFJFKXK7IDQ552A/",
+"d": "2026-11-26T17:33:04Z",
+"qui": [
+"villepin"
+]
+},
+{
+"t": "Propos antisémites de Bardella : la candidat qualifie l'enquête de \"chasse à l'homme\"",
+"s": "France 24",
+"u": "https://www.france24.com/fr/vid%C3%A9o/20261126-propos-antis%C3%A9mites-de-bardella-la-candidat-qualifie-l-enqu%C3%AAte-de-chasse-%C3%A0-l-homme",
+"d": "2026-11-26T16:37:54Z",
+"qui": [],
+"camp": [
+"lepen"
+]
+},
+{
+"t": "Présidentielle 2027 : après ses propos sur l’Ukraine, comment Teddy Riner s’est retrouvé au cœur de la polémique",
+"s": "La Croix",
+"u": "https://www.la-croix.com/politique/presidentielle-2027-apres-ses-propos-sur-l-ukraine-comment-teddy-riner-sest-retrouve-au-cour-de-la-polemique-20261126",
+"d": "2026-11-26T16:27:08Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "France : le candidat à la Présidentielle Teddy Riner fait polémique sur l'Ukraine",
+"s": "France 24",
+"u": "https://www.france24.com/fr/vid%C3%A9o/20261126-congr%C3%A8s-des-maires-de-france-le-candidat-teddy-riner-fait-pol%C3%A9mique-sur-l-ukraine",
+"d": "2026-11-26T15:10:16Z",
+"qui": [
+"riner"
+]
+},
+{
+"t": "Présidentielle 2027: «Une primaire pour éliminer» n'est «pas un accord de gouvernement», affirme Hervé Morin",
+"s": "RFI",
+"u": "https://www.rfi.fr/fr/podcasts/invit%C3%A9-politique/20261126-pr%C3%A9sidentielle-2027-une-primaire-pour-%C3%A9liminer-n-est-pas-un-accord-de-gouvernement-affirme-herv%C3%A9-morin",
+"d": "2026-11-26T14:28:57Z",
+"qui": []
+},
+{
+"t": "« On a beaucoup échangé » : Macron-Lisnard, les coulisses d’un rendez-vous manqué qui a viré à la guerre froide",
+"s": "Le Figaro",
+"u": "https://www.lefigaro.fr/elections/presidentielles/on-a-beaucoup-echange-macron-lisnard-les-coulisses-d-un-rendez-vous-manque-qui-a-vire-a-la-guerre-froide-20261125",
+"d": "2026-11-26T13:36:47Z",
+"qui": [
+"lisnard"
+]
+},
+{
+"t": "Très critique de l'Allemagne, Jean-Luc Mélenchon se rend à Berlin pour présenter son livre",
+"s": "France 24",
+"u": "https://www.france24.com/fr/france/20261126-malgr%C3%A9-sa-m%C3%A9fiance-envers-l-allemagne-m%C3%A9lenchon-se-rend-%C3%A0-berlin-pour-pr%C3%A9senter-son-livre",
+"d": "2026-11-26T13:07:26Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Présidentielle 2027 : Emmanuel Macron tacle la « drôle d’arrogance » de Marine Le Pen",
+"s": "Le Parisien",
+"u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-emmanuel-macron-tacle-la-drole-darrogance-de-marine-le-pen-26-11-2026-TUL24VDTWZF6XP7FMOENF4JKMQ.php",
+"d": "2026-11-26T12:00:00Z",
+"qui": []
 }
 ],
 "sources": {
-"Le Monde": 11,
-"franceinfo": 13,
-"Libération": 31,
-"Le Figaro": 9,
-"Le Parisien": 72,
-"20 Minutes": 14,
+"Le Monde": 10,
+"franceinfo": 9,
+"Libération": 21,
+"Le Figaro": 6,
+"Le Parisien": 56,
+"20 Minutes": 9,
 "Ouest-France": 1,
-"BFMTV": 26,
-"France 24": 15,
-"La Croix": 33,
-"LCP": 54,
-"RFI": 10
+"BFMTV": 25,
+"France 24": 10,
+"La Croix": 26,
+"LCP": 48,
+"RFI": 8
 },
-"maj": "2026-11-28T16:15:34Z"
+"maj": "2026-11-28T16:35:48Z"
 }
