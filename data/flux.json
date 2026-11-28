@@ -2,6 +2,16 @@
 "v": 4,
 "items": [
 {
+"t": "\"Ces choses sont fragiles\" : le Planning familial célèbre ses 70 ans sur fond de menaces du Rassemblement national",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/societe/droits-des-femmes/ces-choses-sont-fragiles-le-planning-familial-celebre-ses-70-ans-sur-fond-de-menaces-du-rassemblement-national_8304648.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-28T13:46:35Z",
+"qui": [],
+"camp": [
+"lepen"
+]
+},
+{
 "t": "\"Je vais voter Fabien Roussel\": Renaud apporte son soutien au candidat PCF à l'élection présidentielle pour ses valeurs \"d’empathie et de solidarité envers les plus faibles\"",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/je-vais-voter-fabien-roussel-renaud-apporte-son-soutien-au-candidat-pcf-a-l-election-presidentielle-pour-ses-valeurs-d-empathie-et-de-solidarite-envers-les-plus-faibles_AN-202611280295.html",
@@ -1817,24 +1827,14 @@
 "qui": [
 "riner"
 ]
-},
-{
-"t": "Présidentielle 2027 : Le Pen dévoile son plan pour l'Outre-mer, Lisnard répond à l'équipe de Philippe",
-"s": "20 Minutes",
-"u": "https://www.20minutes.fr/politique/4266172-20261127-direct-presidentielle-2027-zemmour-fait-savoir-derniere-campagne?at_medium=display&at_campaign=149",
-"d": "2026-11-27T04:45:00Z",
-"qui": [
-"lepen",
-"lisnard"
-]
 }
 ],
 "sources": {
 "Le Monde": 11,
-"franceinfo": 13,
+"franceinfo": 14,
 "Libération": 31,
 "Le Figaro": 9,
-"Le Parisien": 73,
+"Le Parisien": 72,
 "20 Minutes": 14,
 "Ouest-France": 0,
 "BFMTV": 26,
@@ -1843,5 +1843,5 @@
 "LCP": 54,
 "RFI": 10
 },
-"maj": "2026-11-28T13:39:09Z"
+"maj": "2026-11-28T14:00:34Z"
 }
