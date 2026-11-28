@@ -2,6 +2,25 @@
 "v": 4,
 "items": [
 {
+"t": "Fuites présumées vers le RN : Le bureau et le domicile de l’ex-directeur de cabinet de Marine Le Pen perquisitionnés",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4266426-20261128-fuites-presumees-vers-rn-bureau-domicile-ex-directeur-cabinet-marine-pen-perquisitionnes?at_medium=display&at_campaign=149",
+"d": "2026-11-28T00:02:44Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "Présidentielle: François-Xavier Bellamy assure qu'\"il n'y a pas de divergence de ligne\" entre Bruno Retailleau et David Lisnard",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
+"d": "2026-11-27T23:20:03Z",
+"qui": [
+"lisnard",
+"retailleau"
+]
+},
+{
 "t": "\"La pauvreté du choix politique à droite fait que David Lisnard occupe l'espace\", analyse Carlos Martens Bilongo, député LFI",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-la-pauvrete-du-choix-politique-a-droite-fait-que-david-lisnard-occupe-l-espace-analyse-carlos-martens-bilongo-depute-lfi_VN-202611270951.html",
@@ -32,6 +51,15 @@
 "t": "En déplacement en Allemagne, Jean-Luc Mélenchon affirme vouloir refuser \"d'aider les Américains à faire la guerre aux Chinois\"",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/la-france-insoumise/en-deplacement-en-allemagne-jean-luc-melenchon-affirme-vouloir-refuser-d-aider-les-americains-a-faire-la-guerre-aux-chinois_AD-202611270940.html",
+"d": "2026-11-27T22:28:11Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Jean-Luc Mélenchon",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
 "d": "2026-11-27T22:28:11Z",
 "qui": [
 "melenchon"
@@ -123,27 +151,6 @@
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/video-mouvement-lyceen-c-etait-nous-qui-faisions-le-barrage-entre-les-flics-et-les-jeunes-affirme-jean-luc-melenchon_VN-202611270887.html",
 "d": "2026-11-27T19:48:56Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "DIRECT. Présidentielle: une réunion entre Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau prévue lundi soir autour de Gérard Larcher",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/direct-presidentielle-2027-a-bruxelles-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen-et-reagit-aux-propos-de-teddy-riner_LN-202611270192.html",
-"d": "2026-11-27T19:29:34Z",
-"qui": [
-"attal",
-"lisnard",
-"philippe",
-"retailleau"
-]
-},
-{
-"t": "Jean-Luc Mélenchon",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
-"d": "2026-11-27T19:18:46Z",
 "qui": [
 "melenchon"
 ]
@@ -1783,15 +1790,6 @@
 "qui": [
 "melenchon"
 ]
-},
-{
-"t": "\"C'est nous qui allons battre l'extrême droite\", réplique Romain Marsily, directeur général du parti Nouvelle Énergie de David Lisnard",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/extreme-droite/video-c-est-nous-qui-allons-battre-l-extreme-droite-replique-romain-marsily-directeur-general-du-parti-nouvelle-energie-de-david-lisnard_VN-202611260617.html",
-"d": "2026-11-26T13:06:44Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
@@ -1802,11 +1800,11 @@
 "Le Parisien": 56,
 "20 Minutes": 8,
 "Ouest-France": 1,
-"BFMTV": 20,
+"BFMTV": 21,
 "France 24": 9,
 "La Croix": 23,
 "LCP": 39,
 "RFI": 9
 },
-"maj": "2026-11-28T00:00:30Z"
+"maj": "2026-11-28T00:15:29Z"
 }
