@@ -2,6 +2,15 @@
 "v": 4,
 "items": [
 {
+"t": "Présidentielle 2027 : Teddy Riner, un candidat hors système en quête de crédibilité",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/28/presidentielle-2027-teddy-riner-un-candidat-hors-systeme-en-quete-de-credibilite_6816104_823448.html",
+"d": "2026-11-28T12:30:16Z",
+"qui": [
+"riner"
+]
+},
+{
 "t": "Présidentielle 2027 : le Rassemblement national met le cap sur l’outre-mer, des territoires stratégiques pour lui",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-rassemblement-national-met-le-cap-sur-loutre-mer-des-territoires-strategiques-pour-lui-28-11-2026-IYLD2IPSSFF2HN7BIE2VJ6O2SE.php",
@@ -1815,19 +1824,10 @@
 "qui": [
 "riner"
 ]
-},
-{
-"t": "Éric Zemmour annonce que 2027 sera sa “dernière campagne” à l’élection présidentielle",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/reconquete/eric-zemmour-annonce-que-2027-sera-sa-derniere-campagne-a-l-election-presidentielle_AD-202611261033.html",
-"d": "2026-11-26T22:32:28Z",
-"qui": [
-"zemmour"
-]
 }
 ],
 "sources": {
-"Le Monde": 10,
+"Le Monde": 11,
 "franceinfo": 13,
 "Libération": 31,
 "Le Figaro": 9,
@@ -1840,5 +1840,5 @@
 "LCP": 54,
 "RFI": 10
 },
-"maj": "2026-11-28T12:00:30Z"
+"maj": "2026-11-28T12:45:28Z"
 }
