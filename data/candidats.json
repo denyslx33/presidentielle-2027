@@ -1887,6 +1887,33 @@
    "bloc": null,
    "a_verifier": "Aucune source fiable ne confirme encore sa candidature.",
    "officiel": false
+  },
+  {
+   "id": "durif",
+   "nom": "Sylvain Durif",
+   "parti": "Sans étiquette",
+   "role": "Vidéaste. Déjà candidat en 2017, sans obtenir les 500 parrainages.",
+   "annonce": "Candidat déclaré fin août 2026, dans une vidéo sur Instagram.",
+   "mesures": [],
+   "source_mesures": {
+    "nom": "Sud Radio",
+    "url": "https://www.sudradio.fr/politique/qui-est-ce-sylvain-durif-le-christ-cosmique-candidat-a-la-presidentielle-2027"
+   },
+   "parrainages": {
+    "texte": "Aucun chiffre revendiqué. N'avait pas obtenu les 500 parrainages en 2017.",
+    "source": null,
+    "url": null
+   },
+   "finances": null,
+   "programme": {
+    "url": null,
+    "note": "Annonce un programme de « 50 engagements », pas encore détaillé par un média fiable.",
+    "recap": null,
+    "themes": []
+   },
+   "bloc": null,
+   "a_verifier": "Pas encore de mesures sourcées par un média fiable.",
+   "officiel": true
   }
  ]
 }
