@@ -5,14 +5,30 @@
 "t": "Présidentielle 2027 : le Rassemblement national met le cap sur l’outre-mer, des territoires stratégiques pour lui",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-rassemblement-national-met-le-cap-sur-loutre-mer-des-territoires-strategiques-pour-lui-28-11-2026-IYLD2IPSSFF2HN7BIE2VJ6O2SE.php",
-"d": "2026-11-28T08:00:30Z",
+"d": "2026-11-28T08:15:34Z",
 "qui": []
 },
 {
 "t": "Présidentielle 2027 : depuis Berlin, Jean-Luc Mélenchon promet de « ne pas aider les Américains à faire la guerre aux Chinois » s’il est élu",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-depuis-berlin-jean-luc-melenchon-promet-de-ne-pas-aider-les-americains-a-faire-la-guerre-aux-chinois-sil-est-elu-28-11-2026-JVPGRR354ZATZGCLZN2D4457F4.php",
-"d": "2026-11-28T08:00:30Z",
+"d": "2026-11-28T08:15:34Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Les outre-mer, passage obligé à quelques mois du premier tour de la présidentielle",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/replay-radio/le-brief-politique/les-outre-mer-passage-oblige-a-quelques-mois-du-premier-tour-de-la-presidentielle_8281889.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-28T08:08:07Z",
+"qui": []
+},
+{
+"t": "A Berlin, Jean-Luc Mélenchon défend «une grande remise à plat de la relation franco-allemande»",
+"s": "Libération",
+"u": "https://www.liberation.fr/politique/a-berlin-jean-luc-melenchon-defend-une-grande-remise-a-plat-de-la-relation-franco-allemande-20261128_RX3GFUQHEFHEJD5G6QP5VTXKIE/",
+"d": "2026-11-28T08:02:19Z",
 "qui": [
 "melenchon"
 ]
@@ -1758,26 +1774,6 @@
 "qui": [
 "riner"
 ]
-},
-{
-"t": "David Lisnard, Gabriel Attal, Raphaël Glucksmann... Journée de campagne au Salon des maires",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/david-lisnard-gabriel-attal-raphael-glucksmann-journee-de-campagne-au-salon-des-maires_8300931.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-26T15:05:45Z",
-"qui": [
-"attal",
-"glucksmann",
-"lisnard"
-]
-},
-{
-"t": "Règle d'or: \"Elle ne remplace pas la volonté politique\", assure David Lisnard, maire Nouvelle Énergie de Cannes, président de l’AMF et candidat à la présidentielle",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-regle-d-or-elle-ne-remplace-pas-la-volonte-politique-assure-david-lisnard-maire-nouvelle-energie-de-cannes-president-de-l-amf-et-candidat-a-la-presidentielle_VN-202611260707.html",
-"d": "2026-11-26T14:54:16Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
@@ -1794,5 +1790,5 @@
 "LCP": 38,
 "RFI": 8
 },
-"maj": "2026-11-28T08:00:30Z"
+"maj": "2026-11-28T08:15:34Z"
 }
