@@ -1845,9 +1845,12 @@
    "nom": "Mira Douchka Markovic",
    "parti": "Parti animaliste",
    "role": "Coprésidente fondatrice du Parti animaliste.",
-   "annonce": "À confirmer.",
+   "annonce": "Candidate du Parti animaliste.",
    "mesures": [],
-   "source_mesures": null,
+   "source_mesures": {
+    "nom": "Le Point",
+    "url": "https://www.lepoint.fr/politique/mira-douchka-markovic-qui-est-la-candidate-du-parti-animaliste-a-la-presidentielle-2027-ISVTAH26T5FENCCMCZ5AEONBVU/"
+   },
    "parrainages": {
     "texte": "Aucun chiffre revendiqué.",
     "source": null,
@@ -1861,8 +1864,8 @@
     "themes": []
    },
    "bloc": null,
-   "a_verifier": "Aucune source fiable ne confirme encore sa candidature.",
-   "officiel": false
+   "a_verifier": "Pas encore de mesures sourcées par un média fiable.",
+   "officiel": true
   },
   {
    "id": "mikolajczak",

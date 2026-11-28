@@ -86,5 +86,21 @@
  "bouamrane": {
   "texte": "Source à préciser",
   "url": null
+ },
+ "markovic": {
+  "texte": "Le Point",
+  "url": "https://www.lepoint.fr/politique/mira-douchka-markovic-qui-est-la-candidate-du-parti-animaliste-a-la-presidentielle-2027-ISVTAH26T5FENCCMCZ5AEONBVU/"
+ },
+ "mikolajczak": {
+  "texte": "2027presidentielle.fr",
+  "url": "https://2027presidentielle.fr/antoine-mikolajczak"
+ },
+ "durif": {
+  "texte": "Loupe politique",
+  "url": "https://www.loupepolitique.fr/profil/sylvain-durif"
+ },
+ "labib": {
+  "texte": "Loupe politique",
+  "url": "https://www.loupepolitique.fr/"
  }
 }
