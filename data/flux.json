@@ -5,14 +5,14 @@
 "t": "Présidentielle 2027 : le Rassemblement national met le cap sur l’outre-mer, des territoires stratégiques pour lui",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-rassemblement-national-met-le-cap-sur-loutre-mer-des-territoires-strategiques-pour-lui-28-11-2026-IYLD2IPSSFF2HN7BIE2VJ6O2SE.php",
-"d": "2026-11-28T10:26:24Z",
+"d": "2026-11-28T10:30:29Z",
 "qui": []
 },
 {
 "t": "Présidentielle 2027 : depuis Berlin, Jean-Luc Mélenchon promet de « ne pas aider les Américains à faire la guerre aux Chinois » s’il est élu",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-depuis-berlin-jean-luc-melenchon-promet-de-ne-pas-aider-les-americains-a-faire-la-guerre-aux-chinois-sil-est-elu-28-11-2026-JVPGRR354ZATZGCLZN2D4457F4.php",
-"d": "2026-11-28T10:26:24Z",
+"d": "2026-11-28T10:30:29Z",
 "qui": [
 "melenchon"
 ]
@@ -21,8 +21,17 @@
 "t": "Présidentielle 2027 : pourquoi le système des 500 parrainages nécessaires pour se présenter est-il autant critiqué ?",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-pourquoi-le-systeme-des-500-parrainages-necessaires-pour-se-presenter-est-il-autant-critique-28-11-2026-G37SHMECQJERHKIFUAVOENUVLU.php",
-"d": "2026-11-28T10:26:24Z",
+"d": "2026-11-28T10:30:29Z",
 "qui": []
+},
+{
+"t": "Présidentielle 2027: \"Ceux qui refusent la primaire aujourd’hui sont irresponsables\", dénonce Jad Zahab, porte-parole de la campagne de Gabriel Attal",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-ceux-qui-refusent-la-primaire-aujourd-hui-sont-irresponsables-denonce-jad-zahab-porte-parole-de-la-campagne-de-gabriel-attal_VN-202611280244.html",
+"d": "2026-11-28T10:23:32Z",
+"qui": [
+"attal"
+]
 },
 {
 "t": "Présidentielle 2027: Romain Eskenazi (PS) affirme que Raphaël Glucksmann \"soutiendra\" François Hollande en cas de candidature à l'élection présidentielle",
@@ -115,6 +124,24 @@
 "d": "2026-11-28T08:40:06Z",
 "qui": [
 "lepen"
+]
+},
+{
+"t": "Jean-Luc Mélenchon",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
+"d": "2026-11-28T08:40:06Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Bruno Retailleau",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/gouvernement/bruno-retailleau_DN-202410030418.html",
+"d": "2026-11-28T08:40:06Z",
+"qui": [
+"retailleau"
 ]
 },
 {
@@ -274,15 +301,6 @@
 "d": "2026-11-27T22:56:38Z",
 "qui": [
 "lepen"
-]
-},
-{
-"t": "Jean-Luc Mélenchon",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
-"d": "2026-11-27T22:28:11Z",
-"qui": [
-"melenchon"
 ]
 },
 {
@@ -447,15 +465,6 @@
 "d": "2026-11-27T18:35:49Z",
 "qui": [
 "lepen"
-]
-},
-{
-"t": "Bruno Retailleau",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/gouvernement/bruno-retailleau_DN-202410030418.html",
-"d": "2026-11-27T18:26:53Z",
-"qui": [
-"retailleau"
 ]
 },
 {
@@ -1766,15 +1775,6 @@
 "u": "https://www.ouest-france.fr/elections/presidentielle/la-question-du-jour-presidentielle-2027-faut-il-rendre-anonymes-les-parrainages-des-candidats-par-les-maires-25146ca2-e9a3-11f1-86c1-70195b4d2e52?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
 "d": "2026-11-26T16:33:03Z",
 "qui": []
-},
-{
-"t": "Présidentielle 2027 : après ses propos sur l’Ukraine, comment Teddy Riner s’est retrouvé au cœur de la polémique",
-"s": "La Croix",
-"u": "https://www.la-croix.com/politique/presidentielle-2027-apres-ses-propos-sur-l-ukraine-comment-teddy-riner-sest-retrouve-au-cour-de-la-polemique-20261126",
-"d": "2026-11-26T16:27:08Z",
-"qui": [
-"riner"
-]
 }
 ],
 "sources": {
@@ -1785,11 +1785,11 @@
 "Le Parisien": 56,
 "20 Minutes": 9,
 "Ouest-France": 0,
-"BFMTV": 19,
+"BFMTV": 24,
 "France 24": 8,
 "La Croix": 24,
 "LCP": 38,
 "RFI": 8
 },
-"maj": "2026-11-28T10:26:24Z"
+"maj": "2026-11-28T10:30:29Z"
 }
