@@ -5,25 +5,90 @@
 "t": "Présidentielle 2027 : le Rassemblement national met le cap sur l’outre-mer, des territoires stratégiques pour lui",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-rassemblement-national-met-le-cap-sur-loutre-mer-des-territoires-strategiques-pour-lui-28-11-2026-IYLD2IPSSFF2HN7BIE2VJ6O2SE.php",
-"d": "2026-11-28T08:30:30Z",
+"d": "2026-11-28T08:45:28Z",
 "qui": []
 },
 {
 "t": "Présidentielle 2027 : depuis Berlin, Jean-Luc Mélenchon promet de « ne pas aider les Américains à faire la guerre aux Chinois » s’il est élu",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-depuis-berlin-jean-luc-melenchon-promet-de-ne-pas-aider-les-americains-a-faire-la-guerre-aux-chinois-sil-est-elu-28-11-2026-JVPGRR354ZATZGCLZN2D4457F4.php",
-"d": "2026-11-28T08:30:30Z",
+"d": "2026-11-28T08:45:28Z",
 "qui": [
 "melenchon"
 ]
 },
 {
-"t": "Soupçons de fuite vers le RN: le bureau et le domicile de l'ex-directeur de cabinet de Marine Le Pen perquisitionnés",
+"t": "Jean-Luc Mélenchon",
 "s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/front-national/video-soupcons-de-fuite-vers-le-rn-le-bureau-et-le-domicile-de-l-ex-directeur-de-cabinet-de-marine-le-pen-perquisitionnes_VN-202611280211.html",
-"d": "2026-11-28T08:26:20Z",
+"u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
+"d": "2026-11-28T08:40:06Z",
+"qui": [
+"melenchon"
+]
+},
+{
+"t": "Bruno Retailleau",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/gouvernement/bruno-retailleau_DN-202410030418.html",
+"d": "2026-11-28T08:40:06Z",
+"qui": [
+"retailleau"
+]
+},
+{
+"t": "Edouard Philippe",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/edouard-philippe_DN-202108310657.html",
+"d": "2026-11-28T08:40:06Z",
+"qui": [
+"philippe"
+]
+},
+{
+"t": "Gabriel Attal",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/gabriel-attal_DN-202108310662.html",
+"d": "2026-11-28T08:40:06Z",
+"qui": [
+"attal"
+]
+},
+{
+"t": "Eric Zemmour",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/eric-zemmour_DN-202110270595.html",
+"d": "2026-11-28T08:40:06Z",
+"qui": [
+"zemmour"
+]
+},
+{
+"t": "Marine Le Pen",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/marine-le-pen_DN-201201010011.html",
+"d": "2026-11-28T08:40:06Z",
 "qui": [
 "lepen"
+]
+},
+{
+"t": "Soupçons de fuite vers le RN: le bureau et le domicile de l'ex-directeur de cabinet de Marine Le Pen perquisitionnés",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/front-national/video-soupcons-de-fuite-vers-le-rn-le-bureau-et-le-domicile-de-l-ex-directeur-de-cabinet-de-marine-le-pen-perquisitionnes_VN-202611280213.html",
+"d": "2026-11-28T08:32:19Z",
+"qui": [
+"lepen"
+]
+},
+{
+"t": "DIRECT. Présidentielle: Marine Le Pen lance le mouvement des jeunes de sa campagne, Gabriel Attal à Verdun, Jean-Luc Mélenchon poursuit son déplacement en Allemagne",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-marine-le-pen-lance-le-mouvement-des-jeunes-de-sa-campagne-gabriel-attal-a-verdun-jean-luc-melenchon-poursuit-son-deplacement-en-allemagne_LN-202611280216.html",
+"d": "2026-11-28T08:32:00Z",
+"qui": [
+"attal",
+"lepen",
+"melenchon"
 ]
 },
 {
@@ -62,6 +127,16 @@
 "u": "https://www.la-croix.com/politique/presidentielle-2027-comment-le-rassemblement-national-tente-de-seduire-la-jeunesse-20261127",
 "d": "2026-11-28T07:30:04Z",
 "qui": []
+},
+{
+"t": "EN DIRECT Présidentielle 2027 : Le plan de Le Pen pour l’outre-mer, Mélenchon veut une nouvelle relation franco-allemande…",
+"s": "20 Minutes",
+"u": "https://www.20minutes.fr/politique/4266444-20261128-direct-presidentielle-2027-plan-pen-outre-mer-melenchon-veut-nouvelle-relation-franco-allemande?at_medium=display&at_campaign=149",
+"d": "2026-11-28T07:17:05Z",
+"qui": [
+"lepen",
+"melenchon"
+]
 },
 {
 "t": "Est-il possible d'obliger les journalistes à \"respecter le secret de l'instruction\", comme le souhaite Marine Le Pen ?",
@@ -170,15 +245,6 @@
 "t": "En déplacement en Allemagne, Jean-Luc Mélenchon affirme vouloir refuser \"d'aider les Américains à faire la guerre aux Chinois\"",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/la-france-insoumise/en-deplacement-en-allemagne-jean-luc-melenchon-affirme-vouloir-refuser-d-aider-les-americains-a-faire-la-guerre-aux-chinois_AD-202611270940.html",
-"d": "2026-11-27T22:28:11Z",
-"qui": [
-"melenchon"
-]
-},
-{
-"t": "Jean-Luc Mélenchon",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/jean-luc-melenchon_DN-201701010040.html",
 "d": "2026-11-27T22:28:11Z",
 "qui": [
 "melenchon"
@@ -340,38 +406,11 @@
 ]
 },
 {
-"t": "Bruno Retailleau",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/gouvernement/bruno-retailleau_DN-202410030418.html",
-"d": "2026-11-27T18:26:53Z",
-"qui": [
-"retailleau"
-]
-},
-{
-"t": "Edouard Philippe",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/edouard-philippe_DN-202108310657.html",
-"d": "2026-11-27T18:26:53Z",
-"qui": [
-"philippe"
-]
-},
-{
 "t": "Présidentielle 2027: les quatre candidats de la droite et du centre se réuniront lundi autour de Gérard Larcher pour trouver un mode de départage",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-les-quatre-candidats-de-la-droite-et-du-centre-se-reuniront-lundi-autour-de-gerard-larcher-pour-trouver-un-mode-de-departage_AN-202611270837.html",
 "d": "2026-11-27T18:26:53Z",
 "qui": []
-},
-{
-"t": "Gabriel Attal",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/gabriel-attal_DN-202108310662.html",
-"d": "2026-11-27T18:26:53Z",
-"qui": [
-"attal"
-]
 },
 {
 "t": "Programme de David Lisnard sur la politique pénale: \"Nous promettons la création de 30.000 places de prison et 5.000 postes de greffiers et juges\", détaille Thomas Elexhauser, son porte-parole",
@@ -566,15 +605,6 @@
 "qui": [
 "lisnard",
 "retailleau"
-]
-},
-{
-"t": "Eric Zemmour",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/eric-zemmour_DN-202110270595.html",
-"d": "2026-11-27T16:11:01Z",
-"qui": [
-"zemmour"
 ]
 },
 {
@@ -1041,15 +1071,6 @@
 "s": "France 24",
 "u": "https://www.france24.com/fr/vid%C3%A9o/20261127-france-emmanuel-macron-critique-la-dr%C3%B4le-d-arrogance-de-marine-le-pen",
 "d": "2026-11-27T11:26:17Z",
-"qui": [
-"lepen"
-]
-},
-{
-"t": "Marine Le Pen",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/marine-le-pen_DN-201201010011.html",
-"d": "2026-11-27T11:20:48Z",
 "qui": [
 "lepen"
 ]
@@ -1754,24 +1775,6 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "\"Il faut un grand mouvement de liberté locale\", affirme David Lisnard, président de l’AMF et candidat à la présidentielle",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-il-faut-un-grand-mouvement-de-liberte-locale-affirme-david-lisnard-president-de-l-amf-et-candidat-a-la-presidentielle_VN-202611260740.html",
-"d": "2026-11-26T15:38:35Z",
-"qui": [
-"lisnard"
-]
-},
-{
-"t": "Présidentielle 2027 : huit députés Les Républicains annoncent officiellement soutenir la candidature de David Lisnard",
-"s": "Ouest-France",
-"u": "https://www.ouest-france.fr/politique/david-lisnard/un-choix-muri-que-nous-assumons-neuf-deputes-les-republicains-soutiennent-officiellement-la-candidature-de-david-lisnard-ee3ceff6-e993-11f1-9b33-2f81462d3339?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
-"d": "2026-11-26T15:17:51Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
@@ -1780,13 +1783,13 @@
 "Libération": 20,
 "Le Figaro": 6,
 "Le Parisien": 57,
-"20 Minutes": 8,
+"20 Minutes": 9,
 "Ouest-France": 0,
-"BFMTV": 19,
-"France 24": 9,
+"BFMTV": 23,
+"France 24": 8,
 "La Croix": 24,
 "LCP": 38,
 "RFI": 8
 },
-"maj": "2026-11-28T08:30:30Z"
+"maj": "2026-11-28T08:45:28Z"
 }
