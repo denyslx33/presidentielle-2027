@@ -48,6 +48,7 @@ PARTIS = {
     "glucksmann": r"\bPlace publique\b|\bParti socialiste\b|\bPS\b",
     "villepin": r"\bLa France humaniste\b",
 }
+CAMPAGNE = re.compile(r"presidentiel|2027|candidat|campagne|elysee|primaire|parrainage|programme|meeting|sondage")
 PARTIS = {k: re.compile(v) for k, v in PARTIS.items() if k in KEYS}
 GENERAL = ["presidentielle", "elysee", "parrainage", "primaire", "candidat", "arcom", "conseil constitutionnel"]
 FOREIGN_URL = re.compile(r"/(monde|international|afrique|europe|ameriques?|asie|moyen-orient|world|etats-unis|international-[a-z]+)/", re.I)
@@ -70,7 +71,7 @@ try:
     old = json.load(open("data/flux.json", encoding="utf-8"))
 except Exception:
     old = {"items": []}
-items = {i["u"]: i for i in old.get("items", [])} if old.get("v") == 4 else {}
+items = {i["u"]: i for i in old.get("items", []) if i.get("qui") or not i.get("camp") or CAMPAGNE.search(norm(i["t"]))} if old.get("v") == 4 else {}
 stats = {}
 for src, url in FEEDS:
     n = 0
@@ -89,7 +90,8 @@ for src, url in FEEDS:
                 fr = ("presidentielle" in nt and ("2027" in nt + " " + nd or "elysee" in nt + " " + nd)) or ("2027" in nt and any(g in nt for g in GENERAL))
                 if not fr or FOREIGN_URL.search(link) or FOREIGN.search(nt + " " + nd):
                     continue
-            elif not qui and (FOREIGN_URL.search(link) or FOREIGN.search(nt)):
+            elif not qui and (FOREIGN_URL.search(link) or FOREIGN.search(nt) or not CAMPAGNE.search(nt + " " + nd)):
+                # actu d'un parti sans candidat cité : seulement si elle touche à la campagne
                 continue
             if POLL.search(t):
                 continue
