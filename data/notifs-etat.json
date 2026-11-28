@@ -65,8 +65,8 @@
 "fav": {
 "lepen": {
 "d": "2026-11-28",
-"n": 2,
-"t": "2026-11-28T12:45+01:00",
+"n": 3,
+"t": "2026-11-28T16:30+01:00",
 "w": [
 [
 "allemande",
@@ -86,6 +86,20 @@
 "mouvement",
 "poursuit",
 "verdun"
+],
+[
+"ambroise",
+"aupres",
+"beauvau",
+"dominici",
+"fonction",
+"fuites",
+"grands",
+"haute",
+"missi",
+"patrons",
+"publique",
+"rancourt"
 ]
 ]
 },
