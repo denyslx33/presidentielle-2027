@@ -5,12 +5,21 @@
 "t": "DIRECT. Présidentielle 2027 : Raphaël Glucksmann \"soutiendra\" François Hollande s'il se \"présente en recours\", assure le porte-parole des députés socialistes",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/elections/direct-election-presidentielle-raphael-glucksmann-soutiendra-francois-hollande-s-il-se-presente-en-recours_8304636.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-28T15:17:29Z",
+"d": "2026-11-28T15:27:47Z",
 "qui": [
 "glucksmann"
 ],
 "camp": [
 "bouamrane"
+]
+},
+{
+"t": "Fuites au ministère de l'Intérieur : l'ancien chef de cabinet de Marine Le Pen perquisitionné",
+"s": "France 24",
+"u": "https://www.france24.com/fr/france/20261128-rassemblement-national-fuites-minist%C3%A8re-int%C3%A9rieur-ancien-chef-cabinet-marine-le-pen-perquisition-rancourt-moutouh",
+"d": "2026-11-28T15:21:54Z",
+"qui": [
+"lepen"
 ]
 },
 {
@@ -1817,30 +1826,21 @@
 "lepen",
 "lisnard"
 ]
-},
-{
-"t": "L’obsession antiallemande de Jean-Luc Mélenchon, en visite ce vendredi à Berlin",
-"s": "Le Figaro",
-"u": "https://www.lefigaro.fr/politique/l-obsession-antiallemande-de-jean-luc-melenchon-en-visite-ce-vendredi-a-berlin-20261127",
-"d": "2026-11-27T05:30:00Z",
-"qui": [
-"melenchon"
-]
 }
 ],
 "sources": {
-"Le Monde": 12,
-"franceinfo": 14,
+"Le Monde": 11,
+"franceinfo": 13,
 "Libération": 31,
 "Le Figaro": 9,
 "Le Parisien": 72,
 "20 Minutes": 14,
 "Ouest-France": 0,
 "BFMTV": 26,
-"France 24": 14,
+"France 24": 15,
 "La Croix": 33,
 "LCP": 54,
 "RFI": 10
 },
-"maj": "2026-11-28T15:21:21Z"
+"maj": "2026-11-28T15:30:29Z"
 }
