@@ -5,7 +5,14 @@
 "t": "Présidentielle 2027 : le Rassemblement national met le cap sur l’outre-mer, des territoires stratégiques pour lui",
 "s": "Le Parisien",
 "u": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-le-rassemblement-national-met-le-cap-sur-loutre-mer-des-territoires-strategiques-pour-lui-28-11-2026-IYLD2IPSSFF2HN7BIE2VJ6O2SE.php",
-"d": "2026-11-28T07:30:29Z",
+"d": "2026-11-28T07:45:33Z",
+"qui": []
+},
+{
+"t": "Les Français appelés à voter le 18 avril et le 2 mai 2027: les dates de l'élection présidentielle peuvent-elles encore être changées?",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/les-francais-appeles-a-voter-le-18-avril-et-le-2-mai-2027-les-dates-de-l-election-presidentielle-peuvent-elles-encore-etre-changees_AV-202611280080.html",
+"d": "2026-11-28T07:41:00Z",
 "qui": []
 },
 {
@@ -50,7 +57,7 @@
 "qui": []
 },
 {
-"t": "A Berlin, Jean-Luc Mélenchon se défend de germanophobie : « Souvent nous sommes jaloux, mais nous ne le disons pas »",
+"t": "Présidentielle 2027 : Jean-Luc Mélenchon, en visite à Berlin, se défend de germanophobie : « Souvent nous sommes jaloux, mais nous ne le disons pas »",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/international/article/2026/11/28/a-berlin-jean-luc-melenchon-se-defend-de-germanophobie-souvent-nous-sommes-jaloux-mais-nous-ne-le-disons-pas_6816060_3210.html",
 "d": "2026-11-28T04:30:08Z",
@@ -1771,15 +1778,6 @@
 "qui": [
 "lisnard"
 ]
-},
-{
-"t": "\"Je le félicite chaleureusement\": le Premier ministre, Sébastien Lecornu, congratule David Lisnard pour sa réélection à la tête de l’AMF",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/video-je-le-felicite-chaleureusement-le-premier-ministre-sebastien-lecornu-congratule-david-lisnard-pour-sa-reelection-a-la-tete-de-l-amf_VN-202611260693.html",
-"d": "2026-11-26T14:37:35Z",
-"qui": [
-"lisnard"
-]
 }
 ],
 "sources": {
@@ -1796,5 +1794,5 @@
 "LCP": 38,
 "RFI": 8
 },
-"maj": "2026-11-28T07:30:29Z"
+"maj": "2026-11-28T07:45:33Z"
 }
