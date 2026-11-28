@@ -2,10 +2,22 @@
 "v": 4,
 "items": [
 {
+"t": "DIRECT. Présidentielle 2027 : Raphaël Glucksmann \"soutiendra\" François Hollande s'il se \"présente en recours\", assure le porte-parole des députés socialistes",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/direct-election-presidentielle-raphael-glucksmann-soutiendra-francois-hollande-s-il-se-presente-en-recours_8304636.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-28T14:40:58Z",
+"qui": [
+"glucksmann"
+],
+"camp": [
+"bouamrane"
+]
+},
+{
 "t": "Enarque, pianiste, stratège... Qui est Ambroise de Rancourt, soupçonné d’être le principal destinataire des fuites au profit du Rassemblement national ?",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/politique/front-national/enarque-pianiste-stratege-qui-est-ambroise-de-rancourt-soupconne-d-etre-le-principal-destinataire-des-fuites-au-profit-du-rassemblement-national_8304378.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-28T14:24:08Z",
+"d": "2026-11-28T14:34:56Z",
 "qui": [],
 "camp": [
 "lepen"
@@ -37,18 +49,6 @@
 "d": "2026-11-28T13:31:16Z",
 "qui": [
 "roussel"
-]
-},
-{
-"t": "DIRECT. Présidentielle 2027 : Raphaël Glucksmann \"soutiendra\" François Hollande s'il se \"présente en recours\", assure le porte-parole des députés socialistes",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/direct-election-presidentielle-raphael-glucksmann-soutiendra-francois-hollande-s-il-se-presente-en-recours_8304636.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-28T13:27:04Z",
-"qui": [
-"glucksmann"
-],
-"camp": [
-"bouamrane"
 ]
 },
 {
@@ -1842,5 +1842,5 @@
 "LCP": 54,
 "RFI": 10
 },
-"maj": "2026-11-28T14:30:11Z"
+"maj": "2026-11-28T14:45:28Z"
 }
