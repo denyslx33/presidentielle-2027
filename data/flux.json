@@ -2,6 +2,15 @@
 "v": 4,
 "items": [
 {
+"t": "DIRECT. Election présidentielle : Raphaël Glucksmann \"soutiendra\" François Hollande s'il se \"présente en recours\"",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/elections/direct-election-presidentielle-raphael-glucksmann-soutiendra-francois-hollande-s-il-se-presente-en-recours_8304636.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-28T12:46:53Z",
+"qui": [
+"glucksmann"
+]
+},
+{
 "t": "Présidentielle 2027 : Teddy Riner, un candidat hors système en quête de crédibilité",
 "s": "Le Monde",
 "u": "https://www.lemonde.fr/politique/article/2026/11/28/presidentielle-2027-teddy-riner-un-candidat-hors-systeme-en-quete-de-credibilite_6816104_823448.html",
@@ -1815,15 +1824,6 @@
 "qui": [
 "zemmour"
 ]
-},
-{
-"t": "Présidentielle: après les propos de Teddy Riner, Emmanuel Macron estime qu'il ne \"faut pas créer de doute et de trouble\" sur l'aide à l'Ukraine",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-emmanuel-macron-en-route-pour-bruxelle-pour-negocier-avec-les-dirigeants-de-l-ue-sur-le-budget-europeen_LN-202611260221.html",
-"d": "2026-11-26T23:17:46Z",
-"qui": [
-"riner"
-]
 }
 ],
 "sources": {
@@ -1833,12 +1833,12 @@
 "Le Figaro": 9,
 "Le Parisien": 73,
 "20 Minutes": 14,
-"Ouest-France": 1,
+"Ouest-France": 0,
 "BFMTV": 26,
 "France 24": 14,
 "La Croix": 33,
 "LCP": 54,
 "RFI": 10
 },
-"maj": "2026-11-28T12:45:28Z"
+"maj": "2026-11-28T13:00:29Z"
 }
