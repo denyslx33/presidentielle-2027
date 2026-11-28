@@ -2,6 +2,15 @@
 "v": 4,
 "items": [
 {
+"t": "\"Je vais voter Fabien Roussel\": Renaud apporte son soutien au candidat PCF à l'élection présidentielle pour ses valeurs \"d’empathie et de solidarité envers les plus faibles\"",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/je-vais-voter-fabien-roussel-renaud-apporte-son-soutien-au-candidat-pcf-a-l-election-presidentielle-pour-ses-valeurs-d-empathie-et-de-solidarite-envers-les-plus-faibles_AN-202611280295.html",
+"d": "2026-11-28T13:31:16Z",
+"qui": [
+"roussel"
+]
+},
+{
 "t": "DIRECT. Présidentielle 2027 : Raphaël Glucksmann \"soutiendra\" François Hollande s'il se \"présente en recours\", assure le porte-parole des députés socialistes",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/elections/direct-election-presidentielle-raphael-glucksmann-soutiendra-francois-hollande-s-il-se-presente-en-recours_8304636.html#xtor=RSS-3-%5Bpolitique%5D",
@@ -1818,15 +1827,6 @@
 "lepen",
 "lisnard"
 ]
-},
-{
-"t": "France: Jean-Luc Mélenchon en visite à Berlin, malgré sa méfiance envers l'Allemagne",
-"s": "RFI",
-"u": "https://www.rfi.fr/fr/france/20261127-france-jean-luc-m%C3%A9lenchon-en-visite-%C3%A0-berlin-malgr%C3%A9-sa-m%C3%A9fiance-envers-l-allemagne",
-"d": "2026-11-27T03:24:29Z",
-"qui": [
-"melenchon"
-]
 }
 ],
 "sources": {
@@ -1843,5 +1843,5 @@
 "LCP": 54,
 "RFI": 10
 },
-"maj": "2026-11-28T13:30:29Z"
+"maj": "2026-11-28T13:39:09Z"
 }
