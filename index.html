@@ -2588,7 +2588,7 @@ function renderFlux(byId) {
   const box = $('fluxlist'); if (!box) return;
   if (!FLUX || !FLUX.items) { box.replaceChildren(el('p', 'muted', 'Le fil en direct arrive bientôt.')); return; }
   const iso = (x) => x.getFullYear() + '-' + String(x.getMonth() + 1).padStart(2, '0') + '-' + String(x.getDate()).padStart(2, '0');
-  const items = FLUX.items.filter((n) => (!FILTRE || (n.qui || []).includes(FILTRE)) && !(silence() && /sondage/i.test(n.t)));
+  const items = FLUX.items.filter((n) => (!FILTRE || (n.qui || []).concat(n.camp || []).includes(FILTRE)) && !(silence() && /sondage/i.test(n.t)));
   const out = []; let last = '';
   for (const n of items) {
     const day = iso(new Date(n.d)); if (day !== last) { last = day; out.push(el('div', 'dayh', dayLabel(day))); }

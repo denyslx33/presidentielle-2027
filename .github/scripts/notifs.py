@@ -72,7 +72,7 @@ def main():
         etat = load(ETAT, {'sondages': [], 'actu': [], 'tv': [], 'fav': {}, 'maj': ''})
         cand = {c['id']: c['nom'] for c in load('data/candidats.json', {}).get('principaux', [])}
         lo = (now - timedelta(hours=12)).astimezone(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
-        its = [i for i in load('data/flux.json', {}).get('items', []) if force in i.get('qui', []) and i.get('d', '') >= lo]
+        its = [i for i in load('data/flux.json', {}).get('items', []) if force in i.get('qui', []) + i.get('camp', []) and i.get('d', '') >= lo]
         if force in cand and its:
             it = sorted(its, key=lambda i: rang(i, force, its))[0]
             send('favoris', cand[force], titre(it), f'./#c-{force}', 'fav-' + force, [force], urgent=True)
@@ -116,7 +116,7 @@ def main():
         st['n'] += 1; st['t'] = now.isoformat(timespec='minutes'); st['w'].append(sorted(mots(it['t'])))
     by = {}
     for i in win:
-        for c in i.get('qui', []):
+        for c in i.get('qui', []) + i.get('camp', []):
             by.setdefault(c, []).append(i)
     for c, its in by.items():
         if c not in cand or len({i['s'] for i in its}) < 3: continue

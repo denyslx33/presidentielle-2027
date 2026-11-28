@@ -30,6 +30,25 @@ for c in cand:
     if fam not in ("philippe",) and len(fam) > 4:
         keys.append(fam)
     KEYS[c["id"]] = keys
+# Partis : une actu sur le parti d'un candidat le concerne aussi (alertes favoris, filtre par candidat).
+# Recherche dans le titre d'origine, majuscules comprises, pour éviter « la renaissance de… » ou « nouvelle énergie solaire ».
+PARTIS = {
+    "lepen": r"\bRassemblement national\b|\bRN\b|\bBardella\b",
+    "melenchon": r"\bLa France insoumise\b|\bLFI\b|\b[Ii]nsoumis(es?)?\b",
+    "retailleau": r"\bLes Républicains\b|\bLR\b",
+    "attal": r"(?<![Ll]a )\bRenaissance\b",
+    "philippe": r"\bHorizons\b",
+    "lisnard": r"\bNouvelle Énergie\b",
+    "zemmour": r"\bReconquête\b",
+    "tondelier": r"\bLes Écologistes\b|\bEELV\b",
+    "roussel": r"\bPCF\b|\bParti communiste\b|\bcommunistes?\b",
+    "arthaud": r"\bLutte ouvrière\b",
+    "dupont-aignan": r"\bDebout la France\b",
+    "bouamrane": r"\bParti socialiste\b|\bPS\b|\bsocialistes?\b",
+    "glucksmann": r"\bPlace publique\b|\bParti socialiste\b|\bPS\b",
+    "villepin": r"\bLa France humaniste\b",
+}
+PARTIS = {k: re.compile(v) for k, v in PARTIS.items() if k in KEYS}
 GENERAL = ["presidentielle", "elysee", "parrainage", "primaire", "candidat", "arcom", "conseil constitutionnel"]
 FOREIGN_URL = re.compile(r"/(monde|international|afrique|europe|ameriques?|asie|moyen-orient|world|etats-unis|international-[a-z]+)/", re.I)
 FOREIGN = re.compile(r"\b(nigeria|kenya|ghana|senegal|cameroun|cote d.ivoire|gabon|congo|rdc|benin|togo|mali|guinee|madagascar|tchad|burkina|niger|algerie|maroc|tunisie|egypte|liban|syrie|iran|irak|israel|russie|bielorussie|georgie|moldavie|roumanie|pologne|hongrie|serbie|portugal|espagne|italie|allemagne|autriche|irlande|islande|finlande|turquie|bresil|argentine|chili|colombie|perou|bolivie|equateur|venezuela|mexique|etats-unis|americaine?s?|trump|coree|japon|taiwan|philippines|indonesie|inde|sri lanka|haiti|comores|seychelles|maurice|centrafrique)\b")
@@ -64,11 +83,14 @@ for src, url in FEEDS:
             desc = text(it, "description")
             nt, nd = norm(t), norm(desc)
             qui = [cid for cid, ks in KEYS.items() if any(re.search(r"\b" + re.escape(k) + r"\b", nt) for k in ks)]
-            if not qui:
+            camp = [cid for cid, rx in PARTIS.items() if cid not in qui and rx.search(t)]
+            if not qui and not camp:
                 # sans candidat cité dans le titre : il faut la présidentielle française 2027, sans signe d'un autre pays
                 fr = ("presidentielle" in nt and ("2027" in nt + " " + nd or "elysee" in nt + " " + nd)) or ("2027" in nt and any(g in nt for g in GENERAL))
                 if not fr or FOREIGN_URL.search(link) or FOREIGN.search(nt + " " + nd):
                     continue
+            elif not qui and (FOREIGN_URL.search(link) or FOREIGN.search(nt)):
+                continue
             if POLL.search(t):
                 continue
             d = text(it, "pubDate") or text(it, "date") or text(it, "updated") or text(it, "published")
@@ -87,6 +109,8 @@ for src, url in FEEDS:
             if when > now:
                 when = now
             items[link] = {"t": t, "s": src, "u": link, "d": when.strftime("%Y-%m-%dT%H:%M:%SZ"), "qui": qui}
+            if camp:
+                items[link]["camp"] = camp
             n += 1
         stats[src] = n
     except Exception as e:
