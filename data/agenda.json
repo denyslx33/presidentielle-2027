@@ -160,6 +160,20 @@
    "lon": 7.1798
   },
   {
+   "date": "2026-11-28",
+   "heure": null,
+   "type": "evenement",
+   "titre": "Déplacement de Gabriel Attal à Verdun",
+   "lieu": "Verdun (Meuse)",
+   "chaine": null,
+   "qui": [
+    "attal"
+   ],
+   "url": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-marine-le-pen-lance-le-mouvement-des-jeunes-de-sa-campagne-gabriel-attal-a-verdun-jean-luc-melenchon-poursuit-son-deplacement-en-allemagne_LN-202611280216.html",
+   "commune": "Verdun",
+   "dep": "55"
+  },
+  {
    "date": "2026-11-30",
    "heure": "en soirée",
    "type": "evenement",
