@@ -5,9 +5,18 @@
 "t": "DIRECT. Présidentielle: Gabriel Attal n’envisage “pas du tout” de retirer sa candidature",
 "s": "BFMTV",
 "u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-marine-le-pen-lance-le-mouvement-des-jeunes-de-sa-campagne-gabriel-attal-a-verdun-jean-luc-melenchon-poursuit-son-deplacement-en-allemagne_LN-202611280216.html",
-"d": "2026-11-28T16:35:25Z",
+"d": "2026-11-28T16:42:52Z",
 "qui": [
 "attal"
+]
+},
+{
+"t": "\"La politique c'est exactement l'inverse de l'égoïsme\", lance Marine Le Pen à la convention nationale des jeunes",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/video-la-politique-c-est-exactement-l-inverse-de-l-egoisme-lance-marine-le-pen-a-la-convention-nationale-des-jeunes_VN-202611280348.html",
+"d": "2026-11-28T16:37:32Z",
+"qui": [
+"lepen"
 ]
 },
 {
@@ -463,16 +472,6 @@
 "d": "2026-11-28T06:18:51Z",
 "qui": [
 "lisnard"
-]
-},
-{
-"t": "\"On ne peut pas toujours avoir le vent dans le dos\": pris entre les accusations d’antisémitisme et l’affaire Moutouh, la mauvaise passe du Rassemblement national",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/front-national/on-ne-peut-pas-toujours-avoir-le-vent-dans-le-dos-pris-entre-les-accusations-d-antisemitisme-et-l-affaire-moutouh-la-mauvaise-passe-du-rassemblement-national_AN-202611280089.html",
-"d": "2026-11-28T06:03:00Z",
-"qui": [],
-"camp": [
-"lepen"
 ]
 },
 {
@@ -1824,5 +1823,5 @@
 "LCP": 48,
 "RFI": 8
 },
-"maj": "2026-11-28T16:35:48Z"
+"maj": "2026-11-28T16:45:29Z"
 }
