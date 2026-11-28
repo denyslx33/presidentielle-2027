@@ -2,6 +2,25 @@
 "v": 4,
 "items": [
 {
+"t": "Enarque, pianiste, stratège... Qui est Ambroise de Rancourt, soupçonné d’être le principal destinataire des fuites au profit du Rassemblement national ?",
+"s": "franceinfo",
+"u": "https://www.franceinfo.fr/politique/front-national/enarque-pianiste-stratege-qui-est-ambroise-de-rancourt-soupconne-d-etre-le-principal-destinataire-des-fuites-au-profit-du-rassemblement-national_8304378.html#xtor=RSS-3-%5Bpolitique%5D",
+"d": "2026-11-28T14:24:08Z",
+"qui": [],
+"camp": [
+"lepen"
+]
+},
+{
+"t": "DIRECT. Présidentielle: Gabriel Attal n’envisage “pas du tout” de retirer sa candidature",
+"s": "BFMTV",
+"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-marine-le-pen-lance-le-mouvement-des-jeunes-de-sa-campagne-gabriel-attal-a-verdun-jean-luc-melenchon-poursuit-son-deplacement-en-allemagne_LN-202611280216.html",
+"d": "2026-11-28T13:51:55Z",
+"qui": [
+"attal"
+]
+},
+{
 "t": "\"Ces choses sont fragiles\" : le Planning familial célèbre ses 70 ans sur fond de menaces du Rassemblement national",
 "s": "franceinfo",
 "u": "https://www.franceinfo.fr/societe/droits-des-femmes/ces-choses-sont-fragiles-le-planning-familial-celebre-ses-70-ans-sur-fond-de-menaces-du-rassemblement-national_8304648.html#xtor=RSS-3-%5Bpolitique%5D",
@@ -245,17 +264,6 @@
 "qui": [
 "philippe",
 "zemmour"
-]
-},
-{
-"t": "DIRECT. Présidentielle: Marine Le Pen lance le mouvement des jeunes de sa campagne, Gabriel Attal à Verdun, Jean-Luc Mélenchon poursuit son déplacement en Allemagne",
-"s": "BFMTV",
-"u": "https://www.bfmtv.com/politique/elections/presidentielle/direct-presidentielle-marine-le-pen-lance-le-mouvement-des-jeunes-de-sa-campagne-gabriel-attal-a-verdun-jean-luc-melenchon-poursuit-son-deplacement-en-allemagne_LN-202611280216.html",
-"d": "2026-11-28T09:15:15Z",
-"qui": [
-"attal",
-"lepen",
-"melenchon"
 ]
 },
 {
@@ -1818,15 +1826,6 @@
 "qui": [
 "melenchon"
 ]
-},
-{
-"t": "Le dessin de Chaunu. « L’Ukraine n’est pas notre guerre » pour le candidat judoka Teddy Riner",
-"s": "Ouest-France",
-"u": "https://www.ouest-france.fr/medias/ouest-france/chaunu/le-dessin-de-chaunu-lukraine-nest-pas-notre-guerre-pour-le-candidat-judoka-teddy-riner-ed8ae07c-e9ca-11f1-86c1-70195b4d2e52?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
-"d": "2026-11-27T04:45:09Z",
-"qui": [
-"riner"
-]
 }
 ],
 "sources": {
@@ -1837,11 +1836,11 @@
 "Le Parisien": 72,
 "20 Minutes": 14,
 "Ouest-France": 0,
-"BFMTV": 25,
+"BFMTV": 26,
 "France 24": 14,
 "La Croix": 33,
 "LCP": 54,
 "RFI": 10
 },
-"maj": "2026-11-28T14:15:29Z"
+"maj": "2026-11-28T14:30:11Z"
 }
