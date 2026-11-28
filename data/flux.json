@@ -2,6 +2,20 @@
 "v": 4,
 "items": [
 {
+"t": "Partir ou rester en cas de victoire du RN à la présidentielle 2027, le dilemme des hauts fonctionnaires",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/politique/article/2026/11/28/partir-ou-rester-en-cas-de-victoire-du-rn-a-la-presidentielle-2027-le-dilemme-des-hauts-fonctionnaires_6816058_823448.html",
+"d": "2026-11-28T04:00:22Z",
+"qui": []
+},
+{
+"t": "Présidentielle 2027 : l’extrême droite française a-t-elle vraiment changé ?",
+"s": "Le Monde",
+"u": "https://www.lemonde.fr/podcasts/article/2026/11/28/presidentielle-2027-l-extreme-droite-francaise-a-t-elle-vraiment-change_6816057_5463015.html",
+"d": "2026-11-28T04:00:13Z",
+"qui": []
+},
+{
 "t": "Fuites présumées vers le RN : Le bureau et le domicile de l’ex-directeur de cabinet de Marine Le Pen perquisitionnés",
 "s": "20 Minutes",
 "u": "https://www.20minutes.fr/politique/4266426-20261128-fuites-presumees-vers-rn-bureau-domicile-ex-directeur-cabinet-marine-pen-perquisitionnes?at_medium=display&at_campaign=149",
@@ -1771,29 +1785,10 @@
 "glucksmann",
 "riner"
 ]
-},
-{
-"t": "ÉDITO. David Lisnard contre Édouard Philippe : est-ce la bataille \"du terrain\" contre les élites ?",
-"s": "franceinfo",
-"u": "https://www.franceinfo.fr/elections/edito-david-lisnard-contre-edouard-philippe-est-ce-la-bataille-du-terrain-contre-les-elites_8301429.html#xtor=RSS-3-%5Bpolitique%5D",
-"d": "2026-11-26T13:10:16Z",
-"qui": [
-"lisnard",
-"philippe"
-]
-},
-{
-"t": "Très critique de l'Allemagne, Jean-Luc Mélenchon se rend à Berlin pour présenter son livre",
-"s": "France 24",
-"u": "https://www.france24.com/fr/france/20261126-malgr%C3%A9-sa-m%C3%A9fiance-envers-l-allemagne-m%C3%A9lenchon-se-rend-%C3%A0-berlin-pour-pr%C3%A9senter-son-livre",
-"d": "2026-11-26T13:07:26Z",
-"qui": [
-"melenchon"
-]
 }
 ],
 "sources": {
-"Le Monde": 8,
+"Le Monde": 10,
 "franceinfo": 7,
 "Libération": 21,
 "Le Figaro": 7,
@@ -1806,5 +1801,5 @@
 "LCP": 39,
 "RFI": 9
 },
-"maj": "2026-11-28T01:45:30Z"
+"maj": "2026-11-28T04:15:29Z"
 }
